@@ -17,8 +17,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 So, once again, I couldn't help myself and complain over at Peter Cameron's Blog about his view on the topic of women (and let me extend this topic to minorities) in mathematics.

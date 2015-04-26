@@ -18,8 +18,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 When I started watching the videos from last years Books in Browsers, my firs thought was: so that's where are the people are hiding that I want to talk to!

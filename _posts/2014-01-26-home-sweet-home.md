@@ -19,8 +19,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 [![the river Rhine and the Drachenfels](assets/Rhine_drachenfels-e1392059849614-768x1024.jpg)](http://boolesrings.org/krautzberger/files/2014/01/Rhine_drachenfels-e1392059849614.jpg)

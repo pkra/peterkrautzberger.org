@@ -26,8 +26,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 At the [winterschool](http://www.winterschool.eu) [Alan Dow](math.uncc.edu/~adow/) gave quite challenging tutorials. He also mentioned something about van Douwen spaces.

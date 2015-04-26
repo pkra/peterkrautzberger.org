@@ -30,8 +30,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I have just uploaded a preprint titled [On strongly summable ultrafilters](http://arxiv.org/abs/1006.3816) to the [arXiv](http://arxiv.org). Let me give a short account of what it’s about.

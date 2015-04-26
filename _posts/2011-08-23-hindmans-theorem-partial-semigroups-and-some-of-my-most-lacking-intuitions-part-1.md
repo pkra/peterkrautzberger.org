@@ -28,8 +28,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > If you remember, [I mentioned](http://boolesrings.org/krautzberger/2011/08/19/a-short-reflection-on-google/) that I was working on a post on some research and it was getting out of hand. Well, it is still not finished, but long enough to start posting a series of posts.

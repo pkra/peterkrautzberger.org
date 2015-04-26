@@ -32,8 +32,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > Well, I hope you didn't miss me while I was on my first summer vacation in three years. So let's continue this series. If you remember, [part 3](http://boolesrings.org/krautzberger/2011/08/25/hindman%E2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-3/) consisted mainly of the observation that FS-sets have a partial semigroup structure induced by $\mathbb{F}$ as well as me telling you that there's a immediate correspondence between FS-sets and idempotent ultrafilters.

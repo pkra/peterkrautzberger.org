@@ -17,8 +17,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 While visiting Toronto in late March, I had the pleasure of meeting fellow Booles' Rings peepz Mike and Assaf (and of course Sam and Kathleen who graciously hosted me).

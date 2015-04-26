@@ -22,8 +22,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Recently, I had a few conversations about teaching mathematics varying from elementary school to undergraduate level. These are not refined, in depth analyses, just some quick thoughts that I think worthwhile to ponder every once in a while.

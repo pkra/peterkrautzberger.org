@@ -23,8 +23,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 My apologies for the blogging hiatus. Let’s continue.

@@ -22,8 +22,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 One of the tools I want to use in this blog will be MathML. I think MathML is so far the best solution to present mathematical content on the web even though the [discussion](http://terrytao.wordpress.com/2009/10/29/displaying-mathematics-on-the-web/) on Terence Tao’s blog shows that MathML has its own deficits, especially when it comes to accessibility.

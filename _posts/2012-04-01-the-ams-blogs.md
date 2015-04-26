@@ -17,8 +17,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 As one of the founders of mathblogging.org I know quite a few blogs (we aggregate over 600 and I've read them all at some point, crazy as that sounds -- and some _are_ crazy).

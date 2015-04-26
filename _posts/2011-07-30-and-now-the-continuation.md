@@ -21,8 +21,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Alright, Booles' Rings is set up and I'm trying to import my old posts from [http://peter.krautzberger.info](http://peter.krautzberger.info). Jekyll was fun, but Wordpress has more potential. So let's start something new.

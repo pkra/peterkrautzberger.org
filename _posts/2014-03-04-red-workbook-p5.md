@@ -24,8 +24,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 [![red workbook, p5](assets/2014-02-26-23.37.16_cropped-719x1024.jpg)](http://boolesrings.org/krautzberger/files/2014/03/2014-02-26-23.37.16_cropped.jpg)

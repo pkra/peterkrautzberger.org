@@ -21,8 +21,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > I just left an awfully long comment on Tim Gowers's blog. Thanks, François for mentioning [the new post](http://gowers.wordpress.com/2012/01/29/whats-wrong-with-electronic-journals/) on twitter! <del datetime="2012-01-30T00:27:21+00:00">Incidentally, it seems that my email is considered spam by Akismet these days, so it will most likely never show up on Gowers's blog.</del> Tim Gowers was very kind and took the trouble of going through his blog's spam folder to retrieve my comment. On top of that he explained what I did wrong -- I had too many links in my piece, silly me. Thank you! I've also added another comment from there where somebody asked me to clarify a few points. I wished there was a system for collecting my comments...

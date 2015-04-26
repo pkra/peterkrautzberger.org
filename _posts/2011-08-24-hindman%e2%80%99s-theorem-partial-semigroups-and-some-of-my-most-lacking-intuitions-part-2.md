@@ -26,8 +26,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > Yesterday I finally [started this short series](http://boolesrings.org/krautzberger/2011/08/23/hindmans-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-1/) with some small thoughts regarding partial semigroups. If you don't remember, all I did yesterday was to explain why semigroups are not, in general, partition regular using a simple partition of $\mathbb{N}$. I was trying to keep your hopes up by pointing out Schur's Theorem.

@@ -23,8 +23,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 To get some research back into this blog, I will, over the course of the next few weeks, post some handwritten notes about a couple of well-known results by Shelah: the model without P-points, the model with a unique selective ultrafilter and the model with a unique P-point.

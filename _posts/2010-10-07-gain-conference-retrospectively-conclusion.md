@@ -24,8 +24,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Well, this has been going on for too long… This final post should have concluded the mini-series weeks ago. Instead, it has prevented me from writing about anything else. So let me conclude with some late notes and my answers to the feedback questionaire. I will not go back to the individual posts to refresh my memory, instead, I will write simply what I remember now which is probably more important since it will dominate my long time memory of the whole event (but I will use my notes for this post which sort of developed while writing the rest).

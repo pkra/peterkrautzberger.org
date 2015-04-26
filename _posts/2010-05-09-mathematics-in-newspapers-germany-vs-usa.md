@@ -23,8 +23,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I meant to write about this for a while now but everytime I began the post became either too boring or too much of a rant.

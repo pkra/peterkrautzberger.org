@@ -23,8 +23,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Doug Schepers recently asked me for some advice for HTMLizing some mathematics. [Doug](http://www.w3.org/People/Schepers/) is one of those exceptional people at the W3C who thrive in pushing the web and its standards forward. In this case, Doug was looking at [this bit of audio engineering](http://www.musicdsp.org/files/Audio-EQ-Cookbook.txt) in the context of the [Web Audio spec](http://www.w3.org/TR/webaudio/).

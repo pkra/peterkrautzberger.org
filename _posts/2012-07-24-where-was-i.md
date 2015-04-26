@@ -19,8 +19,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Oh yes, I live here now. Some call it paradise, others moloch. I think both are right but what do I know after a two weeks?

@@ -21,8 +21,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 It's been a while since I've posted regularly but I have a secret blogging project planned to get back into the groove. In the mean time I switched themes to twenty twelve (just as WordPress releases twenty thirteen, oh well).

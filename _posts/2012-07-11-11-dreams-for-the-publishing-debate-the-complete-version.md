@@ -20,8 +20,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > This is a double-post of sorts. The reasons is that it took me a very long time to write this (in fact, the first draft is marked April 18). In the process, quite a number of versions were stored by Wordpress. As you can see, I ended up splitting the original post into 11 individual ones. (Actually, I ended up extending each of the individual posts, adding another ~1000 words to it, a whopping 4000+ words.) Anyway, the point is, I wouldn't want to delete this original draft for its history should be quite interesting if I can ever get myself to make all revisions public (there's some rude ranting in there). So please excuse this double post.

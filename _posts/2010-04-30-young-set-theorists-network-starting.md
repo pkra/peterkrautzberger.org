@@ -23,8 +23,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 The [Young set theorist network](http://young-set-theory.net/wiki/Main_Page) has been opened to the public! Although I have yet to make it to a Young Set Theorist Meeting (I always failed for some technical reasons) I feel it is important to get involved in the network and make it a success.

@@ -22,8 +22,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 When you're using wordpress, it comes in handy to have an installation to play around with. When I first joined the [Wordpress for Scientists Google Group](http://groups.google.com/group/wordpress-for-scientists), I promised to write a tutorial. Well, it took me a bit to find the time, but Booles' Rings helped me get back to this.

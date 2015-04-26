@@ -25,8 +25,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Apparently, I totally forgot to announce this anywhere on my interwebz!

@@ -19,8 +19,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I just published a first draft of an [about page for Booles' Rings](http://boolesrings.org/about/).

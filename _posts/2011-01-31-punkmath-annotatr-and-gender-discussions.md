@@ -24,8 +24,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 So last week was pretty abysmal as I spent most of the time in bed with a cold like I haven’t had in a while. Since this led to a major shutdown of my brain I failed to do anything useful. Whenever it didn’t burn a hole in my brain I did read a few interesting things.

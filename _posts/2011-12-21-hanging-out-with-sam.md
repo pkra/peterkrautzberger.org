@@ -22,8 +22,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 [Sam already wrote](http://boolesrings.org/scoskey/hangout-subgroups-of-z/) about the g+hangout that he hosted last Saturday and I wanted to jot down some of my own thoughts on the experience. I thoroughly enjoyed the whole thing and I've been looking for good imagery to describe it. I only came up with two, but maybe you can help me with that in the comments.

@@ -25,8 +25,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Welcome to the new home of thelazyscience. I hope the new setup makes everything better.

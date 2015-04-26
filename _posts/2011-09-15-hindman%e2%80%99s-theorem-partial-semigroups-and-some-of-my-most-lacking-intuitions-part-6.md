@@ -27,8 +27,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > I know, I know, it's part 6 already. [Last time](http://boolesrings.org/krautzberger/2011/09/08/hindman%E2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-5/) I finally formulated the Central Sets Theorem. This part will just be a small bridge. But at least you'll finally know why on earth I am writing this, i.e., what big open question I'm actually trying to build some intuitions for.

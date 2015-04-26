@@ -21,8 +21,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 The math blogosphere is a friendly and relaxed placed. But there is one rule, I believe, we should all abide by: when [The Aperiodical](http://aperiodical.com) calls, you answer.

@@ -17,8 +17,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Finally, the discussion about what scientific publishing could look like in times of the internet is upon mathematics. The topic comes up frequently on sites with a science focus, yet mathematicians have largely ignored the issue.

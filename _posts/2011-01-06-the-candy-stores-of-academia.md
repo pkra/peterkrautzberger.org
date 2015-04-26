@@ -22,8 +22,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 **Over lunch** I had one of those really excellent discussions you can enjoy with grad students at the University of Michigan. Among a thousand interesting topics we talked about the question of career options for grad students after graduation. Of course, we started debating the usual sad story: being academically brought up at a research university your supervisors will hardly ever discuss alternatives to a career in academia because, well, they obviously did not pursue alternative career paths and hence have little to share on the topic. Of course, most faculty will argue that they are in the education business ([not the certification business](http://www.johndcook.com/blog/2011/01/03/educating-versus-credentialing/)) so they need to focus on educating you about (their) research topics. At this point it’s not difficult to start a rant for a day or two…

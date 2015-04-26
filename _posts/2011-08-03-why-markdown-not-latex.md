@@ -26,8 +26,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Coming from $\LaTeX$ and its text-editor driven writing style, working with wordpress can seem a step back -- after all, most people, if they get excited about $\TeX$, very much despise the wysiwyg approach to writing.

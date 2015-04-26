@@ -25,8 +25,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 The AMS is currently running a survey (I think it's members only? But if you got an invite, make sure to take the time).

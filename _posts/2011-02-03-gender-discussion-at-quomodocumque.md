@@ -21,8 +21,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Since I had promised, let me post [the comment I finally added](http://quomodocumque.wordpress.com/2011/01/26/gendered-conference-campaign/#comment-5736) to the discussion at quomodocumque I had [mentioned before](/2011/01/punkmath_annotatr_gender_discussions/). Also: note the link to Ivelisse Rubio’s talk in there — it’s finally online!

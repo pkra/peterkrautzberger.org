@@ -24,8 +24,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 In the last 3 weeks I have written a couple of drafts about the debate that finally hit the mathematical blogosphere [through Tim Gowers's blog](http://gowers.wordpress.com/2011/10/31/how-might-we-get-to-a-new-model-of-mathematical-publishing/) (I don't know how much he is aware of similar, ongoing discussions in the scientific blogosphere beyond his Michael Nielsen link but in case my <del datetime="2011-11-27T00:00:22+00:00">one</del> two readers are not, [here are two](http://scientopia.org/blogs/ethicsandscience/2011/11/05/scientific-authorship-guests-courtesy-contributions-and-harms/) you [should add to your feed reader](http://scientopia.org/blogs/drugmonkey/2011/11/11/a-thought-exercise-for-readers/)).

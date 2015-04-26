@@ -20,8 +20,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Since I haven't published anything in almost two months, let me jot down one thought that has come to mind frequently over the past few months.

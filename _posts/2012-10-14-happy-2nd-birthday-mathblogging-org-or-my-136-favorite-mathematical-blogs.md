@@ -20,8 +20,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Mathblogging.org is nearing its 2nd birthday. We've passed the second anniversary of the domain registration and [my own blog post](http://boolesrings.org/krautzberger/2011/01/05/introducing-mathblogging-org/) is having it's second anniversary soon. Plenty of reason to write a post about this.

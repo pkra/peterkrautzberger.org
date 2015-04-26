@@ -20,8 +20,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 [week 4 of the challenge. It's time for a quick post to catch up after last week's delay.]

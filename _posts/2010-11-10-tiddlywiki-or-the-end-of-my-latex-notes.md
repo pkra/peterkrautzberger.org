@@ -21,8 +21,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 How can I not even have mentioned this? The single greatest tool of the last three month is… [Tiddlywiki](http://www.tiddlywiki.com/)

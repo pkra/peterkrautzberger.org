@@ -21,8 +21,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > [The original post](http://boolesrings.org/krautzberger/2011/11/26/the-recent-publishing-debate-a-timeline/) was getting longer and longer so I split it up.

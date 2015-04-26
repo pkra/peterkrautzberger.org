@@ -23,8 +23,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > Here's another old (forgotten?) draft to make up for my lack of original writing; this should've gone out in June... Instead of posting it, I had grand plans to write about the workshop itself -- but never had the time (you know, moving across the continent, starting a new job etc., it gets in the way of things...). Why now? Well, Anthony Salvagno reminded me with [his post yesterday](http://research.iheartanthony.com/2013/01/19/amazing/) that I still had this.

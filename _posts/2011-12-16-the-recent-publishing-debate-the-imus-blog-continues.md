@@ -23,8 +23,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 My [last post](http://boolesrings.org/krautzberger/2011/12/12/the-recent-publishing-debate-the-economic-power-of-publishers/) has seen quite a lot of visitors (my stats look miserable now that there was such a spike...). But hardly anybody left a comment (thanks to those who did -- much appreciated!). Did people find it irrelevant, not worth commenting on? Or did everybody just nod and pass on? I'm confused... (and yes, it's either or).

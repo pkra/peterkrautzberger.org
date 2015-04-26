@@ -24,8 +24,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I am spending this week in Boulder, Colorado, at the [<span class="caps">BLAST</span> 2010](http://euclid.colorado.edu/~kasterma/blast/index.php) and it’s off to a great start.

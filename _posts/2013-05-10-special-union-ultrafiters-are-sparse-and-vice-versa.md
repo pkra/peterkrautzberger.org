@@ -18,8 +18,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 There are a lot of notes from mathematical research I still sit on. These will likely never get published in the traditional way (save one or two), so it's time to start publish them on the web some other way. In the long run, I plan to put all my notebooks online, delayed <a href="">open-notebook science</a> if you will.

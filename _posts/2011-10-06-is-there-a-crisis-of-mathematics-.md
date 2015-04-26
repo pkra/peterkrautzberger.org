@@ -23,8 +23,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 No, no, don't worry. This is not about the inconsistency of Peano Arithmetic or other [pseudo-crises in the history of logic](http://www.gender.hu-berlin.de/forschung/publikationen/gender-bulletins/texte-32/texte32pkt2).

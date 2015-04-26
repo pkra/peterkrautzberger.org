@@ -18,8 +18,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 [![picture of downtown Los Angeles](assets/Camera-1386808667471-1024x768.jpg)](http://boolesrings.org/krautzberger/files/2013/12/Camera-1386808667471.jpg)

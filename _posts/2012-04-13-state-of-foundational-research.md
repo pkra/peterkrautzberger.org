@@ -26,8 +26,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I was catching up on some fun google-reader reading today but found with a depressing combination of content.

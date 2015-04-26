@@ -26,8 +26,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Welcome back to the second (and final) part on why [strongly summable ultrafilters are rapid](http://boolesrings.org/krautzberger/2012/04/02/one-day-in-colorado-or-strongly-summable-ultrafilters-are-rapid/).

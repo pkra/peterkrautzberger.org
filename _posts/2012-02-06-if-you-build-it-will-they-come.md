@@ -21,8 +21,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Last week, Tim Gowers published another post on the publishing debate entitled ["Abstract thoughts about online review systems"](http://gowers.wordpress.com/2012/02/02/abstract-thoughts-about-online-review-systems/).

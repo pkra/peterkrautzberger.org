@@ -24,8 +24,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 [Last time](http://boolesrings.org/krautzberger/2010/12/eternal_preliminaries_part1/) I wrote about the basic structures, (partial) semigroups. But algebra in the Stone-Cech compactification deals, well, with the Stone-Cech compactification. I will try to ignore the general theory of compactifications because we only deal with a very simple case — discrete spaces. Suffice it to say that any elementary topology book should have a chapter on compactifications if you want to read more.

@@ -24,8 +24,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 The second day at the <span class="caps">GAIN</span> conference was obviously the most intense day simply because it was the only full day. However, the program was well designed which minimised stress and maximised my attention span.

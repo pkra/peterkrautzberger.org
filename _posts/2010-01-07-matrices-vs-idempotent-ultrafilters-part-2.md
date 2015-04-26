@@ -24,8 +24,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 In [an earlier post](http://thelazyscience.blogspot.com/2009/12/matrices-vs-idempotent-ultrafilters.html) I gave a short introduction to an interesting finite semigroup. This semigroup could be found in the $2\times 2$ matrices over $\mathbf{Q}$.

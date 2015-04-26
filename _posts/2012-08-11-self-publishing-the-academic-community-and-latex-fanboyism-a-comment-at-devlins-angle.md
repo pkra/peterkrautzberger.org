@@ -26,8 +26,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > Yet another one of those "Peter babbled too long on somebody else blog"-posts. This time at Keith Devlin's MAA column/blog [Devlin's Angle](http://devlinsangle.blogspot.com/2012/08/the-future-of-textbook-publishing-is-us.html)

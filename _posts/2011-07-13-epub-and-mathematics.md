@@ -22,8 +22,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 A while ago [Martin Fenner had written about the BeyondPDF workshop](http://blogs.plos.org/mfenner/2011/01/23/beyond-the-pdf-%E2%80%A6-is-epub/) and [released his epub export plugin for wordpress](http://blogs.plos.org/mfenner/2011/02/01/epub-wordpress-plugin-released-today/) and [started the Wordpress For Scientist Google group](http://blogs.plos.org/mfenner/2011/02/04/discussing-wordpress-for-scientists/).

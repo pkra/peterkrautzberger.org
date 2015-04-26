@@ -29,8 +29,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > Ok, time for part 3\. We're not close to an end but I must apologize that I won't be able to post in the next week. But let's recap. In the [first part](http://boolesrings.org/krautzberger/2011/08/23/hindmans-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-1/) I simply explained why semigroups are not partition regular and in the [second part](http://boolesrings.org/krautzberger/2011/08/24/hindman%E2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-2/) I wrote about FS-sets and, finally, introduced partial semigroups. One of the headings promised that partial semigroups will help us talk about FS-sets.

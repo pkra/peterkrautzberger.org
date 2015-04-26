@@ -22,8 +22,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Darn, being delayed for 5 hours at the airport on Sunday still only got me started (not finished) on this retrospective on the <span class="caps">BLAST</span> 2010\. I guess since it was a delay from 11pm to 4.30am my brain stopped working after the long, final day in Boulder (which included my very own first conference chalk talk!).

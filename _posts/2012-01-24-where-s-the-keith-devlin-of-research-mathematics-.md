@@ -17,8 +17,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 For the set theorists in the room, the title is somewhat of a pun (intended). If you may or may not know, Keith Devlin used to be a set theorist, in fact, the very first paper I ever read was his (and Shelah's) and, personally, I admire him deeply on many levels.

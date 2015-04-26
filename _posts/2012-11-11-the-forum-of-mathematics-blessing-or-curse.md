@@ -19,8 +19,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > When the Forum of Mathematics was announced [on Tim Gowers's blog](https://gowers.wordpress.com/2012/07/02/a-new-open-access-venture-from-cambridge-university-press/) I mentioned this on twitter and I got a couple of replies asking what my thoughts on it were. Well, this post has been stuck in my draft folder for too long, long enough for these journals to be open for submissions, blimey.

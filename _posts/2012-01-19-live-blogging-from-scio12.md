@@ -22,8 +22,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 So, I will attempt to live blog from [Science Online 2012](http://www.scienceonline2012.com). This means this post will get updated instead of writing many posts.

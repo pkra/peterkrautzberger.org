@@ -25,8 +25,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Just so that not another week ends without me writing a post. The bad news is that my departure for [Michigan](http://www.math.lsa.umich.edu/) gets closer and the technicalities take up more and more time. Therefore I’m not sure I’ll have much time to post in the next couple of weeks. Additionally, I’ll be attending a [winter school](http://www.winterschool.eu/) in Hejnice in the first week of February so I also need to <del>prepare</del> finish preparing my talk.

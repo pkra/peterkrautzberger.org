@@ -21,8 +21,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > This is a joined post with Sam -- go [comment at his place](http://boolesrings.org/scoskey/has-it-really-been-a-year/)!

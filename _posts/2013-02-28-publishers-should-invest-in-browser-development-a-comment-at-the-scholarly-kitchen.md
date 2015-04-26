@@ -29,8 +29,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > In the tradition of posting stuff I write elsewhere, here's [a comment I just posted at _the scholarly kitchen_](http://scholarlykitchen.sspnet.org/2013/02/28/ignorance-as-argument-a-chemist-alleges-publishers-exploit-typography-for-money/#comment-85434). It's not really about the article.

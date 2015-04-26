@@ -23,8 +23,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > I just finished [a long posting at the mailing list/google group Wordpress For Scientist](http://groups.google.com/group/wordpress-for-scientists/browse_thread/thread/f263df8e98cb440a?hl=en). This was spawned by today's meeting with Sam and [this week's trouble with the papercite plugin](http://boolesrings.org/blog/2011/08/16/citations-two-new-plugins-to-try/). We really need to find a different solution. So I'm hoping both for a discussion here at Booles' Rings as well as some help from the smart people on the mailing list.

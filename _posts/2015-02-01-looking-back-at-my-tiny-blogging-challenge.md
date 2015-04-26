@@ -21,8 +21,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 At the end of last year, I tried to motivate myself to write more so I set myself a [tiny blogging challenge](http://boolesrings.org/krautzberger/2014/11/03/tiny-blogging-challenge/): writeo one post each week for the remaining weeks of the year, don't spend more than for 30mins per post.

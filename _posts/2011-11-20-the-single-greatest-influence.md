@@ -19,8 +19,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > Note: this is an old draft that I finally finished; there's a line to indicate the major break between the original half and the additional part (not that the first part wasn't rewritten a little, too).

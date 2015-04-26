@@ -18,8 +18,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 A few weeks ago, I carelessly wrote [here](http://boolesrings.org/krautzberger/2013/07/17/name-5-top-journals-you-read/) that

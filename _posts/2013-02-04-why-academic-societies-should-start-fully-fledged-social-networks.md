@@ -24,8 +24,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > The Joint Math Meetings 2013 ended with the AMS's 125th Anniversary banquet. One of the things mentioned there was that the AMS is working on some form of online communities. That's great, but doesn't go far enough.

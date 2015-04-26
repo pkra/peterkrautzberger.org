@@ -25,8 +25,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 ["The end (tm)" of MathML in Chrome this week](http://boolesrings.org/krautzberger/2013/10/29/thoughts-on-the-end-tm-of-mathml-in-chromechromium/) happened to coincide with a piece I had been working on for a while now and which was published at O'Reilly's Programming blog (["MathML Forges On"](http://programming.oreilly.com/2013/11/mathml-forges-on.html)) yesterday. Originally, I had meant to write something for O'Reilly's TOC blog earlier this year, but then the TOC conference was retired (and so was the blog) so things got delayed.

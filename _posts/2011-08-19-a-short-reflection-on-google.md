@@ -20,8 +20,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Today I spent a lot of time on writing a longer piece about some mathematics. It grew completely out of proportion and it'll take me a few more <del datetime="2011-08-20T00:45:03+00:00">minutes</del> hours to finish.

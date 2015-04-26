@@ -22,8 +22,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Read more about this series at [the first post](http://peter.krautzberger.info/2011/05/Shelah_model_without_P-points).

@@ -22,8 +22,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Note: as you can see I am not yet in control of how to convert LaTeX to mathml — bear with me, but I thought I should kick myself and start posting…

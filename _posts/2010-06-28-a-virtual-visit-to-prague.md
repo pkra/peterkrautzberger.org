@@ -26,8 +26,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Tomorrow, I will be visiting Prague! Well, only virtually, but for the second time in 8 days — yay!

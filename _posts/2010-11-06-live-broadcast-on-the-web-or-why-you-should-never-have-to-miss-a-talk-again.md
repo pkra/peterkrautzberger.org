@@ -17,8 +17,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I haven’t written anything in ages but so many posts are almost finished and then there’s my secret new project that I can get all excited about but it’s not yet time… Anyway, I just read [this question on mathoverflow](http://mathoverflow.net/questions/45037/should-there-be-a-true-model-of-set-theory) and it finally triggered this post. You see, if you read that post, you will stumble upon [this workshop](http://www.phil.upenn.edu/Workshop+on+Set+Theory+and+the+Philosophy+of+Mathematics) and, if you’re me, you’ll wonder why you cannot watch a recording of those lectures and, hopefully, the debates that came with it. Now, as puny a set theorist as I might be, I have strong feelings about this — and with Hugh Woodin’s visit to the UofM I was thinking about this stuff a lot all week anyway. So why did I have to miss those talks?

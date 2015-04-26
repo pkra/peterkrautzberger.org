@@ -23,8 +23,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 In the everlasting "what I've said elsewhere" category, I haven't really written much about MathJax around here; MathJax as my job, that is. Perhaps I should do it more often.

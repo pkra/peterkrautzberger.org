@@ -26,8 +26,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 To write the first post on the new domain I thought I might just write a little about what I’ve been studying recently — the Central Sets Theorem.

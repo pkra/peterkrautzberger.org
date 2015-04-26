@@ -22,8 +22,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I recently pondered whether I should stop reading the few remaining [mathoverflow](http://mathoverflow.net) and [math.stackexchange](http://math.stackexchange.com) feeds I keep in my feed reader (remember that archaic technology? I still use it heavily). Ever since I left research, I had dialed down the number of tags I was following on those wonderful sites, both because it was painful and because I lost interest (as contradictory as that may sound); in the end, all I kept were the [ultrafilter] tag on MO and the [set theory] tag on math.SE.

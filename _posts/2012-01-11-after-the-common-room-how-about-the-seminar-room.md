@@ -24,8 +24,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 The most impressive community on the (specifically mathematical) intertubes is [MathOverflow](http://mathoverflow.net). Not only because [François](http://boolesrings.org/dorais) is [one of the moderators](http://mathoverflow.net/users/2000/francois-g-dorais) and [Joel](http://boolesrings.org/hamkins) is the [#1 power user](http://mathoverflow.net/users/1946/joel-david-hamkins) or because it has introduced many mathematicians to the unexplored possibilities of using the web for mathematics. No, despite it's many positive influences on mathematics (and despite some negative aspects), MathOverflow's true strength lies in the fact that its users and moderators have [paved](http://math.stackexchange.com/) the [way](http://cstheory.stackexchange.com/) for a [series](http://physics.stackexchange.com/) of [similar](http://stats.stackexchange.com/) sites on other topics, both at stackexchange (partly [in beta](http://area51.stackexchange.com/categories/7/science)) but also [independently](http://www.or-exchange.com/) -- a feat that cannot be overestimated in its long term impact on the way we and other scientists do research on- or off-line.

@@ -22,8 +22,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I think I mentioned at some point that I had started a secret little project a few months ago. Well, [Felix](http://www.fbreuer.net), [Fred](http://ta.twi.tudelft.nl/wst/users/heymann/) and I have decided that the new year should be plenty of reason to put some more hours into its development and make it more public.

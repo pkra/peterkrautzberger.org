@@ -25,8 +25,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 My thesis was a (somewhat) coherent structure and hence had one big chapter of preliminaries. It was rather painful (and in retrospect stupid) to create preliminaries for each paper based on the results from the thesis by taking that chapter and reducing it to only those terms necessary in each respective paper. To (over)compensate, I have been thinking for a while to write down some ‘eternal preliminaries’ here.

@@ -21,8 +21,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 You know how every blogger once in a while will have a test post that you find in your feed and then you click on it to learn more and it's already deleted?

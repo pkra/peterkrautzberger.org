@@ -24,8 +24,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > Hm, my writing process is slowing down a little (and on top of that I forgot to publish this draft) and there are other posts that I really want to write. I'm not really sure how I will proceed, but let's keep pushing a little further for now. [Last time](http://boolesrings.org/krautzberger/2011/09/15/hindman%E2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-6/) I tried to build a bridge from central sets via idempotent ultrafilters back to partial semigroups. This is one of the key points of this series: connecting central sets and partial semigroups.

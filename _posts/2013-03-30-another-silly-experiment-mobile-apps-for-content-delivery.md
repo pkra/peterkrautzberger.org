@@ -23,8 +23,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > Here's another post from the category "yet another silly idea" or "don't try this at home". Keep in mind that I have absolutely no idea about app development. In short, I don't know what I'm doing or what I'm talking about. But here it goes.

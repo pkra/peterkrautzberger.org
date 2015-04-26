@@ -17,8 +17,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 For a while now, I have wanted to spew out some of my thoughts on this whole publishing debate, ever since Tim Gowers started it last November (yes, November! unbelievable).

@@ -22,8 +22,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 One of the most valuable experiences during my time as a PhD student lay in helping to establish a [‘What is…?’ seminar](https://www.math.fu-berlin.de/w/Math/WhatIsSeminar) at the [Freie Universität Berlin](http://www.math.fu-berlin.de/index.html) and later/now at the [Berlin Mathematical School](http://www.math-berlin.de/) .

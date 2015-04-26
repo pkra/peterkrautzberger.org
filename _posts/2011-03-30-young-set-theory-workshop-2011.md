@@ -22,8 +22,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 It’s been a while. In case you were wondering where the heck I have been these last two months, check out [mathblogging.org](http://www.mathblogging.org) and [our blog at wordpress.com](http://mathblogging.wordpress.com).

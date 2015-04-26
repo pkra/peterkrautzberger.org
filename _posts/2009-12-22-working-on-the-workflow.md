@@ -22,8 +22,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Since I do want to try to post something once a week, I’ll recap my work towards a reasonable workflow. As I hinted at [before](/2009/12/09/testing-mathml.html), I’m currently aiming at a workflow of [LaTeX](http://en.wikipedia.org/wiki/LaTeX) via [tex4ht](http://en.wikipedia.org/wiki/TeX4ht) to [mathml](http://en.wikipedia.org/wiki/Mathematical_Markup_Language) to blogspot. I have encountered a couple of problems, some of which I could overcome, some of which I could not and some of them turned out to be bugs or missing features.

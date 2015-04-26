@@ -61,8 +61,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 So the [winter school in Hejnice](http://www.winterschool.eu/) <span style="text-decoration: line-through;">ended two weeks ago</span> is long past — and despite my intentions I did not find the time to blog. This is primarily a sign of the quality of the winter school, both scientifically and socially. I do admit I spent the lunch breaks walking in the beautiful surrounding mountains instead of blogging…

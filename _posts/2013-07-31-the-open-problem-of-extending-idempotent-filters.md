@@ -18,8 +18,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 One of the problems that I've banged my head against repeatedly as a research was how to extend an idempotent filter.

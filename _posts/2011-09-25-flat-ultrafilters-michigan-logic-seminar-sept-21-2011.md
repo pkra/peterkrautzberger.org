@@ -31,8 +31,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Remember how our about page says that [Booles' Rings is about best practices](http://boolesrings.org/about/) for an acacdemic homepage? Ok, let's try one: making notes to talks available.

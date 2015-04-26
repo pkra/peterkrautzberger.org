@@ -20,8 +20,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Because of a power outage at the department my talk [announced for October 29th](https://settheorytalks.wordpress.com/2011/10/29/michigan-logic-seminar-7/) was postponed by a week.

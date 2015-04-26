@@ -25,8 +25,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Continuing my posts on the <span class="caps">GAIN</span> conference, let me jump right back in.

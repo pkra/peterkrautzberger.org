@@ -28,8 +28,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 At the end of January, I'll be at [Scio12](http://scienceonline2012.com/)! Science Online is that super awesomesauce (un)conference where all the hipster science bloggers hang out -- and also those fantastic little companies working on the future of doing science on _teh internetz (tm)_.

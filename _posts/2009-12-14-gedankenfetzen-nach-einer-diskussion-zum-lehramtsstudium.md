@@ -24,8 +24,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I had originally planned to open this blog with a scientific post — but what can you do. Since this post is about universities in Germany this’ll be in German.

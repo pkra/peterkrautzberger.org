@@ -27,8 +27,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Just a quick post to show I'm still alive. One of the reasons why I haven't gotten to write recently is that we moved (yet again) to the final-for-oh-I-don't-know-who-knows-hopefully-a-few-or-more-years-that-would-be-nice-for-a-change destination.

@@ -22,8 +22,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Today, [a Chromium team member announced](https://code.google.com/p/chromium/issues/detail?id=152430#c43) that Chromium/Chrome does not plan to support MathML. (There's a bit of flaming going on on that thread so please don't fuel the flames.)

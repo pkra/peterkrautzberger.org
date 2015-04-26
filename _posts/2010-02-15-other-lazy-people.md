@@ -19,8 +19,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I frequently wind up with a list of interesting blog posts — so why not include this here, too? As long as I cannot convince myself to use google reader or buzz, I’ll do this the classical way (especially since I just read a complaint that less and less blogers use backlinks).

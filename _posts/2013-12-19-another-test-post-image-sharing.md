@@ -24,8 +24,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 [![image](assets/wpid-Camera-13865403453681.jpg "Camera - 1386540345368.jpg")](http://boolesrings.org/krautzberger/files/2013/12/wpid-Camera-13865403453682.jpg)

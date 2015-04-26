@@ -20,8 +20,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > Many moons ago, [Gowers' "alternative" model for publishing](https://gowers.wordpress.com/2011/10/31/how-might-we-get-to-a-new-model-of-mathematical-publishing/) started a new [round in the publishing debate](http://boolesrings.org/krautzberger/2011/11/26/the-recent-publishing-debate-a-timeline/) and ever since, drafts have piled up around here, some bad, some worse, some long, some short. It's time for some summer cleaning (used to say "spring cleaning", that's how long it took me) so I tried to cut out the bits that seemed not so bad. Also, I haven't posted anything in May -- how could that happen? My favorite month, mpf.  

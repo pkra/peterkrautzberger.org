@@ -19,8 +19,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Last August, I finally finished my report for the DFG regarding my wonderful two years at Michigan. Part of this was to revisit all my old notes and publications. This has reminded me of something I've been wanting to do for a long time -- publish every last bit of research I produced during my PhD and postdoc.

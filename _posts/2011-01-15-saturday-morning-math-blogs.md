@@ -18,8 +18,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Well, with [mathblogging.org](http://www.mathblogging.org) up and running in beta I have been reading far too many math blogs (and I love it). This morning there was a lot of interesting stuff out there and I thought it might be interesting to mention some, especially those that I actually left a comment on. After all, that’s what makes blogging come alive and I don’t comment often enough.

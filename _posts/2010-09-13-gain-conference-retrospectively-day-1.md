@@ -24,8 +24,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Yesterday, the 10th <span class="caps">GAIN</span> conference in Boston ended and, since I attended it, I thought I should try to do some classical, journal-like blogging (at least retrospectively) and report a little on what that was all about (don’t expect me to be [Gowers](http://gowers.wordpress.com/2010/09/02/icm2010-final-post/) though).

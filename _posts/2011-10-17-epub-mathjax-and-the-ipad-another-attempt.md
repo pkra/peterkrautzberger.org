@@ -25,8 +25,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 It's a funny thing. I don't even own an iPad. But a lot of people are interested in [getting an epub file with mathjax working](http://boolesrings.org/krautzberger/2011/07/13/epub-and-mathematics/) on the iPad.

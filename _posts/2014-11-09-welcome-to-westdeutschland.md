@@ -28,8 +28,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 (_Week 1 of the challenge. Sorry for those looking for TeX/MathML related stuff. Sometimes, there are more urgent things, you know?_)

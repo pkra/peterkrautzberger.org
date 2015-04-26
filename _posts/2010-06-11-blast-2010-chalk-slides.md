@@ -31,8 +31,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 The organizers of [<span class="caps">BLAST</span> 2010](http://euclid.colorado.edu/~kasterma/blast/index.php) asked the speakers to upload or give a link to the slides of their talk. Since I gave a chalk talk at the blackboard I had no slides. So instead of slides let me give a short recollection of my talk here.

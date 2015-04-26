@@ -19,8 +19,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > I have been trying to find the time to continue [my](http://boolesrings.org/krautzberger/2011/11/26/the-recent-publishing-debate-a-timeline/) [posts](http://boolesrings.org/krautzberger/2011/11/27/the-recent-publishing-debate-nisans-posts/) on the publishing debate, discussing the other posts from the original timeline. Suffice it to say, I've not yet given up getting around to it... But there were two posts in the last couple of days that made me want to write something.

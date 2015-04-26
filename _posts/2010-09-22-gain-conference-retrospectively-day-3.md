@@ -25,8 +25,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 The last day of the conference was only half a day and the only one without pure Q&A sessions but more traditional panel discussions.

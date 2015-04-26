@@ -21,8 +21,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 The last week was rather busy and I did not find time to blog. The good news is that I will be attending [<span class="caps">BLAST</span> 2010](http://euclid.colorado.edu/~kasterma/blast/) in Boulder come June and they are very kind to support me.

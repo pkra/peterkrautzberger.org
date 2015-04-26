@@ -25,8 +25,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 [Tim Gowers](https://gowers.wordpress.com/2012/04/23/polymath-paper-published/) has hinted at a revival of the fifth Polymath project. Which brings something back from the bottom of my draft folder.

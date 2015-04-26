@@ -21,8 +21,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 This year hasn't exactly been great in terms of my blogging. Because life. After the Red Workbook concept tapered off I barely managed 1 post per month.

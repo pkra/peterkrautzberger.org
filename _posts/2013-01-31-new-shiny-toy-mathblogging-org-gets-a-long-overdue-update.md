@@ -27,8 +27,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 It's been a lot of work and it has been delayed again and again, but here it is: [mathblogging.org 2.0](http://www.mathblogging.org), powered by SubjectSeeker, the software behind [ScienceSeeker](http://scienceseeker.org).

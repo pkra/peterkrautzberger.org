@@ -16,8 +16,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 For quite some time it has bugged me to hear male mathematicians make statements along the lines of

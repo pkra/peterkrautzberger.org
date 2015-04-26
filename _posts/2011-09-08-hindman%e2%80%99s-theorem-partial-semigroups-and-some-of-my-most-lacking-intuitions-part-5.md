@@ -26,8 +26,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > [Last time](http://boolesrings.org/krautzberger/2011/09/07/hindman%e2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-4/), I left you hanging -- I promised the Central Sets Theorem, but only bothered you with some more stuff on partial semigroup, i.e., condensations. Let me make it up to you.

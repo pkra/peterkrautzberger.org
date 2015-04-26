@@ -24,8 +24,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > The people over at [<span class="caps">GAIN</span> headquarters](http://www.gain-network.org/) asked me if I could write a short piece about the conference for their newsletter. Even though I have been swamped with work (perfect proof being the lack of updates around here), I could not say no to them. If you have [read](http://peter.krautzberger.info/2010/09/gain_conference_part1) [my](http://peter.krautzberger.info/2010/09/gain_conference_part2) [previous](http://peter.krautzberger.info/2010/09/gain_conference_part3) [posts](http://peter.krautzberger.info/2010/09/gain_conference_part4) [on the conference](http://peter.krautzberger.info/2010/09/gain_conference_part5) you’ll be aware of how much I enjoyed it and especially how much I appreciate the work of the organizers. However, writing such a special post for the <span class="caps">GAIN</span> newsletter proved difficult. It was a different beast and, as you know, I am barely capable of writing a blog post. Anyway, I also include that 500-800 words piece here; a bit milder thanks to their editing (and finally a reason to choose a creative commons license for my stuff; watch out for updates in that respect).

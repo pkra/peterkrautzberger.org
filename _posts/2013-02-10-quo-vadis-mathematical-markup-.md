@@ -18,8 +18,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I've been wanting to write a post about mathematical markup for a while. But in my mind it got bigger and bigger, stretching from "formula markup" to document markup to input tools to semantic tools. And on paper it grew smaller and smaller, leading to oneliners that sound smart but mean nothing to me when I revisit them a few days later. And then Martin Fenner starts a new discussion about markdown.

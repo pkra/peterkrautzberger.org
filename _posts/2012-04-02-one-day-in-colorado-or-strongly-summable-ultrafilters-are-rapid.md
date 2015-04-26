@@ -29,8 +29,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Picking up from [the prelude about micro-contributions](http://boolesrings.org/krautzberger/2012/03/26/prelude-to-a-small-experiment/), let me tell you the story of a small result I would like to share with you. (Before you frantically scroll down to find the proof, it's not really here but will be in the follow-up post).

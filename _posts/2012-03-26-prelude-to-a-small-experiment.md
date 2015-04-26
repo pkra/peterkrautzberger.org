@@ -25,8 +25,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I haven't posted anything in almost two months -- life happened. It's still a bit chaotic and maybe I'll write about it when things calm down. For now, I'm back from a productive trip to Toronto where, among other things, I had the pleasure to reconnect with [Sam](http://boolesrings.org/scoskey/), [Assaf](http://blog.assafrinot.com/) and [Mike](http://boolesrings.org/mpawliuk/).

@@ -19,8 +19,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 This is a short technical post, more a note-to-self so that I know where to look this up if I ever need it again. It is also somewhat of a correction of something I said during my talk in Toronto in June.

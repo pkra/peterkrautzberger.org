@@ -24,8 +24,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 I am currently working on a nice little proof. I was initially very confident that I could find the proof — mostly because I already gave a different proof for the same observation, albeit with completely different tools.

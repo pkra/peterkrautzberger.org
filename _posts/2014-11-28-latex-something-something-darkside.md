@@ -28,8 +28,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 [This is week 3 of the challenge. Ok, I'm stretching "every week" a bit here. I blame somebody's first cold or alternatively Turkeys. Also, I cheated; this took longer than 30mins.]

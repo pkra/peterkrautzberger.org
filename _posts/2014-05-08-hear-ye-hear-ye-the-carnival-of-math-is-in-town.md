@@ -22,8 +22,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Gee, it's been quiet around here! Between MathJax release work and diaper wrangling, blogging has been neglected. Inconceivable?

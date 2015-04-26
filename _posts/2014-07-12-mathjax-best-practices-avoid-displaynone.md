@@ -22,8 +22,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 At MathJax we often get questions about specific examples of content / web design. Most of the time, people will show up on the [MathJax User Group](https://groups.google.com/forum/#!forum/mathjax-users) (the preferred choice), [StackOverflow](http://stackoverflow.com) (semi-officially supported), and through our contact form on mathjax.org (not the right choice but sometimes necessary for restricted users who can't post to either of the above).

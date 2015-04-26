@@ -18,8 +18,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 There are a couple of reasons to write a quick follow-up post to the [notes for my talk on flat ultrafilters](http://boolesrings.org/krautzberger/2011/09/25/flat-ultrafilters-michigan-logic-seminar-sept-21-2011/ "Flat Ultrafilters (Michigan Logic Seminar Sept 21, 2011)").

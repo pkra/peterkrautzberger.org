@@ -27,8 +27,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 > <font color="gray">Yesterday I went on a rant about Keith Devlin's homepage and twitter. That was, like all rants, a little unfair on him. I guess idols are always more disappointing. However, although the rant was triggered by that one tweet it had been building up over the last week because I was writing a longer piece for various reasons. So here it is.</font>

@@ -19,8 +19,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 [Previously I wrote about why I care about MathML. Naturally, I don't have a problem to write this one now ([because Gödel](http://www.ams.org/notices/200703/rev-raatikainen.pdf), or, like, whatever). I'm definitely not looking forward to having people misunderstand this piece. So if you're not in the mood for subtleties and unresolved or conflicted thought processes of mine, please do me a favor and leave. [Here are some kittens.](https://www.youtube.com/results?search_query=kittens)]

@@ -21,8 +21,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 [In the previous post](http://peter.krautzberger.info/2011/01/eternal_preliminaries_part2_filters_and_ultrafilters) I have totally ignored my focus from the first post, namely that I want to focus on partial semigroups, not full semigroups. As [mentioned in the first part](http://peter.krautzberger.info/2010/12/eternal_preliminaries_part1) this is not really a problem as any partial semigroup operation is in essence a restriction of a full semigroup operation. So the full semigroup is always a neat thing to fall back to when you’re in doubt. Nevertheless, if, as I claimed, it is an advantage to work with partial semigroups, can we not get around this problem?

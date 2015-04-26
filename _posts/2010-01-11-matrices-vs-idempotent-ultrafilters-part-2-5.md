@@ -22,8 +22,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Note: there seems to be some problematic interaction between the javascripts I use and blogspot’s javascripts which prevents longer posts from being displayed correctly. As long as I don’t understand how to fix this, I will simply split the posts.

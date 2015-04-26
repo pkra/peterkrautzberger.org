@@ -23,8 +23,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 It's been quiet around here -- too much work behind the scenes -- BUT you can still read some of my usual incessant babbling over at the [Wiley Exchanges Blog](http://exchanges.wiley.com/blog/) where I write about MathML and its role in [Making math and science first class citizen's on the web](http://exchanges.wiley.com/blog/2015/03/02/making-math-and-science-first-class-citizens-on-the-web/).

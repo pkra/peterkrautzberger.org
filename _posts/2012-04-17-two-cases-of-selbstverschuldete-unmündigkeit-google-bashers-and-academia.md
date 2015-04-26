@@ -17,8 +17,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 In Immanuel Kant's essay [_Beantwortung der Frage: Was ist Aufklärung?_](https://de.wikipedia.org/wiki/Beantwortung_der_Frage:_Was_ist_Aufkl%C3%A4rung%3F) ([Answering the Question: What Is Enlightenment?](https://en.wikipedia.org/wiki/What_is_Enlightenment%3F)) he writes

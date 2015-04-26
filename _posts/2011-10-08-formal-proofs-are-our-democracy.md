@@ -22,8 +22,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Reading papers can lead to horrible acts. Today, I felt like mutilating [a famous quote](http://en.wikiquote.org/wiki/Winston_Churchill#Post-war_years_.281944_-_1955.29).

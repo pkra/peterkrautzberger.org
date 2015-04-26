@@ -21,8 +21,8 @@ author:
   display_name: admin
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 On of the pleasures of running [mathblogging.org](http://www.mathblogging.org) is that you get to find out about immensely creative people working on new ways to make use of the web for mathematics.

@@ -27,8 +27,8 @@ author:
   display_name: Peter Krautzberger
   first_name: Peter
   last_name: Krautzberger
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+
+
 ---
 
 Well, if you haven't read [my recent introspection](http://boolesrings.org/krautzberger/2012/01/24/mostly-im-a-terrible-speaker/), consider yourself warned: the video below is, in my humble opinion, a rather poor talk I gave at our Logic Seminar here at the University of Michigan.
