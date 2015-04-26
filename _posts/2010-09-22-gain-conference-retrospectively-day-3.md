@@ -1,0 +1,56 @@
+---
+layout: post
+title: GAIN conference retrospectively Day 3
+date: 2010-09-22 09:00:00.000000000 +02:00
+categories:
+- conference
+- Germany
+- scientific community
+- thelazyscience@peter.krautzberger.info
+- University politics
+tags:
+- GAIN
+- GAIN conference
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '3'
+  dsq_thread_id: '622854174'
+  _wpas_skip_5613678: '1'
+  _wpas_skip_5613660: '1'
+author:
+  login: admin
+  email: peter.krautzberger@gmx.net
+  display_name: admin
+  first_name: ''
+  last_name: ''
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+
+The last day of the conference was only half a day and the only one without pure Q&A sessions but more traditional panel discussions.
+
+### First session
+
+The first session was another workshop with three parallel instances. I chose to go to the first (‘New oppucations for scientists’) although I later realized that I probably declared interest in the third one on co-operation and interdisciplinary reserach when I registered. Nevertheless, I think it was a very good choice.
+
+As mentioned, this session was a classical discussion panel. The five participants (Susanne Dyrchs, Boston Consulting, Hellmut Meinhof, Bundesagentur, Heide Naderer, <span class="caps">RWTH</span> Aachen, Stefanie Seltmann, <span class="caps">DKFZ</span>, and Isolde von Bülow, <span class="caps">LMU</span>) started with short talks followed by some q&a. As a completely irrelevant remark, the only male participant actually apologized for getting up when it was not his turn. It struck me as odd; was he worried to be considered sexist (for ignoring the woman whose turn it was)? Since this did not happen at the beginning the thought never crossed my mind. Why would he have to apologize for an honest mistake? Weird.
+
+Anyway, back to the talks. They were extremely interesting (except Hellmut Meinhof’s talk which was very vague compared to the others). Stefanie Seltmann hit it off with a brilliant first talk, starting from her own early career decisions to becoming the press officer of the [<span class="caps">DKFZ</span>](http://www.dkfz.de). She outlined what steps in her career seemed important and gave some advice for those considering similar careers. In a way, it was very interesting to hear about her unconventional career path. And yet I could not fully relate. She was, in a way, too far ahead in her career, where my questions lay in more immediate concerns (how do I get started etc). Again, this is was not an uncommon theme that the speakers were too advanced. One more nerdy thing: using a strip from [smbc](http://www.smbc-comics.com) without crediting, not good…
+
+Next came Heide Naderer, director of the international office at the <span class="caps">RWTH</span>. She highlighted the pros and cons of working in a German university’s administration. I enjoyed her balanced and realistic talk; it seems like administrations at German universities are finally waking up. If only they had some real power in a system where every committee by law has a majority of tenured professors. Nevertheless, she left me with the impression that this is actually an interesting job.
+
+Isolde von Bülow left a similar impression as Heide Naderer. She is the head of the Graduate Center at the <span class="caps">LMU</span> and had a similarly straight career path as Heide Naderer, in her case this involved a lot of experience in administrating Graduiertenkollegs. I also had a good conversation with her at the career fair afterwards. She gave very open advice on how to get into her line of work. The only disappointment for me was that in my field most of her descriptions seemed not to fit. In pure mathematics there is not a lot of daily administration for even a large grant, no equipment to buy, no budget to keep an eye on daily. So as much as I enjoyed talking to her, it left me wondering if her proposed way into this line of work actually works outside experimentally rich research.
+
+With Susanne Dyrch the first ‘outsider’ (truly outside academia) gave the fourth introduction. Her talk was just as lively my own conversation with her at the career fair the day before. She definitely got her own enthusiasm for the work at the Boston Consulting Group across. However, given the strong natural science bias of the participants (and given my own interests) I would have enjoyed the talk even more if she could have told us more about opportunities in science related projects the <span class="caps">BCG</span> has to offer (say technology or even academia related). I think this would be very attractive for researchers – if you leave your field your interest stay the same nevertheless, so anything science related would be more attractive. But still I liked her talk most because she was another example of ‘the next step’, this was still her first job after leaving academia which made her information more valuable.
+
+Finally, Hellmut Meinhof gave a introduction jobs at international organisations (though he never said it I’m guessing as the representative for the German government) such as UN- and EU-organisations. His talk was a bit difficult to follow and the many restrictions did not make it look very appealing to me. But maybe I just didn’t get the point. My notes on it prominently mention that the salaries are tax free — go figure…
+
+Strangely enough I have no notes about the questions from the audience. I know there were some (though only a few), but I can only vaguely remember one. I think somebody asked about the kind of contracts that the first three speaker had at their various career steps. They all had many short-term contracts and I think it was Stefanie Seltmann who even switched from a position for life to a short-term contract while changing jobs. In a way, however, I thought this was not the right questions. Short-term contracts have a different meaning outside of research. In research everybody is supposed to aim for tenure, if you have it, you made it, if you change jobs before that it is often considered a failure. Also, having different, slightly different occupations at different jobs is something positive, whereas in research this is very difficult and often dangerous – you might end up not producing results which will hurt you later no matter what experience you gained with new techniques you learned.
+
+### The final panel
+
+After the coffee break and career fair the closing panel offered the politicians a chance to tell the participants their impression. So the panel consisted of the five members of the Bundestag, more precisely the committee for education and research, Thomas Feist, Anette Hübinger, Patrick Meinhardt, Martin Neumann and Krista Sager. Interestingly enough this was the first time (in ten years of <span class="caps">GAIN</span> conferences) that the committee had sent an official delegation – which will ensure that these impressions will find their way back to the committee and therefore maybe even to the more general public (or at least policy makers). But this is essentially where the good news ended. Mostly, the five were repeating that due to the federal structure they themselves, as members of the federal parliament, could not really influence the policies anymore and that the conference was missing representatives from the federal states. There was also a lot of banter about current political issues which did not touch the subject of the conference at all. In short, the panel’s debate suffered from the fact that I described before – the politicians were too professional. Nevertheless, they seemed to be taking with them one important impression: the assembled postdocs were in fact the right people to ask if one tries to find out what the problem and the lack of appeal of the German academic system is. The following questions were a bit weird. Not only were they cut short for no apparent reason other than the official time limit. But they started out with some weird old professor who just happened to be in town, had not attended the conference but went on some fundamental rant on the more basic funding problems of universities in Germany. Not that he was not right, but not only in retrospect did he waste everybody’s time. This topic, ongoing cuts on the state level, had been discussed numerous times in many sessions. That he seemed to not even consider that this topic had been discussed made his rant all the more distracting. Another question was about daycare – the situation is still abysmal, there is essentially no sensible affordable daycare in West Germany (and of course almost all of the best universities and research center are in the south and west where the federal states are simply richer). Another one was aimed at the problem that short-term positions with independent grant money do not lead to more researchers or lecturers but are countered by the state cutting regular positions – this was an easy deflection for the (federal) politicians. The only upside was that Krista Sager had another chance to re-enforce my impression of her being the most capable (or simply most experienced?) politician at the conference – she simply said that the situation is everybody’s fault and that the key is to end the blame game and start cooperating for real change. For comparison, Patrick Meinhardt at some point answered (I think it was a question on gender politics) that most problems were simply a generational problem, that the next generation will automatically fix. Wishful thinking if there ever was… So in a way, this was a disappointing end of the conference, but hey, somebody has to be the bottom feeder…
+
+Well, my final thoughts on the conference will have to wait.
