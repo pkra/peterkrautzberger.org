@@ -9,18 +9,14 @@ layout: default
 </div>
 
 <div class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment re {{ page.title }}">write me an email</a>.</span>
-<!--  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>-->
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20{{ page.title | uri_escape }}">write me an email</a> or <button id="hypothesis" type="button">start hypothes.is</button>
+    .</span>
 </div>
+<script>
+document.getElementById("hypothesis").onclick = function() {
+  script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://hypothes.is/embed.js';
+  document.getElementsByTagName('head')[0].appendChild(script);
+};
+</script>
