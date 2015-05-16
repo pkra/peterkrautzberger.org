@@ -1,6 +1,6 @@
 # Dependencies
 markdown:               kramdown
-kramdown: 
+kramdown:
   input:                GFM
 pygments:               true
 
@@ -16,3 +16,6 @@ url:                    http://www.peterkrautzberger.org
 author:
   name:                 'Peter Krautzberger'
   url:                  http://www.peterkrautzberger.org
+
+gems:
+  - jekyll-redirect-from
