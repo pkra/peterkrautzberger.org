@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<section class="posts">
   {% for post in site.posts limit:3 %}
   <div class="post">
     <h1 class="post-title">
@@ -18,4 +18,8 @@ title: Home
     <a href="{{ post.url }}"> … </a>
   </div>
   {% endfor %}
-</div>
+</section>
+<footer>
+  <hr>
+  For more, visit the <a href="/archive.html">archive</a>.
+</footer>
