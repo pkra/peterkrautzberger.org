@@ -8,7 +8,6 @@ tags:
 - tiny blogging challenge
 published: true
 permalink: 0169/
-redirect_from: "krautzberger/2014/11/03/tiny-blogging-challenge/"
 ---
 
 This year hasn't exactly been great in terms of my blogging. Because life. After the Red Workbook concept tapered off I barely managed 1 post per month.

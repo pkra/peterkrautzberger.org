@@ -15,7 +15,6 @@ tags:
 - web
 published: true
 permalink: 0172/
-redirect_from: "krautzberger/2014/11/28/latex-something-something-darkside/"
 ---
 
 [This is week 3 of the challenge. Ok, I'm stretching "every week" a bit here. I blame somebody's first cold or alternatively Turkeys. Also, I cheated; this took longer than 30mins.]

@@ -10,7 +10,6 @@ tags:
 - dotAstro
 published: true
 permalink: 0174/
-redirect_from: "krautzberger/2014/12/08/dotastro-ftw/"
 ---
 
 [This is week 4 of the challenge. woohoo.]

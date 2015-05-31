@@ -9,7 +9,6 @@ tags:
 - mathml
 published: true
 permalink: 0176/
-redirect_from: "krautzberger/2014/12/29/bonus-round-why-i-care-about-native-mathml/"
 ---
 
 [This is week 7 of the challenge but really a post to make up for dropping the ball on week 5.]

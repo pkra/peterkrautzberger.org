@@ -7,7 +7,6 @@ categories:
 tags: []
 published: true
 permalink: 0173/
-redirect_from: "krautzberger/2014/12/02/on-reading-and-writing-and-silence/"
 ---
 
 [week 4 of the challenge. It's time for a quick post to catch up after last week's delay.]

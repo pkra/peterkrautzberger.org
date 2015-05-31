@@ -9,7 +9,6 @@ tags:
 - Göttingen
 published: true
 permalink: 0170/
-redirect_from: "krautzberger/2014/11/09/welcome-to-westdeutschland/"
 ---
 
 (_Week 1 of the challenge. Sorry for those looking for TeX/MathML related stuff. Sometimes, there are more urgent things, you know?_)

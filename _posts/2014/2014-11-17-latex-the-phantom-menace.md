@@ -10,7 +10,6 @@ tags:
 - TeX
 published: true
 permalink: 0171/
-redirect_from: "krautzberger/2014/11/17/latex-the-phantom-menace/"
 ---
 
 _(Week 2 of the challenge.)_

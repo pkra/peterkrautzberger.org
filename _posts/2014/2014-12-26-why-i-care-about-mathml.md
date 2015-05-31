@@ -9,16 +9,21 @@ tags:
 - mathml
 published: true
 permalink: 0175/
-redirect_from: "krautzberger/2014/12/26/why-i-care-about-mathml/"
 ---
 
 [This is week 6~7? Mpf, I missed one (and a half?), bummer. I'll try to make up for it.]
 
 When I started this writing challenge, I had listed a couple of potential blog post titles. One of them was "Why you should care about MathML". I realized later that I really didn't want to pretend I could even try to tell my two readers what they should or should not care about. Instead, I want to jot down (remember: 30mins time limt) a few reasons why I started to care about MathML, [alot](http://hyperboleandahalf.blogspot.de/2010/04/alot-is-better-than-you-at-everything.html).
 
-[![I care about this Alot](assets/ALOT2.png)](http://hyperboleandahalf.blogspot.de/2010/04/alot-is-better-than-you-at-everything.html)
 
-> © Ellie Brosh
+<figure>
+  <a href="http://hyperboleandahalf.blogspot.de/2010/04/alot-is-better-than-you-at-everything.html">
+    <img alt="An Alot © Ellie Brosh" src="/assets/ALOT2.png"/>
+  </a>
+  <figcaption>
+    I care about this Alot. © Ellie Brosh
+  </figcaption>
+</figure>
 
 Unsurprisingly, it was in many ways a story of my education. Here are two quotes from yours truly.
 
@@ -36,7 +41,7 @@ So as you can see, I flip-flopped a bit there (and, in a fundamentally different
 
 ### a stable exchange format
 
-When I started using MathJax on a personal blog (thanks to the above quote I realize I started blogging [5 years ago this month](http://thelazyscience.blogspot.de/2009/12/welcome.html), ([local copy](http://boolesrings.org/krautzberger/2009/12/07/welcome-2/)), although I think I started to blog a year ealier on scivee.tv (though this seems lost)), I was first annoyed and then very happy to not use macros. Obviously, you can use macros with MathJax but I started to avoid personalized macros at all costs. Ultimately, they prevented me from writing mathematics elsewhere and they limited re-use of my writing by other people (well, ok, that's more hope than reality I suppose).
+When I started using MathJax on a personal blog (thanks to the above quote I realize I started blogging [5 years ago this month](http://thelazyscience.blogspot.de/2009/12/welcome.html), ([local copy](/0001/)), although I think I started to blog a year ealier on scivee.tv (though this seems lost)), I was first annoyed and then very happy to not use macros. Obviously, you can use macros with MathJax but I started to avoid personalized macros at all costs. Ultimately, they prevented me from writing mathematics elsewhere and they limited re-use of my writing by other people (well, ok, that's more hope than reality I suppose).
 
 MathML does not suffer any of these complications (well, technically Content MathML could if anyone used it). Instead, MathML provides a truly stable format for storing equational content while still allowing for re-use. Granted, it's not exactly easy to write by hand but neither are SVG or HTML/CSS (certainly not as soon as you want to express something more complex). Still, I'd encourage anyone to spend some time with it (e.g., try copy-editing a random piece of MathML and compare that to copy-editing some macro-filled LaTeX horror). In any case, creating MathML is straight forward, especially for those knowing LaTeX syntax (even if we could use a a good open-source MathML editor). Ultimately, MathML is more readable in isolation thanks to its nature of being actually a mark-up language and not a programming language.
 
