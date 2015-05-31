@@ -14,21 +14,12 @@ The fastest way to reach me is to [write me an email](mailto:p.krautzberger@gmai
 *   [on github](http://github.com/pkra)
 *   [on twitter](http://twitter.com/pkrautz)
 
-
-*   [on linkedin](http://www.linkedin.com/pub/peter-krautzberger/45/4a4/6a5)
-*   [on google+](https://plus.google.com/102694188490946876191/)
-*   [on vimeo](http://vimeo.com/user2937952)
-*   [on the arXiv](http://arxiv.org/find/math/1/au:+Krautzberger_P/0/1/0/all/0/1)
-*   [on google scholar](http://scholar.google.com/citations?user=GdTGryoAAAAJ&hl=en&oi=ao)
-*   [on scivee](http://www.scivee.tv/user/5216)
-   
-
 #### Projects
 
 *   [MathJax](//mathjax.org), project lead
 *   [Booles' Rings](http://boolesrings.org), Founder
 *   [Mathblogging.org](http://www.mathblogging.org), Founder & Editor
-*   [ScienceSeeker.org](http://www.scienceseeker.org), [my profile as editor](http://scienceseeker.org/user/pkrautz)
+*   [ScienceSeeker.org](http://www.scienceseeker.org), [my profile as editor](http://www.scienceseeker.org/p/about-scienceseeker.html)
 *   [MathTalks / Set Theory Talks](http://settheory.mathtalks.org), Founder (inactive)
 
 ### Licensing
@@ -37,6 +28,6 @@ The fastest way to reach me is to [write me an email](mailto:p.krautzberger@gmai
 
 ### Commenting
 
-Please send comments by email: write me an email (links are in each post), I'll respond (or not) and possibly add it to the post as an update. For convenience, each post comes with a mailto-link at the bottom.
+Please send comments by email, I'll respond (or not) and likely add it to the post as an update. For convenience, each post comes with a mailto-link at the bottom (and also a trigger to annotate via [hypothes.is](hypothes.is)).
 
 Please always remember [XKCD 1357](http://xkcd.com/1357/)
