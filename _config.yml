@@ -1,7 +1,9 @@
 # Dependencies
 markdown:               kramdown
 kramdown:
-  input:                GFM
+  auto_ids: true
+  input: GFM
+  toc_levels: 1..6
 pygments:               true
 
 # Permalinks
@@ -19,3 +21,4 @@ author:
 
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
