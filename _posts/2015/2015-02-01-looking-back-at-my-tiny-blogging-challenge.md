@@ -8,7 +8,6 @@ tags:
 - tiny blogging challenge
 published: true
 permalink: 0177/
-redirect_from: "krautzberger/2015/02/01/looking-back-at-my-tiny-blogging-challenge/"
 ---
 
 At the end of last year, I tried to motivate myself to write more so I set myself a [tiny blogging challenge](http://boolesrings.org/krautzberger/2014/11/03/tiny-blogging-challenge/): writeo one post each week for the remaining weeks of the year, don't spend more than for 30mins per post.

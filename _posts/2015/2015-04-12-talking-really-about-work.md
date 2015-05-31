@@ -7,7 +7,6 @@ categories:
 tags: []
 published: true
 permalink: 0179/
-redirect_from: "krautzberger/2015/04/12/talking-really-about-work/"
 ---
 
 Yesterday I was driving up to Northeim to pick up some Sandkastensand (because people had actually cleaned out the other store's 150 25kg packs -- are you kidding me). While in my car, I was listening to [this conversation on DLF](http://www.deutschlandfunk.de/schriftstellerin-susan-kreller-die-kinder-nicht-alleine.1202.de.html?dram:article_id=316765), featuring a writer notable for her children's books. I didn't know her though I'll try to get my hands on her collection of new translations of English poems (for children).
