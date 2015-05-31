@@ -1,25 +1,12 @@
 ---
 layout: post
 title: No more talk
-date: 2011-11-20 14:15:47.000000000 +01:00
+date: 2011-11-20
 categories:
 - thoughts on mathematics
 tags:
 - poem
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 > Dedicated to Scott.

@@ -1,24 +1,10 @@
 ---
 layout: post
 title: 'Sustainability: research $\neq$ new theorem'
-date: 2012-03-26 22:52:58.000000000 +02:00
+date: 2012-03-26
 categories:
 - updates
-tags: []
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 While visiting Toronto in late March, I had the pleasure of meeting fellow Booles' Rings peepz Mike and Assaf (and of course Sam and Kathleen who graciously hosted me).

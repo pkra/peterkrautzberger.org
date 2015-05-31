@@ -1,24 +1,10 @@
 ---
 layout: post
 title: 'Two cases of Selbstverschuldete Unmündigkeit: Google bashers and academia'
-date: 2012-04-17 22:29:04.000000000 +02:00
+date: 2012-04-17
 categories:
 - updates
-tags: []
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 In Immanuel Kant's essay [_Beantwortung der Frage: Was ist Aufklärung?_](https://de.wikipedia.org/wiki/Beantwortung_der_Frage:_Was_ist_Aufkl%C3%A4rung%3F) ([Answering the Question: What Is Enlightenment?](https://en.wikipedia.org/wiki/What_is_Enlightenment%3F)) he writes

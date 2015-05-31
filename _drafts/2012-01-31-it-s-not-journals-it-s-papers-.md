@@ -1,24 +1,10 @@
 ---
 layout: post
 title: It's not journals, it's papers.
-date: 2012-01-31 23:06:50.000000000 +01:00
+date: 2012-01-31
 categories:
 - updates
-tags: []
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 For a while now, I have wanted to spew out some of my thoughts on this whole publishing debate, ever since Tim Gowers started it last November (yes, November! unbelievable).

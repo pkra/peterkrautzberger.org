@@ -1,25 +1,10 @@
 ---
 layout: post
 title: Thoughts on Math Reviews
-date: 2013-08-03 23:34:29.000000000 +02:00
+date: 2013-08-03
 categories:
 - updates
-tags: []
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2013-08-04 06:34:29'
-  _cws_is_markdown: '2'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 A few weeks ago, I carelessly wrote [here](http://boolesrings.org/krautzberger/2013/07/17/name-5-top-journals-you-read/) that

@@ -1,24 +1,10 @@
 ---
 layout: post
 title: Selbstverschuldete Unmuendigkeit or What is wrong with our community?
-date: 2012-03-23 16:44:22.000000000 +01:00
+date: 2012-03-23
 categories:
 - updates
-tags: []
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 So now I need to rant a little. And it will sound as if I rant about Tim Gowers.

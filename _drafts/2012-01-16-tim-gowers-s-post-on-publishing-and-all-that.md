@@ -1,24 +1,10 @@
 ---
 layout: post
 title: Tim Gowers's post on publishing and all that
-date: 2012-01-16 10:49:19.000000000 +01:00
+date: 2012-01-16
 categories:
 - updates
-tags: []
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 Finally, the discussion about what scientific publishing could look like in times of the internet is upon mathematics. The topic comes up frequently on sites with a science focus, yet mathematicians have largely ignored the issue.

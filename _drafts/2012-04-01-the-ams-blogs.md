@@ -1,24 +1,10 @@
 ---
 layout: post
 title: The AMS blogs
-date: 2012-04-01 16:04:48.000000000 +02:00
+date: 2012-04-01
 categories:
 - updates
-tags: []
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 As one of the founders of mathblogging.org I know quite a few blogs (we aggregate over 600 and I've read them all at some point, crazy as that sounds -- and some _are_ crazy).

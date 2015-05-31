@@ -1,24 +1,11 @@
 ---
 layout: post
 title: The recent publishing debate -- part 4
-date: 2012-01-16 10:49:07.000000000 +01:00
+date: 2012-01-16
 categories:
 - updates
 tags: []
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 =============================

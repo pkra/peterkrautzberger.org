@@ -1,24 +1,10 @@
 ---
 layout: post
 title: Where's the Keith Devlin of research mathematics?
-date: 2012-01-24 22:26:34.000000000 +01:00
+date: 2012-01-24
 categories:
 - updates
-tags: []
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 For the set theorists in the room, the title is somewhat of a pun (intended). If you may or may not know, Keith Devlin used to be a set theorist, in fact, the very first paper I ever read was his (and Shelah's) and, personally, I admire him deeply on many levels.

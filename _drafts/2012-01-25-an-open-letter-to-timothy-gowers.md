@@ -1,24 +1,10 @@
 ---
 layout: post
 title: An open letter to Timothy Gowers
-date: 2012-01-25 14:57:51.000000000 +01:00
+date: 2012-01-25
 categories:
 - updates
-tags: []
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 ### Evening and banquet

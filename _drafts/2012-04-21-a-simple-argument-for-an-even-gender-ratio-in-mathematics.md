@@ -1,23 +1,10 @@
 ---
 layout: post
 title: A simple argument for an even gender ratio in mathematics
-date: 2012-04-21 23:15:16.000000000 +02:00
+date: 2012-04-21
 categories:
 - updates
-tags: []
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 For quite some time it has bugged me to hear male mathematicians make statements along the lines of

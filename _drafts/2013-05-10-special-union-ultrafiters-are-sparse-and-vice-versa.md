@@ -1,25 +1,10 @@
 ---
 layout: post
 title: Special union ultrafiters are sparse and vice versa
-date: 2013-05-10 12:39:46.000000000 +02:00
+date: 2013-05-10
 categories:
 - updates
-tags: []
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2013-05-10 19:39:46'
-  _cws_is_markdown: '2'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 There are a lot of notes from mathematical research I still sit on. These will likely never get published in the traditional way (save one or two), so it's time to start publish them on the web some other way. In the long run, I plan to put all my notebooks online, delayed <a href="">open-notebook science</a> if you will.

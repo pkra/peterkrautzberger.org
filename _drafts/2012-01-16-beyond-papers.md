@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Beyond papers
-date: 2012-01-16 15:20:37.000000000 +01:00
+date: 2012-01-16
 categories:
 - scientific community
 - thoughts on mathematics
@@ -10,20 +10,7 @@ tags:
 - jmm2012
 - Joint Mathematics Meeting
 - Peter Olver
-status: draft
-type: post
 published: false
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
 ---
 
 The currently most recent post at the IMU's blog (which finally has proper RSS-feeds) is a piece by [Peter Olver](http://www.math.umn.edu/~olver/) entitled [_Beyond Journals_](http://blog.mathunion.org/journals/?no_cache=1&tx_t3blog_pi1%5BblogList%5D%5BshowUid%5D=24&tx_t3blog_pi1%5BblogList%5D%5Byear%5D=2011&tx_t3blog_pi1%5BblogList%5D%5Bmonth%5D=12&tx_t3blog_pi1%5BblogList%5D%5Bday%5D=14&cHash=4cc259744b2132a1a30cbb0cf1188028). I had the pleasure of meeting Peter as well as [Carol Hutchins](http://www.nyu.edu/pages/facgov/reps.html) for a cup of coffee in Boston during the Join Math Meetings this month. Both Peter and Carol are on the IMU's [CEIC committee](http://math.umn.edu/~olver/ceic.html), something I had to admit I'd never heard of before meeting them.
