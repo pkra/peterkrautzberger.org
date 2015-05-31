@@ -18,4 +18,4 @@ But I found myself brushing past even those few postings, so that yesterday I th
 
 So, Asaf, I will call you Joey Zasa from now on.
 
-<iframe width="1920" height="916" src="https://www.youtube.com/embed/u6aqumJMpJQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="510" src="https://www.youtube.com/embed/UneS2Uwc6xw" frameborder="0" allowfullscreen></iframe>
