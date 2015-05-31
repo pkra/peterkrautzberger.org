@@ -39,7 +39,7 @@ And it seems my new neighborhood is trying to tell me something.
 </figure>
 
 <figure>
-  <a href="assets/Goettingen3.jpg">
+  <a href="/assets/Goettingen3.jpg">
     <img alt="streetsign" src="/assets/Goettingen11-1024x575.jpg"/>
   </a>
   <figcaption>
