@@ -1,30 +1,15 @@
 ---
 layout: post
 title: Browsers should be commodities
-date: 2014-08-03 11:49:05.000000000 +02:00
+date: 2014-08-03
 categories:
 - mathjax
 - mathml
 tags:
 - browsers
 - Open Web Platform
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _publicize_twitter_user: "@pkrautz"
-  _cws_is_markdown_gmt: '2014-08-03 18:49:05'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0166/
 ---
 
 > I think there is a world market for maybe five browsers  

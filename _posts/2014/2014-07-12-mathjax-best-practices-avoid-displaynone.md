@@ -1,29 +1,14 @@
 ---
 layout: post
 title: 'MathJax best practices: avoid display:none'
-date: 2014-07-12 06:05:50.000000000 +02:00
+date: 2014-07-12
 categories:
 - mathjax
 tags:
 - CSS
 - mathjax best practices
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _publicize_twitter_user: "@pkrautz"
-  _cws_is_markdown_gmt: '2014-07-12 13:05:50'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0165/
 ---
 
 At MathJax we often get questions about specific examples of content / web design. Most of the time, people will show up on the [MathJax User Group](https://groups.google.com/forum/#!forum/mathjax-users) (the preferred choice), [StackOverflow](http://stackoverflow.com) (semi-officially supported), and through our contact form on mathjax.org (not the right choice but sometimes necessary for restricted users who can't post to either of the above).

@@ -1,30 +1,13 @@
 ---
 layout: post
 title: ASCIIMathML to the rescue
-date: 2014-08-10 09:36:10.000000000 +02:00
+date: 2014-08-10
 categories:
 - mathjax
 - mathml
 tags: []
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _publicize_twitter_user: "@pkrautz"
-  _cws_is_markdown_gmt: '2014-08-10 16:38:03'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-  _wpas_skip_5613678: '1'
-  _wpas_skip_5613660: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0167/
 ---
 
 Doug Schepers recently asked me for some advice for HTMLizing some mathematics. [Doug](http://www.w3.org/People/Schepers/) is one of those exceptional people at the W3C who thrive in pushing the web and its standards forward. In this case, Doug was looking at [this bit of audio engineering](http://www.musicdsp.org/files/Audio-EQ-Cookbook.txt) in the context of the [Web Audio spec](http://www.w3.org/TR/webaudio/).

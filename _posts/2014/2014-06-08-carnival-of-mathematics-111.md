@@ -1,28 +1,14 @@
 ---
 layout: post
 title: Carnival of Mathematics 111
-date: 2014-06-08 15:06:15.000000000 +02:00
+date: 2014-06-08
 categories:
 - blogosphere
 tags:
 - '111'
 - Carnival of Mathematics
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2014-06-08 22:06:15'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0164/
 ---
 
 The math blogosphere is a friendly and relaxed placed. But there is one rule, I believe, we should all abide by: when [The Aperiodical](http://aperiodical.com) calls, you answer.
