@@ -21,7 +21,7 @@ permalink: 0155/
     <img alt="red workbook, p9" src="/assets/2014/red_workbook-p9.jpg"/>
   </a>
   <figcaption>
-    Red Workbook, page 9
+    Red Workbook, p.9
   </figcaption>
 </figure>
 

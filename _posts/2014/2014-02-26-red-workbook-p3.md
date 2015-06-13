@@ -20,7 +20,7 @@ permalink: 0149/
     <img alt="red workbook, p3" src="/assets/2014/red_workbook-p3.jpg"/>
   </a>
   <figcaption>
-    Red Workbook, page 3
+    Red Workbook, p.3
   </figcaption>
 </figure>
 

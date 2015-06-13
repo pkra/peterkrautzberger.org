@@ -20,7 +20,7 @@ permalink: 0159/
     <img alt="red workbook, p13-1" src="/assets/2014/red_workbook-p13-1.jpg"/>
   </a>
   <figcaption>
-    Red Workbook, page 13, part 1
+    Red Workbook, p.13, part 1
   </figcaption>
 </figure>
 
@@ -29,7 +29,7 @@ permalink: 0159/
     <img alt="red workbook, p13-2" src="/assets/2014/red_workbook-p13-2.jpg"/>
   </a>
   <figcaption>
-    Red Workbook, page 13, part 2
+    Red Workbook, p.13, part 2
   </figcaption>
 </figure>
 

@@ -22,7 +22,7 @@ permalink: 0152/
     <img alt="red workbook, p6-1" src="/assets/2014/red_workbook-p6-1.jpg"/>
   </a>
   <figcaption>
-    Red Workbook, page 6, part 1
+    Red Workbook, p.6, part 1
   </figcaption>
 </figure>
 
@@ -31,7 +31,7 @@ permalink: 0152/
     <img alt="red workbook, p6-2" src="/assets/2014/red_workbook-p6-2.jpg"/>
   </a>
   <figcaption>
-    Red Workbook, page 6, part 2
+    Red Workbook, p.6, part 2
   </figcaption>
 </figure>
 
