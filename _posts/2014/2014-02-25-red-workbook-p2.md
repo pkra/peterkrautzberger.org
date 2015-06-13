@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Red workbook, p2
-date: 2014-02-25 14:39:30.000000000 +01:00
+date: 2014-02-25
 categories:
 - red workbook
 - research notes archive
@@ -10,35 +10,29 @@ tags:
 - dynamical system
 - dynamically central
 - sabine koppelberg
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2014-02-25 22:39:30'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0148/
 ---
 
 ### Source
 
-[![red workbook, p2](assets/red_workbook_p2-193x300.jpg)](http://boolesrings.org/krautzberger/files/2014/02/red_workbook_p2.jpg)
+
+<figure>
+  <a href="/assets/2014/red_workbook-p2.jpg">
+    <img alt="red workbook, p2" src="/assets/2014/red_workbook-p2.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, p.2
+  </figcaption>
+</figure>
 
 ### Transcript
 
 *   **Koppelberg** 20\. Aug. 2006
-    *   Wied. \begin{align} C \subseteq S \text{ zentral} & :\Longleftrightarrow & \exists p \in E(\beta S) \cap K(\beta S): C \in p \\ & \phantom{:}\Longleftrightarrow & C \text{ IP-Menge & PWS}\end{align}
+    *   Wied. \begin{split} C \subseteq S \text{ zentral} & :\Longleftrightarrow & \exists p \in E(\beta S) \cap K(\beta S): C \in p \\\\ & \phantom{:}\Longleftrightarrow & C \text{ IP-Menge & PWS}\end{split}
 *   **1\. Dyn. System**
     *   Ziel: zentral = dyn. zentral
-    *   Def.: DS $(X,\varphi)$ mit $X$ kompatk, $T_2$, $\varphi$ Op. von S auf X (stetig in komp. $(S,X)$), schreibe einfach $s\cdot x$ statt $\varphi(s,x)$.
+    *   Def.: DS $(X,\varphi)$ mit $X$ kompatk, $T_ 2$, $\varphi$ Op. von S auf X (stetig in komp. $(S,X)$), schreibe einfach $s\cdot x$ statt $\varphi(s,x)$.
     *   Bsp:
         1.  $W$ ($ \to t^n$), $S \to \beta S$
         2.  $S\leq Q$, $X=2^Q$ (Prod.raumder diskreten ${0,1}$),
@@ -54,9 +48,9 @@ author:
     *   Bsp. $Y\subseteq \beta S$ (als DS). $Y \beta S\text{-invariant} \Leftrightarrow Y \text{ Linksid. von } \beta S$
     *   $Y \text{ min. } US \Leftrightarrow Y \text{min. LID}$
 *   [margin note, top]
-    *   Notizen: $S_0={e_0}, e_0 \cdot e_0 = e_0$
-    *   $S_{i+1} = S_i \cup {e_{i+1}}$ mit $e_{i+1}$ Identitaet dazu
-    *   [also immer Idenitaeten adjungieren] $\Rightarrow \bigcup S_i \equiv (\mathbb{N}, \vee)$ (sup)
+    *   Notizen: $S_ 0={e_ 0}, e_ 0 \cdot e_ 0 = e_ 0$
+    *   $S_ {i+1} = S_ i \cup {e_ {i+1}}$ mit $e_ {i+1}$ Identitaet dazu
+    *   [also immer Idenitaeten adjungieren] $\Rightarrow \bigcup S_ i \equiv (\mathbb{N}, \vee)$ (sup)
 *   Hawaiian earring als DS => wie sehen zentrale aus?
 *   [margin note, right]
     *   Notiz?Prod. top = nur endlich viele
@@ -67,10 +61,10 @@ author:
 ### partial translation
 
 *   **Koppelberg** 20\. Aug. 2006
-    *   Repetition. \begin{align} C \subseteq S \text{ central} & :\Longleftrightarrow & \exists p \in E(\beta S) \cap K(\beta S): C \in p \\ & \phantom{:}\Longleftrightarrow & C \text{ IP-set & piecewise syndetic}\end{align}
+    *   Repetition. \begin{split} C \subseteq S \text{ central} & :\Longleftrightarrow & \exists p \in E(\beta S) \cap K(\beta S): C \in p \\\\ & \phantom{:}\Longleftrightarrow & C \text{ IP-set & piecewise syndetic}\end{split}
 *   **1\. Dynamical System** (DS)
     *   Goal: central = dynamically central
-    *   Def.: DS $(X,\varphi)$ with $X$ compact, $T_2$, $\varphi$ Op. from S to X (cts, in compact $(S,X)$), we write $s\cdot x$ (short for $\varphi(s,x)$).
+    *   Def.: DS $(X,\varphi)$ with $X$ compact, $T_ 2$, $\varphi$ Op. from S to X (cts, in compact $(S,X)$), we write $s\cdot x$ (short for $\varphi(s,x)$).
     *   Ex:
         1.  $W$ ($ \to t^n$), $S \to \beta S$
         2.  $S\leq Q$, $X=2^Q$ (with Prod.topology),
@@ -86,9 +80,9 @@ author:
     *   Example: $Y\subseteq \beta S$ (as DS). $Y \beta S\text{-invariant} \Leftrightarrow Y \text{ left ideal (LID) of } \beta S$
     *   $Y \text{ min. subsystem} \Leftrightarrow Y \text{mininmal LID}$
 *   [margin note, top]
-    *   Notes: $S_0={e_0}, e_0 \cdot e_0 = e_0$
-    *   $S_{i+1} = S_i \cup {e_{i+1}}$ mit $e_{i+1}$ Identitaet dazu
-    *   kepe adjoining identities => $\bigcup S_i \equiv (\mathbb{N}, \vee)$ (sup)
+    *   Notes: $S_ 0={e_ 0}, e_ 0 \cdot e_ 0 = e_ 0$
+    *   $S_ {i+1} = S_ i \cup {e_ {i+1}}$ mit $e_ {i+1}$ Identitaet dazu
+    *   kepe adjoining identities => $\bigcup S_ i \equiv (\mathbb{N}, \vee)$ (sup)
     *   Hawaiian earring as DS => what do central sets look like?
 
 ### Notes

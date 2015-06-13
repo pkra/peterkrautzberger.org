@@ -1,34 +1,27 @@
 ---
 layout: post
 title: Red workbook, p4
-date: 2014-03-01 13:24:52.000000000 +01:00
+date: 2014-03-01
 categories:
 - red workbook
 - research notes archive
 tags:
 - minimal ideal
 - uniformly recurrent
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2014-03-01 21:24:52'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0150/
 ---
 
 ### Source
 
-[![red workbook, p4](assets/2014-02-26-23.37.09_cropped-693x1024.jpg)](http://boolesrings.org/krautzberger/files/2014/03/2014-02-26-23.37.09_cropped.jpg)
+<figure>
+  <a href="/assets/2014/red_workbook-p4.jpg">
+    <img alt="red workbook, p4" src="/assets/2014/red_workbook-p4.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, page 4
+  </figcaption>
+</figure>
 
 ### Transcript
 

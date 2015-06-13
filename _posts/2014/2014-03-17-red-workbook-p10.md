@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Red workbook, p10
-date: 2014-03-17 15:28:54.000000000 +01:00
+date: 2014-03-17
 categories:
 - red workbook
 - research notes archive
@@ -10,32 +10,25 @@ tags:
 - integers
 - non-standard models of PA
 - Peano arithmetic
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2014-03-17 22:28:54'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0156/
 ---
 
 ### Source
 
-[![red workbook, p10](assets/2014-03-17-23.22.52_cropped-696x1024.jpg)](http://boolesrings.org/krautzberger/files/2014/03/2014-03-17-23.22.52_cropped.jpg)
+<figure>
+  <a href="/assets/2014/red_workbook-p10.jpg">
+    <img alt="red workbook, p10" src="/assets/2014/red_workbook-p10.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, page 10
+  </figcaption>
+</figure>
 
 ### Transcript
 
 *   Notiz:
-    *   wieso $\mathbb{Z} + p \subseteq \mathbb{N^*}$ fuer $\mathbb{N^*} \ni p$ (evtl. min. id.pot.)
+    *   wieso $\mathbb{Z} + p \subseteq \mathbb{N^* }$ fuer $\mathbb{N^* } \ni p$ (evtl. min. id.pot.)
     *   Kopie von $\mathbb{Z}$?
     *   [this note was struck out by a check mark]
 *   Frage nicht standard PA-Modelle:
@@ -55,7 +48,7 @@ author:
 ### partial Translation
 
 *   Note:
-    *   Why is $\mathbb{Z} + p \subseteq \mathbb{N^*}$ for any $\mathbb{N^*} \ni p$ (possibly just minimal idempotent)
+    *   Why is $\mathbb{Z} + p \subseteq \mathbb{N^* }$ for any $\mathbb{N^* } \ni p$ (possibly just minimal idempotent)
     *   Copy of $\mathbb{Z}$?
     *   [this note was struck out by a check mark]
 *   Question about non-standard models of PA

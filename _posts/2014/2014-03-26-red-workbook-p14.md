@@ -1,34 +1,28 @@
 ---
 layout: post
 title: Red workbook, p14
-date: 2014-03-26 15:03:08.000000000 +01:00
+date: 2014-03-26
 categories:
 - red workbook
 - research notes archive
 tags:
 - collectionwise piecewise syndetic
 - collectionwise thick
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2014-03-26 22:03:08'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0160/
 ---
 
 ### Source
 
-[![red workbook, p14](assets/2014-03-25-10.27.44_cropped-749x1024.jpg)](http://boolesrings.org/krautzberger/files/2014/03/2014-03-25-10.27.44_cropped.jpg)
+
+<figure>
+  <a href="/assets/2014/red_workbook-p14.jpg">
+    <img alt="red workbook, p14" src="/assets/2014/red_workbook-p14.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, page 14
+  </figcaption>
+</figure>
 
 ### Transcript
 

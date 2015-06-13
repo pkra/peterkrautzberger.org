@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Red workbook, p15
-date: 2014-04-08 14:29:14.000000000 +02:00
+date: 2014-04-08
 categories:
 - red workbook
 - research notes archive
@@ -9,45 +9,43 @@ tags:
 - "*-tree"
 - central
 - collectionwise piecewise syndetic
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2014-04-08 21:30:22'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-  _wpas_skip_5613678: '1'
-  _wpas_skip_5613660: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0161/
 ---
 
 ### Source
 
-[![red workbook, p15-1](assets/2014-03-28-09.28.04_cropped-700x1024.jpg)](http://boolesrings.org/krautzberger/files/2014/04/2014-03-28-09.28.04_cropped.jpg)
+<figure>
+  <a href="/assets/2014/red_workbook-p15-1.jpg">
+    <img alt="red workbook, p15-1" src="/assets/2014/red_workbook-p15-1.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, page 15, part 1
+  </figcaption>
+</figure>
 
-[![red workbook, p15-2](assets/2014-03-28-09.28.10_cropped-734x1024.jpg)](http://boolesrings.org/krautzberger/files/2014/04/2014-03-28-09.28.10_cropped.jpg)
+<figure>
+  <a href="/assets/2014/red_workbook-p15-2.jpg">
+    <img alt="red workbook, p15-2" src="/assets/2014/red_workbook-p15-2.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, page 15, part 2
+  </figcaption>
+</figure>
 
 ### Transcript
 
 #### Left page
 
-*   Forcing moeglich?
-*   Fuer strongly summable? kaputtmachen???????
+*   Forcing möglich?
+*   Für strongly summable? kaputtmachen???????
 *   Bem (* [[circled]]) [[boxed]]
 
 #### Right page
 
 *   [4.] Eine "elementare" Charakterisierung von "zentral"
 *   4.1 Def. $A\subseteq S$ Setze
-    *   (a) $T_A = \{ (a_o, \ldots, a_{n-1} ) \in S^{< \omega} : FP(a_i)_{i=0}^{n-1} \subseteq A \}$
+    *   (a) $T_ A = \{ (a_ 0, \ldots, a_ {n-1} ) \in S^{< \omega} : FP(a_ i)_ {i=0}^{n-1} \subseteq A \}$
     *   $T_A$ Teilbaum von $S^{< \omega}$.
     *   Notiz:
         *   $A$ IP <=> $T_A$ hat unendlichen Zweig
@@ -73,7 +71,7 @@ author:
 
 *   [4.] An "elementary" Characterization of "central"
 *   4.1 Definition. For $A\subseteq S$ define:
-    *   (a) $T_A = \{ (a_o, \ldots, a_{n-1} ) \in S^{< \omega} : FP(a_i)_{i=0}^{n-1} \subseteq A \}$
+    *   (a) $T_ A = \{ (a_ 0, \ldots, a_ {n-1} ) \in S^{< \omega} : FP(a_i)_ {i=0}^{n-1} \subseteq A \}$
     *   $T_A$ subtree of $S^{< \omega}$.
     *   Note:
         *   $A$ IP <=> $T_A$ includes an infinite branch

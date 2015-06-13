@@ -1,26 +1,14 @@
 ---
 layout: post
 title: How to publish all my research notes?
-date: 2014-02-23 14:21:15.000000000 +01:00
+date: 2014-02-23\
 categories:
 - research
 - scientific community
 - updates
 tags: []
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0146/
 ---
 
 Last August, I finally finished my report for the DFG regarding my wonderful two years at Michigan. Part of this was to revisit all my old notes and publications. This has reminded me of something I've been wanting to do for a long time -- publish every last bit of research I produced during my PhD and postdoc.

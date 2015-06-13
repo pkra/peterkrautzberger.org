@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Red workbook, p6
-date: 2014-03-05 14:15:03.000000000 +01:00
+date: 2014-03-05
 categories:
 - red workbook
 - research notes archive
@@ -11,31 +11,30 @@ tags:
 - open problems
 - proximal
 - uniformly recurrent
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2014-03-23 21:13:55'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-  _wpas_skip_5613678: '1'
-  _wpas_skip_5613660: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0152/
 ---
 
 ### Source
 
-[![red workbook, p6-1](assets/2014-02-26-23.38.06_cropped-663x1024.jpg)](http://boolesrings.org/krautzberger/files/2014/03/2014-02-26-23.38.06_cropped.jpg)
+<figure>
+  <a href="/assets/2014/red_workbook-p6-1.jpg">
+    <img alt="red workbook, p6-1" src="/assets/2014/red_workbook-p6-1.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, page 6, part 1
+  </figcaption>
+</figure>
 
-[![red workbook, p6-1](assets/2014-02-26-23.38.17_cropped-721x1024.jpg)](http://boolesrings.org/krautzberger/files/2014/03/2014-02-26-23.38.17_cropped.jpg)
+<figure>
+  <a href="/assets/2014/red_workbook-p6-2.jpg">
+    <img alt="red workbook, p6-2" src="/assets/2014/red_workbook-p6-2.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, page 6, part 2
+  </figcaption>
+</figure>
+
 
 ### Transcript
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HEAR YE, HEAR YE! The Carnival of Math is in town
-date: 2014-05-08 12:38:40.000000000 +02:00
+date: 2014-05-08
 categories:
 - announcement
 - blogosphere
@@ -11,28 +11,16 @@ tags:
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2014-05-08 19:38:40'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0162/
 ---
 
 Gee, it's been quiet around here! Between MathJax release work and diaper wrangling, blogging has been neglected. Inconceivable?
 
 INCONCEIVABLE!
 
-[youtube https://www.youtube.com/watch?v=D58LpHBnvsI]
+<iframe width="100%" height="510" src="https://www.youtube.com/embed/D58LpHBnvsI" frameborder="0" allowfullscreen></iframe>
 
-The kind overlords of the math blogosphere to whom we are all but humble servants, yes, the one true and ever-so-periodical team at The Aperiodical have called upon yours truly to host a carnival. Not any carnival, but a blogging carnival of math.
+The kind overlords of the math blogosphere to whom we are all but humble servants, yes, the one true and ever-so-periodical team at [The Aperiodical](http://aperiodical.com) have called upon yours truly to host a carnival. Not any carnival, but a blogging carnival of math.
 
 So I invite to step into our tiny realm of mathblogging and help me host a grand show for all the world to see.
 

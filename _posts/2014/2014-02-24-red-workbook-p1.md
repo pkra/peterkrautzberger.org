@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Red workbook, p1
-date: 2014-02-24 14:05:29.000000000 +01:00
+date: 2014-02-24
 categories:
 - red workbook
 - research notes archive
@@ -10,29 +10,30 @@ tags:
 - Steffi Frick
 - TOPOSYM
 - WW Comfort
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2014-02-24 22:05:29'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0147/
 ---
 
 ### Source
 
-[![cover of the red workbook](assets/red-workbook-cover-216x300.jpg)](http://boolesrings.org/krautzberger/files/2014/02/red-workbook-cover.jpg)
+<figure>
+  <a href="/assets/2014/red_workbook-cover.jpg">
+    <img alt="red workbook, cover" src="/assets/2014/red_workbook-cover.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, cover
+  </figcaption>
+</figure>
 
-[![red-workbook-p1](assets/red-workbook-p1-205x300.jpg)](http://boolesrings.org/krautzberger/files/2014/02/red-workbook-p1.jpg)
+<figure>
+  <a href="/assets/2014/red_workbook-p1.jpg">
+    <img alt="red workbook, p1" src="/assets/2014/red_workbook-p1.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, p.1
+  </figcaption>
+</figure>
+
 
 ### Transcript
 
