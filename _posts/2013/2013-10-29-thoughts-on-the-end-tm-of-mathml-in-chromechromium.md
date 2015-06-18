@@ -1,29 +1,15 @@
 ---
 layout: post
 title: Thoughts on "the end (tm)" of MathML in Chrome/Chromium
-date: 2013-10-29 22:48:08.000000000 +01:00
+date: 2013-10-29
 categories:
 - mathjax
 tags:
 - chrome
 - chromium
 - mathml
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2013-11-01 15:58:38'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0140/
 ---
 
 Today, [a Chromium team member announced](https://code.google.com/p/chromium/issues/detail?id=152430#c43) that Chromium/Chrome does not plan to support MathML. (There's a bit of flaming going on on that thread so please don't fuel the flames.)

@@ -2,7 +2,7 @@
 layout: post
 title: Publishers should invest in browser development (a comment at  the scholarly
   kitchen)
-date: 2013-02-28 20:24:16.000000000 +01:00
+date: 2013-02-28
 categories:
 - crossposting
 - publishing
@@ -14,23 +14,8 @@ tags:
 - the scholarly kitchen
 - Trident
 - WebKit
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2013-03-01 06:15:03'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-  dsq_thread_id: '1111539172'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0134/
 ---
 
 > In the tradition of posting stuff I write elsewhere, here's [a comment I just posted at _the scholarly kitchen_](http://scholarlykitchen.sspnet.org/2013/02/28/ignorance-as-argument-a-chemist-alleges-publishers-exploit-typography-for-money/#comment-85434). It's not really about the article.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why academic societies should start fully fledged social networks
-date: 2013-02-04 21:46:01.000000000 +01:00
+date: 2013-02-04
 categories:
 - scientific community
 - technology
@@ -10,22 +10,8 @@ tags:
 - JMM
 - JMM 2013
 - social networks
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  _wpas_done_all: '1'
-  dsq_thread_id: '1065979920'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0132/
 ---
 
 > The Joint Math Meetings 2013 ended with the AMS's 125th Anniversary banquet. One of the things mentioned there was that the AMS is working on some form of online communities. That's great, but doesn't go far enough.
@@ -60,7 +46,7 @@ This would enable everybody to take this important step -- a bit of internet enl
 
 ## 4\. It's forward thinking
 
-Social networks are the new publishers. It's interesting to read this <a href="">post at the Scholarly Kitchen</a> which looks at societies from the reverse angle, the fact that PeerJ is moving publishing more towards a membership model is important.
+Social networks are the new publishers. It's interesting to read this [post at the Scholarly Kitchen]() which looks at societies from the reverse angle, the fact that PeerJ is moving publishing more towards a membership model is important.
 
 Publishers should fear societies since they will always be able to offer something fundamentally different -- a self-governing community.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to include MathJax in an epub3 file to work with iBooks (and possibly others)
-date: 2013-01-13 21:44:06.000000000 +01:00
+date: 2013-01-13
 categories:
 - conference
 - mathjax
@@ -14,22 +14,8 @@ tags:
 - joint mathematics meetings 2013
 - Lila Roberts
 - mathml
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  _wpas_done_all: '1'
-  dsq_thread_id: '1024552217'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0129/
 ---
 
 At the Joint Mathematics Meetings [Present and Future of Mathematics on the Web](http://jointmathematicsmeetings.org/meetings/national/jmm2013/2141_program_ss62.html) session, Lila Roberts presented an excellent demo of the good stuff you can do with iBooks author. The demo included MathJax and jsxgraph, and combined both with iBooks Author's easy, pretty layout tools. Of course, the drawback is that iBooks Author is

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MathML Forges On -- notes, AAP leftovers, and a summary
-date: 2013-11-02 19:21:05.000000000 +01:00
+date: 2013-11-02
 categories:
 - mathjax
 - mathml
@@ -11,25 +11,11 @@ tags:
 - AAP epub3 initiative
 - epub3
 - O'Reilly
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2013-11-03 04:10:26'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0141/
 ---
 
-["The end (tm)" of MathML in Chrome this week](http://boolesrings.org/krautzberger/2013/10/29/thoughts-on-the-end-tm-of-mathml-in-chromechromium/) happened to coincide with a piece I had been working on for a while now and which was published at O'Reilly's Programming blog (["MathML Forges On"](http://programming.oreilly.com/2013/11/mathml-forges-on.html)) yesterday. Originally, I had meant to write something for O'Reilly's TOC blog earlier this year, but then the TOC conference was retired (and so was the blog) so things got delayed.
+["The end (tm)" of MathML in Chrome this week](/0140/) happened to coincide with a piece I had been working on for a while now and which was published at O'Reilly's Programming blog (["MathML Forges On"](http://programming.oreilly.com/2013/11/mathml-forges-on.html)) yesterday. Originally, I had meant to write something for O'Reilly's TOC blog earlier this year, but then the TOC conference was retired (and so was the blog) so things got delayed.
 
 Then in the summer, the ever fantastic [Tzviya Siegmann](https://twitter.com/tzviyasiegman) pulled me into the [AAP's EPUB implementation project](http://publishers.org/epub3implementationproject/) and so I had a chance to be active in both the features and the accessibility groups. It was an extremely interesting experience all around so just two points. First, I am amazed at the work of the group leaders, handling the difficulties of running such a complex project, in a very short time, with a highly diverse group of participants. Second, it was an experience to, well, experience anti-trust concerns like that. While frustrating at times, I didn't find this tragic in the end; there was more to lose than to gain. But it felt strange to be on the other end of the stick, so to speak, wanting to drive publishers and reading systems to close collaboration so that we can finally get decent support for math & science in ebooks. The [AAP white paper came out](http://publishers.org/press/117/) this week.
 

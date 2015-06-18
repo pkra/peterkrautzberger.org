@@ -1,7 +1,7 @@
 ---
 layout: post
 title: kids, exponential growth and 42
-date: 2013-02-24 21:40:55.000000000 +01:00
+date: 2013-02-24
 categories:
 - Teaching
 tags:
@@ -9,23 +9,8 @@ tags:
 - exponential growth
 - NYC
 - paper
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2013-02-25 05:40:55'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-  dsq_thread_id: '1103435393'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0133/
 ---
 
 Last week, I was lucky enough to attend the [W3C workshop on ebooks](http://www.w3.org/2012/08/electronic-books/) in NYC. This allowed me to visit some old and very dear friends. In a conversation with one of their kids, I pulled out a classic that I like very much.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '3 questions in June or: LoC workshops are the best'
-date: 2013-01-20 22:09:07.000000000 +01:00
+date: 2013-01-20
 categories:
 - conference
 - technology
@@ -9,22 +9,8 @@ tags:
 - Abbey Potter
 - Library of Congress
 - Trevor Owens
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  _wpas_done_all: '1'
-  dsq_thread_id: '1037764425'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0130/
 ---
 
 > Here's another old (forgotten?) draft to make up for my lack of original writing; this should've gone out in June... Instead of posting it, I had grand plans to write about the workshop itself -- but never had the time (you know, moving across the continent, starting a new job etc., it gets in the way of things...). Why now? Well, Anthony Salvagno reminded me with [his post yesterday](http://research.iheartanthony.com/2013/01/19/amazing/) that I still had this.

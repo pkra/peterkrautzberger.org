@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's the best TeX-to-HTML or TeX-to-ePUB converter?
-date: 2013-01-05 23:00:20.000000000 +01:00
+date: 2013-01-05
 categories:
 - crossposting
 - technology
@@ -12,22 +12,8 @@ tags:
 - mathml
 - pandoc
 - tex4ht
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  _wpas_done_all: '1'
-  dsq_thread_id: '1010657675'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0127/
 ---
 
 > What do I do when I don't find the time to properly write here? I needlessly double post stuff I've written elsewhere.
@@ -73,5 +59,12 @@ the two posts that regularly drive traffic this way are about Markdown and epub.
 
 That last sentence about John McFarlane got shortened too much and doesn't quite make sense anymore. So I finally have a reason to embed the most important comic strip on the internet.
 
-![xkcd "Duty Calls", cc-by nc](assets/duty_calls.png)  
-[Duty Calls](http://xkcd.com/386/) (cc-by-nc).
+
+<figure>
+  <a href="http://xkcd.com/386/">
+    <img alt="Are you coming to bed? -- I can't. This is important. -- What?  -- Someone is _wrong_ on the internet." src="/assets/2013/duty_calls.png"/>
+  </a>
+  <figcaption>
+  [Duty Calls](http://xkcd.com/386/) (copyright xkcd, cc-by-nc).
+  </figcaption>
+</figure>

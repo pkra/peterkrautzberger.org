@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Another silly experiment: mobile apps for content delivery'
-date: 2013-03-30 20:21:59.000000000 +01:00
+date: 2013-03-30
 categories:
 - publishing
 - technology
@@ -12,26 +12,14 @@ tags:
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2013-03-31 03:38:18'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0135/
 ---
 
 > Here's another post from the category "yet another silly idea" or "don't try this at home". Keep in mind that I have absolutely no idea about app development. In short, I don't know what I'm doing or what I'm talking about. But here it goes.
 
 I've written in the past about the problems of mathematical content in ebooks (well, epub3 anyway). Ideally, we should all start producing epub3 files right now and use PDFs only for legacy. Of course, even if we had good workflows for this (which we don't), we'd still face the problems that our readers couldn't use our content as ubiquitously as PDFs. Which is a tragedy given how crappy PDFs perform on mobile devices -- which are slowly but surely becoming my favorite reading devices. (And even print media does [nothing but advertise](http://carta.info/51526/die-unterschwellige-botschaft-der-printmedien-hort-auf-uns-zu-lesen/) it)
 
-So I wrote about how you could [include MathJax in an epub3 file](http://boolesrings.org/krautzberger/2013/01/13/how-to-include-mathjax-in-an-epub3-file-to-work-with-ibooks-and-possibly-others/) and hope for the best. But this is stupid. We can reliably create mathematical content in a mobile browser thanks to MathJax, but we can't easily do so in an offline, deliverable, stand-alone format.
+So I wrote about how you could [include MathJax in an epub3 file](/0129/) and hope for the best. But this is stupid. We can reliably create mathematical content in a mobile browser thanks to MathJax, but we can't easily do so in an offline, deliverable, stand-alone format.
 
 Well, of course you can. MathJax is used in lots of mobile applications and there are even open source sample apps for developers to understand how to do this. Yet, authors don't want to be app developers. (Though especially $\LaTeX$-affine communities seriously need to make HTML the primary output format -- not print.)
 
@@ -53,6 +41,7 @@ Well, if we want to start with a really, really simple example, we start with a 
 
 *   Create a file `config.xml`.
 
+```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <widget xmlns     = "http://www.w3.org/ns/widgets"
             xmlns:gap = "http://phonegap.com/ns/1.0"
@@ -76,11 +65,13 @@ Well, if we want to start with a really, really simple example, we start with a 
         <preference name="fullscreen"       value="false" />
 
     </widget>
+```
 
 I hope it's clear what you might want to modify.
 
 *   Create a file `index.html`
 
+```html
     <!DOCTYPE html>
     <html>
         <head>
@@ -93,7 +84,7 @@ I hope it's clear what you might want to modify.
           <h1> Hello!<h1>
         </body>
     </html>
-
+```
 Again, I think it's pretty clear, no?
 
 *   Zip those two files up and upload the archive to PhoneGap Build.

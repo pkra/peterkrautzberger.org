@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Name 5 top journals you read...
-date: 2013-07-17 21:50:20.000000000 +02:00
+date: 2013-07-17
 categories:
 - publishing
 - scientific community
@@ -11,22 +11,8 @@ tags:
 - arXiv
 - journals
 - MathSciNet
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown_gmt: '2013-07-21 18:37:01'
-  _cws_is_markdown: '2'
-  _wpas_done_all: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0137/
 ---
 
 The AMS is currently running a survey (I think it's members only? But if you got an invite, make sure to take the time).

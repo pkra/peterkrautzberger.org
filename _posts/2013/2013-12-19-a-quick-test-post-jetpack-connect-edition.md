@@ -1,28 +1,14 @@
 ---
 layout: post
 title: A quick test post -- Jetpack connect edition
-date: 2013-12-19 17:25:05.000000000 +01:00
+date: 2013-12-19
 categories:
 - experimental
 - technology
 tags:
 - jetpack connect
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _wpas_done_all: '1'
-  _wpas_skip_5613678: '1'
-  _wpas_skip_5613660: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0142/
 ---
 
 You know how every blogger once in a while will have a test post that you find in your feed and then you click on it to learn more and it's already deleted?
