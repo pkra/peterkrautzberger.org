@@ -1,32 +1,18 @@
 ---
 layout: post
-title: '11 dreams for the publishing debate — #5 sharing all our work every way we
-  can'
-date: 2012-06-14 20:50:36.000000000 +02:00
+title: '11 dreams for the publishing debate — #5 sharing all our work every way we can'
+date: 2012-06-14
 categories:
 - scientific community
 tags:
 - publishing
 - publishing debate
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '726523276'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0112/
 ---
 
 > Hop, skip and a jump -- missed a day there, sorry.  
->  Each new post will start from the top, so scroll down a little if you've read the previous one -- but also check out the [first post](http://wp.me/p1Jsxx-Bs) for some motivation.
+>  Each new post will start from the top, so scroll down a little if you've read the previous one -- but also check out the [first post](/0108/) for some motivation.
 
 These are dreams. Some are realistic---perhaps just around the corner; others are way out there---basically crazy. Some will apply to everyone, others only to some. But all have diversity in mind, diversity in our expectations of who researchers are and what they do.
 

@@ -1,27 +1,14 @@
 ---
 layout: post
 title: '11 dreams for the publishing debate -- #1 fewer papers'
-date: 2012-06-09 13:29:50.000000000 +02:00
+date: 2012-06-09
 categories:
 - scientific community
 tags:
 - publishing
 - publishing debate
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '719344727'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0108/
 ---
 
 > Many moons ago, [Gowers' "alternative" model for publishing](https://gowers.wordpress.com/2011/10/31/how-might-we-get-to-a-new-model-of-mathematical-publishing/) started a new [round in the publishing debate](http://boolesrings.org/krautzberger/2011/11/26/the-recent-publishing-debate-a-timeline/) and ever since, drafts have piled up around here, some bad, some worse, some long, some short. It's time for some summer cleaning (used to say "spring cleaning", that's how long it took me) so I tried to cut out the bits that seemed not so bad. Also, I haven't posted anything in May -- how could that happen? My favorite month, mpf.  

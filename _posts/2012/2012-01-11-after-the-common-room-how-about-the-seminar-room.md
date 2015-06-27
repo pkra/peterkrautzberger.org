@@ -1,7 +1,7 @@
 ---
 layout: post
 title: After the common room, how about the seminar room?
-date: 2012-01-11 21:50:11.000000000 +01:00
+date: 2012-01-11
 categories:
 - scientific community
 - technology
@@ -11,21 +11,8 @@ tags:
 - Joint Mathematics Meeting
 - mathoverflow
 - settheorytalks
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '592858969'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0096/
 ---
 
 The most impressive community on the (specifically mathematical) intertubes is [MathOverflow](http://mathoverflow.net). Not only because [François](http://boolesrings.org/dorais) is [one of the moderators](http://mathoverflow.net/users/2000/francois-g-dorais) and [Joel](http://boolesrings.org/hamkins) is the [#1 power user](http://mathoverflow.net/users/1946/joel-david-hamkins) or because it has introduced many mathematicians to the unexplored possibilities of using the web for mathematics. No, despite it's many positive influences on mathematics (and despite some negative aspects), MathOverflow's true strength lies in the fact that its users and moderators have [paved](http://math.stackexchange.com/) the [way](http://cstheory.stackexchange.com/) for a [series](http://physics.stackexchange.com/) of [similar](http://stats.stackexchange.com/) sites on other topics, both at stackexchange (partly [in beta](http://area51.stackexchange.com/categories/7/science)) but also [independently](http://www.or-exchange.com/) -- a feat that cannot be overestimated in its long term impact on the way we and other scientists do research on- or off-line.
@@ -38,13 +25,11 @@ The way I understand it (and I'm sure François or somebody else will correct me
 
 Last week, I saw an announcement at [Low Dimensional Topology](http://ldtopology.wordpress.com/2012/01/03/bar-natan-dancso-paper-comes-with-seminar-and-video/) that Dror Bar-Natan will host [an interesting experiment](http://www.math.toronto.edu/drorbn/papers/WKO/) next term. It's a great idea: take a paper in progress, turn it into a class, add a seminar for the background and combine everything with video recordings.
 
-Last week I also happened to be in Boston where the [Joint Mathematics Meetings](http://jointmathematicsmeetings.org) were held. Even though I was there by chance, there was plenty of time and opportunity to meet people who were attending (such as François and [Felix](www.felixbreuer.net/)) which gave me an impression of this (for better or worse) enormous conference. This combination made me think whether it isn't time to take another step in taking our scientific community online. After the common room, let's move the seminar room online, making our seminars available to everyone interested!
+Last week I also happened to be in Boston where the [Joint Mathematics Meetings](http://jointmathematicsmeetings.org) were held. Even though I was there by chance, there was plenty of time and opportunity to meet people who were attending (such as François and [Felix](http://www.felixbreuer.net/)) which gave me an impression of this (for better or worse) enormous conference. This combination made me think whether it isn't time to take another step in taking our scientific community online. After the common room, let's move the seminar room online, making our seminars available to everyone interested!
 
 ### Video killed the radio star
 
-[embed]  
- http://www.youtube.com/watch?v=Iwuy4hHO3YQ  
- [/embed]
+<iframe width="100%" height="390" src="https://www.youtube.com/embed/Iwuy4hHO3YQ" frameborder="0" allowfullscreen></iframe>
 
 Here at Michigan, I've been recording all seminar talks last term (most already [available online](http://vimeo.com/pkrautzberger)) so as to allow students who could not attend to still catch up as much as possible. Since I've been [doing such recordings](http://www.math.fu-berlin.de/w/Math/WhatIsSeminar) on and off for a number of years now, it's become rather easy, giving me ample opportunity to experiment further and broadcast live.
 
@@ -54,13 +39,11 @@ As a highlight I once managed to broadcast [Hugh Woodin's Ziwet lectures](http:/
 
 One of the obvious candidates is Skype which, by now, everybody should've used at least once for a collaboration. I've used it once or twice for broadcasting a seminar, but Skype turned out to be too limited -- at most one person can be connected unless you use Windows and pay extra; besides the video quality isn't good enough for reading a blackboard (unless, of course, you pay extra for HD services).
 
-So I turned to services such as [Justin.tv](http://www.justin.tv/). It [works fine](http://boolesrings.org/krautzberger/2010/11/06/live-broadcast-on-the-web-or-why-you-should-never-have-to-miss-a-talk-again/) (I used it successfully for the Ziwet lectures). But I always needed a high-quality camcorder to get good results and the whole thing lacks the interactivity of a seminar.
+So I turned to services such as [Justin.tv](http://www.justin.tv/). It [works fine](/0038/) (I used it successfully for the Ziwet lectures). But I always needed a high-quality camcorder to get good results and the whole thing lacks the interactivity of a seminar.
 
 Then a few months ago, Google started its new social network and released an extension of its video chat (horribly called "hangouts") that offers video conferencing with up to 10 people for free.
 
-[embed]  
- http://www.youtube.com/watch?v=QN38vHZjWXw  
- [/embed]
+<iframe width="100%" height="390" src="https://www.youtube.com/embed/QN38vHZjWXw" frameborder="0" allowfullscreen></iframe>
 
 After playing around with it for a while, I got my hands on a $40 HD-webcam (even though there's no HD in g+, the webcam has a much better quality, in particular the audio). Lo and behold, it works reasonably well. Well enough anyway that I felt secure enough to broadcast it all the way to Japan a couple of weeks ago when [Sam](http://boolesrings.org/scoskey) was in town and Andrew Brooke-Taylor could enjoy his talk (even though it was 6am in Kobe).
 
@@ -78,6 +61,4 @@ Once a decent aggregator is in place, the key would be to get people to take a l
 
 So my question to you: would you consider trying this?
 
-[embed]  
- http://www.youtube.com/watch?v=jBDF04fQKtQ  
- [/embed]
+<iframe width="100%" height="390" src="https://www.youtube.com/embed/jBDF04fQKtQ" frameborder="0" allowfullscreen></iframe>

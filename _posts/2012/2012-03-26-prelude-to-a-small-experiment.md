@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prelude to a small experiment
-date: 2012-03-26 21:49:01.000000000 +02:00
+date: 2012-03-26
 categories:
 - experimental
 - research
@@ -12,21 +12,8 @@ tags:
 - microcontribution
 - polymath
 - science online 2012
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '625327738'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0102/
 ---
 
 I haven't posted anything in almost two months -- life happened. It's still a bit chaotic and maybe I'll write about it when things calm down. For now, I'm back from a productive trip to Toronto where, among other things, I had the pleasure to reconnect with [Sam](http://boolesrings.org/scoskey/), [Assaf](http://blog.assafrinot.com/) and [Mike](http://boolesrings.org/mpawliuk/).
@@ -49,7 +36,7 @@ For my second idea, I need to return to Science Online where I had a wonderful l
 
 Polymath was wonderful, but has only worked twice so far, once led by Tim Gowers, once led by Terry Tao. It might turn out that Polymath simply does not scale to the "average" researcher. But in any case, there's every reason to continue experimenting on the web. I read a great comparison recently: the state of the 20-year-old web is roughly that of the printing press 100 years after its invention -- that's 1540, mind you, when almost all prints were illegal copies of short pamphlets. Which reminds me of this:
 
-[youtube=http://www.youtube.com/watch?v=7miRCLeFSJo]
+<iframe width="100%" height="382" src="https://www.youtube.com/embed/7miRCLeFSJo" frameborder="0" allowfullscreen></iframe>
 
 ### So what's this about then?
 
@@ -65,8 +52,8 @@ So before I reach those bare bones of proof, I will take the time to tell you th
 
 Reversely, I hope you, my two readers, will be kind enough to provide some feedback. I could imagine this being in three ways:
 
-*   the mathematical side: is the result correct?
-*   the lyrical side: is the result well written?
-*   the experimental side: is this a concept you could see yourself employing?
+* the mathematical side: is the result correct?
+* the lyrical side: is the result well written?
+* the experimental side: is this a concept you could see yourself employing?
 
 Finally, I do plan to post the result of all this properly somewhere; you know, as a research note of sorts, with a proper bibliography and so forth. Maybe on figshare, maybe on the arXiv, maybe on github, not sure yet (any thoughts?). In any case, stay tuned for the first post -- the rough drafts are finished, but some fine tuning is still missing.

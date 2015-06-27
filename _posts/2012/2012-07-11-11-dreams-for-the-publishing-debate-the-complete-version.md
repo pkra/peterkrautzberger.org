@@ -1,31 +1,18 @@
 ---
 layout: post
 title: 11 dreams for the publishing debate, the complete version
-date: 2012-07-11 20:50:13.000000000 +02:00
+date: 2012-07-11
 categories:
 - scientific community
 tags:
 - publishing
 - publishing debate
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '761334215'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0119/
 ---
 
 > This is a double-post of sorts. The reasons is that it took me a very long time to write this (in fact, the first draft is marked April 18). In the process, quite a number of versions were stored by Wordpress. As you can see, I ended up splitting the original post into 11 individual ones. (Actually, I ended up extending each of the individual posts, adding another ~1000 words to it, a whopping 4000+ words.) Anyway, the point is, I wouldn't want to delete this original draft for its history should be quite interesting if I can ever get myself to make all revisions public (there's some rude ranting in there). So please excuse this double post.
-> As always, check out the [first post](http://boolesrings.org/krautzberger/2012/06/09/11-dreams-for-the-publishing-debate-1-fewer-papers/) for more context.
+> As always, check out the [first post](/0108/) for more context.
 
 These are dreams. Some are realistic---perhaps just around the corner; others are way out there---basically crazy. Some will apply to everyone, others only to some. But all have diversity in mind, diversity in our expectations of who researchers are and what they do.
 
@@ -85,7 +72,7 @@ Paradoxically, one way to publish fewer "new results" papers might be to publish
 
 Longer results could (depending on their nature) be published incrementally, with multiple, public revisions. Take the preprint idea one step further and make your writing process public. Use a revision system like github to expose the process. Allow for outside input in your writing process, in your working process. The internet makes us an intricately connected community and we can work together in one big virtual seminar. There are already excellent examples in that area. In mathematics in particular, we have the [Polymath project](http://polymathprojects.org/) or Ryan O'Donnell's [Analysis of Boolean Functions](http://analysisofbooleanfunctions.org/), a text book he's working out as a blog.
 
-But as I've argued [Polymath doesn't work for very many people](http://boolesrings.org/krautzberger/2012/04/30/waiting-for-the-polymath-revolution-thoughts-from-a-bystander/) so, again, we need many, many more projects like these so that more people have the opportunity to find a way that works for them.
+But as I've argued [Polymath doesn't work for very many people](/0107/) so, again, we need many, many more projects like these so that more people have the opportunity to find a way that works for them.
 
 There's of course a risk -- this could create a lot of noise as incrementally published results implode when data turns out to be flawed, proofs disintegrate and general anarchy rears its head! But I think it's worth the risk. Search technology is constantly improving and good scientific standards should ensure that failed research is marked accordingly. And we have so much to gain! We might be able to finally give credit for failing productively -- the main thing researchers do anyway, we fail and fail and fail until we understand what's going on. Sometimes we have to give up, but why shouldn't somebody else continue for us?
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Live blogging from #scio12'
-date: 2012-01-19 10:42:47.000000000 +01:00
+date: 2012-01-19
 categories:
 - blogosphere
 - Booles' Rings
@@ -10,20 +10,8 @@ tags:
 - Sam Kome
 - science online
 - scio12
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  dsq_thread_id: '592859125'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0097/
 ---
 
 So, I will attempt to live blog from [Science Online 2012](http://www.scienceonline2012.com). This means this post will get updated instead of writing many posts.

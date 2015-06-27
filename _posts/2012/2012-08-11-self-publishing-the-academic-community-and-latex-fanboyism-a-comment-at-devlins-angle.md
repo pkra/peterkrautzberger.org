@@ -1,8 +1,7 @@
 ---
 layout: post
-title: self-publishing, the academic community and LaTeX fanboyism -- a comment at
-  Devlin's Angle
-date: 2012-08-11 10:52:45.000000000 +02:00
+title: self-publishing, the academic community and LaTeX fanboyism -- a comment at Devlin's Angle
+date: 2012-08-11
 categories:
 - blogosphere
 - scientific community
@@ -14,20 +13,8 @@ tags:
 - LaTeX
 - mathjax
 - self-publishing
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  dsq_thread_id: '801544777'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0122/
 ---
 
 > Yet another one of those "Peter babbled too long on somebody else blog"-posts. This time at Keith Devlin's MAA column/blog [Devlin's Angle](http://devlinsangle.blogspot.com/2012/08/the-future-of-textbook-publishing-is-us.html)
@@ -52,4 +39,4 @@ After all, with the adoption of MathML3 in two critical standards (html5 and epu
 
 > Thanks to [this discussion on g+](https://plus.google.com/u/0/102694188490946876191/posts/R7Kv6ZXdQsZ), here's I just had to add another comment
 
-One small addendum. Here's such an experiment going all the way to XML: Rob Bezeer's Linear Algebra book http://linear.ups.edu/index.html which (due to it's flexibility) is part of IDPF's official ebpub3 sample repository https://code.google.com/p/epub-samples/
+One small addendum. Here's such an experiment going all the way to XML: [Rob Beezer's Linear Algebra book](http://linear.ups.edu/index.html) which (due to it's flexibility) is part of IDPF's official [epub3 sample repository](https://code.google.com/p/epub-samples/)

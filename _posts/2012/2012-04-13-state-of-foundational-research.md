@@ -1,7 +1,7 @@
 ---
 layout: post
 title: state of foundational research
-date: 2012-04-13 22:21:01.000000000 +02:00
+date: 2012-04-13
 categories:
 - scientific community
 - thoughts on mathematics
@@ -13,21 +13,8 @@ tags:
 - mathbabe
 - Nassif Ghoussoub
 - TImothy Gowers
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '648614204'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0105/
 ---
 
 I was catching up on some fun google-reader reading today but found with a depressing combination of content.
@@ -52,7 +39,7 @@ But then I continue reading.
 
 And find [mathbabe discussing](http://mathbabe.org/2012/04/13/should-we-have-a-ratings-agency-for-scientific-theories/) an idea put forth by Harvard physicist Abraham Loeb in _Nature_ to have ratings agencies for scientific theories.
 
-And I find [Tim Gowers discussing](http://gowers.wordpress.com/2012/04/13/a-brief-epsrc-update/) that last year's scare is now reality -- EPSRC has essentially cancelled pure math postdoc fellowships. (This was and is an embarrassment and failure of the leaders of the UK math community, really. How could hte major grant agency make such major policy changes without anyone noticing?)
+And I find [Tim Gowers discussing](http://gowers.wordpress.com/2012/04/13/a-brief-epsrc-update/) that last year's scare is now reality -- EPSRC has essentially cancelled pure math postdoc fellowships. (This was and is an embarrassment and failure of the leaders of the UK math community, really. How could the major grant agency make such major policy changes without anyone noticing?)
 
 And then I start to remember other posts.
 

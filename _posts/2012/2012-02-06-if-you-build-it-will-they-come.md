@@ -1,28 +1,15 @@
 ---
 layout: post
 title: If you build it, will they come?
-date: 2012-02-06 23:08:49.000000000 +01:00
+date: 2012-02-06
 categories:
 - scientific community
 - thoughts on mathematics
 tags:
 - publishing debate
 - Tim Gowers
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '592834612'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0101/
 ---
 
 Last week, Tim Gowers published another post on the publishing debate entitled ["Abstract thoughts about online review systems"](http://gowers.wordpress.com/2012/02/02/abstract-thoughts-about-online-review-systems/).
@@ -61,7 +48,7 @@ What is particularly strange about this failure is the fact that many science bl
 
 ### If people do it, you can build it
 
-In the summer of 2007, [researchblogging.org](http://researchblogging.org/news/?page_id=8) went online. If you have ever visited a science blog, you might have come across its well known badge (I finally got around to it [here](http://boolesrings.org/krautzberger/2012/01/26/groups-in-beta-mathbbn/)).
+In the summer of 2007, [researchblogging.org](http://researchblogging.org/news/?page_id=8) went online. If you have ever visited a science blog, you might have come across its well known badge (I finally got around to it [here](/0099/)).
 
 It's a very simple service, really. When you're blogging about a peer-reviewed work, you go and grab a bit of javascript to display a citation. In return, your post is aggregated at researchblogging.org, reaching a much wider audience. Reversely, people interested only in blog posts about peer-reviewed work can find all these posts in one central location.
 

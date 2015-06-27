@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Waiting for the Polymath revolution -- thoughts from a bystander
-date: 2012-04-30 18:43:18.000000000 +02:00
+date: 2012-04-30
 categories:
 - scientific community
 - thoughts on mathematics
@@ -12,21 +12,8 @@ tags:
 - polymath
 - Polymath projects
 - Tim Gowers
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '670764313'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0107/
 ---
 
 [Tim Gowers](https://gowers.wordpress.com/2012/04/23/polymath-paper-published/) has hinted at a revival of the fifth Polymath project. Which brings something back from the bottom of my draft folder.
@@ -47,7 +34,16 @@ To return to the above quote, what continues to bug me is the last half-sentence
 
 > [...] since then the Polymath Project has grown to describe a particular process of using an online collaboration to solve any math problem.
 
-[![O RLY?](assets/298719507_3bdcef289d.jpg)](http://www.flickr.com/photos/shianux/298719507/ "O RLY? by shianux, on Flickr")
+
+<figure>
+  <a href="http://www.flickr.com/photos/shianux/298719507/">
+    <img alt="O RLY?" src="/assets/2012/orly.jpg"/>
+  </a>
+  <figcaption>
+  O RLY? by shianux, on Flickr
+  </figcaption>
+</figure>
+
 
 ### Isn't Polymath dead?
 
@@ -87,7 +83,7 @@ Besides the fact that only Gowers and Tao seem to be able to bring a Polymath pr
 
 *   Polymath does not seem to scale in terms of difficulty.
 
-The few Polymath projects that have been attempted have all had a reasonably high level of complexity. Additionally, the tendency seems to be towards more complicated research questions rather than simpler ones. Maybe this is MathOverflow's fault for taking care of so many "easy" questions, i.e., questions somebody else simply seems to have the answer to. Additionally, people on MO often spend a considerable amount of work on solving questions -- an effort that could just easily be considered a [micro-contribution](http://boolesrings.org/krautzberger/2012/04/02/one-day-in-colorado-or-strongly-summable-ultrafilters-are-rapid/) if we had a platform for these.
+The few Polymath projects that have been attempted have all had a reasonably high level of complexity. Additionally, the tendency seems to be towards more complicated research questions rather than simpler ones. Maybe this is MathOverflow's fault for taking care of so many "easy" questions, i.e., questions somebody else simply seems to have the answer to. Additionally, people on MO often spend a considerable amount of work on solving questions -- an effort that could just easily be considered a [micro-contribution](/0103/) if we had a platform for these.
 
 *   The Polymath projects are not understood.
 

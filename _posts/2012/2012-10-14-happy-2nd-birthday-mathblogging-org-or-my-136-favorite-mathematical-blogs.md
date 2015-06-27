@@ -1,30 +1,17 @@
 ---
 layout: post
 title: Happy 2nd Birthday, Mathblogging.org or My 136 favorite mathematical blogs
-date: 2012-10-14 18:29:12.000000000 +02:00
+date: 2012-10-14
 categories:
 - blogosphere
 - mathblogging.org
 - technology
 tags: []
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '885398394'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0125/
 ---
 
-Mathblogging.org is nearing its 2nd birthday. We've passed the second anniversary of the domain registration and [my own blog post](http://boolesrings.org/krautzberger/2011/01/05/introducing-mathblogging-org/) is having it's second anniversary soon. Plenty of reason to write a post about this.
+Mathblogging.org is nearing its 2nd birthday. We've passed the second anniversary of the domain registration and [my own blog post](/0045/) is having it's second anniversary soon. Plenty of reason to write a post about this.
 
 We (Fred, Felix and I) recently decided to put the [Mathblogging.org Weekly Picks](http://mathblogging.wordpress.com/category/weekly-picks/) on hold. It was a bit of a sad moment for us, but for something we never planned on doing, it's been quite a ride these [past 18 months](http://mathblogging.wordpress.com/2011/02/21/weekly-picks/) and I'd like to think we've helped people a little to get a peek into this living, breathing chaos that is the mathematical blogoshpere.
 
@@ -51,7 +38,7 @@ This would not be a problem if there were at least some influential researcher b
 
 Back to the second part of the title of this post. Since the Weekly Picks are soon to be retired, I've had to re-arrange my reading habits. You see, I used to read the mathblogging.org feeds -- simple as that. Now that the Weekly Picks have taken a leave of absence, I don't have to read all the blogs anymore and I found myself not reading any math blogs anymore!
 
-So I grabbed the opml file that we kindly [provide at mathblogging.org](http://www.mathblogging.org/database-opml.xml) and imported it into Google reader, filtering it down to 136 blogs that I either really like or feel like I should keep an eye on (say, Terry Tao's posts; I don't enjoy them as a I used to yet I need to at least glance over it). You can find the correpsonding opml below, if you care.
+So I grabbed the opml file that we kindly [provide at mathblogging.org](https://web.archive.org/web/*/http://www.mathblogging.org/database-opml.xml) and imported it into Google reader, filtering it down to 136 blogs that I either really like or feel like I should keep an eye on (say, Terry Tao's posts; I don't enjoy them as a I used to yet I need to at least glance over it). You can find the correpsonding opml below, if you care.
 
 These ~136 blogs will give you some overview over what the mathematical blogosphere has to offer. But not that much -- it's fully and totally biased (if you want to force me to check your blog, go add it to [ScienceSeeker](http://scienceseeker.org) where I'm an editor for mathematics). You can, for example, see my clear affinity for Italian math bloggers. Or you can see that I don't care that much for tumlbr-rebloggers (it's no that they are bad, but it's too much noise).
 
@@ -71,7 +58,7 @@ And now, the annotated list of the blogs I do read, most of which I simply love 
 
 Mind you there are a number of blogs missing from that list. For example, all of Booles' Rings since those posts have a different status for me personally. But if you ever needed an infusion of blogs, here you go.
 
-[The OPML file (on Dropbox)](https://dl.dropbox.com/u/4999562/krautzberger_mathblogs_2012_10.xml)
+[The OPML file](/assets/2012/krautzberger_mathblogs_2012_10.xml)  <s>(on Dropbox)<s>
 
 *   [+Plus magazine](http://plus.maths.org/content/Blog), the more traditional media within the UK maths blogosphere, but accept submissions. I admit, I got quite tired of the repitive Olympics post this summer, but no reason not to keep checking it.
 *   [0xDE](http://11011110.livejournal.com/), one of the few anonymous, researcher bloggers and a marvelous Wikipedia editor.

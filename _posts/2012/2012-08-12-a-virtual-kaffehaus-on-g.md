@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A virtual Kaffehaus on g+
-date: 2012-08-12 21:24:12.000000000 +02:00
+date: 2012-08-12
 categories:
 - experimental
 - scientific community
@@ -9,21 +9,8 @@ categories:
 tags:
 - google+
 - hangouts
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '803100614'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0123/
 ---
 
 > So that went well.

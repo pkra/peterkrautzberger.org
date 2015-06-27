@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Groups in $\beta \mathbb{N}$
-date: 2012-01-26 00:07:16.000000000 +01:00
+date: 2012-01-26
 categories:
 - expository
 - research
@@ -14,30 +14,17 @@ tags:
 - Neil Hindman
 - researchblogging.org
 - Yevhen Zelenyuk
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '592859363'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0099/
 ---
 
-Well, if you haven't read [my recent introspection](http://boolesrings.org/krautzberger/2012/01/24/mostly-im-a-terrible-speaker/), consider yourself warned: the video below is, in my humble opinion, a rather poor talk I gave at our Logic Seminar here at the University of Michigan.
+Well, if you haven't read [my recent introspection](/0098/), consider yourself warned: the video below is, in my humble opinion, a rather poor talk I gave at our Logic Seminar here at the University of Michigan.
 
-[vimeo http://vimeo.com/35611686]
+<iframe src="https://player.vimeo.com/video/35611686" width="100%" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Nevertheless, I would like to offer a short transcript of the proof involved, just for posterity and to improve the talk.
 
-This is a also my first ever post attempting to get something on researchblogging.org. Namely, the results I was giving the talk about are by [Neil Hindman and John Pym, 1984](http://www.papercritic.com/mendeley-pub/fc2b9d20-c333-11e0-8163-0024e8453de6).
+This is a also my first ever post attempting to get something on researchblogging.org. Namely, the results I was giving the talk about are by [Neil Hindman and John Pym, 1984](http://dx.doi.org/10.1007/BF02573448).
 
 It's a funny thing. Last year, [Tim Gowers created quite a discussion](http://gowers.wordpress.com/2011/10/31/how-might-we-get-to-a-new-model-of-mathematical-publishing/) about reforming publishing.
 
@@ -49,15 +36,15 @@ As far as I know only a few things are known of the groups in $\beta \mathbb{N}$
 
 The most famous result is probably Zelenyuk's Theorem
 
-> **Theorem (Zelenyuk, 1997)** There are no non-trivial groups in $\beta \mathbb{N}$. More generally, if $G$ is a group without non-trivial subgroups, then $\beta G$ contains no non-trivial subgroups.
+> **Theorem (Zelenyuk, 1997)** There are no non-trivial finite groups in $\beta \mathbb{N}$. More generally, if $G$ is a group without non-trivial finite subgroups, then $\beta G$ contains no non-trivial finite subgroups.
 
 This is a somewhat difficult result in the sense that there's no easy proof written up anywhere and some of the technical details are messy even though they are not complicated (though I can't imagine how to come up with those).
 
-In any case, [Zelenyuk's result](http://www.papercritic.com/mendeley-pub/fc2eaa60-c333-11e0-8163-0024e8453de6) seems to have been the only important results since the paper by Hindman and Pym from 1984.
+In any case, [Zelenyuk's result](http://dx.doi.org/10.1007%2FPL00005907) seems to have been the only important results since the paper by Hindman and Pym from 1984.
 
 On the side, a very important open question in extension to Zelenyuk's Theorem is whether $\beta \mathbb{N}$ can have any non-idempotent elements of finite-order (I stated this **incorrectly at the end of my talk** as "non-trivial finite semigroups" -- catch me giving an example of a finite semigroup in the middle of the talk where I state that you'll find lots of idempotents in $\mathbb{N}$, say $e, f$, with $e+f =f +e =f$ -- perfect two element semigroup right there. Of course, nobody caught that; it was a bad talk after all).
 
-This open question has [funny consequences](http://www.papercritic.com/mendeley-pub/4dca14d0-c665-11df-a164-0024e8453de6) in Ramsey Theory in the form of a very intuitive partition theorem but it originally showed up in [Dona Strauss's seminal result](http://www.papercritic.com/mendeley-pub/8a1516f0-6d0b-11df-afb8-0026b95d30b2) that continuous homomorphisms from $\beta \mathbb{N}$ to $\mathbb{N}^\star$ must have finite image. If such images are always constant, there won't be a non-trivial finite-rank element that isn't idempotent (the contraposition is easier: if you find one, map 1 to it and extend homomorphically).
+This open question has [funny consequences](http://www.papercritic.com/mendeley-pub/4dca14d0-c665-11df-a164-0024e8453de6) in Ramsey Theory in the form of a very intuitive partition theorem but it originally showed up in [Dona Strauss's seminal result](http://doi.org/10.1112/jlms/s2-46.3.463) that continuous homomorphisms from $\beta \mathbb{N}$ to $\mathbb{N}^\star$ must have finite image. If such images are always constant, there won't be a non-trivial finite-rank element that isn't idempotent (the contraposition is easier: if you find one, map 1 to it and extend homomorphically).
 
 ### The main theorem
 
@@ -117,7 +104,7 @@ If we think of $\mathbb{N}$ as $FS(2^n)$, then it becomes clear how we should st
 *   Pick pairwise disjoint $A_i \in q_i$ partitioning $A$, i.e., $$ \dot \bigcup_{i < n} A_i = A.$$
 *   Then define a map as follows.
 *   Map $2^n$ to $Q_i$ if and only if $2^n \in A_i$ -- this is well defined.
-*   Extend this map to $FS(2^n)$ by mapping $\sum_{i\in s} 2^i$ to $\prod_{i\in s} Q_i$ -- as product in the natural order.
+*   Extend this map to $FS(2^n)$ by mapping $\sum_ {i\in s} 2^i$ to $\prod_ {i\in s} Q_i$ -- as product in the natural order.
 *   Extend this map continuously to $\beta \mathbb{N}$.
 
 Alright. The extension to finite sums and then to $\beta \mathbb{N}$ is really totally standard (yes, another standard-fact kind of thing).
@@ -137,6 +124,6 @@ Of course, I must admit that I don't fully know how standard that knowledge was 
 
 Despite my poor talk.
 
-<span style="float: left; padding: 5px;">[![ResearchBlogging.org](assets/rb2_large_gray.png)](http://www.researchblogging.org)</span>
+---
 
 <span class="Z3988" title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.jtitle=Semigroup+Forum&rft_id=info%3Adoi%2F10.1007%2FBF02573448&rfr_id=info%3Asid%2Fresearchblogging.org&rft.atitle=Free+groups+and+semigroups+in+%CE%B2N&rft.issn=0037-1912&rft.date=1984&rft.volume=30&rft.issue=1&rft.spage=177&rft.epage=193&rft.artnum=http%3A%2F%2Fwww.springerlink.com%2Findex%2F10.1007%2FBF02573448&rft.au=Hindman%2C+N.&rft.au=Pym%2C+J.&rfe_dat=bpr3.included=1;bpr3.tags=Mathematics">Hindman, N., & Pym, J. (1984). Free groups and semigroups in βN <span style="font-style: italic;">Semigroup Forum, 30</span> (1), 177-193 DOI: [10.1007/BF02573448](http://dx.doi.org/10.1007/BF02573448)</span>

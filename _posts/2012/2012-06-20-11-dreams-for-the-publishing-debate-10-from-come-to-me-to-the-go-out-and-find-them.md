@@ -1,27 +1,14 @@
 ---
 layout: post
 title: '11 dreams for the publishing debate — #10 from come-to-me to the go-out-and-find-them'
-date: 2012-06-20 22:35:40.000000000 +02:00
+date: 2012-06-20
 categories:
 - scientific community
 tags:
 - publishing
 - publishing debate
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: ''
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0117/
 ---
 
 > I got two more, just two more...  

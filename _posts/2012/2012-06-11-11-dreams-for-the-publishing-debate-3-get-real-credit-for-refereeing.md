@@ -1,31 +1,18 @@
 ---
 layout: post
 title: '11 dreams for the publishing debate — #3 get real credit for refereeing'
-date: 2012-06-11 19:03:55.000000000 +02:00
+date: 2012-06-11
 categories:
 - scientific community
 tags:
 - publishing
 - publishing debate
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '721982297'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0110/
 ---
 
 > Meanwhile back on the ranch...  
->  Each new post will start from the top, so scroll down a little if you've read the previous one -- but also check out the [first post](http://wp.me/p1Jsxx-Bs) for some motivation.
+>  Each new post will start from the top, so scroll down a little if you've read the previous one -- but also check out the [first post](/0108/) for some motivation.
 
 These are dreams. Some are realistic---perhaps just around the corner; others are way out there---basically crazy. Some will apply to everyone, others only to some. But all have diversity in mind, diversity in our expectations of who researchers are and what they do.
 

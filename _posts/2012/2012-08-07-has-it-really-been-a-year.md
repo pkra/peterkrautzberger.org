@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Has it really been a year?
-date: 2012-08-07 10:23:49.000000000 +02:00
+date: 2012-08-07
 categories:
 - announcement
 - Booles' Rings
@@ -12,17 +12,7 @@ tags:
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0121/
 ---
 
 > This is a joined post with Sam -- go [comment at his place](http://boolesrings.org/scoskey/has-it-really-been-a-year/)!
@@ -39,7 +29,7 @@ We basically saw two major problems with math home pages. The first is what we c
 
 The second issue we wanted to tackle we called "the Zeilberger problem". The root of this problem is that mathematicians have been using the internet for a very long time. Since the early nineties we have actively used the web for preprints, for notes, for lecture notes, for research material and so on. But meanwhile, the internet has been changing and we have not changed with it. A Mathematician such as [Doron Zeilberger](http://www.math.rutgers.edu/~zeilberg/) can get away with that because of his stature. But other researchers really have no excuse when their web site looks as if it was written in 1992---and moreover makes it extremely hard to interact with the researcher, i.e., uses none of what modern web technology has to offer in terms of interactivity, exchange and generally presentation of content. The web is much more than just hand-written HTML with GIF-tiled backgrounds.
 
-And so we registered a domain and set up shop embracing the wonderful [wordpress](http://www.wordpress.org). It [took a while](http://boolesrings.org/krautzberger/2011/08/22/whats-in-a-name/) to come up with a name but we chose Booles' Rings and boolesrings.org.
+And so we registered a domain and set up shop embracing the wonderful [wordpress](http://www.wordpress.org). It [took a while](/whats-in-a-name/) to come up with a name but we chose Booles' Rings and boolesrings.org.
 
 It's been quite a ride in the last year. We started out with a group of really just three, including the two of us and Katie Thompson. We slowly expanded to arrive at roughly 10 users, which is not too shabby considering that set theorists aren't exactly known to be the most outgoing of people. And while we could not have predicted how it would look today, the outcome exhibits exactly what we had hoped: the members of Booles' Rings are using their sites in quite a diverse fashion.
 

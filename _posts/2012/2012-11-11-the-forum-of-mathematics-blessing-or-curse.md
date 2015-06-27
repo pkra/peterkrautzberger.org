@@ -1,29 +1,17 @@
 ---
 layout: post
 title: The Forum of Mathematics, blessing or curse?
-date: 2012-11-11 21:52:58.000000000 +01:00
+date: 2012-11-11
 categories:
 - scientific community
 - thoughts on mathematics
 tags:
 - publishing debate
 status: publish
-type: post
-published: true
-meta:
-  _edit_last: '3'
-  dsq_thread_id: '924006059'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0126/
 ---
 
-> When the Forum of Mathematics was announced [on Tim Gowers's blog](https://gowers.wordpress.com/2012/07/02/a-new-open-access-venture-from-cambridge-university-press/) I mentioned this on twitter and I got a couple of replies asking what my thoughts on it were. Well, this post has been stuck in my draft folder for too long, long enough for these journals to be open for submissions, blimey.
+> When the Forum of Mathematics was announced [on Tim Gowers's blog](https://gowers.wordpress.com/2012/07/02/a-new-open-access-venture-from-cambridge-university-press/) I mentioned this on twitter and I got a couple of replies asking what my thoughts on it were. Well, this post has been stuck in my draft folder for too long, long enough for these journals to   be open for submissions, blimey.
 > 2012-11-19 quick correction. People have pointed out in the comments, that **Sigma** is already going to be a regular old journal (see Gower's post, comparing it to Combinatorica). I'm not yet sure if that makes it better or worse.
 
 ### Open thingamajig
@@ -32,7 +20,7 @@ The [Forum of Mathematics](https://en.wikipedia.org/wiki/Forum_of_Mathematics) i
 
 These are two journals in mathematics. So far, so boring. They are [open access](https://en.wikipedia.org/wiki/Open_access_journal) journals, more precisely _Gold_ Open Access, i.e., you pay a fee once, when your publication is accepted, and then your publication is published and available under a permissive license (creative commons in this case).
 
-My two regular readers may know that I'm a big fan of Gold OA as a mid-term solution to our primary publishing problem -- which is non-free publishing. A lot of people criticize the level of fees that Gold OA publishing comes with. For example, the biggest OA journal and the first "mega journal", [PLOS One](https://en.wikipedia.org/wiki/Plos_one), charges a whopping \$1300 (there are institutional rebates and you can ask for a waiver) -- and that's cheap compared to Springer and Elsevier. But \$1300 is something that most mathematicians do not get their hands on in their grant proposals right now. There are numerous explanations why this isn't the figure that you should be concerned, e.g., how your library saves money so that your department can fund your fee -- and then you usually get the return argument "not everybody works in a department"; and that's all good and fair and not the topic for this post.
+My two regular readers may know that I'm a big fan of Gold OA as a mid-term solution to our primary publishing problem -- which is non-free publishing. A lot of people criticize the level of fees that Gold OA publishing comes with. For example, the biggest OA journal and the first "mega journal", [PLOS One](https://en.wikipedia.org/wiki/Plos_one), charges a whopping <span>$</span>1300 (there are institutional rebates and you can ask for a waiver) -- and that's cheap compared to Springer and Elsevier. But <span>$</span>1300 is something that most mathematicians do not get their hands on in their grant proposals right now. There are numerous explanations why this isn't the figure that you should be concerned, e.g., how your library saves money so that your department can fund your fee -- and then you usually get the return argument "not everybody works in a department"; and that's all good and fair and not the topic for this post.
 
 It doesn't matter.
 
@@ -56,7 +44,7 @@ So what are my thoughts on it? My first thought was "thank god, finally somebody
 
 But my immediate second reaction was: "WTF?!?!". For me at least, the idea of PLoS ONE is ruined once you add something like **Pi**.
 
-The whole idea of PLoS ONE is to leave the bickering of editorial boards behind. PLoS is investing quite a bit of money (now that they actually make a profit off PLoS ONE) in the fundamental idea that is PLoS ONE: editorial boards are not very good at identifying what's important research; they are simply bad at it. (I've ranted about editorial boards as the core problem of academic publishing before, [no](http://boolesrings.org/krautzberger/2012/06/27/11-dreams-for-the-publishing-debate-11-a-democratization-of-the-communities/)?)
+The whole idea of PLoS ONE is to leave the bickering of editorial boards behind. PLoS is investing quite a bit of money (now that they actually make a profit off PLoS ONE) in the fundamental idea that is PLoS ONE: editorial boards are not very good at identifying what's important research; they are simply bad at it. (I've ranted about editorial boards as the core problem of academic publishing before, [no](/0118/)?)
 
 So PLoS ONE goes the other way and says "We don't care about importance, you check that it's science and let the community decide what's important". How do they do that? Well, for the longest time they didn't do much, they experimented, tried what they could with their means. But what you see now is a serious investment in [alternative metrics](http://altmetrics.org), i.e., in means to aggregate the impact that an individual paper has in the community. Not the impact that some editorial board members think the paper _should_ have in their community, no the actual, real impact. The impact of ""How many people get their hands on it?", How many people read it?", "How many people leave a comment, talk about it on social networks, on blogs, on whatever else you can think of?". This is the true democratization of acadmic publishing: to realize that editorial boards are very good at organizing fact-checking but they are unnecessary for identifying what is important to the community. At first sight, this might be more prevalent in the sciences, but in reality it is extremely prevalent in mathematics as well. Mainstream mathematics dictates what's important (Field's medal anyone?) and non-mainstream fields can take it as an excuse for their own lack of impact.
 

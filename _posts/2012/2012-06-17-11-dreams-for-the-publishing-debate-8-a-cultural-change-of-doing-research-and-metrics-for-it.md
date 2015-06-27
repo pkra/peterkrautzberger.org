@@ -2,31 +2,18 @@
 layout: post
 title: '11 dreams for the publishing debate — #8 a cultural change of doing research
   (and metrics for it)'
-date: 2012-06-17 19:08:34.000000000 +02:00
+date: 2012-06-17
 categories:
 - scientific community
 tags:
 - publishing
 - publishing debate
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '730310447'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0115/
 ---
 
 > On and on and on...  
->  Each new post will start from the top, so scroll down a little if you've read the previous one -- but also check out the [first post](http://wp.me/p1Jsxx-Bs) for some motivation.
+>  Each new post will start from the top, so scroll down a little if you've read the previous one -- but also check out the [first post](/0108/) for some motivation.
 
 These are dreams. Some are realistic---perhaps just around the corner; others are way out there---basically crazy. Some will apply to everyone, others only to some. But all have diversity in mind, diversity in our expectations of who researchers are and what they do.
 
@@ -54,7 +41,7 @@ And with credit, I don't mean vouchers for some bookstore. Surveys must be first
 
 Refereeing is research, just like surveys and "new results". It might seem redundant after dream #2 (and in many ways I would say that's the goal), but given the importance of refereeing right now and the way we do it, it's separate.
 
-Currently, good refereeing seems nearly impossible. With the increase of publications we can't even catch up with what's happening in our own narrowly focused interests -- how, then, can we expect to referee properly? Sam tells his own funny but sad [story of refereeing honestly](http://boolesrings.org/scoskey/peer-review-failure/) but the problem runs deep. Good referees are hard to find and when you find them, they could be writing a paper instead of refereeing -- and why should they not?
+Currently, good refereeing seems nearly impossible. With the increase of publications we can't even catch up with what's happening in our own narrowly focused interests -- how, then, can we expect to referee properly? Sam tells his own funny but sad [story of refereeing honestly](/0107/) but the problem runs deep. Good referees are hard to find and when you find them, they could be writing a paper instead of refereeing -- and why should they not?
 
 There are many ways we could improve refereeing. We can (and should) split up the different stages of refereeing (reference checking, correctness checking on different levels, opinion gathering etc), we should open pre- and post-publication peer review (and in-between peer review), we should use alternative methods to collect these reviews (instead of review journals that have at most one opinion per paper).
 
