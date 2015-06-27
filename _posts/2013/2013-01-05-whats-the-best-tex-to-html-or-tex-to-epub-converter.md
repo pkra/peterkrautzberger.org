@@ -65,6 +65,6 @@ That last sentence about John McFarlane got shortened too much and doesn't quite
     <img alt="Are you coming to bed? -- I can't. This is important. -- What?  -- Someone is _wrong_ on the internet." src="/assets/2013/duty_calls.png"/>
   </a>
   <figcaption>
-  [Duty Calls](http://xkcd.com/386/) (copyright xkcd, cc-by-nc).
+  <a href="http://xkcd.com/386/">Duty Calls</a> (&copy;  xkcd, cc-by-nc).
   </figcaption>
 </figure>

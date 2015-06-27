@@ -274,4 +274,4 @@ Anyway, let's daringly assume you have an epub3 with your xhtml+mathml content.
 
 * * *
 
-This text is [available as an epub3 file](https://dl.dropbox.com/u/4999562/How%20to%20include%20MathJax%20in%20an%20epub3%20file%20to%20work%20with%20iBooks%20%28and%20possibly%20others%29.epub) which includes MathJax and should run on iOS devices.
+This text is [available as an epub3 file](/assets/2013/How%20to%20include%20MathJax%20in%20an%20epub3%20file%20to%20work%20with%20iBooks%20%28and%20possibly%20others%29.epub) which includes MathJax and should run on iOS devices.
