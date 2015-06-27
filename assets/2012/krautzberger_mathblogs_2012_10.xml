@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>Peter's Mathblogging subscriptions</title>
+    </head>
+    <body>
+        <outline title="Mathblogging.org" text="Mathblogging.org">
+            <outline text="+plus blog" title="+plus blog" type="rss"
+                xmlUrl="http://plus.maths.org/content/blog/rss.xml" htmlUrl="http://plus.maths.org/content/Blog"/>
+            <outline text="0xDE" title="0xDE" type="rss"
+                xmlUrl="http://www.livejournal.com/users/11011110/data/rss" htmlUrl="http://11011110.livejournal.com/"/>
+            <outline text="21st Century Educator"
+                title="21st Century Educator" type="rss"
+                xmlUrl="http://davidwees.com/discuss/feed" htmlUrl="http://davidwees.com/discuss"/>
+            <outline text="A CS Professor's Blog"
+                title="A CS Professor's Blog" type="rss"
+                xmlUrl="http://teachingintrotocs.blogspot.com/feeds/posts/default" htmlUrl="http://teachingintrotocs.blogspot.com/"/>
+            <outline text="A kind of library" title="A kind of library"
+                type="rss"
+                xmlUrl="http://andrescaicedo.wordpress.com/feed/" htmlUrl="http://andrescaicedo.wordpress.com"/>
+            <outline text="ACME Science" title="ACME Science" type="rss"
+                xmlUrl="http://acmescience.com/feed/" htmlUrl="http://acmescience.com"/>
+            <outline text="Alex Bellos" title="Alex Bellos" type="rss"
+                xmlUrl="http://alexbellos.com/?feed=rss2" htmlUrl="http://alexbellos.com"/>
+            <outline text="Algorithmic Game-Theory/Economics"
+                title="Algorithmic Game-Theory/Economics" type="rss"
+                xmlUrl="http://agtb.wordpress.com/feed/" htmlUrl="http://agtb.wordpress.com"/>
+            <outline text="amazings.es (math)"
+                title="amazings.es (math)" type="rss"
+                xmlUrl="http://amazings.es/categorias/matematicas/feed/" htmlUrl="http://amazings.es"/>
+            <outline text="AMS Graduate Student Blog"
+                title="AMS Graduate Student Blog" type="rss"
+                xmlUrl="http://mathgradblog.williams.edu/feed/" htmlUrl="http://mathgradblog.williams.edu"/>
+            <outline text="AMS News &amp; Events"
+                title="AMS News &amp; Events" type="rss"
+                xmlUrl="http://www.ams.org/cgi-bin/content/news_items.cgi?rss=1" htmlUrl="http://www.ams.org"/>
+            <outline text="Angles of Reflection"
+                title="Angles of Reflection" type="rss"
+                xmlUrl="http://anglesofreflection.blogspot.com/feeds/posts/default" htmlUrl="http://anglesofreflection.blogspot.com/"/>
+            <outline text="AngryMath" title="AngryMath" type="rss"
+                xmlUrl="http://www.angrymath.com/feeds/posts/default" htmlUrl="http://www.angrymath.com/"/>
+            <outline text="Annoying Precision"
+                title="Annoying Precision" type="rss"
+                xmlUrl="http://qchu.wordpress.com/feed/" htmlUrl="http://qchu.wordpress.com"/>
+            <outline text="Area 777" title="Area 777" type="rss"
+                xmlUrl="http://conan777.wordpress.com/feed/" htmlUrl="http://conan777.wordpress.com"/>
+            <outline text="Ask a Mathematician / Ask a Physicist"
+                title="Ask a Mathematician / Ask a Physicist" type="rss"
+                xmlUrl="http://www.askamathematician.com/feed/" htmlUrl="http://www.askamathematician.com"/>
+            <outline text="Azimuth" title="Azimuth" type="rss"
+                xmlUrl="http://johncarlosbaez.wordpress.com/feed/" htmlUrl="http://johncarlosbaez.wordpress.com"/>
+            <outline text="bit-player" title="bit-player" type="rss"
+                xmlUrl="http://bit-player.org/feed" htmlUrl="http://bit-player.org"/>
+            <outline text="blanchetBlog" title="blanchetBlog" type="rss"
+                xmlUrl="http://feeds.feedburner.com/Blanchetblog" htmlUrl="http://blanchetblog.net"/>
+            <outline text="Brokenairplane RSS Feed"
+                title="Brokenairplane RSS Feed" type="rss"
+                xmlUrl="http://www.brokenairplane.com/feeds/posts/default" htmlUrl="http://www.brokenairplane.com/"/>
+            <outline text="Bubbles Bad; Ripples Good"
+                title="Bubbles Bad; Ripples Good" type="rss"
+                xmlUrl="http://williewong.wordpress.com/feed/" htmlUrl="http://williewong.wordpress.com"/>
+            <outline text="Busynessgirl" title="Busynessgirl" type="rss"
+                xmlUrl="http://busynessgirl.com/feed/" htmlUrl="http://busynessgirl.com"/>
+            <outline text="Calculus VII" title="Calculus VII" type="rss"
+                xmlUrl="http://calculus7.org/feed/" htmlUrl="http://calculus7.org"/>
+            <outline text="Casting Out Nines" title="Casting Out Nines"
+                type="rss"
+                xmlUrl="http://chronicle.com/blognetwork/castingoutnines/feed/" htmlUrl="http://chronicle.com/blognetwork/castingoutnines"/>
+            <outline text="Combinatorics and more"
+                title="Combinatorics and more" type="rss"
+                xmlUrl="http://gilkalai.wordpress.com/feed/" htmlUrl="http://gilkalai.wordpress.com"/>
+            <outline text="Comments on: Home" title="Comments on: Home"
+                type="rss" xmlUrl="http://momath.org/home/feed/" htmlUrl="http://momath.org"/>
+            <outline text="Computational Complexity"
+                title="Computational Complexity" type="rss"
+                xmlUrl="http://blog.computationalcomplexity.org/feeds/posts/default" htmlUrl="http://blog.computationalcomplexity.org/"/>
+            <outline
+                text="Continuous Everywhere but Differentiable Nowhere"
+                title="Continuous Everywhere but Differentiable Nowhere"
+                type="rss" xmlUrl="http://samjshah.com/feed/" htmlUrl="http://samjshah.com"/>
+            <outline text="cp's mathem-o-blog"
+                title="cp's mathem-o-blog" type="rss"
+                xmlUrl="http://checkmyworking.com/feed/" htmlUrl="http://checkmyworking.com"/>
+            <outline text="CTK Insights" title="CTK Insights" type="rss"
+                xmlUrl="http://www.mathteacherctk.com/blog/feed/" htmlUrl="http://www.mathteacherctk.com/blog"/>
+            <outline text="Dataisnature" title="Dataisnature" type="rss"
+                xmlUrl="http://www.dataisnature.com/?feed=rss2" htmlUrl="http://www.dataisnature.com"/>
+            <outline text="Devlin's Angle" title="Devlin's Angle"
+                type="rss"
+                xmlUrl="http://devlinsangle.blogspot.com/feeds/posts/default" htmlUrl="http://devlinsangle.blogspot.com/"/>
+            <outline text="Disquisitiones Mathematicae"
+                title="Disquisitiones Mathematicae" type="rss"
+                xmlUrl="http://matheuscmss.wordpress.com/feed/" htmlUrl="http://matheuscmss.wordpress.com"/>
+            <outline text="Division by Zero" title="Division by Zero"
+                type="rss" xmlUrl="http://divisbyzero.com/feed/" htmlUrl="http://divisbyzero.com"/>
+            <outline text="Dr. Keith Devlin" title="Dr. Keith Devlin"
+                type="rss"
+                xmlUrl="http://www.huffingtonpost.com/author/index.php?author=dr-keith-devlin" htmlUrl="http://huffingtonpost.com/author/index.php?author=dr-keith-devlin"/>
+            <outline text="DropSea" title="DropSea" type="rss"
+                xmlUrl="http://dropseaofulaula.blogspot.com/feeds/posts/default" htmlUrl="http://dropseaofulaula.blogspot.com/"/>
+            <outline text="dy/dan" title="dy/dan" type="rss"
+                xmlUrl="http://feeds.feedburner.com/dydan1" htmlUrl="http://blog.mrmeyer.com"/>
+            <outline text="exzuberant" title="exzuberant" type="rss"
+                xmlUrl="http://exzuberant.blogspot.com/feeds/posts/default" htmlUrl="http://exzuberant.blogspot.com/"/>
+            <outline text="Finding Ways to Nguyen Students Over"
+                title="Finding Ways to Nguyen Students Over" type="rss"
+                xmlUrl="http://fawnnguyen.com/rss.aspx" htmlUrl="http://fawnnguyen.com"/>
+            <outline text="FlowingData" title="FlowingData" type="rss"
+                xmlUrl="http://flowingdata.com/feed/" htmlUrl="http://flowingdata.com"/>
+            <outline text="f(t)" title="f(t)" type="rss"
+                xmlUrl="http://function-of-time.blogspot.com/feeds/posts/default" htmlUrl="http://function-of-time.blogspot.com/"/>
+            <outline text="Gaussianos" title="Gaussianos" type="rss"
+                xmlUrl="http://gaussianos.com/feed/" htmlUrl="http://gaussianos.com"/>
+            <outline text="Geometry and the imagination"
+                title="Geometry and the imagination" type="rss"
+                xmlUrl="http://lamington.wordpress.com/feed/" htmlUrl="http://lamington.wordpress.com"/>
+            <outline text="Girls' Angle" title="Girls' Angle" type="rss"
+                xmlUrl="http://girlsangle.wordpress.com/feed/" htmlUrl="http://girlsangle.wordpress.com"/>
+            <outline text="Gli studenti di oggi"
+                title="Gli studenti di oggi" type="rss"
+                xmlUrl="http://proooof.blogspot.com/feeds/posts/default" htmlUrl="http://proooof.blogspot.com/"/>
+            <outline text="God plays dice" title="God plays dice"
+                type="rss"
+                xmlUrl="http://gottwurfelt.wordpress.com/feed/" htmlUrl="https://gottwurfelt.wordpress.com"/>
+            <outline text="Good Math, Bad Math"
+                title="Good Math, Bad Math" type="rss"
+                xmlUrl="http://scientopia.org/blogs/goodmath/feed/" htmlUrl="http://scientopia.org/blogs/goodmath"/>
+            <outline text="Gowers's Weblog" title="Gowers's Weblog"
+                type="rss" xmlUrl="http://gowers.wordpress.com/feed/" htmlUrl="http://gowers.wordpress.com"/>
+            <outline text="Gyre&amp;Gimble" title="Gyre&amp;Gimble"
+                type="rss"
+                xmlUrl="http://www.abstractmath.org/Word%20Press/?feed=rss2" htmlUrl="http://www.abstractmath.org/Word%20Press"/>
+            <outline text="Gödel's Lost Letter and P=NP"
+                title="Gödel's Lost Letter and P=NP" type="rss"
+                xmlUrl="http://rjlipton.wordpress.com/feed/" htmlUrl="http://rjlipton.wordpress.com"/>
+            <outline text="I Choose Math" title="I Choose Math"
+                type="rss"
+                xmlUrl="http://ichoosemath.wordpress.com/feed/" htmlUrl="http://ichoosemath.wordpress.com"/>
+            <outline text="I hope this old train breaks down..."
+                title="I hope this old train breaks down..." type="rss"
+                xmlUrl="http://feeds.feedburner.com/IHopeThisOldTrainBreaksDown?format=xml" htmlUrl="http://untilnextstop.blogspot.com/"/>
+            <outline text="Images des mathématiques"
+                title="Images des mathématiques" type="rss"
+                xmlUrl="http://images.math.cnrs.fr/spip.php?page=backend" htmlUrl="http://images.math.cnrs.fr/"/>
+            <outline text="Intersections -- Poetry with Mathematics"
+                title="Intersections -- Poetry with Mathematics"
+                type="rss"
+                xmlUrl="http://poetrywithmathematics.blogspot.com/feeds/posts/default" htmlUrl="http://poetrywithmathematics.blogspot.com/"/>
+            <outline text="James Colliander's Blog"
+                title="James Colliander's Blog" type="rss"
+                xmlUrl="http://blog.math.toronto.edu/colliand/feed/" htmlUrl="http://blog.math.toronto.edu/colliand"/>
+            <outline text="Journal of Humanistic Mathematics"
+                title="Journal of Humanistic Mathematics" type="rss"
+                xmlUrl="http://scholarship.claremont.edu/jhm/recent.rss" htmlUrl="http://scholarship.claremont.edu/jhm"/>
+            <outline text="Knot your average sheep..."
+                title="Knot your average sheep..." type="rss"
+                xmlUrl="http://haggisthesheep.wordpress.com/feed/" htmlUrl="http://haggisthesheep.wordpress.com"/>
+            <outline text="Launchings by David Bressoud"
+                title="Launchings by David Bressoud" type="rss"
+                xmlUrl="http://launchings.blogspot.com/feeds/posts/default" htmlUrl="http://launchings.blogspot.com/"/>
+            <outline text="Lost In Recursion" title="Lost In Recursion"
+                type="rss"
+                xmlUrl="http://lostinrecursion.wordpress.com/feed/" htmlUrl="http://lostinrecursion.wordpress.com"/>
+            <outline text="Matem@ticaMente" title="Matem@ticaMente"
+                type="rss"
+                xmlUrl="http://www.lanostra-matematica.org/feeds/posts/default" htmlUrl="http://www.lanostra-matematica.org/"/>
+            <outline text="math for love" title="math for love"
+                type="rss" xmlUrl="http://mathforlove.com/feed/" htmlUrl="http://mathforlove.com"/>
+            <outline text="Math Hombre" title="Math Hombre" type="rss"
+                xmlUrl="http://mathhombre.blogspot.com/feeds/posts/default" htmlUrl="http://mathhombre.blogspot.com/"/>
+            <outline text="Math Jokes 4 Mathy Folks"
+                title="Math Jokes 4 Mathy Folks" type="rss"
+                xmlUrl="http://mathjokes4mathyfolks.wordpress.com/feed/" htmlUrl="http://mathjokes4mathyfolks.wordpress.com"/>
+            <outline text="Math Munch" title="Math Munch" type="rss"
+                xmlUrl="http://mathmunch.wordpress.com/feed/" htmlUrl="http://mathmunch.wordpress.com"/>
+            <outline text="Mathalicious" title="Mathalicious" type="rss"
+                xmlUrl="http://www.mathalicious.com/feed/" htmlUrl="http://www.mathalicious.com"/>
+            <outline text="mathbabe" title="mathbabe" type="rss"
+                xmlUrl="http://mathbabe.org/feed/" htmlUrl="http://mathbabe.org"/>
+            <outline text="Mathematical Objects"
+                title="Mathematical Objects" type="rss"
+                xmlUrl="http://mathematical-objects.tumblr.com/rss" htmlUrl="http://mathematical-objects.tumblr.com/"/>
+            <outline text="Mathematics under the Microscope"
+                title="Mathematics under the Microscope" type="rss"
+                xmlUrl="http://micromath.wordpress.com/feed/" htmlUrl="http://micromath.wordpress.com"/>
+            <outline text="mathematik, bücher &amp; meer"
+                title="mathematik, bücher &amp; meer" type="rss"
+                xmlUrl="http://mathe2008.wordpress.com/feed/" htmlUrl="http://mathe2008.wordpress.com"/>
+            <outline text="Mathlog" title="Mathlog" type="rss"
+                xmlUrl="http://feeds.feedburner.com/ScienceBlogs/Mathlog" htmlUrl="http://www.scienceblogs.de/mathlog/"/>
+            <outline text="Mathy McMatherson" title="Mathy McMatherson"
+                type="rss"
+                xmlUrl="http://mathymcmatherson.wordpress.com/feed/" htmlUrl="http://mathymcmatherson.wordpress.com"/>
+            <outline text="Mati, una profesora muy particular"
+                title="Mati, una profesora muy particular" type="rss"
+                xmlUrl="http://blogs.20minutos.es/mati-una-profesora-muy-particular/feed/" htmlUrl="http://blogs.20minutos.es/mati-una-profesora-muy-particular"/>
+            <outline text="matthen" title="matthen" type="rss"
+                xmlUrl="http://feeds.feedburner.com/matthen" htmlUrl="http://blog.matthen.com/"/>
+            <outline text="Maurizio Codogno" title="Maurizio Codogno"
+                type="rss"
+                xmlUrl="http://feeds.ilpost.it/ilpost-mauriziocodogno" htmlUrl="http://www.ilpost.it/mauriziocodogno"/>
+            <outline text="Maxwell's Demon" title="Maxwell's Demon"
+                type="rss" xmlUrl="http://maxwelldemon.com/feed/" htmlUrl="http://maxwelldemon.com"/>
+            <outline text="Michael Trick's Operations Research Blog"
+                title="Michael Trick's Operations Research Blog"
+                type="rss"
+                xmlUrl="http://mat.tepper.cmu.edu/blog/?feed=rss2" htmlUrl="http://mat.tepper.cmu.edu/blog"/>
+            <outline text="misscalcul8" title="misscalcul8" type="rss"
+                xmlUrl="http://misscalculate.blogspot.com/feeds/posts/default" htmlUrl="http://misscalculate.blogspot.com/"/>
+            <outline text="Mr Honner" title="Mr Honner" type="rss"
+                xmlUrl="http://mrhonner.com/feed/" htmlUrl="http://MrHonner.com"/>
+            <outline text="neverendingbooks" title="neverendingbooks"
+                type="rss"
+                xmlUrl="http://www.neverendingbooks.org/index.php/feed" htmlUrl="http://www.neverendingbooks.org"/>
+            <outline text="Nuit Blanche" title="Nuit Blanche" type="rss"
+                xmlUrl="http://nuit-blanche.blogspot.com/feeds/posts/default" htmlUrl="http://nuit-blanche.blogspot.com/"/>
+            <outline text="O.R. by the Beach" title="O.R. by the Beach"
+                type="rss"
+                xmlUrl="http://orbythebeach.wordpress.com/feed/" htmlUrl="http://orbythebeach.wordpress.com"/>
+            <outline text="Opinions of Doron Zeilberger"
+                title="Opinions of Doron Zeilberger" type="rss"
+                xmlUrl="http://page2rss.com/rss/69bacf7e3cfac715759da8b0db2f3188" htmlUrl="http://page2rss.com/69bacf7e3cfac715759da8b0db2f3188"/>
+            <outline text="OR in an OB World" title="OR in an OB World"
+                type="rss"
+                xmlUrl="http://orinanobworld.blogspot.com/feeds/posts/default" htmlUrl="http://orinanobworld.blogspot.com/"/>
+            <outline text="Out of the Norm" title="Out of the Norm"
+                type="rss"
+                xmlUrl="http://outofthenormmaths.wordpress.com/feed/" htmlUrl="http://outofthenormmaths.wordpress.com"/>
+            <outline text="Peter Cameron's Blog"
+                title="Peter Cameron's Blog" type="rss"
+                xmlUrl="http://cameroncounts.wordpress.com/feed/" htmlUrl="http://cameroncounts.wordpress.com"/>
+            <outline text="PhD + epsilon" title="PhD + epsilon"
+                type="rss" xmlUrl="http://blogs.ams.org/phdplus/feed/" htmlUrl="http://blogs.ams.org/phdplus"/>
+            <outline text="Piece of Mind" title="Piece of Mind"
+                type="rss" xmlUrl="http://nghoussoub.com/feed/" htmlUrl="http://nghoussoub.com"/>
+            <outline text="Point of Inflection"
+                title="Point of Inflection" type="rss"
+                xmlUrl="http://larkolicio.us/blog/?feed=rss2" htmlUrl="http://larkolicio.us/blog"/>
+            <outline text="Popinga" title="Popinga" type="rss"
+                xmlUrl="http://keespopinga.blogspot.com/feeds/posts/default" htmlUrl="http://keespopinga.blogspot.com/"/>
+            <outline text="profkeithdevlin" title="profkeithdevlin"
+                type="rss" xmlUrl="http://profkeithdevlin.org/feed/" htmlUrl="http://profkeithdevlin.org"/>
+            <outline text="Pulse-Project Math/Maths Weekly Podcasts"
+                title="Pulse-Project Math/Maths Weekly Podcasts"
+                type="rss"
+                xmlUrl="http://pulse-project.org/pulse-mathsmaths.xml" htmlUrl="http://pulse-project.org/pulsemathsmathsx"/>
+            <outline text="Punk Rock Operations Research"
+                title="Punk Rock Operations Research" type="rss"
+                xmlUrl="http://punkrockor.wordpress.com/feed/" htmlUrl="http://punkrockor.wordpress.com"/>
+            <outline text="QED Insight" title="QED Insight" type="rss"
+                xmlUrl="http://qedinsight.wordpress.com/feed/" htmlUrl="http://qedinsight.wordpress.com"/>
+            <outline text="Quomodocumque" title="Quomodocumque"
+                type="rss"
+                xmlUrl="http://quomodocumque.wordpress.com/feed/" htmlUrl="http://quomodocumque.wordpress.com"/>
+            <outline text="regularize" title="regularize" type="rss"
+                xmlUrl="http://regularize.wordpress.com/feed/" htmlUrl="http://regularize.wordpress.com"/>
+            <outline text="reperiendi" title="reperiendi" type="rss"
+                xmlUrl="http://reperiendi.wordpress.com/feed/" htmlUrl="http://reperiendi.wordpress.com"/>
+            <outline text="Republic of Mathematics"
+                title="Republic of Mathematics" type="rss"
+                xmlUrl="http://www.republicofmath.com/feed" htmlUrl="http://www.republicofmath.com"/>
+            <outline text="Sander Huisman" title="Sander Huisman"
+                type="rss" xmlUrl="http://shuisman.com/?feed=rss2" htmlUrl="http://shuisman.com"/>
+            <outline text="Sarcasymptote" title="Sarcasymptote"
+                type="rss"
+                xmlUrl="http://sarcasymptote.wordpress.com/feed/" htmlUrl="http://sarcasymptote.wordpress.com"/>
+            <outline text="Second-Rate Minds" title="Second-Rate Minds"
+                type="rss" xmlUrl="http://minds.acmescience.com/feed/" htmlUrl="http://minds.acmescience.com"/>
+            <outline text="Secret Blogging Seminar"
+                title="Secret Blogging Seminar" type="rss"
+                xmlUrl="http://sbseminar.wordpress.com/feed/" htmlUrl="http://sbseminar.wordpress.com"/>
+            <outline text="Shtetl-Optimized" title="Shtetl-Optimized"
+                type="rss"
+                xmlUrl="http://www.scottaaronson.com/blog/?feed=rss2" htmlUrl="http://www.scottaaronson.com/blog"/>
+            <outline text="Simple City" title="Simple City" type="rss"
+                xmlUrl="http://richardelwes.co.uk/feed/" htmlUrl="http://richardelwes.co.uk"/>
+            <outline text="Sketches of Topology"
+                title="Sketches of Topology" type="rss"
+                xmlUrl="http://sketchesoftopology.wordpress.com/feed/" htmlUrl="http://sketchesoftopology.wordpress.com"/>
+            <outline text="Spiked Math" title="Spiked Math" type="rss"
+                xmlUrl="http://spikedmath.com/atom.xml" htmlUrl="http://spikedmath.com/"/>
+            <outline text="Statisfaction" title="Statisfaction"
+                type="rss"
+                xmlUrl="http://statisfaction.wordpress.com/feed/" htmlUrl="http://statisfaction.wordpress.com"/>
+            <outline
+                text="Statistical Modeling, Causal Inference, and Social Science"
+                title="Statistical Modeling, Causal Inference, and Social Science"
+                type="rss" xmlUrl="http://andrewgelman.com/feed/" htmlUrl="http://andrewgelman.com"/>
+            <outline text="Tanya Khovanova's Math Blog"
+                title="Tanya Khovanova's Math Blog" type="rss"
+                xmlUrl="http://blog.tanyakhovanova.com/?feed=rss2" htmlUrl="http://blog.tanyakhovanova.com"/>
+            <outline text="The Accidental Mathematician"
+                title="The Accidental Mathematician" type="rss"
+                xmlUrl="http://ilaba.wordpress.com/feed/" htmlUrl="http://ilaba.wordpress.com"/>
+            <outline text="The Aperiodical" title="The Aperiodical"
+                type="rss" xmlUrl="http://aperiodical.com/feed/" htmlUrl="http://aperiodical.com"/>
+            <outline text="The De Morgan Journal"
+                title="The De Morgan Journal" type="rss"
+                xmlUrl="http://education.lms.ac.uk/feed/" htmlUrl="http://education.lms.ac.uk"/>
+            <outline text="The Endeavour" title="The Endeavour"
+                type="rss" xmlUrl="http://www.johndcook.com/blog/feed/" htmlUrl="http://www.johndcook.com/blog"/>
+            <outline text="The Geomblog" title="The Geomblog" type="rss"
+                xmlUrl="http://geomblog.blogspot.com/feeds/posts/default" htmlUrl="http://geomblog.blogspot.com/"/>
+            <outline text="The Laughing Mathematician"
+                title="The Laughing Mathematician" type="rss"
+                xmlUrl="http://laughmaths.blogspot.com/feeds/posts/default" htmlUrl="http://laughmaths.blogspot.com/"/>
+            <outline text="The Mathematical Tourist"
+                title="The Mathematical Tourist" type="rss"
+                xmlUrl="http://mathtourist.blogspot.com/feeds/posts/default" htmlUrl="http://mathtourist.blogspot.com/"/>
+            <outline text="The Mathematician's Shirts"
+                title="The Mathematician's Shirts" type="rss"
+                xmlUrl="http://themathematiciansshirts.wordpress.com/feed/" htmlUrl="http://themathematiciansshirts.wordpress.com"/>
+            <outline text="The Number Warrior"
+                title="The Number Warrior" type="rss"
+                xmlUrl="http://numberwarrior.wordpress.com/feed/" htmlUrl="http://numberwarrior.wordpress.com"/>
+            <outline text="The Renaissance Mathematicus"
+                title="The Renaissance Mathematicus" type="rss"
+                xmlUrl="http://thonyc.wordpress.com/feed/" htmlUrl="http://thonyc.wordpress.com"/>
+            <outline text="ThinkThankThunk" title="ThinkThankThunk"
+                type="rss"
+                xmlUrl="http://shawncornally.com/wordpress/?feed=rss2" htmlUrl="http://shawncornally.com/wordpress"/>
+            <outline text="Tim Chartier" title="Tim Chartier" type="rss"
+                xmlUrl="http://www.huffingtonpost.com/author/index.php?author=tim-chartier" htmlUrl="http://huffingtonpost.com/author/index.php?author=tim-chartier"/>
+            <outline text="Tito Eliatron Dixit"
+                title="Tito Eliatron Dixit" type="rss"
+                xmlUrl="http://eliatron.blogspot.com/feeds/posts/default" htmlUrl="http://eliatron.blogspot.com/"/>
+            <outline text="Understanding Uncertainty"
+                title="Understanding Uncertainty" type="rss"
+                xmlUrl="http://understandinguncertainty.org/rss.xml" htmlUrl="http://understandinguncertainty.org/"/>
+            <outline text="Walking Randomly" title="Walking Randomly"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/WalkingRandomly" htmlUrl="http://www.walkingrandomly.com"/>
+            <outline text="What's new" title="What's new" type="rss"
+                xmlUrl="http://terrytao.wordpress.com/feed/" htmlUrl="http://terrytao.wordpress.com"/>
+            <outline text="What's on my blackboard?"
+                title="What's on my blackboard?" type="rss"
+                xmlUrl="http://whatsonmyblackboard.wordpress.com/feed/" htmlUrl="http://whatsonmyblackboard.wordpress.com"/>
+            <outline text="Wild About Math!" title="Wild About Math!"
+                type="rss" xmlUrl="http://wildaboutmath.com/feed/" htmlUrl="http://wildaboutmath.com"/>
+            <outline text="Without Geometry, Life is Pointless"
+                title="Without Geometry, Life is Pointless" type="rss"
+                xmlUrl="http://www.withoutgeometry.com/feeds/posts/default" htmlUrl="http://www.withoutgeometry.com/"/>
+            <outline text="Women in mathematics"
+                title="Women in mathematics" type="rss"
+                xmlUrl="http://womeninmathematics.wordpress.com/feed/" htmlUrl="http://womeninmathematics.wordpress.com"/>
+            <outline text="Xi'an's Og" title="Xi'an's Og" type="rss"
+                xmlUrl="http://xianblog.wordpress.com/feed/" htmlUrl="https://xianblog.wordpress.com"/>
+            <outline text="Yet another blogging mathematician..."
+                title="Yet another blogging mathematician..." type="rss"
+                xmlUrl="http://yabm.wordpress.com/feed/" htmlUrl="https://yabm.wordpress.com"/>
+            <outline text="yofx" title="yofx" type="rss"
+                xmlUrl="http://www.yofx.org/?feed=rss2" htmlUrl="http://www.yofx.org"/>
+            <outline text="You got your art in my maths!"
+                title="You got your art in my maths!" type="rss"
+                xmlUrl="http://artymaths.tumblr.com/rss" htmlUrl="http://artymaths.tumblr.com/"/>
+            <outline text="{Musing Mathematically}"
+                title="{Musing Mathematically}" type="rss"
+                xmlUrl="http://musingmathematically.blogspot.com/feeds/posts/default" htmlUrl="http://musingmathematically.blogspot.com/"/>
+            <outline text="            Math-Frolic !"
+                title="            Math-Frolic !" type="rss"
+                xmlUrl="http://math-frolic.blogspot.com/feeds/posts/default" htmlUrl="http://math-frolic.blogspot.com/"/>
+        </outline>
+    </body>
+</opml>
