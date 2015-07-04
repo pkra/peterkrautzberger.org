@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why I back Relatively Prime
-date: 2011-07-14 09:00:00.000000000 +02:00
+date: 2011-07-14
 categories:
 - blogosphere
 - scientific community
@@ -10,19 +10,8 @@ categories:
 tags:
 - kickstarter
 - Samuel Hansen
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-author:
-  login: admin
-  email: peter.krautzberger@gmx.net
-  display_name: admin
-  first_name: ''
-  last_name: ''
-
-
+permalink: 0065/
 ---
 
 On of the pleasures of running [mathblogging.org](http://www.mathblogging.org) is that you get to find out about immensely creative people working on new ways to make use of the web for mathematics.
@@ -47,4 +36,4 @@ I have only one criticism: more female mathematicians would not hurt the show. M
 
 The great thing about kickstarter is you can give on the level you’re comfortable giving. Since you ask, of course I chose my backing level to maximize vanity under the restraints of my financial means ;) But so can you! There are 20 days left to get this project funded – [so head over there and pledge some money](http://www.kickstarter.com/projects/386612592/relatively-prime-stories-from-the-mathematical-dom)!
 
-EDIT: Samuel Hansen corrected me [via twitter](http://j.mp/nuNQOU): Relatively Prime will be audio only. I think I got it wrong because of the promo video. But who cares, it’s going to be awesome either way!
+EDIT: Samuel Hansen corrected me [via twitter](https://twitter.com/Samuel_Hansen/status/91651901497679872): Relatively Prime will be audio only. I think I got it wrong because of the promo video. But who cares, it’s going to be awesome either way!

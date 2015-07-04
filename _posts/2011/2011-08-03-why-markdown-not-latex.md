@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why markdown, not $\LaTeX$?
-date: 2011-08-03 21:03:32.000000000 +02:00
+date: 2011-08-03
 categories:
 - mathjax
 - technology
@@ -12,22 +12,8 @@ tags:
 - mathjax
 - pandoc
 - Qute
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  _googl_shortlink: http://goo.gl/yy6as
-  dsq_thread_id: '593133299'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0070/
 ---
 
 Coming from $\LaTeX$ and its text-editor driven writing style, working with wordpress can seem a step back -- after all, most people, if they get excited about $\TeX$, very much despise the wysiwyg approach to writing.

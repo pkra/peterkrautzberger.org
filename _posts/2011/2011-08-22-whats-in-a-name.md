@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's in a name
-date: 2011-08-22 14:46:27.000000000 +02:00
+date: 2011-08-22
 categories:
 - blogosphere
 - Booles' Rings
@@ -18,21 +18,8 @@ tags:
 - Mary Ellen Boole
 - Mary Everest Boole
 - Occam's Typewriter
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '593133372'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0074/
 ---
 
 > This is a slightly idolized recollection how we came to adopt the name Booles' Rings.
@@ -67,38 +54,38 @@ To appeal to a wider audience, our name should relate to more than mathematical 
 
 George himself needs little introduction. Interestingly enough, in his own life time he was famous for his books on differential equations which developed the symbolic method and which later turned into his foundational development of symbolic logic and, in hindsight, the computer sciences. Very interesting was the description of his character as extremely modest, never seeking fame.
 
-> *   changing the fundamental view on how to write mathematics **check**
-> *   modest in character **check**
+* changing the fundamental view on how to write mathematics **check**
+* modest in character **check**
 
 Most important is George's wife, [Mary Everest Boole](http://en.wikipedia.org/wiki/Mary_Everest_Boole) (niece of [George Everest](http://en.wikipedia.org/wiki/George_Everest)). She worked on didactics and mathematics education.
 
-> *   mathematics education **check**
-> *   success despite discrimination **check**.
+* mathematics education **check**
+* success despite discrimination **check**.
 
 Mary and George had four daughters but George unfortunately died the same year their youngest was born.
 
 The eldest daughter, Mary Ellen Boole, married mathematician Charles Howard Hinton who coined the term [tesseract](http://en.wikipedia.org/wiki/Tesseract) and has a [polytope named after him](http://en.wikipedia.org/wiki/Hinton%27s_polytope#Omnitruncated_5-cell) thanks to his work on visualization of 4 dimensional geometry.
 
-> *   geometry and visualization **check**
+* geometry and visualization **check**
 
 I couldn't find much on Margaret Boole except of, of course, her son and physicist [Geoffrey Ingram Taylor](http://en.wikipedia.org/wiki/Geoffrey_Ingram_Taylor).
 
-> *   applied mathematics & physics **check**
+* applied mathematics & physics **check**
 
 [Alicia Boole Stott](http://en.wikipedia.org/wiki/Alicia_Boole_Stott) worked in geometry, self-taught but so successfully that she received an honorary doctorate from the University of Groninen -- and she gave us the the term "polytope".
 
-> *   geometry **check**
-> *   overcoming discrimination **check**
-> *   international collaborations **check**
+* geometry **check**
+* overcoming discrimination **check**
+* international collaborations **check**
 
 To round things up Lucy Boole Everest was the first female professor of chemistry in England and collaborated with her nephew Geoffrey Ingram Taylor.
 
-> *   extending to the sciences **check**
-> *   collaborations across fields **check**
+* extending to the sciences **check**
+* collaborations across fields **check**
 
 Finally, [Ethel Lilian Boole Voynich](http://en.wikipedia.org/wiki/Ethel_Lilian_Voynich) became an author, most notably of [The Gadfly](http://en.wikipedia.org/wiki/The_Gadfly). She was married to [Wilfrid Michael Voynich](http://en.wikipedia.org/wiki/Wilfrid_Michael_Voynich) of Voynich-manuscript fame.
 
-> *   rebellious nature **check**
+* rebellious nature **check**
 
 Quite an interesting family.
 

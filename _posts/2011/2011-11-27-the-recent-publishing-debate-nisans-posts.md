@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The recent publishing debate -- Nisan's posts
-date: 2011-11-27 14:19:38.000000000 +01:00
+date: 2011-11-27
 categories:
 - scientific community
 - thoughts on mathematics
@@ -9,23 +9,11 @@ tags:
 - Noam Nisan
 - publishing
 - scientific publishing
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0091/
 ---
 
-> [The original post](http://boolesrings.org/krautzberger/2011/11/26/the-recent-publishing-debate-a-timeline/) was getting longer and longer so I split it up.
+> [The original post](/0090/) was getting longer and longer so I split it up.
 
 To refresh your memory,
 
@@ -42,9 +30,7 @@ Let me point out two details: first, Nisan mentions the increase in "worthless" 
 
 Nisan's second post is equally interesting pointing out what he thinks is good about journals: the community behind journals, the idea of peers reviewing peers and the hierarchy.
 
-Another detail I'd like to highlight: Nisan points out that there is no incentive to referee well in the current system since it is not considered something I'd add to the list of "non-papers" that we need to recognize (in fact, [I already have](http://boolesrings.org/krautzberger/2011/07/17/the-mathematicians-homepage-can-it-be-more/)).
-
-* * *
+Another detail I'd like to highlight: Nisan points out that there is no incentive to referee well in the current system since it is not considered something I'd add to the list of "non-papers" that we need to recognize (in fact, [I already have](/0067/)).
 
 * * *
 
@@ -76,7 +62,7 @@ Consider the following quotes from Nisan's second post.
 
 Besides reminding me of [this](http://en.wikipedia.org/wiki/Prussian_three-class_franchise), MathOverflow has already shown that this is a straw man argument; quality has prevailed. It is precisely the top researchers who easily gain a high reputation. If you want to say something bad, then maybe that they can get away with inappropriate questions and that they have "fans" voting up anything they write -- the same kind of bias we see in the journal system.
 
-If you want to see a real problem with MO, here's one: if you're a logician, you really don't stand a chance to ever post an answer given that Joel, Andreas and François are so active. And indeed, you find people like <del datetime="2011-11-28T05:01:14+00:00">[Andres and](http://j.mp/uP7Yh0)</del> Carl to be more active on math.SE than MO these days. That's why we need more alternatives everywhere.
+If you want to see a real problem with MO, here's one: if you're a logician, you really don't stand a chance to ever post an answer given that Joel, Andreas and François are so active. And indeed, you find people like <del datetime="2011-11-28T05:01:14+00:00">[Andres and](https://twitter.com/andrescaicedo/status/140942468660211712)</del> Carl to be more active on math.SE than MO these days. That's why we need more alternatives everywhere.
 
 * * *
 

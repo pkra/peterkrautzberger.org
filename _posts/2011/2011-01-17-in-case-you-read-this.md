@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In case you read this
-date: 2011-01-17 10:00:00.000000000 +01:00
+date: 2011-01-17
 categories:
 - thelazyscience@peter.krautzberger.info
 - thoughts on mathematics
@@ -9,19 +9,8 @@ categories:
 tags:
 - mathblogging.org
 - WWIC
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-author:
-  login: admin
-  email: peter.krautzberger@gmx.net
-  display_name: admin
-  first_name: ''
-  last_name: ''
-
-
+permalink: 0049/
 ---
 
 Ever since we started working on [mathblogging.org](http://www.mathblogging.org) I have been reading far too many math blogs. At the beginning of the year many bloggers (of course, also in the scienceblogging community) have analyzed their page data and discussed trends and interests to readers. This made me think whether I should invest time in some technology to gather such data. Thankfully, I do not have to do this from a technical point of view since my webspace is provided for free thanks to a generous supporter. But somehow I do not feel inclined to do it anyways. It’s not that I don’t want to know people read my posts (although, realistically I would expect the number be significantly lower than 10). But when weighing the invasion of privacy of my (potential) readers against my own interest in them, I am convinced that it’s not worth it, a conviction which grew stronger this week.

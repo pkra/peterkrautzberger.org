@@ -1,25 +1,14 @@
 ---
 layout: post
 title: Saturday morning math blogs
-date: 2011-01-15 10:00:00.000000000 +01:00
+date: 2011-01-15
 categories:
 - blogosphere
 - mathblogging.org
 - thelazyscience@peter.krautzberger.info
 tags: []
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-author:
-  login: admin
-  email: peter.krautzberger@gmx.net
-  display_name: admin
-  first_name: ''
-  last_name: ''
-
-
+permalink: 0048/
 ---
 
 Well, with [mathblogging.org](http://www.mathblogging.org) up and running in beta I have been reading far too many math blogs (and I love it). This morning there was a lot of interesting stuff out there and I thought it might be interesting to mention some, especially those that I actually left a comment on. After all, that’s what makes blogging come alive and I don’t comment often enough.
@@ -32,8 +21,8 @@ The question is if arXiv papers are “allowed” there since researchblogging i
 
 ## Pondering visitors
 
-[Lieven Le Bruyn of neverendingbooks](http://www.neverendingbooks.org/index.php/the-reddit-aftereffect.html) discusses his recent prominence on reddit/math which led him to review how his readers find him. It’s an interesting read and made me write a short post for myself answering his fundamental questions at the end for mysel (which I’ll post some other time).
+[Lieven Le Bruyn of neverendingbooks](http://www.neverendingbooks.org/the-reddit-aftereffect) discusses his recent prominence on reddit/math which led him to review how his readers find him. It’s an interesting read and made me write a short post for myself answering his fundamental questions at the end for mysel (which I’ll post some other time).
 
 ## Writing experiments
 
-[Peter Rowlett of Travels in mathematics](http://travelsinamathematicalworld.blogspot.com/2011/01/400-words-in-30-minutes-on-chaos-and.html) starts an experiment for writing more frequently. Great idea, he does a great job and makes me want to copy him. (but, boy, I had forgotten how complicated blogspot’s comment system is…)
+[Peter Rowlett of Travels in mathematics](http://aperiodical.com/2011/01/400-words-in-30-minutes-on-chaos-and-the-weather/) starts an experiment for writing more frequently. Great idea, he does a great job and makes me want to copy him. (but, boy, I had forgotten how complicated blogspot’s comment system is…)

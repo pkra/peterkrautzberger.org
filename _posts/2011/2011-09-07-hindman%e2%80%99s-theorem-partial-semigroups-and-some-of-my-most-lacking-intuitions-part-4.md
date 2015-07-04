@@ -2,7 +2,7 @@
 layout: post
 title: Hindman's Theorem, partial semigroups and some of my most lacking intuitions
   (part 4)
-date: 2011-09-07 10:56:06.000000000 +02:00
+date: 2011-09-07
 categories:
 - expository
 - research
@@ -18,25 +18,11 @@ tags:
 - Ramsey theory
 - semigroups
 - Vitaly Bergelson
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '2'
-  dsq_thread_id: '593133178'
-  _cws_is_markdown_gmt: '2013-06-06 12:10:27'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0078/
 ---
 
-> Well, I hope you didn't miss me while I was on my first summer vacation in three years. So let's continue this series. If you remember, [part 3](http://boolesrings.org/krautzberger/2011/08/25/hindman%E2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-3/) consisted mainly of the observation that FS-sets have a partial semigroup structure induced by $\mathbb{F}$ as well as me telling you that there's a immediate correspondence between FS-sets and idempotent ultrafilters.
+> Well, I hope you didn't miss me while I was on my first summer vacation in three years. So let's continue this series. If you remember, [part 3](/0077/) consisted mainly of the observation that FS-sets have a partial semigroup structure induced by $\mathbb{F}$ as well as me telling you that there's a immediate correspondence between FS-sets and idempotent ultrafilters.
 
 I'm slowly getting where I wanted to head all along with this series. When I write "my most lacking intuitions" in the title, I have my intuitions about central sets in mind. They are most lacking, I assure you. But with this series I wanted to clear my head a little. So let's head down the rabbit hole, no questions asked.
 
@@ -80,7 +66,7 @@ So what happens in this case? Well, we can easily describe many FS-sets in the o
 
 More generally, we could take any pairwise disjoint $(s_n : n\in \omega)$ in $\mathbb{F}$, just make sure that no $s_n$ is a singleton. Then as above, $FP(s_n)$ induces an FS-subset of $FS(x_n)$ -- which will lie completely in the "large" part of the partition.
 
-> A word of caution: in a certain sense, partitions as the one above are unusually simple because one part does not contain an FS-set. In general, you should expect all parts to contain FS-sets (for example, when separating different idempotent ultrafilters). Nevertheless, I would say that a huge chunk of arguments regarding [strongly summable ultrafilters](http://boolesrings.org/krautzberger/tag/strongly-summable-ultrafilter/) relies on such "simple" partitions -- so they are extremely useful.
+> A word of caution: in a certain sense, partitions as the one above are unusually simple because one part does not contain an FS-set. In general, you should expect all parts to contain FS-sets (for example, when separating different idempotent ultrafilters). Nevertheless, I would say that a huge chunk of arguments regarding [strongly summable ultrafilters](/0026/) relies on such "simple" partitions -- so they are extremely useful.
 
 The point I'm trying to make is that whenever we repeatedly partition an FS-set, Hindman's Theorem will give us homogeneous FS-sets -- but you should expect the elements in the generating sequence to be sums of _many_ elements of the original generators!
 

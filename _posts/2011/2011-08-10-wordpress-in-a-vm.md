@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wordpress in a VM
-date: 2011-08-10 17:08:14.000000000 +02:00
+date: 2011-08-10
 categories:
 - technology
 - updates
@@ -9,21 +9,8 @@ tags:
 - turnkeylinux
 - virtualbox
 - wordpress
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '593183465'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0072/
 ---
 
 When you're using wordpress, it comes in handy to have an installation to play around with. When I first joined the [Wordpress for Scientists Google Group](http://groups.google.com/group/wordpress-for-scientists), I promised to write a tutorial. Well, it took me a bit to find the time, but Booles' Rings helped me get back to this.
@@ -34,7 +21,11 @@ This tutorial is very rudimentary for now, but leave a comment and I'll gladly c
 
 I'm lazy, so to get a nice preconfigured, downsized ubuntu with wordpress nicely set up, you head over to [turnkeylinux.org](http://www.turnkeylinux.org/) and get their [wordpress appliance](http://www.turnkeylinux.org/wordpress). More precisely, you'll want the version for a virtual machine (VM) (click the picture to see my cursor hovering in the right place...).
 
-[caption id="attachment_304" align="aligncenter" width="300" caption="Turnkeylinux.org/wordpress"][![](assets/wp1-300x161.png "Turnkeylinux.org")](http://boolesrings.org/krautzberger/files/2011/08/wp1.png)[/caption]
+<figure>
+    <a href="/assets/2011/wp1.png">
+      <img alt="screenshot of Turnkeylinux.org" src="/assets/2011/turnkey.png"/>
+    </a>
+</figure>
 
 Just download and unzip it somewhere helpful. You might want to remember the standard passwords for the machine mentioned on the download page (or at least remember where to find them).
 
@@ -50,13 +41,22 @@ But you could also consult this full fledged [tutorial](http://developer.mindtou
 
 What, you're still reading this? Alright! In that case, after starting virtual box the main window should look something like this.
 
-![Virtualbox thx to mikefal.net](assets/vbox_post_110324_main.png)
+<figure>
+    <a href="/assets/2011/vbox.png">
+      <img alt="screenshot of Turnkeylinux.org" src="/assets/2011/vbox.png"/>
+    </a>
+    <figcaption>
+    <a href="http://www.mikefal.net/2011/03/24/virtualization-at-home/">Mike Fal, cc-by-nc</a>
+    </figcaption>
+</figure>
+
 
 So you  
- * hit the "New" button  
- * choose a name  
- * choose ubuntu 32bit as the vm's operating system  
- * choose the vmdk file from the turnkeylinux as your hardrive (which means you'll have to "add" it to virtualbox's harddisk-file-list first, but I trust you'll figure that step out)
+
+* hit the "New" button  
+* choose a name  
+* choose ubuntu 32bit as the vm's operating system  
+* choose the vmdk file from the turnkeylinux as your hardrive (which means you'll have to "add" it to virtualbox's harddisk-file-list first, but I trust you'll figure that step out)
 
 For everything else, take the default settings.
 
@@ -66,7 +66,15 @@ After the maching was created you might want to change the networking settings (
 
 Just go to the settings of the vm you just created, switch to the "network" section and change the active network controller's "Attached to" setting to "host only adapter". This should look something like this:
 
-![Virtualbox thx to mikefal.net](assets/vbox_post_110324_settings.png)
+
+<figure>
+    <a href="/assets/2011/vbox2.png">
+      <img alt="screenshot of Turnkeylinux.org" src="/assets/2011/vbox2.png"/>
+    </a>
+    <figcaption>
+    <a href="http://www.mikefal.net/2011/03/24/virtualization-at-home/">Mike Fal, cc-by-nc</a>
+    </figcaption>
+</figure>
 
 This way, the network is only a virtual one between your host operating system and your virtual machine.
 

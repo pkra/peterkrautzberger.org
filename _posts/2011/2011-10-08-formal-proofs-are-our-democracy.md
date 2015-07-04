@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formal proofs are our democracy
-date: 2011-10-08 12:11:22.000000000 +02:00
+date: 2011-10-08
 categories:
 - scientific community
 - thoughts on mathematics
@@ -9,26 +9,18 @@ tags:
 - formal proof
 - intuition
 - Winston Churchill
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '593133252'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0084/
 ---
 
 Reading papers can lead to horrible acts. Today, I felt like mutilating [a famous quote](http://en.wikiquote.org/wiki/Winston_Churchill#Post-war_years_.281944_-_1955.29).
 
-![Source: Library of Congress, Reproduction number LC-USW33-019093-C  via http://en.wikipedia.org/wiki/File:Sir_Winston_S_Churchill.jpg ](assets/192px-Sir_Winston_S_Churchill.jpg "Sir Winston Churchill")
+<figure>
+    <img alt="Sir Winston Churchill" src="/assets/2011/Sir_Winston_S_Churchill.jpg"/>
+  <figcaption>
+   Sir Winston Churchill. Source: Library of Congress, via <a href="http://en.wikipedia.org/wiki/File:Sir_Winston_S_Churchill.jpg">Wikipedia</a>.
+  </figcaption>
+</figure>
 
 > Many forms of communicating mathematics have been tried and will be tried in this world of sin and woe. No one pretends that formal proofs are perfect or all-wise. Indeed, it has been said that formal proofs are the worst form of communicating mathematics except all those other forms that have been tried from time to time.
 
@@ -48,7 +40,13 @@ All of the above is really just one big problem and luckily it is one that could
 
 The second problem however seems intrinsic and unsurmountable.
 
-![Source http://en.wikipedia.org/wiki/File:Moby_Dick_p510_illustration.jpg](assets/153px-Moby_Dick_p510_illustration.jpg "Moby Dick")
+<figure>
+    <img alt="Moby Dick attacking a skiff" src="/assets/2011/Moby_Dick_p510_illustration.jpg"/>
+  <figcaption>
+   <q>Both Jaws, like enormous shears, bit the craft completely in twain. — Page 510.</q> Source: <a href="http://en.wikipedia.org/wiki/File:Moby_Dick_p510_illustration.jpg">Wikipedia</a>.
+  </figcaption>
+</figure>
+
 
 Formal proofs cannot capture what I think when I think mathematics. The problem is that I cannot share my mathematical insights in their entirety since they are a complex combination of rational and emotional thought, intuitions, memory, successful failures and so on.
 

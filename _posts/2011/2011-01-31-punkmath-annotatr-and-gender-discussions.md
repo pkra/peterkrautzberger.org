@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Punkmath, annotatr and gender discussions
-date: 2011-01-31 10:00:00.000000000 +01:00
+date: 2011-01-31
 categories:
 - blogosphere
 - scientific community
@@ -13,19 +13,8 @@ tags:
 - gender debate
 - kickstarter
 - mathoverflow
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-author:
-  login: admin
-  email: peter.krautzberger@gmx.net
-  display_name: admin
-  first_name: ''
-  last_name: ''
-
-
+permalink: 0052/
 ---
 
 So last week was pretty abysmal as I spent most of the time in bed with a cold like I haven’t had in a while. Since this led to a major shutdown of my brain I failed to do anything useful. Whenever it didn’t burn a hole in my brain I did read a few interesting things.

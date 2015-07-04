@@ -2,7 +2,7 @@
 layout: post
 title: Hindman’s Theorem, partial semigroups and some of my most lacking intuitions
   (part 2)
-date: 2011-08-24 12:21:27.000000000 +02:00
+date: 2011-08-24
 categories:
 - expository
 - research
@@ -13,24 +13,11 @@ tags:
 - partition regular
 - Ramsey theory
 - semigroups
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '593133177'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0076/
 ---
 
-> Yesterday I finally [started this short series](http://boolesrings.org/krautzberger/2011/08/23/hindmans-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-1/) with some small thoughts regarding partial semigroups. If you don't remember, all I did yesterday was to explain why semigroups are not, in general, partition regular using a simple partition of $\mathbb{N}$. I was trying to keep your hopes up by pointing out Schur's Theorem.
+> Yesterday I finally [started this short series](/0075/) with some small thoughts regarding partial semigroups. If you don't remember, all I did yesterday was to explain why semigroups are not, in general, partition regular using a simple partition of $\mathbb{N}$. I was trying to keep your hopes up by pointing out Schur's Theorem.
 
 ## So how far can we push?
 
@@ -95,7 +82,7 @@ We might not be able to multiply two elements, but at least each element has som
 
 What we're looking at is simply a finite-intersection-property. Namely, the family of sets "can be multiplied with $x$" has the finite intersection property. (What we really want is the infinite finite intersection property, but that's not too important right now.) For historical reference, if we have this, it's called a _adequate partial semigroup_ -- and we're not interested in anything else.
 
-> Technically, we will need to say from where we multiply. I usually prefer "from the right" and write the set as $\sigma(x) := \{ y : x\cdot y \mbox{ defined } \}$.
+> Technically, we will need to say from where we multiply. I usually prefer "from the right" and write the set as $\sigma(x) := \\{ y : x\cdot y \mbox{ defined } \\}$.
 
 ## Are you messing with me (again)?
 

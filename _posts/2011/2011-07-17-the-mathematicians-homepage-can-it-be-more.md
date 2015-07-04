@@ -1,7 +1,7 @@
 ---
 layout: post
-title: The Mathematician's Homepage  -- can it be more?
-date: 2011-07-17 09:00:00.000000000 +02:00
+title: The Mathematician's Homepage  — can it be more?
+date: 2011-07-17
 categories:
 - research
 - scientific community
@@ -15,23 +15,11 @@ tags:
 - social network
 - wordpress
 - www
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-author:
-  login: admin
-  email: peter.krautzberger@gmx.net
-  display_name: admin
-  first_name: ''
-  last_name: ''
-
-
+permalink: 0067/
 ---
 
-> <font color="gray">Yesterday I went on a rant about Keith Devlin's homepage and twitter. That was, like all rants, a little unfair on him. I guess idols are always more disappointing. However, although the rant was triggered by that one tweet it had been building up over the last week because I was writing a longer piece for various reasons. So here it is.</font>
+> Yesterday I went on a rant about Keith Devlin's homepage and twitter. That was, like all rants, a little unfair on him. I guess idols are always more disappointing. However, although the rant was triggered by that one tweet it had been building up over the last week because I was writing a longer piece for various reasons. So here it is.
 
 I'm enamoured with mathematical blogs. Ever since we started [mathblogging.org](http://www.mathblogging.org), I browse through a lot of blog posts each day and I'm thrilled: the creativity and quality of their content is simply amazing, every day.
 

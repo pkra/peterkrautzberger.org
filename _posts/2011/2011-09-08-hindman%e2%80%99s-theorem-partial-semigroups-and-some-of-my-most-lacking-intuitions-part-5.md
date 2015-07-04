@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Hindman’s Theorem, partial semigroups and some of my most lacking intuitions
-  (part 5)
-date: 2011-09-08 19:01:29.000000000 +02:00
+title: Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 5)
+date: 2011-09-08
 categories:
 - expository
 - research
@@ -13,28 +12,15 @@ tags:
 - Hillel Furstenberg
 - Ramsey theory
 - semigroups
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '593133267'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0079/
 ---
 
-> [Last time](http://boolesrings.org/krautzberger/2011/09/07/hindman%e2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-4/), I left you hanging -- I promised the Central Sets Theorem, but only bothered you with some more stuff on partial semigroup, i.e., condensations. Let me make it up to you.
+> [Last time](/0078/), I left you hanging -- I promised the Central Sets Theorem, but only bothered you with some more stuff on partial semigroup, i.e., condensations. Let me make it up to you.
 
 ## The Central Sets Theorems
 
-So what is this mysterious theorem that, even though ergodic in origin is so close to the heart of algebra in the Stone-Cech compactification? It is not easy to formulate, but luckily [I kept bugging you](http://boolesrings.org/krautzberger/2011/09/07/hindman%e2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-4/) with $\mathbb{F}$ and condensations, so we are well prepared.
+So what is this mysterious theorem that, even though ergodic in origin is so close to the heart of algebra in the Stone-Cech compactification? It is not easy to formulate, but luckily [I kept bugging you](/0078/) with $\mathbb{F}$ and condensations, so we are well prepared.
 
 Since there are many different versions of the theorem as it has been improved and generalized over the last 30 years, the most general formulations are quite something to process. As you might remember, this series started out as an expository piece, so let's write down a very simple version first, even weaker than the very first version proved by Fürstenberg (but who knows, maybe that's the version he first noticed). Remember that central sets are some kind of partition regular sets (that I haven't even properly defined yet but who cares).
 
@@ -48,7 +34,7 @@ This is quite odd, no? Even though the sequence $(x_n : n\in \omega)$ has nothin
 Well, it gets even better. The original theorem allows us to "iterate" this result in a strong way.
 
 > **Central Sets Theorem (less simple version)** Let $A$ be a central set. This time, I'm giving you finitely many $FS(x_n^0),\ldots FS(x_n^k)$. Not only can you get the above version for each sequence, but you can get them "together":
-> 
+>
 > You can find a single $FS(a_n) \subseteq A$ and a single $(s_n: n\in \omega)$ in $\mathbb{F}$ such that for all $ j < k$ simultaneously $$ FS(a_n + \sum_{i\in s_n} x_i^j) \subseteq A. $$  
 >  Again repeat: if we set $y_n^j = \sum_{i\in s_n} x_i^j$, then for all $j<k$  
 >  $$ FS(a_n + y_n^j) \subseteq A. $$

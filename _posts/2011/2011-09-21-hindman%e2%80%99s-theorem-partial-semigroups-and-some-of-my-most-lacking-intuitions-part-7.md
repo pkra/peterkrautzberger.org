@@ -2,7 +2,7 @@
 layout: post
 title: Hindman’s Theorem, partial semigroups and some of my most lacking intuitions
   (part 7)
-date: 2011-09-21 21:27:16.000000000 +02:00
+date: 2011-09-21
 categories:
 - expository
 - research
@@ -11,24 +11,11 @@ tags:
 - partial semigroup
 - Ramsey theory
 - semigroups
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '594963075'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0081/
 ---
 
-> Hm, my writing process is slowing down a little (and on top of that I forgot to publish this draft) and there are other posts that I really want to write. I'm not really sure how I will proceed, but let's keep pushing a little further for now. [Last time](http://boolesrings.org/krautzberger/2011/09/15/hindman%E2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-6/) I tried to build a bridge from central sets via idempotent ultrafilters back to partial semigroups. This is one of the key points of this series: connecting central sets and partial semigroups.
+> Hm, my writing process is slowing down a little (and on top of that I forgot to publish this draft) and there are other posts that I really want to write. I'm not really sure how I will proceed, but let's keep pushing a little further for now. [Last time](/0080/) I tried to build a bridge from central sets via idempotent ultrafilters back to partial semigroups. This is one of the key points of this series: connecting central sets and partial semigroups.
 
 ## Back to partial semigroups
 
@@ -38,16 +25,16 @@ I believe that a notion of partial semigroup could help solve this mysterious qu
 
 ### Minimal partial semigroups
 
-[I tried to convince you earlier](http://boolesrings.org/krautzberger/2011/08/25/hindman%E2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-3/) that FS-sets are partial semigroups. They are, in fact, the minimal partial subsemigroups of $(\mathbb{N},+)$. Why is this? It's by a rather simple induction argument
+[I tried to convince you earlier](/0077/) that FS-sets are partial semigroups. They are, in fact, the minimal partial subsemigroups of $(\mathbb{N},+)$. Why is this? It's by a rather simple induction argument
 
 *   Say $(S,\cdot)$ is an adequate partial semigroup.
-*   Take any $s_0\in S$.
-*   Inductively, $FP(s_0,\ldots, s_n)$ has all products defined.
-*   Pick $s_{n+1} \in \bigcap_{t \in FP(s_0,\ldots,s_n)} \sigma(t)$ ([remember those $\sigma(t)$?](http://boolesrings.org/krautzberger/2011/08/24/hindman%E2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-2/)) -- since $S$ was a partial semigroup, this intersection will never be empty.
-*   Then all finite products of the $(s_i : i\in \omega)$ are defined.
-*   In other words, $FP(s_i) \subseteq S$ in the fullest sense.
+*   Take any $s_ 0\in S$.
+*   Inductively, $FP(s_ 0,\ldots, s_ n)$ has all products defined.
+*   Pick $s_ {n+1} \in \bigcap_ {t \in FP(s_ 0,\ldots,s_ n)} \sigma(t)$ ([remember those $\sigma(t)$?](/0076/)) -- since $S$ was a partial semigroup, this intersection will never be empty.
+*   Then all finite products of the $(s_ i : i\in \omega)$ are defined.
+*   In other words, $FP(s_ i) \subseteq S$ in the fullest sense.
 
-I don't think I ever mentioned that "to include an FS-set" (or FP-set) has an established abbreviation; such sets are called _IP-set_.
+I don't think I ever mentioned that "to include an FS-set" (or FP-set) has an established abbreviation; such sets are called _IP-set_ .
 
 > Most people will find it important to point out that "IP" does not abbreviate "idempotent" (for idempotent ultrafilters) but was originally meant to abbreviate "infinite parallelepiped" (which makes sense if you think of FS-sets in vector spaces until you realize that this still means "includes an infinite parallelepiped").
 
@@ -66,9 +53,9 @@ In my silly demonstration above that partial semigroups contain FS-sets you may 
 What was however crucial is finite intersection property. And that's already all there is to this "new" notion.
 
 > **Weak partial (sub)semigroup** If $(S,\cdot)$ is a semigroup, then $A\subseteq S$ is a _weak partial subsemigroup_, if the restriction of the partial semigroup operation to $A$ is adequate, i.e., the sets of the form  
->  $$ \sigma_A(a) := \{ b\in A : a\cdot b \in A\}$$ generate a filter.
-> 
-> > Note: I just made up that $\sigma_A(a)$ notation to possibly help your understanding by making the connection to $\sigma(a)$.. I will get to a more classical formulation in a second.
+>  $$ \sigma_ A(a) := \{ b\in A : a\cdot b \in A\}$$ generate a filter.
+>
+> > Note: I just made up that $\sigma_ A(a)$ notation to possibly help your understanding by making the connection to $\sigma(a)$.. I will get to a more classical formulation in a second.
 
 In other words, the operation restricted to (a partial operation on) $A$ is, to some extent, a partial semigroup. We might not have the luxury of full associativity: a, b,c, abc, ab might be in such an A, but not bc (this actually happens in real life btw) -- so we cannot compare $a(bc)$ with anything, in particular not with $(ab)c$.
 

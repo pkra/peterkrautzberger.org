@@ -1,7 +1,7 @@
 ---
 layout: post
 title: epub, mathjax and the iPad -- another attempt
-date: 2011-10-17 14:44:29.000000000 +02:00
+date: 2011-10-17
 categories:
 - technology
 tags:
@@ -12,32 +12,19 @@ tags:
 - mathjax
 - mathml
 - pandoc
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '593133392'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0087/
 ---
 
-It's a funny thing. I don't even own an iPad. But a lot of people are interested in [getting an epub file with mathjax working](http://boolesrings.org/krautzberger/2011/07/13/epub-and-mathematics/) on the iPad.
+It's a funny thing. I don't even own an iPad. But a lot of people are interested in [getting an epub file with mathjax working](/0064/) on the iPad.
 
 Why is that? Well, as far as I could find out the iPad remains the only "hardware" that does not block javascript within an epub file (epub uses html for its content but javascript is designated "should not" in the epub2 standard). Of course it's really the software, iBooks, but mentioning the iPad will be much better SEO. ;)
 
-Incidentally, the only other software I know that is not blocking javascript is the fantastic [Calibre](calibre-ebook.com/). Calibre's reader seems to not care at all about enforcing the epub standard, it just render everything it finds (but I'll get to that later).
+Incidentally, the only other software I know that is not blocking javascript is the fantastic [Calibre](http://calibre-ebook.com/). Calibre's reader seems to not care at all about enforcing the epub standard, it just render everything it finds (but I'll get to that later).
 
 ## So what happened?
 
-A while ago, after an email exchange which is now [mostly available online](http://groups.google.com/group/mathjax-dev/browse_thread/thread/1190dc76b7b88a02?hl=en), I finally created an epub with a complete mathjax installation. Unfortunately, it was a fluke. The file was was not reliably rendered on the iPad, most likely because of its size (MathJax has 30.000 files for ~20MB unzipped). So [Davide Cervone](www.math.union.edu/~dpvc/) suggested to cut down on unnecessary files which iBooks should not need.
+A while ago, after an email exchange which is now [mostly available online](http://groups.google.com/group/mathjax-dev/browse_thread/thread/1190dc76b7b88a02?hl=en), I finally created an epub with a complete mathjax installation. Unfortunately, it was a fluke. The file was was not reliably rendered on the iPad, most likely because of its size (MathJax has 30.000 files for ~20MB unzipped). So [Davide Cervone](http://www.math.union.edu/~dpvc/) suggested to cut down on unnecessary files which iBooks should not need.
 
 This led to a result that rendered reliably -- unfortunately it rendered in a most irritating fashion: half a line below the intended one, writing happily across any other text on the next line, trailing out of the margin etc. That's far from perfect, obviously.
 
@@ -52,7 +39,7 @@ In the mean time, and for posterity, here's how I create epub files. (for the Pr
 Get your hands on
 
 *   [MathJax](http://www.mathjax.org/) (duh!)
-*   [pandoc](johnmacfarlane.net/pandoc/) or [ecub](http://www.juliansmart.com/ecub)
+*   [pandoc](http://johnmacfarlane.net/pandoc/) or [ecub](http://www.juliansmart.com/ecub)
 *   [calibre](http://calibre-ebook.com/)
 
 That's it. (Well, unless you don't know what those are and how to use them -- I won't cover how to install and run these).
@@ -63,11 +50,13 @@ All but ecub is open source, ecub is at least free for personal use -- and of co
 
 I love pandoc (ecub was a great help, too, more about that later) so I'll focus on it.
 
-[As you may know](http://boolesrings.org/krautzberger/2011/08/03/why-markdown-not-latex/), here at Booles' Ring I write using markdown and MathJax. I use pandoc whenever I want to convert this kind of content into something else (like LaTeX). But pandoc (as its name suggest) can handle much more.
+[As you may know](/0070/), here at Booles' Ring I write using markdown and MathJax. I use pandoc whenever I want to convert this kind of content into something else (like LaTeX). But pandoc (as its name suggest) can handle much more.
 
-So hit it! Take your favorite test html file ([I use this post](http://boolesrings.org/krautzberger/2011/09/25/flat-ultrafilters-michigan-logic-seminar-sept-21-2011/)).
+So hit it! Take your favorite test html file ([I use this post](/0082/)).
 
-> `pandoc test.html -o test.epub`
+```bash
+  pandoc test.html -o test.epub
+```
 
 That should give you a working epub file -- it ain't fancy, but it'll do for testing. Be warned that pandoc does not check if your (x)html actually validates. Since the iPad is picky about having valid epub files you should double check (I totally failed the first time and it took me ages to remember this...).
 
@@ -75,7 +64,9 @@ Fortunately, you installed calibre which includes a binary of epub-fix from the 
 
 So you find the epub-fix binary and run
 
-> `epub-fix --epubcheck test.epub`
+```bash
+  epub-fix --epubcheck test.epub
+```
 
 If epub-fix finds errors, fix them: go into the epub file (which is just a zip file) and fix the (most likely html) file that throws an error; in the post I use, the html should complain about a part of the vimeo embedding.
 
@@ -101,16 +92,18 @@ Now that your MathJax installation is small and tidy, just copy the remaining fi
 
 While you're at it, you should add a suitable MathJax configuration to the html files in your epub file. If you're using my post from above, you should add
 
-> `<script type="text/x-mathjax-config">  
->  MathJax.Hub.Config({  
->  tex2jax: {  
->  inlineMath: [ ['$','$'], ["\\(","\\)"] ],  
->  displayMath: [ ['$$','$$'], ["\\[","\\]"] ],  
->  processEscapes: true  
->  },  
->  });  
->  </script>  
->  <script type="text/javascript" src="mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>`
+```html
+  <script type="text/x-mathjax-config">  
+    MathJax.Hub.Config({  
+      tex2jax: {  
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],  
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],  
+      processEscapes: true  
+      },  
+    });  
+  </script>  
+  <script type="text/javascript" src="mathjax/MathJax.js?config=TeX-AMS_HTML-full"> </script>
+```
 
 If you don't use dollar signs for inline math, just take the last line.
 
@@ -118,7 +111,9 @@ If you don't use dollar signs for inline math, just take the last line.
 
 After this copying, we'll have to repair our epub file. An important fact about epub: all files must be listed in the manifest (OPF) file. Since we don't want to do that manually, we use epub-check again.
 
-> `epub-fix --unmanifested --epubcheck test.epub`
+```bash
+  epub-fix --unmanifested --epubcheck test.epub
+```
 
 The "unmanifested" option (you guessed it) will ensure that all files will be added to the manifest. Beware: don't try this on a full MathJax! Epub-fix will slow down after the first 1.000 files...
 
@@ -132,7 +127,9 @@ As I said above, the thing about iOS5 is that Safari and hence iBooks finally ha
 
 Since pandoc is incredibly versatile you won't be surprised that it can produce MathML and that it is aware of MathJax. So all we have to do is modify our earlier command.
 
-> `pandoc test.html --mathml -o test.epub`
+```bash
+  pandoc test.html --mathml -o test.epub
+```
 
 This way, the html now has mathml instead of the LaTeX commands. Just shoot this over to your iPad and see how it renders. What I remember from my quick test with my post mentioned earlier was that some characters would render twice (which I had seen with that unreliable full install of MathJax I mentioned earlier). Also, MathJax's support for commands like \\color obviously won't work without adding MathJax again.
 

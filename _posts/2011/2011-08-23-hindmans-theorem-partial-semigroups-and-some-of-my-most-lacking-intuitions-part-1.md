@@ -2,7 +2,7 @@
 layout: post
 title: Hindman's Theorem, partial semigroups and some of my most lacking intuitions
   (part 1)
-date: 2011-08-23 09:21:59.000000000 +02:00
+date: 2011-08-23
 categories:
 - expository
 - research
@@ -15,24 +15,11 @@ tags:
 - Ramsey theory
 - Schur's Theorem
 - semigroups
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '593133369'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0075/
 ---
 
-> If you remember, [I mentioned](http://boolesrings.org/krautzberger/2011/08/19/a-short-reflection-on-google/) that I was working on a post on some research and it was getting out of hand. Well, it is still not finished, but long enough to start posting a series of posts.
+> If you remember, [I mentioned](/0073/) that I was working on a post on some research and it was getting out of hand. Well, it is still not finished, but long enough to start posting a series of posts.
 
 It's no secret that I love the mathematical world surrounding [Hindman's Theorem](http://en.wikipedia.org/wiki/IP_set#Hindman.27s_Theorem). Recently, I have been revisiting an old draft of mine. To get back into it, I want to jot down some informal notes about one of the research directions I think are worth pursuing -- even though I have no proof of this (pardon the pun). At the heart of this line of thought lies the notion of partial semigroups and, especially, my ideas for weaker forms of that notion. To fully make sense of it I have to take you from the elementary algebraic structures to less known structures to ultrafilters on those and finally to filters related to all of this.
 
@@ -98,6 +85,6 @@ Luckily there's evidence dating back all the way to 1917 guaranteeing that at le
 
 > It's not important, but the proof is quite simple actually, using Ramsey's Theorem (the original thing). Given a coloring of $\mathbb{N}$, use that coloring to define a coloring of all unordered pairs of natural numbers: give $\{x,y\}$ (with $x < y$) the color of $y-x$. By Ramsey's Theorem, there exists a homogeneous infinite set. Pick any three numbers $x < y < z$ in that homogeneous set. Then $z - y, z - x$ and $y - x$ all have the same color -- which solves our problem, since $z-y + y-x = z-x$ -- and notice how associativiy comes into play.
 
-### outlook
+### Outlook
 
 In the next post, I'll try to point out how far we can push this search for algebraic structures.

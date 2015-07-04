@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hanging out with Sam
-date: 2011-12-21 20:08:27.000000000 +01:00
+date: 2011-12-21
 categories:
 - Teaching
 - technology
@@ -9,21 +9,8 @@ categories:
 tags:
 - g+hangout
 - Samuel Coskey
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '592858885'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0094/
 ---
 
 [Sam already wrote](http://boolesrings.org/scoskey/hangout-subgroups-of-z/) about the g+hangout that he hosted last Saturday and I wanted to jot down some of my own thoughts on the experience. I thoroughly enjoyed the whole thing and I've been looking for good imagery to describe it. I only came up with two, but maybe you can help me with that in the comments.

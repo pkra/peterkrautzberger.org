@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A posting on wordpress-for-scientists
-date: 2011-10-15 00:31:11.000000000 +02:00
+date: 2011-10-15
 categories:
 - Booles' Rings
 - technology
@@ -10,21 +10,8 @@ tags:
 - citations
 - reference manager
 - wordpress for scientists
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '593133331'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0085/
 ---
 
 > I just finished [a long posting at the mailing list/google group Wordpress For Scientist](http://groups.google.com/group/wordpress-for-scientists/browse_thread/thread/f263df8e98cb440a?hl=en). This was spawned by today's meeting with Sam and [this week's trouble with the papercite plugin](http://boolesrings.org/blog/2011/08/16/citations-two-new-plugins-to-try/). We really need to find a different solution. So I'm hoping both for a discussion here at Booles' Rings as well as some help from the smart people on the mailing list.

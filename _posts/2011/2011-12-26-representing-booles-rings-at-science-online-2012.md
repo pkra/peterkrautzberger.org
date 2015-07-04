@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Representing Booles' Rings at Science Online 2012
-date: 2011-12-26 18:30:12.000000000 +01:00
+date: 2011-12-26
 categories:
 - announcement
 - blogosphere
@@ -15,21 +15,8 @@ tags:
 - science online 12
 - science online 2012
 - scio12
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '592858926'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0095/
 ---
 
 At the end of January, I'll be at [Scio12](http://scienceonline2012.com/)! Science Online is that super awesomesauce (un)conference where all the hipster science bloggers hang out -- and also those fantastic little companies working on the future of doing science on _teh internetz (tm)_.

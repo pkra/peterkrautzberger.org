@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The recent publishing debate -- a timeline
-date: 2011-11-26 19:44:26.000000000 +01:00
+date: 2011-11-26
 categories:
 - scientific community
 - thoughts on mathematics
@@ -11,21 +11,8 @@ tags:
 - publishing
 - scientific publishing
 - TImothy Gowers
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '593133189'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0090/
 ---
 
 In the last 3 weeks I have written a couple of drafts about the debate that finally hit the mathematical blogosphere [through Tim Gowers's blog](http://gowers.wordpress.com/2011/10/31/how-might-we-get-to-a-new-model-of-mathematical-publishing/) (I don't know how much he is aware of similar, ongoing discussions in the scientific blogosphere beyond his Michael Nielsen link but in case my <del datetime="2011-11-27T00:00:22+00:00">one</del> two readers are not, [here are two](http://scientopia.org/blogs/ethicsandscience/2011/11/05/scientific-authorship-guests-courtesy-contributions-and-harms/) you [should add to your feed reader](http://scientopia.org/blogs/drugmonkey/2011/11/11/a-thought-exercise-for-readers/)).
@@ -47,7 +34,7 @@ After getting stuck in one draft after another, I would like to try to writing s
     *   [Gowers's Weblog // Timothy Gowers](http://gowers.wordpress.com/2011/11/03/a-more-modest-proposal/): A more modest proposal
 *   Nov 10 [Nuit Blanche // Igor Carron](http://nuit-blanche.blogspot.com/2011/11/blowing-up-peer-review-bubble.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+blogspot/wCeDd+(Nuit+Blanche)): Blowing up the Peer-Review Bubble
 *   Nov 13 [A CS Professor // Claire Mathieu](http://teachingintrotocs.blogspot.com/2011/11/journals-conferences-arxiv-my-solution.html): Journals, Conferences, Arxiv: my solution.
-*   Nov 14 [The accidental Mathematician // Izabella Laba](http://ilaba.wordpress.com/2011/11/14/random-thoughts-on-publishing-and-the-internet/): Random thoughts on publishing and the internet.
+*   Nov 14 [The accidental Mathematician // Izabella Laba](http://ilaba.wordpress.com/2011/11/14/random-thoughts-on-publishing-and-the-internet/): Random thoughts on publishing and the inte--rnet.
 *   Nov 17 [Yet another blogging mathematician // Adam Bohn](http://nuit-blanche.blogspot.com/2011/11/long-tail-of-post-peer-review.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+blogspot%2FwCeDd+%28Nuit+Blanche%29): Publishing/Perishing.
 *   Nov 18 [Nuit Blanche // Igor Carron](http://nuit-blanche.blogspot.com/2011/11/long-tail-of-post-peer-review.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+blogspot%2FwCeDd+%28Nuit+Blanche%29): The Long Tail of Post-Peer-Review Publishing: Reproducible Research as a Side Effect.
 *   Nov 20 [Nuit Blanche // Igor Carron](http://nuit-blanche.blogspot.com/2011/11/to-serve-science.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+blogspot%2FwCeDd+%28Nuit+Blanche%29): To Serve Science.
@@ -72,8 +59,6 @@ The second post is a very different read. My problem with it is mostly the selec
 The new proposal isn't really much different from the old one in practice, but it addresses said comments. The main change is to get rid of everything disruptive from the first proposal so that the service might be broadly accepted. The new concept is simply a service to check each others preprints.
 
 For me, the most interesting part of that post is the list of people that Tim Gowers listens to.
-
-* * *
 
 * * *
 

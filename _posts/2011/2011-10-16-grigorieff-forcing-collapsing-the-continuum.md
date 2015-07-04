@@ -1,26 +1,13 @@
 ---
 layout: post
 title: Grigorieff forcing collapsing the continuum
-date: 2011-10-16 01:19:20.000000000 +02:00
+date: 2011-10-16
 categories:
 - research
 tags:
 - Grigorieff forcing
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '593133282'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0086/
 ---
 
 This is a short technical post, more a note-to-self so that I know where to look this up if I ever need it again. It is also somewhat of a correction of something I said during my talk in Toronto in June.
@@ -29,7 +16,7 @@ This is a short technical post, more a note-to-self so that I know where to look
 
 If you don't remember, here's the quick and dirty (i.e. traditional) way to define Grigorieff (or Gregorieff depending on your choice of latinization) forcing: it consists of partial functions on $\omega$ which are defined on a "small" set, i.e., a set in the dual ideal of a filter. For simplicity, let's focus on ultrafilters. asd s
 
-> **Grigorieff Forcing** Given a ultrafilter $U$ on $\omega$, let $$\mathbb{P}_U = { f: A \rightarrow \omega : \omega \setminus A \in U }.$$  
+> **Grigorieff Forcing** Given a ultrafilter $U$ on $\omega$, let $$\mathbb{P}_U = \{ f: A \rightarrow \omega : \omega \setminus A \in U \}.$$  
 >  Partially order such functions by $f\leq g$ iff $f \supseteq g$, i.e., $f$ has more information.
 
 You can think of Grigorieff conditions as perfect binary trees with complete branching on an ultrafilter set and "parallel movement" elsewhere. But I said quick and dirty is enough here, so let's not worry too much.
@@ -60,7 +47,7 @@ This result is mentioned in Jech's Multiple Forcing book, but without proof and 
 *   **Third Observation** $H$ is cofinal.
     *   Given any $\alpha$, we want to find $n$ such that $H(n) > \alpha$.
     *   For a density argument, fix any condition $f$.
-    *   Since $dom(f)$ is a small set, we can find $n$ such that $$|I_n \cap \omega \setminus dom(f)| = \omega.$$
+    *   Since $dom(f)$ is a small set, we can find $n$ such that $$\left\vert I_n \cap \omega \setminus dom(f) \right\vert  = \omega.$$
     *   Therefore, we can find $A \subseteq I_n \cap \omega \setminus dom(f)$ such that $A \cup f^{-1}(1) = A^n_\beta$ for some $\beta > \alpha$.
     *   Extend $f$ to all of $I_n$ such that $f^{-1}(1) = A$.
     *   Then $f \Vdash \dot G \cap I_n = A^n_\beta$ -- as desired.

@@ -1,39 +1,26 @@
 ---
 layout: post
 title: The single greatest influence
-date: 2011-11-20 12:47:30.000000000 +01:00
+date: 2011-11-20
 categories:
 - thoughts on mathematics
 tags:
 - Stefanie Frick
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '593133289'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0089/
 ---
 
 > Note: this is an old draft that I finally finished; there's a line to indicate the major break between the original half and the additional part (not that the first part wasn't rewritten a little, too).
 
-Yesterday, when hearing the news that Steve Jobs passed away I stumbled upon [his speech at Stanford](http://www.youtube.com/watch?v=UF8uR6Z6KLc) from 2005\. To be honest, I was a little disappointed but I guess it says something about him that even this mediocre speech left something behind: it made me think about different influences on my life, in particular, the influences on my development as a mathematician.
+Yesterday, when hearing the news that Steve Jobs passed away I stumbled upon [his speech at Stanford](http://www.youtube.com/watch?v=UF8uR6Z6KLc) from 2005. To be honest, I was a little disappointed but I guess it says something about him that even this mediocre speech left something behind: it made me think about different influences on my life, in particular, the influences on my development as a mathematician.
 
-I was surprised to realize who I believe to be the single greatest influence on my development as a mathematician. You'd expect something like "that one math teacher" (which would be [this one](http://www.beethovengymnasium.de/index.php?seite=lehrer&lid=47)) or maybe "my first logic professor" (which would be [this one](http://www.mathematik.uni-muenchen.de/~donder/)). Then of course, you could say "my PhD advisors" (which would be [her](http://page.mi.fu-berlin.de/sabine1k/) and [him](http://www.math.lsa.umich.edu/~ablass/)).
+I was surprised to realize who I believe to be the single greatest influence on my development as a mathematician. You'd expect something like "that one math teacher" (which would be [this one](http://www.beethoven-gymnasium.de/personen-und-organisation/lehrerkollegium/detail/lehrerid/2/)) or maybe "my first logic professor" (which would be [this one](http://www.mathematik.uni-muenchen.de/~donder/)). Then of course, you could say "my PhD advisors" (which would be [her](http://page.mi.fu-berlin.de/sabine1k/) and [him](http://www.math.lsa.umich.edu/~ablass/)).
 
 But that's not the case. Don't get me wrong, all of them had a serious impact on my development and without them I wouldn't have come this far.
 
 If I ask myself who the single greatest influence on me as a researcher was, then I must say: Stefanie Frick. (Funny, I can't even google her properly, [oh well](http://genealogy.math.ndsu.nodak.edu/id.php?id=129281)).
 
-Steffi was a student with [Stefan Geschke](http://www.hcm.uni-bonn.de/homepages/prof-dr-stefan-geschke/) in Berlin and [Menachem Kojman](http://www.cs.bgu.ac.il/~kojman/) in Be'er Sheva and she got her PhD about a year ahead of me. Unfortunately, she left research after her PhD. I still take the fact that nobody stopped her as a sign that the mathematical community values the wrong qualities in mathematicians (but this is another draft waiting to be completed).
+Steffi was a student with [Stefan Geschke](http://www.math.uni-hamburg.de/home/geschke/) in Berlin and [Menachem Kojman](http://www.cs.bgu.ac.il/~kojman/) in Be'er Sheva and she got her PhD about a year ahead of me. Unfortunately, she left research after her PhD. I still take the fact that nobody stopped her as a sign that the mathematical community values the wrong qualities in mathematicians (but this is another draft waiting to be completed).
 
 * * *
 

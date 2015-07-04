@@ -2,7 +2,7 @@
 layout: post
 title: Hindman’s Theorem, partial semigroups and some of my most lacking intuitions
   (part 6)
-date: 2011-09-15 12:01:58.000000000 +02:00
+date: 2011-09-15
 categories:
 - expository
 - research
@@ -14,32 +14,19 @@ tags:
 - Ramsey theory
 - semigroups
 - Vitaly Bergelson
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '593133218'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0080/
 ---
 
-> I know, I know, it's part 6 already. [Last time](http://boolesrings.org/krautzberger/2011/09/08/hindman%E2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-5/) I finally formulated the Central Sets Theorem. This part will just be a small bridge. But at least you'll finally know why on earth I am writing this, i.e., what big open question I'm actually trying to build some intuitions for.
+> I know, I know, it's part 6 already. [Last time](/0079/) I finally formulated the Central Sets Theorem. This part will just be a small bridge. But at least you'll finally know why on earth I am writing this, i.e., what big open question I'm actually trying to build some intuitions for.
 
 ## Central Sets and ultrafilters
 
 Before we can move on in this series I should tell you a little bit about the relationship between ultrafilters and central sets -- and finally give you something close to a definition.
 
-If you [already believed me](http://boolesrings.org/krautzberger/2011/08/25/hindman%E2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-3/) that idempotent ultrafilters exist, you might also believe me that there's a special kind of idempotent ultrafilters, they are called **minimal idempotents**. The reason for the name "minimal" is a partial order on idempotents coming from ring theory. Yet again, we'll skip the definition -- I would first have to convince you that $\beta \mathbb{N}$ is actually a semigroup and, again, I don't want to go there right now.
+If you [already believed me](/0077/) that idempotent ultrafilters exist, you might also believe me that there's a special kind of idempotent ultrafilters, they are called **minimal idempotents**. The reason for the name "minimal" is a partial order on idempotents coming from ring theory. Yet again, we'll skip the definition -- I would first have to convince you that $\beta \mathbb{N}$ is actually a semigroup and, again, I don't want to go there right now.
 
-In any case, there are those idempotent ultrafilters which are minimal idempotents. As [I mentioned before](http://boolesrings.org/krautzberger/2011/09/07/hindman%E2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-4/), Hillel Furstenberg had introduced the notion of central set via recurrence in dynamical systems. It took a couple of years until [in 1990 Vitaly Bergelson and Neil Hindman](http://www.jstor.org/pss/2001762) helped establish that centrality can be framed extremely well in terms of ultrafilters.
+In any case, there are those idempotent ultrafilters which are minimal idempotents. As [I mentioned before](/0078/), Hillel Furstenberg had introduced the notion of central set via recurrence in dynamical systems. It took a couple of years until [in 1990 Vitaly Bergelson and Neil Hindman](http://dx.doi.org/10.1090/S0002-9947-1990-0982232-5) helped establish that centrality can be framed extremely well in terms of ultrafilters.
 
 > **Theorem (Bergelson, Hindman)** $A\subseteq \mathbb{N}$ is _central_ iff $A$ is in a minimal idempotent ultrafilter.
 
@@ -53,7 +40,7 @@ This leaves us with the following situation:
 This is not as optimal as it could be! If you remember, we were even better off with Hindman's Theorem:
 
 > A set is contained in an idempotent ultrafilter if and only if it "satisfies" Hindman's Theorem (i.e., includes an FS-set).
-> 
+>
 > **In fact**, a set is an FS-set if and only if it is contained in an idempotent ultrafilter.
 
 Hindman's Theorem and idempotent ultrafilters corresponded directly. The unfortunate situation for central sets is that (as far as I know) no version of the Central Sets Theorem is able to accomplish a correspondence of the form

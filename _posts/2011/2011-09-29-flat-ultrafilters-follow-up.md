@@ -1,42 +1,31 @@
 ---
 layout: post
 title: Flat ultrafilters follow-up
-date: 2011-09-29 12:28:18.000000000 +02:00
+date: 2011-09-29
 categories:
 - updates
 tags: []
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '596195884'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0083/
 ---
 
-There are a couple of reasons to write a quick follow-up post to the [notes for my talk on flat ultrafilters](http://boolesrings.org/krautzberger/2011/09/25/flat-ultrafilters-michigan-logic-seminar-sept-21-2011/ "Flat Ultrafilters (Michigan Logic Seminar Sept 21, 2011)").
+There are a couple of reasons to write a quick follow-up post to the [notes for my talk on flat ultrafilters](/0082/ "Flat Ultrafilters (Michigan Logic Seminar Sept 21, 2011)").
 
 ### Small addenda included
 
-I updated [the notes](http://boolesrings.org/krautzberger/2011/09/25/flat-ultrafilters-michigan-logic-seminar-sept-21-2011/) a little. Nothing much, some bad pictures and some comments.
+I updated [the notes](/0082/) a little. Nothing much, some bad pictures and some comments.
 
 ### Video recording is online
 
 I uploaded my talk to vimeo -- find it embedded below or [look it up on vimeo](http://vimeo.com/29738390).
 
+<iframe src="https://player.vimeo.com/video/29738390" width="100%" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 [Flat Ultrafilters (2011/09/21 University of Michigan Logic Seminar)](http://vimeo.com/29738390) from [Peter Krautzberger](http://vimeo.com/user2937952) on [Vimeo](http://vimeo.com).
 
 ### Flat ultrafilters and the Katetov order
 
-There's one thing worth stressing though. Remember [when I wrote](http://boolesrings.org/krautzberger/2011/09/25/flat-ultrafilters-michigan-logic-seminar-sept-21-2011/ "Flat Ultrafilters (Michigan Logic Seminar Sept 21, 2011)") that it's a little cheating to say that a flat ultrafilter is simply an ultrafilter on $[\omega]^{<\omega}$ that extends a certain filter?
+There's one thing worth stressing though. Remember [when I wrote](/0082/ "Flat Ultrafilters (Michigan Logic Seminar Sept 21, 2011)") that it's a little cheating to say that a flat ultrafilter is simply an ultrafilter on $[\omega]^{<\omega}$ that extends a certain filter?
 
 Instead of cheating, I should have talked about the **Katetov order**. Usually, the Katetov order is defined for ideals, but let me give the formulation for filters.
 

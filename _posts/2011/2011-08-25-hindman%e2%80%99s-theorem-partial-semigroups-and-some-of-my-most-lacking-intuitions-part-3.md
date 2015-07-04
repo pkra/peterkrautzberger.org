@@ -2,7 +2,7 @@
 layout: post
 title: Hindman’s Theorem, partial semigroups and some of my most lacking intuitions
   (part 3)
-date: 2011-08-25 17:00:50.000000000 +02:00
+date: 2011-08-25
 categories:
 - expository
 - research
@@ -15,25 +15,11 @@ tags:
 - partition regular
 - Ramsey theory
 - semigroups
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '2'
-  dsq_thread_id: '593133274'
-  _cws_is_markdown_gmt: '2013-06-06 12:10:12'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0077/
 ---
 
-> Ok, time for part 3\. We're not close to an end but I must apologize that I won't be able to post in the next week. But let's recap. In the [first part](http://boolesrings.org/krautzberger/2011/08/23/hindmans-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-1/) I simply explained why semigroups are not partition regular and in the [second part](http://boolesrings.org/krautzberger/2011/08/24/hindman%E2%80%99s-theorem-partial-semigroups-and-some-of-my-most-lacking-intuitions-part-2/) I wrote about FS-sets and, finally, introduced partial semigroups. One of the headings promised that partial semigroups will help us talk about FS-sets.
+> Ok, time for part 3\. We're not close to an end but I must apologize that I won't be able to post in the next week. But let's recap. In the [first part](/0075/) I simply explained why semigroups are not partition regular and in the [second part](/0076/) I wrote about FS-sets and, finally, introduced partial semigroups. One of the headings promised that partial semigroups will help us talk about FS-sets.
 
 ## Are we there yet?
 
@@ -76,7 +62,7 @@ I love the odd history of Hindman's Theorem, so allow me to digress. Around 1970
 Coming back to the relation between FS-sets and ultrafilters, there's also a reverse:
 
 > If $A$ contains an FS-set, then $A$ is in an idempotent ultrafilter.
-> 
+>
 > In other words, $A$ contains an FS-set iff $A$ is in an idempotent ultrafilter.
 
 Again, the proof is not important right now (don't worry I'll probably get back to it later). What is important is that, in this sense, the structure of FS-sets and idempotent ultrafilters is immediately connected.

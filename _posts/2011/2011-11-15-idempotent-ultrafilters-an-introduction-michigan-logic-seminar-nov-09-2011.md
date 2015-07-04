@@ -1,86 +1,74 @@
 ---
 layout: post
 title: Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)
-date: 2011-11-15 22:58:27.000000000 +01:00
+date: 2011-11-15
 categories:
 - expository
 - research
 - talk
 tags: []
-status: publish
-type: post
 published: true
-meta:
-  _edit_last: '3'
-  _cws_is_markdown: '1'
-  dsq_thread_id: '594646145'
-author:
-  login: krautzberger
-  email: p.krautzberger@gmail.com
-  display_name: Peter Krautzberger
-  first_name: Peter
-  last_name: Krautzberger
-
-
+permalink: 0088/
 ---
 
 Because of a power outage at the department my talk [announced for October 29th](https://settheorytalks.wordpress.com/2011/10/29/michigan-logic-seminar-7/) was postponed by a week.
 
+<iframe src="https://player.vimeo.com/video/32109926" width="100%" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 [Idempotent Ultrafilters: An Introduction (University of Michigan Logic Seminar 2011-11-08)](http://vimeo.com/32109926) from [Peter Krautzberger](http://vimeo.com/pkrautzberger) on [Vimeo](http://vimeo.com).
 
 Here are transcripts of my notes (as well as the originals at the end).
 
 ### Hindman's Theorem
 
-> **Hindman's Theorem** If $\mathbb{N} = A_0 \dot\cup A_1$, then $\exists j \exists (x_i)_{i\in \omega}$ such that $$FS(x_i) \subseteq A_j.$$
+> **Hindman's Theorem** If $\mathbb{N} = A_ 0 \dot\cup A_ 1$, then $\exists j \exists (x_ i)_ {i\in \omega}$ such that $$FS(x_ i) \subseteq A_ j.$$
 
-Imagine you'd like to prove this with an ultrafilter: $$p \in \beta \mathbb{N} \Rightarrow \exists j A_j=:A \in p.$$
+Imagine you'd like to prove this with an ultrafilter: $$p \in \beta \mathbb{N} \Rightarrow \exists j A_ j=:A \in p.$$
 
-What do we need? We will build $(x_i)$ inductively!
+What do we need? We will build $(x_ i)$ inductively!
 
-Pick $x_0 \in A$ -- we can't really choose better than that (except maybe by shrinking the set first).
+Pick $x_ 0 \in A$ -- we can't really choose better than that (except maybe by shrinking the set first).
 
 If we're looking for our result, we need
 
-*   $x_1 \in A$ such that $x_1, x_0$ and $x_0+x_1 \in A$.
-*   i.e. $x_1 \in -x_0 + A$.
-*   so we need $-x_0 + A \in p$!
+* $x_ 1 \in A$ such that $x_ 1, x_ 0$ and $x_ 0+x_ 1 \in A$.
+* i.e. $x_ 1 \in -x_ 0 + A$.
+* so we need $-x_ 0 + A \in p$!
 
-In other words, we need $x_0 \in \{ x: -x+A \in p \}$ to begin with, i.e., $\{ x: -x+A \in p \} \in p$ -- for any $A\in p$!
+In other words, we need $x_ 0 \in \\{ x: -x+A \in p \\}$ to begin with, i.e., $\\{ x: -x+A \in p \\} \in p$ -- for any $A\in p$!
 
-Galvin in 1970: $p \in \beta \mathbb{N}$ is almost left-translation invariant iff $\forall A\in p: \{ x : -x +A\in p\} \in p$.
+Galvin in 1970: $p \in \beta \mathbb{N}$ is almost left-translation invariant iff $\forall A\in p: \\{ x : -x +A\in p\\} \in p$.
 
 Is this enough?
 
-*   Pick $x_0 \in A \cap \{ x: -x+A \} \in p$
-*   Then choose $x_1 \in -x_0 + A \cap A$.
+* Pick $x_ 0 \in A \cap \\{ x: -x+A \\} \in p$
+* Then choose $x_ 1 \in -x_ 0 + A \cap A$.
 
 **But** to continue the process, we need more!
 
-We need $x_2$ such that:
+We need $x_ 2$ such that:
 
-*   $x_2 \in A$ -- $A\in p$, check
-*   $x_0 + x_2 \in A$ -- $x_2 \in -x_0 +A \in p$, check
-*   $x_1 + x_2 \in A$ -- $x_2 \in -x_1 + A \in p$ -- possible if we picked $x_1 \in \{x: -x+A\in p\} \in p$, check.
-*   $x_0 +x_1 + x_2 \in A$ -- $x_2 \in -(x_0+x_1) +A$ \in p$???
+* $x_ 2 \in A$ -- $A\in p$, check
+* $x_ 0 + x_ 2 \in A$ -- $x_ 2 \in -x_ 0 +A \in p$, check
+* $x_ 1 + x_ 2 \in A$ -- $x_ 2 \in -x_ 1 + A \in p$ -- possible if we picked $x_ 1 \in \\{x: -x+A\in p\\} \in p$, check.
+* $x_ 0 +x_ 1 + x_ 2 \in A$ -- $x_ 2 \in -(x_ 0+x_ 1) +A \in p$???
 
-What does this mean? $-(x_0 +x_1) + A = -x_1 + (-x_0 +A)$ by associativity.
+What does this mean? $-(x_ 0 +x_ 1) + A = -x_ 1 + (-x_ 0 +A)$ by associativity.
 
 Ah! But we have seen this before!
 
-We needed $x_1 \in \{ x: -x + (-x_0 +A) \in p\}$, so we needed $\{ x: -x + (-x_0 +A) \in p\}\in p!
+We needed $x_ 1 \in \\{ x: -x + (-x_ 0 +A) \in p\\}$, so we needed $\\{ x: -x + (-x_ 0 +A) \in p\\}\in p$!
 
-But that's ok!! $-x_0 + A \in p$ & $\forall B\in p: \{x : -x+B \in p \} \in p$!
+But that's ok!! $-x_ 0 + A \in p$ & $\forall B\in p: \\{x : -x+B \in p \\} \in p$!
 
 ### How do we get to the end?
 
-*   Inductively, assume we have $x_0,\ldots, x_n$ with $FS(x_0,\ldots, x_n) \subseteq A$ **and** $$\bigcap_{z \in FS(x_0,\ldots,x_n)} -z + A \in p.$$
+* Inductively, assume we have $x_ 0,\ldots, x_ n$ with $FS(x_ 0,\ldots, x_ n) \subseteq A$ **and** $$\bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} -z + A \in p.$$
 
-*   Pick $x_{n+1}$ from $$( \bigcap_{z \in FS(x_0,\ldots,x_n)} -z + A ) \cap A \cap \{ x: -x+ (\bigcap_{z \in FS(x_0,\ldots,x_n)} -z + A) \in p\}$$ -- this intersection is in $p$!
+* Pick $x_ {n+1}$ from $$( \bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} -z + A ) \cap A \cap \\{ x: -x+ (\bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} -z + A) \in p\\}$$ -- this intersection is in $p$!
 
-*   Note that $$-x_{n+1} + ( \bigcap_{z \in FS(x_0,\ldots,x_n)} -z + A \cap A)$$ $$= \bigcap_{z \in FS(x_0,\ldots,x_n)} -x_{n+1} (-z + A) \cap -x_{n+1} A \in p.$$
+* Note that $$-x_ {n+1} + ( \bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} -z + A \cap A)$$ $$= \bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} -x_ {n+1} (-z + A) \cap -x_ {n+1} A \in p.$$
 
-*   So $$\bigcap_{z \in FS(x_0,\ldots,x_{n+1})} -z + A =$$ $$\bigcap_{z \in FS(x_0,\ldots,x_n)} (-z + A) \cap \bigcap_{z \in FS(x_0,\ldots,x_n)} (-(z+x_{n+1}) + A) \cap (-x_{n+1} +A$$ which is in $p$ -- as desired.
+* So $$\bigcap_ {z \in FS(x_ 0,\ldots,x_ {n+1})} -z + A =$$ $$\bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} (-z + A) \cap \bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} (-(z+x_ {n+1}) + A) \cap (-x_ {n+1} +A$$ which is in $p$ -- as desired.
 
 ## Question: Do "almost left-translation invariant" ultrafilters exist?
 
@@ -88,27 +76,27 @@ Glazer, ~1975: Yes of course! These are the idempotent ultrafilters! We know the
 
 ### What does this mean?
 
-*   $(\mathbb{N}, +)$ is a semigroup
-*   $\mathbb{N}$ is discrete, so $\beta \mathbb{N}$, the Stone-Čech compactification of $\mathbb{N}$ exists, in fact $\beta \mathbb{N} \cong$ the set of ultrafilters on $\mathbb{N}$ with a topological basis $\hat A = \{ p \in \beta \mathbb{N} : A \in p \}$ for $A\subseteq \mathbb{N}$.
+* $(\mathbb{N}, +)$ is a semigroup
+* $\mathbb{N}$ is discrete, so $\beta \mathbb{N}$, the Stone-Čech compactification of $\mathbb{N}$ exists, in fact $\beta \mathbb{N} \cong$ the set of ultrafilters on $\mathbb{N}$ with a topological basis $\hat A = \\{ p \in \beta \mathbb{N} : A \in p \\}$ for $A\subseteq \mathbb{N}$.
 
-*   $\beta \mathbb{N}$ is compact (exactly by the Boolean Prime Ideal Theorem)
+* $\beta \mathbb{N}$ is compact (exactly by the Boolean Prime Ideal Theorem)
 
-*   $\beta \mathbb{N}$ is Hausdorff ($p\neq q \Rightarrow \exists A\in p, B\in q: A\cap B = \emptyset$).
+* $\beta \mathbb{N}$ is Hausdorff ($p\neq q \Rightarrow \exists A\in p, B\in q: A\cap B = \emptyset$).
 
-*   $\beta \mathbb{N}$has a semigroup structure extending $(\mathbb{N}, +)$
-    *   From $\beta (\mathbb{N} \times \mathbb{N}$:
-    *   $p,q \in \beta \mathbb{N}\mapsto p \otimes q \in \beta(\mathbb{N}^2)$
-        *   try $(A\times B)_{A\in p, B\in q}$ -- not an ultrafilter
-        *   if you try to prove ultraness:
-        *   $\bigcup_{a\in A} \{a\} \times B_a$ for some $A\in p$, all $B_a \in q$
-        *   generates an ultrafilter!
-*   Then $p + q = + (p\otimes q)$
-    *   i.e., generated by \{ \bigcup_{a \in A} a + B_a : A\in p, B_a \in q\}$ [check: $n+k = +(n \times k)$]
-*   Properties
-    *   $\forall q\in \beta \mathbb{N}: \rho_q: \beta \mathbb{N} \rightarrow \mathbb{N}, p \mapsto p+q$ is continuous.
-        *   Why? $X\in p+q$ iff $\exists A\in p \exists (B_a)_{a \in A} , B_a \in q: \bigcup_{a\in A} a+ B_a \subseteq X$ iff $\{a: -a + X \in q\} =: X^{-q} \in p$.
-        *   But $X^{-q}$ only depends on $q$!
-*   associativity: check it -- use $$\bigcup_{a\in A} a+ (\bigcup_{b\in B_a} b + C_b)= \bigcup_{c\in \bigcup_{a\in A} a+ (\bigcup_{b\in B_a} a+ b)} c + C_c.$$ The first set is in $p+(q+r)$, the second in $(p+q)+r$.
+* $\beta \mathbb{N}$has a semigroup structure extending $(\mathbb{N}, +)$
+    * From $\beta (\mathbb{N} \times \mathbb{N}$:
+    * $p,q \in \beta \mathbb{N}\mapsto p \otimes q \in \beta(\mathbb{N}^2)$
+        * try $(A\times B)_ {A\in p, B\in q}$ -- not an ultrafilter
+        * if you try to prove ultraness:
+        * $\bigcup_ {a\in A} \\{a\\} \times B_ a$ for some $A\in p$, all $B_ a \in q$
+        * generates an ultrafilter!
+* Then $p + q = + (p\otimes q)$
+    * i.e., generated by $\\{ \bigcup_ {a \in A} a + B_ a : A\in p, B_ a \in q\\}$ [check: $n+k = +(n \times k)$]
+* Properties
+    * $\forall q\in \beta \mathbb{N}: \rho_ q: \beta \mathbb{N} \rightarrow \mathbb{N}, p \mapsto p+q$ is continuous.
+        * Why? $X\in p+q$ iff $\exists A\in p \exists (B_ a)_ {a \in A} , B_ a \in q: \bigcup_ {a\in A} a+ B_ a \subseteq X$ iff $\\{a: -a + X \in q\\} =: X^{-q} \in p$.
+        * But $X^{-q}$ only depends on $q$!
+* associativity: check it -- use $$\bigcup_ {a\in A} a+ (\bigcup_ {b\in B_ a} b + C_ b)= \bigcup_ {c\in \bigcup_ {a\in A} a+ (\bigcup_ {b\in B_ a} a+ b)} c + C_ c.$$ The first set is in $p+(q+r)$, the second in $(p+q)+r$.
 
 ### Now remember: what did Galvin need?
 
@@ -119,27 +107,57 @@ I.e., $A\in p \Rightarrow A^{-p} \in p \Rightarrow A \in p+p$, so $p \subseteq p
 
 > **Ellis 1958** $(X,\cdot)$ compact, Hausdorff, right-topological semigroup $\Rightarrow \exists x\in X: x\cdot x =x$.
 
-_Proof._  
- * Think: $x\cdot x = x \Rightarrow \{x\}$ is a closed semigroup - a minimal one!  
- * $\{ Y \subseteq X: Y \mbox{ compact, non-empty, semigroup} \}$  
- * By Zorn's Lemma, $\exists $ minimal, non-empty, compact semigroup $Y$.  
- * Think: that should be $|Y|=1$!  
- * We'll show $\forall y \in Y: y\cdot y = y$ (therefore $Y = \{y\}$ by minimality)  
- * How? We only have continuity and associativity  
- * $Y \cdot y = \rho_y [Y]$ compact, non-empty  
- * $(Y\cdot y) \cdot (Y\cdot y) \subseteq Y\cdot y$, i.e., a semigroup.  
- * By minimality of $Y$, $Y\cdot y = Y$  
- * Great! We'd expect that if $y\cdot y = y$  
- * $Y\cdot y = Y \Rightarrow \exists z \in Y: z\cdot y = y$.  
- * Then $\{ z \in Y : zy=y\} = \rho^{-1}_y (y) \subseteq Y$  
- * $(z_0 z_1) y = z_0 (z_1 y) = z_0 y= y$, i.e., semigroup.  
- * compact? Yes $\rho^{-1}_y[ \{y\}]$ closed.  
- * $Y$ minimal, so $\{z \in Y: zy=y \} = Y \Rightarrow y\cdot y = y$.
+_Proof._
 
-[![](assets/IMG_20111111_141154-225x300.jpg "PART 1 Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011) ")](http://boolesrings.org/krautzberger/files/2011/11/IMG_20111111_141154.jpg)
+* Think: $x\cdot x = x \Rightarrow \\{x\\}$ is a closed semigroup - a minimal one!  
+* $\\{ Y \subseteq X: Y \mbox{ compact, non-empty, semigroup} \\}$  
+* By Zorn's Lemma, $\exists $ minimal, non-empty, compact semigroup $Y$.  
+* Think: that should be $\left\vert Y \right\vert = 1$!  
+* We'll show $\forall y \in Y: y\cdot y = y$ (therefore $Y = \\{y\\}$ by minimality)  
+* How? We only have continuity and associativity  
+* $Y \cdot y = \rho_ y [Y]$ compact, non-empty  
+* $(Y\cdot y) \cdot (Y\cdot y) \subseteq Y\cdot y$, i.e., a semigroup.  
+* By minimality of $Y$, $Y\cdot y = Y$  
+* Great! We'd expect that if $y\cdot y = y$  
+* $Y\cdot y = Y \Rightarrow \exists z \in Y: z\cdot y = y$.  
+* Then $\\{ z \in Y : zy=y\\} = \rho^{-1}_ y (y) \subseteq Y$  
+* $(z_ 0 z_ 1) y = z_ 0 (z_ 1 y) = z_ 0 y= y$, i.e., semigroup.  
+* compact? Yes $\rho^{-1}_ y[ \\{y\\}]$ closed.  
+* $Y$ minimal, so $\\{z \in Y: zy=y \\} = Y \Rightarrow y\cdot y = y$.
 
-[![](assets/IMG_20111111_141202-225x300.jpg "PART 2: Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)")](http://boolesrings.org/krautzberger/files/2011/11/IMG_20111111_141202.jpg)
 
-[![](assets/IMG_20111111_141242-225x300.jpg "PART 3: Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)")](http://boolesrings.org/krautzberger/files/2011/11/IMG_20111111_141242.jpg)
+ <figure>
+   <a href="/assets/2011/idpotUFumich1.jpg">
+     <img alt="Part 1 Idempotent Ultrafilters" src="/assets/2011/idpotUFumich1.jpg"/>
+   </a>
+   <figcaption>
+    Part 1 Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)
+   </figcaption>
+ </figure>
 
-[![](assets/IMG_20111111_141250-225x300.jpg "PART 4: Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)")](http://boolesrings.org/krautzberger/files/2011/11/IMG_20111111_141250.jpg)
+ <figure>
+   <a href="/assets/2011/idpotUFumich2.jpg">
+     <img alt="Part 2 Idempotent Ultrafilters" src="/assets/2011/idpotUFumich2.jpg"/>
+   </a>
+   <figcaption>
+    Part 2 Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)
+   </figcaption>
+ </figure>
+
+ <figure>
+   <a href="/assets/2011/idpotUFumich3.jpg">
+     <img alt="Part 3 Idempotent Ultrafilters" src="/assets/2011/idpotUFumich3.jpg"/>
+   </a>
+   <figcaption>
+    Part 3 Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)
+   </figcaption>
+ </figure>
+
+ <figure>
+   <a href="/assets/2011/idpotUFumich4.jpg">
+     <img alt="Part 4 Idempotent Ultrafilters" src="/assets/2011/idpotUFumich4.jpg"/>
+   </a>
+   <figcaption>
+    Part 4 Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)
+   </figcaption>
+ </figure>
