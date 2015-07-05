@@ -89,7 +89,7 @@ permalink: 0148/
 
 My first workbook starts likemost would -- with lecture notes.
 
-IIRC, these notes come from series of talks Sabine Koppelberg (my PhD advisor at FU Berlin) gave over the summer 2006 to a small audience (possibly just me? I don't remember). These talks followed her lecture notes for the course "Ultrafilter, Topologie und Kombinatorik" [she gave in the previous semester](https://www.mi.fu-berlin.de/kvv/lecturer.htm?id=318) on all things $\beta S$. The content is mainly based on [Hindman, Strauss, Algebra in the Stone-Cech Compactification](www.degruyter.com/view/product/47147), greatly improved by Sabine's own style.
+IIRC, these notes come from series of talks Sabine Koppelberg (my PhD advisor at FU Berlin) gave over the summer 2006 to a small audience (possibly just me? I don't remember). These talks followed her lecture notes for the course "Ultrafilter, Topologie und Kombinatorik" [she gave in the previous semester](https://www.mi.fu-berlin.de/kvv/lecturer.htm?id=318) on all things $\beta S$. The content is mainly based on [Hindman, Strauss, Algebra in the Stone–Čech Compactification](www.degruyter.com/view/product/47147), greatly improved by Sabine's own style.
 
 The next two pages will continue this talk and ~20 pages will follow on the subject (interrupted by exercises and other notes). The topic are dynamical systems and recurrence, the famous Bergelman-Hindman result (as indicated: central = dynamically central), some notes on thick, pieceswise syndetic and the combinatorial description of central as well as the Central Sets Theorem.
 

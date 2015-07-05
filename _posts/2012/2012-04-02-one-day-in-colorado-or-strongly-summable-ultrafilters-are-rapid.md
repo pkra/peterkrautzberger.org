@@ -38,7 +38,7 @@ Coming from set theory, one of the things that initially attracted me to (and an
 
 This isn't terribly surprising, in the sense that almost _nothing_ is a sum of ultrafilters, i.e., it is well known that
 
-> **Folklore** ([van Douwen](http://dx.doi.org/10.1016/0166-8641(91)90074-V)?) $ \mathbb{N}^* + \mathbb{N}^* $ is nowhere dense in $ \mathbb{N}^*$ (the Stone-Cech remainder $ \beta \mathbb{N} \setminus \mathbb{N}$).
+> **Folklore** ([van Douwen](http://dx.doi.org/10.1016/0166-8641(91)90074-V)?) $ \mathbb{N}^* + \mathbb{N}^* $ is nowhere dense in $ \mathbb{N}^*$ (the Stone–Čech remainder $ \beta \mathbb{N} \setminus \mathbb{N}$).
 
 So from a [Baire category](https://en.wikipedia.org/wiki/First_ category) point of view, you shouldn't expect any ultrafilter to be a sum of ultrafilters.
 

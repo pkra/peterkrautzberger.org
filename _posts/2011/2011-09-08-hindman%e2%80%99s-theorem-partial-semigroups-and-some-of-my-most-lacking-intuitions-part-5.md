@@ -20,7 +20,7 @@ permalink: 0079/
 
 ## The Central Sets Theorems
 
-So what is this mysterious theorem that, even though ergodic in origin is so close to the heart of algebra in the Stone-Cech compactification? It is not easy to formulate, but luckily [I kept bugging you](/0078/) with $\mathbb{F}$ and condensations, so we are well prepared.
+So what is this mysterious theorem that, even though ergodic in origin is so close to the heart of algebra in the Stone–Čech compactification? It is not easy to formulate, but luckily [I kept bugging you](/0078/) with $\mathbb{F}$ and condensations, so we are well prepared.
 
 Since there are many different versions of the theorem as it has been improved and generalized over the last 30 years, the most general formulations are quite something to process. As you might remember, this series started out as an expository piece, so let's write down a very simple version first, even weaker than the very first version proved by Fürstenberg (but who knows, maybe that's the version he first noticed). Remember that central sets are some kind of partition regular sets (that I haven't even properly defined yet but who cares).
 

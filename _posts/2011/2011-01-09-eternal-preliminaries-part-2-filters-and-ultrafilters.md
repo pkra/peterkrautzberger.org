@@ -9,14 +9,14 @@ categories:
 tags:
 - filter
 - semigroup
-- Stone-Cech compactification
+- Stone–Čech compactification
 - tensor product of filters
 - ultrafilter
 published: true
 permalink: 0047/
 ---
 
-[Last time](/0042/) I wrote about the basic structures, (partial) semigroups. But algebra in the Stone-Cech compactification deals, well, with the Stone-Cech compactification. I will try to ignore the general theory of compactifications because we only deal with a very simple case — discrete spaces. Suffice it to say that any elementary topology book should have a chapter on compactifications if you want to read more.
+[Last time](/0042/) I wrote about the basic structures, (partial) semigroups. But algebra in the Stone–Čech compactification deals, well, with the Stone–Čech compactification. I will try to ignore the general theory of compactifications because we only deal with a very simple case — discrete spaces. Suffice it to say that any elementary topology book should have a chapter on compactifications if you want to read more.
 
 ## Filters and ultrafilters
 
@@ -56,9 +56,9 @@ A filter $F$ is maximal iff $F$ is prime, i.e., $(\forall A\subseteq S) A\in F \
     *   Therefore, $A, S\setminus A$ are both in $G$.
     *   In other words, $G$ is not a filter — in other words, $F$ is maximal.
 
-## The Stone-Cech compactification (apologies for missing haceks)
+## The Stone–Čech compactification (apologies for missing haceks)
 
-The set of ultrafilters is often denoted by $\beta S$ and it turns out to be the [Stone-Cech compactification](https://secure.wikimedia.org/wikipedia/en/wiki/Stone%E2%80%93%C4%8Cech_ compactification), i.e., the maximal compactification of $S$, because $S$ is discrete. There’s a gazillion things to be said about $\beta S$. To get started, we should celebrate the most practical and in fact characterizing property of the Stone-Cech compactification.
+The set of ultrafilters is often denoted by $\beta S$ and it turns out to be the [Stone–Čech compactification](https://secure.wikimedia.org/wikipedia/en/wiki/Stone%E2%80%93%C4%8Cech_ compactification), i.e., the maximal compactification of $S$, because $S$ is discrete. There’s a gazillion things to be said about $\beta S$. To get started, we should celebrate the most practical and in fact characterizing property of the Stone–Čech compactification.
 
 **Universal Property of $\beta S$** If $X$ is compact and Hausdorff, $f: S \rightarrow X$ continuous (in our case, any map is), then there exists a unique continuous map $\beta f: \beta S \rightarrow X$ that extends $f$. We usually identify $\beta f$ with $f$ for convenience.
 

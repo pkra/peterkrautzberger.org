@@ -82,6 +82,6 @@ The talk/lecture from the previous page continues, tackling proximality with its
 
 The proof that begins at the bottom of the page is, for me, a typical cases of a proof that prevents one from learning; a picture perfect proof that throws elegant arguments around but keeps from its reader the beautiful messiness of coming up with it in the first place.
 
-The reference [HS 4.39] is alomst certainly whatever is numbered 4.39 in Hindman & Strauss, "Algebra in the Stone-Cech compactification". (I can't check the actual detail since my copy of H&S is still on route from LA.)
+The reference [HS 4.39] is alomst certainly whatever is numbered 4.39 in Hindman & Strauss, "Algebra in the Stone–Čech compactification". (I can't check the actual detail since my copy of H&S is still on route from LA.)
 
 I forgot to mention in the first post that I substituted \mathfrak for Sutterlin in the transcription -- Sutterlin is too hard to come by (Sutterlin U is used to indicate the neighborhood filter).
