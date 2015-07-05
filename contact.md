@@ -24,7 +24,7 @@ The fastest way to reach me is to [write me an email](mailto:p.krautzberger@gmai
 
 ### Licensing
 
-<span>Unless noted or attributed otherwise: </span><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Peter Krautzberger on the web</span> is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).
+<span>Unless noted or attributed otherwise: </span><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Peter Krautzberger on the web</span> is licensed under a [Creative Commons Attribution 4.0 Unported License](https://creativecommons.org/licenses/by/4.0/).
 
 ### Commenting
 
