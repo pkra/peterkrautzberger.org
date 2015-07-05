@@ -8,7 +8,6 @@ categories:
 tags: []
 published: true
 permalink: 0011/
-redirect_from: "krautzberger/2010/02/15/other-lazy-people/"
 ---
 
 I frequently wind up with a list of interesting blog posts — so why not include this here, too? As long as I cannot convince myself to use google reader or buzz, I’ll do this the classical way (especially since I just read a complaint that less and less blogers use backlinks).
@@ -23,6 +22,6 @@ Gil Kallai continues his series of posts on the concept of probability  with a 
 
 For the German speaking people — via [Christian Reinboth](http://www.scienceblogs.de/frischer-wind/2010/02/schones-video-faszination-der-mathematik.php) a nice (I’m guessing Austrian science department) video promoting mathematics.
 
-<iframe width="854" height="510" src="https://www.youtube.com/embed/NdL5vN65U_8" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="510" src="https://www.youtube.com/embed/NdL5vN65U_8" frameborder="0" allowfullscreen></iframe>
 
 Enjoy.

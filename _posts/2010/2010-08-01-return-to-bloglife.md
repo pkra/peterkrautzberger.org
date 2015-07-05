@@ -14,7 +14,6 @@ tags:
 - P-point
 published: true
 permalink: 0029/
-redirect_from: "krautzberger/2010/08/01/return-to-bloglife/"
 ---
 
 Maybe it was the summer heat, maybe the summer break at the UofM or something else. In any case, I did not feel like blogging the last couple of weeks. But this must change! So to get me back to writing I’ll start with something <del>small</del> tiny.
@@ -23,7 +22,7 @@ Maybe it was the summer heat, maybe the summer break at the UofM or something el
 
 I have the great pleasure of spending my PostDoc at the University of Michigan. After spending a winter here 2/3 years ago, I knew a lot of things I could look forwards to — like the amazing grad students.
 
-One of the unforeseen pleasures so far has been to meet [Francois Dorais](http://www-personal.umich.edu/~dorais/) of [MathOverflow-Admin](http://mathoverflow.net/users/2000/francois-g-dorais) fame. Last Friday <del>we talked</del> he told me about [a proof by Michael Canjar](http://www.jstor.org/pss/2047620) (sorry for linking to a paywall) on Mathias forcing and there is this small observation that I think is really cool.
+One of the unforeseen pleasures so far has been to meet [Francois Dorais](http://dorais.org) of [MathOverflow-Admin](http://mathoverflow.net/users/2000/francois-g-dorais) fame. Last Friday <del>we talked</del> he told me about [a proof by Michael Canjar](http://doi.org/10.2307/2047620) (sorry for linking to a paywall) on Mathias forcing and there is this small observation that I think is really cool.
 
 ## (non) P-points
 
@@ -43,7 +42,7 @@ Even though the argument I want to mention holds for arbitrary functions, you sh
 
 Now if $p \in \beta \mathbb{N}$ is not a P-point, then there exists a function $f: \omega \rightarrow \omega$ which is not constant or finite-to-one on any set $A \in p$.
 
-So what about $I_g := \{ n \in \mathbb{N} \ \vert \ g(f(n)) < n \}$?
+So what about $I_g := \\{ n \in \mathbb{N} \ \vert \ g(f(n)) < n \\}$?
 
 On this set, $g \circ f$ is dominated by the identity. That’s slow!!! Just imagine $g$ was the [Ackermann function](http://en.wikipedia.org/wiki/Ackermann_function) or faster thatn all recursive functions! Suddenly, its only as fast as the identity? Wow…
 
@@ -51,12 +50,12 @@ And now the crazy part.
 
 $I_g \in p$.
 
-That’s right! On a set in $p$ $g\circ f$ slows down like that. That’s crazy!
+That’s right! On a set in $p$, $g\circ f$ slows down like that. That’s crazy!
 
 **Proof**.
 
 *   $f$ is finite-to-one on $\omega \setminus I_g$.
-    *   For $k\in \omega$, $f^{-1}(k) \cap (\omega \setminus I_k) = \{ i \in \omega \ \vert \ g(k)= g(f(i)) \geq i \}$
+    *   For $k\in \omega$, $f^{-1}(k) \cap (\omega \setminus I_k) = \\{ i \in \omega \ \vert \ g(k)= g(f(i)) \geq i \\}$
     *   But this is a finite set for any $k$.
     *   In other words, $f$ is finite-to-one.
 *   Therefore $\omega \setminus I_g \notin p$.
@@ -66,4 +65,4 @@ That’s all.
 
 ### What you can do with this.
 
-[Michael Canjar used this fact](http://www.jstor.org/pss/2047620) to show that Mathias forcing with a non P-point adjoins a dominating real. This is not too difficult now since it is easy to see that a Mathias real will dominate all sets in the ultrafilter. But that’s all for today.
+[Michael Canjar used this fact](http://doi.org/10.2307/2047620) to show that Mathias forcing with a non P-point adjoins a dominating real. This is not too difficult now since it is easy to see that a Mathias real will dominate all sets in the ultrafilter. But that’s all for today.

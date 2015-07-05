@@ -14,7 +14,6 @@ tags:
 - research evaluation
 published: true
 permalink: 0032/
-redirect_from: "krautzberger/2010/09/04/a-comment-at-gobbledygook-on-evaluating-science/"
 ---
 
 _This morning I commented [on a post at one of the PLoS-blogs, Gobbledygook](http://blogs.plos.org/mfenner/2010/09/04/unmeasurable-science/). Since it got rather lenghty, I thought its worth posting here as well. You should go and read the originalpost. Martin Fenner makes some interesting points on the problem of evaluating research output. He makes some suggestions on how to change the system so that less time is spent writing grant applications and reports, to which I commented the following._

@@ -12,15 +12,14 @@ tags:
 - language
 - writing
 published: true
-permalink: 0042/
-redirect_from: "krautzberger/2010/11/28/the-single-most-important-subject/"
+permalink: 0041/
 ---
 
 Recently, I had a few conversations about teaching mathematics varying from elementary school to undergraduate level. These are not refined, in depth analyses, just some quick thoughts that I think worthwhile to ponder every once in a while.
 
 ## The single, most important subject in school is language
 
-The single, most important subject in school is the native/primary language — especially, for mathematics. This seems to strike people as odd. But I find this statement trivial. Too many people seem to think that everybody understands language anyway and that’s that. As a mathematician and science fan I often found that the lack of proficiency in languages compromises people’s abilities to deal with everyday concepts in our scientific world. The complexity of language is a challenge not to be taken lightly. Even professional journalists are frequently overwhelmed by the complexity of scientific writing — over at [scienceblogging.org](http://www.scienceblogging.org) you will probably find some science blogger crying out against a piece of misunderstood and/or abused science everyday.
+The single, most important subject in school is the native/primary language — especially, for mathematics. This seems to strike people as odd. But I find this statement trivial. Too many people seem to think that everybody understands language anyway and that’s that. As a mathematician and science fan I often found that the lack of proficiency in languages compromises people’s abilities to deal with everyday concepts in our scientific world. The complexity of language is a challenge not to be taken lightly. Even professional journalists are frequently overwhelmed by the complexity of scientific writing — over at [scienceblogging.org [Wayback Machine]](https://web.archive.org/web/20110108131826/http://scienceblogging.org/) you will probably find some science blogger crying out against a piece of misunderstood and/or abused science everyday.
 
 In mathematics, it is however even more vital than in the sciences and the humanities. The sciences have empirical facts and the humanities have both emotional and factual aspects that allow us to understand their concepts with information outside of the language being used. If you don’t know what I mean, just look up to the stars, look at some original historical documents or listen to a poem read aloud.
 

@@ -13,12 +13,11 @@ tags:
 - phd advisor
 published: true
 permalink: 0031/
-redirect_from: "krautzberger/2010/08/27/supervisor-precognition/"
 ---
 
 I am currently working on a nice little proof. I was initially very confident that I could find the proof — mostly because I already gave a different proof for the same observation, albeit with completely different tools.
 
-This time around the proof will probably end up as a series of stronger and stronger lemmas. Already 3 weeks ago I thought I had shown the strongest intermediary lemma I have formulated so far. Unfortunately, [Andreas](http://www.math.lsa.umich.edu/~ablass/) shot it down, then I found a different proof, and [Andreas](http://www.math.lsa.umich.edu/~ablass/) shot it down again, then I found another proof, and [Francois](http://www-personal.umich.edu/~dorais/) shot it down. As painful as this sounds (and really, really is), I am so lucky to have such colleagues.
+This time around the proof will probably end up as a series of stronger and stronger lemmas. Already 3 weeks ago I thought I had shown the strongest intermediary lemma I have formulated so far. Unfortunately, [Andreas](http://www.math.lsa.umich.edu/~ablass/) shot it down, then I found a different proof, and [Andreas](http://www.math.lsa.umich.edu/~ablass/) shot it down again, then I found another proof, and [Francois](http://dorais.org) shot it down. As painful as this sounds (and really, really is), I am so lucky to have such colleagues.
 
 Finally, I think I have a found a proof for the intermediary lemma that will live (well, maybe I should wait until Francois sees it later today…). The creepiest thing about this proof, however, is [Andreas’s](http://www.math.lsa.umich.edu/~ablass/) precognition.
 

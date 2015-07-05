@@ -6,7 +6,7 @@ categories:
 - research
 - thelazyscience@peter.krautzberger.info
 tags:
-- algebra in the stone-cech compactification
+- algebra in the Stone–Čech compactification
 - central set
 - central set theorem
 - Dona Strauss
@@ -14,27 +14,26 @@ tags:
 - Hillel Furstenberg
 - Neil Hindman
 - partial semigroup
-- Stone-Cech compactification
+- Stone–Čech compactification
 published: true
 permalink: 0015/
-redirect_from: "krautzberger/2010/04/18/understanding-the-central-sets-theorem/"
 ---
 
 To write the first post on the new domain I thought I might just write a little about what I’ve been studying recently — the Central Sets Theorem.
 
-This theorem dates back to the 70s and the original formulation and proof are due to [Hillel Furstenberg](http://en.wikipedia.org/wiki/Hillel_Furstenberg). In its current form as found say in [De, Hindman, Strauss](http://mysite.verizon.net/nhindman/research/newcentral.pdf) it is probably the strongest algebraic partition theorem around. I had encountered the theorem many times before, in books, lectures, papers and talks but I never truly developed an understanding for it. Since I recently felt it might give me an edge in a problem I’m working on I decided to take a better look.
+This theorem dates back to the 70s and the original formulation and proof are due to [Hillel Furstenberg](http://en.wikipedia.org/wiki/Hillel_Furstenberg). In its current form as found say in [De, Hindman, Strauss](http://nhindman.us/research/newcentral.pdf) ([DOI](http://doi.org/10.4064/fm199-2-5)) it is probably the strongest algebraic partition theorem around. I had encountered the theorem many times before, in books, lectures, papers and talks but I never truly developed an understanding for it. Since I recently felt it might give me an edge in a problem I’m working on I decided to take a better look.
 
 ### Detour 1 — metamathematics
 
 How do you achieve an understanding of a theorem? In an incomplete list I would include the following
 
-*   Understand its most important application or corollary
-*   Understand its statement
-*   Understand its proof
-*   Improve its proof
-*   Understand how to come up with the proof
-*   Give a different proof
-*   Improve the theorem
+* Understand its most important application or corollary
+* Understand its statement
+* Understand its proof
+* Improve its proof
+* Understand how to come up with the proof
+* Give a different proof
+* Improve the theorem
 
 I would say this list is in increasing order of understanding but that’s open for discussion.
 
@@ -78,17 +77,16 @@ This is much weaker than the statement before. Of course, given a sequence $\mat
 
 ### Partial Semigroups
 
-So where does this leave us? Well, when I hear finite subsets of $\mathbb{N}$ I think of my favourite structure — in fact the favourite structure for a lot of algebra in the [Stone-Cech compactification](http://en.wikipedia.org/wiki/Stone%E2%80%93%C4%8Cech_compactification#Addition_on_the_Stone.E2.80.93.C4.8Cech_compactification_of_the_naturals) on $\mathbb{N}$, the semigroup $\delta \mathbb{F}$. But let’s step back a little. The best way to think about $\delta \mathbb{F}$ is in terms of partial semigroups.
+So where does this leave us? Well, when I hear finite subsets of $\mathbb{N}$ I think of my favourite structure — in fact the favourite structure for a lot of algebra in the [Stone–Čech compactification](http://en.wikipedia.org/wiki/Stone%E2%80%93%C4%8Cech_compactification#Addition_on_the_Stone.E2.80.93.C4.8Cech_compactification_of_the_naturals) on $\mathbb{N}$, the semigroup $\delta \mathbb{F}$. But let’s step back a little. The best way to think about $\delta \mathbb{F}$ is in terms of partial semigroups.
 
 **(Adequate) Partial Semigroups**  
  A _partial semigroup_ operation on a set $S$ is a map $\cdot: S \times S \rightarrow S$ such that associativity $s \cdot (t \cdot u) = (s \cdot t) \cdot u$ holds in the sense that if one side is defined so is the other and they are equal. A partial semigroup is _adequate_ if the sets  
 
  \\[  
- \sigma(s) := \{ t\in S : {s \cdot t} \mbox{ is defined} \}  
- \\]  
- generate a filter, i.e., finitely many elements have a common compatible element.
+ \sigma(s) := \left\\{ t\in S : {s \cdot t} \mbox{ is defined} \right\\}  
+ \\]   generate a filter, i.e., finitely many elements have a common compatible element.
 
-This notion was introduced by [Bergelson, Blass and Hindman](http://www.math.lsa.umich.edu/~ablass/bbh.pdf) in the 90s. It tells us that the operation, although partial, is associative in a strong way. Additionally, it makes sure the operation is not just empty but defined for many elements (well, ok it could be just one for all, but that’s not the point).
+This notion was introduced by [Bergelson, Blass and Hindman](http://www.math.lsa.umich.edu/~ablass/bbh.pdf) ([DOI](http://doi.org/10.1112/plms/s3-68.3.449)) in the 90s. It tells us that the operation, although partial, is associative in a strong way. Additionally, it makes sure the operation is not just empty but defined for many elements (well, ok it could be just one for all, but that’s not the point).
 
 For ultrafilters the critical point is the following.
 
@@ -96,12 +94,12 @@ For ultrafilters the critical point is the following.
  Given an adequate partial semigroup and $p,q$ ultrafilters containing all $\sigma(s)$. Then the operation  
 
  \\[  
- p \cdot q = \{ A \subseteq S : \{ s : \{ t : s \cdot t \in A \} \in q \} \in p \}  
+ p \cdot q = \left\\{ A \subseteq S : \left\\{ s : \left\\{ t : s \cdot t \in A \right\\} \in q \right\\} \in p \right\\}  
  \\]  
 
 is well-defined and associative and semi-continuous. In other words, $\delta S$ is a closed semi-continuous semigroup.
 
-Now this is somewhat surprising. Even though our operation is partial, these ultrafilters are a full semigroup! With all the bells and whistles it takes to do algebra in the Stone-Cech compactification.
+Now this is somewhat surprising. Even though our operation is partial, these ultrafilters are a full semigroup! With all the bells and whistles it takes to do algebra in the Stone–Čech compactification.
 
 What does this have to do with the Central Sets Theorem?
 

@@ -14,12 +14,11 @@ tags:
 - what is seminar
 published: true
 permalink: 0017/
-redirect_from: "krautzberger/2010/04/28/new-what-is-videos/"
 ---
 
 ### Backlog
 
-Last week I finally begun catching up on uploading videos of the [‘What is …?’ seminar](https://www.math.fu-berlin.de/w/Math/WhatIsSeminar) in Berlin. Even though I’m now in Ann Arbor I am still happy to help out by uploading the video recordings. For now I’m only catching up on videos I recorded at the beginning of the year, but there’s something to look forward to: the new video camera the [BMS](http://www.math-berlin.de) sponsored offers HD resolution! So look forward to more fantastic mathematical footage coming soon.
+Last week I finally begun catching up on uploading videos of the [‘What is …?’ seminar](http://www.math.fu-berlin.de/w/Math/WhatIsSeminar) in Berlin. Even though I’m now in Ann Arbor I am still happy to help out by uploading the video recordings. For now I’m only catching up on videos I recorded at the beginning of the year, but there’s something to look forward to: the new video camera the [BMS](http://www.math-berlin.de) sponsored offers HD resolution! So look forward to more fantastic mathematical footage coming soon.
 
 ### Rough paths, Geodesics and more
 

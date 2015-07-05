@@ -49,12 +49,11 @@ tags:
 - zotero
 published: true
 permalink: 0010/
-redirect_from: "krautzberger/2010/02/14/tools-for-your-online-collaboration/"
 ---
 
 So the [winter school in Hejnice](http://www.winterschool.eu/) <del>ended two weeks ago</del> is long past — and despite my intentions I did not find the time to blog. This is primarily a sign of the quality of the winter school, both scientifically and socially. I do admit I spent the lunch breaks walking in the beautiful surrounding mountains instead of blogging…
 
-Anyway, on the last evening of the winter school a couple of people gathered together to exchange tools for collaborating via the [intertubes](http://en.wiktionary.org/wiki/Intertubes). I volunteered — also with the upcoming third [Young Set Theorists](http://www.bernhard-irrgang.de/yst.html) meeting in mind — to make the discussion available online. Of course, the title refers to [this](http://info.tuwien.ac.at/goldstern/papers/tools.ps) wonderful paper by Goldstern and Judah which taught me the little bit of iterated forcing that I know.
+Anyway, on the last evening of the winter school a couple of people gathered together to exchange tools for collaborating via the [intertubes](http://en.wiktionary.org/wiki/Intertubes). I volunteered — also with the upcoming third [Young Set Theorists](http://www.math.uni-bonn.de/ag/logik/events/young-set-theory-2010/) meeting in mind — to make the discussion available online. Of course, the title refers to [this](http://info.tuwien.ac.at/goldstern/papers/tools.ps) wonderful paper by Goldstern and Judah which taught me the little bit of iterated forcing that I know.
 
 For now I will restrict myself to [freemium](http://en.wikipedia.org/wiki/Freemium) services. Of course, this is an open list — drop me a comment to add to this list (hm, a google wave would be better, right?).
 
@@ -64,7 +63,7 @@ A much better tool than a phone is? A videophone! (especially for handwaving arg
 
 **Whiteboards**
 
-But what good is a (video)phone if you cannot write on a blackboard together? In any serious mathematical discussion, notation will become an issue sooner or later. A simple, but bandwidth friendly and flash based whiteboard is [scriblink](http://en.wikipedia.org/wiki/Paint_chat#Scriblink) — just go to the site and give your partner the invitation link. An alternative is [dabbleboard](http://dabbleboard.com/) which offers some shape recognition and also allows multiple pages in the free version and — most importantly — PDFs as background images. However, it is a little heavy on the bandwidth, especially latency which often annoys my voip connection.
+But what good is a (video)phone if you cannot write on a blackboard together? In any serious mathematical discussion, notation will become an issue sooner or later. A simple, but bandwidth friendly and flash based whiteboard is [scriblink](http://en.wikipedia.org/wiki/Paint_chat#Scriblink) — just go to the site and give your partner the invitation link. An alternative is [dabbleboard](https://web.archive.org/web/20100208022739/http://www.dabbleboard.com/) which offers some shape recognition and also allows multiple pages in the free version and — most importantly — PDFs as background images. However, it is a little heavy on the bandwidth, especially latency which often annoys my voip connection.
 
 Of course, if you want to use an online whiteboard efficiently you need some kind of [tablet](http://en.wikipedia.org/wiki/Tablet_%28disambiguation%29) to write with. I personally have been very happy with a [graphics tablet](http://en.wikipedia.org/wiki/Graphics_tablet), a Wacom Bamboo to be exact. You can get tablets for 40€ and lower in Germany, but prices will differ regionally. Of course, I also use my Gigabyte M1028T [tablet pc](http://en.wikipedia.org/wiki/Tablet_PC) — although its tablet functionality is basic (no pressure sensitivity, only moving by clicking) making writing with it less suitable for real note taking — see the PDF section below.
 
@@ -114,7 +113,7 @@ The winner for best practices with mathml, I think, is the [n-Category Cafe](htt
 
 Almost last but in no way least, there are blogs.  This would be worth an independent post and there are plenty of examples for this, but here we go.
 
-They come in all colours, for an impressive list go [here](http://wiki.henryfarrell.net/wiki/index.php/Mathematics/Statistics). Also, go to any of those blogs and check their blogroll to find many more mathematics blogs. If you don’t understand what blogs are good for you might read [John Baez’s article](http://golem.ph.utexas.edu/category/2009/09/what_do_mathematicians_need_to_1.html). To name a few contenders for ‘most influential mathematical blogs’: [What’s new with Terence Tao](http://terrytao.wordpress.com/), the most active single user blog I know, [Timothy Gowers’s Weblog](http://gowers.wordpress.com/) and Gil Kallai’s [Combinatorics and more](http://gilkalai.wordpress.com/).
+They come in all colours, for an impressive list go [here [Wayback Machine]](http://web.archive.org/web/20100120025343/http://wiki.henryfarrell.net/wiki/index.php/Mathematics/Statistics). Also, go to any of those blogs and check their blogroll to find many more mathematics blogs. If you don’t understand what blogs are good for you might read [John Baez’s article](http://golem.ph.utexas.edu/category/2009/09/what_do_mathematicians_need_to_1.html). To name a few contenders for ‘most influential mathematical blogs’: [What’s new with Terence Tao](http://terrytao.wordpress.com/), the most active single user blog I know, [Timothy Gowers’s Weblog](http://gowers.wordpress.com/) and Gil Kallai’s [Combinatorics and more](http://gilkalai.wordpress.com/).
 
 Of course, they are the ones that got me started with reading math blogs, but it’s the small blogs that got me hooked. The diversity is a challenge (I don’t understand half of what I read) but blogs form the best mathematics newspaper out there.
 
@@ -133,7 +132,7 @@ _**Addenda**_
 
 **Unicode characters**
 
-There was also a question regarding unicode characters and the like (instead of mathml). I just found [this chart](http://tlt.its.psu.edu/suggestions/international/bylanguage/mathchart.html) via [mathoverflow](http://mathoverflow.net/faq#latex) — maybe it helps.
+There was also a question regarding unicode characters and the like (instead of mathml). I just found [this chart [Wayback Machine]](http://web.archive.org/web/20080703175126/http://tlt.psu.edu/suggestions/international/bylanguage/mathchart.html) via [mathoverflow](http://mathoverflow.net/faq#latex) — maybe it helps.
 
 **2010-02-17**
 
@@ -151,4 +150,4 @@ To put up a video you don’t need much these days, so it’s strange that there
 
 Thanks to David for reminding me that I forgot one aspect of pdf management — [reference management (see the list on wikipedia)](http://en.wikipedia.org/wiki/Comparison_of_reference_management_software). Now there are many programs out there to get your citations, i.e., your BibTeX files organized. But there are also programs that connect the citations with the pdf, offer online database searches, tags, pdf annotation and social networking ideas.
 
-A big list can (once again) be [found on wikipedia](http://en.wikipedia.org/wiki/Comparison_of_reference_management_software). To present a few. I personally use [referencer](http://en.wikipedia.org/wiki/Referencer) but David also mentioned [Mendeley](http://en.wikipedia.org/wiki/Mendeley) in his comment which has an impressive list of features including online access and social network aspects and I’ll probably try it out. To give credit where it is due a few of these programs name [Papers](http://papers/) as inspiration which unfortunately is Mac only. With a different flavour there are the web-only [Zotero](http://en.wikipedia.org/wiki/Zotero), a powerful Firefox addon, and [I, Librarian](http://en.wikipedia.org/wiki/I,_Librarian), a groupware tool.
+A big list can (once again) be [found on wikipedia](http://en.wikipedia.org/wiki/Comparison_of_reference_management_software). To present a few. I personally use [referencer](http://en.wikipedia.org/wiki/Referencer) but David also mentioned [Mendeley](http://en.wikipedia.org/wiki/Mendeley) in his comment which has an impressive list of features including online access and social network aspects and I’ll probably try it out. To give credit where it is due a few of these programs name [Papers](http://www.papersapp.com/) as inspiration which unfortunately is Mac only. With a different flavour there are the web-only [Zotero](http://en.wikipedia.org/wiki/Zotero), a powerful Firefox addon, and [I, Librarian](https://en.wikipedia.org/wiki/Ilibrarian), a groupware tool.

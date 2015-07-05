@@ -11,10 +11,9 @@ tags:
 - Boulder
 published: true
 permalink: 0024/
-redirect_from: "krautzberger/2010/06/07/blast-2010-post-scriptum/"
 ---
 
-Darn, being delayed for 5 hours at the airport on Sunday still only got me started (not finished) on this retrospective on the <span class="caps">BLAST</span> 2010\. I guess since it was a delay from 11pm to 4.30am my brain stopped working after the long, final day in Boulder (which included my very own first conference chalk talk!).
+Darn, being delayed for 5 hours at the airport on Sunday still only got me started (not finished) on this retrospective on the BLAST 2010. I guess since it was a delay from 11pm to 4.30am my brain stopped working after the long, final day in Boulder (which included my very own first conference chalk talk!).
 
 In short, it was a very, very good conference, one of the best that I have been to (which arguably aren’t that many). The tutorials were either very good or just short of amazing, the short talks were good and the atmosphere extremely friendly. The only, very slight criticism would be the predominance of set theoretic talks. This may sound strange from somebody closer to set theory than most other things, but I would have enjoyed having the opportunity to learn even more about the other fields present (at least the tutorials did not have to be 3-1). Especially, to hear about the connections between universal algebra and theoretical computer science was extremely interesting.
 

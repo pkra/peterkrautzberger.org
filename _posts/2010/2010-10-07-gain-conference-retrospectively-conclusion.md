@@ -13,7 +13,6 @@ tags:
 - GAIN conference
 published: true
 permalink: 0037/
-redirect_from: "krautzberger/2010/10/07/gain-conference-retrospectively-conclusion/"
 ---
 
 Well, this has been going on for too long… This final post should have concluded the mini-series weeks ago. Instead, it has prevented me from writing about anything else. So let me conclude with some late notes and my answers to the feedback questionaire. I will not go back to the individual posts to refresh my memory, instead, I will write simply what I remember now which is probably more important since it will dominate my long time memory of the whole event (but I will use my notes for this post which sort of developed while writing the rest).
@@ -35,10 +34,10 @@ Let’s hit the cons. I admit I am probably overly critical, but hey, it’s my 
 
 **cons**
 
-*   social networks, social media, internet based cooperations <span class="caps">FAIL</span>
+*   social networks, social media, internet based cooperations FAIL
     *   For a networking conference the lack of considerations of internet based networking was pretty shocking. Every (young) researchers knows that digital communication is the key for a productive future. The total lack of talking about this did not mean that this is a triviality and does not need to be repeated. It unfortunately meant that the funding organisations are still in tight control of non-digital natives who don’t understand what potential is already there and how much more is yet to be achieved through online collaborations. Of course, the funding landscape does not accommodate such collaborations for the very same reason, so there was no need for this if you focus on available tools. But the vision was clearly lacking.
 *   Deutsch, Deutsch, Deutsch
-    *   The whole conference was too German-centric. I grew up in Schengen-country, I don’t know borders in Europe. Europe is my home, Germany my local variant to Europe. Of course, I’m exaggerating. Nevertheless, the funding agencies need to think European. And we’re not doing that. The shameful number is (I believe but find no links) 8% non-German professors which (I believe) gets cut to 3% if you exclude Austrian and Swiss professors. All the talk about brain drain vs brain gain vs brain circulation. What’s the point if this is only focused on German researchers? The one thing that makes the American system fascinating is its openness towards foreigners. And if the German system cannot even open up to the rest of Europe than it’s never going to become as interesting a system. Similarly, if you want those well-educated people back from North-America then you should be happy if you can get them back to the EU. Obviously, that might not be possible with your money (although, why not for neighboring countries?), but this kind of conference needs to get a European equivalent. Maybe there we could at least get the [information that is already available](http://www.dfg.de/download/pdf/dfg_magazin/wissenschaftliche_karriere/heisenberg_treffen_2010/erc_foerderung.pdf) (cf. the post on the field-specific breakout session).
+    *   The whole conference was too German-centric. I grew up in Schengen-country, I don’t know borders in Europe. Europe is my home, Germany my local variant to Europe. Of course, I’m exaggerating. Nevertheless, the funding agencies need to think European. And we’re not doing that. The shameful number is (I believe but find no links) 8<span>%</span> non-German professors which (I believe) gets cut to 3<span>%</span> if you exclude Austrian and Swiss professors. All the talk about brain drain vs brain gain vs brain circulation. What’s the point if this is only focused on German researchers? The one thing that makes the American system fascinating is its openness towards foreigners. And if the German system cannot even open up to the rest of Europe than it’s never going to become as interesting a system. Similarly, if you want those well-educated people back from North-America then you should be happy if you can get them back to the EU. Obviously, that might not be possible with your money (although, why not for neighboring countries?), but this kind of conference needs to get a European equivalent. Maybe there we could at least get the [information that is already available](http://www.dfg.de/download/pdf/dfg_magazin/wissenschaftliche_karriere/heisenberg_treffen_2010/erc_foerderung.pdf) (cf. the post on the field-specific breakout session).
 *   Federal politicians can do more
     *   As mentioned in the posts, the federal politicians felt that they were the wrong people to talk to since universities are outside federal control. That might be, but funding is not. And most definitely European initiatives are not. Also, remember the talk about the American system? That it’s bad for American researchers to spend time outside of the US-system? Hello federal politicians? International relations are your thing, are they not? Get in there, turn the tables, get the smartest American researchers to Europe and Germany, try initiatives that break up this crust! Really, if politicians think there’s nothing that needs to be done on an international level, we probably shouldn’t vote for them next time.
 *   State politicians were missing
@@ -66,10 +65,10 @@ Let me, to finally finish this series, disclose my answers to the feedback quest
         *   Die direkten Erfahrungen der Teilnehmer und vor allem der Wissenschaftler ‘danach’, d.h. die Wissenschaftler, die den naechsten Schritt auf der Karriereleiter getan haben (eine eigenstaendige Gruppe fuehren). Einerseits, weil sie “Vorbilder” sind, andererseits weil die Gespraeche am ergiebigsten waren, da diese Vorbilder am naechsten dran sind, an der Situation der PostDocs.
     *   Minus:
         *   Die hochkaraetigen Teilnehmer (all die Praesident_innen) waren haeufig zu professionell. D.h. wenn eine unbequeme oder unerwartete Frage kam, wurde politisch professionell ausgewichen (durch Floskeln, Themenwechsel etc.). Es waere wichtig, dass (insbesondere in den Gespraechsrunden) auch eine Atmosphaere des (durchaus kritischen) Zuhoerens von Seiten der Fuehrungspersoenlichkeiten herrschen wuerde.
-        *   Es fehlte durchweg die internationale Ausrichtung. D.h. einerseits herrschte eine Fixierung auf Deutschland, als ob Deutsche nur nach Deutschland wollten; stattdessen waere doch eine europaeische Perspektive viel wichtiger. Andererseits fehlten Nicht-Deutsche Kollegen; wenn schon brain circulation, dann sollte diese dringend auch Nicht-Deutsche einbeziehen. Siehe die Statistik der 9% nicht-deutscher Professoren in Deutschland, von denen weitere 5% aus der Schweiz und Oesterreich stammen.
+        *   Es fehlte durchweg die internationale Ausrichtung. D.h. einerseits herrschte eine Fixierung auf Deutschland, als ob Deutsche nur nach Deutschland wollten; stattdessen waere doch eine europaeische Perspektive viel wichtiger. Andererseits fehlten Nicht-Deutsche Kollegen; wenn schon brain circulation, dann sollte diese dringend auch Nicht-Deutsche einbeziehen. Siehe die Statistik der 9<span>%</span> nicht-deutscher Professoren in Deutschland, von denen weitere 5<span>%</span> aus der Schweiz und Oesterreich stammen.
 *   Talent Fair
     *   Plus
-        *   Die Gespraeche mit <span class="caps">BCG</span>, <span class="caps">GSO</span> und dem Dual Career Office der <span class="caps">TUM</span> waren sehr interessant. Die drei hatten die einzigen Leute, die auch mit “Exoten” ein Gespraech fuehren koennen.
+        *   Die Gespraeche mit BCG, GSO und dem Dual Career Office der TUM waren sehr interessant. Die drei hatten die einzigen Leute, die auch mit “Exoten” ein Gespraech fuehren koennen.
     *   Minus
         *   Als “Exot” (Reine Mathematik) war der Fair ziemlich irrelevant. Ausseruniversitaere Forschung faellt weg, die Hochschulen boten kaum passende Gespraechsmoeglichkeiten, da sie sich (verstaendlicherweise) auf den Mainstream der Forschung (sprich: life sciences) konzentrierten. Stattdessen konnte ich das traurige Spiel spielen “Googlen, wie viel Stellen meines Faches an ihrer Hochschule dennaechst wegfallen”.
 
@@ -77,16 +76,16 @@ Let me, to finally finish this series, disclose my answers to the feedback quest
     *   Es braucht keine Tagungsmappe. Eine gute Website, eine paar Displays im Konferenzbereich mit interaktiver Funktion waere besser — dank all der Laptops und Smartphones braucht es nicht mehr.
 *   1\. Breakout
     *   Gefallen hat sie mir, nicht wegen den “Rednern” (da wurde ich eher enttaeuscht), sondern wegen der guten und kritischen Fragen. Gut war, dass es direkt mit Fragen losging, ohne Statements etc.  
-         (siehe auch http://peter.krautzberger.info/2010/09/gain_conference_part1)
+         (siehe auch [Teil 1](\0033\))
 *   2\. Breakout
-    *   Wiederum waren es die Teilnehmer, die das ganze interessant machten. Die Fragen wurden aber auch meist recht gut beantwortet, wobei Karin Zach deutlich sinnvollere Antworten gab. Wiederum Lob fuer das offene Konzept, kein Lob fuer ausweichende Antworten. (siehe auch http://peter.krautzberger.info/2010/09/gain_conference_part2/ )
+    *   Wiederum waren es die Teilnehmer, die das ganze interessant machten. Die Fragen wurden aber auch meist recht gut beantwortet, wobei Karin Zach deutlich sinnvollere Antworten gab. Wiederum Lob fuer das offene Konzept, kein Lob fuer ausweichende Antworten. (siehe auch [Teil 2](\0034\))
 
 *   3\. Breakout
-    *   Siehe http://peter.krautzberger.info/2010/09/gain_conference_part3/
+    *   Siehe [Teil 3](\0035\)
 *   4\. Breakout
-    *   Siehe http://peter.krautzberger.info/2010/09/gain_conference_part3/ Definitv das Highlight der Konferenz!
+    *   Siehe [Teil 3](\0035\). Definitv das Highlight der Konferenz!
 *   5\. Breakout
-    *   Siehe http://peter.krautzberger.info/2010/09/gain_conference_part4
+    *   Siehe [Teil 4](\0036\)
 
 *   Orga
     *   Die Organisation war besonders gut. Der Tagungsort war sehr angenehm und machte es einfach, sich auf die Konferenz zu konzentrieren. Die Kaffeepausen in den Career Fair zu integrieren war perfekt. Die Organisation der Sessions war sehr gut. Mir ist nie etwas Organisatorisches negativ aufgefallen.

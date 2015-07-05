@@ -7,18 +7,17 @@ categories:
 - thelazyscience@peter.krautzberger.info
 tags:
 - Alan Dow
-- algebra in the stone-cech compactification
+- algebra in the Stone–Čech compactification
 - Eric van Douwen
 - idempotent
-- Stone-Cech compactification
+- Stone–Čech compactification
 - strongly right maximal idempotent
 - van Douwen space
 published: true
 permalink: 0016/
-redirect_from: "krautzberger/2010/04/25/van-douwen-spaces/"
 ---
 
-At the [winterschool](http://www.winterschool.eu) [Alan Dow](math.uncc.edu/~adow/) gave quite challenging tutorials. He also mentioned something about van Douwen spaces.
+At the [winterschool](http://www.winterschool.eu) [Alan Dow](http://math.uncc.edu/~adow/) gave quite challenging tutorials. He also mentioned something about van Douwen spaces.
 
 ### Van Douwen Spaces
 
@@ -34,7 +33,7 @@ What caught my interest was that there is an example that has something to do wi
 
 ### Digressing
 
-This partial order (as well as its left counterpart and their intersection) is quite important in the algebra in the Stone-Cech-compactification. Mostly because this order has minimal idempotents which are central to the field. <s>(pardon the pun)</s> Oops, after ignoring its definition [in my last post](http://peter.krautzberger.info/2010/04/understanding_the_central_sets_theorem) this is not a pun. So let me add: a set is in fact central if it is an element of a minimal idempotent. Central, get it? Ah, well…
+This partial order (as well as its left counterpart and their intersection) is quite important in the algebra in the Stone–Čech-compactification. Mostly because this order has minimal idempotents which are central to the field. <s>(pardon the pun)</s> Oops, after ignoring its definition [in my last post](/0015/) this is not a pun. So let me add: a set is in fact central if it is an element of a minimal idempotent. Central, get it? Ah, well…
 
 ### Strongly right maximal
 
@@ -44,7 +43,7 @@ For van Douwen spaces it is useful to go in the other direction. There exist man
 
  $$ q+ p =p \Rightarrow q= p. $$
 
-Yevhen Zelenyuk once gave an example of a right-maximal that is not strongly right maximal assuming CH or MA (and even less). In any case these idempotents are very nice and thanks to Igor Protasov exist under <span class="caps">ZFC</span> alone. Nevertheless it is an open question whether consistenly all right-maximal idempotents are strongly right-maximal, i.e., if non-strongly but right-maximal idempotents exist under <span class="caps">ZFC</span> alone.
+Yevhen Zelenyuk once gave an example of a right-maximal that is not strongly right maximal assuming CH or MA (and even less). In any case these idempotents are very nice and thanks to Igor Protasov exist under ZFC alone. Nevertheless it is an open question whether consistenly all right-maximal idempotents are strongly right-maximal, i.e., if non-strongly but right-maximal idempotents exist under ZFC alone.
 
 ### Back to van Douwen spaces
 
@@ -73,4 +72,4 @@ The proof needs some basic stuff such as ‘multiplication with fixed right hand
     *   Since $p$ is strongly right maximal, this would imply $n-k = p$ — which is absurd since $p$ is idempotent, hence free.
 *   But then by continuity the whole of $\rho_p$ is injective.
 
-I like that. Now, my favourite kind of idempotent ultrafilters are strongly summable ultrafilters. Those were the first examples of strongly right maximal idempotents, however their existence is independent of <span class="caps">ZFC</span>. On the other hand, they have much stronger properties and I would not be surprised if this affected their orbit, i.e., if that van Douwen space is not special somehow.
+I like that. Now, my favourite kind of idempotent ultrafilters are strongly summable ultrafilters. Those were the first examples of strongly right maximal idempotents, however their existence is independent of ZFC. On the other hand, they have much stronger properties and I would not be surprised if this affected their orbit, i.e., if that van Douwen space is not special somehow.

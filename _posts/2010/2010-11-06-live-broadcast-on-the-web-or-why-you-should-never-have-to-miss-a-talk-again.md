@@ -6,7 +6,6 @@ categories: []
 tags: []
 published: true
 permalink: 0038/
-redirect_from: "krautzberger/2010/11/06/live-broadcast-on-the-web-or-why-you-should-never-have-to-miss-a-talk-again/"
 ---
 
 I haven’t written anything in ages but so many posts are almost finished and then there’s my secret new project that I can get all excited about but it’s not yet time… Anyway, I just read [this question on mathoverflow](http://mathoverflow.net/questions/45037/should-there-be-a-true-model-of-set-theory) and it finally triggered this post. You see, if you read that post, you will stumble upon [this workshop](http://www.phil.upenn.edu/Workshop+on+Set+Theory+and+the+Philosophy+of+Mathematics) and, if you’re me, you’ll wonder why you cannot watch a recording of those lectures and, hopefully, the debates that came with it. Now, as puny a set theorist as I might be, I have strong feelings about this — and with Hugh Woodin’s visit to the UofM I was thinking about this stuff a lot all week anyway. So why did I have to miss those talks?
@@ -17,9 +16,9 @@ What is so annoying is, that it is soooooo easy to not just record a lecture, bu
 
 So what do you need?
 
-*   1 decent internet connection (good starts at cable/<span class="caps">DSL</span> level, any ‘western’ university connection should do)
-*   1 computer (possibly laptop for flexibility)
-*   1 camcorder (a webcam might do, but picture and audio quality is usually higher with a proper camcorder; don’t forget a tripod…)
+* 1 decent internet connection (good starts at cable/DSL level, any ‘western’ university connection should do)
+* 1 computer (possibly laptop for flexibility)
+* 1 camcorder (a webcam might do, but picture and audio quality is usually higher with a proper camcorder; don’t forget a tripod…)
 
 You probably have access to the first two things if you’re in academia. A decent camcorder is expensive but you can look for older models that are affordable. You don’t have to be super picky about the camcorder since only a limited amount of quality will survive the compression of the broadcast anyway. The only thing that’s **important** is that you can hook it up to your computer as an external camera.
 
@@ -27,9 +26,9 @@ You probably have access to the first two things if you’re in academia. A dece
 
 I have been trying out several things over the last couple of months and the following set up is what I use at the moment.
 
-*   [justin.tv](www.justin.tv)
-*   [flash media live encoder](http://www.adobe.com/products/flashmediaserver/flashmediaencoder/)
-*   windows or mac os (ok, not so free)
+* [justin.tv](http://www.justin.tv)
+* [flash media live encoder](http://www.adobe.com/products/flashmediaserver/flashmediaencoder/)
+* windows or mac os (ok, not so free)
 
 Before I get to the how…
 
@@ -39,16 +38,16 @@ You will usually not have a connection good enough to be your own streaming serv
 
 ### How to
 
-The main initial “effort” is to get your justin.tv account going — any search engine will help you find info on that but it’s just your average web service. I just want to point out that you should check out the privacy controls as well as [their fme guide](http://de.justin.tv/p/fme) to, once and for all, find the basic settings that work for your connection.
+The main initial “effort” is to get your justin.tv account going — any search engine will help you find info on that but it’s just your average web service. I just want to point out that you should check out the privacy controls as well as [their fme guide [Wayback Machine]](https://web.archive.org/web/20130316081119/http://de.justin.tv/p/fme) to, once and for all, find the basic settings that work for your connection.
 
 Once you have made yourself acquainted with a justin.tv account, you only need to do the following for your regular broadcast.
 
-*   Hook up your camcorder
-*   Launch the live media encoder and press start
+* Hook up your camcorder
+* Launch the live media encoder and press start
 
 ### The somewhat libre variant
 
-If you’re a little bit more engaged (and, like me, an <span class="caps">OSS</span> fan), you can replace the proprietary Adobe Flash Media Encoder with the fantastic [<span class="caps">VLC</span>](http://www.videolan.org/vlc/) following the [justin.tv api vlc guide](http://apiwiki.justin.tv/mediawiki/index.php/Linux_Broadcasting_API). I don’t yet know a good libre media streaming server that could replace justin.tv though. Vlc’s own server creates a huge lag for me.
+If you’re a little bit more engaged (and, like me, an <span class="caps">OSS</span> fan), you can replace the proprietary Adobe Flash Media Encoder with the fantastic [VLC](http://www.videolan.org/vlc/) following the [justin.tv api vlc guide [Wayback Machine]](https://web.archive.org/web/20130704032729/http://apiwiki.justin.tv/mediawiki/index.php/Linux_Broadcasting_API). I don’t yet know a good libre media streaming server that could replace justin.tv though. Vlc’s own server creates a huge lag for me.
 
 ### What to do during the broadcast or does the lag allow for live questions?
 

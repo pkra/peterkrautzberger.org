@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Research notes -- Welcome to Ann Arbor
+title: Research notes — Welcome to Ann Arbor
 date: 2010-03-18
 categories:
 - research
@@ -11,7 +11,6 @@ tags:
 - michigan
 published: true
 permalink: 0012/
-redirect_from: "krautzberger/2010/03/18/research-notes-welcome-to-ann-arbor/"
 ---
 
 After too many weeks of silence and almost two weeks in the States it is definitely time for an update.  

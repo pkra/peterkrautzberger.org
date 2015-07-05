@@ -11,7 +11,6 @@ tags:
 - USA
 published: true
 permalink: 0020/
-redirect_from: "krautzberger/2010/05/09/mathematics-in-newspapers-germany-vs-usa/"
 ---
 
 I meant to write about this for a while now but everytime I began the post became either too boring or too much of a rant.
@@ -22,11 +21,11 @@ It fascinates me (in a horrible kind of way) how the quality of popular mathemat
 
 Recently, I read the following.
 
-[Günther Ziegler](http://www.math.tu-berlin.de/~ziegler/) at [Die Zeit](http://www.zeit.de/2010/16/Mathe-Buch)
+[Günther Ziegler](https://en.wikipedia.org/wiki/G%C3%BCnter_M._Ziegler) at [Die Zeit](http://www.zeit.de/2010/16/Mathe-Buch)
 
 compared to
 
-[Steven Strogatz](http://tam.cornell.edu/faculty-bio.cfm?NetID=shs7) at [The New York Times](http://opinionator.blogs.nytimes.com/2010/04/18/it-slices-it-dices/)
+[Steven Strogatz](http://www.stevenstrogatz.com/) at [The New York Times](http://opinionator.blogs.nytimes.com/2010/04/18/it-slices-it-dices/)
 
 Ziegler’s article is quite nice but Strogatz’s column is so much more. Both articles contain easy to read anecdotes (always great so that readers can relate). But that’s where Ziegler essentially stops (or rather, repeats) whereas Strogatz just gets started and continues with actual mathematics, not afraid to throw in equations (shocking!) and actually explaining an important tool of mathematics — just like any other science journalist.
 
@@ -34,7 +33,7 @@ Now, don’t get me wrong. I admire Günther Ziegler (how could I not after doin
 
 ### Blogs
 
-The situation is rather the same when it comes to blogs. I admit I only read one mathblog in German — [mathlog](http://www.scienceblogs.de/mathlog/) which is very good. But last week I noticed [a series of blog posts at scilogs](http://www.scilogs.de/mathe-sprache) and I found it extremely boring. I am always interested in external opinions on mathematics (pure mathematics is extremely self-centered) but I found no interesting opinions (or anything else) in those posts. It felt, all in all, very artificial compared to other posts of these bloggers. So again, maybe there is an editor to blame, I don’t know.
+The situation is rather the same when it comes to blogs. I admit I only read one mathblog that's in German — [mathlog](http://www.scienceblogs.de/mathlog/) which is very good. But last week I noticed [a series of blog posts at scilogs](http://www.scilogs.de/mathe-sprache) and I found it extremely boring. I am always interested in external opinions on mathematics (pure mathematics is extremely self-centered) but I found no interesting opinions (or anything else) in those posts. It felt, all in all, very artificial compared to other posts of these bloggers. So again, maybe there is an editor to blame, I don’t know.
 
 I don’t want to write about all the English math blogs I read. But I wanted to mention it for a different reason anyway, so [Timothy Gowers’s](http://gowers.wordpress.com/2010/05/08/a-little-experiment-iv) is as good a representative as you’ll find — this time not just by subject but by technology. For his ongoing series of experiments on mathematical thinking he uses a [Prezi Presentation](http://prezi.com/). I wish I found the time to learn prezi…
 

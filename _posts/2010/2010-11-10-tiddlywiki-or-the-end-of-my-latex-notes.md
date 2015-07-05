@@ -11,18 +11,17 @@ tags:
 - tiddlywiki
 published: true
 permalink: 0040/
-redirect_from: "krautzberger/2010/11/10/tiddlywiki-or-the-end-of-my-latex-notes/"
 ---
 
-How can I not even have mentioned this? The single greatest tool of the last three month is… [Tiddlywiki](http://www.tiddlywiki.com/)
+How can I not even have mentioned this? The single greatest tool of the last three month is… [Tiddlywiki](http://tiddlywiki.com/)
 
 ### What is Tiddlywiki?
 
-[Tiddlywiki](http://www.tiddlywiki.com/) is a wiki in a single html file. It can be full fledged wiki by lots and lots of fantastic javascript fancy. Hackers love it because, well, they can hack it. For me there are [tons of plugins](http://tiddlywiki.org/wiki/Plugin_Repositories) around (and of course [also lots of themes](http://tiddlythemes.com/)). It’s bit weird getting used to the whole thing since the single-file technology works a little differently (plugin installation especially), but it’s so worth it!
+[Tiddlywiki](http://tiddlywiki.com/) is a wiki in a single html file. It can be full fledged wiki by lots and lots of fantastic javascript fancy. Hackers love it because, well, they can hack it. For me there are [tons of plugins](http://customize.tiddlyspace.com/) around (and of course [also lots of themes](http://customize.tiddlyspace.com/)). It’s bit weird getting used to the whole thing since the single-file technology works a little differently (plugin installation especially), but it’s so worth it!
 
 ### How can it replace your LaTeX notes?
 
-For mathematicians (and scientists) the coolest thing about tiddlywiki is that you can write [LaTeX-code](http://en.wikipedia.org/wiki/LaTeX) in it! There is a jsmath plugin but I prefer the [mathsvg](http://www.math.ist.utl.pt/~psoares/MathSVG.html) plugin (based on asciimath) since it does not require any additional files (just fonts in the browser, like the styx fonts with firefox). So nowadays I write in a simple markup [much like textile](http://www.textism.com/tools/textile/) (which this blog is written in). There are [plugins for almost any text markup](http://svn.tiddlywiki.org/Trunk/contributors/MartinBudden/formatters/), so if you prefer something else, knock yourself out. I don’t need much myself, to be honest, and unfortunately, the textile plugin I found deactivates mathsvg. Thankfully, tiddlywiki’s own markup and textile overlap a lot and I don’t do much fancy stuff anymore anyway.
+For mathematicians (and scientists) the coolest thing about tiddlywiki is that you can write [LaTeX-code](http://en.wikipedia.org/wiki/LaTeX) in it! There is a jsmath plugin but I prefer the [mathsvg [Wayback Machine]](https://web.archive.org/web/20130707161357/http://www.math.ist.utl.pt/~psoares/MathSVG.html) plugin (based on asciimath) since it does not require any additional files (just fonts in the browser, like the styx fonts with firefox). So nowadays I write in a simple markup [much like textile](https://en.wikipedia.org/wiki/Textile_(markup_language)) (which this blog is written in). There are [plugins for almost any text markup [Wayback Machine]](https://web.archive.org/web/20110128204422/http://svn.tiddlywiki.org/Trunk/contributors/MartinBudden/formatters/), so if you prefer something else, knock yourself out. I don’t need much myself, to be honest, and unfortunately, the textile plugin I found deactivates mathsvg. Thankfully, tiddlywiki’s own markup and textile overlap a lot and I don’t do much fancy stuff anymore anyway.
 
 ### But I like to write in my fancy LaTeX style!
 
