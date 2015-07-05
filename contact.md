@@ -28,6 +28,6 @@ The fastest way to reach me is to [write me an email](mailto:p.krautzberger@gmai
 
 ### Commenting
 
-Please send comments by email, I'll respond (or not) and likely add it to the post as an update. For convenience, each post comes with a mailto-link at the bottom (and also a trigger to annotate via [hypothes.is](hypothes.is)).
+Please send comments by email, I'll respond (or not) and likely add it to the post as an update. For convenience, each post comes with a mailto-link at the bottom (and also a trigger to annotate via [hypothes.is](https://hypothes.is)).
 
 Please always remember [XKCD 1357](http://xkcd.com/1357/)
