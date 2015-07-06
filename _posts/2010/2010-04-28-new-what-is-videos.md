@@ -26,7 +26,7 @@ For now, I’m happy to say that two new videos are up. First there is Joscha Di
 
 Second there is the first ‘tag team’ talk by [Dror Atariah](https://twitter.com/drorata) and [Tobias Pfeiffer](http://www.mi.fu-berlin.de/en/math/groups/ag-geom/people/former-members/pfeiffer.html) on [‘What is … a geodesic on a Riemannian Manifold’](http://vimeo.com/11253670) .
 
-I also must say I love [Felix Breuer’s](http://www.fbreuer.de) beautiful video [Der Kleine Gauß](http://vimeo.com/10014698) which was made for a general (German speaking) audience explaining the equation  
+I also must say I love [Felix Breuer’s](http://www.felixbreuer.net) beautiful video [Der Kleine Gauß](http://vimeo.com/10014698) which was made for a general (German speaking) audience explaining the equation  
 
 $$ \sum_{i \leq n} i = \frac{n\cdot (n+1)}{2}$$
 

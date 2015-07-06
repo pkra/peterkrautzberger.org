@@ -24,7 +24,7 @@ It did, however, keep popping back up because [Samuel Hansen’s friend and Math
 
 ## Relatively Prime
 
-So what’s Relatively Prime? Well, you should probably [head over to ACME Science to watch the promo video](http://acmescience.com/shows/cp-shows/850). Don’t worry, I’ll still be here when you’re back. Can’t wait? Ok, very short version. Relatively Prime is Samuel Hansen’s Kickstarter project to make a podcast series about mathematicians and their work, interviewing people in person. In a way, I’d say he wants to take [Strongly Connected Components](http://acmescience.com/category/shows/scc-shows) to the next level – but it’ll be much more, I think.
+So what’s Relatively Prime? Well, you should probably [head over to ACME Science to watch the promo video](http://www.acmescience.com/2011/07/relatively-prime-stories-from-the-mathematical-domain-the-kickstarter/). Don’t worry, I’ll still be here when you’re back. Can’t wait? Ok, very short version. Relatively Prime is Samuel Hansen’s Kickstarter project to make a podcast series about mathematicians and their work, interviewing people in person. In a way, I’d say he wants to take [Strongly Connected Components](http://acmescience.com/category/shows/scc-shows) to the next level – but it’ll be much more, I think.
 
 SSC is one of the best on the web that I know. The idea is simple, interviews with interesting mathematicians – nothing new, right? Since Samuel Hansen is not exactly working for the BBC World Service, glamour mathematicians are not on his list. And somehow that’s exactly what makes his show excellent: He has a knack for choosing interview partners that you would not expect to find in any main stream (scientific) media.
 

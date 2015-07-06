@@ -42,7 +42,7 @@ As you wrote yourself a while ago, the wonderful tricki has failed much like oth
 
 I would even go as far as say that Polymath has failed (even though it was all about publishing papers and not disruptive in that sense). However, there still might be a chance to salvage it if we find a way to scale it away from top research to more average level research, more realistic problems or simply [open-notebook science](http://en.wikipedia.org/wiki/Open_notebook_science).
 
-At the same time, a lot of young mathematicians "grow up" online. But they are still strongly discouraged not to experiment with communicating their mathematics online. Having attended [Science Online 2012](http://www.scienceonline2012.com) last week, I was again shocked by the positive community the scientific online community offers.
+At the same time, a lot of young mathematicians "grow up" online. But they are still strongly discouraged not to experiment with communicating their mathematics online. Having attended [Science Online 2012](http://web.archive.org/web/20110826202353/http://scienceonline2012.com/) last week, I was again shocked by the positive community the scientific online community offers.
 
 The scientific online community embraces the younger generation. (Did you know that young graduate students write at the Scientific American's blog network as equals of experienced scientists and professional science journalists?.) In mathematics, e.g., the MathOverflow community has worked very hard at discouraging even experienced graduate students from contributing (just ask some average graduate student). The scientific online community also offers protection and support by encouraging and developing safe systems for pseudonymous online activities.
 
