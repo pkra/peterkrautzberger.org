@@ -28,7 +28,7 @@ Remember how our about page says that [Booles' Rings is about best practices](ht
 
 > Skip this section if you only want mathematics.
 
-Wednesday, I gave a short talk about flat ultrafilters at our Logic Seminar here at the University of Michigan (as [announced on Set Theory Talks](http://settheorytalks.wordpress.com/2011/09/16/michigan-logic-seminar/), the talk was recorded and the video <del datetime="2011-09-29T15:47:26+00:00">will be online eventually</del> is [now online](http://vimeo.com/29738390)).
+Wednesday, I gave a short talk about flat ultrafilters at our Logic Seminar here at the University of Michigan (as [announced on Set Theory Talks](http://settheory.mathtalks.org/michigan-logic-seminar/), the talk was recorded and the video <del datetime="2011-09-29T15:47:26+00:00">will be online eventually</del> is [now online](http://vimeo.com/29738390)).
 
 * * *
 
@@ -39,7 +39,7 @@ Wednesday, I gave a short talk about flat ultrafilters at our Logic Seminar here
 
 * * *
 
-When [I visited Toronto in](http://www.fields.utoronto.ca/programs/scientific/10-11/set_ theory/) June, [Ilijas Farah](http://www.math.yorku.ca/~ifarah/) introduced me to this somewhat strange new type of utrafilter on $\omega$. My talk this week was mostly about the results from a [2009 paper by Ilijas Farah, N. Christopher Philips and Juris Steprans](http://www.math.yorku.ca/~ifarah/Ftp/208_ 2009_ 448_ OnlinePDF.pdf) [cite source='doi']10.1007/s00208-009-0448-z[/cite], but some of what I am going to write are insights I gained while discussing this notion with François Dorais and Andreas Blass. So, actually, this post is attempting another best practice: notes from reading a paper.
+When [I visited Toronto in](http://www.fields.utoronto.ca/programs/scientific/10-11/set_theory/) June, [Ilijas Farah](http://www.math.yorku.ca/~ifarah/) introduced me to this somewhat strange new type of utrafilter on $\omega$. My talk this week was mostly about the results from a [2009 paper by Ilijas Farah, N. Christopher Philips and Juris Steprans](http://www.math.yorku.ca/~ifarah/Ftp/208_ 2009_ 448_ OnlinePDF.pdf) [cite source='doi']10.1007/s00208-009-0448-z[/cite], but some of what I am going to write are insights I gained while discussing this notion with François Dorais and Andreas Blass. So, actually, this post is attempting another best practice: notes from reading a paper.
 
 I would like to explain something about the result that P-points are not flat. When I started looking at [their paper](http://www.math.yorku.ca/~ifarah/Ftp/208_ 2009_ 448_ OnlinePDF.pdf) with Francois Dorais, we first re-proved that selective ultrafilters are not flat -- instead of the (possibly stronger) functional analytic result from the paper we used the combinatorial definition of flat ultrafilters. Then we worked on improving that proof and, with Andreas's help, got it to work for P-points.
 

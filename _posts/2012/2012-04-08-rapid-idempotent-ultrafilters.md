@@ -25,7 +25,7 @@ Here's the problem with this post though. I want to give the argument. But you k
 
 ### Strongly summables are rapid.
 
-Why could this be true? On the one hand, because we already established partial results [last time](/103/). On the other hand there's an old result attributed to Pierre Matet which, for now, I can only state in a obfuscated fashion.
+Why could this be true? On the one hand, because we already established partial results [last time](/0103/). On the other hand there's an old result attributed to Pierre Matet which, for now, I can only state in a obfuscated fashion.
 
 > **Theorem** ([Matet 87](http://dx.doi.org/10.2307/2274523))  
 >  If $p$ is a [strongly summable ultrafilter](/0026/), then there exists a function "$\max$" such that $\max(p)$ is rapid.

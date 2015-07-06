@@ -21,8 +21,8 @@ And it seems my new neighborhood is trying to tell me something.
 
 
 <figure>
-  <a href="/assets/Goettingen21.jpg">
-    <img alt="streetsign" src="/assets/Goettingen21-1024x575.jpg"/>
+  <a href="/assets/2014/Goettingen21.jpg">
+    <img alt="streetsign" src="/assets/2014/Goettingen21.jpg"/>
   </a>
   <figcaption>
     Street sign, Felix-Klein-Str., Göttingen
@@ -30,8 +30,8 @@ And it seems my new neighborhood is trying to tell me something.
 </figure>
 
 <figure>
-  <a href="/assets/Goettingen11.jpg">
-    <img alt="streetsign" src="/assets/Goettingen11-1024x575.jpg"/>
+  <a href="/assets/2014/Goettingen11.jpg">
+    <img alt="streetsign" src="/assets/2014/Goettingen11.jpg"/>
   </a>
   <figcaption>
     Street sign, Riemannstr., Göttingen
@@ -39,8 +39,8 @@ And it seems my new neighborhood is trying to tell me something.
 </figure>
 
 <figure>
-  <a href="/assets/Goettingen3.jpg">
-    <img alt="streetsign" src="/assets/Goettingen11-1024x575.jpg"/>
+  <a href="/assets/2014/Goettingen3.jpg">
+    <img alt="streetsign" src="/assets/2014/Goettingen11.jpg"/>
   </a>
   <figcaption>
     Street sign, Gaußstr., Göttingen

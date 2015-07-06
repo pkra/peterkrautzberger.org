@@ -18,7 +18,16 @@ It's been quiet around here -- too much work behind the scenes -- BUT you can st
 
 # Making math&science first-class citizens on the web
 
-![img](assets/keep-calm-and-love-math-and-science-2.png)
+
+
+<figure>
+  <a href="http://www.keepcalm-o-matic.co.uk/p/keep-calm-and-love-math-and-science-2/">
+    <img alt="Keep Calm and Love Math and Science" src="/assets/2015/keep-calm-and-love-math-and-science-2.png"/>
+  </a>
+  <figcaption>
+     © keepcalm-o-matic.co.uk
+  </figcaption>
+</figure>
 
 > Without mathematics, there's nothing you can do. Everything around you is mathematics.  
 >  [Shakuntala Devi](https://en.wikipedia.org/wiki/Shakuntala_Devi)

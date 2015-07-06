@@ -62,7 +62,7 @@ The set of ultrafilters is often denoted by $\beta S$ and it turns out to be the
 
 **Universal Property of $\beta S$** If $X$ is compact and Hausdorff, $f: S \rightarrow X$ continuous (in our case, any map is), then there exists a unique continuous map $\beta f: \beta S \rightarrow X$ that extends $f$. We usually identify $\beta f$ with $f$ for convenience.
 
-The easiest way to do this in our setting, is to [take the limit along ultrafilters](http://www.tricki.org/article/How_ to_ use_ ultrafilters). But for now we don’t need to.
+The easiest way to do this in our setting, is to [take the limit along ultrafilters](http://www.tricki.org/article/How_to_use_ultrafilters). But for now we don’t need to.
 
 **An interlude about extensions** If $f: S \rightarrow S$, then we can describe the image quite nicely, namely \\[ f(p) = \\{ B : (\exists A \in p) f[A] \subseteq B \\}. \\]
 

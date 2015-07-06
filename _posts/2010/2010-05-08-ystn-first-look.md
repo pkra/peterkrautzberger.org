@@ -1,13 +1,13 @@
 ---
 layout: post
-title: YSTN [Wayback Machine] first look
+title: YSTN first look
 date: 2010-05-08
 categories:
 - scientific community
 - thelazyscience@peter.krautzberger.info
 tags:
 - young set theory network
-- YSTN [Wayback Machine]
+- YSTN
 published: true
 permalink: 0019/
 ---

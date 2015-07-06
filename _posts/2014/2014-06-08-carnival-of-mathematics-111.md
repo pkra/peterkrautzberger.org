@@ -13,7 +13,7 @@ permalink: 0164/
 
 The math blogosphere is a friendly and relaxed placed. But there is one rule, I believe, we should all abide by: when [The Aperiodical](http://aperiodical.com) calls, you answer.
 
-And so I'm honored to join the un-secret society of Carnival of Mathematics hosts. Indeed, the [list of former and future hosts](http://aperiodical.com/carnival-of-mathematics/) over at The Aperiodical (who took over the organizational stress two years ago, stepping into the tremendously large footsteps of [Mike Croucher of Walking Randomly](http://www.walkingrandomly.com/)), this list reads like a who-is-who of true math bloggers (the kind that cares for blogging as a community and art form). If you're not on it, do yourself a favor and [volunteer right now](katie@aperiodical.com). I'll wait. Honestly, I will. This post will still be here when you get back; I promise.
+And so I'm honored to join the un-secret society of Carnival of Mathematics hosts. Indeed, the [list of former and future hosts](http://aperiodical.com/carnival-of-mathematics/) over at The Aperiodical (who took over the organizational stress two years ago, stepping into the tremendously large footsteps of [Mike Croucher of Walking Randomly](http://www.walkingrandomly.com/)), this list reads like a who-is-who of true math bloggers (the kind that cares for blogging as a community and art form). If you're not on it, do yourself a favor and [volunteer right now](mailto:katie@aperiodical.com). I'll wait. Honestly, I will. This post will still be here when you get back; I promise.
 
 ### Step closer, dear friend. Excitement awaits!
 

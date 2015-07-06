@@ -51,7 +51,7 @@ This might sound silly, but web technology has actually advanced since 1998\. It
 
 ### Hipster webs
 
-The thing is you _should_ know better. You write on your homepage that you have a [twitter account](http://twitter.com/#!/nprmathguy) and [a blog](http://www.maa.org/devlin/devangle.html). That’s so Web 3.0! Well, unfortunately, it isn’t, because, well, you’re doing it wrong.
+The thing is you _should_ know better. You write on your homepage that you have a [twitter account](http://twitter.com/#!/nprmathguy) and [a blog](http://devlinsangle.blogspot.com/). That’s so Web 3.0! Well, unfortunately, it isn’t, because, well, you’re doing it wrong.
 
 First off, you don’t even properly link to either of these on your homepage. Then your blog is not a blog. It’s a magazine column that has an rss feed. It is not a log and, more importantly, it does not allow for discussions, which is the essence of blogging. So, in reality, it’s just another website that happens to have an rss feed. That’s not a bad thing – it’s just not a blog.
 

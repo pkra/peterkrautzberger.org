@@ -15,7 +15,7 @@ published: true
 permalink: 0037/
 ---
 
-Well, this has been going on for too long… This final post should have concluded the mini-series weeks ago. Instead, it has prevented me from writing about anything else. So let me conclude with some late notes and my answers to the feedback questionaire. I will not go back to the individual posts to refresh my memory, instead, I will write simply what I remember now which is probably more important since it will dominate my long time memory of the whole event (but I will use my notes for this post which sort of developed while writing the rest).
+Well, this has been going on for too long… This final post should have concluded the mini-series weeks ago. Instead, it has prevented me from writing about anything else. So let me conclude with some late notes and my answers to the feedback questionnaire. I will not go back to the individual posts to refresh my memory, instead, I will write simply what I remember now which is probably more important since it will dominate my long time memory of the whole event (but I will use my notes for this post which sort of developed while writing the rest).
 
 ### pros and cons
 
@@ -74,18 +74,18 @@ Let me, to finally finish this series, disclose my answers to the feedback quest
 
 *   Tagungsmappe
     *   Es braucht keine Tagungsmappe. Eine gute Website, eine paar Displays im Konferenzbereich mit interaktiver Funktion waere besser — dank all der Laptops und Smartphones braucht es nicht mehr.
-*   1\. Breakout
+*   1. Breakout
     *   Gefallen hat sie mir, nicht wegen den “Rednern” (da wurde ich eher enttaeuscht), sondern wegen der guten und kritischen Fragen. Gut war, dass es direkt mit Fragen losging, ohne Statements etc.  
-         (siehe auch [Teil 1](\0033\))
-*   2\. Breakout
-    *   Wiederum waren es die Teilnehmer, die das ganze interessant machten. Die Fragen wurden aber auch meist recht gut beantwortet, wobei Karin Zach deutlich sinnvollere Antworten gab. Wiederum Lob fuer das offene Konzept, kein Lob fuer ausweichende Antworten. (siehe auch [Teil 2](\0034\))
+         (siehe auch [Teil 1](/0033/))
+*   2. Breakout
+    *   Wiederum waren es die Teilnehmer, die das ganze interessant machten. Die Fragen wurden aber auch meist recht gut beantwortet, wobei Karin Zach deutlich sinnvollere Antworten gab. Wiederum Lob fuer das offene Konzept, kein Lob fuer ausweichende Antworten. (siehe auch [Teil 2](/0034/))
 
-*   3\. Breakout
-    *   Siehe [Teil 3](\0035\)
-*   4\. Breakout
-    *   Siehe [Teil 3](\0035\). Definitv das Highlight der Konferenz!
-*   5\. Breakout
-    *   Siehe [Teil 4](\0036\)
+*   3. Breakout
+    *   Siehe [Teil 3](/0035/)
+*   4. Breakout
+    *   Siehe [Teil 3](/0035/). Definitv das Highlight der Konferenz!
+*   5. Breakout
+    *   Siehe [Teil 4](/0036/)
 
 *   Orga
     *   Die Organisation war besonders gut. Der Tagungsort war sehr angenehm und machte es einfach, sich auf die Konferenz zu konzentrieren. Die Kaffeepausen in den Career Fair zu integrieren war perfekt. Die Organisation der Sessions war sehr gut. Mir ist nie etwas Organisatorisches negativ aufgefallen.

@@ -32,10 +32,10 @@ If you [still haven’t clicked on the link](http://www.mathblogging.org) to see
 
 Other than that, there’s the obligatory [about-page [wayback machine]](https://web.archive.org/web/20110114174017/http://www.mathblogging.org/about) and some [elementary feeds [wayback machine]](https://web.archive.org/web/20110114174100/http://www.mathblogging.org/feeds). That’s it. Of course, we don’t yet have every blog in there — that’s why there’s a nice “send us your blog” icon on the front page as well.
 
-## [mathblogging.org](www.mathblogging.org) — the technology
+## [mathblogging.org](http://www.mathblogging.org) — the technology
 
 mathblogging.org is beta and still in development. We have many ideas to make it better but we’re all working in research so forgive the slow development. Every page (except the start page) has a comments section thanks to [disqus](http://www.disqus.com) so feel free to comment on anything and everything. In the scientific spirit, the whole project is free as in freedom: the code is GPL’ed and on github, the content is licensed under creative commons and we will dump the database on github after we do some cleaning up. So you are free to give us some competition or help us make it better. Finally, we host everything on Google’s app engine which is nice and affordable. To give credit where credit is due, we generated the initial database by going through our own feed readers and, most importantly, the [mathematics section of academicblogs.org](http://academicblogs.org/index.php?title=Mathematics/Statistics) discarding dead blogs and those without a (mathematics related) post in the last 9 months (for the record, we did this in November 2010 so feel free to let us know what we missed since then).
 
-## [mathblogging.org](www.mathblogging.org) — the future
+## [mathblogging.org](http://www.mathblogging.org) — the future
 
 As mentioned, we have many ideas. The views are very basic right now and especially the category-view is a bit cluttered due to the amount of blogs (which will only increase…). So check out our development over time and feel free to give us a hand. My personal hope is that the increased visibility will lead to some mathematical blogging networks eventually, making discussions even richer.

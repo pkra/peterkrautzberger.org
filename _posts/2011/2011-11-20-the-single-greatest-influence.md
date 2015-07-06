@@ -12,7 +12,7 @@ permalink: 0089/
 
 > Note: this is an old draft that I finally finished; there's a line to indicate the major break between the original half and the additional part (not that the first part wasn't rewritten a little, too).
 
-Yesterday, when hearing the news that Steve Jobs passed away I stumbled upon [his speech at Stanford](http://www.youtube.com/watch?v=UF8uR6Z6KLc) from 2005. To be honest, I was a little disappointed but I guess it says something about him that even this mediocre speech left something behind: it made me think about different influences on my life, in particular, the influences on my development as a mathematician.
+Yesterday, when hearing the news that Steve Jobs passed away I stumbled upon [his speech at Stanford](https://www.youtube.com/watch?v=UF8uR6Z6KLc) from 2005. To be honest, I was a little disappointed but I guess it says something about him that even this mediocre speech left something behind: it made me think about different influences on my life, in particular, the influences on my development as a mathematician.
 
 I was surprised to realize who I believe to be the single greatest influence on my development as a mathematician. You'd expect something like "that one math teacher" (which would be [this one](http://www.beethoven-gymnasium.de/personen-und-organisation/lehrerkollegium/detail/lehrerid/2/)) or maybe "my first logic professor" (which would be [this one](http://www.mathematik.uni-muenchen.de/~donder/)). Then of course, you could say "my PhD advisors" (which would be [her](http://page.mi.fu-berlin.de/sabine1k/) and [him](http://www.math.lsa.umich.edu/~ablass/)).
 
@@ -24,7 +24,7 @@ Steffi was a student with [Stefan Geschke](http://www.math.uni-hamburg.de/home/g
 
 * * *
 
-After I had finished my Diplom in Munich, I was pretty much a formalist. I didn't understand mathematics at all, especially I didn't understand what it meant to be a mathematician (which is about as different as understanding art is from [being an artist](http://www.youtube.com/watch?v=U3kKjGKp9rA)).
+After I had finished my Diplom in Munich, I was pretty much a formalist. I didn't understand mathematics at all, especially I didn't understand what it meant to be a mathematician (which is about as different as understanding art is from [being an artist](https://www.youtube.com/watch?v=U3kKjGKp9rA)).
 
 But I was quite good at manipulating formulas. Good enough in any case to be able to find a poorly financed PhD grant after moving to Berlin. And this is where I encountered Steffi.
 

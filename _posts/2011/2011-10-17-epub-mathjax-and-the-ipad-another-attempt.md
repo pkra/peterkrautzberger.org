@@ -39,7 +39,7 @@ In the mean time, and for posterity, here's how I create epub files. (for the Pr
 Get your hands on
 
 *   [MathJax](http://www.mathjax.org/) (duh!)
-*   [pandoc](http://johnmacfarlane.net/pandoc/) or [ecub](http://www.juliansmart.com/ecub)
+*   [pandoc](http://johnmacfarlane.net/pandoc/) or [ecub](http://www.juliansmart.com/)
 *   [calibre](http://calibre-ebook.com/)
 
 That's it. (Well, unless you don't know what those are and how to use them -- I won't cover how to install and run these).

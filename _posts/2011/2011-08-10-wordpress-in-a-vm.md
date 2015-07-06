@@ -22,7 +22,7 @@ This tutorial is very rudimentary for now, but leave a comment and I'll gladly c
 I'm lazy, so to get a nice preconfigured, downsized ubuntu with wordpress nicely set up, you head over to [turnkeylinux.org](http://www.turnkeylinux.org/) and get their [wordpress appliance](http://www.turnkeylinux.org/wordpress). More precisely, you'll want the version for a virtual machine (VM) (click the picture to see my cursor hovering in the right place...).
 
 <figure>
-    <a href="/assets/2011/wp1.png">
+    <a href="/assets/2011/turnkey.png">
       <img alt="screenshot of Turnkeylinux.org" src="/assets/2011/turnkey.png"/>
     </a>
 </figure>

@@ -18,11 +18,11 @@ permalink: 0170/
 As you may have noticed, I recently moved back to Germany and most recently to Göttingen. This meant, after some 8+ years, I'm living in West Germany again. Admittedly, when I lived in Berlin while working on my PhD, I lived in a heavily gentrified (i.e., West-ernized) East Berlin quarter (fun fact 1: at the time, the percentage of foreign citizens in Prenzlauer Berg was precisely the city average, with the "slight" difference of almost all of those being from G8 countries...). Still, even that part of East Berlin (let alone other parts) remained structurally very different from, e.g., Bonn and Munich. A particular aspect for me was always the absence of the typical West German "infrastructure" of small shops and businesses (or ATMs for that matter). In any case, Prenzlberg still felt incredibly different from anything West German (though not as much as it did in the 90s or even early 2000s when I first fell in love with Berlin).
 
 <figure>
-  <a href="/assets/Gaussturm.jpg">
-    <img alt="Gaussturm near Göttingen" src="/assets/Gaussturm-148x300.jpg"/>
+  <a href="/assets/2014/Gaussturm.jpg">
+    <img alt="Gaussturm near Göttingen" src="/assets/2014/Gaussturm.jpg"/>
   </a>
   <figcaption>
-    Gauss did not build this when he was 9 years old.
+    Gauss did not build this when <a href="https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss#Anecdotes">he was 9 years old</a>.
   </figcaption>
 </figure>
 

@@ -18,7 +18,7 @@ So, I will attempt to live blog from [Science Online 2012](http://www.scienceonl
 
 ### Wednesday evening
 
-Getting to RDU was easy, direct flight, all good. Once there I hooked up with [Sam Kome](http://libguides.libraries.claremont.edu/samkome), a librarian, who was kind enough to both share a room without ever meeting me -- and had even organized a ride into town.
+Getting to RDU was easy, direct flight, all good. Once there I hooked up with [Sam Kome](http://libguides.libraries.claremont.edu/profile.php?uid=9233), a librarian, who was kind enough to both share a room without ever meeting me -- and had even organized a ride into town.
 
 Since we had an hour or so while waiting for more car sharers to fly in, I got my first impression of what I've only read about: everybody you'll meet at Scio12 will be simply awesome to talk to! And then you only meet more of them...
 

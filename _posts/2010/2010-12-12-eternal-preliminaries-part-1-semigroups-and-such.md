@@ -23,7 +23,7 @@ My thesis was a (somewhat) coherent structure and hence had one big chapter of p
 
 In the field that is often called ‘algebra in the Stone–Čech (sorry about the missing hacek) compactification’ (or ‘Hindman stuff’ for short), the structures of interest are infinite [semigroups](http://en.wikipedia.org/wiki/Semigroup) $(S,\cdot)$, i.e., $\cdot: S\times S \rightarrow S$ is associative.
 
-However, ever since the amazingly rich [paper by Vitaly Bergelson, Andreas Blass, and Neil Hindman on located words](http://www.math.lsa.umich.edu/~ablass/bbh.pdf) ([doi](doi.org/10.1112/plms/s3-68.3.449)) we have the notion of a partial semigroup. I like this more general notion for several reason which is why I will formulate everything in terms of partial semigroups here.
+However, ever since the amazingly rich [paper by Vitaly Bergelson, Andreas Blass, and Neil Hindman on located words](http://www.math.lsa.umich.edu/~ablass/bbh.pdf) ([doi](http://doi.org/10.1112/plms/s3-68.3.449)) we have the notion of a partial semigroup. I like this more general notion for several reason which is why I will formulate everything in terms of partial semigroups here.
 
 **Definition** Following the above paper, I’ll call $(S,\cdot)$ a **partial semigroup** if the map $\cdot$ is a partial binary operation for which equations of the type $(s \cdot t) \cdot u = s \cdot (t \cdot u)$ hold in the sense that whenever one side is defined, so is the other and they are equal.  
  This is often called strong associativity.

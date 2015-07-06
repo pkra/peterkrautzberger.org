@@ -18,7 +18,7 @@ When I started this writing challenge, I had listed a couple of potential blog p
 
 <figure>
   <a href="http://hyperboleandahalf.blogspot.de/2010/04/alot-is-better-than-you-at-everything.html">
-    <img alt="An Alot © Ellie Brosh" src="/assets/ALOT2.png"/>
+    <img alt="An Alot © Ellie Brosh" src="/assets/2014/ALOT2.png"/>
   </a>
   <figcaption>
     I care about this Alot. © Ellie Brosh

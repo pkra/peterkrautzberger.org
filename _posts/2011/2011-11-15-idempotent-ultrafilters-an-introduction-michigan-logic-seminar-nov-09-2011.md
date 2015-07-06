@@ -11,7 +11,7 @@ published: true
 permalink: 0088/
 ---
 
-Because of a power outage at the department my talk [announced for October 29th](https://settheorytalks.wordpress.com/2011/10/29/michigan-logic-seminar-7/) was postponed by a week.
+Because of a power outage at the department my talk [announced for October 29th](http://settheory.mathtalks.org/michigan-logic-seminar-7/) was postponed by a week.
 
 <iframe src="https://player.vimeo.com/video/32109926" width="100%" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 [Idempotent Ultrafilters: An Introduction (University of Michigan Logic Seminar 2011-11-08)](http://vimeo.com/32109926) from [Peter Krautzberger](http://vimeo.com/pkrautzberger) on [Vimeo](http://vimeo.com).

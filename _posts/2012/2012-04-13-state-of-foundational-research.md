@@ -55,7 +55,7 @@ How can we survive in such a climate?
 
 #### postscriptum
 
-On the one hand, Loeb's idea for rating agencies seems mostly designed to identify "weak" fields and to eliminate those. On the other hand, [his article](http://www.nature.com/nature/journal/v484/n7393/full/nj7393-279a.html) opens with
+On the one hand, Loeb's idea for rating agencies seems mostly designed to identify "weak" fields and to eliminate those. On the other hand, [his article](http://doi.org/10.1038/nj7393-279a) opens with
 
 > Too many young physicists embark on projects without knowing the risks.
 
