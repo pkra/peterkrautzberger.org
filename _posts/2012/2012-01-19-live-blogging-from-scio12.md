@@ -14,7 +14,7 @@ published: true
 permalink: 0097/
 ---
 
-So, I will attempt to live blog from [Science Online 2012](http://www.scienceonline2012.com). This means this post will get updated instead of writing many posts.
+So, I will attempt to live blog from [Science Online 2012](https://web.archive.org/web/20110826202353/http://scienceonline2012.com/). This means this post will get updated instead of writing many posts.
 
 ### Wednesday evening
 
@@ -30,7 +30,7 @@ With not too much sleep, I jumped on the shuttle bus and was immediately welcome
 
 The conference center is really nice, great swag stuff -- very different from the usual, will write more at a later point. But, of utmost importance, there was good coffee! And good food.
 
-And then meeting people just continues -- and of course, you run into these Germans, they are simply everywhere. Now I'm sitting in Mireya Mayor's keynote after very good (because short) opening remarks by the organizers and the NCchancellor. So that's it for now, hoping to write more on how I handle the complicated, far too interesting schedule later.
+And then meeting people just continues -- and of course, you run into these Germans, they are simply everywhere. Now I'm sitting in Mireya Mayor's keynote after very good (because short) opening remarks by the organizers and the NC chancellor. So that's it for now, hoping to write more on how I handle the complicated, far too interesting schedule later.
 
 ### Thursday the actual morning sessions
 
