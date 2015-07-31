@@ -12,7 +12,7 @@ published: true
 permalink: 0019/
 ---
 
-The last week was rather busy and I did not find time to blog. The good news is that I will be attending [BLAST 2010](http://euclid.colorado.edu/~kasterma/blast/) in Boulder come June and they are very kind to support me.
+The last week was rather busy and I did not find time to blog. The good news is that I will be attending [BLAST 2010 [Wayback Machine]](https://web.archive.org/web/20100612014546/http://euclid.colorado.edu/~kasterma/blast/) in Boulder come June and they are very kind to support me.
 
 After having been very excited last week with the start of the [Young Set Theory Network [Wayback Machine]](https://web.archive.org/web/20110711064402/http://young-set-theory.net/wiki/Main_Page) I wanted write a follow up on the project that hopefully helps people who want to become active in it. The text was supposed to help me identify how I would want to contribute. But it became a bit more so I decided to post it.
 

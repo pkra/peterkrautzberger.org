@@ -23,7 +23,7 @@ published: true
 permalink: 0025/
 ---
 
-The organizers of [BLAST 2010](http://euclid.colorado.edu/~kasterma/blast/index.php) asked the speakers to upload or give a link to the slides of their talk. Since I gave a chalk talk at the blackboard I had no slides. So instead of slides let me give a short recollection of my talk here.
+The organizers of [BLAST 2010 [Wayback Machine]](https://web.archive.org/web/20100612014546/http://euclid.colorado.edu/~kasterma/blast/) asked the speakers to upload or give a link to the slides of their talk. Since I gave a chalk talk at the blackboard I had no slides. So instead of slides let me give a short recollection of my talk here.
 
 ## The semigroup $\mathbb{F}$.
 

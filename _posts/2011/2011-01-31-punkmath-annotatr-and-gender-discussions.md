@@ -29,7 +29,7 @@ The sad thing is that all of Tom’s projects (apart from his twitter account) s
 
 So a while ago there was [an interesting mathoverflow question on discussing mathematical papers online](http://mathoverflow.net/questions/51056/are-there-any-good-websites-for-hosting-discussions-of-mathematical-papers) that was (of course) closed immediately but Ben Webster managed to revive it and it actually got some fascinating answers.
 
-Besides the trouble that mathoverflow still has when it comes to long term development of questions, there were not only the favoured power user answers describing a potential system — there were [actual pointers to such projects](http://www.quora.com/What-are-some-websites-where-one-can-post-commentary-and-reviews-of-academic-papers)! What caught my eye immediately was, as you’ll understand, [annotatr](http://annotatr.appspot.com/).
+Besides the trouble that mathoverflow still has when it comes to long term development of questions, there were not only the favoured power user answers describing a potential system — there were [actual pointers to such projects](http://www.quora.com/What-are-some-websites-where-one-can-post-commentary-and-reviews-of-academic-papers)! What caught my eye immediately was, as you’ll understand, [annotatr [Wayback Machine]](https://web.archive.org/web/20110301214716/http://annotatr.appspot.com/).
 
 Annotatr is a sleeping beauty of a project. Hosted on the Google App Engine with [open sourced code on github](https://github.com/mreid/annotatr) it makes you heart delight. Also, the simplicity of the idea is wonderful — combine citeulike with disqus, done.
 

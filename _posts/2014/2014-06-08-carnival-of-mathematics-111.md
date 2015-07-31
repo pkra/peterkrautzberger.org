@@ -70,5 +70,5 @@ And so the Carnival comes to an end and we move on. As we must. Always.
 _Comments_
 
 * [Pingback](http://aperiodical.com/2014/06/carnival-of-mathematics-111/), 2014/06/09
-* [Pingback](http://letsplaymath.net/2014/06/17/math-teachers-and-homeschool-bloggers-we-want-you-2/), 2014/06/17
+* [Pingback [Wayback Machine]](https://web.archive.org/web/20140725153526/http://letsplaymath.net/2014/06/17/math-teachers-and-homeschool-bloggers-we-want-you-2/), 2014/06/17
 * [Pingback](http://cavmaths.wordpress.com/2014/06/27/maths-teachers-at-play-75/), 2014/06/27

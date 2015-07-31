@@ -14,7 +14,7 @@ published: true
 permalink: 0023/
 ---
 
-I am spending this week in Boulder, Colorado, at the [BLAST 2010](http://euclid.colorado.edu/~kasterma/blast/index.php) and it’s off to a great start.
+I am spending this week in Boulder, Colorado, at the [BLAST 2010 [Wayback Machine]](https://web.archive.org/web/20100612014546/http://euclid.colorado.edu/~kasterma/blast/) and it’s off to a great start.
 
 There are many reasons I am enjoying myself. The city’s location is naturally amazing and I look forward to the conference hike on Friday. The town seems very nice as far as I got around and the campus is beautiful. Socially speaking, I thoroughly enjoy meeting familiar faces and friends in numbers I never experienced before. Scientifically speaking, the tutorials are excellent, both Matti Rubin and Andreas Blass are amazing teachers. Also, some personal conversations already led to new (and surprising) results, so that’s quite cool. I keep wondering a little if there could be a better format for talks in mathematics. The usual setup I have encountered so far seems consisting of invited speakers getting around 45 mins, others 30 mins. This mostly leads to invited speakers giving much too broad talks whereas the other speakers start to rush a lot. As much as I love LaTeXs Beamer class, the power point problem of too many and too easily forgotten slides hurts mathematical talks badly since there are no best practices, there is no power point zen for mathematics.
 

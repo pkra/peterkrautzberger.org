@@ -61,7 +61,7 @@ _Comments_.
   After that, it doesn't seem to me that there are any rules, only guidelines.  For instance, if you want to write "a similar argument can be used to show..." then go ahead, as long as it's really the case!
   * **Peter**, 2011/10/09
     Sam, I guess I should have written "proof" instead of "formal proof" so as not to lead logicians astray ;)
-    What I'm after is a different. The concept of communicating mathematics among mathematicians is currently reduced to writing down proofs (and barely verifiable proofs as <a href="http://boolesrings.org/scoskey/2011/10/07/peer-review-failure/">you pointed out</a>).
+    What I'm after is a different. The concept of communicating mathematics among mathematicians is currently reduced to writing down proofs (and barely verifiable proofs as <a href="https://boolesrings.org/scoskey/peer-review-failure/">you pointed out</a>).
     But I think that's a bad situation. It is almost as bad as if describing a work of Picasso by saying "he drew a black line here, then a red one there, then shaded some yellow in that area etc" or by describing Bach's Cello Suite No 1 in terms of sheet music. It does not facilitate communication, understanding.
     I think the complexity of contemporary mathematics needs more than proofs. Proofs are a bad tool even if they are the best we have.
     * **sam**, 2011/10/09

@@ -28,7 +28,7 @@ Thankfully, Jana Flašková was kind enough to read through the draft correcting
 
 ### Results have stories, too
 
-In 2010, I had the pleasure of visiting [BLAST 2010](http://euclid.colorado.edu/~kasterma/blast/index.php) in Boulder, Colorado. It was a great experience (I wrote a [couple](/0023/) of [blog](/0024/) [posts](/0025/) back then). One afternoon, I was sitting somewhere on campus with [Jana Flašková](http://home.zcu.cz/~flaskova/english/) and she asked me if [idempotent ultrafilters](/0088/) could be rapid.
+In 2010, I had the pleasure of visiting [BLAST 2010 [Wayback Machine]](https://web.archive.org/web/20121203234019/http://euclid.colorado.edu/~kasterma/blast/index.php) in Boulder, Colorado. It was a great experience (I wrote a [couple](/0023/) of [blog](/0024/) [posts](/0025/) back then). One afternoon, I was sitting somewhere on campus with [Jana Flašková](http://home.zcu.cz/~flaskova/english/) and she asked me if [idempotent ultrafilters](/0088/) could be rapid.
 
 My initial reaction was "Of course not!". My intuition said, rapid ultrafilters are just as bad as Q-points! they have too many gaps! they can't be sums! But Jana insisted. And she was, of course, right. So let me take a step back and talk about these notions.
 
