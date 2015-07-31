@@ -25,7 +25,7 @@ Well, of course you can. MathJax is used in lots of mobile applications and ther
 
 Luckily for us, app developers these days have a similar problem and there is much innovation in mobile app frameworks that (aims to) make app development a "design once, compile everywhere" kind of thing.
 
-Why don't we go for a two pronged approach? Especially one that has been used successfully already: let's develop our content for standards like epub3, offer it as such -- DRM free, leaving it to the competent (possibly trained) user to use that file -- but also provide a comfortable version by wrapping an app around our (standard-driven) content? (And really, why not offer both for the same price.) In other words, why not do what [O'Reilly has done for years](http://www.aldiko.com/blog/28-oreilly-books-now-available-as-android-apps-using-aldiko-technology).
+Why don't we go for a two pronged approach? Especially one that has been used successfully already: let's develop our content for standards like epub3, offer it as such -- DRM free, leaving it to the competent (possibly trained) user to use that file -- but also provide a comfortable version by wrapping an app around our (standard-driven) content? (And really, why not offer both for the same price.) In other words, why not do what [O'Reilly has done for years [Wayback Machine]](https://web.archive.org/web/20130310082142/http://www.aldiko.com/blog/28-oreilly-books-now-available-as-android-apps-using-aldiko-technology).
 
 Instead of waiting for yet another awesome but proprietary framework (like iBooks Author or Inkling), let's use an open source, standards oriented framework.
 
