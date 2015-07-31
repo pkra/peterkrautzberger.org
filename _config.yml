@@ -13,11 +13,11 @@ permalink:              /:title/
 title:                  Peter Krautzberger
 tagline:                'on the web'
 description:            'Peter Krautzberger on the web'
-url:                    http://www.peterkrautzberger.org
+url:                    https://www.peterkrautzberger.org
 
 author:
   name:                 'Peter Krautzberger'
-  url:                  http://www.peterkrautzberger.org
+  url:                  https://www.peterkrautzberger.org
 
 gems:
   - jekyll-redirect-from
