@@ -60,3 +60,21 @@ On the one hand, Loeb's idea for rating agencies seems mostly designed to identi
 > Too many young physicists embark on projects without knowing the risks.
 
 So while rating agencies would be stupid, I do like the idea to improve transparency for students. Is anybody thinking about that at all? Do we have transparent statistics about the number of research mathematicians, their fields, their activity etc? Do we have any idea about the number of future open positions in mathematics, their fields etc?
+
+---
+
+_Comments_
+
+* **David Roberts**, 2012/04/13
+  “(This was and is an embarrassment and failure of the leaders of the UK
+  math community, really. How could the major grant agency make such major
+  policy changes without anyone noticing?)”
+  It was more of a unilateral move on the behalf of the grant agency without consulting the field. The decision was presented as a fait accompli and then leaders in the UK math community, including people like Atiyah and his ilk, made a fuss to no avail.
+  * **Peter**, 2012/04/13
+    I’m aware of that. But it still leaves me with the impression that there’s a lack of involvement in the necessary politics. To put it differently, this wouldn’t have happened to the AMS with its active campaigning and an office in DC.
+* **Samuel Coskey**, 2014/04/14
+  So whose responsibility is it to make sure pure math receives funding?
+* **Carl Mummert**, 2014/04/15
+  I did give a short answer there, but there is a lot more that I don’t have a clear way to express.
+  I think a particular difficulty with logic is that it is a young enough field that the seminal papers are all easily available and written in a way that they can (mostly) be read today. Only someone studying history would read Galois to learn about abstract algebra, but plenty of people try to read Goedel’s original paper to learn about the incompleteness theorems. The problem with that is that those old papers are beautiful but lack 75 years of improved perspective.
+  What I don’t know of is a good book or paper that describes the current perspective on “foundations of mathematics”. There are email posts by Harvey Friedman, but they might be too polemical for an undergraduate who doesn’t have the perspective to appreciate exactly what argument is being made. On the other hand there are textbooks like Enderton’s book, which I like very much but which scrupulously avoids the topic of foundations. Does anyone else know of something that could be used to introduce an undergraduate to the modern idea(s) of foundations?

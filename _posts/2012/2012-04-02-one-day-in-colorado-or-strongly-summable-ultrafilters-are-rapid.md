@@ -133,3 +133,17 @@ But here is a good point to stop the first post. In the second post, I will give
 I hope you enjoyed this a little. I think it is a common theme for small results: If you're an expert in your area (however small that area might be), there are a ton of question that you simply won't think of but nevertheless can answer relatively quickly. Sometimes, I get the feeling that I should be a little ashamed of such results. They come to quickly. There's a meme in popular culture that mathematics has to be produced "the Wiles way", in secret, laboring for years. We all know that's not accurate at all, but I think some of us prefer to leave that impression. After all, if the argument is sufficiently transparent, it's often hard to tell if took a short or a long time.
 
 Anyway, stay tuned for part 2.
+
+---
+
+_Comments_
+
+* **Andreas Blass**, 2012/04/15
+  Your conjecture, that you caused me to pay insufficient attention to the next BLAST talk, is correct, at least to the extent that I don’t remember what talk that was.
+  * **Peter**, 2012/04/18
+    Thanks for supporting my memory somewhat on this :)
+* **Andreas Blass**, 2012/04/15
+  I like your direct argument that sums can’t be P-points.  As you surely know, but other readers might not, I generally view this fact as a consequence of the fact that a sum, p+q, is the limit, with respect to p, of the translates n+q of q (by finite numbers n).  A P-point, on the other hand, is never a limit point of a countable set of other ultrafilters.  (Indeed, this is the definition of “weak P-point,” and it follows immediately from the characterization of P-points in terms of countable intersections of neighborhoods in beta(N).)
+ * **Peter**, 2012/04/18
+ Thanks, Andreas. I agree that this is more elegant for people who know P-points well enough. I admit I simply didn’t think of it at the time of writing.
+ Of course, doing it this way would mean discussing the topological definition of addition and also the fact that the $(n+q)_ {n \in \omega}$ actually are different ultrafilters — and this would have complicated things. Oh well, maybe next time :)

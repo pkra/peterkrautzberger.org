@@ -61,3 +61,29 @@ But the real consequence is: this will cost money. And members should be ready t
 ---
 
 _Note (2015)_: The link to the Scholarly Kitchen was not present in any WordPress revision of this post. Browsing [The Scholarly Kitchen's archive](http://scholarlykitchen.sspnet.org/2013/01/), I still don't know which one I may have meant.
+
+---
+
+_Comments_
+
+* **Asaf**, 2013/02/05
+  Do I get extra-cool points for not having neither a Facebook account nor a G+ account? :-)
+  * **Peter**, 2013/02/05
+  yes, but you massively loose for being a moderator on math.SE 😉
+    * **Asaf**, 2013/02/05
+      But I’m not a moderator there… I just have a lot of points, and I waste a lot of time on meta issues. To my defense, a lot of the ideas I had in the past two years were “incepted” from math.SE questions, including the work I did in my thesis.
+     * **Peter**, 2013/02/05
+       ah. OK I thought you were. But your research benefiting from social platforms – that’s a direct disqualification 😉
+* **Dirk Lorenz**, 2013/02/06
+  Is the community of the [German DMV](http://regularize.wordpress.com/2012/05/24/socializing-the-german-math-community/) a good example or a cautionary tale?
+  * **Peter**, 2013/02/06
+  Yes, thanks! I forgot about your post. Do you have any idea what software they use?
+    * **Dirk Lorenz**, 2013/02/14
+    It seems that the network uses [JomSocial](http://www.jomsocial.com/).
+      * **Peter**, 2013/02/14
+      Nice. I didn’t know Joomla had such an extension. Sad to hear it doesn’t work. I think MO and math.SE showed that it’s possible to build a math community. Maybe it’s just another sign that Europe just won’t catch up unless it can become a single community?
+* **chorasimilarity**, 2013/05/17
+  I just discovered your excellent post. After thinking about how to gamify peer-review, I arrived to an idea close to the one here, namely why not using social games and visualisation of data techniques, as a virtual world for researchers? Wrote about this here: <a href="http://chorasimilarity.wordpress.com/2013/05/09/mmorpgames-at-the-knowledge-frontier/">MMORPGames at the knowledge frontier</a>
+  * **Peter**. 2013/05/17
+  Thank for your kind words, Marius. I’ve been following your blog for a while (via mathblogging.org I think). I haven’t read your post yet, but your comment reminds me of stories of people using Second Life for meetups. It sounded crazy back then (ok, I was a student, these were big wig mathematicians) but I understand what they were after. Of course, Booles’ Rings is all about making your professional website that place (but the social networking features aren’t quite there yet). Anyway, I’ll comment after I read your post.
+* [Pingback](http://regularize.wordpress.com/2013/02/14/a-mathematical-social-network/), 2013/02/06

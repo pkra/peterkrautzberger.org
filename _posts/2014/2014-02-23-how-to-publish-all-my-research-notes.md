@@ -20,3 +20,10 @@ Perhaps I should use image annotations to directly markup the images? Perhaps I 
 ---
 
 Well, as you might have guessed, this draft has been sitting here for the last 6 months. So instead of waiting for the perfect solution, I'll start with the straight forward and reliable one. One blog post per page, transcribing the page, possibly adding translations, notes, comments. Since my notebooks sometimes contain personal notes, I will not necessarily publish every page of every notebook. For the same reason, I might blur parts of a page etc. Hopefully, this won't be too much of a mess (and interesting to someone, at least give them a laugh or something). We'll see how it goes.
+
+---
+
+_Comments_
+
+* **Dana Ernst**, 2014/02/24
+  I’m looking forward to seeing how this turns out.

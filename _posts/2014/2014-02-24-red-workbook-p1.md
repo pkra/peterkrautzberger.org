@@ -52,3 +52,13 @@ I'm using `p1` in the title to be intentionally vague -- while this happens to b
 This workbook starts with a journal entry regarding traveling to TOPOSYM 2006 and continues with notes on the talks at TOPOSYM. It is curious to read those personal notes. For example, my first meeting with Wistar Comfort with whom I happened to share a close personal friend is notable mostly for the embarrassment I felt while being introduced to lots of researchers (whom WW Comfort all knew) whose name I barely caught (and never remembered) and with whom I wasn't able to have a conversation.
 
 I won't reproduce the notes on conference talks -- they are neither interesting nor complete (and they deteriorate over the course of the week). I don't remember any of the talks now, but I remember the "performance" of some of the speakers (mostly the distinguished ones, like WW Comfort sharing stories from TOPOSYM during the Cold War). I do fondly remember spending that week with my fellow PhD students, Gido Scharfenberger and Steffi Frick, and getting the first taste of being among researchers -- exhilarating.
+
+---
+
+_Comments_
+
+* **Asaf Karagila**, 2014/02/24
+  You know, that is really awesome.
+  All I have to show for (this far, and in the future) is a huge pile of drafts which disprove Zermelo’s well-ordering theorem sitting between my desk and the closet.
+  (My policy is to empty the pile each time I move an apartment, this one has at least a year and a half before its inevitable doom, it seems.)
+  In fact, when I bought my tablet, I figured “Hey, I’ll just use it instead of pen and paper”, but it doesn’t work like that. I quickly returned to the pen and fragments of paper (I have math scribbled on bus tickets! that I wrote while sitting on my computer, next to a huge pile of actual pieces of paper!!).

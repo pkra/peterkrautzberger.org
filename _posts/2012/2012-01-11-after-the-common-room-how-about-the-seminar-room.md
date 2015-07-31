@@ -62,3 +62,51 @@ Once a decent aggregator is in place, the key would be to get people to take a l
 So my question to you: would you consider trying this?
 
 <iframe width="100%" height="390" src="https://www.youtube.com/embed/jBDF04fQKtQ" frameborder="0" allowfullscreen></iframe>
+
+---
+
+_Comments_
+
+* **saf**, 2012/01/12
+  Personally, I don’t think I will find the time to watch seminar videos, but I would really love to have access to some lecture notes. More specifically, let me propose the following (rather modest) extensions of the beautiful STT (settheorytalks) project :
+  1) Every announcement of a seminar talk at STT will be followed by a comment with any available talk materials (slides, notes, videos..)
+  2) The (full) name of the involved speaker in an announcement would be added as a tag.
+  3) Every set theory meeting/special-session/etc would be (a) announced at STT (in an appropriate category), and (b) the post will be updated at one point to contain all available slides from the talks given at that session. Otherwise, a year after a session, we may end up with a dead website such as in the case of the recent Logic Colloquium in Paris:
+  http://www.logic2010.org/special_sessions
+  * **Peter**, 2012/01/12
+    Saf, I do understand the feeling that it’s not worth your while to watch seminar talks. My gut reaction however is: because most talks suck. Maybe recordings tend to become stale (or disappear). But so do papers. Then again, maybe it will help somebody somewhere (at a small college with no seminar culture) to find a recording much later; it could definitely help a hiring committee to get an actual impression of a candidate, even a series of impressions of a researcher growing as teacher, communicator, collaborator (yes yes, I know, committees are busy evaluating impact factors these days, there’s not time for such nonsense…).
+    But that is not my main point here anyway. My point is that you don’t ever have to watch a recorded video — you can be at the seminar, anywhere in the world, live, asking questions, interacting, discussing. Then again, we might just have different preferences. I get very little out of written lecture notes, I get a lot of out of direct discussions and interaction. In that sense, I’m arguing for a more diverse form of mathematical communication.
+    However, I also find conferences to be overrated. The quality of talks is usually abysmal, no matter which level (there was a wonderful suggestion at My Biased Coin for “invited non-speaker” — great idea, says it all really). The reason for the lack of quality seems to be that talks are just presentations, born from a time where you just had to get your results out there instead of communicating them, a time where communication was expensive and time at conferences was a precious resource, for you could not otherwise interact with people in person. A time, where a 20, 15, 10 minutes time slot seemed reasonable (My CS Prof wrote about a CS conference with a session for 5min talks by grad students and postdocs on the market…).
+    What if there was simply a permanent “conference” in terms of weekly video broadcasts? Oh wait…
+    What I’m trying to say is that just as in publishing, the restrictions for “conferencing” are rapidly becoming a thing of the past. With a little effort on both sides, you could join any talk (or any other form of meeting) in the world — a webcam and a good internet connection, that’s it. I’m not saying that conferences are going away. I think they should change considerably, I hope they become more like barcamps, unconferences etc — like good seminar meetings really.
+    Finally, I really like your suggestions for settheorytalks — I would love to have that kind of information there and I admit that I haven’t been good at posting updates about Michigan. But from my experience, it has already been difficult to get people to post (which is done by adding an email address to the usual announcement mail). So, as much as I agree with you that this would be great, this “modest” extension is asking a lot from a lot of people. I’m not sure Sam and I can convince on our own 😉
+    * **Ben Webster**, 2012/01/13
+      I can verify that we’ve used a couple of online talk videos in our hiring process. It is indeed helpful to just be able to call up video of the person speaking.
+      * **Peter**, 2012/01/15
+        Ben, great to hear that first hand!
+    * **saf**, 2012/01/14
+      Personally, if I would like to learn of recent results, I would prefer to read the slides of a talk, rather than watching a video (or online attending) the talk in which the same slides were delivered. Of course, this does not apply to blackboard talks, or to talks delivered by exceptionally good speakers.
+      Anyway, different people have different preferences, and as professor Webster confirmed, there are also other values for online talk videos.
+      Thus, let us work in parallel: I’ll work on extending STT, and you’ll explore the most recent video possibilities.
+      * **Peter**, 2012/01/15
+        Ah! Another misunderstanding. I only ever think of real seminar meetings, i.e., chalkboard talks with actual conversation — not aseptic presentations or reading-my-lecture-notes-out-loud lectures; seminar in the original sense.
+        In my experience almost all mathematicians are bad speakers for almost all audiences — and we definitely do not receive any training. But I have yet to meet a mathematician who isn’t good at answering questions they know the answers to.
+        I’m also not just talking about recent results. Or rather, not recent results of the speaker. I think we’re underestimating the waste in mathematics; people read papers all the time, but share their insights into new results only in extremely small circles if at all. Recording those (in any which way) would help very much — and deserves more recognition.
+        But otherwise — yes! Let’s work in parallel. I think more notes, immediately online, would be a blessing. And wordpress makes it very easy to put notes online after all…
+        * **Micheal Pawliuk**, 2012/01/15
+
+          > “In my experience almost all mathematicians are bad speakers for almost all audiences — and we definitely do not receive any training. But I have yet to meet a mathematician who isn’t good at answering questions they know the answers to.”
+
+          +1. I think that often the speaker’s goal is to produce an air-tight proof of result X. For the most part this seems doomed from the start. The speaker lays down 10 or so new definitions then proves some technical lemmas then glues them together. This seems utterly impossible to follow. There is just too much information and intuition missing. Speakers often forget that they have been thinking about a concept for more than the 30 minutes that the audience has.
+          That being said, I’m attending seminars as a graduate student so maybe I am not the target audience. :)
+        * **Peter**, 2012/01/16
+          I think you’re spot on. But there’s always two sides. I have experimented with something I picked up from Eric Mazur’s peer instruction method: sending my material to the seminar ahead of time. I had hoped to have a conversation rather than a presentation. But people didn’t find the time to read anything, so it didn’t really work.
+          In general, I think we need to get to a level where seminars are about exchanges. Somebody once wrote that in the near future, the smartest person in room will be the room, i.e., the collective. At the same time there won’t be a “most knowledgeable person” either since encyclopedic knowledge is most easily outsourced (as it is already today for a lot of content thanks to wikipedia). Instead, the gain will be in connecting the intelligence of people in a different way. This appeals to me, if only for its democratic nature.
+        * **saf**, 2012/01/18
+        Sam has just added me as an STT contributor. I’ve already added tag names for speakers, and resurrected the “conference” category: [http://settheorytalks.wordpress.com/category/conferences/feed/](http://settheory.mathtalks.org/category/conferences/feed/)
+* **Micheal Pawliuk**, 2012/01/15
+  Great post Peter! I’ve been thinking about these types of collaboration issues lately. Here are two articles to think about:
+  [Why individuals will be the ones to make big mathematical discoveries](http://nathanson.files.wordpress.com/2010/06/indivcollab1.pdf). An argument against Gower’s “Polymath” project.
+  [Why collaboration is good](http://www.ams.org/notices/201009/rtx100901132p.pdf) and how graduate students can become more collaborative.
+  * **Peter**, 2012/01/16
+    Thanks for the links. I can’t follow Nathanson’s arguments against Polymath. On the one hand, it seems likely that we’ll see a surge of problems that require a distributed approach — just like other scientific areas. On the other, we haven’t even tried to study what does and what doesn’t work with respect to massive collaborations. The criticism sounds a lot like arguing that the first mechanical computers couldn’t really calculate faster than humans or that early chess programs couldn’t beat amateurs. We’re only at the beginning.

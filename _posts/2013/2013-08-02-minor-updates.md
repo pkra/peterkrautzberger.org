@@ -14,3 +14,12 @@ permalink: 0138/
 It's been a while since I've posted regularly but I have a secret blogging project planned to get back into the groove. In the mean time I switched themes to twenty twelve (just as WordPress releases twenty thirteen, oh well).
 
 I've also retroactively changed my licensing -- unless otherwise noted or attributed, all of my own original content is now licensed even more liberally under CC-by. Yes, that means you can go and use it for commercial use. Why? Because it means less headaches for anyone who wants to use it.
+
+---
+
+_Comments_
+
+* **Dana Ernst**, 2013/08/04
+  Secret blogging project?!
+  * **Peter**, 2013/08/04
+  Oh nothing special, just a way for me to blog more here.

@@ -155,3 +155,26 @@ As true as the comment appears, it comes across as terribly elitist. The huddled
 Maybe we could use a new constitution for our scientific communities. And then let's have elections. And then let's have transparency and accountability.
 
 Oh well, it's only a dream.
+
+---
+
+_Comments_
+
+* **fbreuer**, 2012/07/17
+  Thanks for this great list! I agree with you completely in spirit (and mostly as far as the details are concerned). The wider social, cultural and political issues you raise are exactly what we need to talk about in the current publishing debate.
+  I have a meta question, however. I realize that all of these are dreams, i.e., they are not formulated with an eye towards practicality. Nonetheless I would like to ask you how these dreams could be turned into reality. Precisely because most of these dreams involve fundamental social and cultural change, their implementation is a huge political issue. And I can see no way whatsoever to convince math departments, university administrators and funding agencies everywhere (or, indeed, anywhere) to implement such radical policy changes.
+  So my question is this: Do you see a grass-roots way to make some of these changes happen? What can a small, decentralized, non-tenured group of mathematicians do to make any of these dreams come true?
+  * **Peter**, 2012/08/04
+  The biggest grassroots movements is probably the ScienceOnline community http://scienceonlinenow.com/. Unfortunately, not a lot of mathematicians are interested.
+  In mathematics, the state of the web is a bit of a sad story.  We’ve been so far ahead earlier (arXiv, mathoverflow) that these structures are full of “old” people, unwilling to embrace the next steps — and so we’re way behind in current communication methods (blogging networks are a perfect example). Don’t get me wrong, there are fantastic people out there, but there is zero initiative/leadership that actually is grassroots. Gowers is the perfect example: great stuff, great initiatives but then most of it ends up in old-dudes networks creating boring things like the Forum of Mathematics So, honestly, I doubt mathematics will see a movement — just look at the miserable level of discussions at publishing.mathforge.org and non-transparent activities by the big players (have you heard of the international library of mathematics?). Instead, I fear, pure mathematics might simply be run over in the end.What math research is particularly missing out on is another great advantage over the sciences: math teachers. In the US there’s a great network of math teacher bloggers and they really are a grassroots movement (out of sheer necessity). Do researchers interact with them? Nope. It’s a shame.
+  Of course, mathblogging.org brings a lot of that together. But we don’t have the time to take it to the next level right now.
+  * **fbreuer**, 2012/08/07
+  Thanks for the pointers!
+  Apart from looking at what groups are (or are not) out there, my question was also about what such a movement might actually aim to achieve. Suppose we are in a dream world, where there is a well-organized group of determined non-tenured mathematicians who want to change the current system. What would they do? (In addition to having a discussion.)
+* **saf**, 2012/10/14
+  Brian Osserman (UC Davis) has <a href="http://www.ams.org/notices/201210/rtx121001383p.pdf">a simple proposal</a> that I wish would be adopted in the very near future.
+  * **Peter**, 2012/10/14
+  You forgot the http 😉
+  [http://www.ams.org/notices/201210/rtx121001383p.pdf](http://www.ams.org/notices/201210/rtx121001383p.pdf)
+  That’s an interesting approach, especially since it’s the reverse of what everybody else is suggesting. Instead of going the PLoS ONE route of *only* checking correctness, this suggestion wants to delay correctness until it’s “important” enough.
+  It’s an interesting thought. Personally, I’m opposed to the notion that editorial board can be relied upon for identifying “important” results, so this isn’t my cup of tea. But I could imagine that it could make the current system more efficient. Maybe that would actually make it easier for people to see the ridiculousness of the current system.

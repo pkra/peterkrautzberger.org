@@ -22,3 +22,12 @@ Oh yes, I live here now. Some call it paradise, others moloch. I think both are 
 </figure>
 
 Hopefully, I'll get back to blogging a bit more regularly and tell you more.
+
+
+
+---
+
+_Comments_
+
+* **François G. Dorais**, 2012/07/24
+  Most people who “move to LA” actually move to Santa Monica, Pasadena, Long Beach, or whatnot… I see you moved right in the center of LA! Very nice!

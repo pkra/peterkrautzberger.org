@@ -25,3 +25,12 @@ But at least now I know. And I can improve. And I do. Because these recordings e
 <iframe src="https://player.vimeo.com/video/32109926" width="100%" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 'Tis not a folly to be wise.
+
+---
+
+_Comments_
+
+* **becky**, 2012/01/24
+  You’re your own worst critic, P! If you think that writing is chaotic, you haven’t seen certain unnamed profs lecture. (Also, you just tricked me into watching [the first 48 minutes of] that talk.)
+  * **Peter** 2012/01/24
+  Becky, thank you for your kind words. I apologize for tricking you. I’ll repay in sushi 😉

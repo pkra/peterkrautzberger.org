@@ -43,3 +43,13 @@ It took me a long time to realize that it wasn't her, but me that was missing so
 Having spent time with Steffi transformed me more than anything. She and her way of doing mathematics forced me to fundamentally re-evaluate what being a mathematician meant to me. Without the painful growth that followed this experience, I would never have made anything.
 
 I haven't been in touch in while, but thank you, Steffi!
+
+---
+
+_Comments_.
+
+* **sam**, 2011/11/22
+  This is a very nice post. This also happened to me (though I can’t pinpoint the precise moment) and probably happened to many of us. It’s the experience of being told how to solve a problem without actually being told any of the steps you would do to write a proof.
+  * **Peter** 2011/11/22
+    Thanks for your comment Sam. You make it sound so mundane 😉 But yes, I assume all mathematicians encounter this at some point, most likely much earlier than me.
+    But we don’t talk about it and I think non-mathematicians are often not aware of this. I’d love to hear more of these stories from other people.

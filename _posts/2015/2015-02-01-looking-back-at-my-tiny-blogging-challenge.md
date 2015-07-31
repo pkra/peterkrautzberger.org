@@ -21,3 +21,20 @@ As for the means, this exhaustion leaves me in doubt for the first one. Did I si
 As for the second one, I think that was a bit of a miss. At least in the sense that my posts seemed to cause a lot of confusion and irritation. Then again, that was somewhat intentional, I just wasn't happy with the _kind_ of confusion, perhaps.
 
 As for 2015, I will try to pace myself better. First target: finish that post from the original list of the tiny blogging challenge.
+
+---
+
+_Comments_
+
+* **Asaf Karagila**, 2015/02/01
+  There. My one good deed for the year, I can get back to being an evil man once more (by forcing and tricking poor models of set theory to have no choice, of course).
+  * **Peter**, 2015/02/03
+    What have I done!!!!1!!!!!11!!eleventy!!!!
+    * **Asaf Karagila**, 2015/02/04
+      <a href="https://en.wikipedia.org/wiki/Elevenses">Elevenses</a>?
+      * **Peter**, 2015/02/05
+        Hah. Funny. (fixed the link).
+* **Asaf Karagila**, 2015/02/01
+  Also, how did Mike win the friendly wager? He didn’t post _anything_ during that period. You should have won that after the first week, or second week.
+  * **Peter**, 2015/02/05
+    True but I did say I’d take him on without his side of the bargain.

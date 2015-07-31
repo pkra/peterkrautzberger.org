@@ -26,3 +26,12 @@ I would like to thank Dave Munger and the team at ScienceSeeker -- especially Ga
 I would like to thank Sam for his support, expertise and everything.
 
 Run, you fools! Go and break the server!
+
+---
+
+_Comments_
+
+* **Dave Munger**, 2013/02/01
+  Congratulations! The site looks fantastic!
+  * **Peter**, 2013/02/01
+  Thanks, Dave!

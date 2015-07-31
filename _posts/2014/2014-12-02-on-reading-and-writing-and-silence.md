@@ -22,3 +22,14 @@ On a related note, in recent months, I was forced to think about my comment "pol
 This policy has very little to do with trolling, actually, but more with off-topic comments and comments on ancient posts documenting how things have changed (I'm so surprised! not). It's also related to a different point: I'm probably switching off automated comments at some point next year (ooooooh, something will change, hint hint).
 
 The number of worthwhile comments I get is roughly 1 per month (vs 5-10K of spam). So instead of a comment sytem, I'll figure out some way you can quickly send me a comment and then I will add it manually. This move is not just laziness about dealing with spam (it will be slightly more work, I suspect) but also reflects the fact that I consider your comments to be additions to the content, not separate from it. This does not mean that a comment needs to be serious, of course -- silly comments are just as (more?) (more!) relevant to me, so I hope people will keep'em coming.
+
+---
+
+_Comments_
+
+* **Asaf Karagila**, 2014/12/02
+  Silly comments are my specialty. As are most form of off topic. I think that I would have managed to squeeze the 45 minutes I have to teach into an actual 45 minutes time frame if I would lay off the off topic comments and jokes to my classroom.
+  However, I do feel that humor is an integral part of my teaching, so I won’t do that, and I’ll keep the usual five minutes overtime.
+  Hey, look at that, I’m the first half of a soccer game! :)
+  * **Peter**, 2014/12/08
+    This made me smile. <a href="http://hyperboleandahalf.blogspot.com/2010/04/alot-is-better-than-you-at-everything.html">Alot</a>.

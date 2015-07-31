@@ -56,3 +56,19 @@ So LaTeX as a web standard is just not practical. Which brings me to my final po
 ### Where is this phantom menace coming from?
 
 The more interesting question for me is where this phantom originates from. I suspect this is really about the lack of browser implementations. It's always easier to look for a scapegoat. Making up a phantom like TeX will distract us from the important discussion: what's really holding back browser implementation? It's definitely not the math end where MathML simply rocks. And then the really interesting question can be: what could MathML 4 and MathML 5 look like?
+
+---
+
+_Comments_
+
+* **Asaf Karagila**, 2014/11/17
+  Join the dark side. We have cookies. Although in this context, it seems that you guys have cookies, to remember rendering preferences as needed. :-)
+  I agree that the reality of LaTeX is messy. People are too used to MS Word and other “what you see” editors that they just want “something that works”, and learning the basic amount of LaTeX so the compilation is (1) without warnings, (2) looks professional to professionals is too much for most people.
+  In other words: http://xkcd.com/1015/ I did this to myself with LaTeX (and kerning).
+  * **Peter**, 2014/11/18
+    Hm. You’re the second person now. It seems I have not been able to communicate this well (I blame the 30min time limit). This post is not a criticism of TeX/LaTeX, neither real TeX/LaTeX nor TeX-like stuff on the web. This is merely about the fact that TeX/LaTeX will never ever be a threat to any web standard, in particular MathML.
+    * **Asaf Karagila**, 2014/11/18
+    I think that I understood that. I just felt the need to write that comment burning in my throat. Maybe it’s that cold I’ve got the past few days. My comment does feel as if I verbally sneezed on the page. :-)
+    In either case, I see it as a case why MathML and web-based mathematics should be invested in, not as a replacement for LaTeX but as a companion. And I agree with that. But I felt the need to point out why LaTeX is still great, if you have a sensitive eye for these things. I don’t know, I’m just typing now into the comment box. Zoobitido. Blorgcups. I’ll stop. Now. Honestly! There, I stopped. :-)
+* **Paul Topping**, 2014/11/18
+  TeX (or LaTeX) is a perfectly fine input language, something that MathML is not and never was meant to be. It is always fine to keep around input language along with a representation generated from it so embedding TeX in a web page is fine too. As you say, Peter, the menace is phantom! MathML and TeX can live together in harmony but one cooks and the other does dishes.

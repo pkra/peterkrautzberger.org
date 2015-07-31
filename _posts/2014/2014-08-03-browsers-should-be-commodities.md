@@ -34,3 +34,24 @@ Really, there simply has to be room for more than 5 browsers in the world.
 * * *
 
 PS: Yes, this is mostly about "layout engines", not "browsers". To most people the distinction is meaningless.
+
+---
+
+_Comments_
+
+* **Asaf**, 2014/08/03
+  You are _two_ regular readers? Who’s the second one? :-)
+  I agree that browsers should be more varied. I am surprised that you’re not using your own scripted Uzbl, instead of Chrome+Chromium (which are practically the same thing). I am also surprised that you’re not using Opera which uses its very own engine (unless I’m mistaken), where as Chrome, Chromium, Web and Safari all use the WebKit.
+  But the reason is quite simple. Writing a modern browser engine is not a trivial task. It’s no longer a simple regex parser and a tcp socket. The more complex the web becomes, the harder it is to write a reliable rendering engine. So it’s only natural that a handful of competitors are left around.
+  * **Peter**, 2014/08/03
+    I count as two readers 😉
+    I don’t use uzbl out of the same sense of realism I mentioned above. I may have been writing confusingly / been confused (since the comments so far misunderstood what I was trying to say).
+    First off, I wouldn’t mind using a single browser. That was not my point. Second, Chrome/Chromium and Safari/Web are now separate. Chrome forked WebKit into Blink last year and both sides have modified their end quite a bit since (especially ripping out components). Opera has given up on its Presto engine last year and is now based on Chromium (not just Blink as a rendering engine). Still, they are obviously quite close.
+    Third, I’m aware how difficult writing a layout engine is (well, at least I’ve asked people who actually do that for a living). So is making cheese or building RAM modules; it does not make those products less of a commodity. But yes, my hope is that writing layout engines will eventually be much easier, perhaps easy enough for a typical “your first serious software project” kind of thing. (I’m also not saying this is a realistic hope.)
+      * **Asaf Karagila**, 2014/08/04
+        Nice, taking cheap shots at an obvious typo. Of course I meant to ask “You have …” and of course you knew that!
+        The comparison to cheese is wrong. Cheese is tasty, browser render engines are not. Also some cheese is left in a cave to grow mold, but then again I’m sure that the render engine of links, lynx, and friends are aged like fine scotch. :-)
+        Thanks for the update on the world of rendering, I didn’t know all those news. Seems that a lot has been going on since I stopped caring about it. In either case, remember that Xul is the coolest engine of them all, since Xul is the gatekeeper for Gozer. (Okay, fine, it’s Zuul, but Xul has the same nice ring to it.)
+        And speaking of Gozer, whenever you call a destructor of an object, you invoke Gozer. Egon is rolling in his early grave. (Need I also mention that a good browser engine should not cross streams? Alright, that’s my last Ghostbusters reference for this comment. I promise!)
+        * **Peter**, 2014/08/05
+          Funny, I had missed your typo. I was really trying to joke that I count as two readers (crazy like that). Keep the Ghostbusters references coming!

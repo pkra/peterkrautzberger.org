@@ -30,3 +30,20 @@ When you fold it 42 times, it's as if you stacked <span>test</span> $2^{42}$ pie
 The [moon](https://en.wikipedia.org/wiki/Moon) is on average 384,400km from earth, and 405,410km at its farthest -- so we'll get there no matter what day. If, that is, we could fold a piece of paper 42 times.
 
 For what it's worth, the world record for folding paper is 13 times -- achieved by [high schoolers on MIT's campus](http://www.boston.com/yourtown/news/cambridge/2011/12/toilet_paper_used_to_break_pap.html) in 2011.
+
+---
+
+_Comments_
+
+* **Dirk Lorenz**, 2013/02/25
+  You don’t need to google to estimate the thickness of one piece of paper: Just imagine a usual pack of 500 sheets. A rough estimate is that it is between 4cm and 8cm high which leads to a thickness of about 0.08mm and 0.16mm which is the right order of magnitude.
+  * **Peter**, 2013/02/25
+  I don’t have such things as stacks of paper at home anymore :(
+     * **Dirk Lorenz**, 2013/02/26
+     You could also make a very rough estimate of how high 500 sheets of paper are either from memory (as vague as it may be) or from the size of printers or their paper trays. To be off by factor of 10 would not be too bad. Anyway, nobody would think that 500 sheets are less than 0.5 cm high or more that 50 cm high. By the way: “How many piano tuners are there in Chicago?”
+     * **Peter**, 2013/02/26
+       Nice, but I didn’t want to turn this into a Fermi problem.
+* **Asaf Karagila**, 2013/02/25
+  That is awesome. MythBusters did a paper folding myth once. They prepared a sheet of paper the size of a hanger and used heavy machinery to help them fold it into halves. I think they got to 11 or something like that.
+* **Frédéric Wang**, 2013/02/25
+  I hope you didn’t forget to explain to the kids why the aspect ratio of A4 papers is much better than the one of U.S. paper sizes… And since I mention this, here is a related “MathML” problem: what is the minimal possible size for the bounding box of the element below, such that the ellipse drawn does not overlap the inner element?

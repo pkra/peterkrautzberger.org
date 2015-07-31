@@ -103,3 +103,35 @@ In short, it shows why we don't have to take no for an answer when we ask for be
 * * *
 
 Small edit: linked to the phonegap, corrected the Win8 comment.
+
+---
+
+_Comments_
+
+* **Dana Ernst**, 2013/03/30
+  Thanks for spending the time playing around. What is supposed to be done with the example .apk file that you link? That is, what am I supposed to use to open it?
+  * **Peter**, 2013/03/30
+  Oh yeah, I’ll edit it. That’s an Android app file. Just download it with an Android device and it will (after disabling some security setting) allow you to install it.
+    * **Dana Ernst**, 2013/03/30
+    Oh, I’ve only got iOS devices.
+      * **Peter**, 2013/03/30
+      Ah, sorry — iOS compilation needs an iOS developer license which costs money I don’t want to spend. You can try Windows and Symbian 😉 Or androvm with virtualbox (which everybody should have).
+      * **Peter**. 2013/03/30
+      You could unzip the file and look at the content in a browser.
+* **Asaf Karagila**, 2013/03/31
+  I should point out that sometimes (and recently more often than not) when loading math.SE or MO pages full with MathJax the browser on my iPhone 4 hangs, crashes, and sometimes loads the page on the next load. Less common, but not unfamiliar are Atom Z2670 (x86) hangs (which completely paralyze my poor tablet, despite being top of the line), and also familiar are the x64 hangs on my linux, but these are much much more rare (nowadays anyway).
+  Whether or not it’s the SE software or not, I can’t say that I trust MathJax fully for a 20, 50, or 150 pages long paper. PDF may be somewhat slow, but it works just fine most of the time. Despite not being a big fan of change, I am willing to try the new formats on my Win 8 tablet, but I am also concerned about the stability of such experiment (not the whole system, just local to the application) if many large files are opened simultaneously.
+  * **Peter**, 2013/03/31
+  Sorry to hear that. We’ve heard stories like yours but nothing re-producible. Be sure to let me know if you find something we could track! It might be bugs in mobile Safari 6 and IE10 that we’re not yet aware of.
+  Performance is not really a problem after MathJax has run. So for example, in a mobile app a good programmer/author would store the rendering in localstorage, so that MathJax really only ran once — after that it would all be “looking at HTML”. Similarly, if you want to store large documents, you’d chop them up and only load parts etc. So while all my attempts are naive, I have seen enough smart people (especially among the MathJax sponsors) do a lot of awesome stuff.
+  One key problem with PDF is that it’s not accessible. Since accessibility actually benefits everyone (because you have do do better design to be accessible), that alone should be a reason to leave it behind. But more importantly: we need to experiment! I don’t think anyone believes the web will suddenly be re-written in TeX. HTML is where it’s at. Yet we don’t even know what “mathematics native on the web” could be. Currently, all mathematics is like ebooks: a faithful copy of what was done in the print past — it just happens to be a digital copy (PDF being the prime example but most other forms of online mathematics are that way, including MathOverflow and math.SE). It’s not surprising. The printing press output was essentially “scroll reproductions” for the first hundred years. We need to really start experimenting what math in the times of the web will become. Bret Victor has some interesting examples (the small networks paper, not the kill math stuff), mathbox is another cool one. But also mathematical storytelling, creation and collaboration has ways to go.
+  * **Asaf Karagila**, 2013/04/01
+  I only did one thing with IE10 when I got the tablet. I opened the Mozilla site and downloaded Firefox… :-)
+  As for mathematics on the web, I agree. Now that I have a Wacom digitizer pen I stopped scribbling math (at least serious math) on paper. I have been looking for a chance to collaborate with someone digitally, but that didn’t happen yet.
+  I think that the problem is that currently PDF is pretty much the only format I can write into the document in a relatively smooth and working way (at least without paying a lot of money for a software which may or may not work). This is huge. It means that I really don’t have to print something, I can just write remarks into a paper I am reading. When I’m grading papers I do it like that, and it’s great.
+  The future holds many secrets, but I have a hunch that digital pens will become ever more popular, and that collaboration on the web should be prepared for that. Not just HTML/JS/MathJax sort of collaborations, that for itself is nice, but won’t be enough in the long run.
+  Lastly, for the hanging math pages, I think that the correct solution would be to develop some downloadable MathJax compilation server, that would “hijack” the calls to the web and do things on the computer. Yes, somewhat like downloading the JS scripts in advance, and redirecting the traffic from the web to your computer. While debugging on the iPhone is really impossible, I suspect that this may be – at least to some extent – the culprit in the case of my tablet.
+* **John P. Wheeler**, 2013/10/28
+  Thanks for this article! I really like the disclaimer you included in the beginning. I’m thinking of playing around with it as well.
+  * **Peter**, 2013/10/30
+  Thanks, John, glad to hear this is of use. Let me know how it goes!

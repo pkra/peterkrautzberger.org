@@ -106,3 +106,12 @@ Finally, Rings not Ring: inclusive, not exclusive, extendable, not restrictive, 
 > Booles' Rings -- roughly circular.
 
 Hey, that's a good line ;)
+
+---
+
+_Comments_.
+
+* **Thony Christie**, 2011/08/22
+  Hi Peter thanks for the name check the several links and the friendly comments. Really enjoyed your story of your search for a blog collective name. You really should read Desmond MacHale's Boole biography it's one of the best science biographies that I've ever read.
+  * **Peter**,  2011/08/22
+    Thanks for your comment. I finally found a copy but summer is fleeting... As I wrote on Twitter, Booles' Rings is not really a blog collective. It's more about investigating the potential of wordpress as a platform for modern researcher homepages. (Not that this will stop us from writing in a more blogesque style ;) )

@@ -28,3 +28,21 @@ Luckily, I don't have to bore you with my notes but can simply point you to the 
 *   [#dotall](https://twitter.com/hashtag/dotall?src=hash) (reach out to all audiences)
 
 Now I'm exhausted but excited for tomorrow's hack day.
+
+---
+
+_Comments_
+
+* **David Roberts**, 2014/12/09
+  Your link to dotastonomy six is not quite right…
+  * **Peter**, 2014/12/09
+    Thanks. Should be fixed.
+* **Asaf Karagila**, 2014/12/10
+  Two questions:
+  1) Did you only have 15 minutes because two weeks ago it took more than 30 minutes?
+  2) Do you think that the fact that two people have commented on the content of your blog means that this has exhausted your reader base? If so, what sort of Alot would you imagine is useful here?
+  Finally, I agree that this could be great in math. But it could also end up being counterproductive. Since mathematics can be a very non-applied form of art, rather than science with basis and application to/from all sort of fields like astronomy (all types of physics, some chemistry, all sort of engineering), this means that we get quite a fragmented result. Sort of like having Kandinski paint one half of a picture, cover it all but one inch, and letting Gogen paint the other hand accordingly. It just won’t click most of the times, but when it does it will be awesome.
+  What exactly do I mean? If you take someone working in differential geometry, there might not be much that they can say about combinatorial properties of successor of singular cardinals to a set theorist, and vice versa. So you’d have to work “in the middle of fields” where set theory and category theory meet, and differential geometry and constructive mathematics perhaps already wait for them. But now, since we’re talking about mathematics and mathematicians, we can’t expect everyone to be familiar with all the fields, or accept handwavy, sketchy arguments (because those will almost always fail when actually writing them down for the first time), so lengthy tutorial needs to be given first.
+  Because mathematicians, and foremost Lady Mathematics, like precision and like accuracy. And you can’t just do that out of thin air.
+  Of course, I’m not advocating against this idea. I think it’s great, if you can find the right people. Namely, a bunch of mathematicians from different fields which have a common core interest, and can either put the additional time in learning the basics of the other participants’ fields, or somehow be okay with handwaving until you slightly levitate, and of course have an open mind for these sort of things. Then sure, you can put them all together and let them talk about something, and almost surely something good can come out of it!
+  (And it seems that I’ve mistaken the comment field for my own blog. ALOT! :-))

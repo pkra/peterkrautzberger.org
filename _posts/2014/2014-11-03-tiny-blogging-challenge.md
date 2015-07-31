@@ -40,3 +40,18 @@ I thought it might be prudent to have a couple of topics ready so that when I si
 *   Why you shouldn't care about MathML
 
 Note that these are not actually related to drafts or even proper ideas. They are just ideas I jotted down over the past few weeks.
+
+---
+
+_Comments_
+
+* **Asaf Karagila**, 2014/11/03
+  I dare you to sit and just type for 30 minutes straight. Real words, although syntax and grammar matter less here.
+  Bonus points if it ends up a new and short proof of the equiconsistency between an inner model with a measurable and the existence of precipitous ideals.
+* **Micheal Pawliuk**, 2014/11/04
+  I would be interested in doing this too!
+  Care to make it a little challenge? Along the lines of “the first person to go a week without posting donates some amount to the charity of the other’s choice?”
+  Or are you all “talk” and no “walk”. :)
+  * **Peter**, 2014/11/09
+    Hm… I would take on that challenge but I hesitate because I remember being very restricted financially as a grad student. I don’t want to add to that.
+* [Pingback](http://logic.dorais.org/archives/1593), 2014/11/09

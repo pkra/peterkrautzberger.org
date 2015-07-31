@@ -64,3 +64,11 @@ In the time-honored tradition, let us remember that [111](http://en.wikipedia.or
 *   And as you leave this Carnival behind, excited, exhausted, and content, you might still turn back for that one last ride, that one last attraction. So head over to Patrick Honner / [Mr Honner](http://mrhonner.com/) as he takes on the The [Grant Wiggins](http://grantwiggins.wordpress.com/2014/04/23/conceptual-understanding-in-mathematics/) Conceptual Understanding Challenge, allowing us, [through his response](http://mrhonner.com/archives/13620), a peek into that insightful brain of his.
 
 And so the Carnival comes to an end and we move on. As we must. Always.
+
+---
+
+_Comments_
+
+* [Pingback](http://aperiodical.com/2014/06/carnival-of-mathematics-111/), 2014/06/09
+* [Pingback](http://letsplaymath.net/2014/06/17/math-teachers-and-homeschool-bloggers-we-want-you-2/), 2014/06/17
+* [Pingback](http://cavmaths.wordpress.com/2014/06/27/maths-teachers-at-play-75/), 2014/06/27

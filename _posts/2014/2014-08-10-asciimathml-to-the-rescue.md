@@ -39,3 +39,26 @@ What I'd really love to see is more people pushing asciimath further. The offici
 There's a lot of low hanging fruit in the form of improving the quality of the MathML (e.g., `a\\b` should probably produce `<mfrac bevelled="true"><mi>a</mi><mi>b</mi></mfrac>` instead of the problematic `<mi>a</mi><mo>/</mo><mi>b</mi>`) and of course asciimath by design should probably not strive to be feature complete (i.e., generate any kind of MathML) which means there should be situations where asciimath will simply fail and, much like markdown with HTML, it could perhaps gracefully mix MathML and asciimath.
 
 But in any case, it's great to have this alternative to TeX-like inputs because TeX is ultimately holding math on the web back (but that's another post, for another time).
+
+---
+
+_Comments_
+
+* **Kasper Peulen**, 2014/09/15
+  I absolutely do agree that asciimath deserves the title “markdown for math”. However it seems that many mathematicians don't take anything serious that is ¬LaTeX.
+  I'm really curious where your next blog post will be about. I do think that TeX is ultimately holding math on the web back. I think the web have seriously failed if in 10 year time, it is still the standard to use LaTeX code for a (good looking) mathematical chat. Or other forms of quick mathematical communcation on the web.
+  But I'm not seeing ASCIIMath as the holy grail (yet). One reason that people may not take ASCIIMath seriously, is because it doesn't look the same as LaTeX. Not having a different mode for inline and display style math is something that arguably doesn't look so professional. I don't see people use ASCIIMath for writing a mathematical blog in this way.
+  The lack of <code>\begin{align} \end{align}</code> like environements is also a downside of ASCIIMath. I use align environments all the time. I agree that ASCIIMathML aim shouldn't be to be feature complete. But I do think it should be able to generate 90 percent of what a mathematician uses. In other words 90 percent  of what is used at math.stackexchange for example.
+  The last point I don't like about ASCIIMathML is its name. Being ASCII focussed is not what I envision for a future mathematical language. I think the language should be unicode focussed. Because unicode symbols are ultimately the easiest to read.  
+  For example take this LaTeX code:
+  <code>$W^{3\beta}_{\delta_1\rho_1\sigma_2}$</code>
+  The ASCII variant:
+  <code>`W_(delta_1rho_1sigma_2)^(3beta}`</code>
+  I think for the ultimate readable mathematical language, a hybrid of ASCIIMath and Murray Sargant's math language would be perfect: http://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf
+  In that language, you would have:
+  <code>W_δ₁₂ρ₁σ₁^3β</code>
+  Which is the best readable of the three I think. (I see that ASCIIMathML does render some unicode symbols, but ₁ or ₂ or not rendered (what I would think is) correct.
+  The problem of unicode symbols is of course that they are not easy to write in any plain html textarea input (or even ace editor). That is some real obstacle I try to battle with this little tool: http://kasperpeulen.github.io/PressAndHold/
+  Ultimately, I think it should be possible to have unicode symbols be labeled "easy to write". For example writing these unicode symbols <code>(W_δ₁₂ρ₁σ₁^3β)</code> in this comment box, was allmost trivial using that tool (which can be used as a bookmarklet script).
+  Another way would be just mapping the ASCII macros already to their unicode symbols in the textarea element. Why should you convert beta to β only in the output? Why not converting it in the input while you are typing it ?
+  I guess I want a language that could be described as "ASCIIMathML with less ASCII" Because, really, why not write α  or ϕ for alpha or phi ?

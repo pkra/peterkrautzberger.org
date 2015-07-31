@@ -68,3 +68,13 @@ That last sentence about John McFarlane got shortened too much and doesn't quite
   <a href="http://xkcd.com/386/">Duty Calls</a> (&copy;  xkcd, cc-by-nc).
   </figcaption>
 </figure>
+
+---
+
+_Comments_
+
+* **Joerg Sixt**, 2013/01/23
+  Many thanks for this…although this answer made me lock myself in the basement for a week to get tex4ht to work(lol). It is probably powerful but a very badly documented piece of software. It is even unclear if MikTeX 2.9 contains a correct installation. It would love to get high-quality images for equations (PNG and SVG) out of tex4ht just to see how far you can go without MathML and MathJax but I failed so far.
+  Probably will try PanDoc next…
+  * **Peter**, 2013/01/26
+  I would suggest latexml first. pandoc is not on the level you expect.

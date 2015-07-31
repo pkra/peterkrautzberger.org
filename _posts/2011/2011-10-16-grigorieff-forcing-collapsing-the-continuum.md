@@ -55,3 +55,25 @@ This result is mentioned in Jech's Multiple Forcing book, but without proof and 
 ### An honest mistake
 
 David and I thought we had a proof that Grigorieff forcing with a stable ordered union ultrafilter is proper and $\omega^\omega$-bounding. This is, of course, impossible -- and with this knowledge we could find the mistake in our proof. We still think that "morally" speaking there should be an analogue forcing for the union filter world. But that's a different story.
+
+---
+
+_Comments_.
+
+* **François**, 2011/10/16
+  That's a neat argument! I always find situations like this where you only show that $cf(\mathfrak{c}^V) = \omega$ a little strange. Is there any hope to get a nice surjection from $\omega$ onto $\mathfrak{c}^V$?
+  (There is a small typo where you have $2^\mathfrak{c}$ instead of $2^\omega$ or $\mathfrak{c}$.)
+  * **Peter**, 2011/10/16
+  Well, Andreas thought of one when I talked to him about this but writing this post I felt it didn't work (I'll ask again).
+  He wanted to enumerate $P(I_n) / fin$ instead of $P(I_n)$ but I didn't see how this helps, i.e., I don't see how $f$ can be extended to be equal mod fin to $A^n_\alpha$.
+  (Thanks, I'll fix the typo.)
+  * **François**, 2011/10/17
+    Right, that trick would work if you knew that $\operatorname{dom}(f) \cap I_n$ is finite for some $n$, but I don't see why that would be the case...
+    * **Peter**, 2011/10/20
+      Ah! I forgot to update this -- Francois, Andreas fixed it. It's not hard, really: instead of a regular enumeration just pick a map so that the power set of every infinite subset of $\omega$ has full range. Proceed as in the proof and after finding $n$, choose the subset with number $\alpha$.
+      * **François**, 2011/10/21
+        Full range?
+        * **Peter**, 2011/10/29
+        Surjective range. Inductively build a map $P(\mathbb{N}) \rightarrow \mathfrak{c}$ in such a way that for every infinite $A \subseteq \mathbb{N}$, we get that the restriction of our map to $P(A)$ is still surjective.
+        Then we can use the above argument: as before we find an $I_n$ where our condition has left out an infinite set. Now pick from the power set of that infinite set a suitable candidate for $\alpha$ -- done.
+        Does that make more sense?

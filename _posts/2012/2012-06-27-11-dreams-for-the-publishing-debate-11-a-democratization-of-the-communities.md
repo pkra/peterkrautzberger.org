@@ -157,3 +157,14 @@ As true as the comment appears, it comes across as terribly elitist. The huddled
 Maybe we could use a new constitution for our scientific communities. And then let's have elections. And then let's have transparency and accountability.
 
 Oh well, it's only a dream.
+
+---
+
+_Comments_
+
+* **fbreuer**, 2012/07/17
+  I want to chip in on one particular point: I agree completely that academia is not about merit but about reputation. But I disagree with your assessment that reputation is determined entirely via publications.
+  I have never been on a committee appointing a position, so my experience is limited. But my impression is that the single most important factor for getting a position is simply who you know. Or more precisely: who knows you. In this way, careers in academia are precisely the kind of social game that Cathy O’Neil criticises in the business world.
+  Of course the assessment that academia is not a meritocracy still holds, but for a different reason. Consequently, fixing the publishing system or making mathematics more democratic is not going to change anything about the myth of meritocracy. In fact, such measures might give the myth of meritocracy even more of a justified appearance.
+  PS: The Grand Nagus of Mathematics is an absolutely brilliant title. :)
+* [pingback](http://checkmyworking.com/2012/07/carnival-of-mathematics-88/)

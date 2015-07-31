@@ -49,3 +49,10 @@ And it seems my new neighborhood is trying to tell me something.
 
 
 Oh well. I supposes that's what you get for moving to the town where these folks spent very productive years.
+
+---
+
+_Comments_
+
+* **Becky**, 2014/10/28
+  Too cool, P.!

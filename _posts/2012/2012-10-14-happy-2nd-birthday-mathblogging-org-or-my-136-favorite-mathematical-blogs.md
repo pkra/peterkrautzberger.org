@@ -193,3 +193,13 @@ Mind you there are a number of blogs missing from that list. For example, all of
 *   [You got your art in my maths!](http://artymaths.tumblr.com/), mathematical art.
 *   [{Musing Mathematically](http://musingmathematically.blogspot.com),
 *   [Math-Frolic](http://math-frolic.blogspot.com/), a math enthusiast.
+
+---
+
+_Comments_
+
+* **maurizio codogno**, 2012/11/08
+  hallo Peter, and thanks for all the great work you has made in collecting math-related feeds! (yes, I am quite late in answering, but sometimes it is difficult to look for everything…
+  As far as Italian blogosphere is concerned, I think that our added value is that we are few but well connected among us… and maybe we managed to overcome one of the greatest faults of Italian school: it favours a lot humanistic themes rather than scientific ones. So the few of us which are interested in math have a literary background too :-)
+  * **Peter**, 2012/11/11
+    Mille grazie. That makes a lot of sense! It’s a great benefit to have literary skills — but in smaller language communities it’s probably critical (not that I’m defending the lack of scientific training in the Italian school system…).

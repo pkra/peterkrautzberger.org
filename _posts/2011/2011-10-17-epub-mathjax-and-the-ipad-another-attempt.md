@@ -164,3 +164,17 @@ Here are two files at your disposal.
 
 *   [An epub with a slim mathjax installation](http://dl.dropbox.com/u/4999562/flat_slimmathjax_ecub.epub) (created with ecub).
 *   [An epub with mathml, no mathjax](http://dl.dropbox.com/u/4999562/flat_mathml_pandoc.epub) (created with pandoc).
+
+
+---
+
+_Comments_.
+
+* **Thilo**, 2011/10/21
+  Hello there!
+  Just a quick question, which eBook-readers have you tried? I’ve got an iriver Story HD and would like to know whether you tried it or its predecessor( same name without the “HD”).
+  Best regards,
+  Thilo
+  * **Peter**, 2011/10/31
+    * Thilo, sorry for the late reply. As the title says, this was all about the iPad. As far as I know, there is not a single epub reader software or “hard”ware (i.e., software running a dedicated device) that supports either mathml or javascript.
+    Nevertheless, I have tried android and (other) ipad apps — none of them worked.

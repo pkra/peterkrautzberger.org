@@ -19,3 +19,25 @@ But I found myself brushing past even those few postings, so that yesterday I th
 So, Asaf, I will call you Joey Zasa from now on.
 
 <iframe width="100%" height="510" src="https://www.youtube.com/embed/UneS2Uwc6xw" frameborder="0" allowfullscreen></iframe>
+
+---
+
+_Comments_
+
+* **Asaf Karagila**, 2014/05/31
+  You’re welcome! :-)
+* **Ioanna**, 2014/06/02
+  Nice question and answers there! Set theory is fun Peter, it doesn’t have to be your job for you to play with it :)
+  * **Peter**, 2014/01/06
+    Thanks, Ioanna. Well, when I left set theory, part of the reason was that it had stopped being fun. But I always thought our generation is lucky in the way the web helps us stay connected with our research area long after we left for other ventures (I even left a productive comment on a math.SE answer this year 😉 ).
+* **Peter**, 2014/06/05
+  Bam! Math! \\[ f: X \to Y \\] And $ \sqrt{2} \le 2 $
+  * **Asaf Karagila**, 2014/06/06
+    The first one is false in general, and the second one is false in $\mathbb Q$ and $\mathbb C$.
+    😉
+    * **Peter**, 2014/06/09
+      Indeed. It was just a test for MathJax rendering in the comments. I should be less careless 😉
+      * **Asaf Karagila**
+      Have you been dabbling with intuitionistic logic again?
+      “Less careless” + Law of excluded middle = “More careful”.
+      But he use of LEM is essential here! :-)

@@ -28,3 +28,14 @@ My answer was:
 I don't think it matters that I've left research. On the one hand, the arXiv has always been my primary source (and things like Neil Hindman's homepage) and MathSciNet was the perfect search tool (although it feels like Google Scholar could ruin them if they wanted). On the other hand, I'm part of a generation that won't have to quit following mathematical research just because we've left research. We have the arXiv, we have researchers blogging, we have social media and they inform me much faster about interesting developments on all levels than a journal ever could.
 
 But perhaps I'm just doin' it wrong.
+
+---
+
+_Comments_
+
+* **Asaf Karagila**, 2013/07/18
+  I don’t think Google Scholar, whic is a great service can easily win over MathSciNet. The latter has the advantage of many mathematicians summarizing and reviewing papers. That’s something that is hard to replicate.
+  * **Peter**, 2013/07/18
+  I wished I could agree with you. But that deserves another post.
+    * **Asaf Karagila**, 2013/07/19
+    I can relate. I know how hard it can be to agree with me. 😉

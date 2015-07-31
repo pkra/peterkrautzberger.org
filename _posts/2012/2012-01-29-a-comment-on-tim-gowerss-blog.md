@@ -69,3 +69,52 @@ The second part you quoted was much more general in nature, not just about MO bu
 I've personally heard the advice to "definitely not mention this on your CV". It boils down to the old "you could have written a paper instead"-argument, really, and it is not going away while hiring committees effectively reduce applicants to impact factors of the journals they publish in. Again, as I said before, this is not about breakthrough mathematics but about "average" research.
 
 Finally, here's a link to a video from [Science Online 2011](http://blogs.scientificamerican.com/a-blog-around-the-clock/2011/11/03/scio11-blogging-in-the-academy/) on "blogging in the academy" starting with an introduction from the perspective of MIT. It's quite sobering even if it is only about blogging.
+
+---
+
+_Comments_
+
+* **Carol Hutchins**, 2012/01/29
+  An important point you are making is the differential between "breakthroughs"  and what one might call the Big Middle.  Let's set aside that there is some tail of really really awful contributions at the other end.
+  Think of the frogs and birds, per F. Dyson.
+  * **Peter** 2012/01/29
+  Thank you, Carol. I'm sure there's a tail of awful contributions. That's why I'm speaking of an attention economy instead of a production economy. We need to share what we think about each others work. On the other hand, I think if we had activities other than writing papers which we could still put in the research section of our CV (such as open reviewing, helping other people make progress in their work), then the pressure to write as many papers as possible could be reduced, leading to fewer awful papers. But nobody can do that if we do not experiment more in this respect.
+  By the way, I've sometimes seen the argument "but then the cranks take over" which I find hilarious since I've yet to meet a mathematician who cannot spot a crank from a mile away.
+* **Micheal Pawliuk** 2012/02/01
+  I get the impression from your posts Peter that all mathematicians are terrible presenters and writers. :)
+  The problem I suppose is that good presentation skills are (unfortunately) often orthogonal to good research skills. I have even heard that some people with particularly strong teaching backgrounds actually have a harder time getting an academic job. (sigh)
+  * **Peter** 2012/02/03
+  Mike, unfortunately, I think your observations are on point.
+  The reason why mathematicians are bad speakers actually has a simple answer — we receive no training and there’s no active discussion in the community on how to present well (just check out the Journal of Number Theory’s youtube channel…). There’s also no feedback for speaker, i.e., nobody tells you what went badly in your talk or how to improve, even if you ask arond. Giving productive feedback is, of course, also a skill to be trained.
+  The trouble is that most people think you cannot learn this — which is plain wrong. To be a good speaker can be trained, just like anything else.
+  The observation regarding the job market is, I think, also correct, but for entirely different reasons. This is quite simply a (poor) decision of our community to actively favor the wrong set of skills (or rather, focus on one skill exclusively “paper writing”).
+  If you look around, the truly great mathematicians (Tim Gowers being a formidable example) are very good teachers and speakers. I think it is a misconception in our community that this skill is not important to further mathematical research; a misconception most likely originating from the fact that such skills could not be documented/evaluated until very, very recently.
+    * **Izabella Laba** 2012/02/07
+    There are truly great mathematicians who are not good expositors at all. I’m not sure that it would serve anyone’s interests to post names on a public blog, but they’re in Gowers’s league, research-wise. I’ve come to think that there might just be no correlation at all.
+    I’m all for recognizing a wider range of skills and contributions. I just don’t think that we should expect everyone to have every skill and make every type of contribution in the book. We have to wear a lot of hats already as it is.
+      * **Peter** 2012/02/07
+      I don't know if there's no correlation. I'd like to think that the very best, the extraordinary mathematicians are good expositors but I have no data to support this. Ultimately, I think, it comes down to values of the community -- I would call someone with a lesser "new results" record the greater mathematician if they are a great expositor. What good are results if nobody can understand them (and why we don't value people who make them understandable)? For example, I find it hard to call Perelman anything near great; his results, yes, but the mathematician, the member of our community? Another example would be Grothendieck, thanks to [this letter](http://sbseminar.wordpress.com/2010/02/09/grothendiecks-letter/).
+      I also fully agree with you that nobody should have to make every type of contribution. In fact, I hope for the exact opposite! People should contribute the best way they can. However, they can't as long as the community does not value all types of contributions. I see a monoculture where only people who can produce the right kind of "new results" papers will get into the "right" journals and, ultimately, get the jobs. And I worry that it is not a sustainable culture.
+        * **Izabella Laba** 2012/02/07
+        I’m thinking of someone in particular who, research-wise, is at the absolute top of several fields of mathematics. I do wish that his papers were easier to read. But we still read them (even if it takes an effort) and use his ideas (and there’s an abundance of them, and they’re often unexpected and have far-reaching consequences, so it’s all worth the time we invest in it). He has been incredibly influential in many areas and has developed a huge following. To me, there’s no question about either his greatness or being a valuable member of the community. Sometimes you can’t have it all.
+        On the other hand, I really would like to see expository work better valued. Right now, if someone writes an article making X’s unreadable but important work accessible to the community, this is dismissed as “just expository” and therefore lesser work, unless the author manages to attach some minor new result to it whereupon the paper gets upgraded immediately to the “research” category. I don’t think that this is right.
+          * **Peter** 2012/02/07
+          I see your point. What might help is a culture of seeking co-authors to remedy such deficits (if I was daring, I’d suggest this as referee of such a paper but that’s most likely too late in the game).
+          In set theory, Saharon Shelah seems similar to the researcher you describe. Reading a Shelah paper can be very painful, but reading a Shelah-Goldstern or Shelah-Blass paper usually isn’t (of course, with 1000+(!) papers Shelah has many, many co-authors for other practical reasons).
+          Oh, and I wholeheartedly agree with you that we should value expository work seriously!
+* **Joel David Hankins** 2012/02/02
+  Peter, I’m unsure whether to take your remark in the second comment as criticism or as joking praise… I would think that vigorous participation on MO by a logic user such as myself or Andreas Blass (or Emil, Carl, Francois, etc. etc.) would be seen as fundamentally encouraging of a vigorous logic activity there.
+  * **Peter** 2012/02/03
+  Joel, I mean it as both criticism and praise. Praise, obviously, for giving fantastic answers.
+  But it is also criticism. I see mathoverflow activity as something that adds to the research reputation of, in particular, untenured faculty. In fact, I sincerely hope that activities such as mathoverflow will soon find their rightful place in the research section of people’s CV. (And I’m baffled that not even Anton is getting the recognition he deserves — mathoverflow has probably created more impact than an entire year of Inventiones papers.)
+  The problem I see is that nobody else has a chance of building a reputation by *answering* questions because of power users such as yourself.
+  This is not a specific logic/set theory problem, since I’ve seen colleagues in other fields make the same observation. It’s probably easier to spot in a small field such as set theory.
+  I think it would help if there was a culture of less hurry on MO. Why not leave a question unanswered for a day or two even if you have an answer? The question is hardly life-and-death… But younger people (such as graduate students, postdocs) might get a chance to take a first step into the community.
+  I’m not saying that there is a solution — there might very well not be. In fact, when I say that MO deserves to be in the research section of a CV, I don’t mean that it should be the only thing there. We need many, many more platforms to allow researchers to contribute in other forms than old-fashioned papers.
+  I should add, this isn’t about me. There are other reasons why I don’t participate on MO anymore (though I like reading it).
+    * **Joel David Hamkins** 2012/02/04
+    But surely a major part of the attraction of MO is its vitality, the energetic participation by knowledgeable users. My view is that its mildly competitive nature, from a sociological design perspective, is absolutely key to its success.
+    * **Peter** 202/02/04
+    I wasn't trying to describe why MO is attractive to some of its users. I was trying to describe why it isn't attractive to others. [Izabella Laba](http://ilaba.wordpress.com/2011/03/28/why-im-not-on-mathoverflow/) had a discussion with yet different reasons a while ago.
+    But yes, I disagree with your view that the competitive nature is key to MO's success. It may have been in the past, but I think it can become damaging in the future.
+* [Pingback](http://qedinsight.wordpress.com/2012/02/16/both-students-and-professors-need-certification-and-the-elsevier-boycott/) 2012/02/16

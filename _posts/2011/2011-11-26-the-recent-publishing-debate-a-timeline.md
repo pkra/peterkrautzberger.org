@@ -10,7 +10,7 @@ tags:
 - peer-review
 - publishing
 - scientific publishing
-- TImothy Gowers
+- Timothy Gowers
 published: true
 permalink: 0090/
 ---
@@ -87,3 +87,13 @@ Finally, however, I realized that it's silly of me to expect Timothy Gowers or a
 Let me end by stressing that despite my criticism, I find it quite wonderful that Tim Gowers has yet again managed to have the mathematical blogosphere catch up with the scientific one on one more important debate.
 
 > Since the original post was getting longer and longer, I will post this now and continue later.
+
+---
+
+_Comments_.
+
+* **François**, 2011/11/27
+  Thanks for posting this timeline. It was hard to keep track of everything after a while.
+  * **Peter** 2011/11/27
+    Glad to hear it’s useful.
+* [Pingback](http://logic.dorais.org/archives/630), 2011/12/13

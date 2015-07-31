@@ -120,3 +120,13 @@ But there might be a more fundamental problem: do we have the right people in th
 Throughout _Reinventing Discovery_, there's something that Michael Nielsen does not discuss: the social impact. New ways of doing research will have a huge impact on the actual people involved and will require them to be willing and able incorporate these changes. The "right people" does not just mean "the researchers who know the right thing" but also "the researchers who can work with these tools".
 
 It could be that the groups of mathematicians that influence the conversations and developments within the mathematical community, e.g., tenured faculty at the top math departments, consist entirely of the "wrong" people, unable to be in the right place at the right time. Simply because it's not why they got the job -- they are where they are because they are excellent at doing research in the current model, the [steampunk](https://en.wikipedia.org/wiki/Steampunk) approach of "papers in journals".
+
+---
+
+_Comments_
+
+* **Mike Pawliuk**, 2012/04/15
+  “It could be that the groups of mathematicians that influence the conversations and developments within the mathematical community, e.g., tenured faculty at the top math departments, consist entirely of the
+  “wrong” people, unable to be in the right place at the right time. Simply because it’s not why they got the job — they are where they are because they are excellent at doing research in the current model, the steampunk approach of “papers in journals”.”
+  +1. It is hard enough to get grants if you publish lots of papers in respectable set theory journals, why would you want to publish in outlets that the grant-giving agencies don’t recognize?
+  I also get the feeling that this sort of project if lead by non-expert experts would just fail. Part of it seems like Gowers is trying to right a conventional paper by doing something harder than usual. I have difficulty enough writing papers when everything goes my way, let alone with one hand tied behind my back. It seems like someone like Gowers would be immensely useful for this type of project.

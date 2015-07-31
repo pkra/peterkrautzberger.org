@@ -79,3 +79,12 @@ There's of course a risk -- this could create a lot of noise as incrementally pu
 Even if your research implodes, you should get credit and, much, much more importantly, you will help others not to repeat your mistake. [Fred](http://boolesrings.org/vonheymann/) once worked on a nice old problem which, after a few months, clearly didn't get anywhere. But he realized that all his attacks had probably been attempted before and so he wrote a pre-print on all the ways to fail, published [his code along with it](http://boolesrings.org/vonheymann/publications/code/) so that people in the future might benefit from his failure. Or as [Doron Zeilberger wrote](http://www.math.rutgers.edu/~zeilberg/Opinion39.html): if only John von Neumann's maid had saved all the notes he'd thrown away each day!
 
 Or to put it differently: the most exciting result in 2011 was having [no result about Con(PA)](http://m-phi.blogspot.com/2011/10/inconsistency-of-pa-and-consensus-in.html).
+
+---
+
+_Comments_
+
+* **Andreas Blass**, 2012/06/16
+  Perhaps even more useful than publishing one’s own failures is publishing a survey that also includes other people’s failures on the same problem.  The instance that I know about is a paper by Frank Drake, explaining why the approaches people had tried to solve the singular cardinal problem, by extending Easton’s proof for the regular case, couldn’t work.  (This was written just before Silver gave an even better explanation, namely that the result they were trying to prove was false.)
+  * **Peter**, 2012/06/16
+    Thank you for the comment, Andreas. I fully agree, of course, that all errors are useful. It’s a great example. I wished we had a culture of mistakes, now that we have tools that would allow easy dissemination of these.

@@ -80,3 +80,29 @@ And I wonder: if Forum of Mathematics is considered a "big experiment" then I fe
 
 tl;dr  
  Great to have a PLoS ONE for mathematics but I worry that the **Pi** editorial board could end up the absolute, most powerful editorial board in history.
+
+ ---
+
+ _Comments_
+
+ * **Marshall Hampton**, 2012/11/12
+  Its not really different from PLOS ONE and PLOS Biology.
+  * **Peter**, 2012/11/12
+  Yes there is a similarity but I think there are major differences.
+  First of all, PLoS Biology was first chronologically (in fact, PLOS’s very first journal). They went from a traditional editorial model to creating the (really quite incredibly innovative) model of PLoS ONE.
+  Then there’s the “picking raisins” aspect of Pi; as far as I know this doesn’t happen at PLoS Biology // PLoS ONE.
+  Finally, PLoS ONE has much broader subject areas than Sigma which means it can’t really “hope” (if that’s the word) to dominate one field as much as Sigma might do for Mathematics. Hence, my worry.
+* **Christian Perfect**, 2012/11/12
+  Is there anything to stop other people compiling lists of good papers from Sigma?
+  * **Peter**, 2012/11/12
+  That’s a great idea! We could get “Sigma overlay journals” just as people are trying to do “arXiv overlay journals” — but with free refereeing.
+* **Siddhartha Gadgil**, 2012/11/12
+  I don’t think Sigma intends to be a PLOS One – just a collection of journals at the level of 'top journal in the field’ (while Pi is at the level of 'top journal in mathematics’)
+  * **Peter**, 2012/11/12
+    I don’t know how else to describe PLoS ONE. There is of course a different way of assessing proper mathematics as compared to proper science. Some have argued that PLoS ONE allows bogus papers to pass, but I don’t think there’s much real evidence for that. certainly not more than a decent journal in mathematics.
+* **Scott Morrison**, 2012/11/19
+  Sigma is certainly planning on rejecting correct but insufficiently important papers! I think you’re barking up the wrong tree wishing it were like PLoS One for mathematics.
+  * **Peter**, 2012/11/19
+    Thanks Scott. I’ll double check and will add a correction. As I describe, I’m not really wishing for Sigma to be a PLoS One for mathematics — I’m rather worried about that. Assuming Sigma will really start at a “top” level, my worries about its influence would worsen…
+  * **Peter**, 2012/11/19
+    Sorry for not double checking right away — you are right. (I should listen to comments more often :( )

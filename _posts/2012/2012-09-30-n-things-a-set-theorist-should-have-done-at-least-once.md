@@ -33,3 +33,32 @@ What else?
 * * *
 
 Update Oct 1, 2012: there's now also a graph theory one by Derrick Stolee at [Computational Combinatorics](http://computationalcombinatorics.wordpress.com/2012/09/28/things-a-graph-theorist-should-do-at-least-once/).
+
+---
+
+_Comments_
+
+* **Thony C**, 2012/09/30
+  Define an undefinable set.
+  * **Peter**, 2012/09/30
+    Nice!
+* **saf**, 2012/09/30
+  a variation of 11: prove a ZFC result via forcing
+  * **Peter**, 2012/09/30
+    Nice. I thought about adding that but then I decided that 3 should cover that. but you’re probably right – it deserves independence (pardon the pun).
+* **Asaf**, 2012/10/01
+  Find a new choice principle.
+  * **Asaf**, 2012/10/01
+    Bonus points: find its location within the common principles’ hierarchy. E.g., it implies countable choice but not dependent choice.
+    * **Peter**, 2012/10/01
+    Very nice — I didn’t think about choice principles (comes from working with ultrafilters 😉 )
+* **saf**, 2012/10/01
+  Have the following statements included somewhere in your proof:
+  (a) “take a countable elementary submodel of $\langle \mathcal H(\lambda)\,\in\,<_ \lambda\,\ldots$ for a large enough regular cardinal $lambda$, containing everything relevant to this proof"
+  (b) “note that by absoluteness, it suffices to prove that "1+1=2" holds in L"
+  * **Peter**, 2012/10/01
+    Thanks! Good stuff :)
+* **David Roberts**, 2012/12/09
+  What about proving something independent of ZF? (over ZF!)
+  * **Peter**, 2012/12/09
+    Not my cup of tea, but nice!

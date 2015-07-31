@@ -275,3 +275,56 @@ Anyway, let's daringly assume you have an epub3 with your xhtml+mathml content.
 * * *
 
 This text is [available as an epub3 file](/assets/2013/How%20to%20include%20MathJax%20in%20an%20epub3%20file%20to%20work%20with%20iBooks%20%28and%20possibly%20others%29.epub) which includes MathJax and should run on iOS devices.
+
+---
+
+_Comments_
+
+* **Lila Roberts**, 2013/01/15
+  I’d like to try to create an epub file–I must admit the opf file is quite intimidating. pandoc looks nice; but I do have inDesign and BlueGriffon. I’ll keep you posted. Thanks, Peter!
+  * **Peter**, 2013/01/15
+  yes, creating opf files is a pain. For experiments, you can just hack the sample file from the post. iBooks doesn’t complain if the opf is incomplete, so you can just add jsxgraph etc to the file, too.
+* **AndrewMcDermott**, 2013/01/25
+  Hi Peter
+  Great post, I’ll give this a go in the next week or so hopefully, if things calm down a little on our project. Will let you know how I get on!
+  * **Peter**, 2013/01/25
+    great! let me know how it goes.
+* **Peter**, 2013/02/14
+  Hi Andrew. I think this was caught in moderation — sorry. Great to hear it works for you. I hope we can get HTML output running again since that behaves better wrt to CSS.
+  You can of course include both images and MathML and have MathJax replace the images with its rendering. That way you can support all systems using the same file.
+* **Johannes Wilm**, 2013/05/04
+  nice one! We have included this in our javascript based epub generator at [http://www.fiduswriter.com](http://www.fiduswriter.com). I must admit though that I haven't found any ereaders that can make use of this. Is there a list somewhere of what readers support javascript? I noticed thatyou guys are really against prerendering things, but I wonder if maybe thatis needed anyway. So at first I tried looking at the style declarations that are being included in the -section by mathjax. The most important thing missing there seems to be the font-face declarations. I haven'tlooked too much into whether they can be recreated some way.
+  The other way one could go would be to try to convert the rendered SVG to a canvas element and from there to an img, which could be saved within the epub. I haven't tried it, but was thinking of something like [https://code.google.com/p/canvg/](https://github.com/gabelerner/canvg).
+  Are there any other recommentations you have?
+  * **Peter**, 2013/05/05
+    Hi Johannes, sorry that this was stuck in the moderation queue. Somehow I didn’t get the notification… This warrants a longer reply, as your comment is hitting on many problems and misconceptions at once 😀 (not you personal, just the way the comment can be misunderstood).
+  * **Peter**, 2013/05/05
+  Ok, here’s a longer attempt.
+  The solution was only tested on iBooks. There are hardly any other javascript-enabled readers out there since epub3 does not require javascript support (although it at least premits it as opposed to epub2). I try to keep [docs.mathjax.org/en/latest/misc/epub.html](http://docs.mathjax.org/en/latest/misc/epub.html) up to date but I know a number of Android apps are missing (one of which actually supports javscript).
+  Why MathJax people often appear to be “against” pre-rendering is simple: that’s what MathJax set out to eliminate! Especially in professional publishing there’s a long history of rendering MathML as images (for over a decade now). We need to get beyond that. Another reason is that the MathJax team tries to get another point across: there’s no need anymore! Every epub3 reader out there uses a modern browser engine underneath that MathJax supports. So they can all integrate MathJax internally to get MathML support. Also, by now, there’s a MathML capable epub3 reader for every platform. Of course that’s not enough for professional publishing, but they are far too conservative anyway.
+  Also, MathML is the only way to get accessible mathematics right now. Alt-text is simply wrong (except when it’s MathML I guess) — it is not adequate in today’s a11y world where several groups need drastically different rendering, mixed modes and verbosity levels (blind, low vision, learning disabilities etc).
+  Now image renderings (well, SVG anyway) would be ok if anybody supported epub3’s switch element — then at least, publishing could develop forward.
+  Sp you’re right: if fiduswriter wants to do epub3 production that works everywhere today, then image renderings are the only stable choice — as much as it pains me to say. At the same time, make sure you’re not stuck at that (too many math solutions are). A generally bad but here fitting example is the proprietary horror that is the iBooks Author format. If you use TeX input in iBA2, then you’ll end up with SVG and MathML in the file, likely so that Apple can switch to MathML once Safari supports MathML properly (which may never be the case since they have never paid anyone to actually develop it…). For a wonderful example of inconsistency: iBA2 also accepts MathML input, which gets copied as is — so won’t display properly when the MathML is beyond Safari’s limited MathML support… Way to push MathML, Apple…
+  Finally, MathJax output cannot be very well pre-rendered, even as SVG. The HTML-CSS output depends strongly on the viewport configuration at the time of rendering. Which means reflow (which is basically the point of ebooks) easily screws it up, especially when fancy new CSS tricks comes into play at that point. Even the SVG output cannot be pre-produced on the level of real MathJax rendering, linebreaking and other tricks break (besides it blows when it comes to simple things like night mode and more generally at accessibility).
+  PS: a canvas output is in our backlog.
+* **Johannes Wilm**, 2013/05/05
+  I see. The epub with mathjax in it worked fine in IBooks, while in Adobe Digital Editings (installed via Wine) and my Nook Glow Light, it just doesn't run the Javascript. It seems to crash the ebook reading app that comes with Calibre.
+  Epubs themselves may have a limited lifespan, as ebook readers will get fullblown browsers with time, and once there is MathML support everywhere, we may just need a smaller script of some kind to translate Tex-based maths to MathML... The point is that the landscape is changing rapidly and that one needs to adjust one's solutions quite a lot over the next few years.
+  So, I was thinking: To get smething that is working with today's devices, instead of this:
+  `$X=Y^2$`
+  which is rendered fine on only some devices, have something like this:
+  &nbsp;
+  Then the ebook readers that cannot run jaascript will show the image and those that can (IBooks) can calculate the mathjax formula. Of course, mathjax has to be run manually with some javascript, as it cannot find the equation it should render as easily, but I'm sure this can be done.
+  As for SVG vs. IMG -- I didn't look enough at the svg-canvas library, but assuming that it permits me to copy an already rendered SVG to a canvas, that should mean that I should be able to create a canvas which easily can be converted to an IMG and then saved inside the epub.
+  But you would maybe argue that it is preferable to just include the SVG directly? For that I assume I would copy the SVG code from the DOM, copy the extra style information that has been added to the header, and find the fonts that have been added through some other trick (cannot find them in hte header) and add those to the mix as well. Right?
+* **Johannes Wilm**, 2013/05/05
+  Ah, this system ate most of my code examples. let me try again:
+  So, I was thinking: To get something that is working with today’s devices, instead of this:
+  `<span class="equation"><MATH>X=Y^2</MATH></span>`
+  which is rendered fine on only some devices, have something like this:
+  `<span class="equation" data-equation="X=Y^2"><IMG src="..." alt="an equation showing X=Y^2"/></span>`
+  * **Peter**, 2013/05/05
+  As I wrote, ideally, you would produce some kind of image fallback and use the epub-switch element. Unfortunately, very few epub3  reading systems support it. Even worse, they often react the wrong way to it: using MahtML instead of the image :(
+  Unfortunately, your "once there's MathML support everywhere" makes me cry a little as I just replied to https://groups.google.com/forum/?fromgroups=#!topic/mozilla.dev.platform/96dZw1jXTvM. There's currently zero development going into browsers. I hope we can change that, but this will be a while.
+  Anyway, yes, MathJax can easily replace images by rendering embedded code. Case in point: bookmarklets for doing that on Wordpress.com and Wikipedia https://gist.github.com/pkra
+  You can use SVG -- both canvas and SVG are part of epub3. Grabbing MathJax output is certainly possible, but with constraints. Making MathJax work also outside the DOM (with those constraints) is in our backlog, but has been for a while. You might find https://github.com/agrbin/svgtex interesting.
