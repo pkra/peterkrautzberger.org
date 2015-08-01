@@ -62,4 +62,4 @@ The only problem is that the necessary markup itself is horribly complicated and
 
 I think we can and should focus on implemented standards and work on improving them so that the markup you need for good math layout becomes cleaner and thus easier to generate (both in terms of structure and performance).
 
-Second, looking at the developments of the semantic web, it's obviously not being realized in terms of HTML tags or CSS propertiers. It is being realized via ARIA roles, RDFa, microdata etc. I honestly don't know enough about that end to say that those are fitting for the semantic structure of MathML (or rather: math and science) but something along their 
+Second, looking at the developments of the semantic web, it's obviously not being realized in terms of HTML tags or CSS propertiers. It is being realized via ARIA roles, RDFa, microdata etc. I'm not saying those are an immediate fit for the semantic structure of MathML (or math and science more generally) but something along those lines seems more realistic than waiting for <del>Godot</del> native browser support.
