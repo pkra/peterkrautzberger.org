@@ -52,6 +52,6 @@ I think there are two problems we can focus on that are just as useful
 
 And both of these are nearly solved already.
 
-For 1), we now know that current browser rendering engines are good enough for math layout. And I don't mean client-side rendering via polyfills. These days, browsers (IE9+) are good enough to allow you to convert MathML "statically" into HTML or SVG markup so that the result (think of a static HTML page here) is TeX-level layout. The problem is that the markup sucks. But that's no different from bootstrap grids "sucking" compared to css-grid layout. We should build on the currently already possible layout to improve the actually implemented web standards to make that markup cleaner (and thus more performant).
+For 1), we now know that current browser rendering engines are good enough for math layout. And I don't mean client-side rendering via polyfills. Modern browsers (think IE9+) are good enough to allow you to convert MathML "statically" into HTML or SVG markup so that the result (think of a static HTML page here) is TeX-level layout. The problem is that the markup sucks. But that's no different from bootstrap grids "sucking" compared to css-grid layout. We should build on the currently already possible layout to improve the actually implemented web standards to make that markup cleaner (and thus more performant).
 
 For 2), if you look at the semantic web, it is not being realized in terms of HTML tags.
