@@ -11,13 +11,13 @@ Time to talk about some of the problems I have with MathML.  Please note I'm a m
 
 The problems I see are entirely focused on the web, the only domain where MathML struggles.
 
-## Why I don't care about native MathML
+## web = HTML = browser?
 
 MathML did not start out not as an XML language but simply as the `<math>` tag in HTML3 (yes, it looked very different but let's not forget this). It was the browser vendors (Microsoft and Netscape) who rejected it. So it went into XML exile, and returned as a (slightly second-class) HTML markup in HTML5.
 
 But all OWP technologies stand and fall with the support and adoption from browser vendors. It does not matter how good (or bad) a web standard is or how well it works elsewhere. Browser vendor adoption is the only relevant measure. (Don't get me wrong, I'm pretty open as to how we get to browser vendor adoption of standards, including regulation.)
 
----
+# No news is not good news
 
 It's been almost two years since I started to write ["MathML forges on"](http://radar.oreilly.com/2013/11/mathml-forges-on.html).
 
@@ -33,7 +33,7 @@ Why?
 
 ## Who implements native MathML support?
 
-WebKit's and Gecko's (still quite partial) support has been almost exclusively implemented by volunteer contributors, mostly unpaid. Mozilla is really the only company that has ever actively supported volunteers (via GSoC, with bug fixes and with design decisions). I doubt anyone at Apple even knows the MathML code in WebKit well enough to tell you how it roughly works.
+The reason is relatively banal. WebKit's and Gecko's (still quite partial) support has been almost exclusively implemented by volunteer contributors, mostly unpaid. Mozilla is really the only company that has ever actively supported volunteers (via GSoC, with bug fixes and with design decisions). I doubt anyone at Apple even knows the MathML code in WebKit well enough to tell you how it roughly works.
 
 In short, no browser vendor has ever worked on MathML support in their browser. (Yes, that's a bit unfair to Mozilla devs who are great -- sorry. There are also good people at Apple, Google, Microsoft; but the companies fail.)
 
