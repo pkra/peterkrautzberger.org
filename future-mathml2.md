@@ -54,6 +54,8 @@ And both of these are nearly solved already.
 
 For 1), we now know that current browser rendering engines are good enough for math layout. And I don't mean client-side rendering via polyfills. Modern browsers (think IE9+) are good enough to allow you to convert MathML "statically" into HTML or SVG markup so that the result (think of a static HTML page here) provides TeX-level layout on all browsers.
 
-The only problem is that the markup itself is horribly complicated and hard to generate. But that's little different from Bootstrap or Foundation grids "sucking" compared to future css-grid layout. We should build on the currently already possible layout to improve the actually implemented web standards to make that markup cleaner (and thus more performant).
+The only problem is that the markup itself is horribly complicated and hard to generate -- just look at what MathJax generates spans spans spans. Still, I think this situation is no different from Bootstrap or Foundation grids "sucking" in terms of layout compared to css-grid layout grids.
+
+I think we can and should build on the currently-possible markup  and work on improving the actually implemented web standards so that the layout you need for good math layout becomes cleaner and thus easier to generate (both in terms of structure and performance).
 
 For 2), if you look at the semantic web, it is not being realized in terms of HTML tags.
