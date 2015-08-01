@@ -9,9 +9,9 @@ I have written about why [I care about MathML](http://www.peterkrautzberger.org/
 
 Time to talk about some of the problems I have with MathML.
 
-Before you start thinking "this guys says MathML is bad", please note that these are personal thoughts, not indicative of any project I might work one.
+These are personal thoughts, not indicative of the position of any project I might work on, in particular not the thoughts of the MathJax team.
 
-Also note that I'm a member of the [W3C Math Working Group](http://www.w3.org/Math/) and I care deeply about MathML and the mission of the Math Working Group.
+So before you start thinking "this guys says MathML is bad, OMG it must be so bad / he must be so evil", please note that I'm a member of the [W3C Math Working Group](http://www.w3.org/Math/) and I care deeply about MathML and the mission of the Math Working Group.
 
 Also note that the problems I see are entirely focused on the web, the only domain where MathML struggles.
 
