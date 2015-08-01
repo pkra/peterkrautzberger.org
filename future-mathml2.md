@@ -55,7 +55,7 @@ I think there are two problems we can focus on that are just as useful to move s
 1. how to do mathematical layout using the web standards that are actually being implemented (and how to improve both)
 2. how to expose the underlying scientific markup such as MathML (but also CML, PhyloXML, CellML etc).
 
-And both of these are not extremely feasible.
+As opposed to native browser support for MathML, both of these are extremely feasible.
 
 First, modern browsers (IE9+) are good enough to allow you to convert MathML "statically" into HTML or SVG markup so that the result (think of a static HTML page here) provides the same layout on all browsers comparable to TeX layout. To be clear, this is not (just) about client-side rendering like MathJax.
 
