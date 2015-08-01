@@ -58,7 +58,7 @@ And both of these are not extremely feasible.
 
 First, modern browsers (IE9+) are good enough to allow you to convert MathML "statically" into HTML or SVG markup so that the result (think of a static HTML page here) provides the same layout on all browsers comparable to TeX layout. To be clear, this is not (just) about client-side rendering like MathJax.
 
-The only problem is that the necessary markup itself is horribly complicated and hard to generate -- just look at the spans-spans-spans MathJax generates. Still, I think this situation is no different from Bootstrap or Foundation grids "sucking" in terms of layout compared to css-grid layout grids.
+The only problem is that the necessary markup itself is horribly complicated and hard to generate -- just look at the spans-spans-spans MathJax generates. However, I think this situation is not unlike how grids using Bootstrap or Foundation are overly complicated compared to examples using css-grid layout. Or how doing flexbox-like layout is horribly complicated without flexbox.
 
 I think we can and should build on the currently-possible markup  and work on improving the actually implemented web standards so that the layout you need for good math layout becomes cleaner and thus easier to generate (both in terms of structure and performance).
 
