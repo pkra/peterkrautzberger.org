@@ -13,7 +13,7 @@ Before you start thinking "this guys says MathML is bad", please note I'm a memb
 
 Also note that the problems I see are entirely focused on the web, the only domain where MathML struggles.
 
-## HTML
+## The rise and fall of HTML
 
 MathML did not start out not as an XML language but as the `<math>` tag in HTML3. It was the browser vendors (Microsoft and Netscape) who rejected it so `<math>` went into XML exile and returned to HTML in HTML5.
 
