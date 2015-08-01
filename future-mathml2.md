@@ -19,7 +19,7 @@ But all OWP technologies stand and fall with the support and adoption from brows
 
 # No news is not good news
 
-It's been almost two years since I started to work on ["MathML forges on"](http://radar.oreilly.com/2013/11/mathml-forges-on.html).
+It's been almost two years since I started to write ["MathML forges on"](http://radar.oreilly.com/2013/11/mathml-forges-on.html).
 
 Back then, native browser support seemed to be on the tipping point. Dave Barton had done amazing work on improving Alex Milowski's WebKit code, the deactivation in Chrome seemed to be a hiccup that was quickly fixed.
 
