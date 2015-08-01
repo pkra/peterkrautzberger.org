@@ -51,7 +51,7 @@ Even without native browser implementations a goal, I think MathML can still be 
 
 I think there are two problems we can focus on that are just as useful to move the web and scientific markup forward:
 
-1) how to do mathematical layout using the web standards that are actually being implemented and how to improve both
+1) how to do mathematical layout using the web standards that are actually being implemented (and how to improve both)
 2) how to expose the underlying scientific formats such as MathML (but also CML, PhyloXML, CellML etc).
 
 And both of these are nearly solved already.
