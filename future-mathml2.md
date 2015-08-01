@@ -45,9 +45,9 @@ So there's no reason to give up on MathML, let alone math and science notation o
 
 Even without considering native implementations a goal, I think MathML will still be a trail blazer for scientific notation because it is, after all, a W3C standard and we know it works very well in the browser.
 
-I think there are two problems we need to discuss
+I think there are two problems we can focus on that are just as useful
 
-1) how to do (and improve) mathematical layout using the standards that are actually being implemented)
+1) how to do mathematical layout using the standards that are actually being implemented and how to improve both
 2) how to expose the underlying scientific formats such as MathML (but also CML, PhyloXML, CellML etc).
 
 And both of these are nearly solved already.
