@@ -29,9 +29,9 @@ Why?
 
 ## Who implements native MathML support?
 
-The reason is relatively banal. WebKit's and Gecko's (still quite partial) support has been almost exclusively implemented by volunteer contributors, mostly unpaid. Mozilla is really the only company that has ever actively supported volunteers (via GSoC, with bug fixes and with design decisions). I doubt anyone at Apple even knows the MathML code in WebKit well enough to tell you how it roughly works.
+The reason is banal. WebKit's and Gecko's (still quite partial) support has been almost exclusively implemented by volunteer contributors (mostly unpaid volunteers at that).
 
-In short, no browser vendor has ever worked on MathML support in their browser. (Yes, that's a bit unfair to Mozilla devs who are great -- sorry. There are also good people at Apple, Google, Microsoft; but the companies fail.)
+No browser vendor has ever worked on MathML support in their browser. (Yes, that's a bit unfair to Mozilla devs who are great -- sorry. I also know good people at Aafa, Google, Microsoft; but their companies still all fail here.)
 
 The volunteers, on the other hand, come and go. Nobody is able to find significant funding. And development has been effectively dead for over a year now.
 
