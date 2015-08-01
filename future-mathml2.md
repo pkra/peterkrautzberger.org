@@ -57,7 +57,7 @@ I think there are two problems we can focus on that are just as useful to move s
 
 As opposed to native browser support for MathML, both of these are extremely feasible.
 
-First, modern browsers (IE9+) are good enough to allow you to convert MathML "statically" into HTML or SVG markup so that the result provides the same layout on all browsers, comparable to TeX quality but naturally integrated into the page context. To be clear, this is not (just) about client-side rendering like MathJax; in fact, only our next release will be able to generate such HTML markup.
+First, modern browsers (IE9+) are good enough to allow you to convert MathML "statically" into HTML or SVG markup so that the result provides the same layout on all browsers, comparable to TeX quality but naturally integrated into the page context. To be clear, this is not (just) about client-side rendering like MathJax; in fact, only our next release will be able to generate such markup in HTML.
 
 The only problem is that the necessary markup itself is horribly complicated and hard to generate -- just look at the spans-spans-spans MathJax generates. However, I think this situation is not unlike how grids using Bootstrap or Foundation are overly complicated compared to examples using css-grid layout. Or how doing flexbox-like layout is horribly complicated without flexbox.
 
