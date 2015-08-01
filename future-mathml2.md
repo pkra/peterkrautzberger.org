@@ -32,7 +32,7 @@ Why?
 
 ## Who implements native MathML support?
 
-WebKit's and Gecko's (still quite partial) support has been almost exclusively implemented by volunteer contributors (mostly unpaid volunteers at that).
+Gecko's and WebKit's (still quite partial) support has been almost exclusively implemented by volunteer contributors (mostly unpaid volunteers at that).
 
 No browser vendor has ever worked on MathML support in their browser. (Yes, that's a bit unfair to Mozilla devs who are great -- sorry. I also know good people at Apple, Google, Microsoft; it's the companies that still all fail to invest in MathML browser support.)
 
