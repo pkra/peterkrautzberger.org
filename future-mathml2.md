@@ -43,6 +43,8 @@ So I'm giving up on native MathML support in browsers for now.
 
 ## Where could we go instead?
 
-The fact that browser vendors don't give a damn does not mean in any way that I'm giving up on MathML, let alone math and science notation on the web. Because something has not changed: it's still the best markup for math on the web.
+The fact that browser vendors do not implement MathML says virtually nothing about MathML because they and their developers barely know the spec or anything about mathematical layout. And that's ok.
 
-But it means we have to shift our perspective and think about how MathML can help 
+So there's no reason to give up on MathML, let alone math and science notation on the web. Because something has not changed: it's still the best markup for math on the web.
+
+What it does mean is that we have to rethink how to do mathematical layout and how to expose the powerful underlying format that is MathML.
