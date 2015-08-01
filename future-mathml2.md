@@ -60,6 +60,6 @@ First, modern browsers (IE9+) are good enough to allow you to convert MathML "st
 
 The only problem is that the necessary markup itself is horribly complicated and hard to generate -- just look at the spans-spans-spans MathJax generates. However, I think this situation is not unlike how grids using Bootstrap or Foundation are overly complicated compared to examples using css-grid layout. Or how doing flexbox-like layout is horribly complicated without flexbox.
 
-I think we can and should build on the current and future markup and work on improving the actually implemented standards so that the layout you need for good math layout becomes cleaner and thus easier to generate (both in terms of structure and performance).
+I think we can and should focus on the current and future markup and work on improving the actually implemented standards so that the layout you need for good math layout becomes cleaner and thus easier to generate (both in terms of structure and performance).
 
 For 2), if you look at the semantic web, it is not being realized in terms of HTML tags. It's being realized via aria roles, RDFa and microformats. I'm not sure any of those are fitting for the semantic structure of MathML but I'm sure something sufficient can be created.
