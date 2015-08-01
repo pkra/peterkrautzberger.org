@@ -27,7 +27,7 @@ With a little luck, Gecko and WebKit would have made it to 80/20 point, hopefull
 
 Two years later, MathML is still the only viable markup language for mathematics on the web, recently reaffirmed by its ISO standardization. And yet, native browser support seems just as far away as ever.
 
-In the last two years, Gecko hasn't moved forward much (Fred Wang's crowdfunded work did some under the hood improvements), WebKit has barely moved forward, Trident/Edge remains a mystery, and Blink is "the villain".
+In the last two years, Gecko hasn't moved forward much (a small crowdfunding effort got some under the hood improvements done), WebKit has barely moved forward, Trident/Edge remains a mystery, and Blink is "the villain".
 
 So that didn't happen. Why?
 
