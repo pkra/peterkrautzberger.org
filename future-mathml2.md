@@ -33,7 +33,7 @@ The reason is banal. WebKit's and Gecko's (still quite partial) support has been
 
 No browser vendor has ever worked on MathML support in their browser. (Yes, that's a bit unfair to Mozilla devs who are great -- sorry. I also know good people at Apple, Google, Microsoft; but those companies still all fail.)
 
-The volunteers, on the other hand, come and go. Nobody is able to find significant funding. And development has been effectively dead for over a year now.
+The volunteers, on the other hand, come and go. Nobody is able to find significant funding and development is once again effectively dead.
 
 So I'm giving up on native MathML support in browsers for now.
 
