@@ -58,4 +58,4 @@ The only problem is that the markup itself is horribly complicated and hard to g
 
 I think we can and should build on the currently-possible markup  and work on improving the actually implemented web standards so that the layout you need for good math layout becomes cleaner and thus easier to generate (both in terms of structure and performance).
 
-For 2), if you look at the semantic web, it is not being realized in terms of HTML tags.
+For 2), if you look at the semantic web, it is not being realized in terms of HTML tags. It's being realized via aria roles, RDFa and microformats. I'm not sure any of those are fitting for the semantic structure of MathML but I'm sure something sufficient can be created.
