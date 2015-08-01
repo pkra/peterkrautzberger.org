@@ -6,7 +6,7 @@
 >
 > — [not Albert Einstein](http://en.wikiquote.org/wiki/Albert_Einstein#1940s).
 
-I have written about why [I care about MathML](/0175/) and why I care about [Native MathML](/0176/). Time to talk about some of the problems I have with MathML.
+I have written about why [I care about MathML](/0175/) and why I care about [Native MathML](/0176/). Time to talk about some of the problems I see with MathML.
 
 These are personal thoughts, not indicative of the position of any project I might work on, in particular not the thoughts of the MathJax team.
 
