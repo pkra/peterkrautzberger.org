@@ -13,8 +13,26 @@ The problems I see are entirely focused on the web, the only domain where MathML
 
 ## Why I don't care about native MathML
 
-MathML did not start out not as an XML language but simply as the `<math>` tag in HTML3. It was the browser vendors (Microsoft and Netscape) who rejected it. So it went into XML exile, and returned as a (slightly second-class) HTML markup in HTML5.
+MathML did not start out not as an XML language but simply as the `<math>` tag in HTML3 (yes, it looked very different but let's not forget this). It was the browser vendors (Microsoft and Netscape) who rejected it. So it went into XML exile, and returned as a (slightly second-class) HTML markup in HTML5.
 
-But all OWP technologies stand and fall with the support and adoption from browser vendors. It does not matter how great (or pathetic -- don't `<blink>` now) a web standard is or how well it works in some worlds or how super-duper-loving (or -hating) its fans are. Browser vendor adoption is the only goal.
+But all OWP technologies stand and fall with the support and adoption from browser vendors. It does not matter how good (or bad) a web standard is or how well it works elsewhere. Browser vendor adoption is the only relevant measure. (Don't get me wrong, I'm pretty open as to how we get to browser vendor adoption of standards, including regulation.)
 
 ---
+
+It's been almost two years since I started to write ["MathML forges on"](http://radar.oreilly.com/2013/11/mathml-forges-on.html).
+
+Back then, native browser support seemed to be on the tipping point. Dave Barton had done amazing work on improving Alex Milowski's WebKit code, the deactivation in Chrome seemed to be a hiccup that was quickly fixed.
+
+With a little luck, Gecko and WebKit would have made it to 80/20 point, hopefully in turn get the Blink team to reconsider dropping the WebKit code and then watch as Trident (now Edge) would hurry to activate the math support from Line Services (which exists in MS Office).
+
+Two years later, MathML is still the only viable markup language for mathematics on the web, recently reaffirmed by its ISO standardization. And yet, native browser support seems just as far away as ever.
+
+In the last two years, Gecko hasn't moved forward much (Fred's crowdfunded work focused on under the hood improvements), WebKit has barely moved forward, Trident/Edge remains a mystery, and Blink is "the villain".
+
+So that didn't happen. Why?
+
+## Who implements native MathML support?
+
+
+
+Nobody was able to find significant funding.
