@@ -2,7 +2,6 @@
 
 [Sorry for the delay](/0169).
 
-
 > Do not worry about your difficulties with MathML; I can assure you that mine are still greater.
 >
 > — [not Albert Einstein](http://en.wikiquote.org/wiki/Albert_Einstein#1940s).
