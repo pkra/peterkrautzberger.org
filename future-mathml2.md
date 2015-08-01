@@ -7,7 +7,9 @@
 
 I have written about why [I care about MathML](http://www.peterkrautzberger.org/0175/) and why I care about [Native MathML](http://www.peterkrautzberger.org/0176/).
 
-Time to talk about some of the problems I have with MathML.  Please note I'm a member of the Math Working Group and I care deeply about MathML.
+Time to talk about some of the problems I have with MathML.
+
+Before you start thinking "this guys says MathML is bad", please note I'm a member of the W3C Math Working Group and I care deeply about MathML and the mission of the Math Working Group.
 
 The problems I see are entirely focused on the web, the only domain where MathML struggles.
 
