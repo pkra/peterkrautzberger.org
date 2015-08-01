@@ -45,7 +45,13 @@ So there's no reason to give up on MathML, let alone math and science notation o
 
 Even without considering native implementations a goal, I think MathML will still be a trail blazer for scientific notation because it is, after all, a W3C standard and we know it works very well in the browser.
 
-I think there are two directions that are necessary to explore:
+I think there are two problems we need to discuss
 
-1) how to do mathematical layout with the standards that are actually being implemented
-2) how to leverage powerful underlying scientific formats such as MathML.
+1) how to do (and improve) mathematical layout using the standards that are actually being implemented)
+2) how to expose the underlying scientific formats such as MathML (but also CML, PhyloXML, CellML etc).
+
+And both of these are practically solved already.
+
+For 1), we already know that current rendering engines are good enough for math layout. And I don't mean client-side rendering via polyfills. These days, browsers (IE9+) are good enough to allow you to convert MathML "statically" into HTML or SVG markup so that the result (think of a static HTML page here) is TeX-level layout. The problem is that the markup sucks. But that's no different from bootstrap grids "sucking" compared to css-grid layout. We should build on the currently already possible layout to improve the actually implemented web standards to make that markup cleaner (and thus more performant).
+
+For 2), if you look at the semantic web, it is not being realized in terms of HTML tags.
