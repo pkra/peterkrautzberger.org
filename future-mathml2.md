@@ -39,8 +39,10 @@ In short, no browser vendor has ever worked on MathML support in their browser. 
 
 The volunteers, on the other hand, come and go. Nobody is able to find significant funding. And development has been effectively dead for over a year now.
 
-## Quo vadis, MathML?
-
 So I'm giving up on native MathML support in browsers for now.
 
-But that does not mean in any way that I'm giving up on MathML, let alone math and science notation on the web.
+## Where could we go instead?
+
+The fact that browser vendors don't give a damn does not mean in any way that I'm giving up on MathML, let alone math and science notation on the web. Because something has not changed: it's still the best markup for math on the web.
+
+But it means we have to shift our perspective and think about how MathML can help 
