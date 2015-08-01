@@ -56,7 +56,7 @@ I think there are two problems we can focus on that are just as useful to move t
 
 And both of these are nearly solved already.
 
-For 1), we now know that current browser rendering engines are good enough for math layout. And I don't mean client-side rendering via polyfills. Modern browsers (think IE9+) are good enough to allow you to convert MathML "statically" into HTML or SVG markup so that the result (think of a static HTML page here) provides TeX-level layout on all browsers.
+For 1), we now know that current browser rendering engines are good enough for math layout. And I don't mean client-side rendering via polyfills (which works even as far down as IE6). Modern browsers (think IE9+) are good enough to allow you to convert MathML "statically" into HTML or SVG markup so that the result (think of a static HTML page here) provides TeX-level layout on all browsers.
 
 The only problem is that the markup itself is horribly complicated and hard to generate -- just look at what MathJax generates spans spans spans. Still, I think this situation is no different from Bootstrap or Foundation grids "sucking" in terms of layout compared to css-grid layout grids.
 
