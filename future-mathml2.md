@@ -11,7 +11,7 @@ Time to talk about some of the problems I have with MathML.
 
 Before you start thinking "this guys says MathML is bad", please note I'm a member of the W3C Math Working Group and I care deeply about MathML and the mission of the Math Working Group.
 
-The problems I see are entirely focused on the web, the only domain where MathML struggles.
+Also note that the problems I see are entirely focused on the web, the only domain where MathML struggles.
 
 ## HTML
 
