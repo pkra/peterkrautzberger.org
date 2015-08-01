@@ -43,6 +43,8 @@ The fact that browser vendors do not implement MathML says virtually nothing abo
 
 So there's no reason to give up on MathML, let alone math and science notation on the web. Because something has not changed: it's still the best markup for math on the web and education, industry, and research need good markup that works on the web.
 
+Even without considering native implementations a goal, I think MathML will still be a trail blazer for scientific notation because it is, after all, a W3C standard and we know it works very well in the browser.
+
 I think there are two directions that are necessary to explore:
 
 1) how to do mathematical layout with the standards that are actually being implemented
