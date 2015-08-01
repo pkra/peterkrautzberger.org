@@ -11,7 +11,7 @@ Time to talk about some of the problems I have with MathML.
 
 These are personal thoughts, not indicative of the position of any project I might work on, in particular not the thoughts of the MathJax team.
 
-So before you start thinking "this guys says MathML is bad, OMG it must be so bad / he must be so evil", please note that I'm a member of the [W3C Math Working Group](http://www.w3.org/Math/) and I care deeply about MathML and [the mission](http://www.w3.org/Math/Documents/Charter2006.html) of the Math Working Group.
+So before you start thinking "this guys says MathML is bad, OMG it must be so bad / he must be so evil", please note that I'm a member of the [W3C Math Working Group](http://www.w3.org/Math/) and I care deeply about MathML and the mission of the Math Working Group [to facilitate and promote the use of the Web for mathematical and scientific communication](http://www.w3.org/Math/Documents/Charter2006.html).
 
 Also note that the problems I see are entirely focused on the web, the only domain where MathML struggles.
 
