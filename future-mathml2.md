@@ -13,7 +13,7 @@ The problems I see are entirely focused on the web, the only domain where MathML
 
 ## web = HTML
 
-MathML did not start out not as an XML language but simply as the `<math>` tag in HTML3 (yes, it looked very different but let's not forget this). It was the browser vendors (Microsoft and Netscape) who rejected it. So it went into XML exile, and returned as a (slightly second-class) HTML markup in HTML5.
+MathML did not start out not as an XML language but simply as the `<math>` tag in HTML3 (yes, it looked very different but let's not forget this origin). It was the browser vendors (Microsoft and Netscape) who rejected it. So it went into XML exile, and returned as a (slightly second-class) HTML markup in HTML5.
 
 But all OWP technologies stand and fall with the support and adoption from browser vendors. It does not matter how good (or bad) a web standard is or how well it works elsewhere. Browser vendor adoption is the only relevant measure. (Don't get me wrong, I'm pretty open as to how we get to browser vendor adoption of standards, including regulation.)
 
