@@ -26,7 +26,7 @@ It's been almost two years since I started to write ["MathML forges on"](http://
 
 Back then, native browser support seemed to be on the tipping point. Dave Barton had done amazing work on improving Alex Milowski's WebKit code, the deactivation in Chrome seemed to be a hiccup that was quickly fixed. It seemed, with a little luck, Gecko and WebKit would have made it to the 80/20 point within a year, hopefully in turn get the Blink team to reconsider dropping the WebKit code and then watch as Trident (now Edge) would hurry to integrate the math support from Line Services.
 
-Two years later, Gecko hasn't moved forward much, WebKit has barely moved, Trident/Edge remains a mystery, and Blink is "the villain". MathML is still the only viable markup language for mathematics on the web (recently reaffirmed by its ISO standardization), and yet, native browser support seems just as far away as ever. 
+Two years later, Gecko hasn't moved forward much, WebKit has barely moved, Trident/Edge remains a mystery, and Blink is "the villain". MathML is still the only viable markup language for mathematics on the web (recently reaffirmed by its ISO standardization), and yet, native browser support seems just as far away as ever.
 
 
 Why?
@@ -35,7 +35,7 @@ Why?
 
 Gecko's and WebKit's (still quite partial) support has been almost exclusively implemented by volunteer contributors (mostly unpaid volunteers at that).
 
-No browser vendor has ever worked on MathML support in their browser. (Yes, that's a bit unfair to Mozilla devs who are great -- sorry. I also know good people at Apple, Google, Microsoft; it's the companies that still all fail to invest in MathML browser support.)
+Effectively, no browser vendor has ever worked on MathML support in their browser. (Yes, that's a bit unfair to Mozilla devs who are great -- sorry. I also know good people at Apple, Google, Microsoft; it's the companies that still all fail to invest in MathML browser support.)
 
 The volunteers, on the other hand, come and go. Nobody is able to find significant funding and development is, once again, effectively dead.
 
