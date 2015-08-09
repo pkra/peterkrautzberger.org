@@ -1,4 +1,4 @@
-# Why I don't really care about Native MathML
+# Some thoughts on Native MathML
 
 > Do not worry about your difficulties with MathML; I can assure you that mine are still greater.
 >
