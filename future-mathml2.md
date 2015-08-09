@@ -40,7 +40,7 @@ I'm afraid I don't see how we can ever get native MathML support in browsers; th
 
 The fact that browser vendors do not implement MathML says virtually nothing about MathML. Studying past discussions, it's clear that there isn't a lot of knowledge about the spec or the requirements of mathematical layout. (Again, this is a little unfair to some Mozilla devs.)
 
-So I see no reason to give up on MathML, let alone math and science notation on the web. Because one thing has not changed: it's still the best markup for math and education, industry, and research need a good markup that works on the web.
+So I see no reason to give up on MathML, let alone math and science notation on the web. Because one thing has not changed: it's still the best markup for math -- and education, industry, and research need a good markup that works on the web.
 
 Even without native browser implementations being a realistic goal, I think MathML can still be a trail blazer, especially for scientific notation. It is, after all, a long standing W3C standard and we know it works very well in a browser context (even if you need polyfills).
 
