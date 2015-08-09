@@ -44,7 +44,7 @@ So I see no reason to give up on MathML, let alone math and science notation on 
 
 While I don't think native browser implementations is a realistic goal at this point, I think MathML can still be a trail blazer, especially for scientific notation. It is, after all, a long standing W3C standard and we know it works very well in a browser context (even if you need polyfills).
 
-I think there are two problems we can focus on that are just as useful to move scientific markup forward and the web in general forward:
+I think there are two problems we can focus on that are just as useful to move scientific markup (and the web in general) forward:
 
 1. how to do mathematical layout using the web standards that are actually widely implemented (and how to improve both)
 2. how to expose the underlying scientific markup such as MathML (e.g., math notation beyond MathML, but also CML, PhyloXML, MusicXML etc).
