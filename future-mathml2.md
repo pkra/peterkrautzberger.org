@@ -6,9 +6,9 @@
 
 I have written about why [I care about MathML](/0175/) and why I care about [Native MathML](/0176/). Time to talk about some of the problems I see.
 
-This piece reflects my personal opinions and is not indicative of the position of any project I might work on. It is meant as a conversation starter.
+This piece reflects my personal opinion and is not indicative of the position of any project I might work on. It is meant as a conversation starter.
 
-In case it's still not clear, let me repeat myself: I care very much about MathML and in particular the mission of the Math Working Group [to facilitate and promote the use of the Web for mathematical and scientific communication](http://www.w3.org/Math/Documents/Charter2006.html). While MathML has succeeded everywhere else, it struggles on the web.
+I care very much about MathML and in particular the mission of the Math Working Group [to facilitate and promote the use of the Web for mathematical and scientific communication](http://www.w3.org/Math/Documents/Charter2006.html). Still, wWhile MathML has succeeded everywhere else, it struggles on the web.
 
 [Friends who read the draft pointed out that what follows might still give my <del>one</del> two readers the impression I'm somehow against MathML. I am not. Let me repeat that: I am not. Got it? Alright, moving on.]
 
