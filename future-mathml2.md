@@ -8,7 +8,7 @@ I have written about why [I care about MathML](/0175/) and why I care about [Nat
 
 This piece reflects my personal opinions and is not indicative of the position of any project I might work on, in particular not MathJax, let alone the W3C Math Working Group. This is also not a rant about MathML. It is meant as a conversation starter.
 
-In case it's still not clear, let me repeat myself: I care very much about MathML and in particular the the mission of the Math Working Group [to facilitate and promote the use of the Web for mathematical and scientific communication](http://www.w3.org/Math/Documents/Charter2006.html). MathML has succeeded everywhere else but still struggles on the web.
+In case it's still not clear, let me repeat myself: I care very much about MathML and in particular the mission of the Math Working Group [to facilitate and promote the use of the Web for mathematical and scientific communication](http://www.w3.org/Math/Documents/Charter2006.html). MathML has succeeded everywhere else but still struggles on the web.
 
 Now friends who read the draft pointed out that it might still give the impression of a rant against MathML. If you're inclined to say something like "this guys says MathML is bad! OMG it must be so bad!" or alternatively "this guy does not believe in the one true markup! OMG he must be so evil!"; well, actually, I probably can't change your mind so what do I care.
 
