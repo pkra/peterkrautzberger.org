@@ -6,7 +6,7 @@
 
 I have written about why [I care about MathML](/0175/) and why I care about [Native MathML](/0176/). Time to talk about some of the problems I see.
 
-This piece reflects my personal opinions and is not indicative of the position of any project I might work on, in particular not MathJax, let alone the W3C Math Working Group. This is also not a rant about MathML. It is meant as a conversation starter.
+This piece reflects my personal opinions and is not indicative of the position of any project I might work on. It is meant as a conversation starter.
 
 In case it's still not clear, let me repeat myself: I care very much about MathML and in particular the mission of the Math Working Group [to facilitate and promote the use of the Web for mathematical and scientific communication](http://www.w3.org/Math/Documents/Charter2006.html). While MathML has succeeded everywhere else, it struggles on the web.
 
