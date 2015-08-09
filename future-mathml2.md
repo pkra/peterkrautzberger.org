@@ -53,7 +53,9 @@ As opposed to native browser support for MathML, both of these are extremely fea
 
 For the first, modern browsers (IE9+) are actually good enough; you can write converters from MathML to HTML or SVG markup so that the result is stable, i.e., provides the same layout on all browsers (comparable to TeX quality but naturally integrated into the page context). To be clear, this is not (just) about client-side rendering like MathJax (in fact, does not provide this yet).
 
-The only problem is that the necessary markup itself is messy, making it hard to generate (just look at the spans-spans-spans that MathJax currently generates). However, I think this situation is not unlike how grids using Bootstrap or Foundation are overly complicated compared to examples using css-grid layout. Or how doing flexbox-like layout is horribly complicated without flexbox.
+The only problem is that the necessary markup itself is messy, making it hard to generate (just look at the spans-spans-spans that MathJax currently generates).
+
+But is this unusual? I think this situation is not unlike how grids using Bootstrap or Foundation are overly complicated compared to examples using css-grid layout. Or how doing flexbox-like layout is horribly complicated without flexbox.
 
 I think we can (and should) focus on implemented standards and work on improving them so that the markup you need for good math layout becomes cleaner and thus easier to generate (both in terms of structure and performance).
 
