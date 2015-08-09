@@ -34,7 +34,7 @@ Effectively, no browser vendor has ever worked on MathML support in their browse
 
 The volunteers, on the other hand, come and go. Nobody is able to find significant funding and development is, once again, effectively dead.
 
-I'm afraid I don't see how we can ever get native MathML support in browsers; the volunteer method does not work in practice and the vendors remain uninterested.
+I'm afraid I don't see how we can ever get native MathML support in browsers; the volunteer method does not work and the vendors remain uninterested.
 
 ## Where could we go instead?
 
