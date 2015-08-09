@@ -10,7 +10,7 @@ This piece reflects my personal opinion and is not indicative of the position of
 
 I care very much about MathML and in particular the mission of the Math Working Group [to facilitate and promote the use of the Web for mathematical and scientific communication](http://www.w3.org/Math/Documents/Charter2006.html). Still, wWhile MathML has succeeded everywhere else, it struggles on the web.
 
-[Friends who read the draft pointed out that what follows might still give my <del>one</del> two readers the impression I'm somehow "against MathML". I am not. Let me repeat that: I am not. Got it? Alright. Moving on.]
+[Friends who read a draft pointed out that what follows might still give my <del>one</del> two readers the impression I'm somehow "against MathML". I am not. Let me repeat that: I am not. Got it? Alright. Moving on.]
 
 ## The rise and fall of MathML
 
