@@ -46,7 +46,7 @@ While I don't think native browser implementations is a realistic goal at this p
 
 I think there are two problems we can focus on that are just as useful to move scientific markup forward and the web in general forward:
 
-1. how to do mathematical layout using the web standards that are actually being implemented (and how to improve both)
+1. how to do mathematical layout using the web standards that are actually widely implemented (and how to improve both)
 2. how to expose the underlying scientific markup such as MathML (e.g., math notation beyond MathML, but also CML, PhyloXML, MusicXML etc).
 
 As opposed to native browser support for MathML, both of these are extremely feasible.
