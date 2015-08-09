@@ -10,7 +10,7 @@ This piece reflects my personal opinions and is not indicative of the position o
 
 In case it's still not clear, let me repeat myself: I care very much about MathML and in particular the mission of the Math Working Group [to facilitate and promote the use of the Web for mathematical and scientific communication](http://www.w3.org/Math/Documents/Charter2006.html). While MathML has succeeded everywhere else, it struggles on the web.
 
-Now friends who read the draft pointed out that what follows might still give the impression of a rant against MathML. If you're inclined to say something like "this guys says MathML is bad! OMG it must be so bad!" or alternatively "this guy does not believe in the one true markup! OMG he must be so evil!"; well, actually, I probably can't change your mind so what do I care.
+Now friends who read the draft pointed out that what follows might still give the impression of a rant against MathML. If you're inclined to say something like "this guys says MathML is bad! OMG it must be so bad!" or alternatively "this guy does not believe in the true and righteous MathML! OMG he must be so evil!"; well, actually, I probably can't change your mind so what do I care.
 
 
 ## The rise and fall of MathML
