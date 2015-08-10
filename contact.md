@@ -24,10 +24,10 @@ The fastest way to reach me is to [write me an email](mailto:p.krautzberger@gmai
 
 ### Licensing
 
-<span>Unless noted or attributed otherwise: </span><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Peter Krautzberger on the web</span> is licensed under a [Creative Commons Attribution 4.0 Unported License](https://creativecommons.org/licenses/by/4.0/).
+Unless noted or attributed otherwise: <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">"Peter Krautzberger on the web"</span> is licensed under a [Creative Commons Attribution 4.0 Unported License](https://creativecommons.org/licenses/by/4.0/).
 
 ### Commenting
 
-Please send comments by email, I'll respond (or not) and likely add it to the post as an update. For convenience, each post comes with a mailto-link at the bottom (and also a trigger to annotate via [hypothes.is](https://hypothes.is)).
+Please send comments by email. I'll try to respond and add it to the post as an update. For convenience, each post comes with a mailto-link at the bottom.
 
-Please always remember [XKCD 1357](http://xkcd.com/1357/)
+Please always remember [XKCD 1357](http://xkcd.com/1357/).
