@@ -66,4 +66,28 @@ I think we should focus on widely implemented standards and work on improving th
 
 For the second point, looking at the developments of the semantic web, it's obviously not being realized in terms of mandated HTML tags or CSS properties. It is being realized via ARIA roles, RDFa, microdata etc. I'm not saying these approaches work for the semantic structure of MathML (let alone STEM in general) but something along those lines seems achievable.
 
-Frankly, I'm a bit tired of waiting fo <del>Godot</del> native browser support for MathML. MathML is frozen because we're all waiting for browsers to catch up. It is simply not happening. Let's look for ways to move forward.
+Frankly, I'm a bit tired of waiting for <del>Godot</del> native browser support for MathML. MathML is frozen because we're all waiting for browsers to catch up. It is simply not happening. Let's look for ways to move forward.
+
+---
+
+_Comments_
+
+* **gimsieke**, 2015-08-10
+
+  > Nobody is able to find significant funding
+
+  MathJax has managed to attract a significant network of donors. Why don’t they either encourage their “investors” to also invest in native math rendering, or why don’t they use the proceeds to fund native development directly? This shouldn’t be beyond their bylaws.
+
+  * **Peter**, 2015-08-10
+
+    > Why don’t they either encourage their “investors” to also invest in native math rendering,
+
+    The "nobody" includes MathJax. Of course, the fact that we failed does not say much. The fact that everybody failed so far, might.
+
+    > why don’t they use the proceeds to fund native development directly
+
+    Because then we wouldn't be able to develop MathJax itself.
+
+    > This shouldn’t be beyond their bylaws.
+
+    Sure. Neither would be curing cancer.
