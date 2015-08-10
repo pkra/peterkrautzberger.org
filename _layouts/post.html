@@ -2,21 +2,13 @@
 layout: default
 ---
 
-<div class="post">
+<article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
-</div>
+</article>
 
-<div class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20{{ page.title | uri_escape }}">write me an email</a> or <button id="hypothesis" type="button">start hypothes.is</button>
-    .</span>
-</div>
-<script>
-document.getElementById("hypothesis").onclick = function() {
-  script = document.createElement('script');
-  script.async = true;
-  script.src = 'https://hypothes.is/embed.js';
-  document.getElementsByTagName('head')[0].appendChild(script);
-};
-</script>
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20{{ page.title | uri_escape }}">write me an email</a>.
+  </span>
+</aside>

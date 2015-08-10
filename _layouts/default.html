@@ -10,18 +10,20 @@
   <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
   <div class="wrap">
-    <div class="masthead">
-      <div class="container">
-        <h3 class="masthead-title">
-          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-          <small>{{ site.tagline }}</small>
-        </h3>
+    <header>
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <small>{{ site.tagline }}</small>
+          </h3>
+        </div>
       </div>
-    </div>
+    </header>
 
-    <div class="container content">
+    <main class="container content">
       {{ content }}
-    </div>
+    </main>
   </div>
 
   <label for="sidebar-checkbox" class="sidebar-toggle"></label>
@@ -61,19 +63,22 @@
           ['%', '%']
         ]
       },
-      "HTML-CSS": { mtextFontInherit: true, linebreaks: { automatic: true } },
-      SVG: { mtextFontInherit: true, linebreaks: { automatic: true } },
-      MMLorHTML: {
-        prefer: {
-          Firefox: "MML",
-          Safari: "MML"
+      "HTML-CSS": {
+        mtextFontInherit: true,
+        linebreaks: {
+          automatic: true
+        }
+      },
+      SVG: {
+        mtextFontInherit: true,
+        linebreaks: {
+          automatic: true
         }
       }
     };
   </script>
-  <script async defer
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML-full">
-</script>
+  <script async defer src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML-full">
+  </script>
 </body>
 
 </html>
