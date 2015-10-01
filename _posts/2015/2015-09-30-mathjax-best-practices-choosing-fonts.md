@@ -26,9 +26,11 @@ It is a complex question because, essentially, font pairing is an art. If you [s
 
 The biggest limitation is obviously that MathJax only supports a handful of fonts. That's a bummer and we hope to add support for more fonts so if you're savvy and interested in helping out, reach out!
 
-The next thing worth pointing out is that MathJax already goes a long way by matching the ex-height and em-height of the surrounding font, that is the height of `x` and `m`. That's simply best practice but more work on the web.
+The next thing worth pointing out is that MathJax already goes a long way by matching the ex-height and em-width of the surrounding font, that is the height of `x` and width `m`. That's simply best practice but more work on the web.
 
-However, it's usually still important to pair the math font with the surrounding font carefully to avoid disrupting the reader's flow between math and non-math (because ex/em-heights are often not enough matching, especially for upper case letters). Of course, you could use the math font for the surrounding text to avoid that but most people strongly favor their options for text more (and rightly so, mathematics should always serve the text in my opinion).
+However, it's usually still important to pair the math font with the surrounding font carefully to avoid disrupting the reader's flow between math and non-math (because ex-height/em-width are often not enough matching, especially for upper case letters). Of course, you could use the math font for the surrounding text to avoid that but most people strongly favor their options for text more (and rightly so, mathematics should always serve the text in my opinion).
+
+(**Edit, 2015-10-01** Davide Cervone had to correct me there. originally this had *em-height*, *height of `x` and `m`*, *ex/em-height*; D'oh...)
 
 The next important thing is usually another piece of font functionality. That is, most people like to weigh their options with respect to font coverage, i.e., which Unicode points are covered by glyphs in the fonts. For that it's important to consider what happens if MathJax encounters a Unicode point that's not in the glyphs of the configured fonts.
 
