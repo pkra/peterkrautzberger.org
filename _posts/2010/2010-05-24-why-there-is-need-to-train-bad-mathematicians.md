@@ -12,7 +12,7 @@ published: true
 permalink: 0022/
 ---
 
-Felix Breuer has asked me to repost <del>an old</del> my very first public blog post <del>from way back when</del> originally posted on 2008-08-06 over at [scivee](http://www.scivee.tv). Felix wanted to link to it in [his interesting post on excellence and creativity](http://blog.felixbreuer.net/2010/05/12/excellence-and-creativity.html) which I want you to read right away (albeit, only if you read German…).
+Felix Breuer has asked me to repost <del>an old</del> my very first public blog post <del>from way back when</del> originally posted on 2008-08-06 over at [scivee [Wayback Machine]](http://web.archive.org/web/20151016002857/http://www.scivee.tv/). Felix wanted to link to it in [his interesting post on excellence and creativity](http://blog.felixbreuer.net/2010/05/12/excellence-and-creativity.html) which I want you to read right away (albeit, only if you read German…).
 
 ### Why there is need to train bad mathematicians
 
