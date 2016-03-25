@@ -11,11 +11,17 @@ Since I'm expecting more than my <s>1</s> 2 regular readers to read this, let me
 
 I recently posted a terse -- uhm, shall we say summary? -- of my thoughts on MathML on [a11ySlackers](https://gitter.im/w3c/a11ySlackers?at=56d6c6ad0bdb886502f6a83b); and I promised a blog post. There's now a 6000 word thingie sitting in my drafts which would take months to whip into shape. So I tried again and it now feels both too long and too short; oh well, maybe it leads somewhere, maybe it doesn't.
 
-Needless to say, opinions posted on my personal website are my personal opinions (funny how that works). In particular, they do not reflect the opinions of any of my clients let alone the team at MathJax. I think they don't particularly help anything or anyone specifically except, perhaps, in encouraging a more open discussion.
+Needless to say, opinions posted on my personal website are my personal opinions (funny how that works). In particular, they do not reflect the opinions of any of my clients, let alone the team at MathJax. I think they don't particularly help anything or anyone specifically except, perhaps, in encouraging a more open and realistic discussion.
 
 ## The gist of it
 
-MathML is a failed browser standard (aka a web standard to be implemented natively in the browser). We can do better, we deserve better; MathML-in-HTML5 is in the way of that.
+MathML is a failed web standard.<sup>\*</sup>
+
+We can do better, we deserve better.
+
+MathML-in-HTML5 is in the way of that.
+
+<small><sup>\*</sup>Some people might prefer "browser standard", as in "a web standard to be implemented natively in the browser" since some web standards do not rely on browser implementations. Also, "natively" as opposed to some web-components hack shipped in a browser.</small>
 
 ## MathML is a failed web standard
 
@@ -23,23 +29,23 @@ It doesn't matter whether or not MathML is a good XML language. Personally, I th
 
 The problem is: MathML has failed on the web.
 
-Luckily, many technologies have succeeded and today MathML is neither necessary but also no longer sufficient for math on the web. Instead of one solution, we have many. We should acknowledge this and move forward.
+Luckily, many technologies have succeeded and today MathML is neither necessary but also no longer sufficient for math on the web. Instead of one monolithic solution, we have many. We should acknowledge this and move forward towards several newer and smaller standards that actually help developers.
 
 Here are a few reasons that make me say these things.
 
 ##### 1. MathML has not been significantly supported by browser vendors, neither on the spec level nor on the implementation level.
 
-You might easily think they do (Office! ChromeVox! VoiceOver!) but the browsers vendors actually don't. The partial MathML implementations in Gecko and WebKit are entirely the work of volunteers. Largely unpaid, largely unsupervised, largely unaccountable.
+You might easily think they do (Office! ChromeVox! VoiceOver!) but the browser vendors actually don't. The partial MathML implementations in Gecko and WebKit are entirely the work of volunteers. Largely unpaid, largely unsupervised, largely unaccountable.
 
-Not a single browser vendors has stated an intent to work on the code, not a single browser developer has been seen on the MathWG. After 18 years, not a single browser vendor is willing to dedicate even a small percentage of a developer to MathML.
+Not a single browser vendor has stated an intent to work on the code, not a single browser developer has been seen on the MathWG. After 18 years, not a single browser vendor is willing to dedicate even a small percentage of a developer to MathML.
 
-This is where the story should end, really. But sadly it doesn't. MathML's success in the XML world has kept it alive, but not for the benefit of anyone.
+This is where the story should end, really. But sadly it doesn't. MathML's success in the XML world has kept it alive, but not for the benefit of anyone on the web.
 
 MathML is a poor web standard and it would be better to remove it from HTML 5.
 
 ##### 2. Browser implementations of MathML are not used.
 
-If you look at publicly [available](http://webdevdata.org/) crawler [data](https://search.nerdydata.com/), you'll notice that it's hard to find examples of MathML that aren't behind paywalls. If you look further, you'll hardly find an example where people providing MathML content rely on native MathML implementations; even on Gecko and WebKit they use <s>polyfills</s> MathML-to-HTML5 converters. Another indicator is that, despite implementations having subtly deteriorated in the past two years, people aren't even complaining (I mean, WebKit is suddenly not drawing surds reliably anymore but apparently nobody cares). Actual developer problems are so extreme you can't seriously develop anything slightly advanced with MathML (e.g., Gecko has non-existent or incomplete support for basic APIs such as style, dataset, or event handlers for MathML elements).
+If you look at publicly [available](http://webdevdata.org/) crawler [data](https://search.nerdydata.com/), you'll notice that it's hard to find examples of MathML that aren't behind paywalls. If you look further, you'll hardly find an example where people providing MathML content rely on native MathML implementations; even on Gecko and WebKit they use MathML-to-HTML5 converters. Another indicator is that, despite implementations having subtly deteriorated in the past two years, people aren't even complaining (I mean, WebKit stopped drawing surds ([try this in Safari 8](http://jsbin.com/muhuwuqepo/2/edit?html,output)) but apparently nobody cared enough to even file a bug). Actual developer problems are so extreme you can't seriously develop anything slightly advanced with MathML (e.g., Gecko has non-existent or incomplete support for basic APIs such as style, dataset, or event handlers for MathML elements).
 
 ##### 3. Content MathML has failed to provide usable semantics.
 
@@ -71,7 +77,16 @@ Did you know the MathWG's charter is running out this month? Would you notice if
 
 ## What to do next.
 
-##### A) Math layout can be done in CSS and SVG. Let's improve them incrementally to make it simpler.
+##### A) MathML needs to be dropped from HTML 5.
+
+Many people I've met have the mistaken impression that browser manufacturers have declared an intent to implement everything in the set of standards usually called HTML 5. They have not (even if HTML 5 as a "spec" may strive for that).
+
+I think as long as MathML is in that set of standards, the lame duck argument ("it's a standard!") will continue to prevent alternative developments that help the actually working solutions for mathematics on the web.
+
+At this point, MathML is effectively preventing mathematics from aligning with today's and tomorrow's web. This is hurting everyone. We need to drop MathML to make room for better standards.
+
+
+##### B) Math layout can and should be done in CSS and SVG. Let's improve them incrementally to make it simpler.
 
 It's possible to generate HTML+CSS or SVG that renders any MathML content -- on the server, mind you, no client-side JS required (but of course possible). The resulting markup is arguably crap -- it's span soup at its worst and some use cases are difficult to realize. But we've been there with HTML and CSS; people know how to solve this. It got us standards like flexbox and css-grid; it's worth pursuing improvements to those standards that work instead of waiting for Godot.
 
@@ -79,13 +94,13 @@ It's also difficult to write your own math rendering tool. But we need more idea
 
 We don't need Presentation MathML for this even if many projects (like MathJax) use it as an internal format. MathML's failure as a web standard is hurting the web because it is blocking discussions about improving existing standards to help existing mathematics tools on the promise that eventually "MathML will solve everything (tm)".
 
-Unfortunately, I can't see a native MathML approach help fill these final gaps. What existing rendering solutions need has little to do with what MathML implementations need. We don't need underspecified layout features fixed to MathML elements, we need flexible CSS features that integrated into existing CSS. Most importantly, existing solutions can iterate on partial improvements to ensure that these help layout on the web more generally, not just the needs of one specific mathematical markup language.
+I can't see a native MathML approach help to fill these final gaps. What existing rendering solutions need has little to do with what MathML implementations need. We don't need underspecified layout features tied to MathML elements, we need flexible CSS features that are integrated into existing CSS. Most importantly, existing solutions can iterate on partial improvements to ensure that these help layout on the web more generally, not just the needs of one specific mathematical markup language.
 
 We don't need one true approach to math layout, we need flexibility for developers to be innovative and pursue new ways of solving layout problems and expressing mathematical thought on the web.
 
 We need to get together with CSSWG/Houdini TF/etc to work out solutions that help those developers who actually solve the problem of math on the web.
 
-To give a rough idea. From a MathJax point of view, three areas are difficult in CSS right now (and probably universal for math layout tools on the web):
+To give a rough idea -- From a MathJax point of view, three areas are difficult in CSS right now (and probably universally for math layout tools on the web):
 
 * vertical stacking (although flexbox is probably already enough to fix that and CSS Ruby might also be interesting to look at for synergies)
 * stretchy characters and enclosures (this is the BIG one -- but they're really just fancy borders)
@@ -93,22 +108,10 @@ To give a rough idea. From a MathJax point of view, three areas are difficult in
 
 Stretchy things are by far the biggest layout question, if only because they once [led Ojan Vafai to call](http://web.archive.org/web/20150224234431/http://ojanvafai.com/post/mathml-in-webkit) math layout fundamentally incompatible with CSS layout. As much as I respect his expertise, that cannot be the answer. It seems unlikely that we can't incrementally reduce the complexity for existing rendering solutions; in any case, it has little to do with MathML.
 
-[On a personal note. I'm philosophically inclined to put much of math layout up for debate. A lot of the difficulties stem from the history of math layout in print (the use of tabular structure alone is a killer on the web). I'm not sure they are a good fit for mathematics on the web. The simplest example might be the mathvariants which I would call a hack to provide more character options in the print era. Another one is long-division notation -- MathML includes no less than 10 different styles from around the world, all based on print and handwriting traditions. Do we need this on the web? I could easily see it go the way of the side-rule and just disappear from actual practice. Even an element for fractions is hard to imagine for me; traditional fraction layout just doesn't seem a very good for communicating on the web, and if you add things like beveled to the mixed it's almost baroque. I think it is wrong to expect CSS to bend over backwards to realize forms of math layout that people might soon find to be obsolete. Then again, if you forget about the math for a minute (which, after all, has a very bad rep in western society) long-division and other things might be hiding some interesting design questions; would be awesome to actually discuss that with capable designers and educators some day. Sigh.]
+##### C) We need a new approach for exposing semantics.
 
-##### B) We need a new approach for exposing semantics.
+Since layout is practically solved (or at least achievable), we really need to solve the semantics. Presentation MathML is not sufficient, Content MathML is just not relevant.
 
-Since layout is practically solved we really need to solve the semantics. Presentation MathML is not sufficient, Content MathML is just not relevant.
-
-We need to look where the web handles semantics today -- that's ARIA and HTML but also microdata, rdfa etc. Especially ARIA is an extremely urgent problem because is currently ties mathematics entirely to Presentation MathML elements (where it fails) instead of providing a way to enrich all mathematical rendering on the web.
+We need to look where the web handles semantics today -- that's ARIA and HTML but also microdata, rdfa etc. Especially ARIA is an extremely urgent problem because it currently ties mathematics entirely to Presentation MathML elements (where it fails) instead of providing a way to enrich all mathematical rendering on the web.
 
 We also need to look beyond the semantics of mathematics into the semantics of mathematics in its applications, e.g., mathematical notation out of physics (units etc), chemistry (isotopes, reactions etc) and biology (trees, graphs etc). We need to find ways to expose this information to assistive technologies, search and other tools.
-
-
-##### C) MathML needs to be dropped from HTML 5.
-
-Many people have the mistaken impression that browser have declared an intent to implement everything in the set of standards usually called HTML 5. They have not; but of course HTML 5 as a "spec" gives precisely that impression.
-
-As long as MathML is in that set of standards, the lame duck argument ("it's a standard!") can too easily prevent developments that help the actually working solutions for mathematics on the web. That means it effectively prevents mathematics from aligning with today's and tomorrow's web. This is hurting everyone. As painful as it may seem, MathML needs to be dropped. The web doesn't need it, the web deserves better.
-
-
-<!-- <b>tl;dr</b> I'm an idiot. Don't trust a word I write. MathML is the one true faith. The <s>trolls</s> gods shall hunt me to the ends of the earth. -->
