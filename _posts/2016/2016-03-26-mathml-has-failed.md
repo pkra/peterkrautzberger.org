@@ -1,9 +1,9 @@
 ---
 layout: post
 title: MathML is a failed web standard
-date: 2016-03-12
+date: 2016-03-26
 permalink: 0186/
-published: false
+published: true
 ---
 
 
