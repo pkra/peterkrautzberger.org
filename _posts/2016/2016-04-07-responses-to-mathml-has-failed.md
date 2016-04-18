@@ -89,3 +89,41 @@ And that's all folks. I'll add more as they come along.
 ---
 
 And stay tuned for more.
+
+
+---
+
+_Comments_
+
+* **Don Stolee**, 2016-04-14
+
+  Totally agree with your points raised and must admit don't understand all of it.
+
+  We are XML publishers out of Australia and use MathML within our markup. We then publish the XML content to our HTML5 eReader (tekReader) and use MathJax to assist with the rendering.
+
+  Example here: http://tekreader.eglootech.com/book/tekReader-Guide#part22#pt22-1-1-h3
+
+  It seems to work well on modern browsers found on desktops, tablets and smartphones and we have a University in Canada using our reader.
+
+  I would hope the XML world does not drop the standard and browsers continue to support, somewhat.
+
+  * **Peter**, 2016-04-14
+
+    Thanks for your comment. Tekreader looks very nice.
+
+    MathML is clearly a success in the XML world so I don't see it disappearing. I'm not suggesting that anyone should drop MathML if it works for them.
+
+    The point I was trying to make was entirely about its role on the web where other tools have made it obsolete (in the sense that it is no longer necessary to have native MathML browser implementations). Since most XML markup is converted to HTML for web delivery (e.g. OASIS tables), I don't see a huge problem in converting MathML to HTML as well.
+
+    Does that make sense?
+
+  * **Don** 2016-04-14
+
+    All good Peter. Thanks for getting back to me. If I may add. I've been providing XML publishing systems since the early 90's (SGML back then). All very monolithic and complex. With the advent of tablets and smartphones I see a trend in marking down XML (I call it dummy down) to HTML5. In fact my business now advocates markup using HTML5 (now with semantics) and do away with all the complexity downstream. Most of the rich markup is never used anyway (aka S1000D).
+
+  * **Peter** 2016-04-14
+
+    Thanks for the additional comment, Don. I'm far from your level of experience obviously, but I've also heard about this trend. In that context, I often point to [John Maxwell's BiB 2012 talk](https://www.youtube.com/watch?v=bh2WyI_6c_k).
+
+  * **Don** 2016-04-14
+    Awesome! Thanks for sharing. At least I know I am not crazy!
