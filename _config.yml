@@ -4,7 +4,6 @@ kramdown:
   auto_ids: true
   input: GFM
   toc_levels: 1..6
-highlighter:            pygments
 
 # Permalinks
 permalink:              /:title/
