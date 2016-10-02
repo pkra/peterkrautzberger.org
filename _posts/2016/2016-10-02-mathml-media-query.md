@@ -44,15 +44,15 @@ Of course, the CSSWG might spec out a whole set of individual media queries for 
 
 In terms of accessibility, it seemed an API that assitive technology could trigger would not be as easy to implement in browsers (yet "easy" seemed a pre-requisite given the comments from browser reps in the CSSWG). Since AT tends not to inject scripts (JAWS craziness notwithstanding), they'd need a more sophisticated feature (which is, I think, also being discussed by CSSWG, but considered much harder, i.e., unlikely).
 
-Besides, this assumes that MathML significantly benefits accessibility. After MathJax getting deeply involved in building a suitable tool, I find this argument questionable. Talking to a11y folks, it usually comes down to "but MathPlayer!" and while MathPlayer was pretty good (albeit dead in the water now). it didn't actually use MathML but a proprietary internal format representing the result of semantic heuristics; this makes it kind of hard to use it as an example for how great MathML is for accessibility.
+Besides, this assumes that MathML significantly benefits accessibility. After MathJax getting deeply involved in building a suitable tool, I find this argument questionable. Talking to a11y folks, it usually comes down to "but MathPlayer!" and while MathPlayer was pretty good (albeit dead in the water now) it didn't actually use MathML but a proprietary internal format representing the result of semantic heuristics; this makes it kind of hard to use it as an example for how great MathML is for accessibility.
 
-I think it's unrealistic to expect every single assistive technology to invest as much in a niche like math. I'd estimate that, at any one point in time over the past 18 years, the number of actively maintained accessibility tools with MathML support was 1 (no, neither JAWS nor VoiceOver count as "maintained" here).
+I think it's unrealistic to expect every single assistive technology to invest as much in a niche like math. I'd estimate that, at any one point in time over the past 18 years, the number of actively maintained accessibility tools with MathML support was 1 (no, neither JAWS nor VoiceOver count as "maintained" when it comes to MathML).
 
 Further, not a single tool has ever used MathML as an internal format because it is *simply insufficient* -- it is a XML document language for layout and is grossly unsemantic (and don't say "but ContentMathML" now).
 
 If people feel like exposing MathML to AT, then they can use one of the many standard tricks to ARIA-hide the fallback content and visually hide the MathML. Again, in my opinion, that's a disservice for your readers, but nobody stops you.
 
-## the 800 pound query in the room
+## the 800 pound query
 
 For me, the weirdest thing about this whole decision was its speed: that the CSSWG signed off on this idea in under 20 minutes just makes me a teeny tiny bit skeptical. It feels a lot like one big "whatevs" -- browsers don't really care but, hey, a media query is little work and if it keeps these math people off our backs, all the more reason.
 
@@ -63,7 +63,7 @@ The real problem remains with or without a media query: where is MathML going? A
 
 Browser vendors have never worked on MathML support, MathML is no longer maintained as a spec, the MathWG is no more ([did you notice?](/0186/)), and MathML is a bad web standard for both layout (another post) and [accessibility](/0185/).
 
-### fool me once, shame on me.
+### fool me once, shame on you.
 
 I think it's time to realize that after 18 years of not succeeding on the web, the problem might just lie with MathML itself. We don't need it on the web (CSS and SVG are better for layout and ARIA better for accessibility) and we should stop giving browser vendors an excuse not to do anything that actually helps those developers who realize math on the web in its myriad forms today. (And the XML document world, where MathML succeeded, would be better off as well.)
 
