@@ -36,6 +36,7 @@ So you might think that's not so bad after all. However, that's only half true. 
 Which is visually rather similar to doing a construction using an `mtable` (which might in turn be used to convey a vector/matrix).
 
 <math display="block">
+  <mrow>
       <mo>(</mo>
         <mtable>
           <mtr><mtd><mi>n</mi></mtd></mtr>
