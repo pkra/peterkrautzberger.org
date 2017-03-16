@@ -1,0 +1,35 @@
+---
+layout: post
+title: "overlay journals"
+date: 2016-04-18
+permalink: 0191/
+published: true
+---
+
+
+<small>Holy shit, it's been a long time since I wrote anything over here. Well, maybe get a few old notes out that won't ever turn into real drafts?</small>
+
+
+I was reminded of this old note [yesterday](https://twitter.com/jasonpriem/status/842099694281019392). This snippet goes back to JMM 2016 when I had coffee with Izabella Łaba. Of course, Izabella is one of my favorite [bloggers]() (starting all the way back when procrastination made us launch [mathblogging.org](https://mathblogging.org) -- shout out to Felix, Fred, and Sam!) but she is also a kick-ass researcher who amongst the many great things she does happens to sit on the editorial board of the (then newly fandangled) arXiv overlay journal [Discrete Analysis](http://discreteanalysisjournal.com/) otherwise known as "that Tim Gowers journal thing". 
+
+Discrete Analysis is probably the most relevant arXiv overlay journal in mathematics (ok, I admit I didn't search around much for other noteworthy ones) and the gut reaction when it comes to arXiv overlay journals (and Discrete Analysis in particular) seems to be: "What if it fails?". But like jumping in the Matrix, failure really wouldn't mean anything.
+
+Instead, I've been wondering more about "What if it succeeds?". Of course that's because I expect it to succeed but in either way I don't think people think a lot about that. Arguably, I'm not awfully qualified but then again anyone can go through [Kent Anderson's list of 96 things Publishers Do](https://scholarlykitchen.sspnet.org/2016/02/01/guest-post-kent-anderson-updated-96-things-publishers-do-2016-edition/). Most of these, I'm guessing, you don't care about as an arXiv overlay journal so perhaps [Cameron Neylon's shorter list](http://cameronneylon.net/blog/polecon-of-oa-publishing-i-what-is-it-publishers-do-anyway/) is more on point. Ultimately, I think, it is simple: what does a journal need to succeed? High-quality papers.
+
+Quality comes in many forms but basically there are two areas: scientific quality and production quality. Scientific quality includes, at least, attracting papers the community will approve of, attracting authors that impress the community, and an editorial board that can spot the former and attract the latter. Of course, those are not at all separate but papers make journals influential, journals make authors influential etc pp. (And no, merit does not come into play, don't be silly.) I can't really judge it (not being a research mathematician anymore, let alone a discrete analysis person) but the editorial board looks to be full of influential, high-profile people and the first paper was Terry Tao's solution to Erdős's discrepancy problem; so it seems likely that part will work.
+
+Production quality includes, at least, typography, copy-editing, archiving, and marketing. Discrete Analaysis can probably make that work as well as they care because, as Gowers pointed out, they expect they won't have to. That might seem arrogant to anyone with even a bit of knowledge from the trenches of academic publishing, but I think they're probably right in expecting they won't have to. I admit that is in part speculation, but I would expect that a high profile math journal can probably expect both their authors to have spent more time on their manuscript (more pre-submission review from peers, more iterations from themselves as the result is "big" etc) and they can probably expect their editors to work harder (they actually give a damn about the paper they read b/c the result is interesting, they have themselves higher expectations thus provide more detailed reports, they have simply more experience and relevant skills etc). And marketing, well, it's that Gowers journal thing, remember?
+
+So this all looks great. Got the goods, can compete. 
+
+Except there are a few things that I think are terrible flaws; in no way fatal flaws (quite possibly the opposite) but ones with negative side effects that worry me.
+
+To start with, overlay journals do the silly extreme libertarian thing of pretending the infrastructure they use doesn't cost anything. Even if the costs of the current technology might be very small, overlay journals will have to stick to the cheapest available tech, ignoring (let alone helping) the transformation of scientific communication.
+
+A more important problem is: can this scale? I don't think it can (not much anyway). Research quality obviously doesn't scale well -- if everyone is a top journal, nobody is. Regarding production quality in "lesser" journals, I don't think authors will invest much in their manuscripts and reviewers will be less likely to have the skills or invest extra time. It still might work if journals started to rely on a more iterative process where post-publication feedback leads to revisions. (I mean, traditionally published journal articles can be awful piles of unedited crap, why expect more from an overlay journal, amiright?) But on the one hand, the community would have to accept that, i.e., it would require a much more significant change in scientific culture, and on the other hand people would have to, well, read papers and give feedback -- where the average number of readers for a math research paper is probably less than 1. Seems unlikely. So we might get elite journals that can get away with this model commercially but anyone else is screwed; not a fan.
+
+The third problem I see is more severe as it relates to the structure of scientific communities: who watches the watchers? [Years ago](https://www.peterkrautzberger.org/0118/#a-democratization-of-the-communities) I wrote that my biggest problem with academic communities (and the greatest strength of its publishing system) lies in its power structure: the key to power lies with editorial boards which are predominantly  aristocratic. Society-driven journals actually have democratic oversight for their editorial boards (as mild as its effect might be) and even commercial publishers have shareholder oversight, as "unscientific" as their interest may be. But overlay journals have nobody watching them. You might argue the free market will take care of it but it might just be that [journals are clubs](http://cameronneylon.net/blog/the-goods-in-the-scholarly-marketplace/) and that [scholarly communication is more like general taxation](http://cameronneylon.net/blog/scholarly-communications-less-of-a-market-more-like-general-taxation/).
+
+And that combination worries me. The unique ability of elite overlay journals to succeed commercially (as in: providing a valuable product) combined with a lack of checks and balances might lead to an imbalance that cannot be corrected. 
+
+But what do I know. Maybe such journals will realize the risk associated with their success and take responsibility for their actions and their effect on the community at large. And then maye they will focus on innovation and on reproducibility of their model for average ("mediocre") journals that the majority of researchers publish in. I've seen crazier things.
