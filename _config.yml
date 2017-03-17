@@ -6,7 +6,7 @@ kramdown:
   toc_levels: 1..6
 
 # Permalinks
--permalink:              /:title/
+permalink:              /:title/
 
 # Setup
 title:                  Peter Krautzberger
