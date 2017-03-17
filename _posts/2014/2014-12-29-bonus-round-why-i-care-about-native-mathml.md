@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Bonus round: Why I care about native MathML'
+title: 'Bonus round&#58; Why I care about native MathML'
 date: 2014-12-29
 categories:
 - mathml

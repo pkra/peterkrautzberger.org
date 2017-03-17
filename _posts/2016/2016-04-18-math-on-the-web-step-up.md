@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Math on the web: time to step up!"
+title: "Math on the web&#58; time to step up!"
 date: 2016-04-18
 permalink: 0188/
 published: true
