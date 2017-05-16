@@ -19,5 +19,5 @@ before_install:
   - sudo apt-get install moreutils
 env:
   global:
-  - ENCRYPTION_LABEL: "d998923d8bd8"
-  - COMMIT_AUTHOR_EMAIL: "test@travis.com"
+  - ENCRYPTION_LABEL: "00bfb4d57df6"
+  - COMMIT_AUTHOR_EMAIL: "p.krautzberger@gmail.com"
