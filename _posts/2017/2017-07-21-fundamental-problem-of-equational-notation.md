@@ -16,7 +16,7 @@ When people speak about <i>math content</i> in the context of the web they usual
 
 Now you might argue that an equation in physics is still basically mathematical content but in reality both mathematician and physicist will frequently disagree with you (and each other, possibly explosively so). You quickly get to the edge when considering chemical equations and if you want to classify the nonsense notations in the life sciences you might question your sanity.
 
-It's not hard to understand why this is. For example, most typesetting tools with support for equations will have some kind of "math mode" for them.  But I think it's worth while differentiating the two so I'll try my best to stick to "equational content". On the one hand, the importance of "math on the web" is often exaggerated because it is really non-mathematical "equational content" that's the majority (and even that is a blip on the radar). On the other hand, it does not help to confuse a field of study with what effectively comes down to a layout tradition.
+It's not hard to understand why this is. For example, most typesetting tools with support for equations will have some kind of <i>math mode</i> for them.  But I think it's worth while differentiating the two so I'll try my best to stick to <i>equational content</i>. On the one hand, the importance of <i>math on the web</i> is often exaggerated because it is really non-mathematical <i>equational content</i> that's the majority (and even that is a blip on the radar). On the other hand, it does not help to confuse a field of study with what effectively comes down to a layout tradition.
 
 Also, sorry-not-sorry for misleading you with the title here.
 
@@ -39,9 +39,9 @@ The most obvious flaw of equational content is that it's deeply rooted in print.
 
 I'm not (just) thinking about the problem of general comprehension as it is too tainted by poorly trained practitioners on all levels. Sure, equational content is often more difficult to parse than necessary but that's not different from poorly phrased prose.
 
-The main problem is the "tradition" of abusing print technology to get more and more variations of notation squeezed into the medium. The constant abuse of sub- and superscripts is a great example; if you need to add a variant of an object you've already introduced in your notation, just slap some sub/superscripts around it, et voilà, a new object.
+The main problem is the <i>tradition</i> of abusing print technology to get more and more variations of notation squeezed into the medium. The constant abuse of sub- and superscripts is a great example; if you need to add a variant of an object you've already introduced in your notation, just slap some sub/superscripts around it, et voilà, a new object.
 
-The abuse of letters with different fonts is another horror in equational content. If you have ever run into a paper where a dozen variations of `G` appear, denoting a convoluted set of somewhat related concepts, you'll know this horror well. Unbelievably enough, Unicode has deemed this abuse of notation important enough that we now have such wonders as the Unicode point "mathematical bold italic G" in the [Mathematical Alphanumeric Symbols
+The abuse of letters with different fonts is another horror in equational content. If you have ever run into a paper where a dozen variations of `G` appear, denoting a convoluted set of somewhat related concepts, you'll know this horror well. Unbelievably enough, Unicode has deemed this abuse of notation important enough that we now have such wonders as the Unicode point <i>mathematical bold italic G</i> in the [Mathematical Alphanumeric Symbols
  Block](https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols).
 
 Another historic accident are stylistic separations. For example, in print it's abhorred to make math content bold when the surrounding content is bold (e.g., in a heading) yet on the web people complain that an equation in a link doesn't get the <i>correct</i> text decoration (what would that be??).
