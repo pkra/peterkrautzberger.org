@@ -2,7 +2,6 @@
 layout: default
 title: Home
 ---
-
 <section class="posts">
   {% for post in site.posts limit:3 %}
   <div class="post">
@@ -11,15 +10,9 @@ title: Home
         {{ post.title }}
       </a>
     </h1>
-
     <span class="post-date">{{ post.date | date_to_string }}</span>
-
     {{ post.excerpt }}
     <a href="{{ post.url }}"> … </a>
   </div>
   {% endfor %}
 </section>
-<footer>
-  <hr>
-  For more, visit the <a href="/archive/">archive</a>.
-</footer>
