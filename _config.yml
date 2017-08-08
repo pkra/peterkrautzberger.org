@@ -14,6 +14,11 @@ tagline:                'on the web'
 description:            'Peter Krautzberger on the web'
 url:                    https://www.peterkrautzberger.org
 
+# sass
+sass:
+    sass_dir: public/css
+    style: compressed
+
 author:
   name:                 'Peter Krautzberger'
   url:                  https://www.peterkrautzberger.org
