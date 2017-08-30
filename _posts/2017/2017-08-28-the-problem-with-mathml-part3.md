@@ -10,7 +10,7 @@ Let's continue from [part 2](/0198/).
 
 ## Prelude
 
-This one's slightly tricky. And I also have a confession to make. In the first two parts I've pretend I've written about MathML when I really only wrote with half of it in mind.
+This one's slightly tricky. And I also have a confession to make. In the first two parts I pretended I've written about MathML when I really only wrote with half of it in mind.
 
 One problem of the MathML spec in general is that it's really two, quite distinct specs: [Presentation MathML](https://www.w3.org/Math/draft-spec/mathml.html#chapter3_) and [Content MathML](https://www.w3.org/Math/draft-spec/mathml.html#chapter4_).
 
