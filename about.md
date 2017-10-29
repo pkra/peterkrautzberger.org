@@ -20,7 +20,16 @@ My company is [krautzource](https://www.krautzource.com). I'm available for cons
 
 
 ## Vitæ
-
+<figure>
+  <img srcset="/public/peter_krautzberger_450.jpg 450w,
+              /public/peter_krautzberger.jpg 1080w"
+      sizes="(max-width: 719px) 450px,
+              (max-width: 720px) 1080px,
+              800px"
+      src="/public/peter_krautzberger_450.jpg"
+      alt="Peter Krautzberger, in front of a white, wooden door wearing a dark blue shirt and black glasses.">
+  <figcaption>&copy; Peter Krautzberger. All rights reserved.</figcaption>
+</figure>
 
 * **Since 2014**  Director (Geschäftsführer), [krautzource UG](https://www.krautzource.com) [IT Consulting]
   * consulting, project management, product development
