@@ -97,6 +97,10 @@ dl {
   margin-bottom: 1rem
 }
 
+li ul, li ol {
+  margin-bottom: 0;
+}
+
 dt {
   font-weight: 700
 }
