@@ -6,7 +6,7 @@ permalink: 0204/
 published: true
 ---
 
-I recently read [Why would you do that?](https://css-tricks.com/why-would-you-do-that-in-css/) on CSS Tricks and it reminded me that I had mean to write this post a month ago.
+I recently read [Why would you do that?](https://css-tricks.com/why-would-you-do-that-in-css/) on CSS Tricks and it reminded me that I had meant to write this piece a month ago.
 
 So [I recently wrote about a fragment of mathematical content](/0203/) and a big part of it was the problem of stretchy braces. After building the "plain" HTML+CSS example at the end (re-using an extremely clever solution from the upcoming MathJax v3), I kept thinking: this should be easier. Luckily, this year I'm dedicating a chunk of my spare time to the [MathOnWeb Community Group](https://w3c.github.io/mathonwebpages/)'s new task force focused on CSS, looking for (old and new) ideas that might help simplify equation layout using CSS.
 
@@ -18,14 +18,14 @@ Stretchy characters like those braces, what are they *really*? Like, *really rea
 
 Let's look at what they are called. As a matter of fact, they are called various things but the most generic term is possibly [*bracket*](https://en.wikipedia.org/wiki/Bracket). However in the context of equation layout, the more common terminology might be *delimiter* and *fence*. In particular, MathML provides an `<mfenced>` tag (though for various reasons the equivalent `<mrow>`+`<mo>` constructions tend to be preferred by most tools).
 
-Now both brackets, fences and delimiters sounds an awfully similar to a very common concept. Where do you usually put up a fence? Where do you delimit something? **At a border.** It's a small idea, obviously, but what if we could solve the problem of stretchy constructions using borders?
+Now both brackets, fences and delimiters sound awfully similar to a very common concept. Where do you usually put up a fence? Where do you delimit something? **At a border.** It's a small idea, obviously, but what if we could solve the problem of stretchy constructions using borders?
 
 What if somebody else already has?
 
 
 ## Previous Art
 
-Well, you could go visit codepen and [simply search for *brace*](https://codepen.io/search/pens?q=brace&page=1&order=popularity&depth=everything&show_forks=false) and lo and behold, you find 4 perfectly fine specimens in CSS. Turns out, designers love pretty things, who'd have thunk.
+Well, you could go visit codepen and [simply search for *brace*](https://codepen.io/search/pens?q=brace&page=1&order=popularity&depth=everything&show_forks=false) and, lo and behold, you find 4 perfectly fine specimens in CSS. Turns out, designers love pretty things, who'd have thunk.
 
 If you dig a little deeper, you'll end up with basically three approaches.
 
@@ -47,7 +47,7 @@ and one from [@mexn](https://codepen.io/mexn/):
 <p data-height="265" data-theme-id="0" data-slug-hash="xegaF" data-default-tab="result" data-user="mexn" data-embed-version="2" data-pen-title="CSS Curly Brace" class="codepen">See the Pen <a href="https://codepen.io/mexn/pen/xegaF/">CSS Curly Brace</a> by Markus (<a href="https://codepen.io/mexn">@mexn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-Both are slighly more complicated than the first one. Instead of the radial gradient for the middle piece, they both use 6 elements with border-radius (though the last one has only 2, plus pseudo-elements). If you dive into their forks, you'll find lots of interesting variations, too.
+Both are slighly more complicated than the first one. Instead of the radial gradient for the middle piece, they both use 6 elements with border-radius (though the last one has only two elements with pseudo-elements). If you dive into their forks, you'll find lots of interesting variations, too.
 
 The point is: this problem has in a very real sense actually been solved in CSS and you can do lots of fun variations yourself.
 
@@ -61,14 +61,14 @@ or this one
 <p data-height="265" data-theme-id="0" data-slug-hash="OvYeoq" data-default-tab="result" data-user="pkra" data-embed-version="2" data-pen-title="stretchy brace, single-div" class="codepen">See the Pen <a href="https://codepen.io/pkra/pen/OvYeoq/">stretchy brace, single-div</a> by Peter Krautzberger (<a href="https://codepen.io/pkra">@pkra</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-(Fun fact: using percentages in  the border radius leads to some really cute behavior across sizes.)
+(Fun fact: using percentages in the border radius leads to some really cute behavior across sizes.)
 
 
 ## Objection!
 
-Now you might say it hasn't solve the *real* problem. Here are a couple of counter-arguments:
+Now you might say it hasn't solved the *real* problem. Here are a couple of counterarguments:
 
-**It has no character!** Gasp! It's true that in typical print equation layout engines you'll still a character there. Well, you could just add a hidden one, no?
+**It has no character!** Gasp! It's true that in typical print equation layout engines you'll still have a character there. Well, you could just add a hidden one, no?
 
 **It doesn't work well on small sizes!** In typical print equation layout, you'll see several sizes of a brace being used for smaller heights (with possibly slight design variations for readability) after which the layout would switch over to a stretchy constructions (made up of several glyphs stitched together). This is a very interesting problem to solve. And you know what? This touches on one of the hottest topics of CSS discussions in the past few years: it is a perfect use case for [container queries](https://github.com/WICG/container-queries/). Go add a use case and push the web forward for everyone!
 
