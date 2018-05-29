@@ -82,3 +82,10 @@ Here's an example (using a technique of pure CSS stretchy braces developed by Da
 
 <p data-height="265" data-theme-id="dark" data-slug-hash="OQQVgx" data-default-tab="result" data-user="pkra" data-embed-version="2" data-pen-title="case study: arxiv.org/1412.8106" class="codepen">See the Pen <a href="https://codepen.io/pkra/pen/OQQVgx/">case study: arxiv.org/1412.8106</a> by Peter Krautzberger (<a href="https://codepen.io/pkra">@pkra</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+---
+
+## Addendum 2018-05-29
+
+I read up on the changes in the HTML 5.3 working draft and realized that my HTML5-ish example above (using an ordered list inside MathML) is not even valid HTML - oh my! As it turns out, the integration of MathML into [HTML](https://html.spec.whatwg.org/#mathml) states that only [phrasing content](https://html.spec.whatwg.org/#phrasing-content-2) is allowed inside MathML token elements (and lists are not phrasing content). Well, one more reason never to use MathML on the web - but you already knew that.
