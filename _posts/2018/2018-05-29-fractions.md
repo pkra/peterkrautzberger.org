@@ -8,7 +8,7 @@ published: true
 
 I just got back from a week in San Jose at the [AIM workshop on web accessibility of mathematics](https://aimath.org/workshops/upcoming/webmath/). It was an intense week for me and there's a ton to write about.
 
-This morning I came back to something I had drafted after Joanmarie Diggs proposed a session on a particular hack (but the group didn't end up focusing on this in the unconference style workshop setting).
+This morning I came back to something I had drafted after Joanmarie Diggs proposed a session on a particular hack (but the group didn't end up focusing on this in the unconference-style workshop setting).
 
 ## That's not a fraction. <em>That's</em> a fraction!
 
