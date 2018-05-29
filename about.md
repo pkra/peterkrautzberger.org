@@ -16,7 +16,7 @@ Unless noted or attributed otherwise: <span xmlns:dct="http://purl.org/dc/terms/
 
 ## Professional
 
-My company is [krautzource](https://www.krautzource.com). I'm available for consulting services - [let's get in touch](mailto:peter@krautzource.com)!
+My company is [krautzource](https://www.krautzource.com) where we provide management, development and consulting services primarily around web technologies in a publishing context.
 
 
 ## Vitæ
