@@ -1,0 +1,16 @@
+{
+  "title": "Peter Krautzberger",
+  "subtitle": " · on the web",
+  "url": "https://www.peterkrautzberger.org/",
+  "feed": {
+    "subtitle": " · on the web",
+    "filename": "atom.xml",
+    "path": "/atom.xml",
+    "url": "https://www.peterkrautzberger.org/atom.xml",
+    "id": "https://www.peterkrautzberger.org/"
+  },
+  "author": {
+    "name": "Peter Krautzberger",
+    "email": "p.krautzberger@gmail.com"
+  }
+}

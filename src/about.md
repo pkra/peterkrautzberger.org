@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: layouts/base.njk
 title: About Peter Krautzberger
 permalink: about/
 ---
-
 
 ## Personal
 

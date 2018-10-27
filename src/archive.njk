@@ -1,0 +1,18 @@
+---
+layout: layouts/home.njk
+tags:
+  - nav
+navtitle: Archive
+permalink: archive/
+---
+
+<div class="posts">
+  <ul>
+    {% for post in collections.posts | reverse %}
+    <li>
+      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
