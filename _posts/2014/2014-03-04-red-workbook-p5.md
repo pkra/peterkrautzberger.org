@@ -12,6 +12,7 @@ tags:
 - Hindman-Bergelson Theorem
 published: true
 permalink: 0151/
+latex: true
 ---
 
 ### Source
@@ -40,7 +41,7 @@ permalink: 0151/
         * Nach Vors. waehle $\epsilon \in E_ \min(\beta S)$ mit $C \in \epsilon$.
         * setze $y:= \epsilon \cdot x$ => $x$ prox. $y$, $y$ unif. rekurrent
         * Beh.: $y(1_ Q) = 1$
-            * [sonst $=0$, $V  
+            * [sonst $=0$, $V
                  :={ z : z(1_ Q) = 0} \in \mathfrak{U}(y)$
                 * $y = \epsilon x$, also $R(x,V) \in \epsilon$
             * => $C \cap R(x,V) \neq \emptyset$, say $s \in \ldots \cap \ldots$

@@ -20,6 +20,7 @@ tags:
 - ultrapower
 published: true
 permalink: 0082/
+latex: true
 ---
 
 Remember how our about page says that [Booles' Rings is about best practices](http://boolesrings.org/about/) for an academic homepage? Ok, let's try one: making notes to talks available.
@@ -98,10 +99,10 @@ I'll only give the proofs of the last two statements as well as some further obs
 
 What are flat ultrafilters? Well, let's first introduce the assisting structure of a flatness scale, a set of sequences in $[0,1]$.
 
-> **Definition**  
+> **Definition**
 >  A _flatness scale_  H is a countable subset of $$\{ h:\omega \rightarrow [0,1]: h(0) =1, \lim_ {i \rightarrow \infty} h(i)=0 \}.$$
 
-**Addendum** Nothing spectacular so far -- a flatness scale is just a bunch of sequences converging to $0$. As such they can have some wild behavior along the way -- but flat ultrafilters tame them.  
+**Addendum** Nothing spectacular so far -- a flatness scale is just a bunch of sequences converging to $0$. As such they can have some wild behavior along the way -- but flat ultrafilters tame them.
 
  <figure>
      <img alt="flatness scale" src="/assets/2011/flatness-scale.jpg"/>
@@ -112,15 +113,15 @@ What are flat ultrafilters? Well, let's first introduce the assisting structure 
 
 The original definition of flat ultrafilters is then phrased as follows.
 
-> **Definition** [[Farah, Philips, Steprans](http://www.math.yorku.ca/~ifarah/Ftp/208_ 2009_ 448_ OnlinePDF.pdf)]  
->  An ultrafilter $p$ is _flat_  if there is a flatness scale $H = (h_ n: n\in \omega)$ such that for every increasing $f: \omega \rightarrow \omega $ with $f(0) > 0$  
->  $$\lim_ {n\to p} \left\Vert (h_ n - h_ n \circ f)\right\Vert _ \infty = 0.$$  
->  In other words, for every $f$ as above and every $\varepsilon>0$, we have $$\{n\in \omega: \sup_ i \left\vert h_ n(i) - h_ n(f(i))\right\vert  < \varepsilon \} \in p .$$  
+> **Definition** [[Farah, Philips, Steprans](http://www.math.yorku.ca/~ifarah/Ftp/208_ 2009_ 448_ OnlinePDF.pdf)]
+>  An ultrafilter $p$ is _flat_  if there is a flatness scale $H = (h_ n: n\in \omega)$ such that for every increasing $f: \omega \rightarrow \omega $ with $f(0) > 0$
+>  $$\lim_ {n\to p} \left\Vert (h_ n - h_ n \circ f)\right\Vert _ \infty = 0.$$
+>  In other words, for every $f$ as above and every $\varepsilon>0$, we have $$\{n\in \omega: \sup_ i \left\vert h_ n(i) - h_ n(f(i))\right\vert  < \varepsilon \} \in p .$$
 >  We then say that $H$ is a **flatness scale for p**.
 
 One of the goals was to find out how I can best think about the notion of flat ultrafilters.
 
-**Addendum** What to make of this? The first observation is that flat ultrafilters have a flatness scale such that, given $\varepsilon$, almost all of the sequences (with respect to the ultrafilter) drop by at most $\varepsilon$. That's slow, but it's even slower! The functions $f$ in the definition should be thought of as vastly increasing (think: dominating family) and they code huge intervals of the form $[n,f(n)]$. But even given those vast intervals, still almost all sequences of the flatness scale drop only by $\varepsilon$ on such long intervals. In other words, they never really drop by much, yet they converge to $0$.  
+**Addendum** What to make of this? The first observation is that flat ultrafilters have a flatness scale such that, given $\varepsilon$, almost all of the sequences (with respect to the ultrafilter) drop by at most $\varepsilon$. That's slow, but it's even slower! The functions $f$ in the definition should be thought of as vastly increasing (think: dominating family) and they code huge intervals of the form $[n,f(n)]$. But even given those vast intervals, still almost all sequences of the flatness scale drop only by $\varepsilon$ on such long intervals. In other words, they never really drop by much, yet they converge to $0$.
 
 <figure>
     <img alt="flat ultrafilter" src="/assets/2011/flatness-ultrafilter.jpg"/>
@@ -132,7 +133,7 @@ One of the goals was to find out how I can best think about the notion of flat u
 
 One of the things I found irritating was to think of them as ultrafilters on $\omega$. Thankfully, the enumeration of $H$ does not matter much. In other words, I don't have to think of $p$ as an ultrafilter on $\omega$ that just happens to come with a map to a flatness scale $H$ -- I can really think of $p$ to be an ultrafilter on $H$. So allow me to re-phrase.
 
-> **Definition** [reformulation] Given a flatness scale $H$ and an ultrafilter $p$ on $H$, we say that $p$ is _flat_ , if for every increasing $f:\omega\to\omega$ with $f(0) > 0$ and every $\varepsilon>0$, $$\{ h \in H: \sup_ i \left\vert h(i) - h (f(i))\right\vert < \varepsilon \} \in p .$$  
+> **Definition** [reformulation] Given a flatness scale $H$ and an ultrafilter $p$ on $H$, we say that $p$ is _flat_ , if for every increasing $f:\omega\to\omega$ with $f(0) > 0$ and every $\varepsilon>0$, $$\{ h \in H: \sup_ i \left\vert h(i) - h (f(i))\right\vert < \varepsilon \} \in p .$$
 >  In other words, $$\lim_ {p} \left\lVert h - h \circ f)\right\rVert_ \infty = 0.$$ Here $\lim_ p$ is the usual limit along the ultrafilter $p$.
 
 You might wonder if we're not loosing too much information -- after all, the original definition did not forbid repetitions. We'll see later that this is not a problem. For now, I will simply stick to the reformulation.
@@ -143,7 +144,7 @@ First there's an obvious question about how complicated a flatness scale can be.
 
 ### A simple observation
 
-For the construction of flat ultrafilters, the key observation is as follows: all we have to do is **find a flatness scale** $H$ such that the sets $$X_ {f,\varepsilon} = \{h \in H : \sup_ i\left\vert h(i) - h (f(i)\right\vert  < \varepsilon \}$$  
+For the construction of flat ultrafilters, the key observation is as follows: all we have to do is **find a flatness scale** $H$ such that the sets $$X_ {f,\varepsilon} = \{h \in H : \sup_ i\left\vert h(i) - h (f(i)\right\vert  < \varepsilon \}$$
  are **infinite** for every increasing $f:\omega\to\omega$ with $f(0) > 0$ and every $\varepsilon > 0$.
 
 Once we have this, we get the finite intersection property for free since $$X_ {\max(f_ 1,f_ 2),\min(\varepsilon_ 1,\varepsilon_ 2)} \subseteq X_ {f_ 1,\varepsilon_ 1} \cap X_ {f_ 2,\varepsilon_ 2}.$$
@@ -152,14 +153,14 @@ In other words, any ultrafilter $p$ containing all the sets $X_ {f,\varepsilon}$
 
 Luckily, It turns out that there is an extremely simple flatness scale with this property.
 
-> **Proposition** [[Farah, Philips, Steprans](http://www.math.yorku.ca/~ifarah/Ftp/208_ 2009_ 448_ OnlinePDF.pdf)] There is a flatness scale $H$ such that the set  
->  $$X_ {f,\varepsilon} = \{h \in H : \sup_ i \vert h(i) - h(f(i)\vert  < \varepsilon \}$$  
+> **Proposition** [[Farah, Philips, Steprans](http://www.math.yorku.ca/~ifarah/Ftp/208_ 2009_ 448_ OnlinePDF.pdf)] There is a flatness scale $H$ such that the set
+>  $$X_ {f,\varepsilon} = \{h \in H : \sup_ i \vert h(i) - h(f(i)\vert  < \varepsilon \}$$
 >  is infinite for every increasing $f:\omega\to\omega$ with $f(0) > 0$ and every $\varepsilon > 0$.
 
 **Proof**
 
 * Consider the finite subsets of $\omega$, $[\omega]^{<\omega}$.
-* We can think of $s\in [\omega]^{<\omega}$ as encoding a simple step function, dropping by $1/\vert s\vert $ at each of the elements of $s$; in other words, we define $h_ s : \omega \rightarrow [0,1]$ by  
+* We can think of $s\in [\omega]^{<\omega}$ as encoding a simple step function, dropping by $1/\vert s\vert $ at each of the elements of $s$; in other words, we define $h_ s : \omega \rightarrow [0,1]$ by
      $$ h_ s(i) = 1- \frac{\vert s\cap i\vert }{\vert s\vert }.$$
 
 * Clearly, $H_ S := \{ h_ s: s \in [\omega]^{<\omega} \}$ is a flatness scale (starting at $1$ and converging to zero, in fact being eventually zero).
@@ -177,7 +178,7 @@ Luckily, It turns out that there is an extremely simple flatness scale with this
 
 Combining this with the previous observation we have.
 
-**Corollary** ([Farah, Philips, Steprans](http://www.math.yorku.ca/~ifarah/Ftp/208_ 2009_ 448_ OnlinePDF.pdf))  
+**Corollary** ([Farah, Philips, Steprans](http://www.math.yorku.ca/~ifarah/Ftp/208_ 2009_ 448_ OnlinePDF.pdf))
  There is a flat ultrafilter via the above flatness scale $H_ S$. (Let's keep that name.)
 
 ## Some easy observations
@@ -208,7 +209,7 @@ The above results from [Farah, Philips and Steprans](http://www.math.yorku.ca/~i
 
 The above proposition tells us that we can now think of flat ultrafilters as simply living on $[\omega]^{<\omega}$, extending a certain filter -- I don't know about you, but for me that's much easier to picture. We can, therefore, re-phrase our definitions.
 
-> **Definition revisited**. An ultrafilter $p\in \beta( [\omega]^{<\omega}) \cong \beta \omega$ is flat if for all $f:\omega \rightarrow \omega$ with $f(0)>0$ and $\varepsilon>0$,  
+> **Definition revisited**. An ultrafilter $p\in \beta( [\omega]^{<\omega}) \cong \beta \omega$ is flat if for all $f:\omega \rightarrow \omega$ with $f(0)>0$ and $\varepsilon>0$,
 >  $$\{ s \in [\omega]^{<\omega}: \sup_ i \vert h_ s (i) - h_ s(f(i))\vert  < \varepsilon \} \in p .$$
 
 We're still sort of hiding the fact that we can vary the bijection between $[\omega]^{<\omega}$ and $\omega$. But I still think this phrasing simplifies things a little.
@@ -227,8 +228,8 @@ The next important observation is that in each coordinate $i$, the values of the
 
 * Pick some $f:\omega\to\omega$, increasing with $f(0) = k$ (note $k > 0$ since $h_ s(0) = 1$).
 
-* Then  
-     $$ \sup_ i\vert h_ s(i) - h_ s (f(i)) \vert  \geq \vert h_ s(0) - h_ s(k)\vert  = 1 \geq \varepsilon $$  
+* Then
+     $$ \sup_ i\vert h_ s(i) - h_ s (f(i)) \vert  \geq \vert h_ s(0) - h_ s(k)\vert  = 1 \geq \varepsilon $$
      for every $n \in X$.
 
 * In other words, $ X \subseteq \{ s \in [\omega]^{<\omega}: \sup_ i \vert h_ s (i) - h_ s(f(i))\vert  \geq \varepsilon \}$

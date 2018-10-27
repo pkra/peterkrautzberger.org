@@ -10,6 +10,7 @@ tags:
 - collectionwise thick
 published: true
 permalink: 0160/
+latex: true
 ---
 
 ### Source

@@ -14,6 +14,7 @@ tags:
 - union ultrafilters
 published: true
 permalink: 0044/
+latex: true
 ---
 
 Remember back in summer when I was at <span class="caps">BLAST</span>? I promised that I’d upload that paper to the arXiv soon. Well, it took me a while longer, but it finally is uploaded to the [arXiv](http://arxiv.org/pdf/1012.4532) (after submitting it to the <span class="caps">BLAST</span> proceedings in November).

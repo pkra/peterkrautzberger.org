@@ -12,6 +12,7 @@ tags:
 - P-point
 published: true
 permalink: 0155/
+latex: true
 ---
 
 ### Source

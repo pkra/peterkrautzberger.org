@@ -9,6 +9,7 @@ categories:
 tags: []
 published: true
 permalink: 0088/
+latex: true
 ---
 
 Because of a power outage at the department my talk [announced for October 29th](http://settheory.mathtalks.org/michigan-logic-seminar-7/) was postponed by a week.
@@ -102,27 +103,27 @@ Glazer, ~1975: Yes of course! These are the idempotent ultrafilters! We know the
 
 $$(\forall A \in p) \{ x: -x+A \in p\}\in p$$
 
-I.e., $A\in p \Rightarrow A^{-p} \in p \Rightarrow A \in p+p$, so $p \subseteq p+p$  
+I.e., $A\in p \Rightarrow A^{-p} \in p \Rightarrow A \in p+p$, so $p \subseteq p+p$
  I.e. $p+p = p$ (since ufs)
 
 > **Ellis 1958** $(X,\cdot)$ compact, Hausdorff, right-topological semigroup $\Rightarrow \exists x\in X: x\cdot x =x$.
 
 _Proof._
 
-* Think: $x\cdot x = x \Rightarrow \\{x\\}$ is a closed semigroup - a minimal one!  
-* $\\{ Y \subseteq X: Y \mbox{ compact, non-empty, semigroup} \\}$  
-* By Zorn's Lemma, $\exists $ minimal, non-empty, compact semigroup $Y$.  
-* Think: that should be $\left\vert Y \right\vert = 1$!  
-* We'll show $\forall y \in Y: y\cdot y = y$ (therefore $Y = \\{y\\}$ by minimality)  
-* How? We only have continuity and associativity  
-* $Y \cdot y = \rho_ y [Y]$ compact, non-empty  
-* $(Y\cdot y) \cdot (Y\cdot y) \subseteq Y\cdot y$, i.e., a semigroup.  
-* By minimality of $Y$, $Y\cdot y = Y$  
-* Great! We'd expect that if $y\cdot y = y$  
-* $Y\cdot y = Y \Rightarrow \exists z \in Y: z\cdot y = y$.  
-* Then $\\{ z \in Y : zy=y\\} = \rho^{-1}_ y (y) \subseteq Y$  
-* $(z_ 0 z_ 1) y = z_ 0 (z_ 1 y) = z_ 0 y= y$, i.e., semigroup.  
-* compact? Yes $\rho^{-1}_ y[ \\{y\\}]$ closed.  
+* Think: $x\cdot x = x \Rightarrow \\{x\\}$ is a closed semigroup - a minimal one!
+* $\\{ Y \subseteq X: Y \mbox{ compact, non-empty, semigroup} \\}$
+* By Zorn's Lemma, $\exists $ minimal, non-empty, compact semigroup $Y$.
+* Think: that should be $\left\vert Y \right\vert = 1$!
+* We'll show $\forall y \in Y: y\cdot y = y$ (therefore $Y = \\{y\\}$ by minimality)
+* How? We only have continuity and associativity
+* $Y \cdot y = \rho_ y [Y]$ compact, non-empty
+* $(Y\cdot y) \cdot (Y\cdot y) \subseteq Y\cdot y$, i.e., a semigroup.
+* By minimality of $Y$, $Y\cdot y = Y$
+* Great! We'd expect that if $y\cdot y = y$
+* $Y\cdot y = Y \Rightarrow \exists z \in Y: z\cdot y = y$.
+* Then $\\{ z \in Y : zy=y\\} = \rho^{-1}_ y (y) \subseteq Y$
+* $(z_ 0 z_ 1) y = z_ 0 (z_ 1 y) = z_ 0 y= y$, i.e., semigroup.
+* compact? Yes $\rho^{-1}_ y[ \\{y\\}]$ closed.
 * $Y$ minimal, so $\\{z \in Y: zy=y \\} = Y \Rightarrow y\cdot y = y$.
 
 

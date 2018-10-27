@@ -14,6 +14,7 @@ tags:
 - P-point
 published: true
 permalink: 0029/
+latex: true
 ---
 
 Maybe it was the summer heat, maybe the summer break at the UofM or something else. In any case, I did not feel like blogging the last couple of weeks. But this must change! So to get me back to writing I’ll start with something <del>small</del> tiny.

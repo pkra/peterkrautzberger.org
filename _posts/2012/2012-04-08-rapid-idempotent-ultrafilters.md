@@ -15,6 +15,7 @@ tags:
 - strongly summable ultrafilter
 published: true
 permalink: 0104/
+latex: true
 ---
 
 Welcome back to the second (and final) part on why [strongly summable ultrafilters are rapid](/0103/).
@@ -27,7 +28,7 @@ Here's the problem with this post though. I want to give the argument. But you k
 
 Why could this be true? On the one hand, because we already established partial results [last time](/0103/). On the other hand there's an old result attributed to Pierre Matet which, for now, I can only state in a obfuscated fashion.
 
-> **Theorem** ([Matet 87](http://dx.doi.org/10.2307/2274523))  
+> **Theorem** ([Matet 87](http://dx.doi.org/10.2307/2274523))
 >  If $p$ is a [strongly summable ultrafilter](/0026/), then there exists a function "$\max$" such that $\max(p)$ is rapid.
 
 So you see, strongly summable ultrafilters imply the existence of rapid ultrafilters -- via a very simple $\max$-function.
@@ -44,8 +45,8 @@ Consider an [FS-set](/0026/), let's keep calling it $FS(x_ n)$. If we're lucky, 
 
 It turns out that there's an easy property to ensure this: the sequence just has to grow quickly.
 
-> **Proposition** (folklore? can be found in [Blass, Hindman 87](http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf))  
->  If $x_ n > \sum_ {i<n} x_ i$ for all $n$, then $$\sum_ {i\in s} x_ i = \sum_ {i \in t} x_ i \Rightarrow s=t. $$  
+> **Proposition** (folklore? can be found in [Blass, Hindman 87](http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf))
+>  If $x_ n > \sum_ {i<n} x_ i$ for all $n$, then $$\sum_ {i\in s} x_ i = \sum_ {i \in t} x_ i \Rightarrow s=t. $$
 >  In other words, each element in $FS(x_ n)$ has a _unique representation_.
 
 [Edit May 22, 2012: modified attribution]
@@ -68,7 +69,7 @@ Unfortunately, we need to tweak this a little bit more. Remember that FS-sets ar
 
 It's natural to assume that there's some kind of connection between the representations of $y,z, y+z$. For one thing, we know that if $s \cap t = \emptyset$, then $\sum_ {i\in s} x_ i + \sum_ {i \in t} x_ i \in FS(x_ n)$. The growth as above does not guarantee the reverse, though (just consider $FS(2^n)$), and the reverse often simplifies things. Fortunately, all we have to do is improve the growth!
 
-> **Proposition** ([Hindman, Blass 87](http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf))  
+> **Proposition** ([Hindman, Blass 87](http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf))
 >  If $x_ n > 2\cdot \sum_ {i<n} x_ i$, then $\sum_ {i\in s} x_ i + \sum_ {i \in t} x_ i = \sum_ {i\in v} x_ i$ if and only if $s \cap t = \emptyset $ and $v = s \cup t$.
 
 The proof is much like the earlier proof.
@@ -88,22 +89,22 @@ The proof is much like the earlier proof.
 
 Why all this trouble? Well, there are many uses for this. For what's coming below, it simplifies an important calculation. In general, it is extremely important since it allows us to switch from the addition of numbers to the union of disjoint, finite sets. (I don't know about you, but I find the union operation on disjoint sets much easier to comprehend.)
 
-> **Corollary**  
->  If $FS(x_ n)$ has growth as above, then if we ever have $y, z, y+z \in FS(x_ n)$ (and we will), then, assuming $y<z$, we have $\max(y+z) = \max(z)$.  
+> **Corollary**
+>  If $FS(x_ n)$ has growth as above, then if we ever have $y, z, y+z \in FS(x_ n)$ (and we will), then, assuming $y<z$, we have $\max(y+z) = \max(z)$.
 >  In particular, if $FS(y_ n) \subseteq FS(x_ n)$, then $\max[FS(y_ n)] = \max[\{ y_ n: n\in \omega\}]$.
 
 ### Strongly summable ultrafitlers are rapid -- the proof.
 
 Anyway, let's get back to where we started. First, we should make a connection to strongly summable ultrafilters.
 
-> **Lemma** ([Blass, Hindman 87](http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf))  
+> **Lemma** ([Blass, Hindman 87](http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf))
 >  If $p$ is strongly summable, then $p$ has a base of FS-sets whose sequences satisfy the growth condition (the stronger one with factor $2$, of course).
 
 This is a great lemma (though maybe not a [true lemma](http://www.math.rutgers.edu/~zeilberg/Opinion82.html)) and the reason why I spend so much time above talking about growth conditions -- it comes in handy in many situations and really tells us something about strongly summable ultrafilters and the sets they contain. The proof, however, is weird so I'll skip it (unless you insist in the comments).
 
 And now it makes sense to state the initial theorem.
 
-> **Theorem** ([Matet, 87](http://dx.doi.org/10.1017/S0022481200028450) / [Blass, Hindman 87](http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf))  
+> **Theorem** ([Matet, 87](http://dx.doi.org/10.1017/S0022481200028450) / [Blass, Hindman 87](http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf))
 >  Let $p$ be a strongly summable ultrafilter and $FS(x_ n) \in p$ with growth (or just unique representations); fix the $\max$-function for $FS(x_ n)$ as above. Then $\max(p)$ is a rapid P-point.
 
 [Edit on May 21, 2012: I rephrased the theorem to improve clarity -- thanks to the comment-by-email who suggested it!]
@@ -114,7 +115,7 @@ You can skip the proof if you like because it's not important to us (and I'm che
 *   We will prove that $f$ is either constant on a set in $\max(p)$ or it is finite-to-one.
 *   Pick any $FS(x_ n) \in p$ with $x_ n > 2\sum_ {i<n} x_ i$.
 *   Let $\min$ be the minimum function analogous to $\max$.
-*   Now partition $FS(x_ n)$ into  
+*   Now partition $FS(x_ n)$ into
      $$ \{ y\in FS(x_ n) : f(\max(y)) < \min(y)\}$$ and $$ \{ y\in FS(x_ n) : f(\max(y)) \geq \min(y)\} . $$
 *   Our strongly sumable ultrafilter will give us $FS(y_ n)$ (with the usual growth condition) included in one of these two parts.
 *   If $FS(y_ n)$ is included in the first part, then $f$ is bounded on $\max[FS(y_ n)] = \max[\{ y_ n: n\in \omega\}]$. (In particular, $f$ is constant on a set in $\max(p)$.)
@@ -137,7 +138,7 @@ This theorem is the reason I originally (back in 2010, in my conversations with 
 
 [Edit May 22, 2012: modified attribution]
 
-> **Theorem** (Krautzberger (yep, this is it))  
+> **Theorem** (Krautzberger (yep, this is it))
 >  If $p$ is strongly summable, then $p$ is rapid.
 
 Here's the gist: the trick is simple: speed up functions by $ 2^n$ and let that sped-up function be dominated in the rapid image. Then we pick an FS-set in our strongly summable ultrafilter that witnesses this domination, in particular, it's generating sequence will dominate that sped-up function. Finally, just as in our initial observations in the first post, the FS-set will still grow fast enough to dominate the original function.
@@ -177,12 +178,12 @@ What I'm trying to say is that Jana's question leads to a whole bunch of interes
 
 If there are other rapid idempotents, how do we get them? It turns out we can get the possibly strongest positive answer to this question.
 
-> **Theorem** (Krautzberger (yippie, another micro-contribution))  
+> **Theorem** (Krautzberger (yippie, another micro-contribution))
 >  If there exists a rapid ultrafilter, then there exist rapid idempotent ultrafilters. In fact, then there exists a whole closed left ideal of rapid ultrafilters, in particular there are minimal idempotents which are rapid.
 
 As it turns out this follows easily from two well-known results on rapid ultrafilters which give us the following:
 
-> **Proposition**  
+> **Proposition**
 >  If $p$ is rapid, $q$ any ultrafilter, then $q+p$ is rapid.
 
 *   Since $p$ is rapid, the tensor product $q\otimes p$ is rapid (this can be found in [Miller, 1980](http://dx.doi.org/10.1090/S0002-9939-1980-0548093-2#sthash.ygG3UBVz.dpuf)).

@@ -13,6 +13,7 @@ tags:
 - tensor product of filters
 published: true
 permalink: 0062/
+latex: true
 ---
 
 My apologies for the blogging hiatus. Let’s continue.

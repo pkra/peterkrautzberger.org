@@ -12,6 +12,7 @@ tags:
 - sabine koppelberg
 published: true
 permalink: 0148/
+latex: true
 ---
 
 ### Source
@@ -42,8 +43,8 @@ permalink: 0148/
     *   Def.
         *   Untersystem, min US, $\exists$ US min.
         *   $\beta S$ operiert auch auf $X$ (wie immer)
-        *   aber **nicht** DS [Stetigkeit!)  
-             a. $p\mapsto p \cdot x$ stetig, aber nicht $x \mapsto p \cdot x$!  
+        *   aber **nicht** DS [Stetigkeit!)
+             a. $p\mapsto p \cdot x$ stetig, aber nicht $x \mapsto p \cdot x$!
              b. $(p \cdot q) \cdot x = p \cdot (q \cdot z)$ gilt. (i.A.)
     *   Bsp. $Y\subseteq \beta S$ (als DS). $Y \beta S\text{-invariant} \Leftrightarrow Y \text{ Linksid. von } \beta S$
     *   $Y \text{ min. } US \Leftrightarrow Y \text{min. LID}$
@@ -74,8 +75,8 @@ permalink: 0148/
     *   Def.
         *   dyn. subsystem, min. subsystem, $\exists$ min. subsystem.
         *   $\beta S$ operates on $X$ (as usual)
-        *   but **not** DS [continuity!)  
-             a. $p\mapsto p \cdot x$ cts, but not $x \mapsto p \cdot x$!  
+        *   but **not** DS [continuity!)
+             a. $p\mapsto p \cdot x$ cts, but not $x \mapsto p \cdot x$!
              b. $(p \cdot q) \cdot x = p \cdot (q \cdot z)$ gilt. (i.A.)
     *   Example: $Y\subseteq \beta S$ (as DS). $Y \beta S\text{-invariant} \Leftrightarrow Y \text{ left ideal (LID) of } \beta S$
     *   $Y \text{ min. subsystem} \Leftrightarrow Y \text{mininmal LID}$

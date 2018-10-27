@@ -11,6 +11,7 @@ tags:
 - partial semigroup
 published: true
 permalink: 0050/
+latex: true
 ---
 
 [In the previous post](/0047/) I have totally ignored my focus from the first post, namely that I want to focus on partial semigroups, not full semigroups. As [mentioned in the first part](/0042/) this is not really a problem as any partial semigroup operation is in essence a restriction of a full semigroup operation. So the full semigroup is always a neat thing to fall back to when you’re in doubt. Nevertheless, if, as I claimed, it is an advantage to work with partial semigroups, can we not get around this problem?
@@ -30,7 +31,7 @@ First to note is: watch out! Maybe I’m trying to trick you with the definition
 * First, for semigroups we had defined $A^{-q} = \\{ s \in S: s^{-1}A \in q\\}$ — this still seems to work fine, we’re just checking if some set is in $q$.
 * But what kind of set are we checking? Going into detail, we find $s^{-1}A = \\{ t \in S: s \cdot t \in A\\}$ — and this not clear at all! Remember, $s\cdot t$ might not be defined. What do we do then? Do we want to include or exclude those incompatible $t$?
 
-But, assuming you’re a forgiving reader, I think it still makes sense: just make $s\cdot t$ to mean “$s \cdot t$ and it is defined”. In other words, the original definition should really read \\[ s^{-1}A := \\{ t\in \sigma(s) : s \cdot t \in A\\}. \\]  
+But, assuming you’re a forgiving reader, I think it still makes sense: just make $s\cdot t$ to mean “$s \cdot t$ and it is defined”. In other words, the original definition should really read \\[ s^{-1}A := \\{ t\in \sigma(s) : s \cdot t \in A\\}. \\]
  This is fine from the point of view of a full semigroup (since always $\sigma(s) =S$) and it really captures what we want to capture: those $t$ that $s$ maps to $A$. Of course, the convention that $s\cdot t$ entails $t\in \sigma(s)$ is really standard ever since the paper by Bergelson, Blass and Hindman. So I’m luckily in good company. To finish the introduction, we get the same phenomenon as we did before.
 
 $A \in p\cdot q$ if and only if there exists $V \in p, {( {W_ v} )}_ {v \in V} \in q$ such that $\bigcup_ {v\in V} v \cdot W_ v \subseteq A$.

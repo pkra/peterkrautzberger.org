@@ -17,6 +17,7 @@ tags:
 - semigroups
 published: true
 permalink: 0077/
+latex: true
 ---
 
 > Ok, time for part 3\. We're not close to an end but I must apologize that I won't be able to post in the next week. But let's recap. In the [first part](/0075/) I simply explained why semigroups are not partition regular and in the [second part](/0076/) I wrote about FS-sets and, finally, introduced partial semigroups. One of the headings promised that partial semigroups will help us talk about FS-sets.

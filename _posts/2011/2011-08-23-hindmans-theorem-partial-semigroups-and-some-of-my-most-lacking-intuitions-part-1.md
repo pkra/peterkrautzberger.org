@@ -17,6 +17,7 @@ tags:
 - semigroups
 published: true
 permalink: 0075/
+latex: true
 ---
 
 > If you remember, [I mentioned](/0073/) that I was working on a post on some research and it was getting out of hand. Well, it is still not finished, but long enough to start posting a series of posts.

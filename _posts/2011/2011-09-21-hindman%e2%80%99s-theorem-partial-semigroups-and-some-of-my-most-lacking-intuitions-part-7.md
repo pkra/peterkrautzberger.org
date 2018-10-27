@@ -13,6 +13,7 @@ tags:
 - semigroups
 published: true
 permalink: 0081/
+latex: true
 ---
 
 > Hm, my writing process is slowing down a little (and on top of that I forgot to publish this draft) and there are other posts that I really want to write. I'm not really sure how I will proceed, but let's keep pushing a little further for now. [Last time](/0080/) I tried to build a bridge from central sets via idempotent ultrafilters back to partial semigroups. This is one of the key points of this series: connecting central sets and partial semigroups.
@@ -52,7 +53,7 @@ In my silly demonstration above that partial semigroups contain FS-sets you may 
 
 What was however crucial is finite intersection property. And that's already all there is to this "new" notion.
 
-> **Weak partial (sub)semigroup** If $(S,\cdot)$ is a semigroup, then $A\subseteq S$ is a _weak partial subsemigroup_, if the restriction of the partial semigroup operation to $A$ is adequate, i.e., the sets of the form  
+> **Weak partial (sub)semigroup** If $(S,\cdot)$ is a semigroup, then $A\subseteq S$ is a _weak partial subsemigroup_, if the restriction of the partial semigroup operation to $A$ is adequate, i.e., the sets of the form
 >  $$ \sigma_ A(a) := \{ b\in A : a\cdot b \in A\}$$ generate a filter.
 >
 > > Note: I just made up that $\sigma_ A(a)$ notation to possibly help your understanding by making the connection to $\sigma(a)$.. I will get to a more classical formulation in a second.

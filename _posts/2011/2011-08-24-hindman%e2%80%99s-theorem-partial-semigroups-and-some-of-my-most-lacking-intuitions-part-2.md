@@ -15,6 +15,7 @@ tags:
 - semigroups
 published: true
 permalink: 0076/
+latex: true
 ---
 
 > Yesterday I finally [started this short series](/0075/) with some small thoughts regarding partial semigroups. If you don't remember, all I did yesterday was to explain why semigroups are not, in general, partition regular using a simple partition of $\mathbb{N}$. I was trying to keep your hopes up by pointing out Schur's Theorem.
@@ -67,7 +68,7 @@ So what about disjoint unions? Isn't that a pretty tough restriction? If I was t
 
 The thing that is interesting is that disjoint unions still have a kind of associativity law (warning: I'm going to use $\cdot$ now -- don't freak out -- but we're not <del datetime="2011-08-24T14:33:02+00:00">in Kansas</del> in $(\mathbb{N},+)$ anymore)
 
-> $$ (a \cdot b) \cdot c = a \cdot (b \cdot c)$$  
+> $$ (a \cdot b) \cdot c = a \cdot (b \cdot c)$$
 >  in the sense that, if one side is defined, so is the other and they are equal.
 
 Of course, "they are equal" is not the point here -- after all, we have restricted a (semi)group operation -- so for us the key should be: if one side is defined then so is the other. In other words, our operation is relatively rich.

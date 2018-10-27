@@ -8,6 +8,7 @@ tags:
 - Grigorieff forcing
 published: true
 permalink: 0086/
+latex: true
 ---
 
 This is a short technical post, more a note-to-self so that I know where to look this up if I ever need it again. It is also somewhat of a correction of something I said during my talk in Toronto in June.
@@ -16,7 +17,7 @@ This is a short technical post, more a note-to-self so that I know where to look
 
 If you don't remember, here's the quick and dirty (i.e. traditional) way to define Grigorieff (or Gregorieff depending on your choice of latinization) forcing: it consists of partial functions on $\omega$ which are defined on a "small" set, i.e., a set in the dual ideal of a filter. For simplicity, let's focus on ultrafilters. asd s
 
-> **Grigorieff Forcing** Given a ultrafilter $U$ on $\omega$, let $$\mathbb{P}_U = \{ f: A \rightarrow \omega : \omega \setminus A \in U \}.$$  
+> **Grigorieff Forcing** Given a ultrafilter $U$ on $\omega$, let $$\mathbb{P}_U = \{ f: A \rightarrow \omega : \omega \setminus A \in U \}.$$
 >  Partially order such functions by $f\leq g$ iff $f \supseteq g$, i.e., $f$ has more information.
 
 You can think of Grigorieff conditions as perfect binary trees with complete branching on an ultrafilter set and "parallel movement" elsewhere. But I said quick and dirty is enough here, so let's not worry too much.

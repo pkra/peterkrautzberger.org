@@ -16,6 +16,7 @@ tags:
 - mathml
 published: true
 permalink: 0129/
+mathml: true
 ---
 
 At the Joint Mathematics Meetings [Present and Future of Mathematics on the Web](http://jointmathematicsmeetings.org/meetings/national/jmm2013/2141_program_ss62.html) session, Lila Roberts presented an excellent demo of the good stuff you can do with iBooks author. The demo included MathJax and jsxgraph, and combined both with iBooks Author's easy, pretty layout tools. Of course, the drawback is that iBooks Author is

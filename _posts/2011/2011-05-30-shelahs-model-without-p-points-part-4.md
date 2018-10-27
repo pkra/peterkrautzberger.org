@@ -13,6 +13,7 @@ tags:
 - Saharon Shelah
 published: true
 permalink: 0059/
+latex: true
 ---
 
 Read more about this series at [the first post](/0056/).

@@ -16,6 +16,7 @@ tags:
 - Yevhen Zelenyuk
 published: true
 permalink: 0099/
+latex: true
 ---
 
 Well, if you haven't read [my recent introspection](/0098/), consider yourself warned: the video below is, in my humble opinion, a rather poor talk I gave at our Logic Seminar here at the University of Michigan.
@@ -50,7 +51,7 @@ This open question has [funny consequences](http://www.papercritic.com/mendeley-
 
 Anyway, let's turn to the theorem I actually want to give you the proof of here.
 
-> **Theorem (Hindman, Pym 1984)**  
+> **Theorem (Hindman, Pym 1984)**
 >  If $e$ is a minimal idempotent in $\beta \mathbb{N}$, then the maximal group of $e$ contains the free group on $2^{2^\omega}$-many generators.
 
 That's in stark contrast to Zelenyuk's theorem -- we have an incredible amount of groups, as complicated as it gets you might say.

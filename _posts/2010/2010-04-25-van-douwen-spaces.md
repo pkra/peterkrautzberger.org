@@ -15,6 +15,7 @@ tags:
 - van Douwen space
 published: true
 permalink: 0016/
+latex: true
 ---
 
 At the [winterschool](http://www.winterschool.eu) [Alan Dow](http://math.uncc.edu/~adow/) gave quite challenging tutorials. He also mentioned something about van Douwen spaces.
@@ -27,7 +28,7 @@ As formulated [here](http://math.uncc.edu/~adow/vDspace.pdf)
 
 What caught my interest was that there is an example that has something to do with [idempotent](http://en.wikipedia.org/wiki/Idempotency) [ultrafilters](http://en.wikipedia.org/wiki/Ultrafilter). Let me introduce something first.
 
-**A partial order** On the idempotent ultrafilters (on $\mathbb{N}$) define a partial ordering by  
+**A partial order** On the idempotent ultrafilters (on $\mathbb{N}$) define a partial ordering by
 
  $$ p \leq_r q \Leftrightarrow q + p =p. $$
 
@@ -39,7 +40,7 @@ This partial order (as well as its left counterpart and their intersection) is q
 
 For van Douwen spaces it is useful to go in the other direction. There exist many right-maximal elements in this order, but even more can be said.
 
-**Strongly right maximal idempotents** An idempotent ultrafilters $p \in \beta \mathbb{N}$ is _strongly right maximal_ if  
+**Strongly right maximal idempotents** An idempotent ultrafilters $p \in \beta \mathbb{N}$ is _strongly right maximal_ if
 
  $$ q+ p =p \Rightarrow q= p. $$
 
@@ -53,7 +54,7 @@ Let $p$ be strongly right maximal. Then $\mathbb{N} + p$ is a van Douwen space.
 
 And this is what Alan Dow mentioned. Ignoring the crowdedness, this is really easy for in fact more holds in this case.
 
-If $p$ is strongly right maximal, then  
+If $p$ is strongly right maximal, then
 
 $$ \rho_p: \mathbb{N} \rightarrow \beta \mathbb{N}, n \mapsto n+ p $$
 

@@ -16,6 +16,7 @@ tags:
 - Vitaly Bergelson
 published: true
 permalink: 0080/
+latex: true
 ---
 
 > I know, I know, it's part 6 already. [Last time](/0079/) I finally formulated the Central Sets Theorem. This part will just be a small bridge. But at least you'll finally know why on earth I am writing this, i.e., what big open question I'm actually trying to build some intuitions for.

@@ -11,6 +11,7 @@ tags:
 - minimal ideal
 published: true
 permalink: 0159/
+latex: true
 ---
 
 ### Source

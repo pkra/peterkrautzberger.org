@@ -13,6 +13,7 @@ tags:
 - writing
 published: true
 permalink: 0041/
+latex: true
 ---
 
 Recently, I had a few conversations about teaching mathematics varying from elementary school to undergraduate level. These are not refined, in depth analyses, just some quick thoughts that I think worthwhile to ponder every once in a while.

@@ -8,6 +8,7 @@ tags:
 - meme
 status: publish
 permalink: 0124/
+latex: true
 ---
 
 So there's a meme going around in the CS blogging community: "Things that a ___ researcher should have done at least once". It started at [The Geomblog](http://geomblog.blogspot.com/2012/09/things-tcser-should-have-done-at-least.html) by Suresh Venkatasubramanian, was picked up for complexity theory by Lance Fortnow at [Computational Complexity](http://blog.computationalcomplexity.org/2012/09/things-complexity-theorist-should-do-at.html) and for game theory & economics by Noam Nisam at [Turing's Invisible Hand](https://agtb.wordpress.com/2012/09/28/things-a-agteer-should-do-at-least-once/).

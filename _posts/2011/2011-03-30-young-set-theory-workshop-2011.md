@@ -12,6 +12,7 @@ tags:
 - young set theory workshop
 published: true
 permalink: 0054/
+latex: true
 ---
 
 It’s been a while. In case you were wondering where the heck I have been these last two months, check out [mathblogging.org](http://www.mathblogging.org) and [our blog at wordpress.com](http://mathblogging.wordpress.com).

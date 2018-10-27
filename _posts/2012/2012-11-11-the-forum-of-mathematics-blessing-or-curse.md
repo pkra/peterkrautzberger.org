@@ -9,6 +9,7 @@ tags:
 - publishing debate
 status: publish
 permalink: 0126/
+latex: true
 ---
 
 > When the Forum of Mathematics was announced [on Tim Gowers's blog](https://gowers.wordpress.com/2012/07/02/a-new-open-access-venture-from-cambridge-university-press/) I mentioned this on twitter and I got a couple of replies asking what my thoughts on it were. Well, this post has been stuck in my draft folder for too long, long enough for these journals to   be open for submissions, blimey.
@@ -78,7 +79,7 @@ And I wonder: if Forum of Mathematics is considered a "big experiment" then I fe
 
 * * *
 
-tl;dr  
+tl;dr
  Great to have a PLoS ONE for mathematics but I worry that the **Pi** editorial board could end up the absolute, most powerful editorial board in history.
 
  ---

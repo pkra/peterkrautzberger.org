@@ -14,6 +14,7 @@ tags:
 - twitter
 published: true
 permalink: 0066/
+latex: true
 ---
 
 **Edit, July 2015** Please note that below is a stupid piece of trolling. I leave it because it's been public too long anyway and to remind me not to troll. Far too late but my apologies to Keith Devlin.

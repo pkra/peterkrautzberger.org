@@ -12,6 +12,7 @@ tags:
 - Peano arithmetic
 published: true
 permalink: 0156/
+latex: true
 ---
 
 ### Source

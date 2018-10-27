@@ -12,6 +12,7 @@ tags:
 - thick set
 published: true
 permalink: 0153/
+latex: true
 ---
 
 ### Source
@@ -29,7 +30,7 @@ permalink: 0153/
 
 * **Kapitel 2** Dicke Teilmengen von $S$
 * **Def**: $T\subseteq S$ dick <=> $\{ x^{-1}T : x\in S \}$ hat eDe
-* **Prop**: Aeq: (a) $T$ dick; (b) $\forall e \subseteq_ e S \exists y \in S: ( y \in \bigcap_ {x\in e} x^{-1} T ) \Longleftrightarrow \stackrel{\stackrel{\text{punktweise}}{\downarrow}}{e \cdot y} \subseteq T)$  
+* **Prop**: Aeq: (a) $T$ dick; (b) $\forall e \subseteq_ e S \exists y \in S: ( y \in \bigcap_ {x\in e} x^{-1} T ) \Longleftrightarrow \stackrel{\stackrel{\text{punktweise}}{\downarrow}}{e \cdot y} \subseteq T)$
      (c) ex. $L \subseteq \widehat{T}$ (min) LID.
     * [proof]
     * a <=> c: $x\in S, p\in \beta S: x^{-1} T \in p \stackrel{\text{Skript}}{\Leftrightarrow} T\in x\cdot p \Leftrightarrow x\cdot p \in \widehat{T}$

@@ -10,6 +10,7 @@ tags:
 - sums of ultrafilters
 published: true
 permalink: 0157/
+latex: true
 ---
 
 ### Source

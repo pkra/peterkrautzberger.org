@@ -13,6 +13,7 @@ tags:
 - Stone–Čech compactification
 published: true
 permalink: 0006/
+latex: true
 ---
 
 In [an earlier post](/0004/) I gave a short introduction to an interesting finite semigroup. This semigroup could be found in the $2\times 2$ matrices over $\mathbb{Q}$.
@@ -33,19 +34,19 @@ So, as a first approach we thought about the following question.
 
 Thinking about the problem a little and experimenting with [Macaulay 2](http://en.wikipedia.org/wiki/Macaulay2) we ended up with the following classification
 
-**Proposition** For $$A = \begin{pmatrix} 1 & 0 \\ 0 & 0\end{pmatrix}$$ the solutions for $B$ being of rank one consist of four one – dimensional families, namely (for $x\in \mathbb{Q}$)  
- $$  
- F_1(x) = \begin{pmatrix} 1 & x \\ 0 & 0 \end{pmatrix},  
- F_2(x) = \begin{pmatrix} 1 & 0 \\ x & 0 \end{pmatrix},  
- F_3(x) = \begin{pmatrix} 0 & x \\ 0 & 1 \end{pmatrix},  
- F_4(x) = \begin{pmatrix} 0 & 0 \\ x & 1 \end{pmatrix}.  
- $$  
- Additionally, we have four special solutions  
- $$  
- G_1 = \begin{pmatrix} – 1 & 1 \\ – 2 & 2 \end{pmatrix},  
- G_2 = \begin{pmatrix} – 1 & – 1 \\ 2 & 2 \end{pmatrix},  
- G_3 = \begin{pmatrix} – 1 & 2 \\ – 1 & 2 \end{pmatrix},  
- G_4 = \begin{pmatrix} – 1 & – 2 \\ 1 & 2 \end{pmatrix}.  
+**Proposition** For $$A = \begin{pmatrix} 1 & 0 \\ 0 & 0\end{pmatrix}$$ the solutions for $B$ being of rank one consist of four one – dimensional families, namely (for $x\in \mathbb{Q}$)
+ $$
+ F_1(x) = \begin{pmatrix} 1 & x \\ 0 & 0 \end{pmatrix},
+ F_2(x) = \begin{pmatrix} 1 & 0 \\ x & 0 \end{pmatrix},
+ F_3(x) = \begin{pmatrix} 0 & x \\ 0 & 1 \end{pmatrix},
+ F_4(x) = \begin{pmatrix} 0 & 0 \\ x & 1 \end{pmatrix}.
+ $$
+ Additionally, we have four special solutions
+ $$
+ G_1 = \begin{pmatrix} – 1 & 1 \\ – 2 & 2 \end{pmatrix},
+ G_2 = \begin{pmatrix} – 1 & – 1 \\ 2 & 2 \end{pmatrix},
+ G_3 = \begin{pmatrix} – 1 & 2 \\ – 1 & 2 \end{pmatrix},
+ G_4 = \begin{pmatrix} – 1 & – 2 \\ 1 & 2 \end{pmatrix}.
  $$
 
 Note: due to technical problems, this post continues [here](http://thelazyscience.blogspot.com/2010/01/testing.html) .
@@ -61,15 +62,15 @@ Luckily enough, we get something very similar from our alternative for $A$.
 **Proposition** In case$$
 A = \begin{pmatrix} 1 & 1
  \\ 0 & 0
- \end{pmatrix}$$ the solutions for $B$ being of rank one consist of five one – dimensional families namely (for $x\in \mathbb{Q}$)  
- $$  
- H_1(x) = \begin{pmatrix} 1 & x \\ 0 & 0 \end{pmatrix},  
- H_2(x) = \begin{pmatrix} x+1 & x \\ ( – x – 1) & – x \end{pmatrix},  
- H_3(x) = \begin{pmatrix} 0 & x \\ 0 & 1 \end{pmatrix},  
- H_4(x) = \begin{pmatrix} ( – x+1) & ( – x+1) \\ x & x \end{pmatrix},  
+ \end{pmatrix}$$ the solutions for $B$ being of rank one consist of five one – dimensional families namely (for $x\in \mathbb{Q}$)
+ $$
+ H_1(x) = \begin{pmatrix} 1 & x \\ 0 & 0 \end{pmatrix},
+ H_2(x) = \begin{pmatrix} x+1 & x \\ ( – x – 1) & – x \end{pmatrix},
+ H_3(x) = \begin{pmatrix} 0 & x \\ 0 & 1 \end{pmatrix},
+ H_4(x) = \begin{pmatrix} ( – x+1) & ( – x+1) \\ x & x \end{pmatrix},
  $$
  $$
- H_5(x) = \begin{pmatrix} ( – x+1) & ( – x – 1 – \frac{2}{x – 2}) \\ x – 2 & x \end{pmatrix} , x \neq 2.  
+ H_5(x) = \begin{pmatrix} ( – x+1) & ( – x – 1 – \frac{2}{x – 2}) \\ x – 2 & x \end{pmatrix} , x \neq 2.
  $$
 
 As before we can describe size and structure.

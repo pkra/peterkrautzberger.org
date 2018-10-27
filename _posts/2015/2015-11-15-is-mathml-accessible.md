@@ -3,6 +3,7 @@ layout: post
 title:  Is MathML accessible?
 date: 2015-11-15
 permalink: 0185/
+mathml: true
 ---
 
 Last week I attended an excellent [conference on accessibility in higher education](http://www.studentenwerke.de/de/content/ibs-fachtagung). It was great to get a some insight into where things stand with the German higher-ed community. It also reminded me of something that keeps bugging me this year.
@@ -41,7 +42,7 @@ Which is visually rather similar to doing a construction using an `mtable` (whic
         <mtable>
           <mtr><mtd><mi>n</mi></mtd></mtr>
           <mtr><mtd><mi>k</mi></mtd></mtr>
-        </mtable>      
+        </mtable>
       <mo>)</mo>
   </mrow>
 </math>

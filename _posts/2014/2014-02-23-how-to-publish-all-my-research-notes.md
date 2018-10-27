@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to publish all my research notes?
-date: 2014-02-23\
+date: 2014-02-23
 categories:
 - research
 - scientific community

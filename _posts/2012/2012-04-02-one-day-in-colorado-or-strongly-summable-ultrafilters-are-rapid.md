@@ -18,6 +18,7 @@ tags:
 - ultrafilters
 published: true
 permalink: 0103/
+latex: true
 ---
 
 Picking up from [the prelude about micro-contributions](/0102/), let me tell you the story of a small result I would like to share with you. (Before you frantically scroll down to find the proof, it's not really here but will be in the follow-up post).
@@ -74,8 +75,8 @@ For P-points the argument is different and I hesitate to put it here -- it might
 
 > Take a set $A$ in a P-point; let's enumerate it again naturally by $ ( a_ n : n \in \omega) $. Now define a map $ f: A \rightarrow \mathbb{N} $ by $$ f(a_ n) = (a_ {n+1} - a_ n) .$$ In other words, by the size of the gap following $ a_ n $.
 >
-> Since we're dealing with a **P-point**, there's an ultrafilter set $B\subseteq A$ such that $f$ restricted to $B$ is finite-to-one or constant.  
->  It can't be constant, since either $ \bigcup_ {n\in \omega} [10^{2n},10^{2n+1})$ or its complement is in our P-point. So it's finite-to-one -- and this should be enough to verify that our set $B$ has $ \lim_ {n \to \infty} b_ {n+1} - b_ n = \infty$, right?  
+> Since we're dealing with a **P-point**, there's an ultrafilter set $B\subseteq A$ such that $f$ restricted to $B$ is finite-to-one or constant.
+>  It can't be constant, since either $ \bigcup_ {n\in \omega} [10^{2n},10^{2n+1})$ or its complement is in our P-point. So it's finite-to-one -- and this should be enough to verify that our set $B$ has $ \lim_ {n \to \infty} b_ {n+1} - b_ n = \infty$, right?
 >  Ok, let's take a look. After finitely many steps, the differences will be larger than any prescribed bound (just be careful here, because our function $f$ compared $a_ n$ with $a_ {n+1}$, while here we compare $b_ n$ with $b_ {n+1}$ which is not the "successor" in $A$, but in $B$ -- but that isn't a problem since the "successor" in $B$ is at least as far away as the successor in $A$). (Hm... there should be an easier argument, maybe? (and less need for parantheses?))
 
 Anway, I hope I've given some evidence to the claim that the usual crowd of set theoretically interesting ultrafilters turn out to be incompatible with the idea of a sum of ultrafilter. That's somewhat annoying, wouldn't you agree?

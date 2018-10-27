@@ -13,6 +13,7 @@ tags:
 - Stone–Čech compactification
 published: true
 permalink: 0007/
+latex: true
 ---
 
 Note: there seems to be some problematic interaction between the javascripts I use and blogspot’s javascripts which prevents longer posts from being displayed correctly. As long as I don’t understand how to fix this, I will simply split the posts.
@@ -25,13 +26,13 @@ We can also describe size and the algebraic structure.
 
 Luckily enough, we get something very similar from our alternative for $A$.
 
-**Proposition** In case $A = \begin{pmatrix} 1 & 1 \\\ 0 & 0 \end{pmatrix}$ the solutions for $B$ being of rank one consist of five one – dimensional families namely (for $x\in \mathbb{Q}$)  
- $$  
+**Proposition** In case $A = \begin{pmatrix} 1 & 1 \\\ 0 & 0 \end{pmatrix}$ the solutions for $B$ being of rank one consist of five one – dimensional families namely (for $x\in \mathbb{Q}$)
+ $$
  H_1(x) = \begin{pmatrix} 1 & x \\ 0 & 0 \end{pmatrix},  \\
  H_2(x) = \begin{pmatrix} x+1 & x \\ ( – x – 1) & – x \end{pmatrix},  \\
  H_3(x) = \begin{pmatrix} 0 & x \\ 0 & 1 \end{pmatrix},  \\
  H_4(x) = \begin{pmatrix} ( – x+1) & ( – x+1) \\ x & x \end{pmatrix},  \\
- H_5(x) = \begin{pmatrix} ( – x+1) & ( – x – 1 – \frac{2}{x – 2}) \\ x – 2 & x \end{pmatrix} , x \neq 2.  
+ H_5(x) = \begin{pmatrix} ( – x+1) & ( – x – 1 – \frac{2}{x – 2}) \\ x – 2 & x \end{pmatrix} , x \neq 2.
  $$
 
 As before we can describe size and structure.

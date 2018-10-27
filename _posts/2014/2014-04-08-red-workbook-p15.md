@@ -11,6 +11,7 @@ tags:
 - collectionwise piecewise syndetic
 published: true
 permalink: 0161/
+latex: true
 ---
 
 ### Source

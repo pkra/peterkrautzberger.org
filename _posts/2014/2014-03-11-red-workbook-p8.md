@@ -11,6 +11,7 @@ tags:
 - thick set
 published: true
 permalink: 0154/
+latex: true
 ---
 
 ### Source

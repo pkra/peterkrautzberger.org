@@ -14,6 +14,7 @@ tags:
 - ultrafilter
 published: true
 permalink: 0047/
+latex: true
 ---
 
 [Last time](/0042/) I wrote about the basic structures, (partial) semigroups. But algebra in the Stone–Čech compactification deals, well, with the Stone–Čech compactification. I will try to ignore the general theory of compactifications because we only deal with a very simple case — discrete spaces. Suffice it to say that any elementary topology book should have a chapter on compactifications if you want to read more.
@@ -42,7 +43,7 @@ We’ll get back to this later. One final note, $F,G,H$ are usually denoting fil
 
 [This theorem](https://secure.wikimedia.org/wikipedia/en/wiki/Boolean_ prime_ ideal_ theorem) is weaker than the axiom of choice, but very strong already in itself (looking up that link I just learned that Tarski himself proved the existence of non-principal ultrafilters in 1930; wikipedia. awesome.). Of course, the real power lies in the three characterizations of ultrafilters in the cheat sheet, so let’s prove the difficult one
 
-A filter $F$ is maximal iff $F$ is prime, i.e., $(\forall A\subseteq S) A\in F \mbox{ or } S\setminus A \in F$  
+A filter $F$ is maximal iff $F$ is prime, i.e., $(\forall A\subseteq S) A\in F \mbox{ or } S\setminus A \in F$
  **Proof**.
 
 *   If $F$ is maximal, $A\subseteq S$, then either $A \in F$ or $S\setminus A \in F$.

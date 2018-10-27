@@ -14,6 +14,7 @@ tags:
 - textile
 published: true
 permalink: 0014/
+latex: true
 ---
 
 Welcome to the new home of thelazyscience. I hope the new setup makes everything better.

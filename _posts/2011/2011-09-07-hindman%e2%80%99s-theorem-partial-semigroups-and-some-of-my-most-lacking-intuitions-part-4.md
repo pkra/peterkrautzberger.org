@@ -20,6 +20,7 @@ tags:
 - Vitaly Bergelson
 published: true
 permalink: 0078/
+latex: true
 ---
 
 > Well, I hope you didn't miss me while I was on my first summer vacation in three years. So let's continue this series. If you remember, [part 3](/0077/) consisted mainly of the observation that FS-sets have a partial semigroup structure induced by $\mathbb{F}$ as well as me telling you that there's a immediate correspondence between FS-sets and idempotent ultrafilters.

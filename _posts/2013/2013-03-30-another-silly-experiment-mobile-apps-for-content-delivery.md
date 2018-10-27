@@ -21,7 +21,7 @@ I've written in the past about the problems of mathematical content in ebooks (w
 
 So I wrote about how you could [include MathJax in an epub3 file](/0129/) and hope for the best. But this is stupid. We can reliably create mathematical content in a mobile browser thanks to MathJax, but we can't easily do so in an offline, deliverable, stand-alone format.
 
-Well, of course you can. MathJax is used in lots of mobile applications and there are even open source sample apps for developers to understand how to do this. Yet, authors don't want to be app developers. (Though especially $\LaTeX$-affine communities seriously need to make HTML the primary output format -- not print.)
+Well, of course you can. MathJax is used in lots of mobile applications and there are even open source sample apps for developers to understand how to do this. Yet, authors don't want to be app developers. (Though especially LaTeX-affine communities seriously need to make HTML the primary output format -- not print.)
 
 Luckily for us, app developers these days have a similar problem and there is much innovation in mobile app frameworks that (aims to) make app development a "design once, compile everywhere" kind of thing.
 

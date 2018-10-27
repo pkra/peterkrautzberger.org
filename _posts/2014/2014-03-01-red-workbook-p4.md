@@ -10,6 +10,7 @@ tags:
 - uniformly recurrent
 published: true
 permalink: 0150/
+latex: true
 ---
 
 ### Source
