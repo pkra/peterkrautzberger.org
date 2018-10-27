@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Rapid idempotent ultrafilters</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Rapid idempotent ultrafilters</h1>
+  <span class="post-date"><time datetime="2012-04-08">08 Apr 2012</time></span>
+  <p>Welcome back to the second (and final) part on why <a href="/0103/">strongly summable ultrafilters are rapid</a>.</p>
+<p>Why the new title? Well, first, I needed another one (I've had too many posts with &quot;Part X&quot; in them, I think). Second, after I proved the results I mentioned last time, I quickly found an additional, somewhat more general observation regarding idempotents.</p>
+<p>Here's the problem with this post though. I want to give the argument. But you know how it is in mathematics: standing on the shoulders of <del datetime="2012-04-06T14:42:13+00:00">the huddled masses</del> giants and all that. All work relies on established results. In the first post, I gave a lot of &quot;unnecessary&quot; proofs to motivate the story behind the result. In this post, I'll get to the actual proof and I'm torn, I'm not sure how much to quote and how much to prove. So bear with me and leave comments whenever I screw up.</p>
+<h3>Strongly summables are rapid.</h3>
+<p>Why could this be true? On the one hand, because we already established partial results <a href="/0103/">last time</a>. On the other hand there's an old result attributed to Pierre Matet which, for now, I can only state in a obfuscated fashion.</p>
+<blockquote>
+<p><strong>Theorem</strong> (<a href="http://dx.doi.org/10.2307/2274523">Matet 87</a>)<br>
+If \(p\) is a <a href="/0026/">strongly summable ultrafilter</a>, then there exists a function &quot;\(\max\)&quot; such that \(\max(p)\) is rapid.</p>
+</blockquote>
+<p>So you see, strongly summable ultrafilters imply the existence of rapid ultrafilters -- via a very simple \(\max\)-function.</p>
+<p>What's \(\max\), you're asking?</p>
+<p>Ah yes, I should talk about \(\max\)...</p>
+<h3>\(\max\) to the Max.</h3>
+<p>For <a href="/0026/">FS-sets</a>, there is a natural notion of maximum. If you have a bunch of elements summed up, then it makes sense to call the largest summand the maximum. So intuitively, the maximum should simply map each element in the FS-set to the largest generator involved in producing it. This might not appear very well defined but bear with me.</p>
+<p>Consider an <a href="/0026/">FS-set</a>, let's keep calling it \(FS(x_ n)\). If we're lucky, there is a <em>unique</em> way to write each \(y \in FS(x_ n)\) as a sum of \(x_ i\) (or should I write \(x_ n\)? indices are hard...). For example, the sequence $ (2^n)_  {n\in \omega} $ has this property while \((n)_ {n\in \mathbb{N}}\) fails to have this property (quite badly, I suppose).</p>
+<p>It turns out that there's an easy property to ensure this: the sequence just has to grow quickly.</p>
+<blockquote>
+<p><strong>Proposition</strong> (folklore? can be found in <a href="http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf">Blass, Hindman 87</a>)<br>
+If \(x_ n > \sum_ {i&lt;n} x_ i\) for all \(n\), then \[\sum_ {i\in s} x_ i = \sum_ {i \in t} x_ i \Rightarrow s=t. \]<br>
+In other words, each element in \(FS(x_ n)\) has a <em>unique representation</em>.</p>
+</blockquote>
+<p>[Edit May 22, 2012: modified attribution]</p>
+<p>The proof is an easy induction on $\left\vert s\right\vert, \left\vert t\right\vert $, using the growth factor to argue that the maximal element of \(s\) and \(t\) must be equal.</p>
+<ul>
+<li>If \(\left\vert s\right\vert  = \left\vert t\right\vert  = 1\), then \(s = t\) follows immediately from the growth assumption.</li>
+<li>Now assume inductively that we've proved the claim for smaller sets.</li>
+<li>Let \(n\) be the maximum of \(s\cup t\).</li>
+<li>Wlog, \(n\in s\).</li>
+<li>Then we must also have \(n\in t\) -- otherwise \[ \sum_ {i \in s} x_ i \geq x_ n > \sum_ {i &lt;n} x_ i \geq \sum_ {i \in t} x_ i, \] a contradiction to the assumed equality of both sums.</li>
+<li>But if both \(s\) and \(t\) contain \(n\), we also have \(\sum_ {s \setminus \{n\}} x_ i = \sum_ {t \setminus \{n\}} x_ i\).</li>
+<li>Using our induction hypothesis, we have $ s \setminus {n} = t \setminus {n} $, hence \(s=t\).</li>
+</ul>
+<p>So <em>if</em> we have unique representations of elements in \(FS(x_ n)\), we can define a function \[\max: FS(x_ n) \rightarrow \mathbb{N}, \max(y) := x_ {\max s} \text{ where } \sum_ {i \in s} x_ i = y. \]</p>
+<h3>Growth, growth, growth and more growth</h3>
+<p>Unfortunately, we need to tweak this a little bit more. Remember that FS-sets are all about sums. Very often \(y, z \in FS(x_ n)\) will have \(y+z \in FS(x_ n)\). So assuming growth, \(y,z , y+z\) each have a unique representation in terms of the \(x_ i\).</p>
+<p>It's natural to assume that there's some kind of connection between the representations of \(y,z, y+z\). For one thing, we know that if \(s \cap t = \emptyset\), then \(\sum_ {i\in s} x_ i + \sum_ {i \in t} x_ i \in FS(x_ n)\). The growth as above does not guarantee the reverse, though (just consider \(FS(2^n)\)), and the reverse often simplifies things. Fortunately, all we have to do is improve the growth!</p>
+<blockquote>
+<p><strong>Proposition</strong> (<a href="http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf">Hindman, Blass 87</a>)<br>
+If \(x_ n > 2\cdot \sum_ {i&lt;n} x_ i\), then \(\sum_ {i\in s} x_ i + \sum_ {i \in t} x_ i = \sum_ {i\in v} x_ i\) if and only if $s \cap t = \emptyset $ and \(v = s \cup t\).</p>
+</blockquote>
+<p>The proof is much like the earlier proof.</p>
+<ul>
+<li>Again, we're doing an induction on $\left\vert s\cup t \cup v\right\vert $.</li>
+<li>If \(\left\vert s \cup t \cup v\right\vert  = 1\), then \(s\) or \(t\) must be empty and the growth condition does the rest.</li>
+<li>For the inductive step, let \(n := \max(s,t,v)\).</li>
+<li>Due to the growth condition, \(n\) must be in \(v\).</li>
+<li>But it must also lie in \(s\cup t\).
+<ul>
+<li>Else \(\sum_ {i\in v} x_ i \geq x_ n > 2 \sum_ {i &lt;n} x_ i \geq \sum_ {i\in s} x_ i + \sum_ {i\in t} x_ i\).</li>
+</ul>
+</li>
+<li>But it can't be in both \(s\) and \(t\).
+<ul>
+<li>Else \(\sum_ {i \in v} x_ i &lt; 2 x_ n &lt; \sum_ {i\in s} x_ i + \sum_ {i \in t} x_ i\).</li>
+</ul>
+</li>
+<li>Wlog \(n\in s\)</li>
+<li>Th \(\sum_ {i \in s\setminus{n}} x_ i + \sum_ {i\in t} x_ o = \sum_ {i \in v\setminus{n}} x_ i\).</li>
+<li>Applying our induction hypothesis to $\left\vert (s \setminus {n}) \cup t \cup (v\setminus {n})\right\vert $, we get $ s\setminus {n} \cap t = \emptyset$ and \((s \setminus \{n\}) \cup t = v \setminus \{n\}\).</li>
+<li>This in turn gives us \(s \cap t = \emptyset\) (as \(n \notin t\)) and \(s\cup t = v\) -- as desired.</li>
+</ul>
+<p>Why all this trouble? Well, there are many uses for this. For what's coming below, it simplifies an important calculation. In general, it is extremely important since it allows us to switch from the addition of numbers to the union of disjoint, finite sets. (I don't know about you, but I find the union operation on disjoint sets much easier to comprehend.)</p>
+<blockquote>
+<p><strong>Corollary</strong><br>
+If \(FS(x_ n)\) has growth as above, then if we ever have \(y, z, y+z \in FS(x_ n)\) (and we will), then, assuming \(y&lt;z\), we have \(\max(y+z) = \max(z)\).<br>
+In particular, if \(FS(y_ n) \subseteq FS(x_ n)\), then \(\max[FS(y_ n)] = \max[\{ y_ n: n\in \omega\}]\).</p>
+</blockquote>
+<h3>Strongly summable ultrafitlers are rapid -- the proof.</h3>
+<p>Anyway, let's get back to where we started. First, we should make a connection to strongly summable ultrafilters.</p>
+<blockquote>
+<p><strong>Lemma</strong> (<a href="http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf">Blass, Hindman 87</a>)<br>
+If \(p\) is strongly summable, then \(p\) has a base of FS-sets whose sequences satisfy the growth condition (the stronger one with factor \(2\), of course).</p>
+</blockquote>
+<p>This is a great lemma (though maybe not a <a href="http://www.math.rutgers.edu/~zeilberg/Opinion82.html">true lemma</a>) and the reason why I spend so much time above talking about growth conditions -- it comes in handy in many situations and really tells us something about strongly summable ultrafilters and the sets they contain. The proof, however, is weird so I'll skip it (unless you insist in the comments).</p>
+<p>And now it makes sense to state the initial theorem.</p>
+<blockquote>
+<p><strong>Theorem</strong> (<a href="http://dx.doi.org/10.1017/S0022481200028450">Matet, 87</a> / <a href="http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf">Blass, Hindman 87</a>)<br>
+Let \(p\) be a strongly summable ultrafilter and \(FS(x_ n) \in p\) with growth (or just unique representations); fix the \(\max\)-function for \(FS(x_ n)\) as above. Then \(\max(p)\) is a rapid P-point.</p>
+</blockquote>
+<p>[Edit on May 21, 2012: I rephrased the theorem to improve clarity -- thanks to the comment-by-email who suggested it!]</p>
+<p>You can skip the proof if you like because it's not important to us (and I'm cheating a little on the important part, rapidity). But I find the argument appealing and since I've had to go through all the trouble to introduce the growth condition and so forth, I think I might as well include this, too. It's a typical proof for strongly summable ultrafilters -- just write down a good partition and let it do the work for you.</p>
+<ul>
+<li>Fix \(f:\mathbb{N} \rightarrow \mathbb{N}\).</li>
+<li>We will prove that \(f\) is either constant on a set in \(\max(p)\) or it is finite-to-one.</li>
+<li>Pick any \(FS(x_ n) \in p\) with \(x_ n > 2\sum_ {i&lt;n} x_ i\).</li>
+<li>Let \(\min\) be the minimum function analogous to \(\max\).</li>
+<li>Now partition \(FS(x_ n)\) into<br>
+\[ \{ y\in FS(x_ n) : f(\max(y)) &lt; \min(y)\}\] and \[ \{ y\in FS(x_ n) : f(\max(y)) \geq \min(y)\} . \]</li>
+<li>Our strongly sumable ultrafilter will give us \(FS(y_ n)\) (with the usual growth condition) included in one of these two parts.</li>
+<li>If \(FS(y_ n)\) is included in the first part, then \(f\) is bounded on \(\max[FS(y_ n)] = \max[\{ y_ n: n\in \omega\}]\). (In particular, \(f\) is constant on a set in \(\max(p)\).)
+<ul>
+<li>Consider \(y_ 0\) and pick any other \(y_ n\).</li>
+<li>Due to the growth condition, we have \(\max(y_ n) = \max(y_ 0 + y_ n)\) and reversely \(\min(y_ 0 + y_ n) = \min(y_ 0)\).</li>
+<li>In particular, \(f(\max(y_ n) = f(\max(y_ 0 + y_ n)) &lt; \min(y_ 0+y_ n) = \min(y_ 0)\).</li>
+<li>So \(f\) is bounded on \(\max[FS(y_ n)]\) and we find a</li>
+</ul>
+</li>
+<li>If \(FS(y_ n)\) is included in the second part, then \(f\) is finite-to-one on \(\max[FS(y_ n)] = \max(\{ y_ n: n\in \omega \})\).
+<ul>
+<li>Consider some point in the image of \(f\), say \(k\).</li>
+<li>If for some \(y_ n\) we have \(f(\max(y_ n)) = k\), then \(k = f(\max(y_ n)) \geq \min(y_ n)\) by our assumption.</li>
+<li>But how many \(y_ n\) can there be with \(\min(y_ n) \leq k\)? At most \(k\)-many!
+<ul>
+<li>The \(y_ n\) will have pairwise distinct minima. Why?</li>
+<li>Remember that for \(n\neq m\) we naturally have \(y_ m + y_ n \in FS(y_ n)\subseteq FS(x_ n)\).</li>
+<li>By the growth condition of the \(x_ n\), we know that \(y_ n\) and \(y_ m\) are sums of disjoint sets of \(x_ n\)'s.</li>
+<li>In particular, their minima will differ!</li>
+</ul>
+</li>
+<li>Therefore, \(f\) is finite-to-one.</li>
+</ul>
+</li>
+<li>And now the cheating: the last argument shows that \(f^{-1}(k)\) is at most size \(k\). To be able to make any finite-to-one function an \(k\)-to-one function is, in fact, equivalent to being a rapid ultrafilter. It's a nice exercise, but feel free to insist in the comments.</li>
+</ul>
+<p>This theorem is the reason I originally (back in 2010, in my conversations with Jana at BLAST) thought there's a chance that all strongly summable ultrafilters are rapid. First, \(\max\) is a finite-to-one function. It's an old, probably folklore result (cf. <a href="http://dx.doi.org/10.1090/S0002-9939-1980-0548093-2#sthash.ygG3UBVz.dpuf">Miller, 1980</a>) that the finite-to-one image of a rapid ultrafilter is again rapid. Now the reverse is not true <em>but</em> our function \(\max\) is so easy that it's possible to prove this.</p>
+<p>[Edit May 22, 2012: modified attribution]</p>
+<blockquote>
+<p><strong>Theorem</strong> (Krautzberger (yep, this is it))<br>
+If \(p\) is strongly summable, then \(p\) is rapid.</p>
+</blockquote>
+<p>Here's the gist: the trick is simple: speed up functions by $ 2^n$ and let that sped-up function be dominated in the rapid image. Then we pick an FS-set in our strongly summable ultrafilter that witnesses this domination, in particular, it's generating sequence will dominate that sped-up function. Finally, just as in our initial observations in the first post, the FS-set will still grow fast enough to dominate the original function.</p>
+<ul>
+<li>By Matet's theorem pick \(FS(x_ n) \in p\) such that \(\max(p)\) is rapid.</li>
+<li>Now pick any \(f: \mathbb{N} \rightarrow \mathbb{N}\).</li>
+<li>We may assume that \(f\) is strictly monotone (that's all the functions we need to dominate).</li>
+<li>By Matet's theorem we can find a set \(A \in \max(p)\) that dominates $f \circ 2^{n+1} $.</li>
+<li>Now fix $ FS(y_ n) \subseteq FS(x_ n), FS(y_ n) \in p $ such that \(\max[FS(y_ n)] \subseteq A\); for simplicity, we can assume that the \((y_ n)_ {n\in \omega}\) also satisfy the growth condition.</li>
+<li>Then \(FS(y_ n)\) dominates \(f\).
+<ul>
+<li>Let \(i\in \mathbb{N}\). We'll show that \(\left\vert FS(y_ n) \cap f(i)\right\vert  &lt; i\).</li>
+<li>Pick the maximal \(y_ k &lt; f(i)\).</li>
+<li>So \(f(i) \cap FS(y_ n) \subseteq f(i) \cap FS(y_ 0,\ldots, y_ k)\), i.e., we only need to find out how large \(k\) is.</li>
+<li>Of course, \(f(i) > y_ k \geq \max(y_ k)\).</li>
+<li>Now \(\max[FS(y_ n)] = \max[\{ y_ n: n \in \omega\} ] \subseteq A\), so \(\max(y_ k)\) is greater or equal to the \(k\)-th element of \(A\).</li>
+<li>Since the \(A\) dominates \(f\circ (2^{n+1})\), this gives us \(\max(y_ k) > f(2^{k+1})\).</li>
+<li>By \(f\)'s monotonicity, $ i &gt; 2^{k+1}$,</li>
+<li>But the set \(FS(y_ 0,\ldots, y_ k)\) contains exactly $ 2^{k+1}$-many elements, i.e., less than \(i\)-many elements -- precisely as desired.</li>
+</ul>
+</li>
+</ul>
+<p>Whew, ok. That's done.</p>
+<h3>Jana asked one more question</h3>
+<p>After I got around to writing my argument up properly after the conference, Jana asked me whether there are could be other rapid idempotent ultrafilters. In particular, could there be so-called <em>minimal idempotents</em> which are rapid? This, again, sounded rather drastic to me. Minimal idempotents have extremely rich algebraic properties, in particular, any set in them is central and thus all versions of the Central Sets Theorem hold for such sets (as opposed to FS-sets where no FS-set with the growth condition satisfies even the simplest <a href="/0079/">Central Sets Theorem</a>).</p>
+<p>But, of course, by now I was skeptical of my own skepticism.</p>
+<p>To understand this question, we have to go back to strongly summable ultafilters for a second. Due to Matet's result, we know that the existence of stongly summable ultrafilters imply the existence of rapid P-points. In particular, the existence of strongly summable ultrafilters cannot be proved using ZFC alone.</p>
+<p>But speaking of P-points and rapidity, it is a famous open problems whether there is a model with neither P-points nor Q-points. We can achieve a model without P-points and a model without Q-points, but incidentally not both. (As a taste of the problem: the continuum must at least be \(\omega_ 3\) in such a model.)</p>
+<p>On top of that, there exists a model without rapid ultrafilters (hence without Q-points), but disturbingly, afaik, nobody has a model without Q-points but with rapid ultrafilters! In other words, all known models without Q-points are without rapid ultrafilters (but with P-points).</p>
+<p>Also, as a consequence of the big open question, any known model without P-points has Q-points, hence rapid ultrafilters.</p>
+<p>What I'm trying to say is that Jana's question leads to a whole bunch of interesting and classical open problems. So it was very much worth thinking about.</p>
+<p>If there are other rapid idempotents, how do we get them? It turns out we can get the possibly strongest positive answer to this question.</p>
+<blockquote>
+<p><strong>Theorem</strong> (Krautzberger (yippie, another micro-contribution))<br>
+If there exists a rapid ultrafilter, then there exist rapid idempotent ultrafilters. In fact, then there exists a whole closed left ideal of rapid ultrafilters, in particular there are minimal idempotents which are rapid.</p>
+</blockquote>
+<p>As it turns out this follows easily from two well-known results on rapid ultrafilters which give us the following:</p>
+<blockquote>
+<p><strong>Proposition</strong><br>
+If \(p\) is rapid, \(q\) any ultrafilter, then \(q+p\) is rapid.</p>
+</blockquote>
+<ul>
+<li>Since \(p\) is rapid, the tensor product \(q\otimes p\) is rapid (this can be found in <a href="http://dx.doi.org/10.1090/S0002-9939-1980-0548093-2#sthash.ygG3UBVz.dpuf">Miller, 1980</a>).</li>
+<li>Also, the finite-to-one image of a rapid ultrafilter is rapid (again, see <a href="http://dx.doi.org/10.1090/S0002-9939-1980-0548093-2#sthash.ygG3UBVz.dpuf">Miller, 1980</a>).</li>
+<li>But \(q+p = +(q\otimes p)\) and addition is a finite-to-one map.</li>
+<li>Hence \(q+p\) is rapid.</li>
+</ul>
+<p>Then the proof of the theorem is as follows:</p>
+<ul>
+<li>Let \(p\) be a rapid ultrafilter.</li>
+<li>Then \(\beta \mathbb{N} + p\) is a closed left ideal containing only rapid ultrafilters.
+<ul>
+<li>This is a closed left ideal since \(\cdot +p\) is a continuous map.</li>
+<li>If \(q\) is any ultrafilter, then \(q+p\) is rapid.</li>
+</ul>
+</li>
+<li>Every closed left ideal contains (by compactness) a minimal left ideal which in turn contains a minimal idempotent (that's one way of defining them, actually).</li>
+</ul>
+<p>This theorem seems very strong to me. If I have one rapid, I have an entire closed left ideal of rapid ultrafilters -- that's one of the crucial structures in Algebra in the Stone–Čech compactification!</p>
+<p>If you happen to have strongly summable ultrafilters, this gives an even nicer observation. You see, the definition of minimal idempotent can be given in terms of minimality in a certain partial order on the idempotents, namely</p>
+<p>\[p \leq q \text{ iff } p+q = q+p = p. \]</p>
+<p>There are two obvious related orders, $ p\leq_ R q$ iff \(q+p=p\), and \(\leq_ L\) (guess how it's defined). It's an easy exercise (really), that minimality in either partial order is minimality in all others.</p>
+<p>An old result is that strongly summable ultrafilters are right maximal (in fact, strongly right maximal: \(x+p=p\) has only one solution, \(x=p\)).</p>
+<p>This means that assuming we have strongly summable ultrafilters, then we have a &quot;full spectrum&quot; of rapid idempotents -- from right maximal all the way to (right) minimal.</p>
+<hr>
+<p>Well, and that's all folks. I hope you enjoyed my little experiment as much as I have. I'll certainly write a follow-up post when I've decided where to put a fixed copy of this.</p>
+<p>Please let me know if you find any errors in the proof and, more importantly, if you think I should clarify certain parts.</p>
+<hr>
+<p><em>Comments</em></p>
+<ul>
+<li><strong>Andreas Blass</strong>, 2012/04/15<br>
+I think you’re giving me (and Neil Hindman) more credit than we deserve.  In the theorem that you attribute to us and to Pierre Matet, the part about rapidity of max is, if I remember correctly, due solely to Matet.  I believe the only occurrence of “rapid” in that joint paper by Neil and me is in the paragraph acknowledging Pierre’s work.<br>
+Also, at the end of the proof of that theorem, you get that the function f can take any value k at most k times on the y’s.  But it’s the FS set generated by the y’s that is in the ultrafilter, and on that set it seems that f can take the value k about \(2^k\) times.  That does no real harm; this weaker conclusion still implies rapidity because you can compose f with an exponential function.
+<ul>
+<li><strong>Andreas Blass</strong>, 2012/04/15<br>
+Ignore (or better delete) the second half of my previous comment.  I was thinking too much about your theorem and not about Matet’s.
+<ul>
+<li><strong>Peter</strong>, 2012/05/21<br>
+I’m sorry for not responding to this. If you insist, I will delete it.</li>
+</ul>
+</li>
+<li><strong>Peter</strong>, 2012/04/18<br>
+Thank you for your comments, Andreas! Why I give you and Neil credit is because the proof is from your paper. It’s just that your paper doesn’t actually mention that the proof therein shows rapidity, instead refers to Matet.<br>
+On the other hand, I couldn’t reconstruct Matet’s proof from his paper. I remember that I once understood it and that back then I thought both proofs are the same but looking at Matet’s paper again for this post I found it hard to get back into his notation of filters on partitions.</li>
+</ul>
+</li>
+<li><strong>Neil Hindman</strong>, 2012/05/21<br>
+I have not yet understood the proof that strongly summable ultrafilters are rapid.  But I have gone through the proof that if there are rapid ultrafilters, then there is a closed left ideal consisting of such things.  You are way too modest in calling it a micro contribution.  The proof is, indeed, very simple.  But you should be congratulated for coming up with it, and Jana should be congratulated for asking the question.  It is to me very shocking that such things can be found in the smallest ideal.  Had Jana asked me — and who knows, maybe she did — I would have said “of course not” without thinking.
+<ul>
+<li><strong>Peter</strong>, 2012/05/21<br>
+Thank you for your kind words, Neil.<br>
+I hope I can clarify any questions you may have about the other result.</li>
+</ul>
+</li>
+<li><strong>David Fernandez</strong>, 2013/10/17<br>
+Hi Peter! I just went through your proof that strongly summable ultrafilters are rapid (the one that you uploaded to the arXiv). There's a little detail that bothers me, and it's your way of phrasing Theorem 1, which is a result of Blass and Hindman. It seems to me that you do need to explicitly state that the sequence \(x_n\) given by this Theorem satisfies \(x_n&amp;gt;\sum_{k&amp;lt;n}x_k\) for every \(n\) (you do so here in the blog post, but not in the arXiv paper). Because afterwards, in the proof of Theorem 3 (which is the same proof that appears here), once you've got your sequence \(y_k\) (it's also worth noting that we assume \(y_k\) is increasing, by the way), you're implicitly using the fact that if \(k&amp;lt;l\) then \(x_n-\mathrm{max}(y_k)&amp;lt;x_n-\mathrm{max}(y_l)\) (i.e. that bigger members of the sequence \(y_k\) must have bigger \(x_n\)-maximum). This seems to me to be crucial for the step where you say that any \(x_n-\mathrm{max}(y_k)\) is greater than or equal to the \(k\)-th element of \(A\). At least I don't see how else to justify this step without the stronger assumption on \(x_n\), which in any case doesn't affect either the veracity of the theorem nor the main ideas of its proof.<br>
+On another note, I have to say that I don't agree with a sentence that you wrote on the second paragraph of Section 1: that &quot;it should be straighforward to extend the two results to countable semigroups with finite-to-one multiplication maps in general&quot;. I don't think this is straighforward at all! The core of the issue is again the same Theorem 1, of Blass and Hindman, saying that a strongly summable ultrafilter has a base of sets \(\mathrm{FS}(x_n)\) where the addition &quot;behaves like disjoint union&quot;. This is a theorem that was only recently generalized to most abelian groups, but fails badly for example in the Boolean group \(([\omega]^{&amp;lt;\omega},\bigtriangleup)\) (those are results of mine, hehe) (and I don't think anyone has any idea of what happens in non-abelian semigroups, though in a recent paper of Hindman and Lakeshia Legette Jones the case of the free semigroup is partially dealt with). In fact, it's possible to construct, on the Boolean group, a strongly summable ultrafilter that's not additively isomorphic to any union ultrafilter, so this is as far as one can get from &quot;sums behaving like disjoint unions&quot; (this is all in here: <a href="http://arxiv.org/abs/1306.5421">http://arxiv.org/abs/1306.5421</a> ). I believe it would be interesting to see if this crazy ultrafilter is rapid or not...
+<ul>
+<li><strong>David Fernandez</strong>, 2014/02/11<br>
+Hi again, Peter.<br>
+It’s been some months since I posted my comment above. Now I can say that your result is also true for strongly summable ultrafilters on the Boolean group (I just proved it, and I plan to add it to my preprint linked to above). That, together with your result, takes care of all abelian groups: so rapidity follows from strong summability in any such group (hence in any abelian cancellative semigroup as well).</li>
+<li><strong>Peter</strong>, 2014/02/16<br>
+David that’s great news! I’m sorry I never got around replying to your earlier comment (let alone think about your question). I’m glad to hear that this side comment turned into an interesting result! By the way, will you be in Bonn for the INFTY conference in March?
+<ul>
+<li><strong>David Fernandez</strong>, 2014/03/07<br>
+No, it looks like I’m not going to that side of the pond anytime soon… but it would be good if we talk (maybe skype, or something) about this sometime (and include David (Chodounski)).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Rapid idempotent ultrafilters">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0104/ -->
+	</body>
+</html>

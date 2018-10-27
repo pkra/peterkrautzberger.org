@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Understanding the Central Sets Theorem</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Understanding the Central Sets Theorem</h1>
+  <span class="post-date"><time datetime="2010-04-18">18 Apr 2010</time></span>
+  <p>To write the first post on the new domain I thought I might just write a little about what I’ve been studying recently — the Central Sets Theorem.</p>
+<p>This theorem dates back to the 70s and the original formulation and proof are due to <a href="http://en.wikipedia.org/wiki/Hillel_Furstenberg">Hillel Furstenberg</a>. In its current form as found say in <a href="http://nhindman.us/research/newcentral.pdf">De, Hindman, Strauss</a> (<a href="http://doi.org/10.4064/fm199-2-5">DOI</a>) it is probably the strongest algebraic partition theorem around. I had encountered the theorem many times before, in books, lectures, papers and talks but I never truly developed an understanding for it. Since I recently felt it might give me an edge in a problem I’m working on I decided to take a better look.</p>
+<h3>Detour 1 — metamathematics</h3>
+<p>How do you achieve an understanding of a theorem? In an incomplete list I would include the following</p>
+<ul>
+<li>Understand its most important application or corollary</li>
+<li>Understand its statement</li>
+<li>Understand its proof</li>
+<li>Improve its proof</li>
+<li>Understand how to come up with the proof</li>
+<li>Give a different proof</li>
+<li>Improve the theorem</li>
+</ul>
+<p>I would say this list is in increasing order of understanding but that’s open for discussion.</p>
+<p>I might write about the history (and applications) of the Central Sets Theorem some other time, but here I want to focus on its formulation; in fact, I don’t even want to write about what it means to be <a href="http://en.wikipedia.org/wiki/Partition_regularity">central</a> (sorry) except that it is a <a href="http://en.wikipedia.org/wiki/Partition_regularity">partition regular</a> notion.</p>
+<h3>Formulation</h3>
+<p>So, what does the usual formulation look like?</p>
+<p><strong>Central Sets Theorem</strong><br>
+Imagine you are given finitely many sequences in a commutative semigroup \((S,+)\), say \(\mathbf{y^0}, \ldots, \mathbf{y^\alpha}\) as well as a central set \(C \subseteq S\).<br>
+Then you can find a sequence \(\mathbf{a}\) in \(S\) as well as a sequence \(\mathbf{h}\) of non-empty, disjoint and finite subsets of \(\mathbb{N}\) such that for \(\beta \leq \alpha\)</p>
+<p>\[ FS ( {a_n} + {\sum_{i \in h_n} y_i^\beta} ) \subseteq C. \]</p>
+<p>Complicated, no? I mean, a random bunch of sequences, some strange set and you find some other sequence and some weird subsets of of the natural numbers and then the <a href="http://en.wikipedia.org/wiki/IP_set">IP-set</a> of some strange sums are in that strange set — <strong>ye what?</strong></p>
+<p>Let’s cut it down a little and just consider the case \(\alpha = 0\).</p>
+<p><strong>simple Central Sets Theorem</strong><br>
+Imagine you are given a sequence \(\mathbf{y}\) in a commutative semigroup \((S,+)\) as well as a central set \(C \subseteq S\).<br>
+Then you can find a sequence \(\mathbf{a}\) in \(S\) as well as a sequence \(\mathbf{h}\) of non-empty, disjoint and finite subsets of \(\mathbb{N}\) such that</p>
+<p>\[ FS ( {a_n} + {\sum_{i \in h_n} y_i} ) \subseteq C. \]</p>
+<h3>Detour 2 — oversimplification</h3>
+<p>Even this special case of the standard formulation somehow focuses on aspects that get me sidetracked. So I attempted to formulate it in a way that gives (me) better focus.</p>
+<p>Now, the theorem says all kinds of complicated things about the existence of a sequence of disjoint finite subsets of \(\mathbb{N}\). Can I get around this? I thought I should be able to. Let’s start with a much weaker version of the theorem.</p>
+<p><strong>A weak simple Central Sets Theorem</strong><br>
+Imagine you are given a subsemigroup \(T \subseteq \mathbb{N}\) as well as a central set \(C \subseteq \mathbb{N}\).<br>
+Then you can find a sequence \(\mathbf{a}\) in \(\mathbb{N}\) as well as a sequence \(\mathbf{b}\) in \(T\) so that</p>
+<p>\[ FS ( {a_n} + {b_n} ) \subseteq C. \]</p>
+<p>I find this weaker version much easier to understand. It just says that I can always translate infinitely many elements from a given subsemigroup into the central set; additionally the finite sums stay within the set.</p>
+<p>This is much weaker than the statement before. Of course, given a sequence \(\mathbf{y}\) we could consider the generated subsemigroup and use the weaker version. But this would not guarantee the result of applying the Central Sets Theorem — Furstenberg’s theorem gives much more control over which elements are picked since there are no repititions in the sums of the generators.</p>
+<h3>Partial Semigroups</h3>
+<p>So where does this leave us? Well, when I hear finite subsets of \(\mathbb{N}\) I think of my favourite structure — in fact the favourite structure for a lot of algebra in the <a href="http://en.wikipedia.org/wiki/Stone%E2%80%93%C4%8Cech_compactification#Addition_on_the_Stone.E2.80.93.C4.8Cech_compactification_of_the_naturals">Stone–Čech compactification</a> on \(\mathbb{N}\), the semigroup \(\delta \mathbb{F}\). But let’s step back a little. The best way to think about \(\delta \mathbb{F}\) is in terms of partial semigroups.</p>
+<p><strong>(Adequate) Partial Semigroups</strong><br>
+A <em>partial semigroup</em> operation on a set \(S\) is a map \(\cdot: S \times S \rightarrow S\) such that associativity \(s \cdot (t \cdot u) = (s \cdot t) \cdot u\) holds in the sense that if one side is defined so is the other and they are equal. A partial semigroup is <em>adequate</em> if the sets</p>
+<p>\[
+ \sigma(s) := \left\\{ t\in S : {s \cdot t} \mbox{ is defined} \right\\}
+ \]   generate a filter, i.e., finitely many elements have a common compatible element.</p>
+<p>This notion was introduced by <a href="http://www.math.lsa.umich.edu/~ablass/bbh.pdf">Bergelson, Blass and Hindman</a> (<a href="http://doi.org/10.1112/plms/s3-68.3.449">DOI</a>) in the 90s. It tells us that the operation, although partial, is associative in a strong way. Additionally, it makes sure the operation is not just empty but defined for many elements (well, ok it could be just one for all, but that’s not the point).</p>
+<p>For ultrafilters the critical point is the following.</p>
+<p><strong>The semigroup \(\delta S\)</strong><br>
+Given an adequate partial semigroup and \(p,q\) ultrafilters containing all \(\sigma(s)\). Then the operation</p>
+<p>\[
+ p \cdot q = \left\\{ A \subseteq S : \left\\{ s : \left\\{ t : s \cdot t \in A \right\\} \in q \right\\} \in p \right\\}
+ \]</p>
+<p>is well-defined and associative and semi-continuous. In other words, \(\delta S\) is a closed semi-continuous semigroup.</p>
+<p>Now this is somewhat surprising. Even though our operation is partial, these ultrafilters are a full semigroup! With all the bells and whistles it takes to do algebra in the Stone–Čech compactification.</p>
+<p>What does this have to do with the Central Sets Theorem?</p>
+<p>Denote the non-empty, finite subsets of \(\mathbb{N}\) by \(\mathbb{F}\). Consider the restriction of \(\cup\) on \(\mathbb{F}\) defined by</p>
+<p>\[
+ s + t \mbox{ defined } \Longleftrightarrow \max(s) \cap \min(t) = \emptyset.
+ \]</p>
+<p>Then in fact this constitutes a partial semigroup, adequate at that.</p>
+<p>This partial semigroup structure could be called the free partial semigroup in the following sense: given any sequence \(\mathbf{s}\) in any semigroup \(S\) we can consider the induced partial semigroup on the set of finite sums \({FS( \mathbf{s} ) }\): we only allow sums where the index sets are disjoint (so that we are closed under our partial operation). Then all \(FS\)-sets are naturally isomorphic (in the appropriate sense of partial semigroups).</p>
+<h3>The weak version revisited</h3>
+<p>To come back to the weak version of the Central sets theorem — partial semigroups are exactly what it talks about. So let us reformulate,</p>
+<p><strong>simple Central Sets Theorem</strong><br>
+Imagine we are given a partial subsemigroup \(T\) of \((S,+)\) as well as a central set \(C \subseteq \mathbb{N}\). Then we find sequences \(\mathbf{a}\) in \(\mathbb{N}\) and \(\mathbf{t} \in T\) such that \(FS ( {t_n} ) \subseteq T\) and</p>
+<p>\[
+  {FS( a_ {n} + t_{n}) \in C.}
+ \]</p>
+<p>Now this sounds much closer to the original theorem. Since any sequence generates a partial semigroup on its \(FS\)-set (isomorphic to \(\mathbb{F}\)), this is in fact the Central Sets Theorem for just one sequence.</p>
+<h3>Leaving the simplification</h3>
+<p>However, the actual theorem is more than just some kind of induction on the above version. It is considerably stronger and here it is time to let go of the simplifications of partial semigroups again. For the theorem really does talk about \(FS\)-sets, i.e., partial semigroups isomorphic to \(\mathbb{F}\). The strength lies in the fact that the infinite sequences can be chosen uniformly in the sense that we pick from the different partial semigroups in the same prescribed way.</p>
+<p><strong>Central Sets Theorem</strong><br>
+Imagine you are given finitely many \(FS\)-sets in a commutative semigroup \((S,+)\), say \({FS( {\mathbf{y^0}} )}, {\ldots}, {FS( {\mathbf{y^\alpha}} )}\) as well as a central set \(C \subseteq S\).<br>
+Then you can find a sequence \(\mathbf{a}\) in \(S\) as well as one disjoint sequence \(\mathbf{h}\) in \(\mathbb{F}\) such that for all \(\beta \leq \alpha\)</p>
+<p>\[ FS ( {a_n} + {\sum_{i \in h_n} y_i^\beta} ) \subseteq C. \]</p>
+<p>To see this strength at work it is time to look at the classical application.</p>
+<p><strong>Central sets in \(( \mathbb{N},+)\) contain arbitrarily long arithmetic progressions</strong><br>
+Take \(\mathbf{y^\beta}\) to be the multiples of \(\beta\) (for \(\beta \leq \alpha\)). Then the central set theorem guarantees we find \(a_1, h_1\) such that for all \(\beta \leq \alpha\)</p>
+<p>\[ (a_1 + \beta \cdot \sum_{i\in h_1} i) \in C.\]</p>
+<p>For this application is obviously critical that the to-be-translated elements can be chosen uniformly. That’s all for now but I hope I can write a follow up some other time.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Understanding the Central Sets Theorem">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0015/ -->
+	</body>
+</html>

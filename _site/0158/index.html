@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Red workbook, p12</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Red workbook, p12</h1>
+  <span class="post-date"><time datetime="2014-03-23">23 Mar 2014</time></span>
+  <h3>Source</h3>
+<figure>
+  <a href="/assets/2014/red_workbook-p12.jpg">
+    <img alt="red workbook, p12" src="/assets/2014/red_workbook-p12.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, p.12
+  </figcaption>
+</figure>
+<h3>Transcript</h3>
+<ul>
+<li>WA \(\stackrel{p = q + r}{\Longrightarrow}\) (i) \(\forall k \in \mathbb{N}, W_ v \in r: \left\vert W_ v \cap W_ v+k\right\vert &lt; \omega\)</li>
+<li>[struck through] (ii) \(\forall k \in \mathbb{N}: k \in V \rightarrow 2k \notin V\) (\(k\) und \(2k\) haben versch. \(W_ v\))</li>
+<li>
+<hr>
+</li>
+<li>Beweis: $ p = q+r$ beide in \(\mathbb{N}^*\), \(A\in p\).
+<ul>
+<li>=&gt; $ \displaystyle A = \bigcup_ {\underset{\in p}{v\in V}} v + \underset{\in r}{W_ v}$ =&gt; \(\exists v, k: v, v+k \in V\)
+<ul>
+<li>[ \(q \in \mathbb{N}^*\)]</li>
+</ul>
+</li>
+<li>=&gt; \(W_ v \cap W_ {v+k} =: W \in r\), also unendlich</li>
+<li>=&gt; \(\underbrace{v+W} ,v+k+W \in A\)
+<ul>
+<li>=&gt; \(v+k+W \in A+k\) =&gt; Beh.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Notiz: es gibt kofinal viele solche \(k\)'s! □</li>
+<li>(2) Ein solches \(k\) liefert mit Aufzaehlung von \(A \cap A+k\)
+<ul>
+<li>eine kofinale Folge, so dass \(\left\vert a_ {n_ k} - a_ {n_ j -1}\right\vert \leq k\).</li>
+<li>Also kann keine Aufzaehlung jede Schranke auf Endstuecken uebertrefeen.</li>
+</ul>
+</li>
+<li>
+<hr>
+</li>
+<li>Gilt &lt;= ? d.h. \(p\in \mathbb{N}^* \forall A\in p: \underset{\text{unendl}}{ \{ k: A \cap A+k \text{ unendl.} \}}\)
+<ul>
+<li>=&gt; \(p \in \mathbb{N}^* + \mathbb{N}^*\)</li>
+</ul>
+</li>
+</ul>
+<h3>partial Translation</h3>
+<ul>
+<li>Assume to the contrary. \(\stackrel{p = q + r}{\Longrightarrow}\) (i) \(\forall k \in \mathbb{N}, W_ v \in r: \left\vert W_ v \cap W_ v+k\right\vert &lt; \omega\)</li>
+<li>[struck through] (uu) \(\forall k \in \mathbb{N}: k \in V \rightarrow 2k \notin V\) (\(k\) and \(2k\) have different. \(W_ v\))</li>
+<li>
+<hr>
+</li>
+<li>Proof: $ p = q+r$ both in \(\mathbb{N}^*\), \(A\in p\).
+<ul>
+<li>=&gt; $ \displaystyle A = \bigcup_ {\underset{\in p}{v\in V}} v + \underset{\in r}{W_ v}$ =&gt; \(\exists v, k: v, v+k \in V\) [[since]] \(q \in \mathbb{N}^*\) [[ \(V\) is infinite, thus contains two elements]]</li>
+<li>=&gt; \(W_ v \cap W_ {v+k} =: W \in r\), hence infinite</li>
+<li>=&gt; \(\underbrace{v+W} ,v+k+W \subseteq A\)
+<ul>
+<li>and \(v+k+W \in A+k\) =&gt; Claim.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Remark: there are cofinal many such \(k\)! □</li>
+<li>(2) With such \(k\) we can find an enumeration \(A \cap A+k\) and some cofinal enumeration \(\left\vert a_ {n_ k} - a_ {n_ j -1}\right \vert \leq k\).
+<ul>
+<li>Hence no enumeration can exceed an arbitrary bound on end pieces</li>
+</ul>
+</li>
+<li>
+<hr>
+</li>
+<li>Does &lt;= hold? d.h. \(p\in \mathbb{N}^* \forall A\in p: \underbrace{ \{ k: A \cap A+k \text{ infinite}\}}_ {\text{infinite}}\)
+<ul>
+<li>=&gt; \(p \in \mathbb{N}^* + \mathbb{N}^*\)</li>
+</ul>
+</li>
+</ul>
+<h3>Notes</h3>
+<p>This finishes the attempts to solve 4.1.7 from Hindman&amp;Strauss (successfully). Given the nice write up of the solution, I'm guessing I worked the proof out someplace else (blackboard, separate piece of paper etc). This reminds me that in the office I was working in at the time I found this wonderful stack of thick letter size paper (letter size! in Germany!). I loved writing on the paper for rough drafts, preparing talks/lecture notes etc. But it clashed with my desire to keep notebooks.</p>
+<p>This page is extremely fascinating for me because of the final question. It's always easy to ask yourself if the reverse of a proposition holds; that's just standard. In this case, the answer should be a pretty straight forward &quot;no&quot;; however, I don't think I ever worked out a counterexample.</p>
+<p>But that's not what makes this so fascinating for me. What is fascinating is that I spent a lot of time during my postdoc to solve a very similar problem (and failed) which I consider one of the most interesting questions about idempotent filters. Unfortunately, I was unable to solve the question. I don't want to go into detail here and it will take months until we get to that (a teaser never hurts, right?). It's fascinating to see that I was very nearly thinking about the very same problem this early in my PhD (and, not surprisingly, missed the actually interesting question at this point).</p>
+<h3>Open questions</h3>
+<ul>
+<li>If $p\in \mathbb{N}^* $ and \(\forall A\in p: \underbrace{ \{ k: A \cap A+k \text{ infinite}\}}_ {\text{infinite}}\), does it follow that $p \in \mathbb{N}^* + \mathbb{N}^* $?
+<ul>
+<li>Probably no -- there needs to be more additive structure, in a coherent/filter fashion; just infinite seems too weak.</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Red workbook, p12">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0158/ -->
+	</body>
+</html>

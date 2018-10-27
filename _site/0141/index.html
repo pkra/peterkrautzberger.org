@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MathML Forges On -- notes, AAP leftovers, and a summary</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">MathML Forges On -- notes, AAP leftovers, and a summary</h1>
+  <span class="post-date"><time datetime="2013-11-02">02 Nov 2013</time></span>
+  <p><a href="/0140/">&quot;The end (tm)&quot; of MathML in Chrome this week</a> happened to coincide with a piece I had been working on for a while now and which was published at O'Reilly's Programming blog (<a href="http://programming.oreilly.com/2013/11/mathml-forges-on.html">&quot;MathML Forges On&quot;</a>) yesterday. Originally, I had meant to write something for O'Reilly's TOC blog earlier this year, but then the TOC conference was retired (and so was the blog) so things got delayed.</p>
+<p>Then in the summer, the ever fantastic <a href="https://twitter.com/tzviyasiegman">Tzviya Siegmann</a> pulled me into the <a href="https://web.archive.org/web/20150329081435/http://publishers.org/epub3implementationproject/">AAP's EPUB implementation project</a> and so I had a chance to be active in both the features and the accessibility groups. It was an extremely interesting experience all around so just two points. First, I am amazed at the work of the group leaders, handling the difficulties of running such a complex project, in a very short time, with a highly diverse group of participants. Second, it was an experience to, well, experience anti-trust concerns like that. While frustrating at times, I didn't find this tragic in the end; there was more to lose than to gain. But it felt strange to be on the other end of the stick, so to speak, wanting to drive publishers and reading systems to close collaboration so that we can finally get decent support for math &amp; science in ebooks. The <a href="https://web.archive.org/web/20150330160835/http://www.publishers.org/press/117/">AAP white paper came out</a> this week.</p>
+<p>During that time I also wrote the first drafts for &quot;MathML Forges On&quot; (the title was a suggestion of Simon St. Laurent who has been a great editor). I want to thank Fred Wang, David Carlisle, Neil Soiffer and Dave Barton for many helpful comments and Sanders Kleinfeld for being a matchmaker, twice.</p>
+<p>During the AAP project, I also summarized the technical details a little with suggestions for the short term. This wasn't useful to the AAP project but there's no reason to throw it away -- so here it is.</p>
+<h2>A sort of summary</h2>
+<blockquote>
+<p><strong>Note.</strong> This was written with the following question in mind: how can we speed up MathML adoption in epub3? Well, one way would be to understand what level of support can be achieved in the short term. Since full MathML 3 support is simply not available, compromises have to be made. This means creating guidelines for publishers to ensure their content can be supported and for reading systems to understand how they can support that level. And for both sides to push each other -- publishers, pushing reading systems by pointing out an achievable level of support; reading systems pushing publishers to create reasonable MathML.</p>
+</blockquote>
+<p>Native MathML support in browser is limited to partial support in Firefox and Safari; JavaScript polyfills are available and have been used in reading systems.</p>
+<p><strong>Recommendation</strong>: &quot;Firefox 24&quot;-level MathML support is a good baseline in the short term (6-12 months). This amount of MathML support covers most publishing needs and any ePub3 reading system can realistically provide this level of support via Gecko or polyfills within 6 months. The open source STIX and Asana fonts should be the default math fonts since technical limitations make them the only widely supported fonts in web environments.</p>
+<h3>Browser support</h3>
+<ul>
+<li>Firefox: production ready. Good support for MathML, details at <a href="https://developer.mozilla.org/en-US/docs/Mozilla/MathML_Project/Status">https://developer.mozilla.org/en-US/docs/Mozilla/MathML_Project/Status</a>. Notably missing: linebreaking, elementary math, mtable labels and some mtable alignment attributes.</li>
+<li>Safari/WebKit: not production ready. Partial MathML support, details <a href="https://trac.webkit.org/wiki/MathML%20Status">https://trac.webkit.org/wiki/MathML%20Status</a>. Notably limited/missing: horizontal stretch characters, multiscripts, RTL, linebreaking, elementary math, most mtable attributes.</li>
+<li>IE: no support for MathML. For older IE versions (6-9), the MathPlayer plugin offers virtually complete MathML support.</li>
+<li>Chrome: no support for MathML.</li>
+</ul>
+<h3>Polyfill support</h3>
+<ul>
+<li>MathJax: good MathML support, high rendering quality, details at <a href="http://docs.mathjax.org/en/latest/mathml.html">http://docs.mathjax.org/en/latest/mathml.html</a>. Notably missing are RTL, elementary math, and advanced mtable alignments.</li>
+</ul>
+<p>MathJax is modular, its primary output options are HTML and SVG, where it implements the TeX layout algorithm. MathJax can also augment native MathML output in Safari and Firefox (trading speed for layout quality). MathJax offers accessibility features (zoom, scale, copy&amp;paste) and works well with existing math accessibility solutions (MathPlayer, ChromeVox). MathJax has been integrated into epub3 reading systems such as Readium, Vitalsource Bookshelf, Azardi and IDEAL reader.</p>
+<ul>
+<li>Jqmath: MathML support is undocumented but will cover MathML 2; it exceeds WebKit/Safari and can render low-complexity content on par with Firefox, see <a href="http://mathscribe.com/author/jqmath.html">http://mathscribe.com/author/jqmath.html</a>.</li>
+</ul>
+<p>Jqmath tweaks browser layout instead of implementing a separate algorithm, trading speed for layout quality. Jqmath tries to be font agnostic and assumes browsers can access the necessary fonts and unicode points. Since its developer contributed to WebKit's MathML support, it works particularly well on Safari (augmenting the MathML output).</p>
+<h3>Fonts</h3>
+<p>Fonts are a particularly complex issue for mathematics and MathML. Here are a few problems:</p>
+<ul>
+<li>most fonts do not contain mathematical characters and cannot be used.</li>
+<li>many mathematical and scientific characters lie outside the unicode BMP but only very recent browser versions support non-BMP codepoints.</li>
+<li>MathML requires stretchy characters build out of multiple glyphs (such as parenthesis, braces, root signs etc); some of these do not have unicode points associated with them. To work around these issues:
+<ul>
+<li>Gecko/Firefox has hardcoded support for some fonts. Fully supported are only STIX and Asana Math, see <a href="https://developer.mozilla.org/en-US/docs/Mozilla/MathML_Project/Fonts">https://developer.mozilla.org/en-US/docs/Mozilla/MathML_Project/Fonts</a></li>
+<li>Safari only supports some stretchy constructions with unicode glyphs.</li>
+<li>MathJax provides fontdata for its own webfonts as well as STIX fonts. The upcoming MathJax v2.3 release will add custom webfonts for STIX, Asana Math, Neo Euler, and Gyre-Pagella.</li>
+<li>MathPlayer supports a number of the legacy 8 bit fonts (symbol, Euclid, Mathematica fonts, ...) that it knows how to map and should support all modern &quot;unicode&quot; fonts (fonts whose characters are in their Unicode spots). It only deals with plane 0 characters at the moment. For stretchy characters, MathPlayer needs to know what extension characters go with what characters. Again, it support a number of legacy 8 bit fonts as well as the STIX fonts.</li>
+</ul>
+</li>
+<li>Microsoft has developed (but not officially released) the OpenType MATH table extension which could eventually resolve these problems. However, no browser supports MATH tables; in addition, this kind of font data is not accessible to JavaScript. See also <a href="https://www.tug.org/TUGboat/tb30-1/tb94vieth.pdf">https://www.tug.org/TUGboat/tb30-1/tb94vieth.pdf</a></li>
+</ul>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20MathML Forges On -- notes, AAP leftovers, and a summary">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0141/ -->
+	</body>
+</html>

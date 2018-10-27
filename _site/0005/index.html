@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Working on the workflow</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Working on the workflow</h1>
+  <span class="post-date"><time datetime="2009-12-22">22 Dec 2009</time></span>
+  <p>Since I do want to try to post something once a week, I’ll recap my work towards a reasonable workflow. As I hinted at <a href="/0002/">before</a>, I’m currently aiming at a workflow of <a href="http://en.wikipedia.org/wiki/LaTeX">LaTeX</a> via <a href="http://en.wikipedia.org/wiki/TeX4ht">tex4ht</a> to <a href="http://en.wikipedia.org/wiki/Mathematical_Markup_Language">mathml</a> to blogspot. I have encountered a couple of problems, some of which I could overcome, some of which I could not and some of them turned out to be bugs or missing features.</p>
+<p>The main problem is that my LaTeX style is too complicated for tex4ht. Now obviously this is somewhat my fault and I should (and will) simplify and update my current style of typesetting. But I intend to experiment here and it would be much easier (and possible in a more consistent fashion) if I could “just” convert my LaTeX experiments to blog experiments. In any case, it bugs me whenever I cannot find the reason why some things fail but not others, so let me recount what I could figure out.</p>
+<p>One problem that I could find an explanation for is the <a href="http://en.wikipedia.org/wiki/Svg"><span class="caps">SVG</span></a> generation of <a href="http://en.wikipedia.org/wiki/PGF/TikZ">TikZ</a> code via tex4ht. In particular this combination cannot handle more complex text (mathematics or not) inside an svg, e.g., minipages within tikZ pictures are simply ignored entirely. Admittedly, this is documented in a short paragraph in the TikZ manual but it took me a while to find that…</p>
+<p>Speaking of manuals. I finally stumbled upon this <a href="http://tug.org/applications/tex4ht/mml.html#mml-prob">part of the tex4ht manual</a> where some of the common problems and restrictions of tex4ht are described. This helped a lot with a couple of small errors like the missing \bigcap in the <a href="/0004/">Matrices vs Idempotents</a> post. Most importantly, I now know where to look these things up, so maybe there’s hope for me after all.</p>
+<p>To make up for this and as a generally easy part of the workflow I added the first <span class="caps">PDF</span> via the very nice <a href="http://issuu.com/">issuu</a> . This is really no extra effort since issuu offers the code for embedding in blogspot — and I really like the viewer (as opposed to scribd).</p>
+<p>For the future I like the idea to include audio and video as well, especially after the accessibility discussion on What’s new. It seems simple enough these days to upload some flash based or html5 based audio and video based on a post and I hope to find time to experiment with such media. Up until now I used SciVee a bit for a seminar. But since they went commercial a while ago I have to see if scivee’s plans are reasonable given the competition — they seem to focus more on large entities like universities and buying bulk accounts (open access like).</p>
+<p>All in all, it’s going alright, even though the flow is far from what I want it to be. Let’s see what the holidays will lead to.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Working on the workflow">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0005/ -->
+	</body>
+</html>

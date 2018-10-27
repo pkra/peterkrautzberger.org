@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hindman&#39;s Theorem, partial semigroups and some of my most lacking intuitions (part 1)</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Hindman&#39;s Theorem, partial semigroups and some of my most lacking intuitions (part 1)</h1>
+  <span class="post-date"><time datetime="2011-08-23">23 Aug 2011</time></span>
+  <blockquote>
+<p>If you remember, <a href="/0073/">I mentioned</a> that I was working on a post on some research and it was getting out of hand. Well, it is still not finished, but long enough to start posting a series of posts.</p>
+</blockquote>
+<p>It's no secret that I love the mathematical world surrounding <a href="http://en.wikipedia.org/wiki/IP_set#Hindman.27s_Theorem">Hindman's Theorem</a>. Recently, I have been revisiting an old draft of mine. To get back into it, I want to jot down some informal notes about one of the research directions I think are worth pursuing -- even though I have no proof of this (pardon the pun). At the heart of this line of thought lies the notion of partial semigroups and, especially, my ideas for weaker forms of that notion. To fully make sense of it I have to take you from the elementary algebraic structures to less known structures to ultrafilters on those and finally to filters related to all of this.</p>
+<p>But let me start at the beginning so that you can still enjoy reading a little bit of what I want to express without being lost after 5 minutes.</p>
+<p><a href="http://en.wikipedia.org/wiki/IP_set#Hindman.27s_Theorem">Hindman's Theorem</a> is a typical Ramsey-type theorem, i.e., it tells us about a certain richness in some fixed mathematical structure (such as a graph in the original <a href="http://en.wikipedia.org/wiki/Ramsey%27s_theorem">theorem by Ramsey</a>), a richness which is <a href="http://en.wikipedia.org/wiki/Partition_regular">partition regular</a>:</p>
+<blockquote>
+<p><strong>Partition regular notions of richness</strong> If the structure is partitioned in to finitely many pieces (equivalently colored with finitely many colors), one piece (color) will have this kind of richness.</p>
+</blockquote>
+<p>More concretely, Hindman's Theorem is about algebraic structures, namely, semigroups. Semigroups, if you don't remember, are simply sets with an associative operation</p>
+<p>\[ (a \cdot b) \cdot c = a \cdot (b \cdot c).\]</p>
+<h2>semigroups? that's easy! subsemigroups!</h2>
+<p>If you are looking for partition regular notions and you meet a semigroup, you can, of course, ask yourself:</p>
+<blockquote>
+<p>Are semigroups partition regular?</p>
+</blockquote>
+<p>(Un)fortunately, that's not going to work.</p>
+<p>To give you a counterexample, let's look at the natural numbers, \(\mathbb{N}\), with the usual addition. Unlike <a href="http://en.wikipedia.org/wiki/Semigroup#Special_classes_of_semigroups">other research into semigroups</a>, almost all of the work in this Ramsey-theoretic area is connected to \(\mathbb{N}\).</p>
+<p>Ah, I just noticed: I have made a mistake. If you're a set theorist and \(\mathbb{N} = \omega\), then actually, this is going to work because \(0\) generates a subsemigroup (\(\{0\}\)), so whenever we partition \(\omega\), one part will include a subsemigroup. (more generally, monoids will do this and even more generally, semigroups with idempotent elements.)</p>
+<p>Oh well. But that's &quot;clearly&quot; not the point (especially if you're a set theorist). You'll most likely be interested in large, hopefully infinite structures -- and in any case, you're not interested in trivial solutions by idempotent elements...</p>
+<p>To get back to our example, we'll ignore \(0\) by adopting the convention most people in this area use:</p>
+<p>\[\mathbb{N} = \omega \setminus \{0\}\]</p>
+<h2>subsemigroup #Fail.</h2>
+<p>Subsemigroups have a nice property: they contain sets of 'multiples'. Given any element in the subsemigroup, we find all its 'multiples' since we can add it to itself repeatedly. Of course, for \((\mathbb{N},+)\) this really means we're talking about multiples in the natural sense.</p>
+<p>If we have (thanks to the heading of this section) the suspicion that semigroups are not partition regular, we need to find a partition such that no part contains a set of multiples.</p>
+<p>When I was lying in bed a couple of days ago, falling asleep but trying to put the ideas together for this post , it took me a while to come up with a partition. Since at the end I was actually asleep, I don't really remember how I got there. So I'm afraid I can't lead you to it, cannot communicate what intuitions about partitions of natural numbers came up in the process. If I would venture a guess, I probably just remembered the solution for a more complicated (i.e., weaker) structure. Not a grand revelation, I admit.</p>
+<p>So how do we do this? Well, the thing about multiples is that they are evenly spaced. So if the parts of our partition have a large interval missing, say larger than some given number \(a\), then that number's multiples will 'hit' that interval, i.e., there'll be a multiple of \(a\) in that interval, not in our part of the partition.</p>
+<p>So if we partition \(\mathbb{N}\) into quickly increasing intervals, say for simplicity</p>
+<p>\[ [1,10), [10,100), [100,1000) \ldots\]</p>
+<p>we can do the following: Collect every other interval, i.e.,</p>
+<p>\[A_0 := \bigcup_{i\in \omega} [10^{2i},10^{2i+1})\]</p>
+<p>and make \(A_1\) its complement \(A_1 = \bigcup_{i\in \omega} [10^{2i+1},10^{2i+2})\).</p>
+<p>Then both \(A_0\) and \(A_1\) have increasingly large gaps, arbitrarily large gaps.</p>
+<p>Now if we had a number in \(A_0\), then it will lie in one of the intervals. But it's multiples cannot skip the next interval -- it's far too big for that. I mean, if you start in \([100,1000)\), then you're best chance really is \(999\) -- and of course \(1998\) is far from being in the interval \([10000,100000)\)... Of course the same argument goes through for any other number (and also for \(A_1\)), just look at the highest multiple still in the interval and then double it.</p>
+<p>In other words, for any given number, not all multiples lie in the same part of the partition, i.e., neither \(A_0\) nor \(A_1\) contain a set of multiples -- in particular, neither contains a subsemigroup of \(\mathbb{N}\) -- #Fail.</p>
+<h2>I'm not just messing with you</h2>
+<p>Now you can ask yourself if this hope for partition regular structures within semigroups was all but a dream and there's simply no algebraic structure that survives.</p>
+<p>Luckily there's evidence dating back all the way to 1917 guaranteeing that at least <em>a tiny little bit</em> of algebraic structure will survive partitioning. <a href="http://en.wikipedia.org/wiki/Schur%27s_theorem#Ramsey_theory">Issai Schur proved</a> that if you partition \(\mathbb{N}\) into finitely many pieces, you will always find two numbers \(x,y\) such that \(x, y\) and \(x+y\) are in the same piece. (Of course, you'll find infinitely many such pairs.)</p>
+<blockquote>
+<p>It's not important, but the proof is quite simple actually, using Ramsey's Theorem (the original thing). Given a coloring of \(\mathbb{N}\), use that coloring to define a coloring of all unordered pairs of natural numbers: give \(\{x,y\}\) (with \(x &lt; y\)) the color of \(y-x\). By Ramsey's Theorem, there exists a homogeneous infinite set. Pick any three numbers \(x &lt; y &lt; z\) in that homogeneous set. Then \(z - y, z - x\) and \(y - x\) all have the same color -- which solves our problem, since \(z-y + y-x = z-x\) -- and notice how associativiy comes into play.</p>
+</blockquote>
+<h3>Outlook</h3>
+<p>In the next post, I'll try to point out how far we can push this search for algebraic structures.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Hindman&#39;s Theorem, partial semigroups and some of my most lacking intuitions (part 1)">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0075/ -->
+	</body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 2)</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 2)</h1>
+  <span class="post-date"><time datetime="2011-08-24">24 Aug 2011</time></span>
+  <blockquote>
+<p>Yesterday I finally <a href="/0075/">started this short series</a> with some small thoughts regarding partial semigroups. If you don't remember, all I did yesterday was to explain why semigroups are not, in general, partition regular using a simple partition of \(\mathbb{N}\). I was trying to keep your hopes up by pointing out Schur's Theorem.</p>
+</blockquote>
+<h2>So how far can we push?</h2>
+<p>There are essentially two paths to choose from here. The next step in a decent text book would probably tell you about <a href="http://en.wikipedia.org/wiki/Van_der_Waerden's_theorem">van der Waerden's Theorem</a> (1927), <a href="http://en.wikipedia.org/wiki/Rado%27s_theorem_(Ramsey_theory)">Rado's Theorem</a> (1970) or the <a href="http://en.wikipedia.org/wiki/Folkman's_theorem">Folkman-Rado-Sanders Theorem</a> (Sanders being the first to publish it in his PhD thesis (<del datetime="2012-08-23T21:14:57+00:00">1969</del>1968, see Jon Sanders's comment below) but usually the last to be mentioned because Folkman had some &quot;private communication&quot; with Graham and Rothschild).</p>
+<p>The first two theorems lead down a different path, towards partition regular matrices which, from the point of view of Schur's Theorem, could be described as &quot;getting more linear combinations&quot;. The last one on the other hand could be described as &quot;getting some algebraic closure&quot; and this is where we came from in the last post. But I would like to skip ahead or else we'll still be sitting here <del datetime="2011-08-24T13:25:58+00:00">tomorrow</del> next week.</p>
+<p>Let me get back to talking to you about <a href="http://en.wikipedia.org/wiki/Hindman%27s_theorem#Hindman.27s_Theorem">Hindman's Theorem</a>. Skipping its curious history, let's see where Schur left us. We have sums of two elements -- very often. But what about three? Or any finite number? Well, we know that repetition is a problem -- after all, that's what prevented subsemigroups from being a partition regular notion. So we have to drop repetitions. What does that leave us with? Distinct sums.</p>
+<blockquote>
+<p><strong>FS-set</strong> Given a sequence \((x_n: n&lt;N)\) (with \(N \leq \omega\), but we're really intersted in \(\omega\)) let's denote the set of distinct finite sums of elements from this sequence by \(FS(x_n)\), i.e., \[FS(x_n) = \{ x_{i_0} + \ldots x_{i_k} : i_0, \ldots i_k&lt;N \mbox{ pairwise different} \}.\]</p>
+</blockquote>
+<p>So we collect all results of summing elements from our sequence without doing any repetitions. Fair enough. This seems to be as far as we can get without getting at an actual subsemigroup.</p>
+<p>If we're really trying to look at this structure, we should do a reality check. How rich are such sets? Well, first of all, \(FS(2^n) = \mathbb{N}\), so, yeah, they can be pretty rich. On the other hand, you have the potential of huge gaps -- \(FS(10^n)\) has \(1, 10, 11, 100, 101, 110, 111, 1000\) and so forth -- immense gaps will appear, but at each new element from the sequence, we'll see a large cluster of numbers at relatively close distance. That's not bad given our counterxample for subsemigroups.</p>
+<p>The surprising thing is that this property -- to contain an FS-set -- is actually partition regular. And this is exactly what Hindman showed in 1974.</p>
+<blockquote>
+<p><strong>Hindman's Theorem</strong> FS-sets are partition regular.</p>
+</blockquote>
+<p>What a great theorem! All we had to do was drop repetitions and we immediately get partition regularity. That's a good deal. And yet, it begs the question: can we formalize the kind of algebraic closure appearing in an FS-set?</p>
+<h2>Is there an easy way to describe FS-sets?</h2>
+<p>The thing with FS-sets is that they look awefully like subsemigroups. You can almost always add two elements together. And not just those from the underlying sequence. Given an element of an FS-set, all but finitely many elements for the underlying sequence can be added to it.</p>
+<p>But also when we have two different sums chances aren't too bad that we can add them -- the only restriction is that the two sums must have been built from pairwise different elements from the underlying sequence.</p>
+<p>Thankfully, we can describe this messy business efficiently by introducing one of my favorite and one of the most important structures: \(\mathbb{F}\).</p>
+<p>What is \(\mathbb{F}\)? Following other researchers (especially <a href="http://www.math.lsa.umich.edu/~ablass/">Andreas Blass</a>) I will denote the finite non-empty subsets of \(\omega\) by \(\mathbb{F}\).</p>
+<blockquote>
+<p>\[ \mathbb{F} := [\omega]^{&lt;\omega} \setminus \{ \emptyset \}.\]</p>
+</blockquote>
+<p>Why on earth would I introduce a new notation for such a standard set-theoretic object, you ask? Well, mostly because I didn't -- others did. But it makes sense becaus our interest is in a certain algebraic structure on \(\mathbb{F}\). (Personally, I also like the blackboard boldface F -- it's pretty.)</p>
+<p>So what structure? There already exists a very well known and important algebraic structure on \([\omega]^{&lt;\omega}\) -- the group operation of symmetric difference \(\Delta\). This operation gives us the countable Boolean group: every element is its own inverse, i.e., we're talking about \(\otimes_{i \in\omega} \mathbb{Z}_2\) here.</p>
+<p>On the other hand, \([\omega]^{&lt;\omega}\) has a very (I mean <strong><em>very</em></strong>) natural semigroup operation: taking the union, \(\cup\). This operation is, of course, as far away from being a group operation as seems possible; every element is idempotent!</p>
+<p>It's not historically relevant (as far as I know), but the part that is interesting here is the &quot;intersection&quot; of these operations, i.e., when these two different operations agree.</p>
+<p>Yes, I am making all this fuss just to talk about disjoint unions. You'll say, that's ridiculous! Disjoint unions are <em>easy</em>! Well, you're right. And that's exactly the point, actually. Addition is such a pain! It is subtle and messy (all that carrying over). Disjoint unions are soooo much easier, right?</p>
+<blockquote>
+<p>(Right. Just you wait.)</p>
+</blockquote>
+<p>So what about disjoint unions? Isn't that a pretty tough restriction? If I was trying to do the usual mathematicians-love-obfuscation thing, I could probably make big deal out of the fact that restricting our operations to disjoint unions eliminates all multiples (which is, like, super important, because I was, like, talking about that all the time, right??? -- that is, of course, getting it backwards, so don't think that way, please!).</p>
+<p>The thing that is interesting is that disjoint unions still have a kind of associativity law (warning: I'm going to use \(\cdot\) now -- don't freak out -- but we're not <del datetime="2011-08-24T14:33:02+00:00">in Kansas</del> in \((\mathbb{N},+)\) anymore)</p>
+<blockquote>
+<p>\[ (a \cdot b) \cdot c = a \cdot (b \cdot c)\]<br>
+in the sense that, if one side is defined, so is the other and they are equal.</p>
+</blockquote>
+<p>Of course, &quot;they are equal&quot; is not the point here -- after all, we have restricted a (semi)group operation -- so for us the key should be: if one side is defined then so is the other. In other words, our operation is relatively rich.</p>
+<p>This is what <a href="http://www.math.lsa.umich.edu/~ablass/bbh.pdf">Bergelson, Blass and Hindman</a> dubbed &quot;strong associativity&quot; for in their seminal paper. Altogether, a set with a partial operation satisfying strong associativity, they called a <strong><em>partial semigroup</em></strong>.</p>
+<p>We have a slight problem though: the empty operation would vacuously be strongly associative, so &quot;rich&quot; was really an exaggeration. That's why you'd always want to assume that there's really something going on. A pretty natural richness condition (which disjoint unions have) is the following.</p>
+<blockquote>
+<p>Given finitely many elements, there's another one that can be multiplied to any of them.</p>
+</blockquote>
+<p>We might not be able to multiply two elements, but at least each element has some of elements it can be multiplied with.</p>
+<p>What we're looking at is simply a finite-intersection-property. Namely, the family of sets &quot;can be multiplied with \(x\)&quot; has the finite intersection property. (What we really want is the infinite finite intersection property, but that's not too important right now.) For historical reference, if we have this, it's called a <em>adequate partial semigroup</em> -- and we're not interested in anything else.</p>
+<blockquote>
+<p>Technically, we will need to say from where we multiply. I usually prefer &quot;from the right&quot; and write the set as \(\sigma(x) := \\{ y : x\cdot y \mbox{ defined } \\}\).</p>
+</blockquote>
+<h2>Are you messing with me (again)?</h2>
+<p>After I have forced this new notion upon you, here's the thing: every partial semigroup can be extended to a semigroup. All you have to do is to add one element, say \(U\), which takes all the &quot;undefined&quot; values and otherwise acts as a multiplicative zero, i.e., \(a \cdot U = U \cdot a = U\). It's easy to check that, thanks to strong associativity, this operation is really associative.</p>
+<p>What's the point then? Partial semigroups have a huge advantage: they allow us to focus on the part of our algebraic semigroup structure that is important for us. Just like disjoint unions are the important structure for \(\mathbb{F}\) because they eliminate, e.g., the irrelevant idempotency of individual elements under \(\cup\). In addition, we will see that partial subsemigroups are much more abundant and, in my eyes, one key for understanding Hindman's Theorem and its generalizations.</p>
+<p>In the next part I will try to convince you that partial semigroups are indeed a good answer to the question &quot;What kind of of structure is flexible enough to be survive partitioning&quot;?</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 2)">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0076/ -->
+	</body>
+</html>

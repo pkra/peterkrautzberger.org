@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Groups in $\beta \mathbb{N}$</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Groups in $\beta \mathbb{N}$</h1>
+  <span class="post-date"><time datetime="2012-01-26">26 Jan 2012</time></span>
+  <p>Well, if you haven't read <a href="/0098/">my recent introspection</a>, consider yourself warned: the video below is, in my humble opinion, a rather poor talk I gave at our Logic Seminar here at the University of Michigan.</p>
+<iframe src="https://player.vimeo.com/video/35611686" width="100%" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>Nevertheless, I would like to offer a short transcript of the proof involved, just for posterity and to improve the talk.</p>
+<p>This is a also my first ever post attempting to get something on <a href="http://researchblogging.org">researchblogging.org</a>. Namely, the results I was giving the talk about are by <a href="http://dx.doi.org/10.1007/BF02573448">Neil Hindman and John Pym, 1984</a>.</p>
+<p>It's a funny thing. Last year, <a href="http://gowers.wordpress.com/2011/10/31/how-might-we-get-to-a-new-model-of-mathematical-publishing/">Tim Gowers created quite a discussion</a> about reforming publishing.</p>
+<p>What strikes me as odd, though, is the fact that mathematicians are not aware that the tools he described largely exist already, e.g., in form of <a href="http://www.researchblogging.org">researchblogging.org</a> (and more recently <a href="http://www.papercritic.com">papercritic.com</a>). So we find ourselves more like that failed Nature experiment nobody of post publication peer review -- everybody wants to have it but nobody wants to do it. Oh well, let's set an example instead?</p>
+<h3>Groups in \(\beta \mathbb{N}\)</h3>
+<p>As far as I know only a few things are known of the groups in \(\beta \mathbb{N}\).</p>
+<p>The most famous result is probably Zelenyuk's Theorem</p>
+<blockquote>
+<p><strong>Theorem (Zelenyuk, 1997)</strong> There are no non-trivial finite groups in \(\beta \mathbb{N}\). More generally, if \(G\) is a group without non-trivial finite subgroups, then \(\beta G\) contains no non-trivial finite subgroups.</p>
+</blockquote>
+<p>This is a somewhat difficult result in the sense that there's no easy proof written up anywhere and some of the technical details are messy even though they are not complicated (though I can't imagine how to come up with those).</p>
+<p>In any case, <a href="http://dx.doi.org/10.1007%2FPL00005907">Zelenyuk's result</a> seems to have been the only important results since the paper by Hindman and Pym from 1984.</p>
+<p>On the side, a very important open question in extension to Zelenyuk's Theorem is whether \(\beta \mathbb{N}\) can have any non-idempotent elements of finite-order (I stated this <strong>incorrectly at the end of my talk</strong> as &quot;non-trivial finite semigroups&quot; -- catch me giving an example of a finite semigroup in the middle of the talk where I state that you'll find lots of idempotents in \(\mathbb{N}\), say \(e, f\), with \(e+f =f +e =f\) -- perfect two element semigroup right there. Of course, nobody caught that; it was a bad talk after all).</p>
+<p>This open question has <a href="http://www.papercritic.com/mendeley-pub/4dca14d0-c665-11df-a164-0024e8453de6">funny consequences</a> in Ramsey Theory in the form of a very intuitive partition theorem but it originally showed up in <a href="http://doi.org/10.1112/jlms/s2-46.3.463">Dona Strauss's seminal result</a> that continuous homomorphisms from \(\beta \mathbb{N}\) to \(\mathbb{N}^\star\) must have finite image. If such images are always constant, there won't be a non-trivial finite-rank element that isn't idempotent (the contraposition is easier: if you find one, map 1 to it and extend homomorphically).</p>
+<h3>The main theorem</h3>
+<p>Anyway, let's turn to the theorem I actually want to give you the proof of here.</p>
+<blockquote>
+<p><strong>Theorem (Hindman, Pym 1984)</strong><br>
+If \(e\) is a minimal idempotent in \(\beta \mathbb{N}\), then the maximal group of \(e\) contains the free group on \(2^{2^\omega}\)-many generators.</p>
+</blockquote>
+<p>That's in stark contrast to Zelenyuk's theorem -- we have an incredible amount of groups, as complicated as it gets you might say.</p>
+<p>Some thoughts before I go through the proof.</p>
+<ul>
+<li><strong>What is the maximal group?</strong> Every idempotent has a maximal group associated with it, i.e., the largest group that contains the idempotent as identity. This is simply the union of all groups containing the idempotent -- if you have two groups, then the semigoup generated by their union is again a group, just write down the inverses.</li>
+<li><strong>What is a minimal idemoptent?</strong> It's a special kind of idempotent. There are many ways to characterize minimal idempotents. In this proof, the characterization \(e + \beta \mathbb{N} + e\) is used, so let's stick to that, shall we? Another way is to say &quot;lies in a minimal left ideal&quot; (whatever that is).</li>
+<li><strong>How do we proof that something is a free group on that many generators?</strong> Well, we just need to do it for finitely many at a time.</li>
+</ul>
+<p>When I looked up this proof in the Hindman&amp;Strauss book I was really surprised how easy it was. I mean, it wasn't really easy. It was given in greater generality than I will present it here. And it also assumes a lot of things about \(\beta \mathbb{N}\). But those assumptions are all standard, stuff you would learn in a course on the matter. So really, the proof is not that hard, easily done in an hour (as the video shows, well, sort of shows).</p>
+<h4>Proof.</h4>
+<p>The proof is relatively easy in the sense that we're simply able to describe the group. The key for proving that it is a free group is to connect it to the most important subsemigroup of \(\beta \mathbb{N}\) called \(\mathbb{H}\).</p>
+<p>But let's go.</p>
+<ul>
+<li>Let \(A:= \{ 2^n: n\in \omega\}\) -- simply the powers of 2.</li>
+<li>Then \(A^\star := \beta A \setminus A\), the free ultrafilters on \(A\), is a set of cardinality \(2^{2^\omega}\). (this is standard stuff on \(\beta \mathbb{N}\))</li>
+<li>Then \(e + A^\star + e\) generates a free group!</li>
+</ul>
+<p>We're done. Right? RIGHT? Just kidding, we'll prove it, too.</p>
+<blockquote>
+<p>But let's pause for a second. The powers of two crop up frequently and we'll see again why in a minute. But it is surprisingly simple to describe how we get the result. It's almost like this is an exercise for students from this point onward. Which shouldn't detract from the ingenuity of coming up with this simple idea in the first place. Of course, this also makes the result somewhat unsatisfying -- you just picked some clever subset of \(\mathbb{N}\), looked at the free ultrafilters on it and you're done. Where's the magic? Where do we go from here? It is so elegant, it is too elegant, it does not offer anything to dig into, expand later, create new results from.</p>
+</blockquote>
+<p>Let's check first that this makes sense.</p>
+<ul>
+<li>$e + A^\star + e $ can actually generate a group since \(e\) is a minimal idempotent, so \(e+ A^\star +e \subseteq e + \beta \mathbb{N} + e\), the maximal group of \(e\). This is the only (but critical) point where we use minimality.</li>
+</ul>
+<p>Next, we need to connect to one of the most important structures in this field \[\mathbb{H} := \{ p \in \beta \mathbb{N} : (\forall n) 2^n\mathbb{N} \in p\}.\]</p>
+<ul>
+<li>\(e+A^\star + e \subseteq \mathbb{H}\) -- this is clear since \(\mathbb{H}\) is a semigroup (a standard result), all idempotent ultrafilters lie in \(\mathbb{H}\) (another standard result) and \(A^\star \subseteq \mathbb{H}\) (ok, at least that is easy to check, \(2^n \in A \cap 2^n\mathbb{N}\) after all).</li>
+</ul>
+<blockquote>
+<p>I cannot stress how much I think this is important. To be able to connect to \(\mathbb{H}\) is a brilliant idea since many, many results rely on using the (in many ways much simpler) structure of \(\mathbb{H}\).</p>
+</blockquote>
+<ul>
+<li>To show that \(e+ A^\star + e\) actually generates a free group, we take finitely many elements, say \((q_i: i&lt;n)\), from \(A^\star\) and show that \((e+q_i+e : i&lt;n)\) generate free group.</li>
+</ul>
+<p>Here we run into the usual notational difficulty of free groups -- writing different things by the same notation. To avoid confusion with our \(q_i\) but to keep similarity, let's take \((Q_i : i&lt;n)\) to denote generators of an actual free group \(F\).</p>
+<ul>
+<li>The plan: define a map \(h: \beta \mathbb{N} \rightarrow F\) so that \(e\) maps to the identity and \(e+q_i+e\) maps to \(Q_i\) and somehow this is a homomorphism (at least where it counts).</li>
+<li>Unfortunately, this isn't quite possible -- we need to expand \(F\).</li>
+<li>But (another standard fact) we can: choose a compact topological group \(F' \supseteq F\). We'll build a map as above into \(F'\)!</li>
+</ul>
+<p>Ok, let's take a step back. What do we want to do? Map \(e+q_i+e\) to \(Q_i\) by a map on \(\beta \mathbb{N}\). Again, \(\mathbb{H}\) comes to the rescue!</p>
+<p>It is often useful to consider \(\mathbb{N}\) as an FS-set, namely \(FS(2^n)\). This is closely connected to \[\mathbb{H} = \{ p: (\forall n) 2^n \mathbb{N} \in p\} = \{ p: (\forall n) FS_{k>n}(2^k) \in p\}.\]</p>
+<p>If we think of \(\mathbb{N}\) as \(FS(2^n)\), then it becomes clear how we should start -- especially, if we (standard fact, yet again) are aware of the partial semigroup operation on FS-sets &quot;sums with disjoint support&quot;. Anyway, without further ado:</p>
+<ul>
+<li>Pick pairwise disjoint \(A_i \in q_i\) partitioning \(A\), i.e., \[ \dot \bigcup_{i &lt; n} A_i = A.\]</li>
+<li>Then define a map as follows.</li>
+<li>Map \(2^n\) to \(Q_i\) if and only if \(2^n \in A_i\) -- this is well defined.</li>
+<li>Extend this map to \(FS(2^n)\) by mapping \(\sum_ {i\in s} 2^i\) to \(\prod_ {i\in s} Q_i\) -- as product in the natural order.</li>
+<li>Extend this map continuously to \(\beta \mathbb{N}\).</li>
+</ul>
+<p>Alright. The extension to finite sums and then to \(\beta \mathbb{N}\) is really totally standard (yes, another standard-fact kind of thing).</p>
+<p>But the idea of a disjoint union is so simple and elegant! Why didn't you think of this yourself? (Well, in my case, I was 5 at the time this was published, so I guess I'm somewhat excused).</p>
+<ul>
+<li>By another standard fact, extensions in this manner are homomorphic when restricted to \(\mathbb{H}\) -- this is a general thing about so-called partial semigroups.</li>
+<li>However, then \(h(e)=h(e+e) = h(e)+ h(e)\), so it must be mapped to the identity of \(F'\), i.e., of \(F\).</li>
+<li>And it's a homomorphism.</li>
+<li>So we're done!!!</li>
+</ul>
+<p>Well, you say, that was easy.</p>
+<p>Ok, maybe you won't say that, but trust me, it is. Take your time and go through it again and ask a question in the comments. All we did was look at the set of powers of 2 and used it to generate our generators. Then we used the connection to \(\mathbb{H}\) to define a homomorphism to the free group in a straight forward fashion. That's two steps, plus arguably a lot of standard knowledge.</p>
+<p>Of course, I must admit that I don't fully know how standard that knowledge was in 1984. For one thing, partial semigroups were not yet named as such (that would take another 8 years). I don't know if this was the first occurrence of such partial semigroups extensions from \(2^n\) to \(FS(2^n)\). But for us in the here and now, this powerful and strange theorem should not be considered hard anymore.</p>
+<p>Despite my poor talk.</p>
+<hr>
+<p><span class="Z3988" title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.jtitle=Semigroup+Forum&rft_id=info%3Adoi%2F10.1007%2FBF02573448&rfr_id=info%3Asid%2Fresearchblogging.org&rft.atitle=Free+groups+and+semigroups+in+%CE%B2N&rft.issn=0037-1912&rft.date=1984&rft.volume=30&rft.issue=1&rft.spage=177&rft.epage=193&rft.artnum=http%3A%2F%2Fwww.springerlink.com%2Findex%2F10.1007%2FBF02573448&rft.au=Hindman%2C+N.&rft.au=Pym%2C+J.&rfe_dat=bpr3.included=1;bpr3.tags=Mathematics">Hindman, N., &amp; Pym, J. (1984). Free groups and semigroups in βN <span style="font-style: italic;">Semigroup Forum, 30</span> (1), 177-193 DOI: <a href="http://dx.doi.org/10.1007/BF02573448">10.1007/BF02573448</a></span></p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Groups in $\beta \mathbb{N}$">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0099/ -->
+	</body>
+</html>

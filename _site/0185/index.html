@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Is MathML accessible?</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Is MathML accessible?</h1>
+  <span class="post-date"><time datetime="2015-11-15">15 Nov 2015</time></span>
+  <p>Last week I attended an excellent <a href="http://www.studentenwerke.de/de/content/ibs-fachtagung">conference on accessibility in higher education</a>. It was great to get a some insight into where things stand with the German higher-ed community. It also reminded me of something that keeps bugging me this year.</p>
+<p>MathML is often presented as the single solution to all math accessibility problems. For example, the <a href="http://w3c.github.io/aria/aria/aria.html#math">ARIA spec</a> says &quot;Browsers that support native implementations of MathML are able to provide a more robust, accessible math experience than can be accomplished with plain text approximations of math&quot;, the <a href="http://www.idpf.org/accessibility/guidelines/">IDPF accessibility guidelines</a> says &quot;[...] a benefit of native MathML support [...] is the ability to provide voicing based on the markup [...]&quot; (ok, they do suggest fallback speech text later only to go on and tell you that annotation-xml will work without, you know, some level of MathML support), even <a href="http://www.aiim.org/Research-and-Publications/standards/committees/PDFUA/Technical-Implementation-Guide">PDF/UA suggests MathML</a>.</p>
+<p>While this might seem plausible for authors, I can't shake the feeling that saying &quot;just use MathML&quot; is a bit of a cheat, especially on the web.</p>
+<p>On the one hand, there's the reality of the technology landscape. I'm not going to criticize browsers yet again but accessibility happens to include visual rendering (duh!); without it accessibility of mathematics on the web is fundamentally broken. Even more so since ARIA fall short in terms of enabling HTML or SVG rendering of mathematics to be accessible.</p>
+<p>On the other, while a growing number of screenreaders happily tout MathML support, there are (please correct me) really just three solutions out there: The new kids are VoiceOver and ChromeVox whose quality might be summarized with &quot;meh&quot; (not terrible but really not yet great in terms of math support or, for that matter, active development of math support). The grand old lady of math accessibility is of course MathPlayer which, I'm guessing, is the origin of the &quot;just use MathML&quot; (&quot;just use MathPlayer&quot;?) attitude for accessibility both because of its quality and because it is what many screenreaders leverage (JAWS, NVDA, Texthelp etc). However, with MathPlayer being pushed out of IE and into the status of a third party library (and integration into screenreaders sometimes lacking) that line of argument is a thing of the past. Practically speaking, there is no real, productive competition today and thus no resources for improvements.</p>
+<p>Anyway, the question I've been pondering is: why do most screenreaders rely on external tools rather than implement MathML support themselves?</p>
+<p>I suspect the answer is the same as with browsers: because it is too hard to render MathML accessibly. That is, while building on MathML is much better than alternatives (I'm looking at you, TeX), it's still an awful lot of trouble to write a decent (let alone good) MathML accessibility solution. Too much work, too much of a niche, too many other things to do, yadayadayada.</p>
+<p>Of course with MathML I mean Presentation MathML since Content MathML is too rare in the wild. Presentation MathML is a very good XML format to canonically represent most traditional (read: print) formula layout and is universally appreciated as an archival format. But Presentation MathML is not &quot;trivially&quot; accessible. Unlike, say, ARIA roles, there is no straight-forward process that will tell you how to, e.g., voice, sensibly explore or highlight a well-written MathML expression (let alone a shoddily-written one). Instead, existing tools end up guessing both the mathematical structure of an expression as well as its semantics.</p>
+<p>On the one hand, there's the fundamental problem of context (e.g., to tell whether (a,b) describes an open interval, a point in the plane, or an inner product) and of compression (<a href="http://worrydream.com/KillMath/">Kill Math</a> anyone?). But what's even more confusing about &quot;just use MathML&quot; is that, in fact, Presentation MathML can be pretty semantic -- with elements like <code>mfrac</code>, <code>mroot</code>, or <code>mlongdiv</code>, and things like <code>menclose</code> notation, fences, or the operator dictionary, all of which carry semantics despite Presentation MathML being &quot;just&quot; about layout.</p>
+<p>So you might think that's not so bad after all. However, that's only half true. Besides the obvious problem of virtually everything missing in terms of notation, Presentation MathML is somewhat lacking in genuinely neutral layout features. So as an author, you'll have to use those semantic-but-really-layout elements. This way you end up finding suggestions in <a href="http://www.w3.org/Math/draft-spec/mathml.html#chapter3_id.3.3.2.2">the spec itself</a> to use <code>mfrac</code> with <code>linethickness=&quot;0&quot;</code> to represent a binomial coefficient.<br>
+<math display="block"><br>
+<mo>(</mo><br>
+<mfrac linethickness="0"><br>
+<mi>n</mi><br>
+<mi>k</mi><br>
+</mfrac><br>
+<mo>)</mo><br>
+</math></p>
+<p>Which is visually rather similar to doing a construction using an <code>mtable</code> (which might in turn be used to convey a vector/matrix).</p>
+<math display="block">
+  <mrow>
+      <mo>(</mo>
+        <mtable>
+          <mtr><mtd><mi>n</mi></mtd></mtr>
+          <mtr><mtd><mi>k</mi></mtd></mtr>
+        </mtable>
+      <mo>)</mo>
+  </mrow>
+</math>
+<p>And then you could also hack something together using <code>mstack</code> which might sound like a fundamental math layout element (a vertical stack) but unfortunately is designed only for written addition, multiplication, and division.</p>
+<p>As an accessibility tool you need to build in something that allows you to guess the semantic structure. And just to stress this again: not for the horribly broken markup you'll inevitably run into but for <em>high quality, spec-suggested markup</em>.</p>
+<p>Don't get me wrong. It's great that such heuristics are actually not impossible for Presentation MathML (as opposed to handling a programming language like TeX) so you can at least cover the educational use cases pretty well. But we're a long way making math accessibility being an average task for screenreaders (which is what it should be, just like visual rendering should be a simple task for a browser). MathML is a step forward for math accessibility but it is, ultimately, a tiny step given the practical problems, especially on the web. Endlessly repeating &quot;just use MathML&quot; is not helping.</p>
+<hr>
+<p>I feel like I should add a <strong>Disclaimer</strong> to this one. We're currently building an accessibility solution for MathJax based on improvements to ChromeVox's math engine so obviously I'm terribly biased and a horrible person. But you already knew that.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Is MathML accessible?">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_CHTML-full">
+</script>
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0185/ -->
+	</body>
+</html>

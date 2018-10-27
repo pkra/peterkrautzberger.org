@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Red workbook, p3</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Red workbook, p3</h1>
+  <span class="post-date"><time datetime="2014-02-26">26 Feb 2014</time></span>
+  <h3>Source</h3>
+<figure>
+  <a href="/assets/2014/red_workbook-p3.jpg">
+    <img alt="red workbook, p3" src="/assets/2014/red_workbook-p3.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, p.3
+  </figcaption>
+</figure>
+<h3>Transcript</h3>
+<ul>
+<li>Def.<br>
+\begin{split} x,y \text{ proximal} &amp; \Leftrightarrow \forall V \in \mathfrak{U}(\overbrace{\Delta}^{\text{Diag. in $X\times X$}}) \exists s \in S: (sx, sy) \in V \\\\ &amp; \underbrace{\Leftrightarrow}_ {\text{topologie: diese Ueberd. bilden Umg.basis von $\Delta$ in $X^2$}} \forall (U_ i)_ {i=1}^m, \bigcup U_ i = X \text{ offen} \exists s \in S, i \leq m: sx, sy \in U_ i \end{split}</li>
+<li>Satz
+<ul>
+<li>$ x,y \text{ prox.} \Leftrightarrow \exists p \in \beta S: px = py$.</li>
+</ul>
+</li>
+<li>Bsp 2 (fortg)
+<ul>
+<li>Sei \(S\leq Q, 1_ Q \in Q\) mit \(1_ q \cdot s = s \cdot 1_ Q = s \forall s \in S\)</li>
+<li>\(U: = { z \in X: z(1_ Q) = 1}\). Also \(U\subseteq X\) clopen [klar?]</li>
+<li>Sei \(C\subseteq S: x:= \chi_ C\) (char. Fkt.)</li>
+<li>Dann \(R(x,U) = C\)
+<ul>
+<li>[proof] \(s\in R(x,U) \Leftrightarrow s \cdot x \in U \Leftrightarrow s \cdot x (1_ Q) = 1 \Leftrightarrow x(1_ Q s) = 1 \Leftrightarrow x(s) = 1 \Leftrightarrow X \in C\)</li>
+</ul>
+</li>
+<li>! Also: jede Teilmanege als Rueckkehrmenge darstellbar.</li>
+</ul>
+</li>
+<li>Def. \(x\) unif. rekurrent \(\Leftrightarrow R(x,U) \text{ synd. } \forall U \in \mathfrak{U}\)</li>
+<li>Satz. \(X\) DS ueber \(S\), \(y\in X\), \(L\subseteq \beta S\) min. LID<br>
+a. \(y\) unif. rekurrent;<br>
+b. \(\exists p \in L: p\cdot y = y\)<br>
+c. \(\exists \epsilon \in L\cap E(\beta S): \epsilon \cdot y = y\)<br>
+d. \(\exists \epsilon \in L \cap E(\beta S), x\in X: \epsilon \cdot x = y\)<br>
+e. \(y\in \bigcup_ {M \text{min US}} M\)<br>
+f. \(y \in L \cdot y\).</li>
+<li>Beweis
+<ul>
+<li>c=&gt; a
+<ul>
+<li>$U \in \mathfrak{U}(y), V\subseteq \bar{V} \subseteq U \text{ offen}, A=R(y,V) \in \epsilon $ [\(\epsilon y = y\)]</li>
+<li>\(B = {s: s\cdot \epsilon \in \hat{A}} \subseteq S \text{ syndetisch [HS 4.39]} \Rightarrow B \subseteq R(y,U)\) [\(s \epsilon \in \hat{A} \Rightarrow s\epsilon y = s y \in \bar{V} \subseteq U\)]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>partial translation</h3>
+<ul>
+<li>Definition.\begin{split} x,y \text{ proximal} &amp; \Leftrightarrow \forall V \in \mathfrak{U}(\Delta) \exists s \in S: (sx, sy) \in V \\\\ &amp; \Leftrightarrow \forall (U_ i)_ {i=1}^m, \bigcup U_ i = X \text{ open} \exists s \in S, i \leq m: sx, sy \in U_ i \end{split}<br>
+where \(\Delta\) is the diagonal in \(X\times X\); note that these coverings form a neighborhood basis of \(\Delta\) in \(X^2\)</li>
+<li>Theorem
+<ul>
+<li>$ x,y \text{ proximal} \Leftrightarrow \exists p \in \beta S: px = py$.</li>
+</ul>
+</li>
+<li>Example 2 (continued)
+<ul>
+<li>Let \(S\leq Q, 1_ Q \in Q\) with \(1_ q \cdot s = s \cdot 1_ Q = s \forall s \in S\)</li>
+<li>\(U: = { z \in X: z(1_ Q) = 1}\). Then \(U\subseteq X\) is clopen</li>
+<li>Let \(C\subseteq S: x:= \chi_ C\) (characteristic function)</li>
+<li>Then \(R(x,U) = C\)
+<ul>
+<li>[proof] \(s\in R(x,U) \Leftrightarrow s \cdot x \in U \Leftrightarrow s \cdot x (1_ Q) = 1 \Leftrightarrow x(1_ Q s) = 1 \Leftrightarrow x(s) = 1 \Leftrightarrow X \in C\)</li>
+</ul>
+</li>
+<li>! Therefore: every subset can be a return set</li>
+</ul>
+</li>
+<li>Definition. \(x\) unif. recurrent \(\Leftrightarrow R(x,U) \text{ syndetic } \forall U \in \mathfrak{U}\)</li>
+<li>Theorem. \(X\) dynamical system on \(S\), \(y\in X\), \(L\subseteq \beta S\) minimal left ideal. TFAE:<br>
+a. \(y\) unif. recurrent;<br>
+b. \(\exists p \in L: p\cdot y = y\)<br>
+c. \(\exists \epsilon \in L\cap E(\beta S): \epsilon \cdot y = y\)<br>
+d. \(\exists \epsilon \in L \cap E(\beta S), x\in X: \epsilon \cdot x = y\)<br>
+e. \(y\in \bigcup_ {M \text{ minimal subsystem}} M\)<br>
+f. \(y \in L \cdot y\).</li>
+<li>Proof
+<ul>
+<li>c=&gt; a
+<ul>
+<li>$U \in \mathfrak{U}(y), V\subseteq \bar{V} \subseteq U \text{ offen}, A=R(y,V) \in \epsilon $ [\(\epsilon y = y\)]</li>
+<li>\(B = {s: s\cdot \epsilon \in \hat{A}} \subseteq S \text{ syndetic [HS 4.39]} \Rightarrow B \subseteq R(y,U)\) [\(s \epsilon \in \hat{A} \Rightarrow s\epsilon y = s y \in \bar{V} \subseteq U\)]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Notes</h3>
+<p>The talk/lecture from the previous page continues, tackling proximality with its basic characterization in terms of \(\beta S\) and starting the proof of the characterization of uniform recurrence. That's fairly basic stuff (in the sense of necessary knowledge, not &quot;trivial&quot; or &quot;easy&quot;). The notes are a bit incomplete overall -- not sure if I was too lazy (likely) or if Sabine Koppelberg jumped a bit to get to the interesting bits.</p>
+<p>The proof that begins at the bottom of the page is, for me, a typical cases of a proof that prevents one from learning; a picture perfect proof that throws elegant arguments around but keeps from its reader the beautiful messiness of coming up with it in the first place.</p>
+<p>The reference [HS 4.39] is alomst certainly whatever is numbered 4.39 in Hindman &amp; Strauss, &quot;Algebra in the Stone–Čech compactification&quot;. (I can't check the actual detail since my copy of H&amp;S is still on route from LA.)</p>
+<p>I forgot to mention in the first post that I substituted \mathfrak for Sutterlin in the transcription -- Sutterlin is too hard to come by (Sutterlin U is used to indicate the neighborhood filter).</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Red workbook, p3">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0149/ -->
+	</body>
+</html>

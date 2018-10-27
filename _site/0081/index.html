@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 7)</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 7)</h1>
+  <span class="post-date"><time datetime="2011-09-21">21 Sep 2011</time></span>
+  <blockquote>
+<p>Hm, my writing process is slowing down a little (and on top of that I forgot to publish this draft) and there are other posts that I really want to write. I'm not really sure how I will proceed, but let's keep pushing a little further for now. <a href="/0080/">Last time</a> I tried to build a bridge from central sets via idempotent ultrafilters back to partial semigroups. This is one of the key points of this series: connecting central sets and partial semigroups.</p>
+</blockquote>
+<h2>Back to partial semigroups</h2>
+<p>Here we are, lots of great results in our back, yet missing the perfect correspondence between Ramsey-type theorems and partition regular sets (or put differently, ultrafilters). I started out with the notion of (adequate) partial semigroups and now, I think, is the time to return to it.</p>
+<p>I believe that a notion of partial semigroup could help solve this mysterious question. The goal of this entire series is to investigate a potential relationship between partial semigroups and central sets.</p>
+<h3>Minimal partial semigroups</h3>
+<p><a href="/0077/">I tried to convince you earlier</a> that FS-sets are partial semigroups. They are, in fact, the minimal partial subsemigroups of \((\mathbb{N},+)\). Why is this? It's by a rather simple induction argument</p>
+<ul>
+<li>Say \((S,\cdot)\) is an adequate partial semigroup.</li>
+<li>Take any \(s_ 0\in S\).</li>
+<li>Inductively, \(FP(s_ 0,\ldots, s_ n)\) has all products defined.</li>
+<li>Pick \(s_ {n+1} \in \bigcap_ {t \in FP(s_ 0,\ldots,s_ n)} \sigma(t)\) (<a href="/0076/">remember those \(\sigma(t)\)?</a>) -- since \(S\) was a partial semigroup, this intersection will never be empty.</li>
+<li>Then all finite products of the \((s_ i : i\in \omega)\) are defined.</li>
+<li>In other words, \(FP(s_ i) \subseteq S\) in the fullest sense.</li>
+</ul>
+<p>I don't think I ever mentioned that &quot;to include an FS-set&quot; (or FP-set) has an established abbreviation; such sets are called <em>IP-set</em> .</p>
+<blockquote>
+<p>Most people will find it important to point out that &quot;IP&quot; does not abbreviate &quot;idempotent&quot; (for idempotent ultrafilters) but was originally meant to abbreviate &quot;infinite parallelepiped&quot; (which makes sense if you think of FS-sets in vector spaces until you realize that this still means &quot;includes an infinite parallelepiped&quot;).</p>
+</blockquote>
+<p>So it seems that we could add some general nonsense by saying &quot;partial semigroup&quot; instead of &quot;IP-set/includes and FS-set&quot;. Unfortunately, this is not the case. Even though every partial semigroup contains and FS-set, not every set that contains an FS-set has a (compatible) partial semigroup structure.</p>
+<blockquote>
+<p>Oh dear, I just notice something and I hope I haven't made this mistake too often. I'm talking about FS-sets and \((\mathbb{N},+)\) here. So when I write &quot;partial semigroup&quot; for \(A\subseteq \mathbb{N}\), then I mean &quot;partial subsemigroup&quot; in the sense that the usual addition restricted to \(A\) forms a partial subsemigroup (as is the case for FS-sets). Oh well, I guess this series is getting too long after all and I'm beginning to loose track of what I've already written. I hope you might just enjoy reading it anyhow.</p>
+</blockquote>
+<h2>Weak partial semigroups</h2>
+<p>I think the key to partial semigroups will be to weaken the notion further. I think I will call those &quot;weak partial semigroups&quot; (even though I'd love to call them &quot;very partial semigroups&quot;...).</p>
+<blockquote>
+<p>What I'm about to do is, I think, somewhat bad style. Let me alleviate this by some comments. Of course, the ideas in this series do not come out of nowhere. They stem from my studies in this area over the last 5 years (gee, has it really been that long?). Because of this, they are based on structures that you can frequently encounter in this area. So if you know the research area you will hopefully find all of this very familiar and think &quot;why does he make such a fuss about this standard thing?&quot;. That's great! And if you're not, rest assured there's a method to my madness. I'm not sure I will get there anytime soon, but there's still hope.</p>
+</blockquote>
+<p>In my silly demonstration above that partial semigroups contain FS-sets you may have noticed that we didn't really see strong associativity -- especially, since we're starting with a full semigroup anyway and have no worries about associativity.</p>
+<p>What was however crucial is finite intersection property. And that's already all there is to this &quot;new&quot; notion.</p>
+<blockquote>
+<p><strong>Weak partial (sub)semigroup</strong> If \((S,\cdot)\) is a semigroup, then \(A\subseteq S\) is a <em>weak partial subsemigroup</em>, if the restriction of the partial semigroup operation to \(A\) is adequate, i.e., the sets of the form<br>
+\[ \sigma_ A(a) := \{ b\in A : a\cdot b \in A\}\] generate a filter.</p>
+<blockquote>
+<p>Note: I just made up that \(\sigma_ A(a)\) notation to possibly help your understanding by making the connection to \(\sigma(a)\).. I will get to a more classical formulation in a second.</p>
+</blockquote>
+</blockquote>
+<p>In other words, the operation restricted to (a partial operation on) \(A\) is, to some extent, a partial semigroup. We might not have the luxury of full associativity: a, b,c, abc, ab might be in such an A, but not bc (this actually happens in real life btw) -- so we cannot compare \(a(bc)\) with anything, in particular not with \((ab)c\).</p>
+<p>But for any \(a\) we will find many (a filter set of) \(b\)'s and for each of those \(b\)'s we will find a filter set of \(c\)'s such that \(a,b,c,ab,bc, abc \in A\). That's pretty good, don't you think?</p>
+<blockquote>
+<p>I'm not sure what I'll do next. There are many paths to choose at this point. I'm not sure which one is best and I might just settle for the one that seems most easily self-contained. But don't worry even if the next post is on a different topic.</p>
+</blockquote>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 7)">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0081/ -->
+	</body>
+</html>

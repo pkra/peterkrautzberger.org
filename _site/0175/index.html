@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Why I care about MathML</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Why I care about MathML</h1>
+  <span class="post-date"><time datetime="2014-12-26">26 Dec 2014</time></span>
+  <p>[This is week 6~7? Mpf, I missed one (and a half?), bummer. I'll try to make up for it.]</p>
+<p>When I started this writing challenge, I had listed a couple of potential blog post titles. One of them was &quot;Why you should care about MathML&quot;. I realized later that I really didn't want to pretend I could even try to tell my two readers what they should or should not care about. Instead, I want to jot down (remember: 30mins time limt) a few reasons why I started to care about MathML, <a href="http://hyperboleandahalf.blogspot.de/2010/04/alot-is-better-than-you-at-everything.html">alot</a>.</p>
+<figure>
+  <a href="http://hyperboleandahalf.blogspot.de/2010/04/alot-is-better-than-you-at-everything.html">
+    <img alt="An Alot © Ellie Brosh" src="/assets/2014/ALOT2.png"/>
+  </a>
+  <figcaption>
+    I care about this Alot. © Ellie Brosh
+  </figcaption>
+</figure>
+<p>Unsurprisingly, it was in many ways a story of my education. Here are two quotes from yours truly.</p>
+<blockquote>
+<p>I think MathML is so far the best solution to present mathematical content on the web<br>
+-- <a href="/0002/">actually me</a>, Dec. 2009</p>
+</blockquote>
+<p>Actually, more stuff wrong on my post; also, referencing Terry Tao's blog, weird.</p>
+<blockquote>
+<p>But mathml sucks [...]<br>
+-- <a href="http://blogs.plos.org/mfenner/2011/01/23/beyond-the-pdf-is-epub/#comment-2489">also actually me</a>, Feb. 2011</p>
+</blockquote>
+<p>(In my defence, I probably meant authoring tools and browser support.)</p>
+<p>So as you can see, I flip-flopped a bit there (and, in a fundamentally different way, I still do). So here are five short reasons why I care about MathML.</p>
+<h3>a stable exchange format</h3>
+<p>When I started using MathJax on a personal blog (thanks to the above quote I realize I started blogging <a href="http://thelazyscience.blogspot.de/2009/12/welcome.html">5 years ago this month</a>, (<a href="/0001/">local copy</a>), although I think I started to blog a year ealier on <a href="http://scivee.tv">scivee.tv</a> (though this seems lost)), I was first annoyed and then very happy to not use macros. Obviously, you can use macros with MathJax but I started to avoid personalized macros at all costs. Ultimately, they prevented me from writing mathematics elsewhere and they limited re-use of my writing by other people (well, ok, that's more hope than reality I suppose).</p>
+<p>MathML does not suffer any of these complications (well, technically Content MathML could if anyone used it). Instead, MathML provides a truly stable format for storing equational content while still allowing for re-use. Granted, it's not exactly easy to write by hand but neither are SVG or HTML/CSS (certainly not as soon as you want to express something more complex). Still, I'd encourage anyone to spend some time with it (e.g., try copy-editing a random piece of MathML and compare that to copy-editing some macro-filled LaTeX horror). In any case, creating MathML is straight forward, especially for those knowing LaTeX syntax (even if we could use a a good open-source MathML editor). Ultimately, MathML is more readable in isolation thanks to its nature of being actually a mark-up language and not a programming language.</p>
+<h3>a focus beyond research</h3>
+<p>What struck me early on was how successful MathML was outside of research. Research mathematicians (and scientists) tend to think their habits are vital for the longevity of mathematical writing. However, technical writing (such as industrial (think aerospace) documentation), engineering, and most importantly school-level mathematics are arguably more important -- and have benefited enormously from a mathematical markup that is easily handled by researchers and non-researchers alike. MathML has brought high quality rendering together with easy authoring to an incredibly wide and diverse community; a huge accomplishment.</p>
+<h3>accessibility, for real</h3>
+<p>What I also learned early on (in crass contrast to my 2009 self above) was that MathML has turned out to be critical for having truly accessible mathematics.</p>
+<p>Of course, TV Raman's AsTeR voiced TeX/LaTeX long before MathPlayer, ChromeVox or VoiceOver voiced MathML. But besides the refinements (which later tools could so easily provide), the notion of accessibility stretches far beyond voicing and visually impaired users. Features like synchronized highlighting would be much harder in TeX (just think about identifying subexpressions in a complex TeX macro, let alone in poorly authored TeX) but they are critical for helping people with learning or physical disabilities. Even more advanced features like summarization and semantic analysis are much more straight forward in a markup language like MathML than in TeX. And so is search whose importance can hardly be overstated in times of ever increasing publication pressure; without search mathematical knowledge won't be accessible to us in the long run.</p>
+<h3>the DOM (etc)</h3>
+<p>The main reason why MathML is irreplaceable on the web is its compatibility with the DOM. This allows web developers to apply the full breadth of their tools to make mathematical content truly native instead of copying print-based layout. We cannot re-invent everything as Knuth did because web &quot;typography&quot; is far from finished and communicating on the web will probably change drastically every couple of years for the foreseeable future (just like communicating using the printing press did in another age). Having a naturally fitting technology allows mathematics to continually evolve its expression alongside other forms of expression on the web -- an incredible benefit (and challenge!).</p>
+<h3>an open future to revolutionize how we &quot;speak&quot; mathematics</h3>
+<p>This leads me straight to the last and probably main reason why I care for MathML. What the web has already done for regular language (all over the world), it can do for the language of mathematics: transform the way we communicate; expand, enhance, deepen, and lighten the way we express mathematical thought. You don't have to be Bret Victor to believe that in 30 years we will have developed new forms of expressions that truly leverage web technology and eliminate baroque limitations of black-and-white, print layout. We should strive to do so much better and I believe MathML is an important step in this direction.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Why I care about MathML">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0175/ -->
+	</body>
+</html>

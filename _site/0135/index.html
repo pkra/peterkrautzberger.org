@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Another silly experiment; mobile apps for content delivery</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Another silly experiment; mobile apps for content delivery</h1>
+  <span class="post-date"><time datetime="2013-03-30">30 Mar 2013</time></span>
+  <blockquote>
+<p>Here's another post from the category &quot;yet another silly idea&quot; or &quot;don't try this at home&quot;. Keep in mind that I have absolutely no idea about app development. In short, I don't know what I'm doing or what I'm talking about. But here it goes.</p>
+</blockquote>
+<p>I've written in the past about the problems of mathematical content in ebooks (well, epub3 anyway). Ideally, we should all start producing epub3 files right now and use PDFs only for legacy. Of course, even if we had good workflows for this (which we don't), we'd still face the problems that our readers couldn't use our content as ubiquitously as PDFs. Which is a tragedy given how crappy PDFs perform on mobile devices -- which are slowly but surely becoming my favorite reading devices. (And even print media does <a href="http://carta.info/51526/die-unterschwellige-botschaft-der-printmedien-hort-auf-uns-zu-lesen/">nothing but advertise</a> it)</p>
+<p>So I wrote about how you could <a href="/0129/">include MathJax in an epub3 file</a> and hope for the best. But this is stupid. We can reliably create mathematical content in a mobile browser thanks to MathJax, but we can't easily do so in an offline, deliverable, stand-alone format.</p>
+<p>Well, of course you can. MathJax is used in lots of mobile applications and there are even open source sample apps for developers to understand how to do this. Yet, authors don't want to be app developers. (Though especially LaTeX-affine communities seriously need to make HTML the primary output format -- not print.)</p>
+<p>Luckily for us, app developers these days have a similar problem and there is much innovation in mobile app frameworks that (aims to) make app development a &quot;design once, compile everywhere&quot; kind of thing.</p>
+<p>Why don't we go for a two pronged approach? Especially one that has been used successfully already: let's develop our content for standards like epub3, offer it as such -- DRM free, leaving it to the competent (possibly trained) user to use that file -- but also provide a comfortable version by wrapping an app around our (standard-driven) content? (And really, why not offer both for the same price.) In other words, why not do what <a href="https://web.archive.org/web/20130310082142/http://www.aldiko.com/blog/28-oreilly-books-now-available-as-android-apps-using-aldiko-technology">O'Reilly has done for years [Wayback Machine]</a>.</p>
+<p>Instead of waiting for yet another awesome but proprietary framework (like iBooks Author or Inkling), let's use an open source, standards oriented framework.</p>
+<p>How hard would that be? Well, I decided to give it a try (warning: silliness levels rising).</p>
+<p>I chose <a href="https://en.wikipedia.org/wiki/PhoneGap">Phonegap</a> -- using HTML+CSS+javascript to develop hybrid apps seems fitting. Even more after hearing a wonderful quote an Adobe expert (Adobe bought PhoneGap): &quot;the goal of Phonegap is to standardize itself out of existence&quot;. But really because of <a href="https://build.phonegap.com/">Adobe PhoneGap Build</a> (honestly, I would never have imagined I'd get excited over an Adobe product, ever.)</p>
+<p>Because even though you're using PhoneGap you'll (naturally) still need a complete development environment -- for each platform. That's a pain to set up. Thinking (not only) as an author, you just don't want to have to do that, you want to author and just wrap an app around it. Which is where PhoneGap Build comes in: a cloud compilation service. With a free account, you get one private project and infinitely many open source projects (and the peace of mind that you can always take your code home and compile it where you want). In fact, you can also simply link to a github repository to build an app (and <a href="http://www.mattgifford.co.uk/phonegap-build-github-post-commit-hooks">build your own webhook</a>). Simple as that. (Of course, if you want to get an iOS version, you have to pay Apple for a developer license etc but let's ignore that.)</p>
+<p>So how hard is it?</p>
+<p>Well, if we want to start with a really, really simple example, we start with a <a href="https://github.com/phonegap/phonegap-start">real example</a> and simplify it. Then you end up with something this &quot;hard&quot;:</p>
+<ul>
+<li>Create a file <code>config.xml</code>.</li>
+</ul>
+<pre><code class="language-xml">    &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+    &lt;widget xmlns     = &quot;http://www.w3.org/ns/widgets&quot;
+            xmlns:gap = &quot;http://phonegap.com/ns/1.0&quot;
+            id        = &quot;com.phonegap.peter-hello&quot;
+            version   = &quot;2.2.0&quot;&gt;
+        &lt;name&gt;Peter's Hello&lt;/name&gt;
+
+        &lt;description&gt;
+            Peter says hello.
+        &lt;/description&gt;
+
+        &lt;author href=&quot;http://boolesrings.org/krautzberger&quot; email=&quot;admin@test.com&quot;&gt;
+            Peter
+        &lt;/author&gt;
+
+        &lt;feature name=&quot;http://api.phonegap.com/1.0/device&quot; /&gt;
+
+        &lt;preference name=&quot;phonegap-version&quot; value=&quot;2.2.0&quot; /&gt;
+        &lt;preference name=&quot;orientation&quot;      value=&quot;default&quot; /&gt;
+        &lt;preference name=&quot;target-device&quot;    value=&quot;universal&quot; /&gt;
+        &lt;preference name=&quot;fullscreen&quot;       value=&quot;false&quot; /&gt;
+
+    &lt;/widget&gt;
+</code></pre>
+<p>I hope it's clear what you might want to modify.</p>
+<ul>
+<li>Create a file <code>index.html</code></li>
+</ul>
+<pre><code class="language-html">    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+            &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; /&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi&quot; /&gt;
+            &lt;title&gt;Peter's Hello&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt; Hello!&lt;h1&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+<p>Again, I think it's pretty clear, no?</p>
+<ul>
+<li>Zip those two files up and upload the archive to PhoneGap Build.</li>
+<li>Wait a bit.</li>
+<li>Download and install your compiled app.</li>
+<li>Done.</li>
+</ul>
+<p>Well, actually, now you have to author your content. Some people call that the hard part ;) But when you're done authoring, you zip it up, upload it (or push to your github repo) and you got yourself an app.</p>
+<p>Of course, you can now do all the crazy stuff you'd be stupid enough to do on the web itself. Knock yourself out! Here's an <a href="https://build.phonegap.com/apps/323285/builds">example wrapping an old post of mine</a>, adding some <a href="https://github.com/hakimel/reveal.js">reveal.js</a> sparkle. Shiny, mostly useless -- but something you can't reliably produce in an epub3 right now (and nobody stops you from shipping an epub3 file of your content for download out of the app).</p>
+<p>Of course, there's a lot (A LOT) that's wrong with this approach. I have no idea if this approach is feasible beyond very basic content. I have no idea how quickly you'll run into performance, memory or other hazardous problems. Nevertheless, this is not nothing. It shows what could be done and <em>should</em> be done, by professionals.</p>
+<p>In short, it shows why we don't have to take no for an answer when we ask for better mathematical content on mobile devices today.</p>
+<hr>
+<p>Small edit: linked to the phonegap, corrected the Win8 comment.</p>
+<hr>
+<p><em>Comments</em></p>
+<ul>
+<li><strong>Dana Ernst</strong>, 2013/03/30<br>
+Thanks for spending the time playing around. What is supposed to be done with the example .apk file that you link? That is, what am I supposed to use to open it?
+<ul>
+<li><strong>Peter</strong>, 2013/03/30<br>
+Oh yeah, I’ll edit it. That’s an Android app file. Just download it with an Android device and it will (after disabling some security setting) allow you to install it.
+<ul>
+<li><strong>Dana Ernst</strong>, 2013/03/30<br>
+Oh, I’ve only got iOS devices.
+<ul>
+<li><strong>Peter</strong>, 2013/03/30<br>
+Ah, sorry — iOS compilation needs an iOS developer license which costs money I don’t want to spend. You can try Windows and Symbian 😉 Or androvm with virtualbox (which everybody should have).</li>
+<li><strong>Peter</strong>. 2013/03/30<br>
+You could unzip the file and look at the content in a browser.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Asaf Karagila</strong>, 2013/03/31<br>
+I should point out that sometimes (and recently more often than not) when loading <a href="http://math.SE">math.SE</a> or MO pages full with MathJax the browser on my iPhone 4 hangs, crashes, and sometimes loads the page on the next load. Less common, but not unfamiliar are Atom Z2670 (x86) hangs (which completely paralyze my poor tablet, despite being top of the line), and also familiar are the x64 hangs on my linux, but these are much much more rare (nowadays anyway).<br>
+Whether or not it’s the SE software or not, I can’t say that I trust MathJax fully for a 20, 50, or 150 pages long paper. PDF may be somewhat slow, but it works just fine most of the time. Despite not being a big fan of change, I am willing to try the new formats on my Win 8 tablet, but I am also concerned about the stability of such experiment (not the whole system, just local to the application) if many large files are opened simultaneously.
+<ul>
+<li><strong>Peter</strong>, 2013/03/31<br>
+Sorry to hear that. We’ve heard stories like yours but nothing re-producible. Be sure to let me know if you find something we could track! It might be bugs in mobile Safari 6 and IE10 that we’re not yet aware of.<br>
+Performance is not really a problem after MathJax has run. So for example, in a mobile app a good programmer/author would store the rendering in localstorage, so that MathJax really only ran once — after that it would all be “looking at HTML”. Similarly, if you want to store large documents, you’d chop them up and only load parts etc. So while all my attempts are naive, I have seen enough smart people (especially among the MathJax sponsors) do a lot of awesome stuff.<br>
+One key problem with PDF is that it’s not accessible. Since accessibility actually benefits everyone (because you have do do better design to be accessible), that alone should be a reason to leave it behind. But more importantly: we need to experiment! I don’t think anyone believes the web will suddenly be re-written in TeX. HTML is where it’s at. Yet we don’t even know what “mathematics native on the web” could be. Currently, all mathematics is like ebooks: a faithful copy of what was done in the print past — it just happens to be a digital copy (PDF being the prime example but most other forms of online mathematics are that way, including MathOverflow and <a href="http://math.SE">math.SE</a>). It’s not surprising. The printing press output was essentially “scroll reproductions” for the first hundred years. We need to really start experimenting what math in the times of the web will become. Bret Victor has some interesting examples (the small networks paper, not the kill math stuff), mathbox is another cool one. But also mathematical storytelling, creation and collaboration has ways to go.</li>
+<li><strong>Asaf Karagila</strong>, 2013/04/01<br>
+I only did one thing with IE10 when I got the tablet. I opened the Mozilla site and downloaded Firefox… :-)<br>
+As for mathematics on the web, I agree. Now that I have a Wacom digitizer pen I stopped scribbling math (at least serious math) on paper. I have been looking for a chance to collaborate with someone digitally, but that didn’t happen yet.<br>
+I think that the problem is that currently PDF is pretty much the only format I can write into the document in a relatively smooth and working way (at least without paying a lot of money for a software which may or may not work). This is huge. It means that I really don’t have to print something, I can just write remarks into a paper I am reading. When I’m grading papers I do it like that, and it’s great.<br>
+The future holds many secrets, but I have a hunch that digital pens will become ever more popular, and that collaboration on the web should be prepared for that. Not just HTML/JS/MathJax sort of collaborations, that for itself is nice, but won’t be enough in the long run.<br>
+Lastly, for the hanging math pages, I think that the correct solution would be to develop some downloadable MathJax compilation server, that would “hijack” the calls to the web and do things on the computer. Yes, somewhat like downloading the JS scripts in advance, and redirecting the traffic from the web to your computer. While debugging on the iPhone is really impossible, I suspect that this may be – at least to some extent – the culprit in the case of my tablet.</li>
+</ul>
+</li>
+<li><strong>John P. Wheeler</strong>, 2013/10/28<br>
+Thanks for this article! I really like the disclaimer you included in the beginning. I’m thinking of playing around with it as well.
+<ul>
+<li><strong>Peter</strong>, 2013/10/30<br>
+Thanks, John, glad to hear this is of use. Let me know how it goes!</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Another silly experiment; mobile apps for content delivery">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0135/ -->
+	</body>
+</html>

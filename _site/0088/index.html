@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)</h1>
+  <span class="post-date"><time datetime="2011-11-15">15 Nov 2011</time></span>
+  <p>Because of a power outage at the department my talk <a href="http://settheory.mathtalks.org/michigan-logic-seminar-7/">announced for October 29th</a> was postponed by a week.</p>
+<iframe src="https://player.vimeo.com/video/32109926" width="100%" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+[Idempotent Ultrafilters: An Introduction (University of Michigan Logic Seminar 2011-11-08)](http://vimeo.com/32109926) from [Peter Krautzberger](http://vimeo.com/pkrautzberger) on [Vimeo](http://vimeo.com).
+<p>Here are transcripts of my notes (as well as the originals at the end).</p>
+<h3>Hindman's Theorem</h3>
+<blockquote>
+<p><strong>Hindman's Theorem</strong> If \(\mathbb{N} = A_ 0 \dot\cup A_ 1\), then \(\exists j \exists (x_ i)_ {i\in \omega}\) such that \[FS(x_ i) \subseteq A_ j.\]</p>
+</blockquote>
+<p>Imagine you'd like to prove this with an ultrafilter: \[p \in \beta \mathbb{N} \Rightarrow \exists j A_ j=:A \in p.\]</p>
+<p>What do we need? We will build \((x_ i)\) inductively!</p>
+<p>Pick \(x_ 0 \in A\) -- we can't really choose better than that (except maybe by shrinking the set first).</p>
+<p>If we're looking for our result, we need</p>
+<ul>
+<li>\(x_ 1 \in A\) such that \(x_ 1, x_ 0\) and \(x_ 0+x_ 1 \in A\).</li>
+<li>i.e. \(x_ 1 \in -x_ 0 + A\).</li>
+<li>so we need \(-x_ 0 + A \in p\)!</li>
+</ul>
+<p>In other words, we need \(x_ 0 \in \\{ x: -x+A \in p \\}\) to begin with, i.e., \(\\{ x: -x+A \in p \\} \in p\) -- for any \(A\in p\)!</p>
+<p>Galvin in 1970: \(p \in \beta \mathbb{N}\) is almost left-translation invariant iff \(\forall A\in p: \\{ x : -x +A\in p\\} \in p\).</p>
+<p>Is this enough?</p>
+<ul>
+<li>Pick \(x_ 0 \in A \cap \\{ x: -x+A \\} \in p\)</li>
+<li>Then choose \(x_ 1 \in -x_ 0 + A \cap A\).</li>
+</ul>
+<p><strong>But</strong> to continue the process, we need more!</p>
+<p>We need \(x_ 2\) such that:</p>
+<ul>
+<li>\(x_ 2 \in A\) -- \(A\in p\), check</li>
+<li>\(x_ 0 + x_ 2 \in A\) -- \(x_ 2 \in -x_ 0 +A \in p\), check</li>
+<li>\(x_ 1 + x_ 2 \in A\) -- \(x_ 2 \in -x_ 1 + A \in p\) -- possible if we picked \(x_ 1 \in \\{x: -x+A\in p\\} \in p\), check.</li>
+<li>\(x_ 0 +x_ 1 + x_ 2 \in A\) -- \(x_ 2 \in -(x_ 0+x_ 1) +A \in p\)???</li>
+</ul>
+<p>What does this mean? \(-(x_ 0 +x_ 1) + A = -x_ 1 + (-x_ 0 +A)\) by associativity.</p>
+<p>Ah! But we have seen this before!</p>
+<p>We needed \(x_ 1 \in \\{ x: -x + (-x_ 0 +A) \in p\\}\), so we needed \(\\{ x: -x + (-x_ 0 +A) \in p\\}\in p\)!</p>
+<p>But that's ok!! \(-x_ 0 + A \in p\) &amp; \(\forall B\in p: \\{x : -x+B \in p \\} \in p\)!</p>
+<h3>How do we get to the end?</h3>
+<ul>
+<li>
+<p>Inductively, assume we have \(x_ 0,\ldots, x_ n\) with \(FS(x_ 0,\ldots, x_ n) \subseteq A\) <strong>and</strong> \[\bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} -z + A \in p.\]</p>
+</li>
+<li>
+<p>Pick \(x_ {n+1}\) from \[( \bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} -z + A ) \cap A \cap \\{ x: -x+ (\bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} -z + A) \in p\\}\] -- this intersection is in \(p\)!</p>
+</li>
+<li>
+<p>Note that \[-x_ {n+1} + ( \bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} -z + A \cap A)\] \[= \bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} -x_ {n+1} (-z + A) \cap -x_ {n+1} A \in p.\]</p>
+</li>
+<li>
+<p>So \[\bigcap_ {z \in FS(x_ 0,\ldots,x_ {n+1})} -z + A =\] \[\bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} (-z + A) \cap \bigcap_ {z \in FS(x_ 0,\ldots,x_ n)} (-(z+x_ {n+1}) + A) \cap (-x_ {n+1} +A\] which is in \(p\) -- as desired.</p>
+</li>
+</ul>
+<h2>Question: Do &quot;almost left-translation invariant&quot; ultrafilters exist?</h2>
+<p>Glazer, ~1975: Yes of course! These are the idempotent ultrafilters! We know these exist since Ellis 1958.</p>
+<h3>What does this mean?</h3>
+<ul>
+<li>
+<p>\((\mathbb{N}, +)\) is a semigroup</p>
+</li>
+<li>
+<p>\(\mathbb{N}\) is discrete, so \(\beta \mathbb{N}\), the Stone-Čech compactification of \(\mathbb{N}\) exists, in fact \(\beta \mathbb{N} \cong\) the set of ultrafilters on \(\mathbb{N}\) with a topological basis \(\hat A = \\{ p \in \beta \mathbb{N} : A \in p \\}\) for \(A\subseteq \mathbb{N}\).</p>
+</li>
+<li>
+<p>\(\beta \mathbb{N}\) is compact (exactly by the Boolean Prime Ideal Theorem)</p>
+</li>
+<li>
+<p>\(\beta \mathbb{N}\) is Hausdorff (\(p\neq q \Rightarrow \exists A\in p, B\in q: A\cap B = \emptyset\)).</p>
+</li>
+<li>
+<p>\(\beta \mathbb{N}\)has a semigroup structure extending \((\mathbb{N}, +)\)</p>
+<ul>
+<li>From \(\beta (\mathbb{N} \times \mathbb{N}\):</li>
+<li>\(p,q \in \beta \mathbb{N}\mapsto p \otimes q \in \beta(\mathbb{N}^2)\)
+<ul>
+<li>try \((A\times B)_ {A\in p, B\in q}\) -- not an ultrafilter</li>
+<li>if you try to prove ultraness:</li>
+<li>\(\bigcup_ {a\in A} \\{a\\} \times B_ a\) for some \(A\in p\), all \(B_ a \in q\)</li>
+<li>generates an ultrafilter!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Then \(p + q = + (p\otimes q)\)</p>
+<ul>
+<li>i.e., generated by \(\\{ \bigcup_ {a \in A} a + B_ a : A\in p, B_ a \in q\\}\) [check: \(n+k = +(n \times k)\)]</li>
+</ul>
+</li>
+<li>
+<p>Properties</p>
+<ul>
+<li>\(\forall q\in \beta \mathbb{N}: \rho_ q: \beta \mathbb{N} \rightarrow \mathbb{N}, p \mapsto p+q\) is continuous.
+<ul>
+<li>Why? \(X\in p+q\) iff \(\exists A\in p \exists (B_ a)_ {a \in A} , B_ a \in q: \bigcup_ {a\in A} a+ B_ a \subseteq X\) iff \(\\{a: -a + X \in q\\} =: X^{-q} \in p\).</li>
+<li>But \(X^{-q}\) only depends on \(q\)!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>associativity: check it -- use \[\bigcup_ {a\in A} a+ (\bigcup_ {b\in B_ a} b + C_ b)= \bigcup_ {c\in \bigcup_ {a\in A} a+ (\bigcup_ {b\in B_ a} a+ b)} c + C_ c.\] The first set is in \(p+(q+r)\), the second in \((p+q)+r\).</p>
+</li>
+</ul>
+<h3>Now remember: what did Galvin need?</h3>
+<p>\[(\forall A \in p) \{ x: -x+A \in p\}\in p\]</p>
+<p>I.e., \(A\in p \Rightarrow A^{-p} \in p \Rightarrow A \in p+p\), so \(p \subseteq p+p\)<br>
+I.e. \(p+p = p\) (since ufs)</p>
+<blockquote>
+<p><strong>Ellis 1958</strong> \((X,\cdot)\) compact, Hausdorff, right-topological semigroup \(\Rightarrow \exists x\in X: x\cdot x =x\).</p>
+</blockquote>
+<p><em>Proof.</em></p>
+<ul>
+<li>Think: \(x\cdot x = x \Rightarrow \\{x\\}\) is a closed semigroup - a minimal one!</li>
+<li>\(\\{ Y \subseteq X: Y \mbox{ compact, non-empty, semigroup} \\}\)</li>
+<li>By Zorn's Lemma, $\exists $ minimal, non-empty, compact semigroup \(Y\).</li>
+<li>Think: that should be \(\left\vert Y \right\vert = 1\)!</li>
+<li>We'll show \(\forall y \in Y: y\cdot y = y\) (therefore \(Y = \\{y\\}\) by minimality)</li>
+<li>How? We only have continuity and associativity</li>
+<li>\(Y \cdot y = \rho_ y [Y]\) compact, non-empty</li>
+<li>\((Y\cdot y) \cdot (Y\cdot y) \subseteq Y\cdot y\), i.e., a semigroup.</li>
+<li>By minimality of \(Y\), \(Y\cdot y = Y\)</li>
+<li>Great! We'd expect that if \(y\cdot y = y\)</li>
+<li>\(Y\cdot y = Y \Rightarrow \exists z \in Y: z\cdot y = y\).</li>
+<li>Then \(\\{ z \in Y : zy=y\\} = \rho^{-1}_ y (y) \subseteq Y\)</li>
+<li>\((z_ 0 z_ 1) y = z_ 0 (z_ 1 y) = z_ 0 y= y\), i.e., semigroup.</li>
+<li>compact? Yes \(\rho^{-1}_ y[ \\{y\\}]\) closed.</li>
+<li>\(Y\) minimal, so \(\\{z \in Y: zy=y \\} = Y \Rightarrow y\cdot y = y\).</li>
+</ul>
+ <figure>
+   <a href="/assets/2011/idpotUFumich1.jpg">
+     <img alt="Part 1 Idempotent Ultrafilters" src="/assets/2011/idpotUFumich1.jpg"/>
+   </a>
+   <figcaption>
+    Part 1 Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)
+   </figcaption>
+ </figure>
+ <figure>
+   <a href="/assets/2011/idpotUFumich2.jpg">
+     <img alt="Part 2 Idempotent Ultrafilters" src="/assets/2011/idpotUFumich2.jpg"/>
+   </a>
+   <figcaption>
+    Part 2 Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)
+   </figcaption>
+ </figure>
+ <figure>
+   <a href="/assets/2011/idpotUFumich3.jpg">
+     <img alt="Part 3 Idempotent Ultrafilters" src="/assets/2011/idpotUFumich3.jpg"/>
+   </a>
+   <figcaption>
+    Part 3 Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)
+   </figcaption>
+ </figure>
+ <figure>
+   <a href="/assets/2011/idpotUFumich4.jpg">
+     <img alt="Part 4 Idempotent Ultrafilters" src="/assets/2011/idpotUFumich4.jpg"/>
+   </a>
+   <figcaption>
+    Part 4 Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)
+   </figcaption>
+ </figure>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Idempotent Ultrafilters, an introduction (Michigan Logic Seminar Nov 09, 2011)">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0088/ -->
+	</body>
+</html>

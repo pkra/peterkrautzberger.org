@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The problem with MathML as a web standard (part 3)</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">The problem with MathML as a web standard (part 3)</h1>
+  <span class="post-date"><time datetime="2017-08-28">28 Aug 2017</time></span>
+  <p>Let's continue from <a href="/0198/">part 2</a>.</p>
+<h2>Prelude</h2>
+<p>This one's slightly tricky. And I also have a confession to make. In the first two parts I pretended I've written about MathML when I really only wrote with half of it in mind.</p>
+<p>One problem of the MathML spec in general is that it's really two, quite distinct specs: <a href="https://www.w3.org/Math/draft-spec/mathml.html#chapter3_">Presentation MathML</a> and <a href="https://www.w3.org/Math/draft-spec/mathml.html#chapter4_">Content MathML</a>.</p>
+<p>Now the common description is: Presentation describes layout and Content describes semantics. I think one of the problems for MathML in general is that it is not that easy.</p>
+<h2>The third problem: MathML does not specify semantics</h2>
+<p>So obviously that's wrong. After all there is Content MathML and it specifies an enormous amount of semantics. Such an enormous amount actually that you can express lambda calculus. You also get a whole bunch of fantastic elements (for <code>&lt;reals&gt;</code>) and on top of that built-in, infinite extensibility via content dictionaries. So you can do quite literally everything in Content MathML.</p>
+<p>So what's the problem?</p>
+<figure><a href="https://commons.wikimedia.org/wiki/File:Tumbeasts_sign1.png#/media/File:Tumbeasts_sign1.png"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Tumbeasts_sign1.png" alt="Tumbeasts sign1.png"></a><figcaption>By <a href="https://en.wikipedia.org/wiki/Matthew_Inman" class="extiw" title="en:Matthew Inman">Matthew Inman</a> - <a rel="nofollow" class="external free" href="http://theoatmeal.com/comics/state_web_summer#tumblr">http://theoatmeal.com/comics/state_web_summer#tumblr</a>, <a href="http://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=38250223">via Wikimedia Commons</a></figcaption></figure>
+<p>It's the simplest and most practical problem: Content MathML plays no significant role in real world documents. You can find it in niche projects (such as NISTS's hand-crafted <a href="http://dlmf.nist.gov/">DLMF</a>), you can find it hidden in commercial enclosures (such as Pearson's assessment system where I wonder why you'd need its expressiveness), you can also get it by exportig it from computational tools (Maple, Mathematica etc.). But in real world documents, it's non-existent.</p>
+<p>I can't really tell you why that is. Perhaps like most formal abstractions of mathematical knowledge, it ignores the practicalities of humans communicating knowledge. Perhaps, when it comes to its computational prowess, it probably fails on the web because it cannot compete with the practicality of JavaScript or server-based computation (<i lang="fr">à la</i> Jupyter Notebooks).</p>
+<p>I also have heard repeatedly that it's simply too difficult to create. And from my limited experience with MathJax users it doesn't help that <a href="https://www.w3.org/Math/draft-spec/mathml.html#chapter4_id.4.1.1">the spec itself</a> warns people that it encodes structure <q>without regard to how it is presented aurally or visually</q>, i.e., it's sometimes not clear how Content MathML should be rendered.</p>
+<p>Ultimately, lack of content (pardon the pun) makes Content MathML of little relevance on the web. (An interesting but separate question might be whether the way Content MathML expresses semantics fits into the style that HTML has adopted in recent years; another time perhaps.)</p>
+<h3>The third-and-a-half problem</h3>
+<p>But there's actually a second problem for MathML and semantics on the web here: <em>Presentation MathML</em>.</p>
+<p>It's easy to think that Presentation MathML specifies at least some semantics. And if it specifies some, maybe it's a good basis to build upon. After all, how semantic was HTML really, back in the day?</p>
+<p>For example, there's the <a href="https://www.w3.org/Math/draft-spec/mathml.html#chapter3_presm.mfrac"><code>&lt;mfrac&gt;</code></a> element and you might think it specifies a fraction. Unfortunately, you'd be wrong. The spec itself speaks of <q>fraction-like objects such as binomial coefficients and Legendre symbol</q> which are about as far from fractions as you can think of. Of course you can find even more egregious examples in the wild such as plain vectors encoded with <code>mfrac</code>. Similarly, <code>&lt;msqrt&gt;</code> does not represent <i>square root</i> but <i>root without index</i> and it is used accordingly in the wild (while <code>&lt;mroot&gt;&lt;mrow&gt;...&lt;/mrow&gt;&lt;none/&gt;&lt;/mroot&gt;</code> constructions are practically unheard of).</p>
+<p>The point is that you can't complain about some kind of abuse of markup because Presentation MathML does not make this kind of a distinction.</p>
+<figure>
+<a href="https://commons.wikimedia.org/wiki/File%3AAurelia-aurita-3-0009.jpg"><img width="512" alt="Photo of Aurelia aurita after applying ten iterations of DeepDream" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Aurelia-aurita-3-0009.jpg/512px-Aurelia-aurita-3-0009.jpg"/></a><figcaption>By MartinThoma (Own work) [CC0], via Wikimedia Commons</figcaption></figure>
+<p>Now for a long time, I thought there might just be enough semantics in Presentation MathML to get away with. Working with Volker Sorge and his <a href="https://github.com/zorkow/speech-rule-engine">speech-rule-engine</a> and integrating SRE's semantic analysis into MathJax meant a deep dive into what kind o structure you can find in Presentation MathML. And as amazing as its heuristics are, it becomes clear how brittle they remain and how quickly you find (real world) examples that break things. This isn't to say you can't guess the meaning of a large selection of real world content. It just makes it clear that you are working with a format void of semantic information. (And we're not talking about <a href="https://arxiv.org/abs/1707.08945">tricking machine learning models</a> here, just run of the mill content.)</p>
+<p>When you get down to it, I would say that there are effectively only two elements in Presentation MathML that appear reliably semantic in the real world:  <code>&lt;mn&gt;</code> and <code>&lt;mroot&gt;</code>. And even these examples are stretching it. For for the former, <a href="https://www.w3.org/Math/draft-spec/mathml.html#chapter3_presm.mn.examples">the spec suggests</a> that <code>&lt;mn&gt;twenty one&lt;/mn&gt;</code> is sensible markup. For the latter, it seems to be mostly accidental that roots simply haven't been sufficiently abused in the literature (yet) and thereby retain a unique place of being a visual layout feature that is used consistently to describe (many different concepts of) &quot;rootness&quot;. (For the record, there's also <code>&lt;merror&gt;</code> which is pretty solid, semantically speaking; just not very mathematical.)</p>
+<h2>Coda</h2>
+<p>There are other, more indirect signs of the failure of MathML to specify semantics. For example the absence of typical benefits of semantic content such as usable search engines or knowledge management tools. But that's a very different problem to discuss.</p>
+<p>Anyway, so MathML that specifies semantics could exist but does not. On to layout.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20The problem with MathML as a web standard (part 3)">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0199/ -->
+	</body>
+</html>

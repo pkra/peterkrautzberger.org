@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Eternal preliminaries part 1, semigroups and such</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Eternal preliminaries part 1, semigroups and such</h1>
+  <span class="post-date"><time datetime="2010-12-12">12 Dec 2010</time></span>
+  <p>My thesis was a (somewhat) coherent structure and hence had one big chapter of preliminaries. It was rather painful (and in retrospect stupid) to create preliminaries for each paper based on the results from the thesis by taking that chapter and reducing it to only those terms necessary in each respective paper. To (over)compensate, I have been thinking for a while to write down some ‘eternal preliminaries’ here.</p>
+<h2>Semigroups and such</h2>
+<p>In the field that is often called ‘algebra in the Stone–Čech (sorry about the missing hacek) compactification’ (or ‘Hindman stuff’ for short), the structures of interest are infinite <a href="http://en.wikipedia.org/wiki/Semigroup">semigroups</a> \((S,\cdot)\), i.e., \(\cdot: S\times S \rightarrow S\) is associative.</p>
+<p>However, ever since the amazingly rich <a href="http://www.math.lsa.umich.edu/~ablass/bbh.pdf">paper by Vitaly Bergelson, Andreas Blass, and Neil Hindman on located words</a> (<a href="http://doi.org/10.1112/plms/s3-68.3.449">doi</a>) we have the notion of a partial semigroup. I like this more general notion for several reason which is why I will formulate everything in terms of partial semigroups here.</p>
+<p><strong>Definition</strong> Following the above paper, I’ll call \((S,\cdot)\) a <strong>partial semigroup</strong> if the map \(\cdot\) is a partial binary operation for which equations of the type \((s \cdot t) \cdot u = s \cdot (t \cdot u)\) hold in the sense that whenever one side is defined, so is the other and they are equal.<br>
+This is often called strong associativity.</p>
+<p>The most important example of a partial semigroup consists of the finite, non-empty subsets of \(\omega\),<br>
+\[ \mathbb{F} := \\{ s \subseteq \omega : 0 &lt; |s| &lt; \omega \\} \]<br>
+with the partial operation<br>
+\[ s \cdot t = s \cup t \mbox{ iff } \max(s) &lt; \min(t),\]<br>
+in other words restricting the union operation to so called <strong>ordered unions</strong>. Sometimes, another operation is interesting, the more general restriction to disjoint unions, but most of the time the difference between the two restriction won’t matter much to us so we’ll stick to the ordered unions for now. This example is useful right here because it shows two important properties that are typical for partial semigroups, the first resulting in the following observation.</p>
+<p><strong>Proposition</strong> Every partial semigroup can be extended to a full semigroup: For every partial semigroup \((S,\cdot)\) there is a full semigroup \((T,\star)\) such that \(S\subseteq T, \cdot \subseteq \star\).</p>
+<p><strong>Proof.</strong></p>
+<ul>
+<li>Given a partial semigroup \((S,\cdot)\), simply adjoin a new zero element.</li>
+<li>I.e., let \(T: = S \dot\cup \\{ 0 \\}\) (wherer \(0\) is a new element) and define \(v \star w = v\cdot w\) if defined in \(S\) and \(v \star w = 0\) otherwise.</li>
+<li>It’s easy to check that the operation is associative (thanks to strong associativity).</li>
+</ul>
+<p>Even though partial subsemigroups are much more abundant than subsemigroups (which is why I like them so much), the above fact is extremely useful when it comes to the background theory of partial semigroups (especially, ultrafilters on them which will be our main goal for the next section): we can simply pretend that we have a full semigroup and use that well-developed theory to help us along, after which we can restrict our interests again to the partial subsemigroup.</p>
+<p>Actually, most of the time we really are in a situation like \((\mathbb{F},\cdot)\) — we mostly start with a full operation which we reduce to a partial semigroup operation so as to simplify the algebra (as in the case of \(\mathbb{F}\)). Before I get to the first important property of partial semigroups that must be assumed for all that follows, let me give you the most important class of examples of partial subsemigroups — FP-sets.</p>
+<p><strong>Examples</strong> Given any (partial) semigroup \((S,\cdot)\) and a sequence \(\mathbf{x}\) in \(S\) the <strong>FP-set</strong> of \(\mathbf{s}\), \(FP := \\{ \prod_ {i \in s} x_ i : s \in \mathbb{F} \\}\) (where products are always in increasing order of indices) has a partial semigroup structure induced by \((\mathbb{F},\cdot)\):<br>
+\[ \prod_ {i \in s} x_ i \cdot \prod_ {i\in t} x_ i = \prod_ {i \in s\cup t} x_ i \mbox{ iff } \max(s) &lt; \min(t).\]<br>
+In case our (partial) semigroup is written additively, we write FS-set etc.<br>
+Note that for commutative (partial) semigroups we can also consider the partial semigroup structure induced by disjoint unions rather than ordered unions since the products/sums still make sense in the commutative world.</p>
+<p>These examples are essentially my favorite reason for thinking primarily in partial semigroups — FP-sets with this partial semigroup structure are such a critical component of algebra in the Stone–Čech compactification that we might as well make this explicit. It also has a certain slickness to it — Hindman’s Theorem (one of our main goals here) could be formulated very nicely with this terminology — but that slickness is somewhat misleading; let’s discuss that when we get there (when I would love to weaken the notion further…)</p>
+<p>The main problem with partial semigroups is, of course, their partiality; they could be so partial that they are meaningless, i.e., the operation could have empty domain or a very small domain. Thankfully, the examples above have a very rich partial structure: for any finite number of elements we find (many) elements that are compatible with all those finitely many. That’s why I usually assume the following property for partial semigroups.</p>
+<p><strong>Definition and convention</strong> Consider a partial semigroup \((S,\cdot)\).<br>
+For each \(s \in S\) we denote the set of (right-)compatible elements by \(\sigma(s) := \\{ t \in S: s\cdot t \mbox{ is defined} \\}\).<br>
+We say that \(S\) is <strong>adequate</strong> if \({(\sigma(s))}_ {s\in S}\) has the [infinite (or strong) finite intersection property](<a href="http://en.wikipedia.org/wiki/Finite_">http://en.wikipedia.org/wiki/Finite_</a> intersection_ property) and we denote the generated [filter](<a href="http://en.wikipedia.org/wiki/Filter_">http://en.wikipedia.org/wiki/Filter_</a> %28mathematics%29) by \(\sigma(S)\). Unless specifically stated otherwise partial semigroups are adequate.</p>
+<p>For most theoretical things it’s not really important that the filter contains only infinite sets, but that’s what we’re really interested in in our applications, so we might as well assume it. On a side note, it is useful <strong>not</strong> to assume that the filter \(\sigma(S)\) is [free](<a href="http://en.wikipedia.org/wiki/Filter_">http://en.wikipedia.org/wiki/Filter_</a> %28mathematics%29), for example when we have an identity in the partial semigroup. The name adequate (without the infinity assumption) is again taken from the paper by Bergelson, Blass and Hindman.</p>
+<p>And that’s about all you need to know about partial semigroups for now. In the next post of this series-to-be I will continue with ultrafilters on (partial) semigroups.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Eternal preliminaries part 1, semigroups and such">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0042/ -->
+	</body>
+</html>

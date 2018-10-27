@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Elusive semantics</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Elusive semantics</h1>
+  <span class="post-date"><time datetime="2017-06-24">24 Jun 2017</time></span>
+  <p>I don't like &quot;semantics zealots&quot;, people who claim that content always can (let alone always must) be &quot;fully semantic&quot; (for whatever value of &quot;semantic&quot; they favor). In the same vein, I also don't like the thinking that any format can fully separate semantics and presentation - human thought is to fickle a beast to tolerate such confinement. You may blame my old training as a set theorist, but the gray area of neither true nor false is much more important to me.</p>
+<p>Still, the things you can do well, you obviously should. And yet, every once in a while, somebody throws you a curveball and you just have to shout: <q><em>This</em> is why we can't have good things!</q>.</p>
+<h2>where did you come from, where did you go</h2>
+<p>The other day on a client project, the QA specialist pointed out that the content was consistently using <code>&lt;em&gt;</code> where it should be using <code>&lt;i&gt;</code>. Can we fix that?</p>
+<p>The semantics of these and related HTML5 tags is a bit subtle, but there is a difference and it should be easy to just replace one with the other, right? Right? Famous last words.</p>
+<p>At first sight, this was easy. The HTML came out of some JATS-like XML, which was using <code>&lt;italic&gt;</code> elements. So map to <code>&lt;i&gt;</code>, right? But hold on, you'll say, HTML5 reinterpreted <code>&lt;i&gt;</code> to no longer indicate layout but semantics; it now indicates a <i>change of voice</i>. Unfortunately, JATS's <code>&lt;italic&gt;</code> is focused on the typographic aspects, so it does not really help. The again, it could help a little bit more because <code>&lt;italic&gt;</code> allows for a <code>toggle</code> attribute to indicate <em>emphasis</em>. Sadly, the actual XML did not provide that information.</p>
+<p>Since the piece of the tool chain that turned <code>&lt;italic&gt;</code> into <code>&lt;em&gt;</code> was actually my doing, I was clearly at fault. <em>However</em>, I had my reasons. Namely, that all of this came from a LaTeX source and in this real world LaTeX content, <code>\emph{}</code> and its brethren were the dominant source for <code>&lt;italic&gt;</code>. So <i>clearly</i> that should be <code>&lt;em&gt;</code> in the end?</p>
+<p>Now of course, almost all LaTeX authors don't give a damn beyond getting that PDF to look how they want it, so while they mostly use <code>\emph{}</code>-like macros, they mix it freely (and inconsistently) with <code>\textit{}</code> and its brethren. So the conversion (written by an absolute expert) rightly says <q>screw it, all I can say is it wants italics here</q>, thus merging them both together.</p>
+<h2>where the wild things are</h2>
+<p>It's my job to dig deeper than that so I took the time to look through the actual content available. Not the TeX, not the XML but the actual writing.</p>
+<p>Lo and behold, the actual text use is pretty different: by far, most occurrences of <code>&lt;em&gt;</code> happened in the context of quick, inline definitions. Invariably, you find these in introductions of mathematical research articles where you include commonly known definitions from a field so as not to cause bloat (because publishers and editorial boards continue to care more about page numbers than well documented research results).</p>
+<h2>there's an <s>app</s> element for that.</h2>
+<p>A definition does not really fit either <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code>. The closest you get <a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-i-element">in the spec</a>, is an example of using <code>&lt;i&gt;</code> to reference a past definition.</p>
+<blockquote>
+<p><code>&lt;p&gt;The term &lt;i&gt;prose content&lt;/i&gt; is defined above.&lt;/p&gt;</code></p>
+</blockquote>
+<p>To make matters worse, there is of course <a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-dfn-element">an entirely different element</a> that fits perfectly:</p>
+<blockquote>
+<p>The <code>&lt;dfn&gt;</code> element represents the defining instance of a term.</p>
+</blockquote>
+<p>Perfect match for the vast majority of the content in question. So we should switch everything over, right?</p>
+<p>The answer is, of course, no. Not because some content would end up with the wrong semantics (scroll to top) but because that was not the only use I found:  almost without exception, the samples includes the use as a definition alongside the use as <code>&lt;em&gt;</code> or <code>&lt;i&gt;</code>.</p>
+<p>And that is why we can't have good things.</p>
+<h2>who cares, you suck</h2>
+<p>All of this is about as surprising as finding a handwritten table of contents in a Word document. TeX is for print layout and font styles are used for all manners of cruelty. The question I had to answer with my client was: can we do anything about it?</p>
+<p>In the end, beauty lies in the eye of the beholder and semantics in the eyes of the reader. We did, in fact, switch to <code>&lt;i&gt;</code> with the plan to expose more information from the original source regarding emphasis so we can gather more data on its usage. Fundamentally, this won't help because it doesn't solve the problem of inline definitions. Still, some analysis might reveal pragmatic improvements down the line.</p>
+<p>In the end, it's not hard to argue that a definition that is well known in the field and that is done inline in the introduction of an article is more like the kind of reference to a definition as in the above example from the spec (in fact, often enough it is done in the vicinity of a bibliographic reference). Of course, we're still conflating <code>\emph</code> and <code>\textit</code>.</p>
+<h2>coda</h2>
+<p>Now <s>zealots</s> idealists will argue that authors &quot;just&quot; have to learn to use semantic macros in TeX. After all, there are plenty of &quot;semantic&quot; LaTeX packages out there; just start writing good markup already!</p>
+<p>Besides the lack of pragmatism, the only viable solution I can see would be a LaTeX package matching specifically HTML5 markup. After all, we have the tags and they have established definitions; any &quot;semantics&quot; beyond that will only cause issues down the line (what if a tag is introduced to HTML but with a slightly different meaning?). Even then, it doesn't solve the social problem at the heart of so many publishing technology issues: who would make the effort and use it? It's extra work and does nothing for print; why would an author do extra work when they think print rules?</p>
+<p>I think only someone interested in creating HTML output would make the effort. And at that point you have to ask: Why would those authors bother with an archaic programming language like TeX to write HTML? They will find it invariably easier to just write HTML or their favorite lightweight markup for creating HTML, especially given the speed at which HTML-to-PDF solutions are improving). Building tools for LaTeX to solve this would just create extra work but help nobody. Just build better tools for writing HTML.</p>
+<p><i lang="de">Doch das ist eine andere Geschichte und soll ein andermal erzählt werden.</i></p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Elusive semantics">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0195/ -->
+	</body>
+</html>

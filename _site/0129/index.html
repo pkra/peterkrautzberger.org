@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>How to include MathJax in an epub3 file to work with iBooks (and possibly others)</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">How to include MathJax in an epub3 file to work with iBooks (and possibly others)</h1>
+  <span class="post-date"><time datetime="2013-01-13">13 Jan 2013</time></span>
+  <p>At the Joint Mathematics Meetings <a href="http://jointmathematicsmeetings.org/meetings/national/jmm2013/2141_program_ss62.html">Present and Future of Mathematics on the Web</a> session, Lila Roberts presented an excellent demo of the good stuff you can do with iBooks author. The demo included MathJax and jsxgraph, and combined both with iBooks Author's easy, pretty layout tools. Of course, the drawback is that iBooks Author is</p>
+<ul>
+<li>a proprietary format</li>
+<li>restricted to iPads (not just iOS)</li>
+<li>you're not allowed to sell an iBooks Author file except through iTunes.</li>
+<li>iBooks Author is not transparent about how its formula editor produces SVGs out of TeX but pastes MathML directly into a page, leading to inconsistent renderings of equivalent mathematics</li>
+<li>MathML support of iBooks on iOS5 devices is severly broken (and will likely never be fixed) thanks to a mobile Safari bug that screws up the use of STIX fonts.</li>
+</ul>
+<p>Anyway, I mentioned in the session that you can actually include MathJax in epub3 files directly to get much of the same. Well, you have to do the pretty layouts yourself and you'll depend on a javascript-enabled epub3 reading software (like iBooks) but at least you're using an open standard and retain your rights.</p>
+<h2>Let's get started!</h2>
+<p>If you're lazy, grab the file at the end of the post and hack from there. But I'll walk you through it.</p>
+<ul>
+<li>If you want to learn something, grab a copy of <a href="http://github.com/mathjax/mathjax">MathJax</a></li>
+<li>slim it down as described <a href="https://github.com/mathjax/MathJax/wiki/Shrinking-MathJax-for-%22local%22-installation">here</a></li>
+<li>I went all the way and restricted output to SVG -- to minimize things and to make it work. HTML output should work on iOS5, but last I checked Apple changed something on iOS6 that I couldn't track down for lack of devices.</li>
+</ul>
+<p>Alright, that's the basics. You now have a copy of MathJax that works on any reasonably recent webkit browser, including most Android and iOS versions.</p>
+<p>You have all inputs (LaTeX, asciimath, MathML) available but only SVG output (well, and native MathML but if that worked we wouldn't be here...).</p>
+<h2>What's next?</h2>
+<p>Create your document. That's actually hard if you don't have a workflow already and don't want to afford InDesign, Blue Griffon etc.</p>
+<p>Personally, I will always try pandoc first. It's the most versatile tool there is and John McFarlane is just fantastic. Its TeX implementation is enough if you are writing TeX with HTML/epub output in mind, I'm sure you won't run into trouble.</p>
+<p>If you can, consider to go through the Haskell-cabal-pain of installing the current development version -- see the instructions <a href="https://github.com/jgm/pandoc/wiki/Installing-the-development-version-of-pandoc-1.10">at the pandoc github wiki</a>. That will get you the new epub3 writer and things should be easy.</p>
+<p>Of course, you can hack the example file below and just use a current version of pandoc or whatever you like to generate some xHTML5 (yes, xhtml, not html if you want your file to validate). You'll have to modify the manifest etc by hand.</p>
+<p>Anyway, let's daringly assume you have an epub3 with your xhtml+mathml content.</p>
+<h2>Adding MathJax.</h2>
+<ul>
+<li>add the slim down version of MathJax to your epub file using your favoriate tool for adding content to a zip file. (Don't unzip/rezip unless you know what epub needs when zipping...)</li>
+<li>Assuming you're using the copy as in the attachement, add the following to your manifest (modify paths and id's if needed)<pre><code>&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/BasicLatin.js&quot; id=&quot;id0&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MiscMathSymbolsB.js&quot; id=&quot;id1&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/d.js&quot; id=&quot;id2&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/jax.js&quot; id=&quot;id3&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/cancel.js&quot; id=&quot;id4&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/a.js&quot; id=&quot;id5&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/AsciiMath/jax.js&quot; id=&quot;id6&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/autoload/ms.js&quot; id=&quot;id7&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/mathchoice.js&quot; id=&quot;id8&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Script/Regular/Main.js&quot; id=&quot;id9&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/extpfeil.js&quot; id=&quot;id10&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/AsciiMath/config.js&quot; id=&quot;id11&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/Arrows.js&quot; id=&quot;id12&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/images/CloseX-31.png&quot; id=&quot;id13&quot; media-type=&quot;image/png&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/LatinExtendedA.js&quot; id=&quot;id14&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/Other.js&quot; id=&quot;id15&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Size3/Regular/Main.js&quot; id=&quot;id16&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Size2/Regular/Main.js&quot; id=&quot;id17&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/images/MenuArrow-15.png&quot; id=&quot;id18&quot; media-type=&quot;image/png&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/TeX/jax.js&quot; id=&quot;id19&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Size1/Regular/Main.js&quot; id=&quot;id20&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/h.js&quot; id=&quot;id21&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/l.js&quot; id=&quot;id22&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/PUA.js&quot; id=&quot;id23&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/AMSsymbols.js&quot; id=&quot;id24&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/CombDiacritMarks.js&quot; id=&quot;id25&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/PUA.js&quot; id=&quot;id26&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/GreekAndCoptic.js&quot; id=&quot;id27&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/LatinExtendedB.js&quot; id=&quot;id28&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/LatinExtendedA.js&quot; id=&quot;id29&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MiscSymbols.js&quot; id=&quot;id30&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/scr.js&quot; id=&quot;id31&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/MiscSymbols.js&quot; id=&quot;id32&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/MiscTechnical.js&quot; id=&quot;id33&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/newcommand.js&quot; id=&quot;id34&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/autoload/mmultiscripts.js&quot; id=&quot;id35&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/p.js&quot; id=&quot;id36&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/Main.js&quot; id=&quot;id37&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/o.js&quot; id=&quot;id38&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/autoload/annotation-xml.js&quot; id=&quot;id39&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/u.js&quot; id=&quot;id40&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/BasicLatin.js&quot; id=&quot;id41&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/BasicLatin.js&quot; id=&quot;id42&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Size4/Regular/Main.js&quot; id=&quot;id43&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/noUndefined.js&quot; id=&quot;id44&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/k.js&quot; id=&quot;id45&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/LetterlikeSymbols.js&quot; id=&quot;id46&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/HTML.js&quot; id=&quot;id47&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/Main.js&quot; id=&quot;id49&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/MiscSymbolsAndArrows.js&quot; id=&quot;id50&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/BasicLatin.js&quot; id=&quot;id51&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/GeometricShapes.js&quot; id=&quot;id52&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/GeometricShapes.js&quot; id=&quot;id53&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/config.js&quot; id=&quot;id54&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/enclose.js&quot; id=&quot;id55&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/EnclosedAlphanum.js&quot; id=&quot;id56&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/mhchem.js&quot; id=&quot;id57&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/verb.js&quot; id=&quot;id58&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/GeneralPunctuation.js&quot; id=&quot;id59&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/MathMenu.js&quot; id=&quot;id60&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/GeometricShapes.js&quot; id=&quot;id61&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/PUA.js&quot; id=&quot;id62&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/LetterlikeSymbols.js&quot; id=&quot;id63&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/z.js&quot; id=&quot;id64&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/Main.js&quot; id=&quot;id65&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/SpacingModLetters.js&quot; id=&quot;id66&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/Other.js&quot; id=&quot;id67&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/autoload-all.js&quot; id=&quot;id68&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/CombDiacritMarks.js&quot; id=&quot;id69&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/noErrors.js&quot; id=&quot;id70&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/g.js&quot; id=&quot;id71&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/BasicLatin.js&quot; id=&quot;id72&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/SpacingModLetters.js&quot; id=&quot;id73&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MiscSymbols.js&quot; id=&quot;id74&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/GreekAndCoptic.js&quot; id=&quot;id75&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/Main.js&quot; id=&quot;id76&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/mml2jax.js&quot; id=&quot;id77&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/GeometricShapes.js&quot; id=&quot;id78&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/i.js&quot; id=&quot;id79&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/q.js&quot; id=&quot;id80&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/toMathML.js&quot; id=&quot;id81&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/NativeMML/config.js&quot; id=&quot;id82&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/BasicLatin.js&quot; id=&quot;id83&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/boldsymbol.js&quot; id=&quot;id84&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/Other.js&quot; id=&quot;id85&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/BoxDrawing.js&quot; id=&quot;id86&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/begingroup.js&quot; id=&quot;id87&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/v.js&quot; id=&quot;id88&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/MiscMathSymbolsA.js&quot; id=&quot;id89&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Math/BoldItalic/Main.js&quot; id=&quot;id90&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/Other.js&quot; id=&quot;id91&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/autoload/menclose.js&quot; id=&quot;id92&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/LetterlikeSymbols.js&quot; id=&quot;id93&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js&quot; id=&quot;id94&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/GeneralPunctuation.js&quot; id=&quot;id95&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/MiscMathSymbolsB.js&quot; id=&quot;id96&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/x.js&quot; id=&quot;id97&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/Other.js&quot; id=&quot;id98&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/j.js&quot; id=&quot;id99&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/MathZoom.js&quot; id=&quot;id100&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MiscMathSymbolsA.js&quot; id=&quot;id101&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/unicode.js&quot; id=&quot;id102&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/c.js&quot; id=&quot;id103&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/NativeMML/jax.js&quot; id=&quot;id104&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/SupplementalArrowsB.js&quot; id=&quot;id105&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/autobold.js&quot; id=&quot;id106&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/SuppMathOperators.js&quot; id=&quot;id107&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/Main.js&quot; id=&quot;id108&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/action.js&quot; id=&quot;id109&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/fr.js&quot; id=&quot;id110&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/Dingbats.js&quot; id=&quot;id111&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Dingbats.js&quot; id=&quot;id112&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/CombDiacritMarks.js&quot; id=&quot;id113&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/Arrows.js&quot; id=&quot;id114&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/MathEvents.js&quot; id=&quot;id115&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/MathOperators.js&quot; id=&quot;id116&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Caligraphic/Bold/Main.js&quot; id=&quot;id117&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/MathOperators.js&quot; id=&quot;id118&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/Latin1Supplement.js&quot; id=&quot;id119&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/CombDiacritMarks.js&quot; id=&quot;id120&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/f.js&quot; id=&quot;id121&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Main.js&quot; id=&quot;id122&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/bbox.js&quot; id=&quot;id123&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/config.js&quot; id=&quot;id124&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/CombDiactForSymbols.js&quot; id=&quot;id125&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/CombDiacritMarks.js&quot; id=&quot;id126&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Arrows.js&quot; id=&quot;id127&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/SupplementalArrowsA.js&quot; id=&quot;id128&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/r.js&quot; id=&quot;id129&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/GeneralPunctuation.js&quot; id=&quot;id130&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/BasicLatin.js&quot; id=&quot;id131&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/SuppMathOperators.js&quot; id=&quot;id132&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/opf.js&quot; id=&quot;id133&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/fontdata.js&quot; id=&quot;id134&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/SpacingModLetters.js&quot; id=&quot;id135&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/autoload/mglyph.js&quot; id=&quot;id136&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/MathOperators.js&quot; id=&quot;id137&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/GreekAndCoptic.js&quot; id=&quot;id138&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/CombDiactForSymbols.js&quot; id=&quot;id139&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/Main.js&quot; id=&quot;id140&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/w.js&quot; id=&quot;id141&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MiscTechnical.js&quot; id=&quot;id142&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/Latin1Supplement.js&quot; id=&quot;id143&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MathOperators.js&quot; id=&quot;id144&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/LetterlikeSymbols.js&quot; id=&quot;id146&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/m.js&quot; id=&quot;id147&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/GeneralPunctuation.js&quot; id=&quot;id148&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/autoload/multiline.js&quot; id=&quot;id149&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/LatinExtendedA.js&quot; id=&quot;id150&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/autoload/mtable.js&quot; id=&quot;id151&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/LatinExtendedA.js&quot; id=&quot;id152&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/Main.js&quot; id=&quot;id153&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/asciimath2jax.js&quot; id=&quot;id154&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/jax.js&quot; id=&quot;id155&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/AMSmath.js&quot; id=&quot;id156&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/b.js&quot; id=&quot;id157&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/fontdata-extra.js&quot; id=&quot;id158&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/SuppMathOperators.js&quot; id=&quot;id159&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MathOperators.js&quot; id=&quot;id160&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/s.js&quot; id=&quot;id161&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Script/Regular/BasicLatin.js&quot; id=&quot;id162&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Caligraphic/Regular/Main.js&quot; id=&quot;id163&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/SpacingModLetters.js&quot; id=&quot;id164&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/GreekAndCoptic.js&quot; id=&quot;id165&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/BasicLatin.js&quot; id=&quot;id166&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/SupplementalArrowsA.js&quot; id=&quot;id167&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/MathJax.js&quot; id=&quot;id168&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/TeX/config.js&quot; id=&quot;id169&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/BasicLatin.js&quot; id=&quot;id170&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/CombDiacritMarks.js&quot; id=&quot;id171&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/TeX/color.js&quot; id=&quot;id172&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/Main.js&quot; id=&quot;id173&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/LatinExtendedB.js&quot; id=&quot;id174&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/CombDiacritMarks.js&quot; id=&quot;id175&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/Other.js&quot; id=&quot;id176&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/extensions/tex2jax.js&quot; id=&quot;id177&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MiscTechnical.js&quot; id=&quot;id178&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/autoload/maction.js&quot; id=&quot;id179&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/GreekAndCoptic.js&quot; id=&quot;id180&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/LatinExtendedB.js&quot; id=&quot;id181&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/n.js&quot; id=&quot;id182&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/t.js&quot; id=&quot;id183&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/BasicLatin.js&quot; id=&quot;id184&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/SuppMathOperators.js&quot; id=&quot;id185&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/y.js&quot; id=&quot;id186&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/jax.js&quot; id=&quot;id187&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/input/MathML/entities/e.js&quot; id=&quot;id188&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/LetterlikeSymbols.js&quot; id=&quot;id189&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Latin1Supplement.js&quot; id=&quot;id190&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/element/mml/optable/CombDiacritMarks.js&quot; id=&quot;id191&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Math/Italic/Main.js&quot; id=&quot;id192&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/Main.js&quot; id=&quot;id193&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+</code></pre>
+</li>
+<li>To each xhtml file that contains MathML, add<br>
+`<script type="text/x-mathjax-config"><br>
+MathJax.Hub.Config({<br>
+jax: [&quot;input/TeX&quot;,&quot;input/MathML&quot;,&quot;output/SVG&quot;],<br>
+extensions: [&quot;tex2jax.js&quot;,&quot;mml2jax.js&quot;,&quot;MathEvents.js&quot;],<br>
+TeX: {<br>
+extensions: [&quot;noErrors.js&quot;,&quot;noUndefined.js&quot;,&quot;autoload-all.js&quot;]<br>
+},<br>
+MathMenu: {<br>
+showRenderer: false<br>
+},<br>
+menuSettings: {<br>
+zoom: &quot;Click&quot;<br>
+},<br>
+messageStyle: &quot;none&quot;<br>
+});<br>
+</script> <script type="text/javascript" src="../mathjax/MathJax.js"> </script>`
+</li>
+<li>I have not activated automatic linebreaking because there's currently <a href="http://github.com/mathjax/mathjax/issues/368">a bug</a> in MathJax on iOS6. If MathJax detects the need to break the line, you'll get Math Processing errors instead.</li>
+<li>For each xhtml file with the above we'll have to modify the <code>properties</code>-part in the manifest to have both <code>mathml scripted</code>, e.g., in the sample file you'll see
+<ul>
+<li><code>&lt;item id=&quot;c3&quot; media-type=&quot;application/xhtml+xml&quot; href=&quot;xhtml/ch1.html&quot; properties=&quot;mathml scripted&quot;/&gt;</code></li>
+</ul>
+</li>
+<li>And then you can include wonderful MathML and even webkit deficiencies or the horrible iOS5 Safari+STIX bug will be meaningless to your epub file and you can actually publish a mathematical epub file to be read on iBooks.<br>
+<math><mrow><mover><mi>x</mi><mo>^</mo> </mover><mo>+</mo> <mover><mrow><mi>x</mi> <mo>⁢</mo> <mi>y</mi> </mrow><mo>^</mo> </mover><mo>+</mo> <mover><mrow><mi>x</mi> <mo>⁢</mo> <mi>y</mi> <mo>⁢</mo> <mi>z</mi> </mrow><mo>^</mo> </mover><mo>.</mo></mrow></math></li>
+</ul>
+<hr>
+<p>This text is <a href="/assets/2013/How%20to%20include%20MathJax%20in%20an%20epub3%20file%20to%20work%20with%20iBooks%20%28and%20possibly%20others%29.epub">available as an epub3 file</a> which includes MathJax and should run on iOS devices.</p>
+<hr>
+<p><em>Comments</em></p>
+<ul>
+<li><strong>Lila Roberts</strong>, 2013/01/15<br>
+I’d like to try to create an epub file–I must admit the opf file is quite intimidating. pandoc looks nice; but I do have inDesign and BlueGriffon. I’ll keep you posted. Thanks, Peter!
+<ul>
+<li><strong>Peter</strong>, 2013/01/15<br>
+yes, creating opf files is a pain. For experiments, you can just hack the sample file from the post. iBooks doesn’t complain if the opf is incomplete, so you can just add jsxgraph etc to the file, too.</li>
+</ul>
+</li>
+<li><strong>AndrewMcDermott</strong>, 2013/01/25<br>
+Hi Peter<br>
+Great post, I’ll give this a go in the next week or so hopefully, if things calm down a little on our project. Will let you know how I get on!
+<ul>
+<li><strong>Peter</strong>, 2013/01/25<br>
+great! let me know how it goes.</li>
+</ul>
+</li>
+<li><strong>Peter</strong>, 2013/02/14<br>
+Hi Andrew. I think this was caught in moderation — sorry. Great to hear it works for you. I hope we can get HTML output running again since that behaves better wrt to CSS.<br>
+You can of course include both images and MathML and have MathJax replace the images with its rendering. That way you can support all systems using the same file.</li>
+<li><strong>Johannes Wilm</strong>, 2013/05/04<br>
+nice one! We have included this in our javascript based epub generator at <a href="http://www.fiduswriter.com">http://www.fiduswriter.com</a>. I must admit though that I haven't found any ereaders that can make use of this. Is there a list somewhere of what readers support javascript? I noticed thatyou guys are really against prerendering things, but I wonder if maybe thatis needed anyway. So at first I tried looking at the style declarations that are being included in the -section by mathjax. The most important thing missing there seems to be the font-face declarations. I haven'tlooked too much into whether they can be recreated some way.<br>
+The other way one could go would be to try to convert the rendered SVG to a canvas element and from there to an img, which could be saved within the epub. I haven't tried it, but was thinking of something like <a href="https://github.com/gabelerner/canvg">https://code.google.com/p/canvg/</a>.<br>
+Are there any other recommentations you have?
+<ul>
+<li><strong>Peter</strong>, 2013/05/05<br>
+Hi Johannes, sorry that this was stuck in the moderation queue. Somehow I didn’t get the notification… This warrants a longer reply, as your comment is hitting on many problems and misconceptions at once 😀 (not you personal, just the way the comment can be misunderstood).</li>
+<li><strong>Peter</strong>, 2013/05/05<br>
+Ok, here’s a longer attempt.<br>
+The solution was only tested on iBooks. There are hardly any other javascript-enabled readers out there since epub3 does not require javascript support (although it at least premits it as opposed to epub2). I try to keep <a href="http://docs.mathjax.org/en/latest/misc/epub.html">docs.mathjax.org/en/latest/misc/epub.html</a> up to date but I know a number of Android apps are missing (one of which actually supports javscript).<br>
+Why MathJax people often appear to be “against” pre-rendering is simple: that’s what MathJax set out to eliminate! Especially in professional publishing there’s a long history of rendering MathML as images (for over a decade now). We need to get beyond that. Another reason is that the MathJax team tries to get another point across: there’s no need anymore! Every epub3 reader out there uses a modern browser engine underneath that MathJax supports. So they can all integrate MathJax internally to get MathML support. Also, by now, there’s a MathML capable epub3 reader for every platform. Of course that’s not enough for professional publishing, but they are far too conservative anyway.<br>
+Also, MathML is the only way to get accessible mathematics right now. Alt-text is simply wrong (except when it’s MathML I guess) — it is not adequate in today’s a11y world where several groups need drastically different rendering, mixed modes and verbosity levels (blind, low vision, learning disabilities etc).<br>
+Now image renderings (well, SVG anyway) would be ok if anybody supported epub3’s switch element — then at least, publishing could develop forward.<br>
+Sp you’re right: if fiduswriter wants to do epub3 production that works everywhere today, then image renderings are the only stable choice — as much as it pains me to say. At the same time, make sure you’re not stuck at that (too many math solutions are). A generally bad but here fitting example is the proprietary horror that is the iBooks Author format. If you use TeX input in iBA2, then you’ll end up with SVG and MathML in the file, likely so that Apple can switch to MathML once Safari supports MathML properly (which may never be the case since they have never paid anyone to actually develop it…). For a wonderful example of inconsistency: iBA2 also accepts MathML input, which gets copied as is — so won’t display properly when the MathML is beyond Safari’s limited MathML support… Way to push MathML, Apple…<br>
+Finally, MathJax output cannot be very well pre-rendered, even as SVG. The HTML-CSS output depends strongly on the viewport configuration at the time of rendering. Which means reflow (which is basically the point of ebooks) easily screws it up, especially when fancy new CSS tricks comes into play at that point. Even the SVG output cannot be pre-produced on the level of real MathJax rendering, linebreaking and other tricks break (besides it blows when it comes to simple things like night mode and more generally at accessibility).<br>
+PS: a canvas output is in our backlog.</li>
+</ul>
+</li>
+<li><strong>Johannes Wilm</strong>, 2013/05/05<br>
+I see. The epub with mathjax in it worked fine in IBooks, while in Adobe Digital Editings (installed via Wine) and my Nook Glow Light, it just doesn't run the Javascript. It seems to crash the ebook reading app that comes with Calibre.<br>
+Epubs themselves may have a limited lifespan, as ebook readers will get fullblown browsers with time, and once there is MathML support everywhere, we may just need a smaller script of some kind to translate Tex-based maths to MathML... The point is that the landscape is changing rapidly and that one needs to adjust one's solutions quite a lot over the next few years.<br>
+So, I was thinking: To get smething that is working with today's devices, instead of this:<br>
+<code>$X=Y^2$</code><br>
+which is rendered fine on only some devices, have something like this:<br>
+ <br>
+Then the ebook readers that cannot run jaascript will show the image and those that can (IBooks) can calculate the mathjax formula. Of course, mathjax has to be run manually with some javascript, as it cannot find the equation it should render as easily, but I'm sure this can be done.<br>
+As for SVG vs. IMG -- I didn't look enough at the svg-canvas library, but assuming that it permits me to copy an already rendered SVG to a canvas, that should mean that I should be able to create a canvas which easily can be converted to an IMG and then saved inside the epub.<br>
+But you would maybe argue that it is preferable to just include the SVG directly? For that I assume I would copy the SVG code from the DOM, copy the extra style information that has been added to the header, and find the fonts that have been added through some other trick (cannot find them in hte header) and add those to the mix as well. Right?</li>
+<li><strong>Johannes Wilm</strong>, 2013/05/05<br>
+Ah, this system ate most of my code examples. let me try again:<br>
+So, I was thinking: To get something that is working with today’s devices, instead of this:<br>
+<code>&lt;span class=&quot;equation&quot;&gt;&lt;MATH&gt;X=Y^2&lt;/MATH&gt;&lt;/span&gt;</code><br>
+which is rendered fine on only some devices, have something like this:<br>
+<code>&lt;span class=&quot;equation&quot; data-equation=&quot;X=Y^2&quot;&gt;&lt;IMG src=&quot;...&quot; alt=&quot;an equation showing X=Y^2&quot;/&gt;&lt;/span&gt;</code>
+<ul>
+<li><strong>Peter</strong>, 2013/05/05<br>
+As I wrote, ideally, you would produce some kind of image fallback and use the epub-switch element. Unfortunately, very few epub3  reading systems support it. Even worse, they often react the wrong way to it: using MahtML instead of the image :(<br>
+Unfortunately, your &quot;once there's MathML support everywhere&quot; makes me cry a little as I just replied to <a href="https://groups.google.com/forum/?fromgroups=#!topic/mozilla.dev.platform/96dZw1jXTvM">https://groups.google.com/forum/?fromgroups=#!topic/mozilla.dev.platform/96dZw1jXTvM</a>. There's currently zero development going into browsers. I hope we can change that, but this will be a while.<br>
+Anyway, yes, MathJax can easily replace images by rendering embedded code. Case in point: bookmarklets for doing that on <a href="http://Wordpress.com">Wordpress.com</a> and Wikipedia <a href="https://gist.github.com/pkra">https://gist.github.com/pkra</a><br>
+You can use SVG -- both canvas and SVG are part of epub3. Grabbing MathJax output is certainly possible, but with constraints. Making MathJax work also outside the DOM (with those constraints) is in our backlog, but has been for a while. You might find <a href="https://github.com/agrbin/svgtex">https://github.com/agrbin/svgtex</a> interesting.</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20How to include MathJax in an epub3 file to work with iBooks (and possibly others)">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_CHTML-full">
+</script>
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0129/ -->
+	</body>
+</html>

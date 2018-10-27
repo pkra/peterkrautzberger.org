@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Red workbook, p7</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Red workbook, p7</h1>
+  <span class="post-date"><time datetime="2014-03-09">09 Mar 2014</time></span>
+  <h3>Source</h3>
+<figure>
+  <a href="/assets/2014/red_workbook-p7.jpg">
+    <img alt="red workbook, p7" src="/assets/2014/red_workbook-p7.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, p.7
+  </figcaption>
+</figure>
+<h3>Transcript</h3>
+<ul>
+<li><strong>Kapitel 2</strong> Dicke Teilmengen von \(S\)</li>
+<li><strong>Def</strong>: \(T\subseteq S\) dick &lt;=&gt; \(\{ x^{-1}T : x\in S \}\) hat eDe</li>
+<li><strong>Prop</strong>: Aeq: (a) \(T\) dick; (b) \(\forall e \subseteq_ e S \exists y \in S: ( y \in \bigcap_ {x\in e} x^{-1} T ) \Longleftrightarrow \stackrel{\stackrel{\text{punktweise}}{\downarrow}}{e \cdot y} \subseteq T)\)<br>
+(c) ex. \(L \subseteq \widehat{T}\) (min) LID.
+<ul>
+<li>[proof]</li>
+<li>a &lt;=&gt; c: \(x\in S, p\in \beta S: x^{-1} T \in p \stackrel{\text{Skript}}{\Leftrightarrow} T\in x\cdot p \Leftrightarrow x\cdot p \in \widehat{T}\)</li>
+<li>also \(T \text{ dick} \Leftrightarrow \exists p \in \beta S: S\cdot p \subseteq \widehat{T} \stackrel{\text{stetig &amp; closed}}{\Longleftrightarrow} \exists p \in \beta S: \beta S \cdot p \subseteq \widehat{T} \Leftrightarrow \text{Beh.}\)</li>
+</ul>
+</li>
+<li><strong>Bem.</strong> \(A\) dick =&gt; \(A\) zentral.
+<ul>
+<li>[\(A\) dick =&gt; \(\exists L \text{ min. LID} \subseteq \widehat{A} \Rightarrow \exists \epsilon: E_ \min \cap L \subseteq \widehat{A} \Rightarrow A \in \epsilon\).</li>
+</ul>
+</li>
+<li><strong>Bem.</strong> (a) \(A \subseteq (\omega, +)\) dick &lt;=&gt; \(A\) enthaelt beliebig lange Intervalle
+<ul>
+<li>(b) dick \(\stackrel{\not \Rightarrow}{\not \Leftarrow}\) synd.</li>
+<li>[proof]
+<ul>
+<li>Betrachte \(\omega = \bigcup_ {n \in \omega} I_ n\), \(\left\vert I_ n\right\vert  = n\), $0\in I_ 0 &lt;&lt; I_ 1 &lt;&lt; \ldots $</li>
+<li>
+<ol>
+<li>\(A := \bigcup_ {2 \in \omega} I_ {2n}, B = \bigcup_ {n\in \omega} I_ {2n+1} \rightarrow A, B\) dick, nicht syndetisch.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>\(A = 2 \cdot \mathbb{N}\) synd, \(A\) nicht dick.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>(c) \(A \subseteq \text{ pws} \Leftrightarrow \exists g \subseteq_ e S { t^{-1} \bigcup_ {x \in g} x^{-1}A : t \in S} \text{ eDE} \Leftrightarrow \exists g \subseteq_ e : \bigcup_ {x \in g} x^{-1}A \text{ dick.}\)</li>
+<li>(d) \(A\) dick (pws, synd) =&gt; \(x^{-1} A\) dick (pws, synd)</li>
+<li>\(A\) synd =&gt; \(x\cdot A\) synd.</li>
+</ul>
+</li>
+</ul>
+<h3>Translation</h3>
+<ul>
+<li><strong>Chapter 2</strong> Thick subsets of \(S\)</li>
+<li><strong>Definition</strong>: \(T\subseteq S\) thick &lt;=&gt; $ { x^{-1}T : x\in S }$ has the finite intersection property (FIP)</li>
+<li><strong>Proposition</strong>: TFAE
+<ul>
+<li>(a) \(T\) thick;</li>
+<li>(b) \(\forall e \subseteq S \text{ finite } \exists y \in S: ( y \in \bigcap_ {x\in e} x^{-1} T) \Longleftrightarrow \stackrel{\stackrel{\text{pointwise}}{\downarrow}}{e \cdot y} \subseteq T)\)</li>
+<li>(c) \(\exists L \subseteq \widehat{T}\) (minimal) left ideal (LID).</li>
+<li>[proof of a &lt;=&gt; c]
+<ul>
+<li>note: \(x\in S, p\in \beta S: x^{-1} T \in p \Leftrightarrow T\in x\cdot p \Leftrightarrow x\cdot p \in \widehat{T}\)</li>
+<li>therefore: \(T \text{ thick} \Leftrightarrow \exists p \in \beta S: S\cdot p \subseteq \widehat{T} \stackrel{\text{continuous &amp; closed}}{\Longleftrightarrow} \exists p \in \beta S: \beta S \cdot p \subseteq \widehat{T} \Leftrightarrow \text{ the claim}\).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Remark</strong> \(A\) thick =&gt; \(A\) central.
+<ul>
+<li>proof. \(A\) central =&gt; \(\exists L \text{ min. LID} \subseteq \widehat{A} \Rightarrow \exists \epsilon: E_ \min \cap L \subseteq \widehat{A} \Rightarrow A \in \epsilon\).</li>
+</ul>
+</li>
+<li><strong>Remark.</strong>
+<ul>
+<li>(a) \(A \subseteq (\omega, +)\) thick &lt;=&gt; \(A\) contains arbitrarily long intervals</li>
+<li>(b) thick \(\not \Rightarrow\) syndetic, thick \(\not \Leftarrow\) syndetic.</li>
+<li>[proof]
+<ul>
+<li>Consider a partition \(\omega = \bigcup_ {n \in \omega} I_ n\), \(\vert I_ n\vert  = n+1\) with $0\in I_ 0 &lt;&lt; I_ 1 &lt;&lt; \ldots $</li>
+<li>
+<ol>
+<li>\(A := \bigcup_ {2 \in \omega} I_ {2n}, B = \bigcup_ {n\in \omega} I_ {2n+1} \rightarrow A, B\) thick, not syndetic.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>\(A = 2 \cdot \mathbb{N}\) syndetic, \(A\) not thick.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>(c) \(A \subseteq \text{ piecewise syndetic (pws)} \Leftrightarrow \exists g \subseteq S \text{ finite } { t^{-1} \bigcup_ {x \in g} x^{-1}A : t \in S} \text{ eDE} \Leftrightarrow \exists g \subseteq S \text{ finite} : \bigcup_ {x \in g} x^{-1}A \text{ thick.}\)</li>
+<li>(d) \(A\) thick (pws, synd) =&gt; \(x^{-1} A\) thick (pws, synd)</li>
+<li>\(A\) synd =&gt; \(x\cdot A\) synd.</li>
+</ul>
+</li>
+</ul>
+<h3>Notes</h3>
+<p>Same lecture, new chapter. This is the first of two pages on the basics of thick sets.</p>
+<p>&quot;Thick&quot; is an odd notion. It always seems a little made up to me, something stated after the fact (after asking &quot;what does a set look like that covers a left ideal?&quot;). On the other hand, for \(\omega\), I can imagine that the notion &quot;a set that contains arbitrarily long intervals&quot; might actually come up independently of ultrafilters. However, I don't know the history of the notion, so I'm probably wrong here (if you know anything about this, please leave a comment).</p>
+<p>A technical note. I realized that using the section heading &quot;partial translation&quot; was a bit misleading; as would be &quot;augmented/corrected translation&quot;. In fact, I do both -- leave some things out (negligible comments etc), clear up the layout, and add corrections (e.g. \(\vert I_ n\vert  = n+1\) instead of \(n\)). So I will just call it &quot;translation&quot; from now on.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Red workbook, p7">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0153/ -->
+	</body>
+</html>

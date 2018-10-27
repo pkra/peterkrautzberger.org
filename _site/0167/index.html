@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ASCIIMathML to the rescue</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">ASCIIMathML to the rescue</h1>
+  <span class="post-date"><time datetime="2014-08-10">10 Aug 2014</time></span>
+  <p>Doug Schepers recently asked me for some advice for HTMLizing some mathematics. <a href="http://www.w3.org/People/Schepers/">Doug</a> is one of those exceptional people at the W3C who thrive in pushing the web and its standards forward. In this case, Doug was looking at <a href="http://www.musicdsp.org/files/Audio-EQ-Cookbook.txt">this bit of audio engineering</a> in the context of the <a href="http://www.w3.org/TR/webaudio/">Web Audio spec</a>.</p>
+<p>As you can see, that text file has some beautiful ascii-art mathematics. Of course, Doug wanted to code this up properly for the web which means using MathML and the question was: what's the easiest way to do so?</p>
+<p>It's not hard to see why I suggested <a href="http://www1.chapman.edu/~jipsen/mathml/asciimath.html">ASCIIMathML</a> (or asciimath). Asciimath was written by <a href="http://www1.chapman.edu/~jipsen/">Peter Jipsen</a> with whom I happen to have two lucky personal connections -- first, I luckily shared a room with Peter at BLAST 2010 (way before I got involved with MathJax, see <a href="http://boolesrings.org/krautzberger/tag/blast-2010/">these posts</a>), second I was lucky enough to enjoy his hospitality a couple of times while we lived in LA, including Peter taking me surfing for the first time in my life -- good times.</p>
+<p>If I remember correctly, asciimath was born out of pure necessity -- finding a way for college students to write mathematics on the web. These kids were accustomed to graphing calculator style input, and Peter, of course, believed that MathML was the right way for an output on the web -- so in 2004 he started to write this beautiful JavaScript library to convert from one to the other.</p>
+<p>Later on, <a href="http://dlippman.imathas.com/">David Lippman</a> wrote a nice MathJax addon, which was ultimately re-written by David Cervone, and so nowadays you can use asciimathml in any browser by combining it with MathJax.</p>
+<h3>Why Asciimath is awesome</h3>
+<p>First off, if you know some TeX I would probably describe asciimath as &quot;TeX without backslashes&quot;. Because, really, why not write <code>alpha</code> or <code>phi</code> for %alpha, phi%? Similarly, why not just write <code>sin</code> for %sin%? (Oh, and let's have <a href="https://github.com/mathjax/MathJax/issues/353">a fun discussion</a> about <code>phi</code> vs <code>varphi</code>, Unicode vs TeX. But not a problem, you can switch to whichever convention you like using MathJax.)</p>
+<p>Second, if you know markdown, then I might describe asciimath as &quot;markdown for math&quot;. It's not TeX in all its (infamous) glory or even MathJax's TeX-like input with its many advantages for the web. It's much more restricted and that's by design -- much like markdown is.</p>
+<p>Given its target (MathML) and its general webbiness, asciimath works smoothly with Unicode, which adds to its readability and usability (and internationalization). Everyone will probably appreciate that <code>-&gt;</code> and <code>→</code> work interchangeably (both of which seem much saner to me than anything LaTeX would suggest). So <code>f: A -&gt; B</code> and <code>f: A → B</code> produce identical MathML: %f: A -&gt; B% and %f: A → B%.</p>
+<p>Similarly, asciimath's minimal approach does not need TeX's cumbersome <code>\begin{} \end{}</code> environments, but many important tools are available in much simpler ascii/computing notation, e.g., <code>((a,b),(c,d))</code> for matrices: %((a,b),(c,d))%.</p>
+<h3>Making asciimath better</h3>
+<p>Personally, I think asciimath probably deserves the title &quot;markdown for math&quot; although I think the title will go to TeX-like input after all (but that's another post).</p>
+<p>What I'd really love to see is more people pushing asciimath further. The official <a href="https://github.com/mathjax/asciimathml">ASCIIMathML repository</a> is now hosted on MathJax's GitHub account and we even grabbed a nice domain at <a href="http://www.asciimath.org/">www.asciimath.org</a> to have an open page using Github pages for people to easily contribute enhancements to.</p>
+<p>There's a lot of low hanging fruit in the form of improving the quality of the MathML (e.g., <code>a\\b</code> should probably produce <code>&lt;mfrac bevelled=&quot;true&quot;&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;/mfrac&gt;</code> instead of the problematic <code>&lt;mi&gt;a&lt;/mi&gt;&lt;mo&gt;/&lt;/mo&gt;&lt;mi&gt;b&lt;/mi&gt;</code>) and of course asciimath by design should probably not strive to be feature complete (i.e., generate any kind of MathML) which means there should be situations where asciimath will simply fail and, much like markdown with HTML, it could perhaps gracefully mix MathML and asciimath.</p>
+<p>But in any case, it's great to have this alternative to TeX-like inputs because TeX is ultimately holding math on the web back (but that's another post, for another time).</p>
+<hr>
+<p><em>Comments</em></p>
+<ul>
+<li><strong>Kasper Peulen</strong>, 2014/09/15<br>
+I absolutely do agree that asciimath deserves the title “markdown for math”. However it seems that many mathematicians don't take anything serious that is ¬LaTeX.<br>
+I'm really curious where your next blog post will be about. I do think that TeX is ultimately holding math on the web back. I think the web have seriously failed if in 10 year time, it is still the standard to use LaTeX code for a (good looking) mathematical chat. Or other forms of quick mathematical communcation on the web.<br>
+But I'm not seeing ASCIIMath as the holy grail (yet). One reason that people may not take ASCIIMath seriously, is because it doesn't look the same as LaTeX. Not having a different mode for inline and display style math is something that arguably doesn't look so professional. I don't see people use ASCIIMath for writing a mathematical blog in this way.<br>
+The lack of <code>\begin{align} \end{align}</code> like environements is also a downside of ASCIIMath. I use align environments all the time. I agree that ASCIIMathML aim shouldn't be to be feature complete. But I do think it should be able to generate 90 percent of what a mathematician uses. In other words 90 percent  of what is used at math.stackexchange for example.<br>
+The last point I don't like about ASCIIMathML is its name. Being ASCII focussed is not what I envision for a future mathematical language. I think the language should be unicode focussed. Because unicode symbols are ultimately the easiest to read.<br>
+For example take this LaTeX code:<br>
+<code>\(W^{3\beta}_{\delta_1\rho_1\sigma_2}\)</code><br>
+The ASCII variant:<br>
+<code><code>W_(delta_1rho_1sigma_2)^(3beta}</code></code><br>
+I think for the ultimate readable mathematical language, a hybrid of ASCIIMath and Murray Sargant's math language would be perfect: <a href="http://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf">http://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf</a><br>
+In that language, you would have:<br>
+<code>W_δ₁₂ρ₁σ₁^3β</code><br>
+Which is the best readable of the three I think. (I see that ASCIIMathML does render some unicode symbols, but ₁ or ₂ or not rendered (what I would think is) correct.<br>
+The problem of unicode symbols is of course that they are not easy to write in any plain html textarea input (or even ace editor). That is some real obstacle I try to battle with this little tool: <a href="http://kasperpeulen.github.io/PressAndHold/">http://kasperpeulen.github.io/PressAndHold/</a><br>
+Ultimately, I think it should be possible to have unicode symbols be labeled &quot;easy to write&quot;. For example writing these unicode symbols <code>(W_δ₁₂ρ₁σ₁^3β)</code> in this comment box, was allmost trivial using that tool (which can be used as a bookmarklet script).<br>
+Another way would be just mapping the ASCII macros already to their unicode symbols in the textarea element. Why should you convert beta to β only in the output? Why not converting it in the input while you are typing it ?<br>
+I guess I want a language that could be described as &quot;ASCIIMathML with less ASCII&quot; Because, really, why not write α  or ϕ for alpha or phi ?</li>
+</ul>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20ASCIIMathML to the rescue">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0167/ -->
+	</body>
+</html>

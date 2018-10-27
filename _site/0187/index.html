@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Responses to &quot;MathML is a failed web standard&quot;.</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Responses to &quot;MathML is a failed web standard&quot;.</h1>
+  <span class="post-date"><time datetime="2016-04-07">07 Apr 2016</time></span>
+  <p>This blog doesn't see a lot of traffic (funny how that works when you post every  6 months) but I was surprised to see how few responses there have been to &quot;MathML is a failed web standard&quot;, especially from the MathML enthusiasts.</p>
+<p>I don't have any analytics on this site beyond what CloudFlare collects passively. There was spike of ~800 unique visitors and then higher-than-usual traffic afterwards, it might not be completely unreasonable to guess that 1000 people opened the post back then -- until somebody posted it to Hacker News today (no link to save your sanity from reading HN comments) so now it's more like 20,000 people have clicked a link to that piece.  Of course, few of those will have read it, fewer still will have carefully read it. My best guess is: 3 people have read it. Does that sound about right?</p>
+<p>Most responses were basically &quot;meh&quot; (especially on <a href="https://twitter.com/search?q=mathml">the twitters</a>). <a href="https://twitter.com/stevefaulkner">Steve Faulkner</a> is, of course, to blame for much of that twitter attention (thanks Steve!). I also received a few kind emails with responses, thanks for those. Elsewhere, <a href="http://jessecmckeown.tumblr.com/post/141734737315/musings-on-web-mathml-and-some-of-our">Jesse McKeown</a> wrote a short tumblr; as a former mathematician I'll formally (get it?) object to the use of Gödel's work.</p>
+<p><a href="https://medium.com/@PaulTopping/response-to-peter-krautzberger-s-mathml-is-a-failed-web-standard-179ab8ffa24b">Paul Topping's &quot;response&quot;</a> was mostly focused on his own ideas which have little to do with what I wrote. Let me respond to those few points that were about my piece. Let's do this inline.</p>
+<blockquote>
+<p>The first thing to note in his post is that he says that MathML is a failed <strong>web</strong> standard. By this, I believe he is only saying that it has failed as a language supported by browsers.</p>
+</blockquote>
+<p>I had hoped my glorious <code>&lt;s&gt;</code> tag was making the point clear. But I guess not.</p>
+<blockquote>
+<p>He acknowledges that it is in heavy use in education, publishing, and elsewhere but I wish he’d made this distinction a bit more strongly.</p>
+</blockquote>
+<p>Ignoring the point that I didn't actually mention education (or &quot;elsewhere&quot;), I thought I had fulfilled this &quot;wish&quot; when I wrote: <q>It’s also clearly a success in the XML publishing world, serving an important role in standards such as JATS and BITS. The problem is: MathML has failed on the web.</q>.</p>
+<p>I'm not sure how much clearer I can make that distinction -- success here, failure there.</p>
+<blockquote>
+<p>The browser makers ignore MathML so getting rid of it won’t affect them much. Perhaps Peter is directing his message to the MathML community itself.</p>
+</blockquote>
+<p>For what it's worth (and before anyone needs to speculate), my piece was very broadly directed at the web community. I was probably looking for readers who follow current trends in browser standards and their development. (Shout out to Chaals!)</p>
+<blockquote>
+<p>This one’s easy. MathML isn’t implemented in most browsers so its not used.</p>
+</blockquote>
+<p>That argument seems rather simplistic to me. Looking at any successful new web standard out there today (e.g., picture, flexbox, grid, animation), even a partial, behind-a-flag implementation does not mean the standard is not being used. Instead, there's a positive feedback loop with (often seemingly small groups of) developers. Even at the best of times (e.g., Dave Barton pushing WebKit forward for a year, Fred Wang's crowd-funded months), developer feedback for MathML was (and is) non-existent (cf. my example of serious bugs not even being reported).</p>
+<blockquote>
+<p>Sure but imagine if MathML specified layout to the level that TeX does.</p>
+</blockquote>
+<p>This is a) ignoring how badly Presentation MathML does not specify layout (in particular, compared to CSS) and b) a red herring (TeX).</p>
+<blockquote>
+<p>This might well be the case but what’s the point here? If CSS now has what math layout needs, we’re done, right?</p>
+</blockquote>
+<p>Yes. That's the main point, actually.</p>
+<blockquote>
+<p>Perhaps, but even if Presentation MathML provided sufficient semantics, most authors wouldn’t add them. The fact is MathML already provides recommended markup patterns for expressing a lot of math semantics but authors aren’t interested in adding such patterns to their math. Authors generally stop tweaking their math as soon as it looks right and can be read by a fellow human. I don’t think this will change. Even publishers are less and less interested in spending resources on marking up math with the required level of semantics. This won’t change even if MathML added missing semantics constructs and the necessary editing tools were available. Instead, everyone is moving in the opposite direction, spending less and less time and money on careful authoring.</p>
+</blockquote>
+<p>An elegant straw man argument is still a straw man argument. I did not write about authoring or extending MathML. Good points though.</p>
+<blockquote>
+<p>Peter acknowledges Neil Soiffer’s work on algorithmically extracting semantic information from Presentation MathML but seems to think it has hit a brick wall.</p>
+</blockquote>
+<p>Another case of putting words in my mouth. A bit far-fetched this time, since MathJax is actively doing research in this area.</p>
+<blockquote>
+<p>In technology, when someone has a better idea how to do something they should just do it and let the market decide whether their solution is really an improvement.</p>
+</blockquote>
+<p>To quote myself:</p>
+<ul>
+<li><q>Today, lots of tools will let you render mathematics using CSS.</q></li>
+<li><q>It’s possible to generate HTML+CSS or SVG that renders any MathML content [...] on the server.</q> [And obviously on the client as well.]</li>
+<li><q>Since layout is practically solved [...]</q>.</li>
+</ul>
+<p>I tried to make a point that CSS and SVG already provide various solutions today. I also tried to make a point that MathML is not used significantly in the wild (except by conversion to HTML/CSS or SVG of course). So it seems to me that I argued that &quot;the market&quot; has chosen these solutions over MathML.</p>
+<p>But I guess I wasn't clear enough. Oh well.</p>
+<blockquote>
+<p>No problem but a lot of work needs to be done first.</p>
+</blockquote>
+<p>No, see above.</p>
+<blockquote>
+<p>Peter claims MathML’s mere existence is blocking discussions. What discussions did it block?</p>
+</blockquote>
+<p>That's a good point even though Paul's piece is a nice example of the point I was trying to make. Calling on the community (who is that again?) to magically fix MathML after 10 years without development instead of making room for successful solutions? That is an elegant block.</p>
+<p>Anyway, one problem for me is that many discussions I have in mind happened privately, especially with web standards experts. But that's no excuse for not spending a few minutes thinking about public examples; for some reasons, this example <a href="https://groups.google.com/forum/#!topic/mozilla.dev.platform/96dZw1jXTvM">the discussion on mozilla.dev.platform</a> is the first to come to mind (man, I was feeling righteous back then).</p>
+<p>Another example are the specs themselves. The ARIA spec basically has <a href="https://www.w3.org/TR/wai-aria-1.1/#math">a big glaring hole where math should be</a>. Similarly, take a look at the suggestions in the <a href="https://www.w3.org/TR/wai-aria-practices/#math">ARIA best practices</a> spec and the <a href="http://www.idpf.org/epub/301/spec/epub-contentdocs.html#sec-xhtml-mathml-alt">epub3 spec</a>. All of them focus entirely on MathML-based solutions without any reflection on whether these actually work in real life. The ARIA practices spec even discourages working solutions like HTML-math using dubious arguments about the semantics of Presentation MathML. Moving on.</p>
+<p>Paul goes on to write about generating semantic information. It's not quite a straw man but nevertheless has little to do with my concerns about exposing semantic information on the web.</p>
+<p>To wrap up.</p>
+<blockquote>
+<p>Of course, Peter doesn’t believe automated semantics recognition can do the job.</p>
+</blockquote>
+<p>See above.</p>
+<blockquote>
+<p>Do we want that math to look identically in every browser? I believe the answer is generally “no”.</p>
+</blockquote>
+<p>I have the impression people generally expect consistent rendering across browsers. But anecdotal evidence is, well, anecdotal.</p>
+<p>And that's all folks. I'll add more as they come along.</p>
+<hr>
+<p>And stay tuned for more.</p>
+<hr>
+<p><em>Comments</em></p>
+<ul>
+<li>
+<p><strong>Don Stolee</strong>, 2016-04-14</p>
+<p>Totally agree with your points raised and must admit don't understand all of it.</p>
+<p>We are XML publishers out of Australia and use MathML within our markup. We then publish the XML content to our HTML5 eReader (tekReader) and use MathJax to assist with the rendering.</p>
+<p>Example here: <a href="http://tekreader.eglootech.com/book/tekReader-Guide#part22#pt22-1-1-h3">http://tekreader.eglootech.com/book/tekReader-Guide#part22#pt22-1-1-h3</a></p>
+<p>It seems to work well on modern browsers found on desktops, tablets and smartphones and we have a University in Canada using our reader.</p>
+<p>I would hope the XML world does not drop the standard and browsers continue to support, somewhat.</p>
+<ul>
+<li>
+<p><strong>Peter</strong>, 2016-04-14</p>
+<p>Thanks for your comment. Tekreader looks very nice.</p>
+<p>MathML is clearly a success in the XML world so I don't see it disappearing. I'm not suggesting that anyone should drop MathML if it works for them.</p>
+<p>The point I was trying to make was entirely about its role on the web where other tools have made it obsolete (in the sense that it is no longer necessary to have native MathML browser implementations). Since most XML markup is converted to HTML for web delivery (e.g. OASIS tables), I don't see a huge problem in converting MathML to HTML as well.</p>
+<p>Does that make sense?</p>
+</li>
+<li>
+<p><strong>Don</strong> 2016-04-14</p>
+<p>All good Peter. Thanks for getting back to me. If I may add. I've been providing XML publishing systems since the early 90's (SGML back then). All very monolithic and complex. With the advent of tablets and smartphones I see a trend in marking down XML (I call it dummy down) to HTML5. In fact my business now advocates markup using HTML5 (now with semantics) and do away with all the complexity downstream. Most of the rich markup is never used anyway (aka S1000D).</p>
+</li>
+<li>
+<p><strong>Peter</strong> 2016-04-14</p>
+<p>Thanks for the additional comment, Don. I'm far from your level of experience obviously, but I've also heard about this trend. In that context, I often point to <a href="https://www.youtube.com/watch?v=bh2WyI_6c_k">John Maxwell's BiB 2012 talk</a>.</p>
+</li>
+<li>
+<p><strong>Don</strong> 2016-04-14<br>
+Awesome! Thanks for sharing. At least I know I am not crazy!</p>
+</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Responses to &quot;MathML is a failed web standard&quot;.">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0187/ -->
+	</body>
+</html>

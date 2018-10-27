@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Preprint &#39;On union ultrafilters&#39;</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Preprint &#39;On union ultrafilters&#39;</h1>
+  <span class="post-date"><time datetime="2010-12-21">21 Dec 2010</time></span>
+  <p>Remember back in summer when I was at <span class="caps">BLAST</span>? I promised that I’d upload that paper to the arXiv soon. Well, it took me a while longer, but it finally is uploaded to the <a href="http://arxiv.org/pdf/1012.4532">arXiv</a> (after submitting it to the <span class="caps">BLAST</span> proceedings in November).</p>
+<h3>What it’s about</h3>
+<p>The paper is a sibling to <a href="/0026/">the one already mentioned</a>. This time, instead of the strongly summable ultrafilter world, I focused on the union ultrafilter world.</p>
+<ul>
+<li>An ultrafilter on \(\mathbb{F}\), the non-empty subsets of \(\omega\), is a <strong>union ultrafilter</strong> if it has a base of FU-set, i.e., sets of the form $FU ( \mathbf{s} ) $ where \(\mathbf{s}= (s_i)_{i \in \omega}\) is a sequence of pairwise disjoint elements.</li>
+<li>A union ultrafilter is <strong>ordered</strong> if there is a base of FU-sets such that the sequences are <strong>ordered</strong>, i.e., \(\max(s_i) &lt; \min(s_{i+1})\).</li>
+<li>A union ultrafilter is stable if for a sequence of elements $FU ( \mathbf{s}^\alpha ) $ (where \(\alpha &lt; \omega\)) it contains an element $FU ( \mathbf{t} ) $ such that $\{ t_i : i&lt; \omega \} \subseteq^* FU ( \mathbf{s}^\alpha ) $ for all \(\alpha\). Such a $ \mathbf{t} $ is a <strong>pseudo condensation</strong>.</li>
+</ul>
+<p><a href="http://www.math.lsa.umich.edu/~ablass/uf-hindman.pdf">Back when Andreas Blass introduced union ultrafilter</a> (<a href="http://www.ams.org/mathscinet-getitem?mr=891244">MR</a>) he studied mostly ordered union ultrafilters. The results in my preprint try to make some progress as how to differentiate the different notions. The terminology for stability is akin to P-points and their pseudo intersections, in fact the name is borrowed from the french term for P-points — \(\delta\)-stable.</p>
+<h3>Stability for union ultrafilters</h3>
+<p>Andreas ended his incredibly rich paper introducing union ultrafilters with a huge theorem which characterizes stability for ordered union ultrafilters in 6 different ways. The first part of the preprint analyses whether the orderedness can be dropped. Orderedness is a very strong condition to add to union ultrafilters and it is similar to the difference between P-points and Ramsey/selective ultrafilters.</p>
+<p>Even though <a href="http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4">Andreas Blass and Neil Hindman later constructed a union ultrafilter that is not ordered</a>, the nature of ‘unorderedness’ remained unclear. So I wanted to check if stability might actually imply orderedness. Unfortunately, not a lot can be said. Some of Andreas’s stability characterizations hold for unordered union ultafilters in a similar way, some others imply stability, but whether one of those properties can imply orderedness is still open. The key result in this regard is the following.</p>
+<p><strong>Theorem</strong> A union ultrafilter is stable iff whenever the ordered pairs \(\mathbb{F}^2_&lt; = \\{ (s,t) : \max(s) &lt; \min(t) \\}\) are finitely coloured, there exists a homogeneous set in the ultrafilter.</p>
+<p>This characterization (which works for any other power up to and including \(\omega\)) is very surprising if you like the analogy to P-points and Ramsey ultrafilters. Indeed, back when Andreas proved it he used it to imply that the image of a stable ordered union ultrafilter under the minimum and maximum functions are Ramsey ultrafilter (he had shown that they are Q-points and the stability easily shows that the images are P-points) which was really surprising at the time — you took a P-point like property and out came that min and max are Ramsey ultrafilters! However, shortly thereafter (in the above paper of Andreas Blass and Neil Hindman), it turned out that union ultrafilters always have min and max as P-points ultrafilters. This leads back to the true mystery: how does stability have such a Miliken-Taylor-Theorem like Ramsey property?</p>
+<h3>Unordered, but almost as good as ordered.</h3>
+<p>The other half of the paper contains a construction that settles another question related to orderedness. As I mentioned, Andreas and Neil had constructed a union ultrafilter that is not ordered. The way they did it was by preventing min and max to map it to a Q-point — since Andreas had shown that ordered union ultrafilters map to Q-points that way, this meant a fortiori that the union ultrafilter is not ordered. When I first studied that construction, the trouble was (for me) that this construction does not really tell you what ‘unorderedness’ look like. In the spirit of the first part, trying to check the differneces between ordered and unordered union ultrafilters, I wanted to settle the question whether the properties of the images und min and max can have an influence on the orderedness. Namely, it was open whether a union ultrafilter that maps to Ramsey ultrafilters must be ordered. This turned out not to be the case.</p>
+<p><strong>Theorem</strong> There consistently exists union ultrafilters that are not ordered union ultrafilters but their min and max are Ramsey ultrafilter.</p>
+<p>It looks like a silly theorem, doesn’t it? So technical, just a slight difference to what was known etc etc. For me the interesting part was what happened in the proof. One key was to consider what I call the meshing graph.</p>
+<p>Fix some pairwise disjoint sequence \(\mathbf{s}\). If $\mathbf{t} \subseteq FU(\mathbf{s}) $, then <strong>the meshing graph</strong> on the vertices \(\mathbf{t}\) is defined by edges between some \(t_i,t_j\) if there exist \(s_k \subseteq t_i, s_l \subseteq t_j\) such that neither \(\min( s_k ) &lt; \max( s_l )\) nor $\min ( s_l ) &lt; \max ( s_k ) $.</p>
+<p>In other words an edge represents that two elements are not ordered, they mesh. But it’s actually important that they do not just mesh, but they mesh because they contain elements in \(\mathbf{s}\) mesh. The reason is that for a union ultrafilter not to be ordered requires some special FU-set (in this case $FU ( \mathbf{s} ) $) that is never refined to an <strong>ordered</strong> FU-set.</p>
+<p>For that it’s not enough to look at the meshing graph with edges when the \(t_i\) mesh; it could be that they mesh but in such a way that we are later forced to condense \(\mathbf{s}\) to something ordered. To put it differently, it’s not difficult to take an ordered union ultrafilter and write down a base of not-ordered FU-sets (just merge every second element of a sequence). The difficulty is to guarantee that no ordered base exists.</p>
+<p>The idea of the construction (which is done assuming CH, but essentially just requires iterated Cohen forcing, so MA-variants suffice) is to string together big batches of finite sequences with a complete meshing graph (in respect to some nicely behaving special sequence \(\mathbf{s})\). So the meshing appears in big blobs of larger and larger cliques — which then turn out to be strung together in an ordered fashion (the blobs that is). For details, check the preprint.</p>
+<p>Why do try to describe this? Well, it seems to give a good idea of what meshing in an unordered union ultrafilter should look like — each sequence for an FU-set should have larger and larger segments that mesh perfectly, but those segments come up in an ordered fashion. Now if only somebody could prove that meshing always looks like that — it would simplify many proofs and open up new approaches…</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Preprint &#39;On union ultrafilters&#39;">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0044/ -->
+	</body>
+</html>

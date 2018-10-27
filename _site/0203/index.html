@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>A case study in mathematical content</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">A case study in mathematical content</h1>
+  <span class="post-date"><time datetime="2018-03-01">01 Mar 2018</time></span>
+  <p>As <a href="/202/">I wrote a while ago</a>, I've been working to change my language to keep the notion of &quot;mathematics on the web&quot; and &quot;equation/formula rendering on the web&quot; separate. That's hard since I've been mostly writing about equation rendering in the past few years; a professional risk, when you spent those years managing <a href="https://www.mathjax.org">the open source project</a> that provides the best and by far most popular equation rendering solution for the web.</p>
+<p>It's also difficult because most people in this field <em>like</em> this confusion, especially if they have a stake in it. It's obviously a better sales pitch to say you're helping all of STEM even if you're actually working on a set of (arguably tricky) visual/print layout techniques. I don't want to sound too cynical here; for many people it does come from the heart, they think they are helping STEM this way and it is what drives them. Besides, as they say, you cannot change others only yourself.</p>
+<h2>A real life math fragment</h2>
+<p>These days I spent much more time on the document level and, mostly, on mathematical documents. That brings up a slew of interesting problems but many are too ephemeral to share. The other day I had a particularly interesting piece of content as it highlights some aspects of the problem of this identification.</p>
+<p>In <a href="https://arxiv.org/abs/1412.8106">this paper</a> you find the following</p>
+<img aria-labelledby="204-explainer" src="../../assets/2018/arxiv_1412_8106.png">
+<p id="204-explainer">
+The layout captured in this image combines a label (5.4) with an ordered list of three mathematical statement, one of which include a sublist of two items. Of course, these statements include quite a few bits of equational content but those aren't that important here. Instead, what's interesting is that a stretchy brace is used a visual cue that connects the single label with the list of statements, aligning its center with the label and extending to the height of the list.
+</p>
+<h2>Take me to the web</h2>
+<p>How do you realize this kind of layout on the web? (And, for that matter, in LaTeX?) Before answering that, it's worth to dive a little deeper.</p>
+<p>There are two conflicting details here. On the one hand, the label (as per source and context) is actually an equation label. This means the authors intended this list of statements (each being a self-contained sentence with several equational elements interspersed) to be treated as a single piece of equational content. Much like tables, images, or (since we're in a math paper) theorem environments, this is an important piece of structural information and should not be lost.</p>
+<p>On the other hand, the list is (nested) ordered (text) list and it is encoded as such by the authors. This is obviously an important piece of structural information and should not be lost.</p>
+<p>And that's a bit of a problem both for the web and for LaTeX: there's no system for equation layout with a concept for ordered list built-in. And there's no text layout system with stretchy braces.</p>
+<p>If you look in the TeX source of the paper, you'll see how this was hacked using <code>\parbox</code>. On the web, you have a harder time since in practical terms you can't really do this kind of hack of switching from equation layout to text layout. In theory (i.e., HTML5 spec dream land), you could try something like this</p>
+<pre><code class="language-html">&lt;math side=&quot;left&quot;&gt;
+  &lt;mtable&gt;
+    &lt;mlabeledtr&gt;
+        &lt;mtd&gt;
+          &lt;mtext&gt;(5.4)&lt;/mtext&gt;
+        &lt;/mtd&gt;
+        &lt;mtd&gt;
+          &lt;mo&gt;{&lt;/mo&gt;
+          &lt;mtext&gt;
+            &lt;ol&gt;
+              ...
+            &lt;/ol&gt;
+          &lt;/mtext&gt;
+        &lt;/mtd&gt;
+    &lt;/mlabeledtr&gt;
+  &lt;/mtable&gt;
+&lt;/math&gt;
+</code></pre>
+<p>Now this won't work that well in real life. But the real question for me is: is that even correct? (in which sense)? This is a <code>&lt;math&gt;</code> element consisting really only of text while the purely visual brace is the only element with &quot;semantic&quot; markup. Hm...</p>
+<h2>so what?</h2>
+<p>I find this one interesting because the problem is a case of visual layout clouding one's judgement. You want to use stretchy braces, so in TeX you need math mode and the rest follows pretty &quot;rationally&quot;, no matter the hackiness. After all, it's print; no need to care about anything but the looks.</p>
+<p>On the one hand, there's the gut reaction to say that authors should not do things like this. This may be based on the simple principle that, when you need to hack around a lot, you're probably doing something wrong.</p>
+<p>A less toxic response may be to criticize the content structure: should this really be an equation label? Isn't it more like a theorem-environment anyway? If not, should this enumeration not be numbered as sub-equations? And isn't the brace a legacy from organizing content on a blackboard rather than something for print layout to mimic (let alone web layout)?</p>
+<p>If I was one of the authors, I'd probably respond grumpily: how dare you question that this is the best (perhaps not good but best) way to represent this particular piece of mathematical content that I arrived at after years of study of a deep and complex research topic?</p>
+<p>And they'd be right because this really only evades the two actual problems: the confusion of &quot;equation&quot; and &quot;mathematical fragment&quot; and the problem of stretchy characters.</p>
+<p>On the one hand, it's clear that this is a (complicated) unit of <em>mathematical</em> information. It must be treated as one. And while I would argue it is not an equation/formula (and certainly not in the sense of &quot;equational layout&quot; let alone MathML's idea of it), if the authors want to count it as such, there should be a way. But on the web we're severely limited when it comes to marking anything &quot;an equation&quot;, especially when it structures like regular lists come into play.</p>
+<p>From a layout perspective is, however, the only notable problem is the stretched brace. It has no meaning here (if it ever has); it's merely a stylistic element to help visually connect a list with a label. It is not &quot;mathematics&quot; or even &quot;equational&quot; in any sense of the word. And yet with the current state of web technology, the only way to realize it is by using tools specialized for precisely equation layout (and usually with misleading &quot;semantics&quot; to boot).</p>
+<p>But we should be able to do this, no?</p>
+<hr>
+<h2>Coda.</h2>
+<p>Here's an example (using a technique of pure CSS stretchy braces developed by Davide Cervone for <a href="https://www.mathjax.org">MathJax</a> v3).</p>
+<p data-height="265" data-theme-id="dark" data-slug-hash="OQQVgx" data-default-tab="result" data-user="pkra" data-embed-version="2" data-pen-title="case study: arxiv.org/1412.8106" class="codepen">See the Pen <a href="https://codepen.io/pkra/pen/OQQVgx/">case study: arxiv.org/1412.8106</a> by Peter Krautzberger (<a href="https://codepen.io/pkra">@pkra</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<hr>
+<h2>Addendum 2018-05-29</h2>
+<p>I read up on the changes in the HTML 5.3 working draft and realized that my HTML5-ish example above (using an ordered list inside MathML) is not even valid HTML - oh my! As it turns out, the integration of MathML into <a href="https://html.spec.whatwg.org/#mathml">HTML</a> states that only <a href="https://html.spec.whatwg.org/#phrasing-content-2">phrasing content</a> is allowed inside MathML token elements (and lists are not phrasing content). Well, one more reason never to use MathML on the web - but you already knew that.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20A case study in mathematical content">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0203/ -->
+	</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Wordpress in a VM</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Wordpress in a VM</h1>
+  <span class="post-date"><time datetime="2011-08-10">10 Aug 2011</time></span>
+  <p>When you're using wordpress, it comes in handy to have an installation to play around with. When I first joined the <a href="http://groups.google.com/group/wordpress-for-scientists">Wordpress for Scientists Google Group</a>, I promised to write a tutorial. Well, it took me a bit to find the time, but Booles' Rings helped me get back to this.</p>
+<p>This tutorial is very rudimentary for now, but leave a comment and I'll gladly clarify things (and add more screenshots etc).</p>
+<h3>The tools</h3>
+<p>I'm lazy, so to get a nice preconfigured, downsized ubuntu with wordpress nicely set up, you head over to <a href="http://www.turnkeylinux.org/">turnkeylinux.org</a> and get their <a href="http://www.turnkeylinux.org/wordpress">wordpress appliance</a>. More precisely, you'll want the version for a virtual machine (VM) (click the picture to see my cursor hovering in the right place...).</p>
+<figure>
+    <a href="/assets/2011/turnkey.png">
+      <img alt="screenshot of Turnkeylinux.org" src="/assets/2011/turnkey.png"/>
+    </a>
+</figure>
+<p>Just download and unzip it somewhere helpful. You might want to remember the standard passwords for the machine mentioned on the download page (or at least remember where to find them).</p>
+<p>Next we get our actual virtual machine. As an open source fan, I would suggest <a href="http://www.virtualbox.org/">virtualbox</a> which comes in two free versions, one free as in beer (with extras you won't need) and one free as in speech. Don't worry that the turnkey image you just downloaded is officially for <a href="http://www.vmware.com">VMware</a> -- virtualbox is just as fine.</p>
+<p>The nice thing about virtualbox is, of course, that it's available for linux, macos and windows. So pick your poison <a href="http://www.virtualbox.org/wiki/Downloads">from their download section</a> and install it.</p>
+<h2>Creating a virtualmachine</h2>
+<p>Well, as Jarvis says, do what you do best and link to the rest. I mean, You could just start up virtualbox and hit the &quot;new&quot; button and see how it goes. You could also take a look at <a href="http://www.virtualbox.org/manual/ch01.html#gui-createvm">the section in the manual</a>. Don't be afraid -- it's actually well written and concise.</p>
+<p>But you could also consult this full fledged <a href="http://developer.mindtouch.com/en/docs/mindtouch_setup/010Installation/Installing_VMware_image_on_VirtualBox">tutorial</a> filled with screenshot goodies for every step (it's written for something intriguingly called &quot;mindtouch&quot;).</p>
+<p>What, you're still reading this? Alright! In that case, after starting virtual box the main window should look something like this.</p>
+<figure>
+    <a href="/assets/2011/vbox.png">
+      <img alt="screenshot of Turnkeylinux.org" src="/assets/2011/vbox.png"/>
+    </a>
+    <figcaption>
+    <a href="http://www.mikefal.net/2011/03/24/virtualization-at-home/">Mike Fal, cc-by-nc</a>
+    </figcaption>
+</figure>
+<p>So you</p>
+<ul>
+<li>hit the &quot;New&quot; button</li>
+<li>choose a name</li>
+<li>choose ubuntu 32bit as the vm's operating system</li>
+<li>choose the vmdk file from the turnkeylinux as your hardrive (which means you'll have to &quot;add&quot; it to virtualbox's harddisk-file-list first, but I trust you'll figure that step out)</li>
+</ul>
+<p>For everything else, take the default settings.</p>
+<h2>Network settings</h2>
+<p>After the maching was created you might want to change the networking settings (the standard settings didn't work for me). In my experience a &quot;host-only&quot; network is the easiest solution (unless you want to connect to the vm's wordpress installation from outside your host machine).</p>
+<p>Just go to the settings of the vm you just created, switch to the &quot;network&quot; section and change the active network controller's &quot;Attached to&quot; setting to &quot;host only adapter&quot;. This should look something like this:</p>
+<figure>
+    <a href="/assets/2011/vbox2.png">
+      <img alt="screenshot of Turnkeylinux.org" src="/assets/2011/vbox2.png"/>
+    </a>
+    <figcaption>
+    <a href="http://www.mikefal.net/2011/03/24/virtualization-at-home/">Mike Fal, cc-by-nc</a>
+    </figcaption>
+</figure>
+<p>This way, the network is only a virtual one between your host operating system and your virtual machine.</p>
+<h2>And off she goes</h2>
+<p>Now just fire up the vm, i.e., hit the &quot;Power&quot; button, and get accustomed to switching in and out of the VM (virtualbox will tell you how). Turnkeylinux will possibly ask you some basic questions and maybe run an update.</p>
+<p>At the end of the process you should find the VM displaying a blue text console gui with the IP adress of the machine.</p>
+<p>Open a browser on your host, open the ip and experiment away!</p>
+<blockquote>
+<p>Credit: the last two screenshots are licensed under cc-by-nc by <a href="http://www.mikefal.net/2011/03/24/virtualization-at-home/">mikefal.net</a> (I can't run virtualbox on the machine I'm writing this...).</p>
+</blockquote>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Wordpress in a VM">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0072/ -->
+	</body>
+</html>

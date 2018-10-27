@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bonus round; Why I care about native MathML</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Bonus round; Why I care about native MathML</h1>
+  <span class="post-date"><time datetime="2014-12-29">29 Dec 2014</time></span>
+  <p>[This is week 7 of the challenge but really a post to make up for dropping the ball on week 5.]</p>
+<iframe width="854" height="510" src="https://www.youtube.com/embed/-uZL3qqDVK8" frameborder="0" allowfullscreen></iframe>
+<p><a href="/0175/">Last week</a> I wrote about why I care about MathML in general. Given that I work for a project that serves as a MathML polyfill, it's worth while to to point out why native implementations matter; they matter an entire alot of mattering.</p>
+<p>A while back, <a href="http://www.milowski.com/">Alex Miłowski</a> asked me for some quotes about how native MathML implementations are important so luckily I can copy myself here.</p>
+<h4>It's important.</h4>
+<p>Some people say, &quot;few people on the web need MathML support.&quot; This is true. Just like saying &quot;few people need children's clothing&quot;.</p>
+<p>Why is MathML important? Education, education, and education. Mathematics is a core skill and a vast amount of educational time and effort is spent on teaching children and adults to understand and apply math &amp; science. Very soon, HTML will be the dominating delivery method for educational content across the world. This means mathematics must be HTML, viz. MathML.</p>
+<h4>HTML rendering should be native</h4>
+<p>Where should HTML rendering be implemented? In the browser!</p>
+<p>MathML has been HTML from its inception and after a (forced) XML-detour, MathML is back where it belongs: a part of HTML5. MathML layout is core HTML functionality, widely used in everything from web communities to professional publishers to educational startups. HTML and thus MathML rendering belongs in the browser.</p>
+<h4>Performance</h4>
+<p>While browser vendors show great interest in enabling polyfills to behave like native implementations, polyfills implementing layout standards (MathML, Flexbox etc), in the end, will not achieve native performance. The reason is simple: layout polyfills simply enter too late in the game -- after the browser layout is done, at a point where the user expects content, not additional rendering delays. Moore's Law helps a little but, ultimately, performance issues will prevent math and science from fulfilling their potential on the web.</p>
+<h4>Robustness</h4>
+<p>Even the most advanced polyfilling technology will remain a JavaScript solution. This increases the risk of problematic interactions with regular scripts for design, user interaction, and styling. Native support will always be more robust for web developers and consumers.</p>
+<h4>Ubiquity</h4>
+<p>Even the most ideal polyfill will require a conscious choice of the web developer to load it. This poses a grave restriction for end users and the emergence of new platforms for math and science on the web. From webmailer, to web based authoring, to social networks, all of these could turn out to be highly productive platforms -- but it's unlikely their developers will consider adding a polyfill for a perceived niche. With native MathML rendering, rendering MathML would be universal.</p>
+<h4>The Future</h4>
+<p>The web has revolutionized how we communicate. Not by magic but because thought leaders continually push the envelope, building new tools and platforms that transform how we work, speak, and think. These innovations feed back into standards development, enabling everyone to benefit and restarting the process, pushing us further.</p>
+<p>MathML 3 captures traditional mathematical typography. Thanks to polyfills, we get a glimpse of how MathML might develop, how it can revolutionize the communication and dissemination of scientific knowledge. Yet without native implementations of MathML 3, we will never see MathML 4, 5, or 10, and the opportunities this will open up.</p>
+<p>It took 50 years from Gutenberg's printing press to the first typeset mathematics book. We're 25 years into the web. Do we wait another 25 years or can browser vendors finally invest 1-2 developer years to get us there?</p>
+<hr>
+<p>Update.</p>
+<p>First, I changed the embedded video; it was previously <a href="https://www.youtube.com/watch?feature=player_detailpage&amp;v=wHZHSt1CSgo#t=600">this one</a>.</p>
+<p>Second, <a href="https://plus.google.com/u/0/+PeterKrautzberger/posts/3zdytApQw6N">over on Google+</a>, Harald Hanche-Olsen asked about the claim that MathML is a huge success. Here's what I responded with.</p>
+<blockquote>
+<p>Re success of MathML. Today, almost all equational content is stored as MathML. This is because almost all scientific (including mathematical) publishers have switched to XML workflows for production and archival where MathML fits in very naturally; similarly most technical writing (e.g., aerospace) is done in XML workflows.</p>
+<p>For authoring, it's a bit more complicated. It is similar to, e.g., vector graphics where applications such as Adobe Illustrator have their own formats but when you save vector graphics for re-use you'll most likely export to SVG.</p>
+<p>As I mentioned, there's definitely the need for a professional-grade, open source pure MathML editor (ideally HTML5). The only one I know of is MathFlow. But if you have ever used MathJax then you have authored MathML -- it's how MathJax works: convert any input to MathML and then leverage our MathML rendering engine.</p>
+<p>Similarly, lots of other tools are able to output MathML -- besides converters from TeX (such as LaTeXML or tex4ht), Microsoft Word Equation editor can export to MathML, as does Open Office Math editor, MathType, MathMagic, the Windows Math Input Panel (handwriting recognition), MyScript (ditto), Maple, Mathematica and virtually any other tool you might have authored serious equational content in. (Oh well, I should've simply linked to <a href="http://www.w3.org/Math/wiki/Tools#Authoring_tools">http://www.w3.org/Math/wiki/Tools#Authoring_tools</a> which I recently set up.)</p>
+<p>Of course, Word is the big reason why most scientific and educational content ends up providing MathML. I don't claim (or believe) that people are aware of most of this which was one of the reasons I wrote about it.</p>
+</blockquote>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Bonus round; Why I care about native MathML">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0176/ -->
+	</body>
+</html>

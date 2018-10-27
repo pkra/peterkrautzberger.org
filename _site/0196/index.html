@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The fundamental problem of math on the web</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">The fundamental problem of math on the web</h1>
+  <span class="post-date"><time datetime="2017-07-21">21 Jul 2017</time></span>
+  <p>I usually describe my interest as <i>all things math on the web</i>. I've come to realize that <i>math on the web</i> is mostly a misnomer. Actually, I realized this quite some time ago, but I always thought it wasn't such a big deal. Lately, I've started to think it actually is and I'm actively working to change my language (so damn hard!).</p>
+<h2>what's in a name or political correct terminology</h2>
+<p>When people speak about <i>math content</i> in the context of the web they usually mean <i>equational content</i> (or simply <i>equations</i>). That is, they don't mean content in a mathematical field (which often enough does not qualify as equations), they simply mean <i>something that looks like an equation</i>.</p>
+<p>Now you might argue that an equation in physics is still basically mathematical content but in reality both mathematician and physicist will frequently disagree with you (and each other, possibly explosively so). You quickly get to the edge when considering chemical equations and if you want to classify the nonsense notations in the life sciences you might question your sanity.</p>
+<p>It's not hard to understand why this is. For example, most typesetting tools with support for equations will have some kind of <i>math mode</i> for them.  But I think it's worth while differentiating the two so I'll try my best to stick to <i>equational content</i>. On the one hand, the importance of <i>math on the web</i> is often exaggerated because it is really non-mathematical <i>equational content</i> that's the majority (and even that is a blip on the radar). On the other hand, it does not help to confuse a field of study with what effectively comes down to a layout tradition.</p>
+<p>Also, sorry-not-sorry for misleading you with the title here.</p>
+<p>The fundamental problem of equational content is that, well, that it's simply pretty terrible all around. It's convoluted,extremely compressed, archaic, and generally undecipherable. It destroys academic careers by the millions and it can often only be understood when you can see it written live (i.e., animated). At its best equations are like good abstract drawings, at worst (usually?) they're deafening gibberish.</p>
+<h2>interlude</h2>
+<p>Stray thoughts.</p>
+<p>One. I always thought Bret Victor's (in)famous <a href="http://worrydream.com/KillMath/">Kill math</a> was largely wrong about the specifics of his criticism (for one, he seems to dismiss the incredible power of compression that differential equations exhibit - along with the obvious problems that stem from compression). But he is of course utterly right with his incredible work exploring how modern media like the web allow for a much richer expression of human thought, one that opens the content up to more people, often by adding means of interacting with it, especially means for untrained people (like tiny humans).</p>
+<p>Two. Every once in a while I've wondered: what if Tim Berners-Lee had given the web some basic building blocks for equations. Just a fraction and a square root; maybe instead of image renditions of print equations we'd have immediately seen the same creativity applied to equations as there was with hacking general layout (1px GIF anyone?). Of course, that's hopelessly romanticizing the evolution of the web. Why can't I stop wondering.</p>
+<p>Three. On and off (and I've come full circle on this several times) I've wondered whether math is ahead of other sciences on the web. I mean the <code>&lt;math&gt;</code> tag was proposed in fricking HTML 3. So is math ahead? Maybe. But then why is scientific content so much more vibrant and transformative on the web compared to math?</p>
+<h2>10 PRINT &quot;Hello World!&quot;; 20 GOTO 10</h2>
+<p>The most obvious flaw of equational content is that it's deeply rooted in print. Given the limitations of print technology, equational content has needed to adopt bad practices for such a long time that many people consider them good.</p>
+<p>I'm not (just) thinking about the problem of general comprehension as it is too tainted by poorly trained practitioners on all levels. Sure, equational content is often more difficult to parse than necessary but that's not different from poorly phrased prose.</p>
+<p>The main problem is the <i>tradition</i> of abusing print technology to get more and more variations of notation squeezed into the medium. The constant abuse of sub- and superscripts is a great example; if you need to add a variant of an object you've already introduced in your notation, just slap some sub/superscripts around it, et voilà, a new object.</p>
+<p>The abuse of letters with different fonts is another horror in equational content. If you have ever run into a paper where a dozen variations of <code>G</code> appear, denoting a convoluted set of somewhat related concepts, you'll know this horror well. Unbelievably enough, Unicode has deemed this abuse of notation important enough that we now have such wonders as the Unicode point <i>mathematical bold italic G</i> in the <a href="https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols">Mathematical Alphanumeric Symbols<br>
+Block</a>.</p>
+<p>Another historic accident are stylistic separations. For example, in print it's abhorred to make math content bold when the surrounding content is bold (e.g., in a heading) yet on the web people complain that an equation in a link doesn't get the <i>correct</i> text decoration (what would that be??).</p>
+<p>Obviously, there's little point in criticizing the historic development of equational content. Given that print was mostly limited to (at best) grayscale with a limited character set, naturally people had to be creative. It is amazing what this accomplished.</p>
+<p>The real problem comes up when pretending that this tradition should do more than vaguely inform a medium such as the web. The web so far developed without much influence from equational content. It has adopted a rather different approach to separating content and presentation and the traditions of equational content are essentially incompatible with the web's approach.</p>
+<p>I can find no argument for why the web stack should bend over backwards to accommodate these mostly quite bad traditions of equational content for print. This is perhaps similar to the situation of CSS paged media.</p>
+<p>Obviously, it's not like you shouldn't be able to put traditional equational content on the web - you should (and you can very well today). But I've come to think it's perfectly fine, in fact, it is appropriate that this continues to be a difficult problem. For example, traditional equational content is almost always inaccessible (without heuristic algorithms, i.e., guessing around); it's basically a bunch of glyphs placed in a weird 2D patterns (like above and below a line which in turn is magically centered on some baseline and may or may not indicate it corresponds to the notion of a mathematical fraction). Pretending that this is a basis for accessible rendering on the web strikes me as foolish (or ridiculously zealous).</p>
+<p>If you think that all equational content should be limited to the traditions of the print era, fine. I think humanity can do better on the web. Though I think we would need to acknowledge that the (print) traditions enshrined in equational content are flawed and should (and invariably will) be replaced with better concepts and narratives that are appropriate for this medium.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20The fundamental problem of math on the web">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0196/ -->
+	</body>
+</html>

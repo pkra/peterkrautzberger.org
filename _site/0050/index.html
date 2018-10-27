@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Eternal preliminaries part 3, the problem of extending partial semigroups</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Eternal preliminaries part 3, the problem of extending partial semigroups</h1>
+  <span class="post-date"><time datetime="2011-01-18">18 Jan 2011</time></span>
+  <p><a href="/0047/">In the previous post</a> I have totally ignored my focus from the first post, namely that I want to focus on partial semigroups, not full semigroups. As <a href="/0042/">mentioned in the first part</a> this is not really a problem as any partial semigroup operation is in essence a restriction of a full semigroup operation. So the full semigroup is always a neat thing to fall back to when you’re in doubt. Nevertheless, if, as I claimed, it is an advantage to work with partial semigroups, can we not get around this problem?</p>
+<h2>Extending a partial operation to \(\beta S\).</h2>
+<p>Luckily, it is very much possible to do extend a partial operation. (Un)fortunately, <a href="https://www.youtube.com/watch?v=qWS2NVX6VP0">nobody’s perfect</a> that is I don’t know how to get all the theory to run smoothly so in what follows I might have to fall back for some things. We’ll see.</p>
+<p>So how do you extend the operation? Easy! Use the brute force method!</p>
+<p><strong>Extending the operation to \(\beta S\)</strong> For \(p,q \in \beta S\), consider those \(A\subseteq S\) with \(A^{-q} \in p\). These sets may or may not yield an ultrafilter. If they do, we call it \(p \cdot q\).</p>
+<p>Ok, that’s a bit weird. The way I wrote it there is no reason to believe that such \(A\) will ever form a filter, let alone an ultrafilter! Now, since the operation is partial, we had to expect a little bit of weirdness. But accept (or ignore) the unreasonable definition at this point and I’ll try to explain why this could work.</p>
+<p>First to note is: watch out! Maybe I’m trying to trick you with the definition, hiding behind the weirdness. As I wrote in the last post, the \(A^{-q}\)-notation is a “general nonsense” notation (even worse, I came up with it myself…), a simplified notation that hides complicated structures (though, hopefully, to a later advantage). So we better check it in detail.</p>
+<ul>
+<li>First, for semigroups we had defined \(A^{-q} = \\{ s \in S: s^{-1}A \in q\\}\) — this still seems to work fine, we’re just checking if some set is in \(q\).</li>
+<li>But what kind of set are we checking? Going into detail, we find \(s^{-1}A = \\{ t \in S: s \cdot t \in A\\}\) — and this not clear at all! Remember, \(s\cdot t\) might not be defined. What do we do then? Do we want to include or exclude those incompatible \(t\)?</li>
+</ul>
+<p>But, assuming you’re a forgiving reader, I think it still makes sense: just make \(s\cdot t\) to mean “\(s \cdot t\) and it is defined”. In other words, the original definition should really read \[ s^{-1}A := \\{ t\in \sigma(s) : s \cdot t \in A\\}. \]<br>
+This is fine from the point of view of a full semigroup (since always \(\sigma(s) =S\)) and it really captures what we want to capture: those \(t\) that \(s\) maps to \(A\). Of course, the convention that \(s\cdot t\) entails \(t\in \sigma(s)\) is really standard ever since the paper by Bergelson, Blass and Hindman. So I’m luckily in good company. To finish the introduction, we get the same phenomenon as we did before.</p>
+<p>\(A \in p\cdot q\) if and only if there exists \(V \in p, {( {W_ v} )}_ {v \in V} \in q\) such that \(\bigcup_ {v\in V} v \cdot W_ v \subseteq A\).</p>
+<p>Again, with the analogous convention that \(v\cdot W_ v = v \cdot (W_ v \cap \sigma(v))\).</p>
+<h2>The most important observation</h2>
+<p>So after this short delay, we can say we have defined a partial operation on \(\beta S\) where the product is \(p\cdot q\) as defined in the previous part but only if the definition yields an ultrafilter. One question is rather immediate.</p>
+<ul>
+<li>What can go wrong to prevent the multiplication from being defined?</li>
+<li>That is, which \(p, q\) actually yield an ultrafilter \(p \cdot q\)?</li>
+<li>In other words, how rich is the multiplication?</li>
+</ul>
+<p>Luckily, this question can be answered rather easily. But let me begin with the most crucial observation and the goal of the rest of this post.</p>
+<p><strong>The semigroup \(\delta S\)</strong> Given an (adequate) partial semigroup \((S,\cdot)\) and the above extension of the operation to \(\beta S\), it turns out that \(\delta S\) is a full semigroup.</p>
+<p>Kaboom! This is extremely nice. Even though our operation is partial, we get a relatively good piece of \(\beta S\) that is a full, compact, and (we’ll see later) right-topological semigroup — the three key properties for the next part of these preliminaries. This will be our motivation for the rest of this post. Luckily, the proof is essentially done by answering the above questions.</p>
+<h2>The partial semigroup \(\beta S\).</h2>
+<p>As the heading says, the nicest thing about this extension is that it yields a partial semigroup. This is positively surprising because strong associativity seems difficult to conserve. The key observation is the following.</p>
+<p><strong>Proposition</strong> For \(p,q \in \beta S\), the product \(p \cdot q\) is defined if and only if $ \{ s\in S: \sigma(s) \in q \} \in p$.</p>
+<p>This is a pretty natural observation. You’d expect the product to work out on the ultrafilters if they contain sets where the multiplication behaves nicely. This is, of course, a common phenomenon with ultrafilters: properties of an ultrafilter are often reflected by its elements and vice versa.</p>
+<p><strong>Proof.</strong></p>
+<ul>
+<li>Like any good ultrafilter proof, we start with a partition: \(S= \\{ s\in S: \sigma(s) \in q\\} \cup \\{ s\in S: \sigma(s) \notin q\\} \in p\).</li>
+<li>Since \(p\) is an ultrafilter, one part is in \(p\).</li>
+<li>If the second part is in \(q\), then \(p \cdot q\) is not a filter, i.e., the forward direction of our equivalence holds by contraposition.
+<ul>
+<li>Assume \(A= \\{ s\in S: \sigma(s) \notin q\\} \in p\).</li>
+<li>Since \(q\) is an ultrafilter, for any \(a\in A\) we get \(S \setminus \sigma(a) \in q\).</li>
+<li>But then \(\bigcup_ {a\in A} a \cdot S\setminus \sigma(a) = \emptyset\), so \(p \cdot q\) is not a filter.</li>
+</ul>
+</li>
+<li>If the first part, call it \(B\) is in \(p\), then \(p \cdot q\) is an ultrafilter.
+<ul>
+<li>The only problematic case (i.e., the one deviating from the proof of the brute definition for full semigroups) is that \(\emptyset \notin p \cdot q\).
+<ul>
+<li>To see this realise that \(\bigcup_ {v\in V} v \cdot W \supseteq \bigcup_ {v \in V \cap B} v \cdot (W \cap \sigma(v)) \neq \emptyset\) since \(V \cap B \in p\) and each \(W\cap \sigma(v) \in q\).</li>
+</ul>
+</li>
+<li>The rest is straight forward and not really fulfilling.</li>
+<li>Closure under taking supersets and finite intersection is just as easy to check.</li>
+<li>\(p \cdot q\) is prime.
+<ul>
+<li>Let \(C_ 0 \dot\cup C_ 1 = C \in p\cdot q\).</li>
+<li>Now easily \(s^{-1} C = s^{-1} (C_ 0 \dot\cup C_ 1) = s^{-1}C_ 0 \dot\cup s^{-1}C_ 1\).</li>
+<li>Since \(q\) is prime, exactly one part is in \(q\).</li>
+<li>In other words, \(C^{-q}= C_ 0^{-q} \dot\cup C_ 1^{-q} (\in p)\).</li>
+<li>Since \(p\) is prime, exactly one part is in \(p\), say \(C_ i^{-q} \in p\).</li>
+<li>But this means by definition that \(C_ i \in p \cdot q\), as desired.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>And once again, I have taken the liberty of skipping a little bit ahead. In fact, I will spend the bigger part of the next post talking about other tricks like \((C_ 0 \cup C_ 1)^{-q} = C_ 0^{-q} \cup C_ 1^{-q}\) that the notation has to offer.</p>
+<p>But with this we can actually claim.</p>
+<p><strong>Theorem</strong> \(\beta S\) is a partial semigroup.</p>
+<p>The proof is long and rather boring. Using the previous proposition you can compare what it means for say \(p (q \cdot r)\) and \((p \cdot q) \cdot r\) to be defined. Unsurprisingly, this comparison boils down to a comparison of elements in \(S\) — where, of course, we have strong associatitivity. I’ll gladly update this post if there’s interest and you can find it as <a href="http://www.diss.fu-berlin.de/diss/receive/FUDISS_thesis_000000014327">Proposition B.3 in my thesis</a>.</p>
+<p>It’s almost midnight and I’m getting tired so let’s wrap up the proof of the supposedly important observation.</p>
+<p><strong>Proof that \(\delta S\) is a semigroup.</strong></p>
+<ul>
+<li>By the proposition, we know that the multiplication is defined for all \(p,q \in \delta S\) because \(q\) contains all \(\sigma(s)\). (yeah, only \(q\) – you can see some more general observations looming around, right?)</li>
+<li>So the question is, whether the product is again in \(\delta S\).</li>
+<li>But for that we just check that \(\left(\bigcup_ {t \in \sigma(s)} t \cdot \left(\sigma(t) \cap \sigma(s\cdot t) \right)\right) \subseteq \sigma(s)\) by strong associativity.</li>
+<li>So \(\sigma(s) \in p\cdot q\) for all \(s\in S\), as desired.</li>
+</ul>
+<p>Ok, after this small detour, we’re ready for some ancient and brilliant theorems. Ellis’s Lemma and Hindman’s Theorem coming right up.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Eternal preliminaries part 3, the problem of extending partial semigroups">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0050/ -->
+	</body>
+</html>

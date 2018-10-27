@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 5)</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 5)</h1>
+  <span class="post-date"><time datetime="2011-09-08">08 Sep 2011</time></span>
+  <blockquote>
+<p><a href="/0078/">Last time</a>, I left you hanging -- I promised the Central Sets Theorem, but only bothered you with some more stuff on partial semigroup, i.e., condensations. Let me make it up to you.</p>
+</blockquote>
+<h2>The Central Sets Theorems</h2>
+<p>So what is this mysterious theorem that, even though ergodic in origin is so close to the heart of algebra in the Stone–Čech compactification? It is not easy to formulate, but luckily <a href="/0078/">I kept bugging you</a> with \(\mathbb{F}\) and condensations, so we are well prepared.</p>
+<p>Since there are many different versions of the theorem as it has been improved and generalized over the last 30 years, the most general formulations are quite something to process. As you might remember, this series started out as an expository piece, so let's write down a very simple version first, even weaker than the very first version proved by Fürstenberg (but who knows, maybe that's the version he first noticed). Remember that central sets are some kind of partition regular sets (that I haven't even properly defined yet but who cares).</p>
+<blockquote>
+<p><strong>Central Sets Theorem (simple version)</strong> Let \(A\subseteq \mathbb{N}\) be a central set. Imagine I'm giving you some abitrary \(FS(x_n)\). Then you can find a \(FS(a_n) \subseteq A\) and \((s_n: n\in \omega)\) in \(\mathbb{F}\) such that<br>
+\[ FS(a_n + \sum_{i\in s_n} x_i) \subseteq A. \]<br>
+Just to repeat: if we set \(y_n = \sum_{i\in s_n} x_i\), then<br>
+\[ FS(a_n + y_n) \subseteq A. \]</p>
+</blockquote>
+<p>This is quite odd, no? Even though the sequence \((x_n : n\in \omega)\) has nothing to do with \(A\), the central set can &quot;gobble it up&quot;. As is to be expected, \(A\) cannot &quot;gobble it&quot; up all of it, but there's a full condensation that can be translated into \(A\) in a rather peculiar fashion. Somehow, \(A\) is able to reproduce a shifted version of the algebraic structure of the FS-set.</p>
+<p>Well, it gets even better. The original theorem allows us to &quot;iterate&quot; this result in a strong way.</p>
+<blockquote>
+<p><strong>Central Sets Theorem (less simple version)</strong> Let \(A\) be a central set. This time, I'm giving you finitely many \(FS(x_n^0),\ldots FS(x_n^k)\). Not only can you get the above version for each sequence, but you can get them &quot;together&quot;:</p>
+<p>You can find a single \(FS(a_n) \subseteq A\) and a single \((s_n: n\in \omega)\) in \(\mathbb{F}\) such that for all $ j &lt; k$ simultaneously \[ FS(a_n + \sum_{i\in s_n} x_i^j) \subseteq A. \]<br>
+Again repeat: if we set \(y_n^j = \sum_{i\in s_n} x_i^j\), then for all \(j&lt;k\)<br>
+\[ FS(a_n + y_n^j) \subseteq A. \]</p>
+</blockquote>
+<p>The crucial strength is that all the \(y_n^j\) are constructed using the one fixed sequence of \(s_n\)'s -- regardless of the given sequences! That's crazy! Even though the sequences \((x_n^j)\) are completely unrelated, we will find condensations uniformly and translate by the same sequence of \(a_n\)'s.</p>
+<p>Ok, maybe this difference is a bit subtle at first, but it is quite potent. For example, we immediately get van der Waerden's Theorem!</p>
+<blockquote>
+<p><strong>van der Waerden's Theorem (sort of)</strong> If \(A\) is central and some \(l\in \omega\) given, we can find an an arithmetic progression of length \(l\) in \(A\), i.e., there exists \(a\in A\) and \(d\in \mathbb{N}\) such that \[ a, a+d, \ldots, a+ l\cdot d \in A.\]<br>
+In fact, we can find the increment \(d\) in any prescribed FS-set!</p>
+</blockquote>
+<p>This last sentence is kind of cool: you want the increment to be a multiple of 10? 42? A gazillion? No problem!</p>
+<p>Let's derive this from the Central Sets Theorem. I know it's a bit meaningless without having seen the proof of the Central Sets Theorem (which is, by the way, very elegant using ultrafilters and I hope I'll get around to it)</p>
+<p><strong>Proof.</strong> Well, the &quot;in fact&quot; should be taken as a hint. So I give you some length \(l\) for the arithemetic progression and as well as one FS-set, say \(FS(x_n)\); you want to find an arithmetic progression in \(A\) by some increment \(d\in FS(x_n)\).</p>
+<p>In other words, you're trying to make \(d, 2d, \ldots, d \cdot l\) work. The idea is to look at the sequences \((j\cdot x_n: n \in \omega)\) to apply the version of the Central Sets Theorem that allows for finitely many FS-sets.</p>
+<p>What does it give you? Well, you get a lot of \(a\in A, s\in \mathbb{F}\) (a sequence/FS-/FP-set whatever, but let's just take one of each) such that<br>
+\[a + \sum_{i \in s} j\cdot x_i = a +j \sum_{i\in s} x_i \in A\] for each $j &lt; l $ -- oh but that's an arithmetic progression with increment \(d= \sum_{i\in s} x_i\), so we're <strong>done</strong>!</p>
+<p>Look at how much more we have, though. We can predescribe the FS-set to pick from, we get an FS-set (induced by the FP-set) we get an FS-set of starting points and so forth.</p>
+<p>This was but a first taste. The Central Sets Theorem can be pushed much further. With some restrictions a central set can &quot;gobble up&quot; infinitely many FS-sets, it can be proved for commutative semigroups and, in a much more complicated version, for non-commutative semigroups. But we'll stop here for now.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 5)">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0079/ -->
+	</body>
+</html>

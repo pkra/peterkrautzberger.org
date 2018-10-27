@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Live broadcast on the web or why you should never have to miss a talk again</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Live broadcast on the web or why you should never have to miss a talk again</h1>
+  <span class="post-date"><time datetime="2010-11-06">06 Nov 2010</time></span>
+  <p>I haven’t written anything in ages but so many posts are almost finished and then there’s my secret new project that I can get all excited about but it’s not yet time… Anyway, I just read <a href="http://mathoverflow.net/questions/45037/should-there-be-a-true-model-of-set-theory">this question on mathoverflow</a> and it finally triggered this post. You see, if you read that post, you will stumble upon <a href="http://www.phil.upenn.edu/Workshop+on+Set+Theory+and+the+Philosophy+of+Mathematics">this workshop</a> and, if you’re me, you’ll wonder why you cannot watch a recording of those lectures and, hopefully, the debates that came with it. Now, as puny a set theorist as I might be, I have strong feelings about this — and with Hugh Woodin’s visit to the UofM I was thinking about this stuff a lot all week anyway. So why did I have to miss those talks?</p>
+<p>What is so annoying is, that it is soooooo easy to not just record a lecture, but broadcast it live these days. All you need is a decent internet connection and some free tools. Everybody can do it and any larger university should feel obliged to do this. For example, there aren’t many departments in the world that can compete with the math department at the University of Michigan. As I have come to understand our seminar culture is renowned — you can almost double book your entire afternoon everyday with seminars here. But there are a lot of places who cannot offer this for many different reasons. As a public institution (but really, as center of education) we should feel obligated to make this available to anyone. Up until recently, this was not feasible. Today, it is almost trivial. With ability, I believe, comes obligation. (Yes, I almost wrote “with great power comes great responsibility”, fanboys)</p>
+<h3>Broadcasting live — the tools.</h3>
+<p>So what do you need?</p>
+<ul>
+<li>1 decent internet connection (good starts at cable/DSL level, any ‘western’ university connection should do)</li>
+<li>1 computer (possibly laptop for flexibility)</li>
+<li>1 camcorder (a webcam might do, but picture and audio quality is usually higher with a proper camcorder; don’t forget a tripod…)</li>
+</ul>
+<p>You probably have access to the first two things if you’re in academia. A decent camcorder is expensive but you can look for older models that are affordable. You don’t have to be super picky about the camcorder since only a limited amount of quality will survive the compression of the broadcast anyway. The only thing that’s <strong>important</strong> is that you can hook it up to your computer as an external camera.</p>
+<h2>The free (not libre) software</h2>
+<p>I have been trying out several things over the last couple of months and the following set up is what I use at the moment.</p>
+<ul>
+<li><a href="http://www.justin.tv">justin.tv</a></li>
+<li><a href="http://www.adobe.com/products/flashmediaserver/flashmediaencoder/">flash media live encoder</a></li>
+<li>windows or mac os (ok, not so free)</li>
+</ul>
+<p>Before I get to the how…</p>
+<h3>What’s the deal?</h3>
+<p>You will usually not have a connection good enough to be your own streaming server. That’s where <a href="http://justin.tv">justin.tv</a> comes in (of course, there are competitors like ustream, but I ended up using that one). They give you the webserver for free (with ads you can pay to get rid of). If you have friends in the IT department, you could try installing the free developer version of <a href="http://www.adobe.com/products/flashmediaserver/">Adobe’s streaming server</a> for up to 10 viewers — and if you’re rich you can buy a full licence… That’s the thing about the free live encoder from Adobe — it’s free, but it needs their media server (which <a href="http://justin.tv">justin.tv</a> gives you); if you’re like me, you’ll like that <a href="http://justin.tv">justin.tv</a> also supports vlc (see below).</p>
+<h3>How to</h3>
+<p>The main initial “effort” is to get your <a href="http://justin.tv">justin.tv</a> account going — any search engine will help you find info on that but it’s just your average web service. I just want to point out that you should check out the privacy controls as well as <a href="https://web.archive.org/web/20130316081119/http://de.justin.tv/p/fme">their fme guide [Wayback Machine]</a> to, once and for all, find the basic settings that work for your connection.</p>
+<p>Once you have made yourself acquainted with a <a href="http://justin.tv">justin.tv</a> account, you only need to do the following for your regular broadcast.</p>
+<ul>
+<li>Hook up your camcorder</li>
+<li>Launch the live media encoder and press start</li>
+</ul>
+<h3>The somewhat libre variant</h3>
+<p>If you’re a little bit more engaged (and, like me, an <span class="caps">OSS</span> fan), you can replace the proprietary Adobe Flash Media Encoder with the fantastic <a href="http://www.videolan.org/vlc/">VLC</a> following the <a href="https://web.archive.org/web/20130704032729/http://apiwiki.justin.tv/mediawiki/index.php/Linux_Broadcasting_API">justin.tv api vlc guide [Wayback Machine]</a>. I don’t yet know a good libre media streaming server that could replace <a href="http://justin.tv">justin.tv</a> though. Vlc’s own server creates a huge lag for me.</p>
+<h3>What to do during the broadcast or does the lag allow for live questions?</h3>
+<p>The whole point of a broadcast is not to just record a video but to allow interaction. I am usually experiencing a three second lag (at home or the department). That’s usually ok for questions and interaction in general. <a href="http://Justin.tv">Justin.tv</a> offers chat on the broadcasting site and you can choose to use facebook or twitter as required authentication. Of course, nothing stops you from using any other system on the side. Questions are fastest by chat, but I usually run skype or similar things, so that a short audio or video question is possible as well. Finally, when it comes to mathematics, I have noticed that audio is more important than video (you can hear what is written down) — and used blackboards have <a href="http://vimeo.com/15475347">very bad contrast</a>…</p>
+<h3>Recap — how much time does it really cost?</h3>
+<p>Of course, to find this solution is the biggest issue and I spent quite some time to arrive at this solution. But once you get going, all you need is someone to lead the camera — setting things up usually takes 5 minutes (unless you run into technical problems of course…).</p>
+<p>So go forth and spread your scientific knowledge!!! And afterwards publish the recording on vimeo or youtube or whatever for all digital eternity. And then nobody has to ever miss a talk again.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Live broadcast on the web or why you should never have to miss a talk again">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0038/ -->
+	</body>
+</html>

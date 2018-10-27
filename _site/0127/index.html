@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>What&#39;s the best TeX-to-HTML or TeX-to-ePUB converter?</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">What&#39;s the best TeX-to-HTML or TeX-to-ePUB converter?</h1>
+  <span class="post-date"><time datetime="2013-01-05">05 Jan 2013</time></span>
+  <blockquote>
+<p>What do I do when I don't find the time to properly write here? I needlessly double post stuff I've written elsewhere.</p>
+</blockquote>
+<p><a href="http://www.linkedin.com/groups/Whats-best-TeXtoHTML-TeXtoePUB-converter-3772588.S.200461734">Somebody asked the title question on LinkedIn</a>. My reply was as follows (well, I'll do the links properly here).</p>
+<h2>What's the best TeX-to-HTML or TeX-to-ePUB converter?</h2>
+<p>I don't have that much experience with this, but it might be better than nothing.</p>
+<p>I think the two main contenders for TeX-to-html are TeX4ht (which most LaTeX distributions ship) and <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML</a>.</p>
+<p>TeX4ht is really a dvi-to-html converter so it behaves accordingly. In my limited experience, it is easier to get results.</p>
+<p>LaTeXML seems more powerful, but I could never get it to produce results from &quot;arbitrary&quot; TeX (again, not a lot of time spent on this). On the other hand, LaTeXML is used systematically to convert the arXiv with reasonable success rates.</p>
+<p>With respect to epub3 (ignoring html-to-epub3), I'm only aware of <a href="http://www.johnmacfarlane.net/pandoc/">pandoc</a> (disclaimer: my personal favorite).</p>
+<p>The current development branch has an epub3 writer with MathML support. This works reliably in a handful of tests. Pandoc does not have complete TeX support but John McFarlane is just a fantastic guy who built a strong community around pandoc -- something the two others seem to lack.</p>
+<p>Addendum: <a href="http://tex.stackexchange.com/">TeX.SE</a> has lots of expertise on tex4ht and latexml, of course. See <a href="http://tex.stackexchange.com/questions/43847/why-havent-any-tex-html-converters-been-updated-to-use-current-web-standards-s">this example</a></p>
+<hr>
+<p>Since the blog has to have something extra</p>
+<h3>Bonus links from <a href="http://TeX.SE">TeX.SE</a>:</h3>
+<ul>
+<li><a href="http://tex.stackexchange.com/questions/19928/how-can-i-use-latex-to-build-my-website/">http://tex.stackexchange.com/questions/19928/how-can-i-use-latex-to-build-my-website/</a></li>
+<li><a href="http://tex.stackexchange.com/questions/68916/convert-latex-to-mathjax-html/">http://tex.stackexchange.com/questions/68916/convert-latex-to-mathjax-html/</a></li>
+<li><a href="http://tex.stackexchange.com/questions/49208/why-is-latex-used-as-the-defacto-standard-for-math-equations/49228#49228">http://tex.stackexchange.com/questions/49208/why-is-latex-used-as-the-defacto-standard-for-math-equations/49228#49228</a> (I'll have to come back to that one)</li>
+</ul>
+<h3>Super Bonus links</h3>
+<ul>
+<li><a href="https://github.com/coolwanglu/pdf2htmlEX">https://github.com/coolwanglu/pdf2htmlEX</a> (via <a href="http://TeX.SE">TeX.SE</a>) which simultaneously amazes &amp; freaks me out. (Look into the source of the example with formulas... brrr...)</li>
+<li><a href="http://www.albany.edu/~hammond/demos/Html5/arXiv/">http://www.albany.edu/~hammond/demos/Html5/arXiv/</a> how I started with tex4ht.</li>
+</ul>
+<h3>Bonus observation</h3>
+<p>the two posts that regularly drive traffic this way are about Markdown and epub. Just saying.</p>
+<h3>Bonus bonus</h3>
+<p>That last sentence about John McFarlane got shortened too much and doesn't quite make sense anymore. So I finally have a reason to embed the most important comic strip on the internet.</p>
+<figure>
+  <a href="http://xkcd.com/386/">
+    <img alt="Are you coming to bed? -- I can't. This is important. -- What?  -- Someone is _wrong_ on the internet." src="/assets/2013/duty_calls.png"/>
+  </a>
+  <figcaption>
+  <a href="http://xkcd.com/386/">Duty Calls</a> (&copy;  xkcd, cc-by-nc).
+  </figcaption>
+</figure>
+<hr>
+<p><em>Comments</em></p>
+<ul>
+<li><strong>Joerg Sixt</strong>, 2013/01/23<br>
+Many thanks for this…although this answer made me lock myself in the basement for a week to get tex4ht to work(lol). It is probably powerful but a very badly documented piece of software. It is even unclear if MikTeX 2.9 contains a correct installation. It would love to get high-quality images for equations (PNG and SVG) out of tex4ht just to see how far you can go without MathML and MathJax but I failed so far.<br>
+Probably will try PanDoc next…
+<ul>
+<li><strong>Peter</strong>, 2013/01/26<br>
+I would suggest latexml first. pandoc is not on the level you expect.</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20What&#39;s the best TeX-to-HTML or TeX-to-ePUB converter?">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0127/ -->
+	</body>
+</html>

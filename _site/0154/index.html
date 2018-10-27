@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Red workbook, p8</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Red workbook, p8</h1>
+  <span class="post-date"><time datetime="2014-03-11">11 Mar 2014</time></span>
+  <h3>Source</h3>
+<figure>
+  <a href="/assets/2014/red_workbook-p8.jpg">
+    <img alt="red workbook, p8" src="/assets/2014/red_workbook-p8.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, p.8
+  </figcaption>
+</figure>
+<h3>Transcript</h3>
+<ul>
+<li><strong>Lemma</strong> \(A \subseteq S\) (a) \(A \in p \in K(\beta S)\) (also pws) =&gt; \(\exists g \subseteq_ e S: \stackrel{\stackrel{[unreadable]}{\downarrow}}{\beta S \cdot p} \subseteq \widehat{ \bigcup_ {x \in g} x^{-1} A }\)
+<ul>
+<li>(b) \(T := \bigcup_ {x \in g} x^{-1} A\) dick, \(g \subseteq_ e S\) (also \(A\) pws)
+<ul>
+<li>=&gt; \(\beta S \cdot q \subseteq \widehat{T}\) fuer ein \(q \in \beta S\)</li>
+<li>=&gt; \(A \in x \cdot q\) fuer ein \(q\in \beta S\), ein \(x\in g\)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Beweis</strong>
+<ul>
+<li>(b): \(q \in K(\beta S)\) mit \(\beta S \cdot q \subseteq \widehat{T}\) (Prop)
+<ul>
+<li>\(q \in \beta S \cdot q \subseteq \widehat{T} \Rightarrow \exists x \in g: x^{-1}A \in q \Rightarrow x \cdot q \in \widehat{A}\)</li>
+</ul>
+</li>
+<li>(a) \(L := \beta S \cdot p\) min. LID , \(p \in L\).
+<ul>
+<li><strong>Beh</strong>: \(L \subseteq \bigcup_ {t \in S} \widehat{t^{-1}A }\) [ \(x \in L, p \in \beta S \cdot x = cl_ {\beta S} (s \cdot x)\)
+<ul>
+<li>da \(p\in \widehat{A}\) offen =&gt; \(\exists t \in S: t\cdot x \in \widehat{A} \Rightarrow x \in \widehat{t^{-1}A}\)]</li>
+</ul>
+</li>
+<li>\(L\) kompakt, also \(\underset{\stackrel{=}{\beta S \cdot p} }{L} \subseteq \bigcup_ {t \in g} \widehat{ t^{-1}A}\) fuer ein \(g \subseteq_ e S\). □</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Prop</strong> \(A\subseteq S\); AeQ: (a) \(A\) pws (b) \(\exists y \in S: y^{-1}A\) zentral
+<ul>
+<li>(c) \(\exists D \subseteq S \text{ synd} \forall d \in D: d^{-1}A\) zentral</li>
+</ul>
+</li>
+<li><strong>Beweis</strong>
+<ul>
+<li>(b) =&gt; (a): nimm \(\epsilon \in E_ \min(\beta S): y^{-1}A \in \epsilon \Rightarrow A \in y \cdot \epsilon \in K(\beta S)\)</li>
+<li>(a) =&gt; (c): Sei \(e \subseteq_ e S\) mit \(\bigcup_ {t \in e} t^{-1}A = T\) dick;
+<ul>
+<li>sei \(L\subseteq \widehat{T}\) min LID, sei \(\epsilon \in L \cap E(\beta S)\)</li>
+<li>Sei \(y\in \epsilon\) mit \(\epsilon \in \widehat{ y^{-1} A }\). Im DS \(\beta S\):</li>
+<li>\(\epsilon\) uniform rekurrent, \(B = R(\epsilon, \widehat{ y^{-1}}A)\) syndetisch</li>
+<li>\(D: y \cdot B\) (syndetisch! (Bem.)) und</li>
+<li>\(\forall d\in D: d^{-1}A \in \epsilon\) (also zentral) [\(d = y\cdot b\) fuer ein \(b \in B\), \(b\epsilon \in y^{-1}A\)
+<ul>
+<li>\(y b \epsilon \in \widehat{A}, d\epsilon \in \widehat{A}, d^{-1}A \in \epsilon\)]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>partial Translation</h3>
+<ul>
+<li><strong>Lemma</strong> \(A \subseteq S\)
+<ul>
+<li>(a) \(A \in p \in K(\beta S)\) (hence piecewise syndetic (pws)) =&gt; \(\exists g \subseteq_ e S: \beta S \cdot p \subseteq \widehat{ \bigcup_ {x \in g} x^{-1} A }\) [[so this union is thick!]]</li>
+<li>(b) \(T := \bigcup_ {x \in g} x^{-1} A\) thick, \(g \subseteq S\) finite (so \(A\) is pws)
+<ul>
+<li>=&gt; \(\beta S \cdot q \subseteq \widehat{T}\) for some \(q \in \beta S\)</li>
+<li>=&gt; \(A \in x \cdot q\) for some \(q\in \beta S\) and some \(x\in g\)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Proof</strong>
+<ul>
+<li>(b): \(q \in K(\beta S)\) with \(\beta S \cdot q \subseteq \widehat{T}\) (by the previous proposition) [[workbook p 7]]
+<ul>
+<li>\(q \in \beta S \cdot q \subseteq \widehat{T} \Rightarrow \exists x \in g: x^{-1}A \in q \Rightarrow x \cdot q \in \widehat{A}\)</li>
+</ul>
+</li>
+<li>(a) \(L := \beta S \cdot p\) minimal left ideal (LID) , \(p \in L\).
+<ul>
+<li><strong>Claim</strong>: \(L \subseteq \bigcup_ {t \in S} \widehat{t^{-1}A }\)
+<ul>
+<li>\(x \in L, p \in \beta S \cdot x = cl_ {\beta S} (s \cdot x)\) since \(p\in \widehat{A}\) open =&gt; \(\exists t \in S: t\cdot x \in \widehat{A} \Rightarrow x \in \widehat{t^{-1}A}\)]</li>
+</ul>
+</li>
+<li>\(L\) compact, hence \(\underset{\stackrel{=}{\beta S \cdot p} }{L} \subseteq \bigcup_ {t \in g} \widehat{ t^{-1}A}\) for some finite \(g \subseteq S\). □</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Proposition</strong> \(A\subseteq S\); TFAE
+<ul>
+<li>(a) \(A\) pws</li>
+<li>(b) \(\exists y \in S: y^{-1}A\) central</li>
+<li>(c) \(\exists D \subseteq S \text{ syndetic} \forall d \in D: d^{-1}A\) central</li>
+</ul>
+</li>
+<li><strong>Proof</strong>
+<ul>
+<li>(b) =&gt; (a): take \(\epsilon \in E_ \min(\beta S): y^{-1}A \in \epsilon \Rightarrow A \in y \cdot \epsilon \in K(\beta S)\)</li>
+<li>(a) =&gt; (c): Let \(e \subseteq S\) finite with \(\bigcup_ {t \in e} t^{-1}A = T\) thick;
+<ul>
+<li>Let \(L\subseteq \widehat{T}\) min. LID, let \(\epsilon \in L \cap E(\beta S)\)</li>
+<li>Let \(y\in \epsilon\) with \(\epsilon \in \widehat{ y^{-1} A }\). In the dynamical system \(\beta S\):</li>
+<li>\(\epsilon\) is uniformly recurrent, \(B = R(\epsilon, \widehat{ y^{-1}}A)\) syndetic</li>
+<li>\(D: y \cdot B\) (syndetic! (by the above remark.)) undand</li>
+<li>\(\forall d\in D: d^{-1}A \in \epsilon\) (hence central)
+<ul>
+<li>[proof]: \(d = y\cdot b\) for some \(b \in B\), \(b\epsilon \in y^{-1}A\), \(y b \epsilon \in \widehat{A}, d\epsilon \in \widehat{A}, d^{-1}A \in \epsilon\)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Notes</h3>
+<p>More wonderful stuff about thick, piecewise syndetics, and central sets.</p>
+<p>The lemma tells us that pws could be called &quot;almost thick&quot; -- a finite set of translations is enough to make a pws set thick. The proposition on the other hand tells us that pws is surprisingly close to being central -- just one translation! (just keep in mind they are very much not the same notion). In addition, such a translation happens very, very frequently (a syndetic set!).</p>
+<p>Somehow, I find this to be a lot of fun even if it's not particularly surprising -- minimal idempotent ultrafilters are just so incredibly rich.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Red workbook, p8">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0154/ -->
+	</body>
+</html>

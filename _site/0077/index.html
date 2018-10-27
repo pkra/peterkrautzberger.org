@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 3)</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 3)</h1>
+  <span class="post-date"><time datetime="2011-08-25">25 Aug 2011</time></span>
+  <blockquote>
+<p>Ok, time for part 3. We're not close to an end but I must apologize that I won't be able to post in the next week. But let's recap. In the <a href="/0075/">first part</a> I simply explained why semigroups are not partition regular and in the <a href="/0076/">second part</a> I wrote about FS-sets and, finally, introduced partial semigroups. One of the headings promised that partial semigroups will help us talk about FS-sets.</p>
+</blockquote>
+<h2>Are we there yet?</h2>
+<p>At this point you might also ask why I talked about partial semigroups so much when I wanted to give you an easy description of FS-sets.</p>
+<p>Well, it's because I did. FS-sets <strong>are</strong> partial semigroups, in fact, they are a lot like \(\mathbb{F}\)!</p>
+<p>Why? Because for a sequence \((x_i: i &lt; N)\) (for some \(N\leq \omega\))</p>
+<p>\[FS(x_n) := { \sum_{i \in s} x_i: s \in \mathbb{F} }.\]</p>
+<p>So we have an induced partial operation on \(FS(x_n)\).</p>
+<blockquote>
+<p>A word of warning: an FS-set can have more structure than \(\mathbb{F}\) induces -- just look at \(FS(2^n) (= \mathbb{N})\) or in a different form, look at \(FS(n)\) -- same set, but much messier when it comes to the relationship between the generating sequence and the sets of finite sums!</p>
+</blockquote>
+<p>In general, we cannot assume that each element of an FS-set has a unique description via some \(s\in \mathbb{F}\) nor can we assume that the \(\mathbb{F}\)-induced operation captures all allowable sums. So, really, the whole affair is far from optimal!</p>
+<p>Nevertheless, if we look at the partial semigroup operation on an FS-set induced by \(\mathbb{F}\), we get a very natural partial semigroups structure with plenty of structure, even if we don't catch all aspects.</p>
+<p>From this point of view, we could re-phrase Hindman's Theorem as follows.</p>
+<blockquote>
+<p><strong>Hindman's Theorem (bad version)</strong> Partial semigroups are partition regular.</p>
+</blockquote>
+<p>This is, of course, a most horrible example of <a href="http://en.wikipedia.org/wiki/Abstract_nonsense">general nonsense</a>: hiding a concrete structure by using an abstract notion. We're not getting an arbitrary kind of partial semigroup, we're getting FS-sets, plain and simple.</p>
+<p>The reason why I am writing this exposition is that, as much as I believe the preceding paragraph, I think there could something valuable in this formulation: if we could develop the notion of partial semigroup, we might just end up solving one of the big unknowns in this field. But before I can take you in that direction, we need to talk about ultrafilters.</p>
+<h2>Ultrafilters on semigroups</h2>
+<p>When it comes to infinite (and sometimes even finite) Ramsey-type theorems, it is often easy (or at least nice) to give a proof via <a href="http://en.wikipedia.org/wiki/Ultrafilter">ultrafilters</a>. The reason is very simple: if we partition a set into finitely many piece, an ultrafilter contains exactly one of the pieces. This allows for a simplistic strategy: construct the right kind of ultrafilter and it will do all the work for you!</p>
+<p>In case of FS-sets and Hindman's Theorem there is an even closer relation to ultrafilters, idempotent ultrafilters to be exact. I don't want to prove anything here, so whatever idempotent ultrafilters are, they are a special kind of ultrafilter on semigroups (but <a href="http://en.wikipedia.org/wiki/Ellis%E2%80%93Nakamura_lemma">one that exists in ZFC</a>). They come up in the most popular proof of Hindman's Theorem, the so-called Galvin-Glazer Theorem (so-called since neither of them were involved in getting the proof published and the way I'll write it it's really Galvin's).</p>
+<blockquote>
+<p><strong>Galvin-Glazer Theorem</strong> If \(p \in \beta \mathbb{N}\) is an idempotent ultrafilter, \(A\in p\), then \(A\) contains an FS-set.</p>
+</blockquote>
+<p>Hindman's Theorem is then an immediate corollary.</p>
+<p>I love the odd history of Hindman's Theorem, so allow me to digress. Around 1970 Galvin actually had the proof but didn't know if idempotent ultrafilters existed (and he had a different name because he was thinking about them the &quot;wrong&quot; way). Then in 1972 Hindman used CH and, assuming &quot;his&quot; theorem, built an ultrafilter as Galvin needed. Then in 1974 Hindman proved &quot;his&quot; theorem combinatorially. Yet in 1975 Galvin met Glazer who told him that idempotents exist (which, looked at the &quot;right&quot; way had been known since the 1958!).</p>
+<p>Coming back to the relation between FS-sets and ultrafilters, there's also a reverse:</p>
+<blockquote>
+<p>If \(A\) contains an FS-set, then \(A\) is in an idempotent ultrafilter.</p>
+<p>In other words, \(A\) contains an FS-set iff \(A\) is in an idempotent ultrafilter.</p>
+</blockquote>
+<p>Again, the proof is not important right now (don't worry I'll probably get back to it later). What is important is that, in this sense, the structure of FS-sets and idempotent ultrafilters is immediately connected.</p>
+<p>And the point, in fact the point of this whole series, is that this relationship is missing for stronger algebraic Ramsey Theorems.</p>
+<blockquote>
+<p>If you read this far, my thanks. I won't be able to post anything next week, but there's more to follow (and written but not yet prepped for posting). So stay tuned!</p>
+</blockquote>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Hindman’s Theorem, partial semigroups and some of my most lacking intuitions (part 3)">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0077/ -->
+	</body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Some thoughts on Native MathML</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Some thoughts on Native MathML</h1>
+  <span class="post-date"><time datetime="2015-08-09">09 Aug 2015</time></span>
+  <blockquote>
+<p>Do not worry about your difficulties with MathML; I can assure you that mine are still greater.</p>
+<p>— <a href="http://en.wikiquote.org/wiki/Albert_Einstein#1940s">not Albert Einstein</a>.</p>
+</blockquote>
+<p>I have written about why <a href="/0175/">I care about MathML</a> and why I care about <a href="/0176/">Native MathML</a>. Time to talk about some of the problems I see.</p>
+<p>This piece reflects my personal opinion and is not indicative of the position of any project I might work on. It is meant as a conversation starter.</p>
+<p>I care very much about MathML and in particular the mission of the W3C Math Working Group <a href="http://www.w3.org/Math/Documents/Charter2006.html">to facilitate and promote the use of the Web for mathematical and scientific communication</a>. Yet, while MathML has succeeded everywhere else, it struggles on the web. That worries me.</p>
+<h2>The rise and fall of MathML</h2>
+<p>MathML did not start out as an XML language but as the <code>&lt;math&gt;</code> tag in HTML3. It was the browser vendors (Microsoft, Netscape) who rejected it; as a result, <code>&lt;math&gt;</code> went into XML &quot;exile&quot; (where it was immensely successful) and returned to HTML in HTML5.</p>
+<p>Still, all OWP technologies stand and fall with the support and adoption from browser vendors. It does not matter how good (or bad) a web standard is or how well it works elsewhere. Browser vendor adoption is the only relevant measure.</p>
+<h2>No news is not good news</h2>
+<p>It's been two years since I started to write <a href="http://radar.oreilly.com/2013/11/mathml-forges-on.html">&quot;MathML forges on&quot;</a>.</p>
+<p>Back then, native browser support seemed to be on the tipping point. Dave Barton had done amazing work on improving Alex Milowski's WebKit code, the deactivation in Chrome seemed to be a hiccup due to one single bug (that already had a fix). It seemed, with a little luck, Gecko/Firefox and WebKit/Safari would have made it to the 80/20 point within a year, hopefully in turn get the Blink/Chrome team to re-enable MathML; then we'd watch as Trident/IE (now Edge) would hurry to integrate the math support from LineServices.</p>
+<p>Two years later, Gecko has moved sideways, WebKit has barely moved, Trident/Edge remains a mystery, and Blink is &quot;the villain&quot; (for dropping the WebKit MathML code). MathML is still the only viable markup language for mathematics (recently reaffirmed by its ISO standardization), and yet, native browser support seems just as far away as ever.</p>
+<p>Why?</p>
+<h2>Who implements native MathML support?</h2>
+<p>Gecko's and WebKit's (still quite partial) support has been almost exclusively implemented by volunteer contributors (and mostly unpaid volunteers at that).</p>
+<p>Effectively, no browser vendor has ever worked on MathML support in their browser. (Yes, that's a bit unfair to Mozilla devs who are great -- sorry. There are also good people at Apple, Google, Microsoft; still, the companies all fail to invest in MathML browser support.)</p>
+<p>The volunteers, on the other hand, come and go. Nobody is able to find significant funding and development is, once again, effectively dead.</p>
+<p>At this point, I don't see how we can ever get sufficient native MathML support in browsers; the volunteer method does not work and the vendors remain uninterested.</p>
+<h2>Where could we go instead?</h2>
+<p>The fact that browser vendors do not implement MathML says virtually nothing about MathML. Studying past discussions, it's clear that there isn't a lot of knowledge about the spec or the requirements of mathematical layout. (Again, this is a little unfair to some Mozilla devs.)</p>
+<p>So I see no reason to give up on MathML, let alone math and science notation on the web. Because one thing has not changed: it's still the best markup for math -- and education, industry, and research need a good markup that works on the web.</p>
+<p>While I don't think native browser implementations is a realistic goal at this point, I think MathML can still be a trail blazer, especially for scientific notation. It is, after all, a long standing W3C standard and we know it works very well in a browser context (even if you need polyfills).</p>
+<p>I think there are two problems we can focus on that are just as useful to move scientific markup (and the web in general) forward:</p>
+<ol>
+<li>how to do mathematical layout using the web standards that are widely implemented (and how to improve both)</li>
+<li>how to expose the underlying markup to all tools that understand it</li>
+</ol>
+<p>As opposed to native browser support for MathML, both of these are extremely feasible.</p>
+<p>For the first, it recently became clear to that modern browsers (IE9+) are actually good enough for layout; that is, you can write converters from MathML to HTML or SVG markup so that the result is stable, i.e., provides the same layout on all browsers (comparable to TeX quality but naturally integrated into the page context). To be clear, this is not (just) about client-side rendering like MathJax (in fact, MathJax does not provide this yet).</p>
+<p>The biggest problem is that the necessary markup itself is messy, making it hard to generate (just look at the spans-spans-spans that MathJax currently generates).</p>
+<p>But is this unusual? I think this situation is not unlike how grids using Bootstrap or Foundation are overly complicated compared to grids using css-grid layout. Or how doing flexbox-like layout is horribly complicated without flexbox.</p>
+<p>I think we should focus on widely implemented standards and work on improving them so that the markup you need for good math layout becomes cleaner and thus easier to generate (both in terms of structure/semantics and performance).</p>
+<p>For the second point, looking at the developments of the semantic web, it's obviously not being realized in terms of mandated HTML tags or CSS properties. It is being realized via ARIA roles, RDFa, microdata etc. I'm not saying these approaches work for the semantic structure of MathML (let alone STEM in general) but something along those lines seems achievable.</p>
+<p>Frankly, I'm a bit tired of waiting for <del>Godot</del> native browser support for MathML. MathML is frozen because we're all waiting for browsers to catch up. It is simply not happening. Let's look for ways to move forward.</p>
+<hr>
+<p><em>Comments</em></p>
+<ul>
+<li>
+<p><strong>gimsieke</strong>, 2015-08-10</p>
+<blockquote>
+<p>Nobody is able to find significant funding</p>
+</blockquote>
+<p>MathJax has managed to attract a significant network of donors. Why don’t they either encourage their “investors” to also invest in native math rendering, or why don’t they use the proceeds to fund native development directly? This shouldn’t be beyond their bylaws.</p>
+<ul>
+<li>
+<p><strong>Peter</strong>, 2015-08-10</p>
+<blockquote>
+<p>Why don’t they either encourage their “investors” to also invest in native math rendering,</p>
+</blockquote>
+<p>The &quot;nobody&quot; includes MathJax. Of course, the fact that we failed does not say much. The fact that everybody failed so far, might.</p>
+<blockquote>
+<p>why don’t they use the proceeds to fund native development directly</p>
+</blockquote>
+<p>Because then we wouldn't be able to develop MathJax itself.</p>
+<blockquote>
+<p>This shouldn’t be beyond their bylaws.</p>
+</blockquote>
+<p>Sure. Neither would be curing cancer.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bruce Miller</strong>, 2015-08-10</p>
+<p>Interesting blog post!  I've two comments to make.</p>
+<p>Easy one first: I feel like you are unnecessarily harsh on the quality of Gecko's MathML support.  While I understand your pride in MathJax, I'd still put Gecko at 90/10 or better rather than 80/20 or below.  It certainly can use improvement and is more variable, depending on system fonts, etc, and I'd definitely appreciate more official support from Mozilla. But it gets all the essentials and with the right fonts looks virtually as good as MathJax --- and it's blindingly fast in comparison.</p>
+<p>This is more than a fanboy stance: I think there's a psychological factor to this as well, when the message seems to be that no matter what is done, it's never good enough.</p>
+<p>The second issue is a bit more subtle. On the one hand, you  advocate strongly for MathML; on the other, you propose to focus on &quot;widely implemented standards&quot; for doing mathematical layout. There seems a big ambiguity there: Are you suggesting that authors should create &amp; serve MathML in their web pages and that the way forward is in improving and using the better supported standards as a way of rendering the MathML?  Or are you suggesting using whatever technology is available to render something that looks like math, whether or not the representation is MathML? I suspect the former, hope for it, but whichever stance you take, I'd prefer to see it more explicit.  The ambiguity just feeds the suspicions about MathJax in some and provides an excuse to abandon MathML in others.</p>
+<p>Thanks for the thought provoking article;<br>
+bruce</p>
+<ul>
+<li>
+<p><strong>Peter</strong>, 2015-08-11</p>
+<blockquote>
+<p>While I understand your pride in MathJax, [...]</p>
+</blockquote>
+<p>This post is really not about MathJax. In many ways, the opposite. But the only ones who could claim pride in MathJax would be Davide and Robert; certainly not me.</p>
+<blockquote>
+<p>I'd still put Gecko at 90/10 or better rather than 80/20 or below</p>
+</blockquote>
+<p>I've often described Gecko as the baseline for MathML feature support. If you can't make your MathML work in Gecko, you probably shouldn't be using it.</p>
+<p>But I also understand why people disagree with that. In my experience, you need to be quite knowledgeable about Gecko's implementation (at least from the outside) to avoid running into layout quirks or missing features; watching the MediaWiki math extension feedback is a good example for this.</p>
+<p>Of course, this is nothing special, the same is true about MathJax. But the problem is that no large scale MathML adopter I've ever talked to is willing or able to spend the resource on optimizing their content for Firefox.</p>
+<blockquote>
+<p>[...] depending on system fonts [...]</p>
+</blockquote>
+<p>That's not a minor issue though. The switch to MATH tables has brought quite a few problems in terms of layout and more importantly developer burden.</p>
+<p>While MATH tables seem to be the way to go, they can only be leveraged by native implementations (and there aren't exactly many fonts with MATH tables, nor would I expect that expensive niche to grow much soon).</p>
+<p>This adds to the burden of front end developers who would have to provide two sets of webfonts -- one for Gecko and one for everyone else (i.e., polyfills). It's another case of a good standard being useless because it's not widely implemented. But it's made worse because polyfills cannot leverage it so there's no positive feedback loop.</p>
+<blockquote>
+<p>it's blindingly fast in comparison.</p>
+</blockquote>
+<p>Sure. That's why I'm not talking about client-side rendering here but for the generation of HTML with CSS. This includes tools like LaTeXML or pandoc or any XML workflow tool.</p>
+<p>(But fun fact: we've seen edge cases of client-side MathJax outperforming Firefox by a clear margin. I got lucky and was able to mention it to Rob O'Callahan personally and <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1139709">Gecko got improvements</a>.)</p>
+<blockquote>
+<p>I think there's a psychological factor to this as well, when the message seems to be that no matter what is done, it's never good enough.</p>
+</blockquote>
+<p>I don't think the problem is &quot;never good enough&quot;. MathJax is certainly not &quot;good enough&quot; for many people (in particular in terms of performance, but also layout, feature support etc).</p>
+<p>I think the problem is rather &quot;no chance of getting better&quot;. There is no interest from the browser companies; that's what would have to change.</p>
+<p>I think even a limited implementation would be interesting if developers had the promise that bugs will get fixed and implementations moved forward. This is not some kind of chicken-and-egg problem, it's simply a failure of browser vendors (and just to repeat myself: not of individual browser developers!).</p>
+<blockquote>
+<p>Are you suggesting that authors should create &amp; serve MathML in their web pages and that the way forward is in improving and using the better supported standards as a way of rendering the MathML?<br>
+Or are you suggesting using whatever technology is available to render something that looks like math, whether or not the representation is MathML?</p>
+</blockquote>
+<p>Neither and both. Authors should use whatever works for them. If that's asciimath during authoring or even in the final page, that's fine; I don't lose sleep over it. (Just like nobody loses sleep over somebody converting markdown in the page.) I do think that authoring tools and converters should <em>not</em> stop at MathML but think further because waiting for MathML support to come around is not helping.</p>
+<p>I would like to see those tools move MathML forward by making it the best markup for rendering math on the OWP. But I'm not thinking of something that &quot;just&quot; looks like math but about HTML or SVG markup that is enriched to be just as powerful as its underlying MathML. That's currently not possible for lack of, e.g., aria roles. But I think wecould quickly get to a point where a fully equivalent &quot;interpretation&quot; (or &quot;transpilation&quot; to use a fashionable term) in HTML or SVG does not require client-side rendering.</p>
+<blockquote>
+<p>The ambiguity just feeds the suspicions about MathJax in some and provides an excuse to abandon MathML in others.</p>
+</blockquote>
+<p>This reads like FUD to me.</p>
+<p>My piece opens with &quot;This piece reflects my personal opinion and is not indicative of the position of any project I might work on.&quot; This obviously includes MathJax.</p>
+<p>MathJax is a MathML rendering engine. I'm proposing to something based on MathML and my hope is to move MathML forward despite the lack of interest from browser vendors.</p>
+<p>But if somebody needs an excuse to &quot;abandon&quot; MathML, I'd prefer to convince them by showing them how great MathML is rather than saying &quot;oh, just wait a few more years and browser vendors will finally get it and implement it&quot;. MathML deserves better!</p>
+</li>
+<li>
+<p><strong>Bruce</strong>, 2015-08-12</p>
+<blockquote>
+<p>This post is really not about MathJax.</p>
+</blockquote>
+<p>Understood. But really my point was that both Gecko &amp; MathJax, while both imperfect, do pretty decent math typography, at least by the measure of web typography generally.</p>
+<blockquote>
+<p>Sure. That's why I'm not talking about client-side rendering here but for the generation of HTML with CSS. This includes tools like LaTeXML or pandoc or any XML workflow tool.</p>
+</blockquote>
+<p>... and ...</p>
+<blockquote>
+<p>I would like to see those tools move MathML forward by making it the best markup for rendering math on the OWP. But I'm not thinking of something that &quot;just&quot; looks like math but about HTML or SVG markup that is enriched to be just as powerful as its underlying MathML. That's currently not possible for lack of, e.g., aria roles. But I think we could quickly get to a point where a fully equivalent &quot;interpretation&quot; (or &quot;transpilation&quot; to use a fashionable term) in HTML or SVG does not require client-side rendering.</p>
+</blockquote>
+<p>...</p>
+<blockquote>
+<blockquote>
+<p>The ambiguity just feeds the suspicions about MathJax in some and provides an excuse to abandon MathML in others.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>This reads like FUD to me.</p>
+</blockquote>
+<p>FUD? Perhaps, but the fact that I'm paranoid, doesn't mean that I'm not being followed. :&gt;</p>
+<p>MathML offers a representation of math in such a form as to enable: high-quality rendering; accessibility; reuse (especially content). One would have hoped for gradual adoption &amp; implementation of MathML, starting with the aspects that are both &quot;easiest&quot; and most in demand: rendering first; increasing support for accessibility; and eventually support for reuse. That seems to me a critical evolutionary path if true accessibility and reuse of mathematics will ever be achieved.</p>
+<p>Alas, math is a niche; generating good MathML and rendering it is non-trivial, content moreso. And, as you point out, browser support seems stalled, at best.</p>
+<p>While your proposed solution of improving HTML+CSS, RDF and aria seems practical and innocent, without a strong and simultaneous call for continued improvement of native MathML support in browsers and its generation by authors as well as the actual serving of MathML, there's the danger of undermining that evolutionary path of MathML support. I don't believe that's your intention, but the implication that authors need only serve HTML+CSS for rendering, imagining they'll someday add aria annotation, eliminates the most pressing reasons for wanting MathML in the first place. Reuse of mathematics, or even truly useful accessibility remain mere pipe-dreams.</p>
+<p>...</p>
+<blockquote>
+<p>But if somebody needs an excuse to &quot;abandon&quot; MathML, I'd prefer to convince them by showing them how great MathML is rather than saying &quot;oh, just wait a few more years and browser vendors will finally get it and implement it&quot;. MathML deserves better!</p>
+</blockquote>
+<p>Thanks; That's what I was hoping to hear. I just want to make sure that message doesn't get lost in the shuffle. If we give the impression that rendering and a modicum of accessibility is &quot;good enough&quot;, we may as well just leverage the browser's improvements in image rescaling, attach little tape-recordings to the images, and call it done.</p>
+</li>
+<li>
+<p><strong>Peter</strong>, 2015-08-12</p>
+<p>Thanks, Bruce.</p>
+<blockquote>
+<p>While your proposed solution of improving HTML+CSS, RDF and aria seems practical and innocent, without a strong and simultaneous call for continued improvement of native MathML support in browsers and its generation by authors as well as the actual serving of MathML, there's the danger of undermining that evolutionary path of MathML support.</p>
+</blockquote>
+<p>I disagree. As I wrote, I don't see any practical interest from vendors towards implementing MathML. So calling for improvements is pointless -- they are not doing anything.</p>
+<p>I'd be thrilled to be wrong and see browser vendors dedicate the necessary resources to MathML development (and maybe join the MathWG to help move the spec forward).</p>
+<p>But if I'm not wrong, then &quot;Waiting for Improvements&quot; will be worthy of Beckett.</p>
+<p>As much as I care about MathML, I care even more about mathematics on the web. Since native MathML support is not happening, I think MathML needs to evolve into something that can be native. My suggestion voiced here is that it should evolve towards HTML and CSS.</p>
+<blockquote>
+<p>but the implication that authors need only serve HTML+CSS for rendering, imagining they'll someday add aria annotation, eliminates the most pressing reasons for wanting MathML in the first place.</p>
+</blockquote>
+<p>I think &quot;eliminates&quot; is misleading. First, I disagree because you cannot &quot;eliminate&quot; what's not there. MathML is not usable on the web (without polyfills) because browser vendors are not supporting it.</p>
+<p>Secondly, I disagree because I believe that only MathML will allow us to move towards &quot;HTML as powerful as MathML&quot;.</p>
+<p>That's the whole point of this piece, really: imho browser support will not happen, so let's think about ways how the spec (and maybe even the MathWG) can evolve to fulfill its mission.</p>
+<p>And I obviously and strongly believe that MathML is the best basis for doing so.</p>
+<p>But unless somebody can get browser vendors to dedicate the necessary resources, then I find it unhelpful to sit around and pretend like MathML is working out on the web. Instead, we should think hard about how it can be made to help math and science on the web (without native MathML implementations).</p>
+<blockquote>
+<p>Reuse of mathematics, or even truly useful accessibility remain mere pipe-dreams.</p>
+</blockquote>
+<p>Again, I disagree. On the one hand, it is really pretty easy to achieve exposure of the underlying MathML -- just look at what ChromeVox did already years ago with MathJax, leveraging the internal MathML to enable fully accessible exploration of the visual output.</p>
+<p>On the other hand, I think &quot;reuse of mathematics&quot; is too broad. I think quite a few use cases that people hope for are unrealistic (e.g., copy&amp;paste has so many challenges on the web, with or without MathML). And the realistic ones (e.g., accessibility, search) can be achieved in HTMLified-MathML (pretty easily, I think).</p>
+<p>As much as I care about MathML, I care even more about mathematics on the web. Since native MathML support is not happening, I think MathML needs to evolve into something that can be native. My suggestion voiced here is that it should evolve towards HTML and CSS.</p>
+</li>
+<li>
+<p><strong>Bruce</strong>, 2015-08-12</p>
+<blockquote>
+<p>As much as I care about MathML, I care even more about mathematics on the web. Since native MathML support is not happening, I think MathML needs to evolve into something that can be native. My suggestion voiced here is that it should evolve towards HTML and CSS.</p>
+</blockquote>
+<p>Just to be sure I understand, you're suggesting that rather than</p>
+<p><code>&lt;mfrac&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;/mfrac&gt;</code></p>
+<p>the &quot;New MathML&quot; would be</p>
+<p><code>&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;mi&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;b&lt;/span&gt;&lt;/span&gt;</code></p>
+<p>with perhaps a few `style=&quot;...&quot;`` thrown in?<br>
+thanks;<br>
+bruce</p>
+</li>
+<li>
+<p><strong>Peter</strong>, 2015-08-02</p>
+<p>No. But probably for very different reasons than you might think.</p>
+<p>But I'm not very interested in discussing technical details here. This is a conversation starter, not a technical document. If MathWG wants to consider this direction, then I think we need to bring together practitioners first. And that's practitioners who deal with rendering MathML in a web context; that's not exactly a strong suit of the WG today.</p>
+<p>I also need to slightly correct (or extend) my previous comment to include what I mentioned in the post: I might prefer HTML but I also think SVG should be an equal target. For example, your LaTeXML can already generate SVGs for MathML; why make it less useful than it could be if you already have good underlying data in the form of MathML?</p>
+</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Some thoughts on Native MathML">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0182/ -->
+	</body>
+</html>

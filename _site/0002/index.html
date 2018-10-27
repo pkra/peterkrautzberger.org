@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Testing MathML</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Testing MathML</h1>
+  <span class="post-date"><time datetime="2009-12-09">09 Dec 2009</time></span>
+  <p>One of the tools I want to use in this blog will be MathML. I think MathML is so far the best solution to present mathematical content on the web even though the <a href="http://terrytao.wordpress.com/2009/10/29/displaying-mathematics-on-the-web/">discussion</a> on Terence Tao’s blog shows that MathML has its own deficits, especially when it comes to accessibility.</p>
+<p>Nevertheless, tex4ht allows me to wait for a good standard to develop while working with one “generator”, namely LaTeX, to produce multiple outputs.</p>
+<p>I chose blogger especially because I wanted to use MathML, e.g.</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <semantics>
+    <mrow>
+      <mi>x</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mo>&#x2212;<!-- − --></mo>
+          <mi>b</mi>
+          <mo>&#x00B1;<!-- ± --></mo>
+          <msqrt>
+            <msup>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>4</mn>
+            <mi>a</mi>
+            <mi>c</mi>
+          </msqrt>
+        </mrow>
+        <mrow>
+          <mn>2</mn>
+          <mi>a</mi>
+        </mrow>
+      </mfrac>
+    </mrow>
+    <annotation encoding="application/x-tex">x=\frac{-b \pm \sqrt{b^{2}-4ac}}{2a}</annotation>
+  </semantics>
+</math>
+<p>Of course, blogger does not make it easy, but thanks to <a href="http://dpcarlisle.blogspot.com/2007/04/as-mentioned-in-earlier-post-im.html">David Carlisle</a> a good friend of mine was able to hack enough for me to work on for now. Unfortunately, I will now have to add to the header that you really need firefox with javascript, but is that too much to ask these days?</p>
+<p>By the way, this tag will hopefully lead to more techological experiments in the future.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Testing MathML">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_CHTML-full">
+</script>
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0002/ -->
+	</body>
+</html>

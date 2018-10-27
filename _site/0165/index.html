@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MathJax best practices; avoid display:none</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">MathJax best practices; avoid display:none</h1>
+  <span class="post-date"><time datetime="2014-07-12">12 Jul 2014</time></span>
+  <p>At MathJax we often get questions about specific examples of content / web design. Most of the time, people will show up on the <a href="https://groups.google.com/forum/#!forum/mathjax-users">MathJax User Group</a> (the preferred choice), <a href="http://stackoverflow.com">StackOverflow</a> (semi-officially supported), and through our contact form on <a href="http://mathjax.org">mathjax.org</a> (not the right choice but sometimes necessary for restricted users who can't post to either of the above).</p>
+<p>Almost always, the problems are easy to track down (e.g., the infamous <a href="https://groups.google.com/forum/#!searchin/mathjax-users/15$20seconds/mathjax-users/iIvf2RkNdF4/Bi_TFDR3AsUJ">15s delay</a> if a custom configuration/extension/etc has an incorrect <code>loadComplete</code> call), sometimes they are bugs (e.g., the recent <a href="https://groups.google.com/forum/#!searchin/mathjax-users/chrome$20bold$20italic/mathjax-users/S5x-RQDPJrI/Tn31F4NjcTcJ">Chrome/WebKit webfont loading bug</a>), but of course every so often they hit on the subtleties that make what MathJax does so hard (ex/em matching, webfont detection etc.).</p>
+<p>A surprising recent example for the latter revolves around the use of <code>display:none</code>. It usually comes up in reports of broken layout but the other day there was an interesting performance issue. To understand the second, it helps to understand the first.</p>
+<h3>The layout trouble with <code>display:none</code></h3>
+<p>The rendering issues sometimes seen for content which starts off with CSS <code>display:none</code> and later made visible stem from a simple problem: browser engines won't actually layout elements with <code>display:none</code>. MathJax on the other hand, needs to take a few vital measurements (basically widths and heights) to produce a correct layout -- and these measurements are not available when the content wasn't laid out by the browser.</p>
+<p>To work around this predicament, we could just leave it to the author to work as if content with <code>display:none</code> was dynamically loaded content -- and force them to trigger a manual typeset when the content is revealed. But that's silly because the content is <em>there</em>, we should damn well use it.</p>
+<p>So to work around <code>display:none</code>, MathJax does something quite simple: it moves the content into an invisible element that <strong>does</strong> get laid out -- using <code>visibility:hidden</code> with zero dimensions. Then MathJax can take the measurements, produce good rendering and put the rendered output back to the original location.</p>
+<p>Now there's an obvious problem with that approach: where would you move the content to do the rendering? After all, just because something is <code>display:none</code> doesn't mean it has no context. It might be in a completely different CSS context (think: hints to a homework problem, sidebar content, menus), or the context might change once it becomes visible (think: popup footnotes/references, knowls). In other words, MathJax output in some other context might get screwed up when put back into the original context (e.g., matching font sizes correctly, dealing with inherited CSS). Of course, more often than not, this will work well but it is a general problem and should be avoided.</p>
+<p>(Another way might be to use <a href="http://caniuse.com/#feat=mutationobserver">mutation observers</a>. Besides supported being limited, I think there's an argument to be made that layout should happen right away if possible. But it should probably become an option via an extension.)</p>
+<h3>a surprising performance issue</h3>
+<p>Recently, we saw a sample where all this magic had a very different side effect: serious performance issues. In that sample, hundreds of equations were hidden away with <code>display:none</code>. This meant that MathJax had to shift those around in the DOM -- and especially mobile browsers did not like that at all. What made matters worse was that the MathJax status messages gave no useful indication of what was going on, instead hanging at unrelated points -- because MathJax currently doesn't have a signal to catch a delay for such a &quot;simple&quot; action like laying out <code>display:none</code>. In the end, the sample (with 2000+ equations) left the user with the impression that their mobile browsers were hanging/crashing -- just because of all these necessary layout shenanigans! Darn!</p>
+<h3>the moral</h3>
+<p>The moral of the story is: use <code>visibility:hidden</code>, e.g., <code>position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;</code>), or tell MathJax to skip the content and <a href="http://docs.mathjax.org/en/latest/typeset.html">manually queue a typesetting call</a> when you reveal hidden content. If you want to put in some extra work, use <code>visibility:hidden</code>, let MathJax skip the hidden content and then queue a typesetting call for the hidden content after MathJax is loaded; that way the hidden content will be typeset only after the visible content is done (on MathJax's initial pass).</p>
+<p>Any which way, don't get caught in bad layout or performance issues related to <code>display:none</code>!</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20MathJax best practices; avoid display:none">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0165/ -->
+	</body>
+</html>

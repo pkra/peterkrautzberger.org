@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Red workbook, p5</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Red workbook, p5</h1>
+  <span class="post-date"><time datetime="2014-03-04">04 Mar 2014</time></span>
+  <h3>Source</h3>
+<figure>
+  <a href="/assets/2014/red_workbook-p5.jpg">
+    <img alt="red workbook, p5" src="/assets/2014/red_workbook-p5.jpg"/>
+  </a>
+  <figcaption>
+    Red Workbook, p.5
+  </figcaption>
+</figure>
+<h3>Transcript</h3>
+<ul>
+<li>
+<p>Satz (Auslander-Ellis) \(X\) DS ueber \(S\), \(x\in X\) =&gt; \(\exists y \in X: x \text{ prox } y\) &amp; uniform rekurrent</p>
+<ul>
+<li>[Nimm \(\epsilon \in E_ \min(\beta S)\), setze \(y= \epsilon \cdot x \stackrel{\text{Cor.}}{\rightarrow}\) dies tut's.]</li>
+</ul>
+</li>
+<li>
+<p>Def. \(C\) dyn. zentral \(:\Leftrightarrow\) es ex. DS \(X\) ueber S, \(x,y \in X\), \(x\) prox \(y\), \(y\) unif. rek., und \(\exists U \in \mathfrak{U}(y): C = R(x,U)\).</p>
+</li>
+<li>
+<p>Satz (Bergelson, Hindman etc) \(C \subseteq S\) zentral &lt;==&gt; \(C\) dyn. zentral.</p>
+<ul>
+<li>Beweis
+<ul>
+<li>&quot;&lt;=&quot;: $ C = R(x,U)$ (\(U\in \mathfrak{U}(y)\) etc)</li>
+<li>\(\underset{\text{Cor. oben}}{\Rightarrow}\) ex. \(\epsilon \in E_ \min(\beta S): y = \epsilon \cdot x\) =&gt; \(\underbrace{R(x,U)}_ {=C} \in \epsilon\)</li>
+<li>&quot;=&gt;&quot;: Setze \(Q := \begin{cases} S &amp; \text{ falls } 1_ S \text{ ex} \\\\ S \cup {1_ Q} &amp; \text{ sonst } 1_ Q \text( id.) \end{cases}\)</li>
+<li>\(X = 2^Q\) (siehe Beispiel) etc, \(x = \chi_ C\) (da \(C \subseteq S \subseteq Q\))</li>
+<li>Nach Vors. waehle \(\epsilon \in E_ \min(\beta S)\) mit \(C \in \epsilon\).</li>
+<li>setze \(y:= \epsilon \cdot x\) =&gt; \(x\) prox. \(y\), \(y\) unif. rekurrent</li>
+<li>Beh.: \(y(1_ Q) = 1\)
+<ul>
+<li>[sonst \(=0\), \(V
+   :={ z : z(1_ Q) = 0} \in \mathfrak{U}(y)\)
+<ul>
+<li>\(y = \epsilon x\), also \(R(x,V) \in \epsilon\)</li>
+</ul>
+</li>
+<li>=&gt; \(C \cap R(x,V) \neq \emptyset\), say \(s \in \ldots \cap \ldots\)</li>
+<li>=&gt; \(0 = s \cdot x(1_ Q) \underset{\text{Def}}{=} x(1_ Q \cdot s ) = x(s) = 1\) ↯ ]</li>
+</ul>
+</li>
+<li>Nimm \(U = { z \in X: z(1_ Q) = 1}\) clopen, \(\in \mathfrak{U}(y)\).</li>
+<li>Nach Beispiel \(C = R(x,U)\). ☐</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>partial Translation</h3>
+<ul>
+<li>
+<p>Theorem (Auslander-Ellis) \(X\) dynamical system over \(S\), \(x\in X\) =&gt; \(\exists y \in X: x \text{ proximal } y\) &amp; uniformly recurrent</p>
+<ul>
+<li>[Take \(\epsilon \in E_ \min(\beta S)\), and let \(y= \epsilon \cdot x \stackrel{\text{Corollary}}{\rightarrow}\) confirm that this works.]</li>
+</ul>
+</li>
+<li>
+<p>Definition. \(C\) dynanmically central \(:\Leftrightarrow\) there exists. dynamical system \(X\) over S, \(x,y \in X\), \(x\) proximal \(y\), \(y\) unif. recurrent, and \(\exists U \in \mathfrak{U}(y): C = R(x,U)\).</p>
+</li>
+<li>
+<p>Theorem (Bergelson, Hindman etc) \(C \subseteq S\) central &lt;==&gt; \(C\) dyn. central.</p>
+<ul>
+<li>Proof.
+<ul>
+<li>&quot;&lt;=&quot;: $ C = R(x,U)$ (\(U\in \mathfrak{U}\) etc)</li>
+<li>\(\underset{\text{Cor. above}}{\Rightarrow}\) there exists \(\epsilon \in E_ \min(\beta S): y = \epsilon \cdot x\) =&gt; \(\underbrace{R(x,U)}_ {=C} \in \epsilon\)</li>
+<li>&quot;=&gt;&quot;: Let \(Q := \begin{cases} S &amp; \text{ if } 1_ S \text{ ex} \\\\ S \cup {1_ Q} &amp; \text{ else } 1_ Q \text( identity ) \end{cases}\)</li>
+<li>\(X = 2^Q\) (see example earlier) etc, \(x = \chi_ C\) (since \(C \subseteq S \subseteq Q\))</li>
+<li>By our assumptions choose \(\epsilon \in E_ \min(\beta S)\) with \(C \in \epsilon\).</li>
+<li>let \(y:= \epsilon \cdot x\) =&gt; \(x\) proximal \(y\), \(y\) uniformly recurrent</li>
+<li>Claim: \(y(1_ Q) = 1\)
+<ul>
+<li>[else \(=0\), \(V :={ z : z(1_ Q) = 0} \in \mathfrak{U}(y)\)
+<ul>
+<li>\(y = \epsilon x\), therefore \(R(x,V) \in \epsilon\)</li>
+</ul>
+</li>
+<li>=&gt; \(C \cap R(x,V) \neq \emptyset\), say \(s \in \ldots \cap \ldots\)</li>
+<li>=&gt; \(0 = s \cdot x(1_ Q) \underset{\text{Def}}{=} x(1_ Q \cdot s ) = x(s) = 1\) ↯ ]</li>
+</ul>
+</li>
+<li>Take \(U = { z \in X: z(1_ Q) = 1}\) clopen, \(\in \mathfrak{U}(y)\).</li>
+<li>As in the example: \(C = R(x,U)\). ☐</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Notes</h3>
+<p>This is the continuation of lecture with notes on the previous pages and contains the next notes from the next lecture.</p>
+<p>This lecture starts where the last one left off, reaping the rewards -- the famous theorem by Auslander-Ellis now looks almost distressingly easy, with a terribly arbitrary choice of \(\epsilon\).</p>
+<p>The theorem by Hindman and Bergelson (citation needed) is less known perhaps. It greatly simplifies thinking about central sets and is really quite central (pardon the pun).</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Red workbook, p5">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0151/ -->
+	</body>
+</html>

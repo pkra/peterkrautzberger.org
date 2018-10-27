@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>I don&#39;t always use LaTeX, but when I do…</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">I don&#39;t always use LaTeX, but when I do…</h1>
+  <span class="post-date"><time datetime="2013-05-29">29 May 2013</time></span>
+  <p>Since I haven't published anything in almost two months, let me jot down one thought that has come to mind frequently over the past few months.</p>
+<h2>If you use LaTeX …</h2>
+<p>Well, first of all, are you sure you <em>have to</em> use LaTeX? By which I mean, are you sure you can't use Markdown+MathJax or textile+MathJax or restructuredText+MathJax? Especially if you're teaching your students, are you absolutely sure you are completely and utterly unable to use something simpler? Something that is more modern than learning a hundred bits of print typesetting that your student will never, ever need? Ok, just checking. So…</p>
+<h2>If you (have to) use LaTeX, then make HTML your primary output.</h2>
+<p>By which I mean: don't just produce PDFs that nobody can read on small screens, PDFs that nobody can read accessibly, PDFs that nobody will want to read in 5 years.</p>
+<p>Make HTML your first output. It's important. HTML is the future engine for mathematical and scientific content. If you can't produce HTML, then ur doin it rong. If you don't produce HTML, you won't ever help all the people working on pushing math on the web forward.</p>
+<p>It won't be trivial but easier than you think. Install <a href="http://dlmf.nist.gov/LaTeXML/a">LaTeXML</a> and learn how to use it. (Alternatively you probably have a copy of tex4ht installed with your TeX.) How hard is it? This hard:</p>
+<pre><code>  latexml --dest=mydoc.xml mydoc.tex
+  latexmlpost --dest=mydoc.html --format=html5 mydoc.xml
+</code></pre>
+<p>And when you run into LaTeXML limitations, then get over it, <a href="http://dlmf.nist.gov/LaTeXML/contact.html">report them back</a>, help make it better. If you run into problems with MathJax, <a href="https://github.com/mathjax/mathjax/issues">report them</a>, help make it better. You need graphics? Check out <a href="https://github.com/sonoisa/XyJax">xyjax</a>. You need pstricks? Check out <a href="http://mathapedia.com">mathapedia</a>. You need computations? Check out <a href="http://www.sagemath.org/eval.html">Sage cell server</a>. It's all there, but you have to get started. To it today.</p>
+<p>But if you've ever wanted math to be native on the web, then you have to realize that it <strong>won't happen without your help</strong>.</p>
+<p>If you're too lazy for converting (e.g., when you're teaching), then use something that compiles to both TeX and HTML (like markdown+MathJax etc). Pick a decent tool for it, like <a href="http://www.inkcode.net/qute">Qute</a>, <a href="http://sourceforge.net/projects/retext/">ReText</a>, write on the web with <a href="http://fiduswriter.com/">FidusWriter</a> or <a href="http://authorea.com">Authorea.com</a>, write in your favorite Mac-editor with <a href="http://markedapp.com/">Marked</a>, or <a href="https://github.com/revolunet/sublimetext-markdown-preview">extend sublimetext</a>, on an iPad app use <a href="https://itunes.apple.com/us/app/writing-kit-research-write/id426208994">Writing Kit</a> -- and that's just off the top of my head; there are many more editing environments that offer good syntax and MathJax integration. Many can save to TeX documents, anything can be converted via <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>. It's not perfect yet but it won't get better unless you give everybody some feedback.</p>
+<p>So, if you can, don't author LaTeX, author <em>into</em> LaTeX. And whatever you do, compile it to HTML. It's important.</p>
+<figure>
+  <a href="/assets/2013/mostinterestingman_meme.jpg">
+    <img alt="I don't always use LaTeX but when I do, I compile to HTML" src="/assets/2013/mostinterestingman_meme.jpg"/>
+  </a>
+  <figcaption>
+  credit: <a href="http://www.quickmeme.com/meme/3umuyt/">quickmeme.com</a>
+  </figcaption>
+</figure>
+<hr>
+<p><em>Comments</em></p>
+<ul>
+<li><strong>michalh21</strong>, 2013/05/30<br>
+For LaTeX to html conversion, I would really recommend tex4ht, its problem is fragmentation of documentation, some information is completely missing, but on the other side it can convert any LaTeX document, it can be even configured to convert tikz pictures to svg, or to output math as <a href="http://www.albany.edu/~hammond/demos/Html5/arXiv/" rel="nofollow">mathml with mathjax rendering</a><br>
+I think it is a good idea to output html for people who wants to read on tablets or smart phones, but personally, I still prefer to read PDFs, even on my laptop or PC. For me, PDF has advantage in better readability. HTML even with most recent trends like web fonts and responsive typography is still far behind PDF in this regard. Other advantage is pagination, it helps me with orientation in document. Maybe not so many readers pay attention to such things today, but I think majority of writers in LaTeX wouldn't like how bad their documents look in HTML.<br>
+And last point :) I don't really think LaTeX is hard. For things that markdown etc. supports, like sections, tables, links or footnotes, it is only few commands to learn, every editor today supports snippets for fast inserting these commands, you can use templates for document preamble etc. And when you want to use things like referencing, bibliographies, indexing, glossaries etc, using LaTeX is much easier. Plus, for new functionality, you can write your own macros, which is easier than modifying markdown parser and inventing new syntax :)
+<ul>
+<li><strong>Peter</strong>, 2013/06/06<br>
+Thanks for your comments. tex4ht is certainly a nice and powerful tool. But there’s a fundamental difference: it’s really a dvi-to-html converter, not a LaTeX-to-html one. That allows it to circumvent a lot of problems (by letting the TeX binary do all the hard work) but also comes with losses since LaTeX is semantically richer than TeX/DVI (something that’s visible in the quality of the MathML output last time I tried it).<br>
+I understand that most people find PDFs better. IMO, HTML has much more potential than PDF to provide a better reading experience, with rich content and easy interaction with other web content (and of course PDFs are virtually inaccessible). My main point was merely that we won’t get there if we don’t get started. Authors, in any case, should care more about their readers than their own reading experience. They can, after all, produce whatever they like for themselves whereas a reader rarely has that option. (Personally, I prefer my handwritten notes but that won’t help anyone given my illegible hand writing)<br>
+I’m definitely not trying to tell people what they should use. Certainly, an experienced user often finds LaTeX the most flexible and powerful tool (TeX is a programming language, after all). But this power brings an awful lot of problems with it and in almost all situation that power is not needed. So I do like to argue for the right tool for the job instead, especially in educational settings — and above all, I would like to argue for conversion. No tool or format is perfect. But any content that cannot be converted to something else is (for better or worse) at a dead end.</li>
+</ul>
+</li>
+<li><strong>Norman Lewis Perlmutter</strong>, 2013/06/04<br>
+Given that LaTeX already compiles into pdf, might it be better to use or develop a pdf to html converter? This would have the added benefit of being able to convert pdf files not generated by LaTeX into html.
+<ul>
+<li><strong>Peter</strong>, 2013/06/06<br>
+The short answer is: no. PDF is a very “loss-ful” format. The only way to extract e.g. mathematical content is by using heuristics, i.e., guessing from the placement what kind of expression was actually used. While converters like pdf.js do a good job at reproducing the layout, they do not really convert to HTML, they merely render it (much like a printer) — the output is inaccessible, doesn’t reflow well etc. TeX to HTML is already very solid and used in big publishing houses. Automatic conversion is perhaps at 95% — but to get to 100% (which is needed), the open source projects out there need feedback.<br>
+Since the conversion from for strictly mathematical TeX to MathML is very solid, it’s much easier to go directly anyway. The only remaining problem are the messy packages, in particular the graphical packages that could either be converted to static graphics (like LaTeXML or tex4ht do) or re-implemented in javascript (like xyjax or mathapedia).</li>
+</ul>
+</li>
+<li><strong>jessemckeown</strong>. 2013/06/06<br>
+Well, I’m doing my very little bit, then; since you mention it, though, is there any plan to eventually absorb xyjax into the main mathjax? AMScd does do the arrows nicer than putting <code>\to</code> and <code>\downarrow</code> in a <code>\begin{array}\end{array}</code>, but…
+<ul>
+<li><strong>jessemckeown</strong>, 2013/06/06<br>
+Oh, I forgot to make sure of the right website…</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20I don&#39;t always use LaTeX, but when I do…">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0136/ -->
+	</body>
+</html>

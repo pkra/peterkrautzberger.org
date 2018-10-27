@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Written elsewhere</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Written elsewhere</h1>
+  <span class="post-date"><time datetime="2016-06-16">16 Jun 2016</time></span>
+  <p>As has been established a number of times, I write better elsewhere. So for the n<sup>th</sup> time, here are some cross-postings of things I wrote elsewhere.</p>
+<h2>math formats for the web</h2>
+<p>Somebody <a href="https://groups.google.com/d/msg/mathjax-users/UR9Cz66QIxQ/d4zLFxdDDQAJ">asked on the MathJax user group</a></p>
+<blockquote>
+<p>To my understanding MathJax supports these input formats: LaTeX, MathML, and AsciiMath. If I'm making a website and I can choose to use any of the three formats, what are some advantages of choosing each?</p>
+</blockquote>
+<p>Since I've answered this so many times, I thought it might be worth copying here:</p>
+<img alt="Admiral Akhbar: It's a trap! (Star Wars Return of the Jedi), meme)" src="https://imgflip.com/readImage?iid=14854991">
+<p>&quot;That's a tricky (trick?) question.</p>
+<p>MathML is MathJax's internal format  (essentially anyway) so anything that can be done in MathJax is done through our MathML support, cf <a href="http://docs.mathjax.org/en/latest/mathml.html">http://docs.mathjax.org/en/latest/mathml.html</a>. While MathML is quite good for such an internal purpose, it can be difficult to create. It's rarely written manually (much like HTML or CSS) and tools can have trouble producing high-quality MathML (converters can fail, editors might produce overcomplicated MathML). MathML is the dominant format used in professional publishing workflows and thus comes with a rich toolchain out of XML-land.</p>
+<p>MathJax's LaTeX-like input provides a faithful implementation of the most common math-mode LaTeX commands as well as other standard packages and a few non-standard features, cf. <a href="http://docs.mathjax.org/en/latest/tex.html">http://docs.mathjax.org/en/latest/tex.html</a>. LaTeX is much easier to author by hand than MathML and provides the typical LaTeX advantages such as custom macros (for even easier authoring). It also has the benefit of a large community thanks to the wide adoption of TeX as a programming language for print layout in academic writing. LaTeX is probably the most popular format when people have a choice, so MathJax's TeX-like input has a wide community out there. From a real TeX perspective, MathJax restricts LaTeX input to math-mode since it converts internally into MathML. Due to LaTeX's print heritage, some constructions are hard to do (e.g., equal-width columns are trivial in MathML but not doable with the default LaTeX macros).</p>
+<p>AsciiMath is a lightweight markup language designed to convert well to MathML. I sometimes like comparing it to markdown -- not as powerful but much more sensible to write. It does not have the expressive power of MathML but it is very easy to learn because it was designed by Peter Jipsen specifically for high-school- and college-level students. It is less frequently used but if it's expressive power is sufficient, I tend to recommend it.</p>
+<p>In summary, MathML is MathJax's internal format so anything you can do with MathJax you can do with its MathML input. LaTeX is virtually as powerful (with some edge cases), is easier to author by hand, and has a large community both from real TeX-land and MathJax's community. AsciiMath is the little brother of both MathML and LaTeX and provides a good compromise between expressive strength and human readability.</p>
+<p>If you look beyond MathJax there are even more options, of course.&quot;</p>
+<hr>
+<p>Moving on.</p>
+<h3>math accessibility vs machine readability</h3>
+<p>On the &quot;Getting Math Onto Web Pages&quot; community group, <a href="https://lists.w3.org/Archives/Public/public-mathonwebpages/2016May/0022.html">Tzivya raised a big topic</a> regarding accessibility:</p>
+<blockquote>
+<p>I would love it the world would come to understand that accessibility is a subset of machine readability. Accessibility APIs are a specialized kind of machine. If we are working on machine readable math, we need to make sure that those specialized machines can read the math too. Otherwise we will do the work twice.</p>
+</blockquote>
+<p>I found myself disagreeing with Tzivya (which means I'm probably wrong because she is <strong>awesome</strong>). This disagreement is mostly influenced by our work at MathJax for the past year or so, <a href="https://www.mathjax.org/mathjax-accessibility-extensions-v1-now-available/">making math rendering accessible via MathJax</a>. But the point is an important one to me because, as I expected (feared?), a few discussion on the Community Group have already brought up the problem of looking for the right™ solution instead of the realistic one.</p>
+<p>For me, what we have now is the right solution: HTML, CSS, ARIA, SVG etc, several competing math rendering/computation/etc implementations based on these, lots of tools tangential to them. An excellent kind of mess without standards beyond what works ok for each project out there. It's not the right™ solution but it has the potential of becoming better and better. It's really just another part of web development; nothing else needed.</p>
+<p>Anyway, so <a href="https://lists.w3.org/Archives/Public/public-mathonwebpages/2016May/0026.html">I wrote</a>:</p>
+<hr>
+<p>&quot;I do dream that eventually (maybe 10 years from now?) we'll have a thorough a11y API mapping for mathematics. At the moment, I don't think mathematics (as a culture / language) is ready for this (though web technology probably would be).</p>
+<p>Regarding general machine readability vs accessibility, one important difference I see is that machine readability can benefit from partial results whereas accessibility cannot.</p>
+<p>A typical example for this might be units. If we can find a way to make units machine readable, I think we'd have a major improvement for STEM on the web. But it won't help accessibility (much) to know that there are units in an expression if it is otherwise unintelligible.</p>
+<p>Of course, we currently don't have any standard or best practice for exposing units on the web. The MathWG had a very old note on units  (from 2003) which suggested class='MathML-Unit' on MathML elements; I don't think that's viable approach today. Perhaps schema is a better starting point considering how successful search engines can leverage units in recipes (I could imagine lab protocols and engineering might benefit from similar methods).</p>
+<p>For some tools it's extremely easy to generate markup for units, e.g., Jos de Jong's MathJS has a rich interface for handling units and could probably easily expose them in a visual output. TeX has a rich history with the physics and siunitx packages (which are, for example, partially available in MathJax as third party extensions) and heuristics seem feasible to enrich formats in general (again, MathJax can do some of that via the speechruleengine).</p>
+<p>I think for humans we have to change our expectations. Otherwise, we'll just end up repeating the mistakes of the past. I'll post some thoughts on the accessibility thread later.&quot;</p>
+<hr>
+<p>And I then <a href="https://lists.w3.org/Archives/Public/public-mathonwebpages/2016May/0027.html">also wrote</a> on the related thread:</p>
+<hr>
+<p>&quot;Today the most<br>
+reliable method is still to use binary images with alt text: static images<br>
+are the most reliable in terms of cross browser/platform/network conditions<br>
+for visual rendering and alt-text is the only way to guarantee at least<br>
+some alternative rendering (e.g. aural and braille) -- no matter how poor<br>
+the results may be.</p>
+<p>Don't get me wrong, in many specific situation, there will be better ways.<br>
+If you have simple content, then you can get decent visual results with<br>
+HTML tags with nested aria-labels. If you know you can rely on webfonts<br>
+(e.g., many ebook situations) then you can use CSS with webfonts for<br>
+rendering (and again nested labels). If you don't need IE8 (sigh) then you<br>
+can use SVG etc.</p>
+<p>But in generality, binary images with alt-text are still the most robust<br>
+way -- and that's an extremely sorry state. I'm pretty sure we can do<br>
+better but we need to identify what users need and what tools can<br>
+realistically achieve today.</p>
+<p>My first guess would be: some form of speech text, potentially enabling<br>
+some level of exploration through nesting (and perhaps full exploration via<br>
+JS). That's not as bad as it sounds. SVGs with aria-labels are already a<br>
+close second in terms of usability (pending the ultimate demise of IE8),<br>
+and like HTML they open up the opportunity of deep-labels and thus already<br>
+get a certain level of exploration.</p>
+<p>But there are other aspects. For example in the US, MathSpeak has a long<br>
+history and many users of aural rendering are trained to its way of<br>
+describing the visual structure of an equation. I've heard enough anecdotal<br>
+evidence to take this very seriously -- after all, that's how visual users<br>
+do it. Still, a few months ago I learned that in Germany, on the other<br>
+hand, blind students might learn TeX syntax early in school (most likely<br>
+because there is no tradition like MathSpeak which, after all, precedes the<br>
+web by decades).</p>
+<p>I also expect much overlap with SVG accessibility, where the challenges of<br>
+summary information at a top level and exploration of details are very<br>
+similar to mathematics.&quot;</p>
+<hr>
+<h2>Barrierefreiheit</h2>
+<p>Oh, I gave a talk for Global Accessibility Awareness Day 2016 at the FernUni Hagen -- in German (it's been a while). The slides are <a href="https://pkra.github.io/slides-gaad16/">on GitHub Pages</a>. It's already somewhat outdated because Wikipedia now serves mainly SVGs (generate with <a href="https://github.com/mathjax/MathJax-node">mathjax-node</a>).</p>
+<p>Anyway, the core summary stays true:</p>
+<blockquote>
+<p>Why is it difficult to make formulas accessible?</p>
+<ol>
+<li>Formulas compress information (extremely)</li>
+<li>Formulas are often visual</li>
+<li>Formulas are context-dependent</li>
+<li>Formulas are poorly authored</li>
+</ol>
+</blockquote>
+<p>In other words, math accessibility sucks bad. And no solution will really help you there. But <a href="https://www.mathjax.org/mathjax-accessibility-extensions-v1-now-available/">MathJax now does its best to make it suck less</a>.</p>
+<p>Oh, speaking of accessibility, I'm extremely disappointed that I won't make it to <a href="http://www.roledrinks.nl/">role=drinks</a> after all -- but if you're close by, why don't you drop by?</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Written elsewhere">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0189/ -->
+	</body>
+</html>

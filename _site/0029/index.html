@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Return to bloglife</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+	    <link rel="shortcut icon" href="/public/favicon.ico">
+        <link rel="manifest" href="/public/manifest.json">
+
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Return to bloglife</h1>
+  <span class="post-date"><time datetime="2010-08-01">01 Aug 2010</time></span>
+  <p>Maybe it was the summer heat, maybe the summer break at the UofM or something else. In any case, I did not feel like blogging the last couple of weeks. But this must change! So to get me back to writing I’ll start with something <del>small</del> tiny.</p>
+<h2>Unforeseen</h2>
+<p>I have the great pleasure of spending my PostDoc at the University of Michigan. After spending a winter here 2/3 years ago, I knew a lot of things I could look forwards to — like the amazing grad students.</p>
+<p>One of the unforeseen pleasures so far has been to meet <a href="http://dorais.org">Francois Dorais</a> of <a href="http://mathoverflow.net/users/2000/francois-g-dorais">MathOverflow-Admin</a> fame. Last Friday <del>we talked</del> he told me about <a href="http://doi.org/10.2307/2047620">a proof by Michael Canjar</a> (sorry for linking to a paywall) on Mathias forcing and there is this small observation that I think is really cool.</p>
+<h2>(non) P-points</h2>
+<p>I mentioned them before, but repetition is never a bad thing.</p>
+<p>An ultrafilter \(p\) on \(\omega\) is called a <strong>P-point</strong> if for every \(f: \omega \rightarrow \omega\) there is \(A\in p\) such that \(f\) restricted to \(A\) is either finite-to-one or constant.</p>
+<p>P-points are truly classical ultrafilters having been studied since the dawn of <del>time</del> ultrafilters. They carry interesting properties and Shelah proved that they might not exist (though they do under reasonably weak assumptions like very weak versions of <a href="http://en.wikipedia.org/wiki/Martin%27s_axiom">Martin’s Axiom</a>).</p>
+<p>The property of P-points somehow tells us that functions drastically ‘changes speed’ on a set in the ultrafilter. If you take a function which is ‘nowhere’ finite-to-one, i.e., every point has an infinite preimage, then a P-point either slows it down completely (by making it constant on a set) or speeds it up extremely (by making it finite-to-one).</p>
+<p>But the cool thing Francois showed me (from Canjar’s proof) is what non P-points (so possibly all ultrafilters) can do. They can force any function to slow down in a weird fashion.</p>
+<h2>Slowing to identity.</h2>
+<p>Even though the argument I want to mention holds for arbitrary functions, you should think of quickly growing functions, i.e., strictly increasing functions. So let us pick some \(g: \omega \rightarrow \omega\).</p>
+<p>Now if \(p \in \beta \mathbb{N}\) is not a P-point, then there exists a function \(f: \omega \rightarrow \omega\) which is not constant or finite-to-one on any set \(A \in p\).</p>
+<p>So what about \(I_g := \\{ n \in \mathbb{N} \ \vert \ g(f(n)) &lt; n \\}\)?</p>
+<p>On this set, \(g \circ f\) is dominated by the identity. That’s slow!!! Just imagine \(g\) was the <a href="http://en.wikipedia.org/wiki/Ackermann_function">Ackermann function</a> or faster thatn all recursive functions! Suddenly, its only as fast as the identity? Wow…</p>
+<p>And now the crazy part.</p>
+<p>\(I_g \in p\).</p>
+<p>That’s right! On a set in \(p\), \(g\circ f\) slows down like that. That’s crazy!</p>
+<p><strong>Proof</strong>.</p>
+<ul>
+<li>\(f\) is finite-to-one on \(\omega \setminus I_g\).
+<ul>
+<li>For \(k\in \omega\), \(f^{-1}(k) \cap (\omega \setminus I_k) = \\{ i \in \omega \ \vert \ g(k)= g(f(i)) \geq i \\}\)</li>
+<li>But this is a finite set for any \(k\).</li>
+<li>In other words, \(f\) is finite-to-one.</li>
+</ul>
+</li>
+<li>Therefore \(\omega \setminus I_g \notin p\).</li>
+<li>Since \(p\) is a maximal filter, \(I_g \in p\).</li>
+</ul>
+<p>That’s all.</p>
+<h3>What you can do with this.</h3>
+<p><a href="http://doi.org/10.2307/2047620">Michael Canjar used this fact</a> to show that Mathias forcing with a non P-point adjoins a dominating real. This is not too difficult now since it is easy to see that a Mathias real will dominate all sets in the ultrafilter. But that’s all for today.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Return to bloglife">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+<script type="text/javascript">
+  window.MathJax = {
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]
+  },
+  menuSettings: {
+    explorer: true
+  },
+  "fast-preview": {
+    disabled: true
+  },
+  CommonHTML: { linebreaks: { automatic: true}}
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
+</script>
+
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2018 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0029/ -->
+	</body>
+</html>
