@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'MathJax best practices&#58; avoid display:none'
+title: 'MathJax best practices; avoid display:none'
 date: 2014-07-12
 categories:
 - mathjax

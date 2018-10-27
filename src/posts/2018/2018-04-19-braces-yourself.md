@@ -74,7 +74,7 @@ Now you might say it hasn't solved the *real* problem. Here are a couple of coun
 
 But perhaps current CSS is sufficient and someone will find a clever approach to achieve a similar effect. As I mentioned above, percentages in border radius have a neat effect; there is a lot of room to play with once you stop thinking about everything in terms of print traditions.
 
-**It's not semantic!** Gosh. What exactly does a (stretched) brace represent, semantically speaking? And, should you have decided to embue it with such rich meaning yourself, are you really unable to expose the relevant information using the web platform's rich accessibility stack? No? Excellent - you should file a bug with ARIA and help push the web forward for everyone!
+**It's not semantic!** Gosh. What exactly does a (stretched) brace represent, semantically speaking? And, should you have decided to imbue it with such rich meaning yourself, are you really unable to expose the relevant information using the web platform's rich accessibility stack? No? Excellent - you should file a bug with ARIA and help push the web forward for everyone!
 
 **It can't look like font x!** Some fonts have a really tricky curly brace with basically an S shape in each half. I admit my CSS-foo is not good enough to do that. But besides the fact that a better designer might find a solution, I find the trade-off acceptable. And if there's a limitation in CSS, please file a bug with the CSS WG and help push the web forward for everyone!
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Another silly experiment&#58; mobile apps for content delivery'
+title: 'Another silly experiment; mobile apps for content delivery'
 date: 2013-03-30
 categories:
 - publishing

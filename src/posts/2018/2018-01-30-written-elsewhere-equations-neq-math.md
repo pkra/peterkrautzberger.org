@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Written elsewhere, booknet canada edition&#58; Equations ≠ Math"
+title: "Written elsewhere, booknet canada edition; Equations ≠ Math"
 date: 2018-01-30
 permalink: 0202/
 published: true

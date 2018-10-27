@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '3 questions in June or&#58; LoC workshops are the best'
+title: '3 questions in June or; LoC workshops are the best'
 date: 2013-01-20
 categories:
 - conference

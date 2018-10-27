@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'New shiny toy&#58; mathblogging.org gets a long overdue update'
+title: 'New shiny toy; mathblogging.org gets a long overdue update'
 date: 2013-01-31
 categories:
 - announcement
