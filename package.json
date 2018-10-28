@@ -4,7 +4,7 @@
   "description": "A new home",
   "private": true,
   "scripts": {
-    "build": "rm -r _site && npx eleventy",
+    "build": "rm -r docs && npx eleventy --output docs && git checkout docs/CNAME",
     "serve": "rm -r _site && npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy"
   },
