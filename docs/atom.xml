@@ -4,7 +4,7 @@
 	<subtitle> · on the web</subtitle>
 	<link href="https://www.peterkrautzberger.org/atom.xml" rel="self"/>
 	<link href="https://www.peterkrautzberger.org/"/>
-	<updated>2018-11-15T01:00:00+01:00</updated>
+	<updated>2019-01-13T01:00:00+01:00</updated>
 	<id>https://www.peterkrautzberger.org/</id>
 	<author>
 		<name>Peter Krautzberger</name>
@@ -7344,6 +7344,20 @@ As for performance and security, there is no sign that MathML is particularly pr
 	</entry>
 	
 	<entry>
+		<title>A quick test post -- Jetpack connect edition</title>
+		<link href="https://www.peterkrautzberger.org/0142/"/>
+		<updated>2013-12-19T01:00:00+01:00</updated>
+		<id>https://www.peterkrautzberger.org/0142/</id>
+		<content type="html">&lt;p&gt;You know how every blogger once in a while will have a test post that you find in your feed and then you click on it to learn more and it&#39;s already deleted?&lt;/p&gt;
+&lt;p&gt;I find that frustrating. So let&#39;s not do this. This is a test post to check out Jetpack connect and find a way to multishare to different social networks.&lt;/p&gt;
+&lt;h3&gt;Update.&lt;/h3&gt;
+&lt;p&gt;Alright, not too bad. Here&#39;s what this was about. Jetpack offers autoposting to a bunch of social networks, including my two current active ones - twitter and Google+. In particular the Google+ connection is painfully difficult with free tools. But still, a large amount of people I want to share things with are there. However, I strongly believe in my website being my primary digital outlet. I don&#39;t want to post content that will just be on Twitter or just on Google+. It is mine and should be shared from my website.&lt;/p&gt;
+&lt;p&gt;In addition, I have been thinking about how to write more frequently. One good piece of advise is to write less but more often. But I also find myself wanting to post different, more social content, e.g. a simple photo, share a link. One obvious tool is my phone and tablet. It has apps for all my networks as well my reading applications. A simple idea would be a multi-share app that would allow me to push shared content to all the apps I care about. Luckily, I couldn&#39;t find a well working one long enough to remember Jetpack Connect. Luckily it works with the WordPress app, so I can author once wherever I am and share where I want to share.&lt;/p&gt;
+&lt;p&gt;Unfortunately, for all my three readers, this means I might start posting little pieces of crappy content. Bear with me and yell at me from time to time. Here&#39;s to moar bloggings in 2014.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Another test post -- image sharing</title>
 		<link href="https://www.peterkrautzberger.org/0143/"/>
 		<updated>2013-12-19T01:00:00+01:00</updated>
@@ -7359,20 +7373,6 @@ As for performance and security, there is no sign that MathML is particularly pr
 &lt;p&gt;You might think Los Angeles and snow are separate, but surprisingly it&#39;s often not by far. Apart from the almost daily updates on NPR regarding snow packing strength during the winter (which is all about the water available the next summer), you have to drive barely two hours to find yourself in need for winter gear, being snowed in in front of a fireplace. At least I did.&lt;/p&gt;
 &lt;h3&gt;Update&lt;/h3&gt;
 &lt;p&gt;Unfortunately, not as good as I&#39;d hoped. While Google+ will at least pull in the image into the mini-preview twitter won&#39;t do anything with it. That&#39;s too bad, but perhaps better than nothing.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>A quick test post -- Jetpack connect edition</title>
-		<link href="https://www.peterkrautzberger.org/0142/"/>
-		<updated>2013-12-19T01:00:00+01:00</updated>
-		<id>https://www.peterkrautzberger.org/0142/</id>
-		<content type="html">&lt;p&gt;You know how every blogger once in a while will have a test post that you find in your feed and then you click on it to learn more and it&#39;s already deleted?&lt;/p&gt;
-&lt;p&gt;I find that frustrating. So let&#39;s not do this. This is a test post to check out Jetpack connect and find a way to multishare to different social networks.&lt;/p&gt;
-&lt;h3&gt;Update.&lt;/h3&gt;
-&lt;p&gt;Alright, not too bad. Here&#39;s what this was about. Jetpack offers autoposting to a bunch of social networks, including my two current active ones - twitter and Google+. In particular the Google+ connection is painfully difficult with free tools. But still, a large amount of people I want to share things with are there. However, I strongly believe in my website being my primary digital outlet. I don&#39;t want to post content that will just be on Twitter or just on Google+. It is mine and should be shared from my website.&lt;/p&gt;
-&lt;p&gt;In addition, I have been thinking about how to write more frequently. One good piece of advise is to write less but more often. But I also find myself wanting to post different, more social content, e.g. a simple photo, share a link. One obvious tool is my phone and tablet. It has apps for all my networks as well my reading applications. A simple idea would be a multi-share app that would allow me to push shared content to all the apps I care about. Luckily, I couldn&#39;t find a well working one long enough to remember Jetpack Connect. Luckily it works with the WordPress app, so I can author once wherever I am and share where I want to share.&lt;/p&gt;
-&lt;p&gt;Unfortunately, for all my three readers, this means I might start posting little pieces of crappy content. Bear with me and yell at me from time to time. Here&#39;s to moar bloggings in 2014.&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -11471,6 +11471,124 @@ The layout captured in this image combines a label (5.4) with an ordered list of
 &lt;h2&gt;Coda&lt;/h2&gt;
 &lt;p&gt;You can find the &lt;a href=&quot;https://aimath.org/pastworkshops/webmath.html&quot;&gt;organizers&#39; report at aimath.org&lt;/a&gt; but you can take one thing away: It&#39;s looking very good for accessible equation layout on the web these days. And it will only get better.&lt;/p&gt;
 &lt;p&gt;If we can continue these workshops, things will move faster for everyone. And maybe, just maybe, we can even finally move on to actual mathematics (and other STEM content) on the web.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>towards a general method for accessible content trees or: deep aria-labels for equations revisited</title>
+		<link href="https://www.peterkrautzberger.org/0209/"/>
+		<updated>2019-01-13T01:00:00+01:00</updated>
+		<id>https://www.peterkrautzberger.org/0209/</id>
+		<content type="html">&lt;p&gt;Oh dear, that title is a mouth full. A while ago I wrote about &lt;a href=&quot;https://www.peterkrautzberger.org/208/&quot;&gt;two interesting results from the AIM workshop&lt;/a&gt; and I had promised to dive deeper. Well, take a deep breath.&lt;/p&gt;
+&lt;h2&gt;A simple example&lt;/h2&gt;
+&lt;p&gt;Here&#39;s a story. I think it was at the first web standard related event that I ever attended, the &lt;a href=&quot;https://www.w3.org/2012/08/electronic-books/&quot;&gt;W3C workshop on ebooks&lt;/a&gt; back in 2012. Someone (maybe Janina?) presented an example of an accessible SVG and I was blown away. My memory, flawed as it is, says it was the &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Ghostscript_Tiger.svg&quot;&gt;classic SVG tiger&lt;/a&gt; but it was set up in a way that demonstrated amazing exploration features, providing non-visual representations that could dive into the entirety of the graphic, starting with high-level descriptions (something like &lt;em&gt;a tiger&#39;s head&lt;/em&gt;) all the way down to detailed nuances (&lt;em&gt;left whisker, 3 of 12&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;I&#39;m prone ot get the specifics wrong so here&#39;s a different example:&lt;/p&gt;
+&lt;figure&gt;
+&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:House.svg#/media/File:House.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/2/24/House.svg&quot; alt=&quot;clip art house&quot; width=&quot;389&quot; height=&quot;391&quot;&gt;&lt;/a&gt;
+&lt;figcaption&gt;
+By &lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;http://openclipart.org/media/people/barretr&quot;&gt;barretr&lt;/a&gt; (Open Clip Art Library) - &lt;a rel=&quot;nofollow&quot; class=&quot;external free&quot; href=&quot;http://openclipart.org/media/files/barretr/2941&quot;&gt;http://openclipart.org/media/files/barretr/2941&lt;/a&gt;, &lt;a href=&quot;http://creativecommons.org/publicdomain/zero/1.0/deed.en&quot; title=&quot;Creative Commons Zero, Public Domain Dedication&quot;&gt;CC0&lt;/a&gt;, &lt;a href=&quot;https://commons.wikimedia.org/w/index.php?curid=3454675&quot;&gt;Link&lt;/a&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;So this is a house. How would you describe it? Maybe: &lt;em&gt;A house with a red chimney and a blue door&lt;/em&gt;? That&#39;s not bad but there&#39;s more so much more to be said about this house!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It&#39;s a drawing of the front of a house (no other part is visible)&lt;/li&gt;
+&lt;li&gt;it has a dark gray, mono-pitched roof with a red chimney on the left&lt;/li&gt;
+&lt;li&gt;it has a blue door with a round, dark-gray doorknob on the left&lt;/li&gt;
+&lt;li&gt;it has a yellow front wall&lt;/li&gt;
+&lt;li&gt;the chimney aligns with the wall&lt;/li&gt;
+&lt;li&gt;some parts are drawn with gradient effects&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These descriptions could of course all be put into one very long textual representation, e.g., as a &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; or an &lt;code&gt;aria-labeledby&lt;/code&gt; construction. And that would be ok. But I find it rather limited.&lt;/p&gt;
+&lt;p&gt;This is not how a human would describe things. Imagine I&#39;d ask you to describe it. You would not start with the gradient of the doorknob on the first go. I bet you are much more inclined to provide some information at first and get into more detail if whoever is asking wants to dive deeper.&lt;/p&gt;
+&lt;p&gt;Sometimes, we are in the position to have more information like this on the web, too.&lt;/p&gt;
+&lt;p&gt;Imagine, this house was created in an authoring environment that specializes on such drawings; it may have been drag&amp;amp;dropped using pre-fabricated components, each having detailed descriptions, integrating user changes such as shape or color modifications, and being able to generate composited descriptions, perhaps combining them using simple rule sets (maybe even author customizable rule sets).&lt;/p&gt;
+&lt;p&gt;The other thing you may notice is that the house is more than the sum of its parts, i.e., a description for the house (and parts thereof) may not sufficiently be represented by stringing the descriptions of the leafs together; for example, where would the &lt;em&gt;with&lt;/em&gt; in &lt;em&gt;a roof with a chimney&lt;/em&gt; come from? For that matter, where would &lt;em&gt;house&lt;/em&gt; come from? Depending on the content and context, there may be additional connecting words or phrases, there may be details to drop or reveal. Maybe the fabric of the roof or the whether the door is locked can be deduced from visual styling given other context.&lt;/p&gt;
+&lt;p&gt;If you are lucky and you have more information, then you may find yourself in a situation where you want to add differing textual representations on every level of the tree, just like you would in a real conversation, and you may want a way for users to have access to all those varying levels of representation - but not all at once as that could be overwhelming.&lt;/p&gt;
+&lt;p&gt;The most important point: like all good web standards topics, this is about a general, low-level problem. (Although solving a more general problem might appeal to mathematicians, too.)&lt;/p&gt;
+&lt;h2&gt;Deep aria labels on tree structures (or: it&#39;s not &lt;em&gt;just&lt;/em&gt; about equations)&lt;/h2&gt;
+&lt;p&gt;So let&#39;s try to outline what this is about. Imagine you have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a complex DOM structure (e.g., an inline SVG, a complex grid structure, an equation layout thingie)&lt;/li&gt;
+&lt;li&gt;which is not represented well by its leafs alone (e.g., there might be abstract components, abbreviated content, inferred meaning)&lt;/li&gt;
+&lt;li&gt;that might have a semantic tree structure that does not match the DOM tree.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now imagine that you have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;appropriate textual representations for each node (e.g., aria-labels on all nodes)&lt;/li&gt;
+&lt;li&gt;yet those textual representations may have notable differences between non-leafs and their descendants, i.e., a node may be more than the sum of its descendants (or less or both/neither).&lt;/li&gt;
+&lt;li&gt;and you have proper aria-owns attributes all over the tree to represent the correct semantics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What to want&lt;/h3&gt;
+&lt;p&gt;Let&#39;s start with some fairly standard observations on accessible rendering:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Unified rendering&lt;/strong&gt; visual and non-visual rendering should not be apart. Textual representation should be intentional, reflect the intention of the author. (This does not contradict that both graphical and textual representation will likely be created with tools, even tools leveraging heuristics.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Progressive enhancement / graceful degradation&lt;/strong&gt; a solution should work in a way that allows to progressively enhance content. For example, a top-level textual description (e.g., using &lt;code&gt;aria-label&lt;/code&gt;) is a robust fallback. You may lose some convenience if that&#39;s all there is - and even some information - but it certainly isn&#39;t terrible.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Performance&lt;/strong&gt; a solution must be performant, especially if you apply it to hundreds or thousands of content fragments.&lt;/p&gt;
+&lt;p&gt;From an author&#39;s point of view, the key affordance is &lt;strong&gt;precision/control&lt;/strong&gt;. This is worth repeating: Accessibility inevitably starts with author control. If authors cannot create content in a way that they can trust to render reliably, i.e., with the precision they put into their content, then they will not care to do so.&lt;/p&gt;
+&lt;p&gt;If there&#39;s no control, the platform is failing the authors. If it&#39;s failing the authors to create accessible content, then it&#39;s failing the user because they will not receive accessible content.&lt;/p&gt;
+&lt;p&gt;This primarily means that content should be authorable in a way that does not require &lt;em&gt;any&lt;/em&gt; heuristics on the side of rendering (visually or non-visually). Imagine AT would have to guess how many items are in a list. Or AT would have to throw computer vision at each image to guess a description. That&#39;s ok for broken content but not acceptable for good content.&lt;/p&gt;
+&lt;p&gt;There are other useful things of course - ease of authoring comes to mind. But without a solution with tangible benefits, building authoring tools or practices is never going to happen.&lt;/p&gt;
+&lt;p&gt;From a screenreader user&#39;s point of view, there are more affordances that you probably don&#39;t want to ignore.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;support for reading/browse modes&lt;/li&gt;
+&lt;li&gt;support for full exploration (in focus mode)&lt;/li&gt;
+&lt;li&gt;seamlessly switch between exploration and reading/browse&lt;/li&gt;
+&lt;li&gt;synchronization of all rendering streams
+&lt;ul&gt;
+&lt;li&gt;visual (highlighting), aural and tactile rendering&lt;/li&gt;
+&lt;li&gt;enable customized Braille stream if specialized Braille formats exists&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are many more considerations beyond this but this would be a good start.&lt;/p&gt;
+&lt;h3&gt;Towards a solution: mathjax-sre-walker&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: this is not a complete solution to all of the above. But I feel like it&#39;s heading in the right direction.&lt;/p&gt;
+&lt;p&gt;The codebase for this lighweight walker dubbed mathjax-sre-walker is on GitHub and for this first public summary we&#39;ve tagged &lt;a href=&quot;https://github.com/krautzource/mathjax-sre-walker/releases/tag/2.0.0&quot;&gt;v2.0.0&lt;/a&gt;. As I mentioned in &lt;a href=&quot;https://www.peterkrautzberger.org/208&quot;&gt;208&lt;/a&gt;, this work with &lt;a href=&quot;https://www.peterkrautzberger.org/0209/www.progressiveaccess.com/&quot;&gt;Volker Sorge&lt;/a&gt; grew out of a demo that David Tseng, Volker Sorge and Davide Cervone built at the AIM workshop in San Jose last year. A simplified demo in a codepen is embedded below alongside a recording of a quick demonstration.&lt;/p&gt;
+&lt;h3&gt;what users get&lt;/h3&gt;
+&lt;p&gt;For the visual user, it will provide a means of visually exploring the underlying (and often hard to discern) tree structure by putting the tree in focus and using the arrow keys.&lt;/p&gt;
+&lt;p&gt;For the non-visual user, it will additionally provide textual representations for each tree node, in sync with the visual representation. It doesn&#39;t but could (should we get separate &lt;a href=&quot;https://github.com/w3c/aria/issues/765&quot;&gt;Braille streams in ARIA&lt;/a&gt;) additionally provide a simultaneous rendering in specialized formats such as Nemeth or UEB, chemical Braille or others.&lt;/p&gt;
+&lt;p&gt;For the screenreader user, it will provide the top-level tree node in browse mode. When the tree&#39;s top-level DOM node is voiced, the screenreader should put in focus, triggering visual highlighting; the screenreader should also indicate the tree role to imply further functionality is available.&lt;/p&gt;
+&lt;p&gt;The user can switch to the screenreader&#39;s focus mode to use keyboard exploration with the arrow keys which is matched visually by the highlighting. When the user switches back to browse mode, they can continue naturally browsing to the next piece of content.&lt;/p&gt;
+&lt;h3&gt;how users get it&lt;/h3&gt;
+&lt;p&gt;The first, not too relevant part: the DOM tree has lots of information in &lt;code&gt;data-&lt;/code&gt; attributes and in a first step we enrich the content with a secondary structure. Getting such information is of course not easy (luckily we can already automate that for equations thanks to speech-rule-engine) and this step can be done server-side. Ultimately that&#39;s not the hardest part - domain experts can build such tools - we&#39;re using Volker&#39;s &lt;a href=&quot;https://github.com/zorkow/speech-rule-engine/&quot;&gt;speech-rule-engine&lt;/a&gt; for the equations (which is a marvel).&lt;/p&gt;
+&lt;p&gt;Yet all the extra information won&#39;t help if we can&#39;t make use of it on the web platform.&lt;/p&gt;
+&lt;p&gt;So how is this realized in the DOM tree? As a bunch of &lt;code&gt;aria-label&lt;/code&gt;s (to add textual representations) and &lt;code&gt;aria-owns&lt;/code&gt; to carve out the tree structure that might differ from the DOM tree; we also add a &lt;code&gt;role&lt;/code&gt; to most nodes. In particular, we immediately get a top-level &lt;code&gt;aria-label&lt;/code&gt; which serves as a fallback.&lt;/p&gt;
+&lt;p&gt;Now what we&#39;re missing is some kind of AT functionality that would give us an &lt;code&gt;aria-owns&lt;/code&gt; tree walker. We have built-in table walkers in screen readers already so this does not seem like a massive stretch to imagine, especially given the evolution of the tree role so far. Sadly, we do not have general purpose tree walkers (yet).&lt;/p&gt;
+&lt;p&gt;In the second part, we overcome this by adding such a walker in JS. This walker consists of a tree structure (the &lt;code&gt;aria-owns&lt;/code&gt; tree, generated from the embedded data for performance) and a keyboard listener. It is very close to the DOM&#39;s &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Treewalker&quot;&gt;treewalker API&lt;/a&gt; and &lt;a href=&quot;https://www.w3.org/TR/wai-aria-practices-1.1/#TreeView&quot;&gt;WCAG tree examples&lt;/a&gt;, except that we&#39;re working on the &lt;code&gt;aria-owns&lt;/code&gt; tree because that tree may have a different order/structure from the DOM. This walker is fairly minimal, probably ~100 lines of ES6 code if you strip it down to its minimum.&lt;/p&gt;
+&lt;p&gt;Here&#39;s a demo of v2 or you can look at the &lt;a href=&quot;https://krautzource.github.io/mathjax-sre-walker/index.html&quot;&gt;one in the repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p data-height=&quot;896&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;EGOZxm&quot; data-default-tab=&quot;result&quot; data-user=&quot;pkra&quot; data-pen-title=&quot;mathjax-sre-walker v2 demo&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;https://codepen.io/pkra/pen/EGOZxm/&quot;&gt;mathjax-sre-walker v2 demo&lt;/a&gt; by Peter Krautzberger (&lt;a href=&quot;https://codepen.io/pkra&quot;&gt;@pkra&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;h3&gt;role role role your boat, gently down the stream&lt;/h3&gt;
+&lt;p&gt;A side note on the chosen &lt;code&gt;role&lt;/code&gt; attributes. The tree role and its related roles may appear a good fit but they have been developed for specific application-like interfaces. It might be that it&#39;s smarter to use something different here, I honestly don&#39;t know.&lt;/p&gt;
+&lt;p&gt;Besides possibly being the right roles, they are also supported well across the accessibility tool chain, i.e., they happen to get the effects we&#39;d like to see.&lt;/p&gt;
+&lt;p&gt;What are those effects?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a top-level &lt;code&gt;aria-label&lt;/code&gt; to provide a default textual representation, especially in browse mode&lt;/li&gt;
+&lt;li&gt;deeply nested &lt;code&gt;aria-labels&lt;/code&gt; with the role &lt;code&gt;treeitem&lt;/code&gt; provide detailed textual representation of all relevant nodes in exploration in focus mode&lt;/li&gt;
+&lt;li&gt;browse mode puts element in focus on-the-go which makes for good UX: just drop out of browse mode when you hear an equation to start exploring&lt;/li&gt;
+&lt;li&gt;switching back to browse mode continues smoothly&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;active-descendant&lt;/code&gt; is used to move the the focus on the accessibility tree&lt;/li&gt;
+&lt;li&gt;thereby exposing the nested labels instead of the top-level node&#39;s label&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other roles have too many negative side effects in practice. Perhaps they shouldn&#39;t but it&#39;s often too hard to dissect if a problem comes from the ARIA specs, browser implementations, OS APIs, or screenreaders.  For example, some approaches didn&#39;t work well on MathJax SVG output but worked well on the clip art house; this is probably due to &lt;code&gt;use&lt;/code&gt; elements.&lt;/p&gt;
+&lt;p&gt;Some other roles we&#39;ve tested across screenreaders:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;img&lt;/code&gt; (nested) prevents exploration&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;application&lt;/code&gt; loses the top level label when using browse mode and it is difficult to get back to browse mode after exploration&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;group&lt;/code&gt; is similar to application (except easier to get back into browse mode) but works poorly with CSS rendering&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;button&lt;/code&gt; and &lt;code&gt;math&lt;/code&gt; mostly work the same as &lt;code&gt;tree&lt;/code&gt; (very wrong, but hey)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Maybe those issues are fixable or maybe just due to my lack of understanding of specs and implementations. Of course, the mythical &lt;code&gt;role=static&lt;/code&gt; (&lt;code&gt;text&lt;/code&gt; etc.) might be very appropriate but, alas, it doesn&#39;t exist.&lt;/p&gt;
+&lt;p&gt;Personally, I don&#39;t care which role I use. Whatever role works, I&#39;m happy to use it. Tree seems both adequate and semantically fitting, and they have a history of steady improvement.&lt;/p&gt;
+&lt;h2&gt;In real life&lt;/h2&gt;
+&lt;p&gt;Below is a recording with NVDA and Chrome on Windows 10.&lt;/p&gt;
+&lt;div style=&quot;display: flex&quot;&gt;
+&lt;iframe width=&quot;720&quot; height=&quot;748&quot; src=&quot;https://www.youtube.com/embed/LWho3euldjM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;flex-grow: 1&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2&gt;Support&lt;/h2&gt;
+&lt;p&gt;Overall, this works well on Firefox and Chrome while Edge and Safari generally don&#39;t get your more than the top-level label, i.e., the fallback; I haven&#39;t taken the time to compile for IE11 to test it.&lt;/p&gt;
+&lt;p&gt;NVDA seems best so far, JAWS seems to have a problem tracking focus (it jumps away when getting back into browse mode / virtual cursor), and ORCA struggles with CSS rendering. VoiceOver with Safari is doing its thing (treating everything as a group) but VO works well with Chrome on MacOS. On iOS and Android we get the top-level labels (except VO with CSS rendering for some reason). The current code lacks touch input because (as far as I know) neither Talkback nor VoiceOver have a way to switch into (some form of) focus mode; it could be added, perhaps the visual exploration is interesting enough. I&#39;ll be publishing more demo runs as we move along.&lt;/p&gt;
+&lt;p&gt;Overall, I&#39;m excited about the robustness at this stage and I plan to use this at work soon(ish). I also hope to bring the discussion around standardization of tree walkers to the ARIA Working Group - it seems to align with the evolution of tree widgets (e.g., for tab focus management, positional information) and a lot of content could benefit from some defaults in AT (much like with table walkers). But first we really need separate Braille streams.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
