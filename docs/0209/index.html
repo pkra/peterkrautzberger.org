@@ -30,7 +30,7 @@
 <article class="post">
   <h1 class="post-title">Towards a general method for accessible content trees or: deep aria-labels for equations revisited</h1>
   <span class="post-date"><time datetime="2019-01-13">13 Jan 2019</time></span>
-  <p>Oh dear, that title is a mouth full. A while ago I wrote about <a href="/208/">two interesting results from the AIM workshop</a> and I had promised to dive deeper. Well, take a deep breath.</p>
+  <p>Oh dear, that title is a mouth full. A while ago I wrote about <a href="/0208/">two interesting results from the AIM workshop</a> and I had promised to dive deeper. Well, take a deep breath.</p>
 <h2>A simple example</h2>
 <p>Here's a story. I think it was at the first web standard related event that I ever attended, the <a href="https://www.w3.org/2012/08/electronic-books/">W3C workshop on ebooks</a> back in 2012. Someone (maybe Janina?) presented an example of an accessible SVG and I was blown away. My memory, flawed as it is, says it was the <a href="https://commons.wikimedia.org/wiki/File:Ghostscript_Tiger.svg">classic SVG tiger</a> but it was set up in a way that demonstrated amazing exploration features, providing non-visual representations that could dive into the entirety of the graphic, starting with high-level descriptions (something like <em>a tiger's head</em>) all the way down to detailed nuances (<em>left whisker, 3 of 12</em>).</p>
 <p>I'm prone ot get the specifics wrong so here's a different example:</p>
@@ -94,7 +94,7 @@ By <a rel="nofollow" class="external text" href="http://openclipart.org/media/pe
 <p>There are many more considerations beyond this but this would be a good start.</p>
 <h3>Towards a solution: mathjax-sre-walker</h3>
 <p><em>Note</em>: this is not a complete solution to all of the above. But I feel like it's heading in the right direction.</p>
-<p>The codebase for this lighweight walker dubbed mathjax-sre-walker is on GitHub and for this first public summary we've tagged <a href="https://github.com/krautzource/mathjax-sre-walker/releases/tag/2.0.0">v2.0.0</a>. As I mentioned in <a href="/208">208</a>, this work with <a href="www.progressiveaccess.com/">Volker Sorge</a> grew out of a demo that David Tseng, Volker Sorge and Davide Cervone built at the AIM workshop in San Jose last year. A simplified demo in a codepen is embedded below alongside a recording of a quick demonstration.</p>
+<p>The codebase for this lighweight walker dubbed mathjax-sre-walker is on GitHub and for this first public summary we've tagged <a href="https://github.com/krautzource/mathjax-sre-walker/releases/tag/2.0.0">v2.0.0</a>. As I mentioned in <a href="/0208">208</a>, this work with <a href="www.progressiveaccess.com/">Volker Sorge</a> grew out of a demo that David Tseng, Volker Sorge and Davide Cervone built at the AIM workshop in San Jose last year. A simplified demo in a codepen is embedded below alongside a recording of a quick demonstration.</p>
 <h3>what users get</h3>
 <p>For the visual user, it will provide a means of visually exploring the underlying (and often hard to discern) tree structure by putting the tree in focus and using the arrow keys.</p>
 <p>For the non-visual user, it will additionally provide textual representations for each tree node, in sync with the visual representation. It doesn't but could (should we get separate <a href="https://github.com/w3c/aria/issues/765">Braille streams in ARIA</a>) additionally provide a simultaneous rendering in specialized formats such as Nemeth or UEB, chemical Braille or others.</p>
