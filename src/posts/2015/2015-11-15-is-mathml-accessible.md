@@ -25,13 +25,14 @@ Of course with MathML I mean Presentation MathML since Content MathML is too rar
 On the one hand, there's the fundamental problem of context (e.g., to tell whether (a,b) describes an open interval, a point in the plane, or an inner product) and of compression ([Kill Math](http://worrydream.com/KillMath/) anyone?). But what's even more confusing about "just use MathML" is that, in fact, Presentation MathML can be pretty semantic -- with elements like `mfrac`, `mroot`, or `mlongdiv`, and things like `menclose` notation, fences, or the operator dictionary, all of which carry semantics despite Presentation MathML being "just" about layout.
 
 So you might think that's not so bad after all. However, that's only half true. Besides the obvious problem of virtually everything missing in terms of notation, Presentation MathML is somewhat lacking in genuinely neutral layout features. So as an author, you'll have to use those semantic-but-really-layout elements. This way you end up finding suggestions in [the spec itself](http://www.w3.org/Math/draft-spec/mathml.html#chapter3_id.3.3.2.2) to use `mfrac` with `linethickness="0"` to represent a binomial coefficient.
+
 <math display="block">
-      <mo>(</mo>
-    <mfrac linethickness="0">
-      <mi>n</mi>
-      <mi>k</mi>
-    </mfrac>
-      <mo>)</mo>
+  <mo>(</mo>
+  <mfrac linethickness="0">
+    <mi>n</mi>
+    <mi>k</mi>
+  </mfrac>
+  <mo>)</mo>
 </math>
 
 Which is visually rather similar to doing a construction using an `mtable` (which might in turn be used to convey a vector/matrix).

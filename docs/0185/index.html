@@ -39,15 +39,15 @@
 <p>I suspect the answer is the same as with browsers: because it is too hard to render MathML accessibly. That is, while building on MathML is much better than alternatives (I'm looking at you, TeX), it's still an awful lot of trouble to write a decent (let alone good) MathML accessibility solution. Too much work, too much of a niche, too many other things to do, yadayadayada.</p>
 <p>Of course with MathML I mean Presentation MathML since Content MathML is too rare in the wild. Presentation MathML is a very good XML format to canonically represent most traditional (read: print) formula layout and is universally appreciated as an archival format. But Presentation MathML is not &quot;trivially&quot; accessible. Unlike, say, ARIA roles, there is no straight-forward process that will tell you how to, e.g., voice, sensibly explore or highlight a well-written MathML expression (let alone a shoddily-written one). Instead, existing tools end up guessing both the mathematical structure of an expression as well as its semantics.</p>
 <p>On the one hand, there's the fundamental problem of context (e.g., to tell whether (a,b) describes an open interval, a point in the plane, or an inner product) and of compression (<a href="http://worrydream.com/KillMath/">Kill Math</a> anyone?). But what's even more confusing about &quot;just use MathML&quot; is that, in fact, Presentation MathML can be pretty semantic -- with elements like <code>mfrac</code>, <code>mroot</code>, or <code>mlongdiv</code>, and things like <code>menclose</code> notation, fences, or the operator dictionary, all of which carry semantics despite Presentation MathML being &quot;just&quot; about layout.</p>
-<p>So you might think that's not so bad after all. However, that's only half true. Besides the obvious problem of virtually everything missing in terms of notation, Presentation MathML is somewhat lacking in genuinely neutral layout features. So as an author, you'll have to use those semantic-but-really-layout elements. This way you end up finding suggestions in <a href="http://www.w3.org/Math/draft-spec/mathml.html#chapter3_id.3.3.2.2">the spec itself</a> to use <code>mfrac</code> with <code>linethickness=&quot;0&quot;</code> to represent a binomial coefficient.<br>
-<math display="block"><br>
-<mo>(</mo><br>
-<mfrac linethickness="0"><br>
-<mi>n</mi><br>
-<mi>k</mi><br>
-</mfrac><br>
-<mo>)</mo><br>
-</math></p>
+<p>So you might think that's not so bad after all. However, that's only half true. Besides the obvious problem of virtually everything missing in terms of notation, Presentation MathML is somewhat lacking in genuinely neutral layout features. So as an author, you'll have to use those semantic-but-really-layout elements. This way you end up finding suggestions in <a href="http://www.w3.org/Math/draft-spec/mathml.html#chapter3_id.3.3.2.2">the spec itself</a> to use <code>mfrac</code> with <code>linethickness=&quot;0&quot;</code> to represent a binomial coefficient.</p>
+<math display="block">
+  <mo>(</mo>
+  <mfrac linethickness="0">
+    <mi>n</mi>
+    <mi>k</mi>
+  </mfrac>
+  <mo>)</mo>
+</math>
 <p>Which is visually rather similar to doing a construction using an <code>mtable</code> (which might in turn be used to convey a vector/matrix).</p>
 <math display="block">
   <mrow>
