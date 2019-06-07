@@ -4,7 +4,7 @@ title: Contact
 permalink: contact/
 ---
 
-The fastest and preferred way to reach me is to [write me an email](mailto:p.krautzberger@gmail.com). Besides my home here at [peterkrautzberger.org](https://www.peterkrautzberger.org) you can find me, for example, on [Mastodon](https://mathstodon.xyz/@pkra),  [Twitter](https://twitter.com/pkrautz), or [GitHub](https://github.com/pkra).
+The fastest and preferred way to reach me is to [write me an email](mailto:p.krautzberger@gmail.com). Besides my home here at [peterkrautzberger.org](https://www.peterkrautzberger.org) you can find me, for example, on <a rel="me" href="https://mathstodon.xyz/@pkra">Mastodon</a> or [GitHub](https://github.com/pkra).
 
 ## Comments
 
