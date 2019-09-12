@@ -4,7 +4,7 @@
 	<subtitle> · on the web</subtitle>
 	<link href="https://www.peterkrautzberger.org/atom.xml" rel="self"/>
 	<link href="https://www.peterkrautzberger.org/"/>
-	<updated>2019-01-13T01:00:00+01:00</updated>
+	<updated>2019-09-12T02:00:00+02:00</updated>
 	<id>https://www.peterkrautzberger.org/</id>
 	<author>
 		<name>Peter Krautzberger</name>
@@ -1804,31 +1804,6 @@ This is fine from the point of view of a full semigroup (since always \(\sigma(s
 	</entry>
 	
 	<entry>
-		<title>Shelah&#39;s Model without P-points-- part 6</title>
-		<link href="https://www.peterkrautzberger.org/0061/"/>
-		<updated>2011-06-02T02:00:00+02:00</updated>
-		<id>https://www.peterkrautzberger.org/0061/</id>
-		<content type="html">&lt;p&gt;Read more about this series at &lt;a href=&quot;https://www.peterkrautzberger.org/0056/&quot;&gt;the first post&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Part 6: properness ctd.&lt;/h2&gt;
-&lt;p&gt;In short:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Basic Properties:
-&lt;ul&gt;
-&lt;li&gt;Grigorieff forcing and the Sacks variant are proper (part 2)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;
-  &lt;a href=&quot;https://www.peterkrautzberger.org/assets/2011/pg_0006.jpg&quot;&gt;
-    &lt;img alt=&quot;screenshot of page 6&quot; src=&quot;https://www.peterkrautzberger.org/assets/2011/pg_0006.jpg&quot;&gt;
-  &lt;/a&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.peterkrautzberger.org/assets/2011/pg_0006.pdf&quot;&gt;Part 6 as PDF&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.peterkrautzberger.org/assets/2011/pg_0006.xoj&quot;&gt;Part 6 as Xournal-source&lt;/a&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
 		<title>Shelah&#39;s Model without P-points-- part 5</title>
 		<link href="https://www.peterkrautzberger.org/0060/"/>
 		<updated>2011-06-02T02:00:00+02:00</updated>
@@ -1850,6 +1825,31 @@ This is fine from the point of view of a full semigroup (since always \(\sigma(s
 &lt;/figure&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.peterkrautzberger.org/assets/2011/pg_0005.pdf&quot;&gt;Part 5 as PDF&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.peterkrautzberger.org/assets/2011/pg_0005.xoj&quot;&gt;Part 5 as Xournal-source&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Shelah&#39;s Model without P-points-- part 6</title>
+		<link href="https://www.peterkrautzberger.org/0061/"/>
+		<updated>2011-06-02T02:00:00+02:00</updated>
+		<id>https://www.peterkrautzberger.org/0061/</id>
+		<content type="html">&lt;p&gt;Read more about this series at &lt;a href=&quot;https://www.peterkrautzberger.org/0056/&quot;&gt;the first post&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Part 6: properness ctd.&lt;/h2&gt;
+&lt;p&gt;In short:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic Properties:
+&lt;ul&gt;
+&lt;li&gt;Grigorieff forcing and the Sacks variant are proper (part 2)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;https://www.peterkrautzberger.org/assets/2011/pg_0006.jpg&quot;&gt;
+    &lt;img alt=&quot;screenshot of page 6&quot; src=&quot;https://www.peterkrautzberger.org/assets/2011/pg_0006.jpg&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.peterkrautzberger.org/assets/2011/pg_0006.pdf&quot;&gt;Part 6 as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.peterkrautzberger.org/assets/2011/pg_0006.xoj&quot;&gt;Part 6 as Xournal-source&lt;/a&gt;&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -11590,6 +11590,39 @@ By &lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;htt
 &lt;p&gt;NVDA seems best so far, JAWS seems to have a problem tracking focus (it jumps away when getting back into browse mode / virtual cursor), and Orca &lt;s&gt;struggles with CSS rendering&lt;/s&gt; (see update below). VoiceOver with Safari is doing its thing (treating everything as a group) but VO works well with Chrome on MacOS. On iOS and Android we get the top-level labels (except VO with CSS rendering for some reason). The current code lacks touch input because (as far as I know) neither Talkback nor VoiceOver have a way to switch into (some form of) focus mode; it could be added, perhaps the visual exploration is interesting enough. I&#39;ll be publishing more demo runs as we move along.&lt;/p&gt;
 &lt;p&gt;Overall, I&#39;m excited about the robustness at this stage and I plan to use this at work soon(ish). I also hope to bring the discussion around standardization of tree walkers to the ARIA Working Group - it seems to align with the evolution of tree widgets (e.g., for tab focus management, positional information) and a lot of content could benefit from some defaults in AT (much like with table walkers). But first we really need separate Braille streams.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;update 2019-01-24&lt;/strong&gt; Joanmarie Diggs was kind enough to look into the issues with CSS layout (commits &lt;a href=&quot;https://gitlab.gnome.org/GNOME/orca/commit/9357aa9cd82f43a853704b98464eb7a76352d4ed&quot;&gt;9357aa9c&lt;/a&gt; and &lt;a href=&quot;https://gitlab.gnome.org/GNOME/orca/commit/87d78dad097ce11a359e3bbebd77f5d32b2fccd6&quot;&gt;87d78dad&lt;/a&gt;) and Orca now matches NVDA beautifully.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Carnival of Math No. 173</title>
+		<link href="https://www.peterkrautzberger.org/0210/"/>
+		<updated>2019-09-12T02:00:00+02:00</updated>
+		<id>https://www.peterkrautzberger.org/0210/</id>
+		<content type="html">&lt;p&gt;This year I &lt;a href=&quot;https://www.peterkrautzberger.org/0194/&quot;&gt;once again&lt;/a&gt; have the pleasure to host the now &lt;strong&gt;173th Carnival of Mathematics&lt;/strong&gt;, the moveable feast of mathematical blogging shepherded by &lt;a href=&quot;http://aperiodical.com/carnival-of-mathematics/&quot;&gt;The Aperiodical&lt;/a&gt;, the best math blogging collective on this little blue ball in space. Be sure to &lt;a href=&quot;https://leeyieng.wordpress.com/2019/08/04/carnival-of-mathematics-172/&quot;&gt;visit the previous Carnival (No. 172) at Cassandra Lee Yieng&#39;s blog&lt;/a&gt; and keep an eye on &lt;a href=&quot;https://aperiodical.com/carnival-of-mathematics/&quot;&gt;all Carnivals&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As tradition will have it, we begin our show by taking a closer look at our number.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;173&lt;/strong&gt; is not just a prime, the sum of two squares of primes (2²+13²) &lt;em&gt;and&lt;/em&gt; the sum of three primes (53+59+61). No, it is also a &lt;a href=&quot;https://en.wikipedia.org/wiki/Balanced_prime&quot;&gt;balanced prime&lt;/a&gt; (same gap to previous and following prime) and the 13&lt;sup&gt;th&lt;/sup&gt;(!) &lt;a href=&quot;https://en.wikipedia.org/wiki/Sophie_Germain_prime&quot;&gt;Sopie Germain prime&lt;/a&gt; (since 2×173+1=347 is also prime).&lt;/p&gt;
+&lt;figure&gt;
+&lt;img width=&quot;256&quot; style=&quot;margin: 0 auto;&quot; alt=&quot;Sophie Germain&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/8/8b/Germain.jpeg&quot;&gt;
+&lt;figcaption&gt;Portrait of &lt;a href=&quot;https://en.wikipedia.org/wiki/Sophie_Germain&quot;&gt;Sophie Germain&lt;/a&gt; (April 1, 1776 - June 27, 1831), &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Germain.jpeg&quot;&gt;[Public domain], via Wikimedia Commons&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Alas, 173 is also an &lt;a href=&quot;https://en.wikipedia.org/wiki/Odious_number&quot;&gt;odious number&lt;/a&gt;, which may sound rather bad but just means it has an odd number of 1&#39;s in binary (10101101).&lt;/p&gt;
+&lt;p&gt;Now that you&#39;ve warmed up, let us once again enter the decidely wonderful, balanced madness of the mathematical blogging carnival.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Likely most people (or at least the most people) will already have seen the NYT&#39;s Kenneth Chang looking into &lt;a href=&quot;https://www.nytimes.com/2019/08/06/science/math-equation-pemdas.html&quot;&gt;Why Mathematicians hate that viral equation&lt;/a&gt;; but really who needs 8÷2(2+2) when you can so easily have drama with the Oxford Comma.&lt;/p&gt;
+&lt;p&gt;In any case, make sure you head over to Over at the Art of Research where Vi Hart shared &lt;a href=&quot;https://theartofresearch.org/computation-for-hands-systems-for-humans/&quot;&gt;Computation for Hands, Systems for Humans&lt;/a&gt;, taking you on the magic carpet ride that&#39;s Vi&#39;s hands &amp;quot;craving computation&amp;quot;, combining hardware, software, systems thinking, VR and a ton of other ideas.&lt;/p&gt;
+&lt;p&gt;Before you continue to Ari Rubinsztejn explains &lt;a href=&quot;https://gereshes.com/2019/05/27/why-tracking-space-debris-is-so-hard/&quot;&gt;Why Tracking Space Debris is so Hard&lt;/a&gt; (thanks, nonlinear dynamics!), step under the cover of the Undercover economist Tim Harford who wrote on &lt;a href=&quot;http://timharford.com/2019/08/the-strange-power-of-the-idea-of-average/&quot;&gt;the strange power of the idea of average&lt;/a&gt;, both good and bad.&lt;/p&gt;
+&lt;p&gt;Of course any mathematically topic is worth a deep dive into, so head into the magical depths of the Math Vault for an extensive article on &lt;a href=&quot;https://mathvault.ca/long-division/&quot;&gt;Long Division and Its Variants (for Integers)&lt;/a&gt; Once you&#39;re ready, jump out and get yourself back into Cantor&#39;s Paradise where Jørgen Veisdal will let you in on &lt;a href=&quot;https://medium.com/cantors-paradise/the-mathematics-of-elo-ratings-b6bfc9ca1dba&quot;&gt;the mathematics of Elo ratings&lt;/a&gt;, a glimpse at the history of the famous ranking system.&lt;/p&gt;
+&lt;p&gt;Before you lose your king or queen, let Richard Elwes ask you a question befit Carol&#39;s Red Queen: &lt;a href=&quot;https://richardelwes.co.uk/2019/09/06/how-many-sides-does-a-circle-have/&quot;&gt;How Many Sides Does A Circle Have?&lt;/a&gt; and be sure to follow him off on a tanget or two. If all those tangents twirled you around too much, switch to a classical, sold blog post by the amazing John Cook who will help you &lt;a href=&quot;https://www.johndcook.com/blog/2019/08/27/heaps-law/&quot;&gt;estimate vocabulary size with Heaps’ law&lt;/a&gt; just in case you need to verify a post-humously discovered manuscript by Jane Austen.&lt;/p&gt;
+&lt;p&gt;To ease your way out of those particular mazes, take a sip and mingle over at &lt;a href=&quot;https://ima.org.uk/12133/editorial-august-2019/&quot;&gt;this month&#39;s IMA editorial&lt;/a&gt;, if only to catch up on the Queen’s Birthday Honours List for 2019. And if you are one of those people who frequent the always dramatic birdsite, here are a two math-focused threads for you:&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Oh no, I&amp;#39;ve deliberately obscured large portions of this ruler and I need to make sure these vegetables are whole numbers of inches long or my toddler will eat me instead: a &lt;a href=&quot;https://twitter.com/hashtag/RealWorldMaths?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#RealWorldMaths&lt;/a&gt; thread &lt;a href=&quot;https://t.co/GWuZMry6Ti&quot;&gt;pic.twitter.com/GWuZMry6Ti&lt;/a&gt;&lt;/p&gt;&amp;mdash; Christian Lawson-Perfect (@christianp) &lt;a href=&quot;https://twitter.com/christianp/status/1169651584416079872?ref_src=twsrc%5Etfw&quot;&gt;September 5, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Unpopular take: As someone with a Master&amp;#39;s degree in statistics and who teaches data science, I&amp;#39;m very much over the &amp;quot;data scientists are incompetent fools who just throw data in and get results from a computer with no critical thinking&amp;quot; takes. 1/&lt;/p&gt;&amp;mdash; Matt Brems (@matthewbrems) &lt;a href=&quot;https://twitter.com/matthewbrems/status/1163224585644511233?ref_src=twsrc%5Etfw&quot;&gt;August 18, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/mathyawp/status/1162462128441139201?s=19&quot;&gt;Also via twitter&lt;/a&gt;, Francis Su shared his handout with &lt;a href=&quot;https://www.math.hmc.edu/~su/math131/good-math-writing.pdf&quot;&gt;Guildelines for good mathematical writing (PDF)&lt;/a&gt; which he says you should feel free to share with your students.&lt;/p&gt;
+&lt;p&gt;To wrap things up, take a carousel of math blogging perfection at Math Off The Grid where Benjamin Leis&#39;s post on &lt;a href=&quot;https://blog.mathoffthegrid.com/2019/08/cardanos-method.html&quot;&gt;Cardano&#39;s Method&lt;/a&gt; starts from a new video from Mathologer (below), picks up &lt;a href=&quot;https://twitter.com/MrHonner/status/1165417359764533248?ref_src=twsrc%5Etfw&quot;&gt;a tweet by Patrick Honner&lt;/a&gt; throws in &lt;a href=&quot;https://artofproblemsolving.com/news/aftermath/aftermath-running-a-school-for-math-lovers-with-sam-vandervelde&quot;&gt;a podcast with Sam Vandervelde&lt;/a&gt; and tops it off with a pointer to &lt;a href=&quot;https://en.wikipedia.org/wiki/Marden%27s_theorem&quot;&gt;Marden&#39;s Theorem&lt;/a&gt; to drag you into the carnival that is Wikipedia&#39;s mathematics articles.&lt;/p&gt;
+&lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/QILiHiTD3uc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;That’s it for the beautiful month of September. Thanks to everyone who submitted a post! After almost 9 years of running&lt;/p&gt;
+&lt;p&gt;Be sure to stop by next month’s Carnival. You should &lt;a href=&quot;http://aperiodical.com/carnival-of-mathematics/&quot;&gt;submit your favorite blog posts/videos/content&lt;/a&gt; from the month of September. If you’d like to host an upcoming show, please get in touch with &lt;a href=&quot;mailto:katie@aperiodical.com&quot;&gt;Katie&lt;/a&gt;.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
