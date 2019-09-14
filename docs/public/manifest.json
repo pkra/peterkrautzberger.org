@@ -1,7 +1,7 @@
 {
 	"name": "peterkrautzberger.org",
 	"display": "minimal-ui",
-	"shortname": "krautzberger",
+	"short_name": "krautzberger",
 	"start_url": "/",
 	"background_color": "#fff",
 	"theme_color": "#fff",
