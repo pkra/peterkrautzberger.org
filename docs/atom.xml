@@ -4,7 +4,7 @@
 	<subtitle> · on the web</subtitle>
 	<link href="https://www.peterkrautzberger.org/atom.xml" rel="self"/>
 	<link href="https://www.peterkrautzberger.org/"/>
-	<updated>2019-09-12T02:00:00+02:00</updated>
+	<updated>2019-09-14T02:00:00+02:00</updated>
 	<id>https://www.peterkrautzberger.org/</id>
 	<author>
 		<name>Peter Krautzberger</name>
@@ -11623,6 +11623,25 @@ By &lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;htt
 &lt;hr&gt;
 &lt;p&gt;That’s it for the beautiful month of September. Thanks to everyone who submitted a post! After almost 9 years of running&lt;/p&gt;
 &lt;p&gt;Be sure to stop by next month’s Carnival. You should &lt;a href=&quot;http://aperiodical.com/carnival-of-mathematics/&quot;&gt;submit your favorite blog posts/videos/content&lt;/a&gt; from the month of September. If you’d like to host an upcoming show, please get in touch with &lt;a href=&quot;mailto:katie@aperiodical.com&quot;&gt;Katie&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Weeknote 2019/37</title>
+		<link href="https://www.peterkrautzberger.org/0211/"/>
+		<updated>2019-09-14T02:00:00+02:00</updated>
+		<id>https://www.peterkrautzberger.org/0211/</id>
+		<content type="html">&lt;p&gt;I&#39;ve fallen silent this year. There were a lot of reasons for that. Mostly bad things, but many good things, too. I want to try to find a way back to writing, especially given this blog&#39;s 10&lt;sup&gt;th&lt;/sup&gt; anniversary coming up in December. I&#39;ve never been very personal on this personal site of mine; or perhaps more precisely I may not have appeared to be so, that is, I&#39;ve not been writing the stuff most people think of when they say &amp;quot;personal website&amp;quot;. I&#39;m thinking maybe I&#39;ll give it a try.&lt;/p&gt;
+&lt;p&gt;Anyway. I really like this idea of a weeknote which I first saw at &lt;a href=&quot;https://daverupert.com/&quot;&gt;Dave Rupert&#39;s&lt;/a&gt; and then at &lt;a href=&quot;https://www.baldurbjarnason.com/&quot;&gt;Baldur Bjarnason&#39;s&lt;/a&gt;. Let&#39;s give it a try and see how it feels.&lt;/p&gt;
+&lt;h2&gt;Work&lt;/h2&gt;
+&lt;p&gt;Work has been mixed this week. A big chunk of in-depth work was finalizing (what feels like a countless number of) tests for a very old piece of code that never had any tests. As this code had grown into a little bit of a monster, I now feel much more in control of it and ready to rewrite/port it. I also got into the GitHub Actions beta this week which looks nice and should help automate a bunch of stuff that&#39;s being done by a much less natural GitHub app (client permitting, anyway).&lt;/p&gt;
+&lt;p&gt;Oh, and I had some interesting work helping some (print) designers wrap their heads around some web thing. That was a ton of fun and maybe it will turn into more, we&#39;ll see.&lt;/p&gt;
+&lt;h2&gt;Reading&lt;/h2&gt;
+&lt;p&gt;I&#39;ve been having a fit of escapism and churning through Harry Dresden novels at a high pace; as re-readings go, these are still quite good. I still don&#39;t like some things but I do still like how he grew the universe, something so many fantasy series fail at. This year really has been a year of re-reading incidentally; there are worse things.&lt;/p&gt;
+&lt;h2&gt;Life&lt;/h2&gt;
+&lt;p&gt;I had the yearly meeting of our daycare (which is set up as an association run by the parents). I&#39;m the data privacy person for another year which has really been quite interesting (thanks, GDPR); after focusing on the digital side (where I&#39;m more comfortable), it&#39;s time to focus on the physical side, where I look forward to learning a few new things. Otherwise, I was amazed how little drama we had; in the end, we seem to be good people, wanting to make things better.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://scoskey.org/&quot;&gt;Sam&lt;/a&gt; and I are back to regular meetings after a long summer which is just plain good. Besides good times, we are working on upgrades to &lt;a href=&quot;http://mathblogging.org/&quot;&gt;mathblogging.org&lt;/a&gt; and &lt;a href=&quot;http://boolesrings.org/&quot;&gt;boolesrings.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I also think it may be time to finally fix my laptop&#39;s keyboard. First the left ctrl key went (which was fun to relearn with the right ctrl key), then the tick and some numbers started to become iffy (which gets annoying) but with the letter E starting to act up I&#39;m really coming to the end of the line. I don&#39;t know why I keep dragging it out. Let&#39;s see if I have an update in the next note, shall we?&lt;/p&gt;
 </content>
 	</entry>
 </feed>
