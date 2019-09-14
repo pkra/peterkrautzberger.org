@@ -33,6 +33,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("public");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("serviceworker.js");
 
