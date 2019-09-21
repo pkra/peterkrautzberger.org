@@ -4,7 +4,7 @@
 	<subtitle> · on the web</subtitle>
 	<link href="https://www.peterkrautzberger.org/atom.xml" rel="self"/>
 	<link href="https://www.peterkrautzberger.org/"/>
-	<updated>2019-09-14T02:00:00+02:00</updated>
+	<updated>2019-09-21T02:00:00+02:00</updated>
 	<id>https://www.peterkrautzberger.org/</id>
 	<author>
 		<name>Peter Krautzberger</name>
@@ -11642,6 +11642,33 @@ By &lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;htt
 &lt;p&gt;I had the yearly meeting of our daycare (which is set up as an association run by the parents). I&#39;m the data privacy person for another year which has really been quite interesting (thanks, GDPR); after focusing on the digital side (where I&#39;m more comfortable), it&#39;s time to focus on the physical side, where I look forward to learning a few new things. Otherwise, I was amazed how little drama we had; in the end, we seem to be good people, wanting to make things better.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://scoskey.org/&quot;&gt;Sam&lt;/a&gt; and I are back to regular meetings after a long summer which is just plain good. Besides good times, we are working on upgrades to &lt;a href=&quot;http://mathblogging.org/&quot;&gt;mathblogging.org&lt;/a&gt; and &lt;a href=&quot;http://boolesrings.org/&quot;&gt;boolesrings.org&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I also think it may be time to finally fix my laptop&#39;s keyboard. First the left ctrl key went (which was fun to relearn with the right ctrl key), then the tick and some numbers started to become iffy (which gets annoying) but with the letter E starting to act up I&#39;m really coming to the end of the line. I don&#39;t know why I keep dragging it out. Let&#39;s see if I have an update in the next note, shall we?&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Weeknote 2019/38</title>
+		<link href="https://www.peterkrautzberger.org/0212/"/>
+		<updated>2019-09-21T02:00:00+02:00</updated>
+		<id>https://www.peterkrautzberger.org/0212/</id>
+		<content type="html">&lt;p&gt;Let&#39;s see if I can &lt;a href=&quot;https://www.peterkrautzberger.org/0211&quot;&gt;keep this up&lt;/a&gt;. I have a feeling these posts could be a collection of all the small bits and pieces that do not warrant a blog post.&lt;/p&gt;
+&lt;h2&gt;Work&lt;/h2&gt;
+&lt;p&gt;Work was full of organizational stuff - everything from reorganizing git repos to organizing people t which seems odd since I was fairly addicted to it as a kid/ya o organizing reporting data. So in many ways uneventful but for me usually a form of complementary exercise which gives me a productivity boost once all the end-of-quarter shenanigans are over.&lt;/p&gt;
+&lt;h2&gt;Media&lt;/h2&gt;
+&lt;p&gt;I&#39;ve been thinking about my media usage recently, in particular the role of podcasts and video hosting platforms (ok, mostly youtube at the moment).&lt;/p&gt;
+&lt;p&gt;For the past two decades, the internet gradually eliminated any need (of mine) for TV consumption. Besides the obvious (there&#39;s a ton of media with a single subscription to a streaming service, a ton more with multiple subscriptions, and virtually all media in gray areas), I was pondering &amp;quot;TV programming&amp;quot; recently. It&#39;s something that many friends still describe as pleasing (switch on the TV and just watch something) and I would usually argue against it. But recently I noticed how similar subscriptions to YouTube channels work. This is especially impressive with more original work such as &lt;a href=&quot;https://de.wikipedia.org/wiki/Druck_(Webserie)&quot;&gt;Druck&lt;/a&gt;, the German version of &lt;a href=&quot;https://de.wikipedia.org/wiki/Skam_(Fernsehserie)&quot;&gt;Skam&lt;/a&gt;, which timestamps its episodes and releases them on matching times of day. Reading about their approach (and watching a season, which was quite interesting in itself and as a parent) made me realize how I use my YouTube subscriptions like TV programming. It&#39;s ephemeral, passing me by, tuning in, maybe hopping to the next one. And yet it&#39;s way better than even tivo-era TV as it gives both the ephemeral and the archival.&lt;/p&gt;
+&lt;p&gt;Similarly, podcasts (and again to some degree YouTube) have done much of the same for my radio consumption. Serious news stations like Deutschlandfunk, BBC 4, and various forms of NPR have been in my life since forever, and yet their consumption has been reduced to morning news and otherwise podcasts. In addition, podcasting covers anything from web industry to fiction, from comedy to whatever &lt;a href=&quot;https://blog.richter.fm/category/podcast/derweisheit&quot;&gt;Der Weisheit&lt;/a&gt; is (basically 4 friends chatting). I struggled to find interesting music podcasts (as in: playing contemporary popular music) for a while but I eventually found a few I liked; YouTube music channels do the rest.&lt;/p&gt;
+&lt;p&gt;Anyhoo, just a reminder that this internet is wonderful, I guess.&lt;/p&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;p&gt;I thought one way to use this format might be to just browse through Mastodon and see what I find (boosted or, gasp, original content). So here we go.&lt;/p&gt;
+&lt;p&gt;Christian posted lovely 3D printable Lᵖ norm balls thing:&lt;/p&gt;
+&lt;iframe src=&quot;https://mathstodon.xyz/@christianp/102807944228401858/embed&quot; class=&quot;mastodon-embed&quot; style=&quot;max-width: 100%; border: 0&quot; width=&quot;400&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;https://mathstodon.xyz/@christianp/102807949209412600/embed&quot; class=&quot;mastodon-embed&quot; style=&quot;max-width: 100%; border: 0&quot; width=&quot;400&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;David Eppstein linked to a glorious collection of Turing Complete things.&lt;/p&gt;
+&lt;iframe src=&quot;https://mathstodon.xyz/@11011110/102789724968251958/embed&quot; class=&quot;mastodon-embed&quot; style=&quot;max-width: 100%; border: 0&quot; width=&quot;400&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt;&lt;/iframe&gt;
+&lt;script src=&quot;https://mathstodon.xyz/embed.js&quot; async=&quot;async&quot;&gt;&lt;/script&gt;
+&lt;h2&gt;Life&lt;/h2&gt;
+&lt;p&gt;We finally went to &lt;a href=&quot;https://fridaysforfuture.de/allefuersklima/&quot;&gt;fridays for future&lt;/a&gt; this week; the fucking least we can all do is to show up whenever we can and always support them.&lt;/p&gt;
+&lt;p&gt;Oh, my keyboard; I wanted to get onto that, didn&#39;t I.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
