@@ -4,7 +4,7 @@
 	<subtitle> · on the web</subtitle>
 	<link href="https://www.peterkrautzberger.org/atom.xml" rel="self"/>
 	<link href="https://www.peterkrautzberger.org/"/>
-	<updated>2019-09-21T02:00:00+02:00</updated>
+	<updated>2019-12-31T01:00:00+01:00</updated>
 	<id>https://www.peterkrautzberger.org/</id>
 	<author>
 		<name>Peter Krautzberger</name>
@@ -11669,6 +11669,54 @@ By &lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;htt
 &lt;h2&gt;Life&lt;/h2&gt;
 &lt;p&gt;We finally went to &lt;a href=&quot;https://fridaysforfuture.de/allefuersklima/&quot;&gt;fridays for future&lt;/a&gt; this week; the fucking least we can all do is to show up whenever we can and always support them.&lt;/p&gt;
 &lt;p&gt;Oh, my keyboard; I wanted to get onto that, didn&#39;t I.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Using grid to split a table cell</title>
+		<link href="https://www.peterkrautzberger.org/0213/"/>
+		<updated>2019-12-31T01:00:00+01:00</updated>
+		<id>https://www.peterkrautzberger.org/0213/</id>
+		<content type="html">&lt;p&gt;Well that kind of a break sucked.&lt;/p&gt;
+&lt;p&gt;The other day I got to think about a little problem: split table cells.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://www.peterkrautzberger.org/assets/2019/splitcell.png&quot; alt=&quot;a table with first cell containing column and header information, separated by a diagonal line&quot;&gt;
+&lt;figcaption&gt;Source &lt;a href=&quot;https://tex.stackexchange.com/q/89745&quot;&gt;tex.SE&lt;/a&gt;, CC-by-SA 4.0 &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;If you search around the web for CSS solutions,&lt;br&gt;
+you&#39;ll mostly find more or less fiddly ones: &lt;a href=&quot;https://stackoverflow.com/questions/45506550/how-can-a-split-diagonally-a-table-header-cell&quot;&gt;this one from StackOverflow&lt;/a&gt; hacks a border by transforming it - awesome hackery. I also liked &lt;a href=&quot;https://en.wikipedia.org/wiki/Template:Diagonal_split_header&quot;&gt;Wikipedia&#39;s solution&lt;/a&gt;, which takes a standard strike-through using gradients and automatically calculates the specific values for margins to keep the &amp;quot;sub cells&amp;quot; from the diagonal.&lt;/p&gt;
+&lt;p&gt;But I was thinking that we should be able to do better these days. Shouldn&#39;t we get to stop worrying about the dimensions of the content?&lt;/p&gt;
+&lt;p&gt;Grid to the rescue.&lt;/p&gt;
+&lt;style style=&quot;display: block; white-space: pre-wrap; margin-bottom: 1em;&quot;&gt;
+.cell {
+  display: grid;
+  width: max-content;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  border: 1px solid #000;
+  background: url(&quot;data:image/svg+xml;utf8,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; version=&#39;1.1&#39; preserveAspectRatio=&#39;none&#39; viewBox=&#39;0 0 100 100&#39;&gt;&lt;line x1=&#39;0&#39; y1=&#39;0&#39; x2=&#39;100&#39; y2=&#39;100&#39; stroke=&#39;black&#39; vector-effect=&#39;non-scaling-stroke&#39;/&gt;&lt;/svg&gt;&quot;);
+  background-size: 100% 100%;
+  margin-bottom: 1rem;
+}
+
+.cell--topRight {
+  grid-column-start: 2;
+  text-align: right;
+}
+
+.cell--bottomLeft {
+  grid-column-start: 1;
+}
+&lt;/style&gt;
+&lt;div class=&quot;cell diag&quot; contenteditable=&quot;true&quot;&gt;
+    &lt;div class=&quot;cell--topRight&quot;&gt;Top and Right&lt;/div&gt;
+    &lt;div class=&quot;cell--bottomLeft&quot;&gt;Bottom and Left&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A simple 2x2 grid an inlined background SVG to draw the diagonal; column placement creates faux cells alongside auto-rows at 1fr ensure we don&#39;t cross the line. In other words, an (almost) content-agnostic split table cell.&lt;/p&gt;
+&lt;p&gt;You can go ahead and edit the text to try it out. See if you can find some edge cases where it fails (and let me know if you find a real case).&lt;/p&gt;
+&lt;p&gt;And in real life don&#39;t forget to add some non-visual hints to clarify which part is which, especially in a table head.&lt;/p&gt;
+&lt;p&gt;Happy New Year.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
