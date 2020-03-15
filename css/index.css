@@ -27,6 +27,7 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  hyphens: auto;
 }
 
 a {
