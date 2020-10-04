@@ -23,9 +23,9 @@ Remember back in summer when I was at <span class="caps">BLAST</span>? I promise
 
 The paper is a sibling to [the one already mentioned](/0026/). This time, instead of the strongly summable ultrafilter world, I focused on the union ultrafilter world.
 
-*   An ultrafilter on $\mathbb{F}$, the non-empty subsets of $\omega$, is a **union ultrafilter** if it has a base of FU-set, i.e., sets of the form $FU ( \mathbf{s} ) $ where $\mathbf{s}= (s_i)_{i \in \omega}$ is a sequence of pairwise disjoint elements.
+*   An ultrafilter on $\mathbb{F}$, the non-empty subsets of $\omega$, is a **union ultrafilter** if it has a base of FU-set, i.e., sets of the form $FU ( \mathbf{s} )$ where $\mathbf{s}= (s_i)_{i \in \omega}$ is a sequence of pairwise disjoint elements.
 *   A union ultrafilter is **ordered** if there is a base of FU-sets such that the sequences are **ordered**, i.e., $\max(s_i) < \min(s_{i+1})$.
-*   A union ultrafilter is stable if for a sequence of elements $FU ( \mathbf{s}^\alpha ) $ (where $\alpha < \omega$) it contains an element $FU ( \mathbf{t} ) $ such that $\\{ t_i : i< \omega \\} \subseteq^* FU ( \mathbf{s}^\alpha ) $ for all $\alpha$. Such a $ \mathbf{t} $ is a **pseudo condensation**.
+*   A union ultrafilter is stable if for a sequence of elements $FU ( \mathbf{s}^\alpha )$ (where $\alpha < \omega$) it contains an element $FU ( \mathbf{t} )$ such that $\{ t_i : i< \omega \} \subseteq^* FU ( \mathbf{s}^\alpha )$ for all $\alpha$. Such a $\mathbf{t}$ is a **pseudo condensation**.
 
 [Back when Andreas Blass introduced union ultrafilter](http://www.math.lsa.umich.edu/~ablass/uf-hindman.pdf) ([MR](http://www.ams.org/mathscinet-getitem?mr=891244)) he studied mostly ordered union ultrafilters. The results in my preprint try to make some progress as how to differentiate the different notions. The terminology for stability is akin to P-points and their pseudo intersections, in fact the name is borrowed from the french term for P-points — $\delta$-stable.
 
@@ -35,7 +35,7 @@ Andreas ended his incredibly rich paper introducing union ultrafilters with a hu
 
 Even though [Andreas Blass and Neil Hindman later constructed a union ultrafilter that is not ordered](http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4), the nature of ‘unorderedness’ remained unclear. So I wanted to check if stability might actually imply orderedness. Unfortunately, not a lot can be said. Some of Andreas’s stability characterizations hold for unordered union ultafilters in a similar way, some others imply stability, but whether one of those properties can imply orderedness is still open. The key result in this regard is the following.
 
-**Theorem** A union ultrafilter is stable iff whenever the ordered pairs $\mathbb{F}^2_< = \\{ (s,t) : \max(s) < \min(t) \\}$ are finitely coloured, there exists a homogeneous set in the ultrafilter.
+**Theorem** A union ultrafilter is stable iff whenever the ordered pairs $\mathbb{F}^2_< = \{ (s,t) : \max(s) < \min(t) \}$ are finitely coloured, there exists a homogeneous set in the ultrafilter.
 
 This characterization (which works for any other power up to and including $\omega$) is very surprising if you like the analogy to P-points and Ramsey ultrafilters. Indeed, back when Andreas proved it he used it to imply that the image of a stable ordered union ultrafilter under the minimum and maximum functions are Ramsey ultrafilter (he had shown that they are Q-points and the stability easily shows that the images are P-points) which was really surprising at the time — you took a P-point like property and out came that min and max are Ramsey ultrafilters! However, shortly thereafter (in the above paper of Andreas Blass and Neil Hindman), it turned out that union ultrafilters always have min and max as P-points ultrafilters. This leads back to the true mystery: how does stability have such a Miliken-Taylor-Theorem like Ramsey property?
 
@@ -47,9 +47,9 @@ The other half of the paper contains a construction that settles another questio
 
 It looks like a silly theorem, doesn’t it? So technical, just a slight difference to what was known etc etc. For me the interesting part was what happened in the proof. One key was to consider what I call the meshing graph.
 
-Fix some pairwise disjoint sequence $\mathbf{s}$. If $\mathbf{t} \subseteq FU(\mathbf{s}) $, then **the meshing graph** on the vertices $\mathbf{t}$ is defined by edges between some $t_i,t_j$ if there exist $s_k \subseteq t_i, s_l \subseteq t_j$ such that neither $\min( s_k ) < \max( s_l )$ nor $\min ( s_l ) < \max ( s_k ) $.
+Fix some pairwise disjoint sequence $\mathbf{s}$. If $\mathbf{t} \subseteq FU(\mathbf{s})$, then **the meshing graph** on the vertices $\mathbf{t}$ is defined by edges between some $t_i,t_j$ if there exist $s_k \subseteq t_i, s_l \subseteq t_j$ such that neither $\min( s_k ) < \max( s_l )$ nor $\min ( s_l ) < \max ( s_k )$.
 
-In other words an edge represents that two elements are not ordered, they mesh. But it’s actually important that they do not just mesh, but they mesh because they contain elements in $\mathbf{s}$ mesh. The reason is that for a union ultrafilter not to be ordered requires some special FU-set (in this case $FU ( \mathbf{s} ) $) that is never refined to an **ordered** FU-set.
+In other words an edge represents that two elements are not ordered, they mesh. But it’s actually important that they do not just mesh, but they mesh because they contain elements in $\mathbf{s}$ mesh. The reason is that for a union ultrafilter not to be ordered requires some special FU-set (in this case $FU ( \mathbf{s} )$) that is never refined to an **ordered** FU-set.
 
 For that it’s not enough to look at the meshing graph with edges when the $t_i$ mesh; it could be that they mesh but in such a way that we are later forced to condense $\mathbf{s}$ to something ordered. To put it differently, it’s not difficult to take an ordered union ultrafilter and write down a base of not-ordered FU-sets (just merge every second element of a sequence). The difficulty is to guarantee that no ordered base exists.
 

@@ -28,7 +28,9 @@ The first two theorems lead down a different path, towards partition regular mat
 
 Let me get back to talking to you about [Hindman's Theorem](http://en.wikipedia.org/wiki/Hindman%27s_theorem#Hindman.27s_Theorem). Skipping its curious history, let's see where Schur left us. We have sums of two elements -- very often. But what about three? Or any finite number? Well, we know that repetition is a problem -- after all, that's what prevented subsemigroups from being a partition regular notion. So we have to drop repetitions. What does that leave us with? Distinct sums.
 
-> **FS-set** Given a sequence $(x_n: n<N)$ (with $N \leq \omega$, but we're really intersted in $\omega$) let's denote the set of distinct finite sums of elements from this sequence by $FS(x_n)$, i.e., $$FS(x_n) = \{ x_{i_0} + \ldots x_{i_k} : i_0, \ldots i_k<N \mbox{ pairwise different} \}.$$
+> **FS-set** Given a sequence $(x_n: n < N)$ (with $N \leq \omega$, but we're really intersted in $\omega$) let's denote the set of distinct finite sums of elements from this sequence by $FS(x_n)$, i.e.,
+
+$$FS(x_n) = \{ x_{i_0} + \ldots x_{i_k} : i_0, \ldots i_k < N \text{ pairwise different} \}.$$
 
 So we collect all results of summing elements from our sequence without doing any repetitions. Fair enough. This seems to be as far as we can get without getting at an actual subsemigroup.
 
@@ -83,7 +85,7 @@ We might not be able to multiply two elements, but at least each element has som
 
 What we're looking at is simply a finite-intersection-property. Namely, the family of sets "can be multiplied with $x$" has the finite intersection property. (What we really want is the infinite finite intersection property, but that's not too important right now.) For historical reference, if we have this, it's called a _adequate partial semigroup_ -- and we're not interested in anything else.
 
-> Technically, we will need to say from where we multiply. I usually prefer "from the right" and write the set as $\sigma(x) := \\{ y : x\cdot y \mbox{ defined } \\}$.
+> Technically, we will need to say from where we multiply. I usually prefer "from the right" and write the set as $\sigma(x) := \{ y : x\cdot y \text{ defined } \}$.
 
 ## Are you messing with me (again)?
 

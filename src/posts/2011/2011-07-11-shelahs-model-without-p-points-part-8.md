@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shelah's Model without P-points-- part 8
+title: Shelah's Model without P-points, part 8
 date: 2011-07-11
 categories:
 - expository

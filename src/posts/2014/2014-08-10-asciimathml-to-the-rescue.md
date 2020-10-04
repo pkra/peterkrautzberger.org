@@ -22,13 +22,13 @@ Later on, [David Lippman](http://dlippman.imathas.com/) wrote a nice MathJax add
 
 ### Why Asciimath is awesome
 
-First off, if you know some TeX I would probably describe asciimath as "TeX without backslashes". Because, really, why not write `alpha` or `phi` for %alpha, phi%? Similarly, why not just write `sin` for %sin%? (Oh, and let's have [a fun discussion](https://github.com/mathjax/MathJax/issues/353) about `phi` vs `varphi`, Unicode vs TeX. But not a problem, you can switch to whichever convention you like using MathJax.)
+First off, if you know some TeX I would probably describe asciimath as "TeX without backslashes". Because, really, why not write `alpha` or `phi` for $\alpha$, $\phi$? Similarly, why not just write `sin` for $sin$? (Oh, and let's have [a fun discussion](https://github.com/mathjax/MathJax/issues/353) about `phi` vs `varphi`, Unicode vs TeX. But not a problem, you can switch to whichever convention you like using MathJax.)
 
 Second, if you know markdown, then I might describe asciimath as "markdown for math". It's not TeX in all its (infamous) glory or even MathJax's TeX-like input with its many advantages for the web. It's much more restricted and that's by design -- much like markdown is.
 
-Given its target (MathML) and its general webbiness, asciimath works smoothly with Unicode, which adds to its readability and usability (and internationalization). Everyone will probably appreciate that `->` and `→` work interchangeably (both of which seem much saner to me than anything LaTeX would suggest). So `f: A -> B` and `f: A → B` produce identical MathML: %f: A -> B% and %f: A → B%.
+Given its target (MathML) and its general webbiness, asciimath works smoothly with Unicode, which adds to its readability and usability (and internationalization). Everyone will probably appreciate that `->` and `→` work interchangeably (both of which seem much saner to me than anything LaTeX would suggest). So `f: A -> B` and `f: A → B` produce identical MathML: $f: A -> B$ and $f: A → B$.
 
-Similarly, asciimath's minimal approach does not need TeX's cumbersome `\begin{} \end{}` environments, but many important tools are available in much simpler ascii/computing notation, e.g., `((a,b),(c,d))` for matrices: %((a,b),(c,d))%.
+Similarly, asciimath's minimal approach does not need TeX's cumbersome `\begin{} \end{}` environments, but many important tools are available in much simpler ascii/computing notation, e.g., `((a,b),(c,d))` for matrices: $\begin{matrix} a & b \\ c & d\end{matrix}$.
 
 ### Making asciimath better
 
@@ -49,7 +49,7 @@ _Comments_
   I'm really curious where your next blog post will be about. I do think that TeX is ultimately holding math on the web back. I think the web have seriously failed if in 10 year time, it is still the standard to use LaTeX code for a (good looking) mathematical chat. Or other forms of quick mathematical communcation on the web.
   But I'm not seeing ASCIIMath as the holy grail (yet). One reason that people may not take ASCIIMath seriously, is because it doesn't look the same as LaTeX. Not having a different mode for inline and display style math is something that arguably doesn't look so professional. I don't see people use ASCIIMath for writing a mathematical blog in this way.
   The lack of <code>\begin{align} \end{align}</code> like environements is also a downside of ASCIIMath. I use align environments all the time. I agree that ASCIIMathML aim shouldn't be to be feature complete. But I do think it should be able to generate 90 percent of what a mathematician uses. In other words 90 percent  of what is used at math.stackexchange for example.
-  The last point I don't like about ASCIIMathML is its name. Being ASCII focussed is not what I envision for a future mathematical language. I think the language should be unicode focussed. Because unicode symbols are ultimately the easiest to read.  
+  The last point I don't like about ASCIIMathML is its name. Being ASCII focussed is not what I envision for a future mathematical language. I think the language should be unicode focussed. Because unicode symbols are ultimately the easiest to read.
   For example take this LaTeX code:
   <code>$W^{3\beta}_{\delta_1\rho_1\sigma_2}$</code>
   The ASCII variant:

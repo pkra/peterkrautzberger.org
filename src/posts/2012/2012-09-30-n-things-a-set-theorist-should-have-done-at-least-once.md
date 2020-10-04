@@ -55,7 +55,7 @@ _Comments_
     Very nice — I didn’t think about choice principles (comes from working with ultrafilters 😉 )
 * **saf**, 2012/10/01
   Have the following statements included somewhere in your proof:
-  (a) “take a countable elementary submodel of $\langle \mathcal H(\lambda)\,\in\,<_ \lambda\,\ldots$ for a large enough regular cardinal $lambda$, containing everything relevant to this proof"
+  (a) “take a countable elementary submodel of $\langle \mathcal H(\lambda)\,\in\,<_ \lambda\,\ldots$ for a large enough regular cardinal $\lambda$, containing everything relevant to this proof"
   (b) “note that by absoluteness, it suffices to prove that "1+1=2" holds in L"
   * **Peter**, 2012/10/01
     Thanks! Good stuff :)

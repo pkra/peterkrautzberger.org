@@ -36,7 +36,8 @@ Well, it gets even better. The original theorem allows us to "iterate" this resu
 
 > **Central Sets Theorem (less simple version)** Let $A$ be a central set. This time, I'm giving you finitely many $FS(x_n^0),\ldots FS(x_n^k)$. Not only can you get the above version for each sequence, but you can get them "together":
 >
-> You can find a single $FS(a_n) \subseteq A$ and a single $(s_n: n\in \omega)$ in $\mathbb{F}$ such that for all $ j < k$ simultaneously $$ FS(a_n + \sum_{i\in s_n} x_i^j) \subseteq A. $$
+> You can find a single $FS(a_n) \subseteq A$ and a single $(s_n: n\in \omega)$ in $\mathbb{F}$ such that for all $j < k$ simultaneously
+$$ FS(a_n + \sum_{i\in s_n} x_i^j) \subseteq A. $$
 >  Again repeat: if we set $y_n^j = \sum_{i\in s_n} x_i^j$, then for all $j<k$
 >  $$ FS(a_n + y_n^j) \subseteq A. $$
 
@@ -44,7 +45,8 @@ The crucial strength is that all the $y_n^j$ are constructed using the one fixed
 
 Ok, maybe this difference is a bit subtle at first, but it is quite potent. For example, we immediately get van der Waerden's Theorem!
 
-> **van der Waerden's Theorem (sort of)** If $A$ is central and some $l\in \omega$ given, we can find an an arithmetic progression of length $l$ in $A$, i.e., there exists $a\in A$ and $d\in \mathbb{N}$ such that $$ a, a+d, \ldots, a+ l\cdot d \in A.$$
+> **van der Waerden's Theorem (sort of)** If $A$ is central and some $l\in \omega$ given, we can find an an arithmetic progression of length $l$ in $A$, i.e., there exists $a\in A$ and $d\in \mathbb{N}$ such that
+$$ a, a+d, \ldots, a+ l\cdot d \in A.$$
 >  In fact, we can find the increment $d$ in any prescribed FS-set!
 
 This last sentence is kind of cool: you want the increment to be a multiple of 10? 42? A gazillion? No problem!
@@ -56,7 +58,10 @@ Let's derive this from the Central Sets Theorem. I know it's a bit meaningless w
 In other words, you're trying to make $d, 2d, \ldots, d \cdot l$ work. The idea is to look at the sequences $(j\cdot x_n: n \in \omega)$ to apply the version of the Central Sets Theorem that allows for finitely many FS-sets.
 
 What does it give you? Well, you get a lot of $a\in A, s\in \mathbb{F}$ (a sequence/FS-/FP-set whatever, but let's just take one of each) such that
- $$a + \sum_{i \in s} j\cdot x_i = a +j \sum_{i\in s} x_i \in A$$ for each $j < l $ -- oh but that's an arithmetic progression with increment $d= \sum_{i\in s} x_i$, so we're **done**!
+$$
+a + \sum_{i \in s} j\cdot x_i = a +j \sum_{i\in s} x_i \in A
+$$
+for each $j \lt l$ -- oh but that's an arithmetic progression with increment $d= \sum_{i\in s} x_i$, so we're **done**!
 
 Look at how much more we have, though. We can predescribe the FS-set to pick from, we get an FS-set (induced by the FP-set) we get an FS-set of starting points and so forth.
 

@@ -48,7 +48,7 @@ So, what does the usual formulation look like?
  Imagine you are given finitely many sequences in a commutative semigroup $(S,+)$, say $\mathbf{y^0}, \ldots, \mathbf{y^\alpha}$ as well as a central set $C \subseteq S$.
  Then you can find a sequence $\mathbf{a}$ in $S$ as well as a sequence $\mathbf{h}$ of non-empty, disjoint and finite subsets of $\mathbb{N}$ such that for $\beta \leq \alpha$
 
- \\[ FS ( {a_n} + {\sum_{i \in h_n} y_i^\beta} ) \subseteq C. \\]
+ $$ FS ( {a_n} + {\sum_{i \in h_n} y_i^\beta} ) \subseteq C. $$
 
 Complicated, no? I mean, a random bunch of sequences, some strange set and you find some other sequence and some weird subsets of of the natural numbers and then the [IP-set](http://en.wikipedia.org/wiki/IP_set) of some strange sums are in that strange set — **ye what?**
 
@@ -58,7 +58,8 @@ Let’s cut it down a little and just consider the case $\alpha = 0$.
  Imagine you are given a sequence $\mathbf{y}$ in a commutative semigroup $(S,+)$ as well as a central set $C \subseteq S$.
  Then you can find a sequence $\mathbf{a}$ in $S$ as well as a sequence $\mathbf{h}$ of non-empty, disjoint and finite subsets of $\mathbb{N}$ such that
 
- \\[ FS ( {a_n} + {\sum_{i \in h_n} y_i} ) \subseteq C. \\]
+<!-- TODO broken walker -->
+ $$FS ( {a_n} + {\sum_{i \in h_n} y_i} ) \subseteq C.$$
 
 ### Detour 2 — oversimplification
 
@@ -70,7 +71,7 @@ Now, the theorem says all kinds of complicated things about the existence of a s
  Imagine you are given a subsemigroup $T \subseteq \mathbb{N}$ as well as a central set $C \subseteq \mathbb{N}$.
  Then you can find a sequence $\mathbf{a}$ in $\mathbb{N}$ as well as a sequence $\mathbf{b}$ in $T$ so that
 
- \\[ FS ( {a_n} + {b_n} ) \subseteq C. \\]
+ $$ FS ( {a_n} + {b_n} ) \subseteq C. $$
 
 I find this weaker version much easier to understand. It just says that I can always translate infinitely many elements from a given subsemigroup into the central set; additionally the finite sums stay within the set.
 
@@ -83,9 +84,9 @@ So where does this leave us? Well, when I hear finite subsets of $\mathbb{N}$ I 
 **(Adequate) Partial Semigroups**
  A _partial semigroup_ operation on a set $S$ is a map $\cdot: S \times S \rightarrow S$ such that associativity $s \cdot (t \cdot u) = (s \cdot t) \cdot u$ holds in the sense that if one side is defined so is the other and they are equal. A partial semigroup is _adequate_ if the sets
 
- \\[
- \sigma(s) := \left\\{ t\in S : {s \cdot t} \mbox{ is defined} \right\\}
- \\]   generate a filter, i.e., finitely many elements have a common compatible element.
+$$ \sigma(s) := \left\{ t\in S : {s \cdot t} \text{ is defined} \right\}$$
+
+generate a filter, i.e., finitely many elements have a common compatible element.
 
 This notion was introduced by [Bergelson, Blass and Hindman](http://www.math.lsa.umich.edu/~ablass/bbh.pdf) ([DOI](http://doi.org/10.1112/plms/s3-68.3.449)) in the 90s. It tells us that the operation, although partial, is associative in a strong way. Additionally, it makes sure the operation is not just empty but defined for many elements (well, ok it could be just one for all, but that’s not the point).
 
@@ -94,9 +95,8 @@ For ultrafilters the critical point is the following.
 **The semigroup $\delta S$**
  Given an adequate partial semigroup and $p,q$ ultrafilters containing all $\sigma(s)$. Then the operation
 
- \\[
- p \cdot q = \left\\{ A \subseteq S : \left\\{ s : \left\\{ t : s \cdot t \in A \right\\} \in q \right\\} \in p \right\\}
- \\]
+$$ p \cdot q = \left\{ A \subseteq S : \left\{ s : \left\{ t : s \cdot t \in A \right\} \in q \right\} \in p \right\}
+$$
 
 is well-defined and associative and semi-continuous. In other words, $\delta S$ is a closed semi-continuous semigroup.
 
@@ -106,9 +106,8 @@ What does this have to do with the Central Sets Theorem?
 
 Denote the non-empty, finite subsets of $\mathbb{N}$ by $\mathbb{F}$. Consider the restriction of $\cup$ on $\mathbb{F}$ defined by
 
- \\[
- s + t \mbox{ defined } \Longleftrightarrow \max(s) \cap \min(t) = \emptyset.
- \\]
+$$ s + t \text{ defined } \Longleftrightarrow \max(s) \cap \min(t) = \emptyset.
+$$
 
 Then in fact this constitutes a partial semigroup, adequate at that.
 
@@ -121,9 +120,7 @@ To come back to the weak version of the Central sets theorem — partial semigro
 **simple Central Sets Theorem**
  Imagine we are given a partial subsemigroup $T$ of $(S,+)$ as well as a central set $C \subseteq \mathbb{N}$. Then we find sequences $\mathbf{a}$ in $\mathbb{N}$ and $\mathbf{t} \in T$ such that $FS ( {t_n} ) \subseteq T$ and
 
- \\[
-  {FS( a_ {n} + t_{n}) \in C.}
- \\]
+$$  {FS( a_ {n} + t_{n}) \in C.}$$
 
 Now this sounds much closer to the original theorem. Since any sequence generates a partial semigroup on its $FS$-set (isomorphic to $\mathbb{F}$), this is in fact the Central Sets Theorem for just one sequence.
 
@@ -135,13 +132,13 @@ However, the actual theorem is more than just some kind of induction on the abov
  Imagine you are given finitely many $FS$-sets in a commutative semigroup $(S,+)$, say ${FS( {\mathbf{y^0}} )}, {\ldots}, {FS( {\mathbf{y^\alpha}} )}$ as well as a central set $C \subseteq S$.
  Then you can find a sequence $\mathbf{a}$ in $S$ as well as one disjoint sequence $\mathbf{h}$ in $\mathbb{F}$ such that for all $\beta \leq \alpha$
 
- \\[ FS ( {a_n} + {\sum_{i \in h_n} y_i^\beta} ) \subseteq C. \\]
+ $$FS ( {a_n} + {\sum_{i \in h_n} y_i^\beta} ) \subseteq C. $$
 
 To see this strength at work it is time to look at the classical application.
 
 **Central sets in $( \mathbb{N},+)$ contain arbitrarily long arithmetic progressions**
  Take $\mathbf{y^\beta}$ to be the multiples of $\beta$ (for $\beta \leq \alpha$). Then the central set theorem guarantees we find $a_1, h_1$ such that for all $\beta \leq \alpha$
 
- \\[ (a_1 + \beta \cdot \sum_{i\in h_1} i) \in C.\\]
+ $$ (a_1 + \beta \cdot \sum_{i\in h_1} i) \in C.$$
 
 For this application is obviously critical that the to-be-translated elements can be chosen uniformly. That’s all for now but I hope I can write a follow up some other time.

@@ -9,7 +9,7 @@ published: true
 Yesterday, [Sam](http://scoskey.org/) and I removed all remaining WordPress installations that we were hosting for people that are part of [Booles' Rings](https://boolesrings.org/), including the original multisite installations that [started it all](/0069/).
 
 
-## Boole's Rings is dead
+## Booles' Rings is dead
 
 My regular meetings with Sam are one of my great pleasures. Since our friendship is almost exclusively virtual, it's surprising that we have kept it alive for quite a while now. Almost weekly, we get on video to work on new ideas or and projects - or just chitchat about life, work and being young parents (or parents of young kids anyway).
 

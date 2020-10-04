@@ -30,18 +30,18 @@ Coming back to an online review system, I can see the appeal of abstractly desig
 
 The problem isn't that we're lacking a great system. The problem is that nobody reviews other people's work publicly (nor do we have other professionals to do it for us as in the case of science journalism). I don't think that progress can be made with technology alone -- we must improve the _culture_ of review.
 
-It's not that we don't read other people's work, mind you. We do it  
- all the time! And when we're serious about a paper, we essentially  
- re-write the damn thing; simplifying, expanding, hoping to get a new  
+It's not that we don't read other people's work, mind you. We do it
+ all the time! And when we're serious about a paper, we essentially
+ re-write the damn thing; simplifying, expanding, hoping to get a new
  result out of the process.
 
-And yet, you will find very few traces of this activity on the net. We  
- waste our efforts by not speaking publicly about the reviewing we do  
+And yet, you will find very few traces of this activity on the net. We
+ waste our efforts by not speaking publicly about the reviewing we do
  day in and day out. From what I can see via [mathblogging.org](http://www.mathblogging.org), one or two prominent researcher bloggers do it (not Tim Gowers I should add), as well as a few not-at-all prominent bloggers. In other words, public reviewing hasn't entered our collective culture at all; it's reduced to isolated cases.
 
 ### When Nature built it, nobody came
 
-When it comes to post-publication peer review, the locus classicus is  
+When it comes to post-publication peer review, the locus classicus is
  [_Nature_'s failed experiment](http://www.nature.com/nature/peerreview/debate/nature05535.html) in 2006\. They tried an open reviewing process because everybody said they'd like to have more reviews to identify good and interesting work. As it turned out, nobody wanted to actually do the work. So Nature stopped this experiment after five months.
 
 What is particularly strange about this failure is the fact that many science bloggers were already spending a considerable amount of their time writing about peer-reviewed papers.
@@ -52,7 +52,7 @@ In the summer of 2007, [researchblogging.org](http://researchblogging.org/news/?
 
 It's a very simple service, really. When you're blogging about a peer-reviewed work, you go and grab a bit of javascript to display a citation. In return, your post is aggregated at researchblogging.org, reaching a much wider audience. Reversely, people interested only in blog posts about peer-reviewed work can find all these posts in one central location.
 
-In short, it's post-publication peer review at its best -- grassroots,  
+In short, it's post-publication peer review at its best -- grassroots,
  decentralized, open, supporting the independence of authors and scientists, using the crowd for checks and balances.
 
 (Even though I don't know the precise history, it looks to me as if [f1000](http://www.f1000.com) has successfully taken the post-publication peer-review back to the commercial level. Not sure what this development will mean, since f1000 is relatively young.)
@@ -61,7 +61,7 @@ In short, it's post-publication peer review at its best -- grassroots,
 
 Maybe, I'm wrong. Maybe, Tim Gowers leads us, like a Greek hero, to a brave new reviewing platform. And maybe some top researchers start writing reviews -- finally. And then, I wonder, what will happen?
 
-Will it end like the [tricki](http://www.tricki.org), with a few high quality items from our heroes that no mere mortal could match? Or will it follow MathOverflow, in need of a lower-level clone like math.SE?
+Will it end like the [tricki](http://www.tricki.org), with a few high quality items from our heroes that no mere mortal could match? Or will it follow MathOverflow, in need of a lower-level clone like [math.SE](https://math.stackexchange.com)?
 
 ### tl;dr
 

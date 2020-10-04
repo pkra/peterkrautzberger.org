@@ -27,55 +27,56 @@ latex: true
 
 ### Transcript
 
-*   Def.
-     \begin{split} x,y \text{ proximal} & \Leftrightarrow \forall V \in \mathfrak{U}(\overbrace{\Delta}^{\text{Diag. in $X\times X$}}) \exists s \in S: (sx, sy) \in V \\\\ & \underbrace{\Leftrightarrow}_ {\text{topologie: diese Ueberd. bilden Umg.basis von $\Delta$ in $X^2$}} \forall (U_ i)_ {i=1}^m, \bigcup U_ i = X \text{ offen} \exists s \in S, i \leq m: sx, sy \in U_ i \end{split}
-*   Satz
-    *   $ x,y \text{ prox.} \Leftrightarrow \exists p \in \beta S: px = py$.
-*   Bsp 2 (fortg)
-    *   Sei $S\leq Q, 1_ Q \in Q$ mit $1_ q \cdot s = s \cdot 1_ Q = s \forall s \in S$
-    *   $U: = { z \in X: z(1_ Q) = 1}$. Also $U\subseteq X$ clopen [klar?]
-    *   Sei $C\subseteq S: x:= \chi_ C$ (char. Fkt.)
-    *   Dann $R(x,U) = C$
-        *   [proof] $s\in R(x,U) \Leftrightarrow s \cdot x \in U \Leftrightarrow s \cdot x (1_ Q) = 1 \Leftrightarrow x(1_ Q s) = 1 \Leftrightarrow x(s) = 1 \Leftrightarrow X \in C$
-    *   ! Also: jede Teilmanege als Rueckkehrmenge darstellbar.
-*   Def. $x$ unif. rekurrent $\Leftrightarrow R(x,U) \text{ synd. } \forall U \in \mathfrak{U}$
-*   Satz. $X$ DS ueber $S$, $y\in X$, $L\subseteq \beta S$ min. LID
-     a. $y$ unif. rekurrent;
-     b. $\exists p \in L: p\cdot y = y$
-     c. $\exists \epsilon \in L\cap E(\beta S): \epsilon \cdot y = y$
-     d. $\exists \epsilon \in L \cap E(\beta S), x\in X: \epsilon \cdot x = y$
-     e. $y\in \bigcup_ {M \text{min US}} M$
-     f. $y \in L \cdot y$.
-*   Beweis
-    *   c=> a
-        *   $U \in \mathfrak{U}(y), V\subseteq \bar{V} \subseteq U \text{ offen}, A=R(y,V) \in \epsilon $ [$\epsilon y = y$]
-        *   $B = {s: s\cdot \epsilon \in \hat{A}} \subseteq S \text{ syndetisch [HS 4.39]} \Rightarrow B \subseteq R(y,U)$ [$s \epsilon \in \hat{A} \Rightarrow s\epsilon y = s y \in \bar{V} \subseteq U$]
+* Def.
+  $$\begin{split} x,y \text{ proximal} & \Leftrightarrow \forall V \in \mathfrak{U}(\overbrace{\Delta}^{\text{Diag. in $X\times X$}}) \exists s \in S: (sx, sy) \in V \\ & \underbrace{\Leftrightarrow}_ {\text{topologie: diese Ueberd. bilden Umg.basis von $\Delta$ in $X^2$}} \forall (U_ i)_ {i=1}^m, \bigcup U_ i = X \text{ offen} \exists s \in S, i \leq m: sx, sy \in U_ i \end{split}$$
+* Satz
+  * $x,y \text{ prox.} \Leftrightarrow \exists p \in \beta S: px = py$.
+* Bsp 2 (fortg)
+  * Sei $S\leq Q, 1_ Q \in Q$ mit $1_ q \cdot s = s \cdot 1_ Q = s \forall s \in S$
+  * $U: = { z \in X: z(1_ Q) = 1}$. Also $U\subseteq X$ clopen [klar?]
+  * Sei $C\subseteq S: x:= \chi_ C$ (char. Fkt.)
+  * Dann $R(x,U) = C$
+    * [proof] $s\in R(x,U) \Leftrightarrow s \cdot x \in U \Leftrightarrow s \cdot x (1_ Q) = 1 \Leftrightarrow x(1_ Q s) = 1 \Leftrightarrow x(s) = 1 \Leftrightarrow X \in C$
+    * ! Also: jede Teilmanege als Rueckkehrmenge darstellbar.
+* Def. $x$ unif. rekurrent $\Leftrightarrow R(x,U) \text{ synd. } \forall U \in \mathfrak{U}$
+* Satz. $X$ DS ueber $S$, $y\in X$, $L\subseteq \beta S$ min. LID
+  a. $y$ unif. rekurrent;
+  b. $\exists p \in L: p\cdot y = y$
+  c. $\exists \epsilon \in L\cap E(\beta S): \epsilon \cdot y = y$
+  d. $\exists \epsilon \in L \cap E(\beta S), x\in X: \epsilon \cdot x = y$
+  e. $y\in \bigcup_ {M \text{min US}} M$
+  f. $y \in L \cdot y$.
+* Beweis
+  * c=> a
+    * $U \in \mathfrak{U}(y), V\subseteq \bar{V} \subseteq U \text{ offen}, A=R(y,V) \in \epsilon$ [$\epsilon y = y$]
+    * $B = {s: s\cdot \epsilon \in \hat{A}} \subseteq S \text{ syndetisch [HS 4.39]} \Rightarrow B \subseteq R(y,U)$ [$s \epsilon \in \hat{A} \Rightarrow s\epsilon y = s y \in \bar{V} \subseteq U$]
 
 ### partial translation
 
-*   Definition.\begin{split} x,y \text{ proximal} & \Leftrightarrow \forall V \in \mathfrak{U}(\Delta) \exists s \in S: (sx, sy) \in V \\\\ & \Leftrightarrow \forall (U_ i)_ {i=1}^m, \bigcup U_ i = X \text{ open} \exists s \in S, i \leq m: sx, sy \in U_ i \end{split}
-     where $\Delta$ is the diagonal in $X\times X$; note that these coverings form a neighborhood basis of $\Delta$ in $X^2$
-*   Theorem
-    *   $ x,y \text{ proximal} \Leftrightarrow \exists p \in \beta S: px = py$.
-*   Example 2 (continued)
-    *   Let $S\leq Q, 1_ Q \in Q$ with $1_ q \cdot s = s \cdot 1_ Q = s \forall s \in S$
-    *   $U: = { z \in X: z(1_ Q) = 1}$. Then $U\subseteq X$ is clopen
-    *   Let $C\subseteq S: x:= \chi_ C$ (characteristic function)
-    *   Then $R(x,U) = C$
-        *   [proof] $s\in R(x,U) \Leftrightarrow s \cdot x \in U \Leftrightarrow s \cdot x (1_ Q) = 1 \Leftrightarrow x(1_ Q s) = 1 \Leftrightarrow x(s) = 1 \Leftrightarrow X \in C$
-    *   ! Therefore: every subset can be a return set
-*   Definition. $x$ unif. recurrent $\Leftrightarrow R(x,U) \text{ syndetic } \forall U \in \mathfrak{U}$
-*   Theorem. $X$ dynamical system on $S$, $y\in X$, $L\subseteq \beta S$ minimal left ideal. TFAE:
-     a. $y$ unif. recurrent;
-     b. $\exists p \in L: p\cdot y = y$
-     c. $\exists \epsilon \in L\cap E(\beta S): \epsilon \cdot y = y$
-     d. $\exists \epsilon \in L \cap E(\beta S), x\in X: \epsilon \cdot x = y$
-     e. $y\in \bigcup_ {M \text{ minimal subsystem}} M$
-     f. $y \in L \cdot y$.
-*   Proof
-    *   c=> a
-        *   $U \in \mathfrak{U}(y), V\subseteq \bar{V} \subseteq U \text{ offen}, A=R(y,V) \in \epsilon $ [$\epsilon y = y$]
-        *   $B = {s: s\cdot \epsilon \in \hat{A}} \subseteq S \text{ syndetic [HS 4.39]} \Rightarrow B \subseteq R(y,U)$ [$s \epsilon \in \hat{A} \Rightarrow s\epsilon y = s y \in \bar{V} \subseteq U$]
+* Definition.
+  $$\begin{split} x,y \text{ proximal} & \Leftrightarrow \forall V \in \mathfrak{U}(\Delta) \exists s \in S: (sx, sy) \in V \\ & \Leftrightarrow \forall (U_ i)_ {i=1}^m, \bigcup U_ i = X \text{ open} \exists s \in S, i \leq m: sx, sy \in U_ i \end{split}$$
+  where $\Delta$ is the diagonal in $X\times X$; note that these coverings form a neighborhood basis of $\Delta$ in $X^2$
+* Theorem
+  * $x,y \text{ proximal} \Leftrightarrow \exists p \in \beta S: px = py$.
+* Example 2 (continued)
+  * Let $S\leq Q, 1_ Q \in Q$ with $1_ q \cdot s = s \cdot 1_ Q = s \forall s \in S$
+  * $U: = { z \in X: z(1_ Q) = 1}$. Then $U\subseteq X$ is clopen
+  * Let $C\subseteq S: x:= \chi_ C$ (characteristic function)
+  * Then $R(x,U) = C$
+  * [proof] $s\in R(x,U) \Leftrightarrow s \cdot x \in U \Leftrightarrow s \cdot x (1_ Q) = 1 \Leftrightarrow x(1_ Q s) = 1 \Leftrightarrow x(s) = 1 \Leftrightarrow X \in C$
+  * ! Therefore: every subset can be a return set
+* Definition. $x$ unif. recurrent $\Leftrightarrow R(x,U) \text{ syndetic } \forall U \in \mathfrak{U}$
+* Theorem. $X$ dynamical system on $S$, $y\in X$, $L\subseteq \beta S$ minimal left ideal. TFAE:
+  a. $y$ unif. recurrent;
+  b. $\exists p \in L: p\cdot y = y$
+  c. $\exists \epsilon \in L\cap E(\beta S): \epsilon \cdot y = y$
+  d. $\exists \epsilon \in L \cap E(\beta S), x\in X: \epsilon \cdot x = y$
+  e. $y\in \bigcup_ {M \text{ minimal subsystem}} M$
+  f. $y \in L \cdot y$.
+* Proof
+  * c=> a
+    * $U \in \mathfrak{U}(y), V\subseteq \bar{V} \subseteq U \text{ offen}, A=R(y,V) \in \epsilon$ [$\epsilon y = y$]
+    * $B = {s: s\cdot \epsilon \in \hat{A}} \subseteq S \text{ syndetic [HS 4.39]} \Rightarrow B \subseteq R(y,U)$ [$s \epsilon \in \hat{A} \Rightarrow s\epsilon y = s y \in \bar{V} \subseteq U$]
 
 ### Notes
 

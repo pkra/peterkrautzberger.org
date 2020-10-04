@@ -28,9 +28,9 @@ latex: true
 ### Transcript
 
 *   Beweis: (a) => (b): $\mathfrak{B} \subseteq q \Rightarrow \mathfrak{D} = \{ D_e : e \in [ \mathfrak{B} ]^{< \omega} \} \subseteq q$
-    *   Nimm $g_e \in [S^{< \omega}]$ mit $\beta S \cdot q \subseteq \bigcup_{x \in g_e} \widehat{ x^{-1} D_e} = \widehat{C_e}$
-    *   [ Verfeinerung von pws: $A$ pws $\in q \in K(\beta S) \Rightarrow \exists e \in [S^{<\omega}]: \beta S \cdot q \subseteq \bigcup x^{-1} A$]
-    *   $\Rightarrow \beta S \cdot q \subseteq \bigcap_{C \in \mathfrak{C}} \widehat{C_e} = Y_e \stackrel{3.3}{\Rightarrow} $ Beh.
+    * Nimm $g_e \in [S^{< \omega}]$ mit $\beta S \cdot q \subseteq \bigcup_{x \in g_e} \widehat{ x^{-1} D_e} = \widehat{C_e}$
+    * [ Verfeinerung von pws: $A$ pws $\in q \in K(\beta S) \Rightarrow \exists e \in [S^{<\omega}]: \beta S \cdot q \subseteq \bigcup x^{-1} A$]
+    * $\Rightarrow \beta S \cdot q \subseteq \bigcap_{C \in \mathfrak{C}} \widehat{C_e} = Y_e \stackrel{3.3}{\Rightarrow}$ Beh.
 *   (b) => (a): seien $g_e, C_e, \mathfrak{C}$ wie in (b).
     *   Nimm $p \in \beta S$ mit $L := \beta S \cdot p \subseteq Y_{\mathfrak{C}}$ oBdA $p\in K(\beta S)$.
     *   $\Rightarrow p\in L$.
@@ -50,8 +50,8 @@ latex: true
 *   (a) => (b):
     *   $\mathfrak{B} \subseteq q \Rightarrow \mathfrak{D} = \{ D_e : e \in [ \mathfrak{B} ]^{< \omega} \} \subseteq q$
     *   Take $g_e \in [S^{< \omega}]$ with $\beta S \cdot q \subseteq \bigcup_{x \in g_e} \widehat{ x^{-1} D_e} = \widehat{C_e}$
-        *   [$A$ pws, $A \in q \in K(\beta S) \Rightarrow \exists e \in [S^{<\omega}]: \beta S \cdot q \subseteq \bigcup_{x\in e} x^{-1} A$]
-    *   $\Rightarrow \beta S \cdot q \subseteq \bigcap_{C \in \mathfrak{C}} \widehat{C_e} = Y_e \stackrel{3.3}{\Rightarrow} $ the claim.
+        *   [$A$ pws, $A \in q \in K(\beta S) \Rightarrow \exists e \in [S^{< \omega}]: \beta S \cdot q \subseteq \bigcup_{x\in e} x^{-1} A$]
+    *   $\Rightarrow \beta S \cdot q \subseteq \bigcap_{C \in \mathfrak{C}} \widehat{C_e} = Y_e \stackrel{3.3}{\Rightarrow}$ the claim.
 *   (b) => (a): let $g_e, C_e, \mathfrak{C}$ as in (b).
     *   Then take $p \in \beta S$ mit $L := \beta S \cdot p \subseteq Y_{\mathfrak{C}}$; without loss $p\in K(\beta S)$.
     *   $\Rightarrow p\in L$.

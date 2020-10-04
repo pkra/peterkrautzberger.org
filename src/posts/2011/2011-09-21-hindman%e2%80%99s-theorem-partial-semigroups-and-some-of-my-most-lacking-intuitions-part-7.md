@@ -39,7 +39,7 @@ I don't think I ever mentioned that "to include an FS-set" (or FP-set) has an es
 
 > Most people will find it important to point out that "IP" does not abbreviate "idempotent" (for idempotent ultrafilters) but was originally meant to abbreviate "infinite parallelepiped" (which makes sense if you think of FS-sets in vector spaces until you realize that this still means "includes an infinite parallelepiped").
 
-So it seems that we could add some general nonsense by saying "partial semigroup" instead of "IP-set/includes and FS-set". Unfortunately, this is not the case. Even though every partial semigroup contains and FS-set, not every set that contains an FS-set has a (compatible) partial semigroup structure.
+So it seems that we could add some general nonsense by saying "partial semigroup" instead of "IP-set/includes an FS-set". Unfortunately, this is not the case. Even though every partial semigroup contains and FS-set, not every set that contains an FS-set has a (compatible) partial semigroup structure.
 
 > Oh dear, I just notice something and I hope I haven't made this mistake too often. I'm talking about FS-sets and $(\mathbb{N},+)$ here. So when I write "partial semigroup" for $A\subseteq \mathbb{N}$, then I mean "partial subsemigroup" in the sense that the usual addition restricted to $A$ forms a partial subsemigroup (as is the case for FS-sets). Oh well, I guess this series is getting too long after all and I'm beginning to loose track of what I've already written. I hope you might just enjoy reading it anyhow.
 
@@ -54,9 +54,10 @@ In my silly demonstration above that partial semigroups contain FS-sets you may 
 What was however crucial is finite intersection property. And that's already all there is to this "new" notion.
 
 > **Weak partial (sub)semigroup** If $(S,\cdot)$ is a semigroup, then $A\subseteq S$ is a _weak partial subsemigroup_, if the restriction of the partial semigroup operation to $A$ is adequate, i.e., the sets of the form
->  $$ \sigma_ A(a) := \{ b\in A : a\cdot b \in A\}$$ generate a filter.
+>  $$ \sigma_ A(a) := \{ b\in A : a\cdot b \in A\}$$
+> generate a filter.
 >
-> > Note: I just made up that $\sigma_ A(a)$ notation to possibly help your understanding by making the connection to $\sigma(a)$.. I will get to a more classical formulation in a second.
+> Note: I just made up that $\sigma_ A(a)$ notation to possibly help your understanding by making the connection to $\sigma(a)$. I will get to a more classical formulation in a second.
 
 In other words, the operation restricted to (a partial operation on) $A$ is, to some extent, a partial semigroup. We might not have the luxury of full associativity: a, b,c, abc, ab might be in such an A, but not bc (this actually happens in real life btw) -- so we cannot compare $a(bc)$ with anything, in particular not with $(ab)c$.
 

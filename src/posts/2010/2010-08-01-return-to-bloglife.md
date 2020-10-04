@@ -43,7 +43,7 @@ Even though the argument I want to mention holds for arbitrary functions, you sh
 
 Now if $p \in \beta \mathbb{N}$ is not a P-point, then there exists a function $f: \omega \rightarrow \omega$ which is not constant or finite-to-one on any set $A \in p$.
 
-So what about $I_g := \\{ n \in \mathbb{N} \ \vert \ g(f(n)) < n \\}$?
+So what about $I_g := \{ n \in \mathbb{N} \ \vert \ g(f(n)) < n \}$?
 
 On this set, $g \circ f$ is dominated by the identity. That’s slow!!! Just imagine $g$ was the [Ackermann function](http://en.wikipedia.org/wiki/Ackermann_function) or faster thatn all recursive functions! Suddenly, its only as fast as the identity? Wow…
 
@@ -56,7 +56,7 @@ That’s right! On a set in $p$, $g\circ f$ slows down like that. That’s crazy
 **Proof**.
 
 *   $f$ is finite-to-one on $\omega \setminus I_g$.
-    *   For $k\in \omega$, $f^{-1}(k) \cap (\omega \setminus I_k) = \\{ i \in \omega \ \vert \ g(k)= g(f(i)) \geq i \\}$
+    *   For $k\in \omega$, $f^{-1}(k) \cap (\omega \setminus I_k) = \{ i \in \omega \ \vert \ g(k)= g(f(i)) \geq i \}$
     *   But this is a finite set for any $k$.
     *   In other words, $f$ is finite-to-one.
 *   Therefore $\omega \setminus I_g \notin p$.

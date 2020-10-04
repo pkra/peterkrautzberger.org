@@ -29,8 +29,8 @@ latex: true
 * WA $\stackrel{p = q + r}{\Longrightarrow}$ (i) $\forall k \in \mathbb{N}, W_ v \in r: \left\vert W_ v \cap W_ v+k\right\vert < \omega$
 * [struck through] (ii) $\forall k \in \mathbb{N}: k \in V \rightarrow 2k \notin V$ ($k$ und $2k$ haben versch. $W_ v$)
 * ---
-* Beweis: $ p = q+r$ beide in $\mathbb{N}^*$, $A\in p$.
-    * => $ \displaystyle A = \bigcup_ {\underset{\in p}{v\in V}} v + \underset{\in r}{W_ v}$ => $\exists v, k: v, v+k \in V$
+* Beweis: $p = q+r$ beide in $\mathbb{N}^*$, $A\in p$.
+    * => $\displaystyle A = \bigcup_ {\underset{\in p}{v\in V}} v + \underset{\in r}{W_ v}$ => $\exists v, k: v, v+k \in V$
         * [ $q \in \mathbb{N}^*$]
     * => $W_ v \cap W_ {v+k} =: W \in r$, also unendlich
     * => $\underbrace{v+W} ,v+k+W \in A$
@@ -48,8 +48,8 @@ latex: true
 * Assume to the contrary. $\stackrel{p = q + r}{\Longrightarrow}$ (i) $\forall k \in \mathbb{N}, W_ v \in r: \left\vert W_ v \cap W_ v+k\right\vert < \omega$
 * [struck through] (uu) $\forall k \in \mathbb{N}: k \in V \rightarrow 2k \notin V$ ($k$ and $2k$ have different. $W_ v$)
 * ---
-* Proof: $ p = q+r$ both in $\mathbb{N}^*$, $A\in p$.
-    * => $ \displaystyle A = \bigcup_ {\underset{\in p}{v\in V}} v + \underset{\in r}{W_ v}$ => $\exists v, k: v, v+k \in V$ [[since]] $q \in \mathbb{N}^*$ [[ $V$ is infinite, thus contains two elements]]
+* Proof: $p = q+r$ both in $\mathbb{N}^*$, $A\in p$.
+    * => $\displaystyle A = \bigcup_ {\underset{\in p}{v\in V}} v + \underset{\in r}{W_ v}$ => $\exists v, k: v, v+k \in V$ [[since]] $q \in \mathbb{N}^*$ [[ $V$ is infinite, thus contains two elements]]
     * => $W_ v \cap W_ {v+k} =: W \in r$, hence infinite
     * => $\underbrace{v+W} ,v+k+W \subseteq A$
         * and $v+k+W \in A+k$ => Claim.
@@ -70,5 +70,5 @@ But that's not what makes this so fascinating for me. What is fascinating is tha
 
 ### Open questions
 
-* If $p\in \mathbb{N}^* $ and $\forall A\in p: \underbrace{ \{ k: A \cap A+k \text{ infinite}\}}_ {\text{infinite}}$, does it follow that $p \in \mathbb{N}^* + \mathbb{N}^* $?
+* If $p\in \mathbb{N}^*$ and $\forall A\in p: \underbrace{ \{ k: A \cap A+k \text{ infinite}\}}_ {\text{infinite}}$, does it follow that $p \in \mathbb{N}^* + \mathbb{N}^*$?
     * Probably no -- there needs to be more additive structure, in a coherent/filter fashion; just infinite seems too weak.

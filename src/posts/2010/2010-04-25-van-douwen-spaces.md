@@ -24,7 +24,7 @@ At the [winterschool](http://www.winterschool.eu) [Alan Dow](http://math.uncc.ed
 
 As formulated [here](http://math.uncc.edu/~adow/vDspace.pdf)
 
-**van Douwen space** A countable $S$ is a _van Douwen space_ if it is crowded (i.e. has no isolated points) and there is a 1-to-1 function from $\mathbb{N}$ to $S$ that extends to a $\leq$2-to-1 function from $\beta \mathbb{N}$ to $\beta S$.
+**van Douwen space** A countable $S$ is a _van Douwen space_ if it is crowded (i.e. has no isolated points) and there is a 1-to-1 function from $\mathbb{N}$ to $S$ that extends to a $\leq 2$-to-1 function from $\beta \mathbb{N}$ to $\beta S$.
 
 What caught my interest was that there is an example that has something to do with [idempotent](http://en.wikipedia.org/wiki/Idempotency) [ultrafilters](http://en.wikipedia.org/wiki/Ultrafilter). Let me introduce something first.
 
@@ -60,13 +60,13 @@ $$ \rho_p: \mathbb{N} \rightarrow \beta \mathbb{N}, n \mapsto n+ p $$
 
  is injective, hence also its continuous extension to $\beta \mathbb{N}$ (which is naturally onto the orbit $\mathbb{N} +p$).
 
-So in fact, it is not just a $\leq$2-to-one function, but an injective function. Strange, isn’t it? Strongly right maximality really only speaks of injectivity at $p$, but this is already enough.
+So in fact, it is not just a $\leq 2$-to-one function, but an injective function. Strange, isn’t it? Strongly right maximality really only speaks of injectivity at $p$, but this is already enough.
 
 #### Proof
 
 The proof needs some basic stuff such as ‘multiplication with fixed right hand side is continuous’. Oh, and you need to know that natural numbers are cancelative…
 
-*   Since $ ( \mathbb{N} , + ) $ is cancelative, the maps $ \lambda_{n} = n + \cdot$ are injective for all $n$.
+*   Since $( \mathbb{N} , + )$ is cancelative, the maps $\lambda_{n} = n + \cdot$ are injective for all $n$.
 *   Since $\lambda_n$ is continuous (on a discrete space), its extension to $\beta \mathbb{N}$ is injective as well.
 *   Then $\rho_p$ is injective on $\mathbb{N}$.
     *   If $n < k \in \mathbb{N}$ had $n+ p = k + p$, then by the above steps $k-n + p = p$.

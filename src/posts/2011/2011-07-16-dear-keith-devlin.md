@@ -25,7 +25,7 @@ I love your work. Really, I do. So please don’t take this rant the wrong way. 
 
 ### \\begin{rant}
 
-Do you know what work of yours I read first? No, it wasn’t your fancy new Fibonacci book. It wasn’t even the Math Gene book even though it really changed my way of thinking about mathematics. It was, in fact, “A weak version of $\diamondsuit$ which follows from $ 2^{\aleph_0} < 2^{\aleph_1} $”.
+Do you know what work of yours I read first? No, it wasn’t your fancy new Fibonacci book. It wasn’t even the Math Gene book even though it really changed my way of thinking about mathematics. It was, in fact, “A weak version of $\diamondsuit$ which follows from $2^{\aleph_0} < 2^{\aleph_1}$”.
 
 I’m guessing you wouldn’t have guessed that. This was the very first research paper I read and my first seminar talk as a Diplomkandidat in Munich (many, many moons ago). It literally changed my life because it marked my final “conversion” to set theory, and – much, much more importantly – indirectly introduced me to my partner. So, when I say I love your work, believe me, I really mean it. (which is probably the reason why I’m ranting so hard…)
 

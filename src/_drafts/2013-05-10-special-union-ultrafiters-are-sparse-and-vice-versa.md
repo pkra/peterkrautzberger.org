@@ -15,7 +15,7 @@ ABout a
 
 $)_{}$ some text $)_{}$
 
-$(y_n)_{n\in \omega} $ enumerate $ (y_n)_{n\in \omega}$
+$(y_n)_{n\in \omega}$ enumerate $(y_n)_{n\in \omega}$
 
 ${ x_i: i \in \bigcup_{n\in \omega} A_n} $
 
@@ -23,8 +23,8 @@ $y_{n},z_{n},j_{n},k_n$
 
 ### Definitions
 
-**From Neil, Dona, Juris** $p \in \beta S$ is a _sparse_ strongly summable ultrafilter on $S$ if and only if for every  
- $A \in p$, there exist $X \subseteq S$ and $Y \subseteq X$ such that $X \setminus Y$ is infinite, $FS(Y ) \in p$, and  
+**From Neil, Dona, Juris** $p \in \beta S$ is a _sparse_ strongly summable ultrafilter on $S$ if and only if for every
+ $A \in p$, there exist $X \subseteq S$ and $Y \subseteq X$ such that $X \setminus Y$ is infinite, $FS(Y ) \in p$, and
  $F S(X) \subseteq A$.
 
 ### From http://arxiv.org/abs/1006.3816
@@ -33,11 +33,13 @@ $p \in \beta \mathbb{N}$ is special iff
 
 there exists $FS(x_n)\in p$ with $x_n > 2 \sum_{i<n} x_i$ such that:
 
-$$ (\forall L\in [\omega]^\omega) (\exists (y_n)_{n\in \omega} )\mbox{ such that} $$
+$$ (\forall L\in [\omega]^\omega) (\exists (y_n)_{n\in \omega} )\text{ such that} $$
 
-$$FS(y_n) \in p, \quad FS(y_n)\subseteq FS(x_n), \quad L \setminus \bigcup_{n\in \omega} xsupp(y_n) \mbox{ is infinite} $$
+$$FS(y_n) \in p, \quad FS(y_n)\subseteq FS(x_n), \quad L \setminus \bigcup_{n\in \omega} xsupp(y_n) \text{ is infinite} $$
 
-Here $$xsupp (y_n) := s \mbox { with }\sum_{i\in s} x_i = y_n$$ (due to the ``growth'' of the $x_n$, this is well-defined).
+Here
+$$xsupp (y_n) := s \text { with }\sum_{i\in s} x_i = y_n$$
+(due to the ``growth'' of the $x_n$, this is well-defined).
 
 We then say that $p$ is special wrt $(x_n)_{n\in\omega}$.
 
@@ -61,9 +63,9 @@ If a strongly summable $p\in \beta \mathbb{N}$ is special, then it is sparse.
 *   wlog $A = FS(x_n)$ (since $p$ is strongly summable) [goal: $X= {x_n: n\in \omega}$ will witness "sparse" -- we will have to thin it out while "staying in $p$"]
 *   wlog, $p$ is special wrt $(x_n)_{n\in\omega}$ (applying the above proposition)
 *   Now let $L = \omega$.
-*   Applying specialness, we find $(z_n)$ with  
-     $$ FS(z_n) \in p, FS(z_n)\subseteq FS(x_n), L \setminus \bigcup_{n\in \omega} xsupp(z_n) \mbox{ is infinite} $$
-*   Let $(y_n : n\in \omega)$ enumerate ${ x_i: i \in \bigcup_{n\in \omega} xsupp(z_n)} $.
+*   Applying specialness, we find $(z_n)$ with
+  $$ FS(z_n) \in p, FS(z_n)\subseteq FS(x_n), L \setminus \bigcup_{n\in \omega} xsupp(z_n) \text{ is infinite} $$
+*   Let $(y_n : n\in \omega)$ enumerate ${ x_i: i \in \bigcup_{n\in \omega} xsupp(z_n)}$.
 *   Then we can check ``sparse'':
 *   $FS(x_n) \subseteq A$ by choice.
 *   ${ y_n: n\in \omega} \subseteq {x_n : n\in \omega}$ by choice.

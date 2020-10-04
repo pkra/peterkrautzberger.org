@@ -16,7 +16,7 @@ tags:
 - mathml
 published: true
 permalink: 0129/
-mathml: true
+tex: true
 ---
 
 At the Joint Mathematics Meetings [Present and Future of Mathematics on the Web](http://jointmathematicsmeetings.org/meetings/national/jmm2013/2141_program_ss62.html) session, Lila Roberts presented an excellent demo of the good stuff you can do with iBooks author. The demo included MathJax and jsxgraph, and combined both with iBooks Author's easy, pretty layout tools. Of course, the drawback is that iBooks Author is
@@ -252,7 +252,8 @@ Anyway, let's daringly assume you have an epub3 with your xhtml+mathml content.
      <item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/Main.js" id="id193" media-type="application/x-javascript"/>
      ```
 *   To each xhtml file that contains MathML, add
-     `<script type="text/x-mathjax-config">
+     ```
+     <script type="text/x-mathjax-config">
      MathJax.Hub.Config({
      jax: ["input/TeX","input/MathML","output/SVG"],
      extensions: ["tex2jax.js","mml2jax.js","MathEvents.js"],
@@ -268,12 +269,13 @@ Anyway, let's daringly assume you have an epub3 with your xhtml+mathml content.
      messageStyle: "none"
      });
      </script>
-     <script type="text/javascript" src="../mathjax/MathJax.js"> </script>`
-*   I have not activated automatic linebreaking because there's currently [a bug](http://github.com/mathjax/mathjax/issues/368) in MathJax on iOS6\. If MathJax detects the need to break the line, you'll get Math Processing errors instead.
+     <script type="text/javascript" src="../mathjax/MathJax.js"> </script>
+     ```
+*   I have not activated automatic linebreaking because there's currently [a bug](http://github.com/mathjax/mathjax/issues/368) in MathJax on iOS6. If MathJax detects the need to break the line, you'll get Math Processing errors instead.
 *   For each xhtml file with the above we'll have to modify the `properties`-part in the manifest to have both `mathml scripted`, e.g., in the sample file you'll see
     *   `<item id="c3" media-type="application/xhtml+xml" href="xhtml/ch1.html" properties="mathml scripted"/>`
 *   And then you can include wonderful MathML and even webkit deficiencies or the horrible iOS5 Safari+STIX bug will be meaningless to your epub file and you can actually publish a mathematical epub file to be read on iBooks.
-     <math><mrow><mover><mi>x</mi><mo>^</mo> </mover><mo>+</mo> <mover><mrow><mi>x</mi> <mo>⁢</mo> <mi>y</mi> </mrow><mo>^</mo> </mover><mo>+</mo> <mover><mrow><mi>x</mi> <mo>⁢</mo> <mi>y</mi> <mo>⁢</mo> <mi>z</mi> </mrow><mo>^</mo> </mover><mo>.</mo></mrow></math>
+  $\widehat{x}+\widehat{xy} + \widehat{xyz}$
 
 * * *
 

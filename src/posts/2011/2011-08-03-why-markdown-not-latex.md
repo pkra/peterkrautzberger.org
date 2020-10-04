@@ -17,7 +17,7 @@ permalink: 0070/
 latex: true
 ---
 
-Coming from $\rm\LaTeX$ and its text-editor driven writing style, working with wordpress can seem a step back -- after all, most people, if they get excited about $TeX$, very much despise the wysiwyg approach to writing.
+Coming from $\rm\LaTeX$ and its text-editor driven writing style, working with wordpress can seem a step back -- after all, most people, if they get excited about $\rm\TeX$, very much despise the wysiwyg approach to writing.
 
 ### Its greatest strength, its greatest weakness
 

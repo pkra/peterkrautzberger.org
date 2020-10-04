@@ -80,9 +80,10 @@ We're done. Right? RIGHT? Just kidding, we'll prove it, too.
 
 Let's check first that this makes sense.
 
-*   $e + A^\star + e $ can actually generate a group since $e$ is a minimal idempotent, so $e+ A^\star +e \subseteq e + \beta \mathbb{N} + e$, the maximal group of $e$. This is the only (but critical) point where we use minimality.
+*   $e + A^\star + e$ can actually generate a group since $e$ is a minimal idempotent, so $e+ A^\star +e \subseteq e + \beta \mathbb{N} + e$, the maximal group of $e$. This is the only (but critical) point where we use minimality.
 
-Next, we need to connect to one of the most important structures in this field $$\mathbb{H} := \{ p \in \beta \mathbb{N} : (\forall n) 2^n\mathbb{N} \in p\}.$$
+Next, we need to connect to one of the most important structures in this field
+$$\mathbb{H} := \{ p \in \beta \mathbb{N} : (\forall n) 2^n\mathbb{N} \in p\}.$$
 
 *   $e+A^\star + e \subseteq \mathbb{H}$ -- this is clear since $\mathbb{H}$ is a semigroup (a standard result), all idempotent ultrafilters lie in $\mathbb{H}$ (another standard result) and $A^\star \subseteq \mathbb{H}$ (ok, at least that is easy to check, $2^n \in A \cap 2^n\mathbb{N}$ after all).
 
@@ -98,11 +99,13 @@ Here we run into the usual notational difficulty of free groups -- writing diffe
 
 Ok, let's take a step back. What do we want to do? Map $e+q_i+e$ to $Q_i$ by a map on $\beta \mathbb{N}$. Again, $\mathbb{H}$ comes to the rescue!
 
-It is often useful to consider $\mathbb{N}$ as an FS-set, namely $FS(2^n)$. This is closely connected to $$\mathbb{H} = \{ p: (\forall n) 2^n \mathbb{N} \in p\} = \{ p: (\forall n) FS_{k>n}(2^k) \in p\}.$$
+It is often useful to consider $\mathbb{N}$ as an FS-set, namely $FS(2^n)$. This is closely connected to
+$$\mathbb{H} = \{ p: (\forall n) 2^n \mathbb{N} \in p\} = \{ p: (\forall n) FS_{k>n}(2^k) \in p\}.$$
 
 If we think of $\mathbb{N}$ as $FS(2^n)$, then it becomes clear how we should start -- especially, if we (standard fact, yet again) are aware of the partial semigroup operation on FS-sets "sums with disjoint support". Anyway, without further ado:
 
-*   Pick pairwise disjoint $A_i \in q_i$ partitioning $A$, i.e., $$ \dot \bigcup_{i < n} A_i = A.$$
+*   Pick pairwise disjoint $A_i \in q_i$ partitioning $A$, i.e.,
+$$ \dot \bigcup_{i < n} A_i = A.$$
 *   Then define a map as follows.
 *   Map $2^n$ to $Q_i$ if and only if $2^n \in A_i$ -- this is well defined.
 *   Extend this map to $FS(2^n)$ by mapping $\sum_ {i\in s} 2^i$ to $\prod_ {i\in s} Q_i$ -- as product in the natural order.

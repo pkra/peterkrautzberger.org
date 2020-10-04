@@ -26,8 +26,8 @@ Already at the [end of the first part](/0042/), I needed to refer to the notions
 *   A family of subsets of $S$ is a **filter** if it does not contain $\emptyset$, is closed under taking finite intersections and supersets.
 *   A family of subsets of $S$ has the **(strong or infinite) finite intersection property or (i)<span class="caps">FIP</span>** if the intersection of any finite subfamily is non-empty (infinite).
 *   A family with (i)<span class="caps">FIP</span> generates a (free) filter by closing it under finite intersections and supersets.
-*   A filter $F$ is an ultrafilter iff it is a **maximal** filter (with respect to inclusion) iff it is **prime** $(A\cup B \in F \leftrightarrow A \in F \mbox{or} B\in F)$ iff $(\forall A\subseteq S) A\in F \mbox{or} S\setminus A \in F$.
-*   We identify $s\in S$ with the principal ultrafilter $\\{ A\subseteq S : s\in A\\}$.
+*   A filter $F$ is an ultrafilter iff it is a **maximal** filter (with respect to inclusion) iff it is **prime** $(A\cup B \in F \leftrightarrow A \in F \text{or} B\in F)$ iff $(\forall A\subseteq S) A\in F \text{or} S\setminus A \in F$.
+*   We identify $s\in S$ with the principal ultrafilter $\{ A\subseteq S : s\in A\}$.
 
 Filters can be considered as 0-1-valued, finitely-additive measures (or rather the measure 1 sets of such a measure) in which case ultrafilters are complete measures which is an idea I might use in “prose” every once in a while. You can also consider them as a form of universal quantifiers which gives another intuition. A useful shorthand will be “almost all (with respect to some ultrafilter $p$)” or “$p$-many” or “$p$-large” etc. instead of, say, “there exists a set in the filter such that for every element in that set…”.
 
@@ -41,14 +41,14 @@ We’ll get back to this later. One final note, $F,G,H$ are usually denoting fil
 *   The union of any chain of filters is a filter.
 *   Apply Zorn’s Lemma to find a maximal element.
 
-[This theorem](https://secure.wikimedia.org/wikipedia/en/wiki/Boolean_ prime_ ideal_ theorem) is weaker than the axiom of choice, but very strong already in itself (looking up that link I just learned that Tarski himself proved the existence of non-principal ultrafilters in 1930; wikipedia. awesome.). Of course, the real power lies in the three characterizations of ultrafilters in the cheat sheet, so let’s prove the difficult one
+[This theorem](https://secure.wikimedia.org/wikipedia/en/wiki/Boolean_prime_ideal_theorem) is weaker than the axiom of choice, but very strong already in itself (looking up that link I just learned that Tarski himself proved the existence of non-principal ultrafilters in 1930; wikipedia. awesome.). Of course, the real power lies in the three characterizations of ultrafilters in the cheat sheet, so let’s prove the difficult one
 
-A filter $F$ is maximal iff $F$ is prime, i.e., $(\forall A\subseteq S) A\in F \mbox{ or } S\setminus A \in F$
+A filter $F$ is maximal iff $F$ is prime, i.e., $(\forall A\subseteq S) A\in F \text{ or } S\setminus A \in F$
  **Proof**.
 
 *   If $F$ is maximal, $A\subseteq S$, then either $A \in F$ or $S\setminus A \in F$.
     *   If there exists $B\in F$ such that $A \cap B = \emptyset$, then $B \subseteq S\setminus A$, so $S\setminus A \in F$ and we’re done.
-    *   Otherwise every $B\in F$ has $A \cap B \neq \emptyset$ in which case $F\cup \\{A\\}$ has the <span class="caps">FIP</span>, hence generates a filter.
+    *   Otherwise every $B\in F$ has $A \cap B \neq \emptyset$ in which case $F\cup \{A\}$ has the <span class="caps">FIP</span>, hence generates a filter.
     *   But $F$ was maximal, so the generated filter cannot gain new elements.
     *   In other words, $A\in F$.
 *   If $F$ is prime, then $F$ is maximal.
@@ -59,15 +59,16 @@ A filter $F$ is maximal iff $F$ is prime, i.e., $(\forall A\subseteq S) A\in F \
 
 ## The Stone–Čech compactification (apologies for missing haceks)
 
-The set of ultrafilters is often denoted by $\beta S$ and it turns out to be the [Stone–Čech compactification](https://secure.wikimedia.org/wikipedia/en/wiki/Stone%E2%80%93%C4%8Cech_ compactification), i.e., the maximal compactification of $S$, because $S$ is discrete. There’s a gazillion things to be said about $\beta S$. To get started, we should celebrate the most practical and in fact characterizing property of the Stone–Čech compactification.
+The set of ultrafilters is often denoted by $\beta S$ and it turns out to be the [Stone–Čech compactification](https://secure.wikimedia.org/wikipedia/en/wiki/Stone%E2%80%93%C4%8Cech_compactification), i.e., the maximal compactification of $S$, because $S$ is discrete. There’s a gazillion things to be said about $\beta S$. To get started, we should celebrate the most practical and in fact characterizing property of the Stone–Čech compactification.
 
 **Universal Property of $\beta S$** If $X$ is compact and Hausdorff, $f: S \rightarrow X$ continuous (in our case, any map is), then there exists a unique continuous map $\beta f: \beta S \rightarrow X$ that extends $f$. We usually identify $\beta f$ with $f$ for convenience.
 
 The easiest way to do this in our setting, is to [take the limit along ultrafilters](http://www.tricki.org/article/How_to_use_ultrafilters). But for now we don’t need to.
 
-**An interlude about extensions** If $f: S \rightarrow S$, then we can describe the image quite nicely, namely \\[ f(p) = \\{ B : (\exists A \in p) f[A] \subseteq B \\}. \\]
+**An interlude about extensions** If $f: S \rightarrow S$, then we can describe the image quite nicely, namely
+$$f(p) = \{ B : (\exists A \in p) f[A] \subseteq B \}.$$
 
-Often this definition is given by $ f(p)= \\{ B: f^{-1}[B] \in p\\}$ but I think this is a perfect example of the stupid tendency of mathematicians to write a definition as efficiently as possible even though the compression does more harm than good — as a student it always confused the hell out of me and I mixed it up with preimage filters (which are more difficult to define unless $f$ is surjective). To remember: $f(p)$ is the unique ultrafilter generated by the family $ (f[A])_ {A\in p}$, the filter generated by the images. Yes, it’s longer to write down, it’s not as self-contained a definition, but really: it does make more sense that way, no? And who’d think the self-contained definition in itself helps anyone understand anything anyway…
+Often this definition is given by $f(p)= \{ B: f^{-1}[B] \in p\}$ but I think this is a perfect example of the stupid tendency of mathematicians to write a definition as efficiently as possible even though the compression does more harm than good — as a student it always confused the hell out of me and I mixed it up with preimage filters (which are more difficult to define unless $f$ is surjective). To remember: $f(p)$ is the unique ultrafilter generated by the family $(f[A])_ {A\in p}$, the filter generated by the images. Yes, it’s longer to write down, it’s not as self-contained a definition, but really: it does make more sense that way, no? And who’d think the self-contained definition in itself helps anyone understand anything anyway…
 
 ## Extending the semigroup operation
 
@@ -87,17 +88,19 @@ Of course, this gives us no tangible clue as to what such a product of ultrafilt
 
 ### **The brute force definition**
 
-There’s thankfully a way to give the same definition by brute force (which is my favourite way to write it down), but let’s think about it naively. We have two ultrafilters $p,q$ and we have our operation $\cdot$. So why not just take $A \in p$ and $B\in q$ and look at all possible products $A \cdot B$? Collect all these $\\{ A \cdot B: A \in p, B \in q\\}$ and we get a nice little filter. Are we done? Well, the problem is that this will pretty much never give you an ultrafilter (if it does you either have a very simple operation or (say in $\mathbb{N}$) very, very special ultrafilters).
+There’s thankfully a way to give the same definition by brute force (which is my favourite way to write it down), but let’s think about it naively. We have two ultrafilters $p,q$ and we have our operation $\cdot$. So why not just take $A \in p$ and $B\in q$ and look at all possible products $A \cdot B$? Collect all these $\{ A \cdot B: A \in p, B \in q\}$ and we get a nice little filter. Are we done? Well, the problem is that this will pretty much never give you an ultrafilter (if it does you either have a very simple operation or (say in $\mathbb{N}$) very, very special ultrafilters).
 
 So what do we need to do? We need to complicate things (and if you try to write down to check where the above attempt of a definition fails, this complication comes naturally). Later I’ll introduce some notation to make nicer general nonsense, but let’s take a look first.
 
-**Extending multiplication to $\beta S$** For a semigroup $(S, \cdot) $ and $p,q \in \beta S$ we define the product $p \cdot q$ by \\[ A \in p\cdot q \Leftrightarrow (\exists V\in p)(\exists {(W_ v)}_ {v\in V} \mbox{ in } q) \bigcup_ {v\in V} v \cdot W_ v \subseteq A. \\]
+**Extending multiplication to $\beta S$** For a semigroup $(S, \cdot)$ and $p,q \in \beta S$ we define the product $p \cdot q$ by
+$$A \in p\cdot q \Leftrightarrow (\exists V\in p)(\exists {(W_ v)}_ {v\in V} \text{ in } q) \bigcup_ {v\in V} v \cdot W_ v \subseteq A. $$
 
 Ok, quite a beast. Don’t despair! Remember what we tried first: sets of the form $V \cdot W = \bigcup_ {v\in V} v \cdot W$. What the above definition tells us is that we need to allow the $W$ to be more flexible — possibly different for each $v$!
 
 There is a different angle to look at this: the tensor (or Fubini) product of ultrafilters.
 
-**Tensor product of ultrafilters** For $p,q \in \beta S$ define $p \otimes q \in \beta (S \times S)$ by \\[ A\in p\otimes q \Leftrightarrow \\{ s: \\{ t : (s,t) \in A \\} \in p \\} \in q \\]
+**Tensor product of ultrafilters** For $p,q \in \beta S$ define $p \otimes q \in \beta (S \times S)$ by
+$$ A\in p\otimes q \Leftrightarrow \{ s: \\ t : (s,t) \in A \} \in p \} \in q $$
 
 Not much better, eh? Let’s take a look though: the tensor product is contains sets $A$ such that the first projection of $A$ lies in $p$ and additionally almost all fibers (in the sense of $p$) of the first projection lie in $q$. So you might say that the sets are $p$-large horizontally and $q$-large vertically.
 
@@ -105,8 +108,8 @@ What has this to do with the product we defined before? Well, the tensor product
 
 Still not happy? Yeah, I know that feeling… Ok, let me offer my favourite general nonsense notation.
 
-*   For $s \in S, A\subseteq S$ define $s^{-1}A := \\{ t \in S: st \in A\\}$ (note: don’t have to be able to invert to define this…)
-*   For $A\subseteq S, q \in \beta S$ define $A^{-q} := \\{ s \in S: s^{-1}A \in q \\}$
+*   For $s \in S, A\subseteq S$ define $s^{-1}A := \{ t \in S: st \in A\}$ (note: don’t have to be able to invert to define this…)
+*   For $A\subseteq S, q \in \beta S$ define $A^{-q} := \{ s \in S: s^{-1}A \in q \}$
 *   Then $A \in p \cdot q$ if and only if $A^{-q} \in p$.
 
 Alright, much shorter now. But does it help? I don’t know. I certainly don’t claim to “really” understand this operation (but there’s a certain limit since, well, it’s on ultrafilters after all…). My notation for the set $A^{-q}$ is not standard (but there’s no notation, so I made it up for my thesis). This set consists of those elements that (inverse-)shift $A$ to make it an element of $q$. If $p$ contains it, we can expect elements in $p$ to contain elements that shift elements of $q$ into $A$ — which is maybe an idea.

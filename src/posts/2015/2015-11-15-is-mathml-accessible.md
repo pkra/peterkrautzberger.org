@@ -3,7 +3,7 @@ layout: post
 title:  Is MathML accessible?
 date: 2015-11-15
 permalink: 0185/
-mathml: true
+tex: true
 ---
 
 Last week I attended an excellent [conference on accessibility in higher education](http://www.studentenwerke.de/de/content/ibs-fachtagung). It was great to get a some insight into where things stand with the German higher-ed community. It also reminded me of something that keeps bugging me this year.
@@ -26,28 +26,11 @@ On the one hand, there's the fundamental problem of context (e.g., to tell wheth
 
 So you might think that's not so bad after all. However, that's only half true. Besides the obvious problem of virtually everything missing in terms of notation, Presentation MathML is somewhat lacking in genuinely neutral layout features. So as an author, you'll have to use those semantic-but-really-layout elements. This way you end up finding suggestions in [the spec itself](http://www.w3.org/Math/draft-spec/mathml.html#chapter3_id.3.3.2.2) to use `mfrac` with `linethickness="0"` to represent a binomial coefficient.
 
-<math display="block">
-  <mo>(</mo>
-  <mfrac linethickness="0">
-    <mi>n</mi>
-    <mi>k</mi>
-  </mfrac>
-  <mo>)</mo>
-</math>
+$$n\choose k$$
 
 Which is visually rather similar to doing a construction using an `mtable` (which might in turn be used to convey a vector/matrix).
 
-<math display="block">
-  <mrow>
-      <mo>(</mo>
-        <mtable>
-          <mtr><mtd><mi>n</mi></mtd></mtr>
-          <mtr><mtd><mi>k</mi></mtd></mtr>
-        </mtable>
-      <mo>)</mo>
-  </mrow>
-</math>
-
+$$\left(\begin{matrix}n \\ k\end{matrix}\right)$$
 
 And then you could also hack something together using `mstack` which might sound like a fundamental math layout element (a vertical stack) but unfortunately is designed only for written addition, multiplication, and division.
 

@@ -21,8 +21,8 @@ permalink: 0172/
 
 <iframe width="625" height="382" src="https://www.youtube.com/embed/Wk2cd_x9Ta8" frameborder="0" allowfullscreen></iframe>
 
-> Darth Vader/Stewie: Oh, come on, Luke, come join the Dark Side! It's really cool!  
->  Luke/Chris: Well I don't know. Whose on it?  
+> Darth Vader/Stewie: Oh, come on, Luke, come join the Dark Side! It's really cool!
+>  Luke/Chris: Well I don't know. Whose on it?
 >  Darth Vader/Stewie: Well um... there's me, the Emperor, this guy Scott. You'll like him, he's awesome...
 
 * * *
@@ -47,7 +47,7 @@ I doubt it because there's no problem to solve here. Where Knuth (and Lamport) s
 
 ### Waste of resources
 
-> "The best minds of my generation are thinking about how to write TeX packages."  
+> "The best minds of my generation are thinking about how to write TeX packages."
 >  -- not Jeff Hammerbacher.
 
 Another part of my awkwardness towards TeX/LaTeX these days lies in the resources the community invests in it. It feels like every day, my filter bubble gives me a new post about somebody teaching their students LaTeX. These make me wonder. How many students will need LaTeX after leaving academia? How many would benefit from learning how to author for the web?
@@ -71,6 +71,7 @@ On the other hand, publishers demonstrate every day that you can create beautifu
 The web is typographically different. On the one hand, much of its standards (let alone browser implementations) is not on the level of established print practices. On the other hand, its typographic needs are very different from print for many reasons (reflow, reading on screens etc). And even though some of print's advantages will eventually be integrated, I suspect we will develop a different form of communication for STEM content on the web than we have in print because we have a much more powerful platform.
 
 Ultimately, PDFs have stopped looking professional to me. Instead, [Felix's recent slides](http://blog.felixbreuer.net/2014/11/20/geometry-of-restricted-partitions-talk-slides-threejs.html), [Mike Bostock's "Visualizing Algorithms"](http://bost.ocks.org/mike/algorithms/), and [Bret Victor's Tangle](http://worrydream.com/Tangle/) are examples where you'll see my face light up, thinking about how we can build authoring tools to turn these experiments into tools for the average user.
+
 ---
 
 _Comments_

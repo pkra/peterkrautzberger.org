@@ -21,7 +21,7 @@ One problem that I could find an explanation for is the [<span class="caps">SVG<
 
 Speaking of manuals. I finally stumbled upon this [part of the tex4ht manual](http://tug.org/applications/tex4ht/mml.html#mml-prob) where some of the common problems and restrictions of tex4ht are described. This helped a lot with a couple of small errors like the missing \bigcap in the [Matrices vs Idempotents](/0004/) post. Most importantly, I now know where to look these things up, so maybe there’s hope for me after all.
 
-To make up for this and as a generally easy part of the workflow I added the first <span class="caps">PDF</span> via the very nice [issuu](http://issuu.com/) . This is really no extra effort since issuu offers the code for embedding in blogspot — and I really like the viewer (as opposed to scribd).
+To make up for this and as a generally easy part of the workflow I added the first <span class="caps">PDF</span> via the very nice [issuu](http://issuu.com/). This is really no extra effort since issuu offers the code for embedding in blogspot — and I really like the viewer (as opposed to scribd).
 
 For the future I like the idea to include audio and video as well, especially after the accessibility discussion on What’s new. It seems simple enough these days to upload some flash based or html5 based audio and video based on a post and I hope to find time to experiment with such media. Up until now I used SciVee a bit for a seminar. But since they went commercial a while ago I have to see if scivee’s plans are reasonable given the competition — they seem to focus more on large entities like universities and buying bulk accounts (open access like).
 

@@ -76,7 +76,7 @@ latex: true
         * $\epsilon$ is uniformly recurrent, $B = R(\epsilon, \widehat{ y^{-1}}A)$ syndetic
         * $D: y \cdot B$ (syndetic! (by the above remark.)) undand
         * $\forall d\in D: d^{-1}A \in \epsilon$ (hence central)
-          * \[proof]: $d = y\cdot b$ for some $b \in B$, $b\epsilon \in y^{-1}A$, $y b \epsilon \in \widehat{A}, d\epsilon \in \widehat{A}, d^{-1}A \in \epsilon$
+          * [proof]: $d = y\cdot b$ for some $b \in B$, $b\epsilon \in y^{-1}A$, $y b \epsilon \in \widehat{A}, d\epsilon \in \widehat{A}, d^{-1}A \in \epsilon$
 
 ### Notes
 

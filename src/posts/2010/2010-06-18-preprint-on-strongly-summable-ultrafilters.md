@@ -74,7 +74,7 @@ I gave a simplified version of the main theorem [here](/0025/). For this conside
 
 **Theorem** If $u$ is a union ultrafilter, then $f(u)$ has the trivial sums property.
 
-In fact, the theorem in the preprint does a bit more. You see, such an $f(u)$ contains $ FS ( \mathbf{x} ) $ for a sequence $\mathbf{x}$ with **disjoint binary support** — simply because that’s what happens to pairwise disjoint sets under $f$.
+In fact, the theorem in the preprint does a bit more. You see, such an $f(u)$ contains $FS ( \mathbf{x} )$ for a sequence $\mathbf{x}$ with **disjoint binary support** — simply because that’s what happens to pairwise disjoint sets under $f$.
 
 Now if you take any other divisible sequence $\mathbf{a}$, i.e., with $a_n \vert a_{n+1}$ for all $n$ (and assume for convenience that $a_0 = 1$), then just as in the binary situation, we have a unique representation for every natural number by means of $\mathbf{a}$.
 
@@ -88,7 +88,7 @@ Then we can formulate the full theorem from the preprint.
 
 To see that it is a little bit more general, you need to know another concept, _additive isomorphism_. To keep it short, let’s just state it for strongly summable ultrafilters.
 
-Two strongly summable ultrafilters $p_0, p_1$ are **additively isomorphic** if there are $ {FS(} \mathbf{x} ) \in p_ 0$, $ {FS(} \mathbf{y} ) \in p_ 1$, such that the map $ \sum_ {i\in s} x_ i \mapsto \sum_ {i \in s} y_ i$ is well defined and maps $p_0$ to $p_1$ (so in particular, $p_ 0 \cong p_ 1$ in the usual sense).
+Two strongly summable ultrafilters $p_0, p_1$ are **additively isomorphic** if there are ${FS(} \mathbf{x} ) \in p_ 0$, ${FS(} \mathbf{y} ) \in p_ 1$, such that the map $\sum_ {i\in s} x_ i \mapsto \sum_ {i \in s} y_ i$ is well defined and maps $p_0$ to $p_1$ (so in particular, $p_ 0 \cong p_ 1$ in the usual sense).
 
 In [their original paper](http://nhindman.us/research/primes.pdf) [[doi](http://doi.org/10.1007/BF02573639)], Neil Hindman and Dona Strauss give a beautiful example of a strongly summable ultrafilter that does not concentrate on FS-sets from divisible sequences (this is done using unordered union ultrafilters) — and no additively isomorphic copy does. However, every strongly summable is additively isomorphic to one as in the result from the preprint. Hence the result is a little bit stronger.
 

@@ -76,7 +76,7 @@ Addendum Dec22: [John Baez](https://plus.google.com/u/0/103404025783539237119/po
 >
 > On the other hand, the professional societies should start taking the activity of mathematicians on the web seriously. They could support and invest in new ways of doing research online and, above all, investigate the development of standards for evaluating such activities.
 >
-> ===  
+> ===
 >  I thank John Baez for encouraging me to make this comment.
 
 ---
@@ -84,7 +84,7 @@ Addendum Dec22: [John Baez](https://plus.google.com/u/0/103404025783539237119/po
 _Comments_.
 
 * **Igor Carron**, 2011/12/12
-  <blockquote>“…. it’s too easy to game one system…”</blockquote>
+  > “…. it’s too easy to game one system…”
   the question is really what kind of point system can be put in place in order to avoid most gaming.
   * **sam**, 2011/12/12
     I agree with Peter: it is probably a theorem that any point system can be gamed. Even in sports, where betting is a big motivation to be fair, there are still a lot of problems. Think about the BCS.

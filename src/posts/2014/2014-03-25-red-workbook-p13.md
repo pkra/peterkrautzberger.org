@@ -56,7 +56,7 @@ latex: true
     *   =>: $\beta S \cdot q \subseteq Y_ {\mathfrak{B}} = Y_ \mathfrak{D} \subseteq \widehat{D}$ fuer all $D\in \mathfrak{D}$
     *   <=: Fuer $e\in [\mathfrak{B}]^{<\omega}$ nimm $q_ e \in \beta S, \beta S \cdot q_ e \subseteq \widehat{D_ e}$
         *   OBdA, $q\in K(\beta S)$, ($q_e \in \beta S \cdot q_e \in \widehat{D_e}$ gilt ✓)
-        *   Setze $ X_e := \{ q_f : e \subseteq f \in [ \mathfrak{B} ]^{< \omega} \} \subseteq \beta S$.
+        *   Setze $X_e := \{ q_f : e \subseteq f \in [ \mathfrak{B} ]^{< \omega} \} \subseteq \beta S$.
 
 #### Second page
 
@@ -96,7 +96,7 @@ latex: true
     *   <=: For $e\in [\mathfrak{B}]^{<\omega}$ take $q_e \in \beta S, \beta S \cdot q_e \subseteq \widehat{D_ e}$
         *   Without loss $q\in K(\beta S)$,
             *   (since $q_ e \in \beta S \cdot q_ e \in \widehat{D_ e}$ holds ✓)
-        *   Let $ X_ e := \{ q_ f : e \subseteq f \in [ \mathfrak{B} ]^{< \omega} \} \subseteq \beta S$.
+        *   Let $X_ e := \{ q_ f : e \subseteq f \in [ \mathfrak{B} ]^{< \omega} \} \subseteq \beta S$.
 
 #### Second page
 

@@ -17,7 +17,7 @@ latex: true
 
 Note: as you can see I am not yet in control of how to convert LaTeX to mathml — bear with me, but I thought I should kick myself and start posting…
 
-The other day I was looking for someone to chat about an interesting example of ﬁnite [semigroups](http://en.wikipedia.org/wiki/Semigroup) . So <del>yesterday</del> last week I finally met up with a friend who offered to do just that. The ‘results’ of the morning we spent chatting are perfect blogging material: quite simple, mostly elementary, easily open for discussion and still carry some interest. However, it is much too long, so I’ll split it into a series of posts.
+The other day I was looking for someone to chat about an interesting example of ﬁnite [semigroups](http://en.wikipedia.org/wiki/Semigroup). So <del>yesterday</del> last week I finally met up with a friend who offered to do just that. The ‘results’ of the morning we spent chatting are perfect blogging material: quite simple, mostly elementary, easily open for discussion and still carry some interest. However, it is much too long, so I’ll split it into a series of posts.
 
 So to start: what’s the example?
 

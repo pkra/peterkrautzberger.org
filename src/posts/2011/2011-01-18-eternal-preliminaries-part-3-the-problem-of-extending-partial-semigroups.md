@@ -28,11 +28,12 @@ Ok, that’s a bit weird. The way I wrote it there is no reason to believe that 
 
 First to note is: watch out! Maybe I’m trying to trick you with the definition, hiding behind the weirdness. As I wrote in the last post, the $A^{-q}$-notation is a “general nonsense” notation (even worse, I came up with it myself…), a simplified notation that hides complicated structures (though, hopefully, to a later advantage). So we better check it in detail.
 
-* First, for semigroups we had defined $A^{-q} = \\{ s \in S: s^{-1}A \in q\\}$ — this still seems to work fine, we’re just checking if some set is in $q$.
-* But what kind of set are we checking? Going into detail, we find $s^{-1}A = \\{ t \in S: s \cdot t \in A\\}$ — and this not clear at all! Remember, $s\cdot t$ might not be defined. What do we do then? Do we want to include or exclude those incompatible $t$?
+* First, for semigroups we had defined $A^{-q} = \{ s \in S: s^{-1}A \in q\}$ — this still seems to work fine, we’re just checking if some set is in $q$.
+* But what kind of set are we checking? Going into detail, we find $s^{-1}A = \{ t \in S: s \cdot t \in A\}$ — and this not clear at all! Remember, $s\cdot t$ might not be defined. What do we do then? Do we want to include or exclude those incompatible $t$?
 
-But, assuming you’re a forgiving reader, I think it still makes sense: just make $s\cdot t$ to mean “$s \cdot t$ and it is defined”. In other words, the original definition should really read \\[ s^{-1}A := \\{ t\in \sigma(s) : s \cdot t \in A\\}. \\]
- This is fine from the point of view of a full semigroup (since always $\sigma(s) =S$) and it really captures what we want to capture: those $t$ that $s$ maps to $A$. Of course, the convention that $s\cdot t$ entails $t\in \sigma(s)$ is really standard ever since the paper by Bergelson, Blass and Hindman. So I’m luckily in good company. To finish the introduction, we get the same phenomenon as we did before.
+But, assuming you’re a forgiving reader, I think it still makes sense: just make $s\cdot t$ to mean “$s \cdot t$ and it is defined”. In other words, the original definition should really read
+$$s^{-1}A := \{ t\in \sigma(s) : s \cdot t \in A\}.$$
+This is fine from the point of view of a full semigroup (since always $\sigma(s) =S$) and it really captures what we want to capture: those $t$ that $s$ maps to $A$. Of course, the convention that $s\cdot t$ entails $t\in \sigma(s)$ is really standard ever since the paper by Bergelson, Blass and Hindman. So I’m luckily in good company. To finish the introduction, we get the same phenomenon as we did before.
 
 $A \in p\cdot q$ if and only if there exists $V \in p, {( {W_ v} )}_ {v \in V} \in q$ such that $\bigcup_ {v\in V} v \cdot W_ v \subseteq A$.
 
@@ -56,16 +57,16 @@ Kaboom! This is extremely nice. Even though our operation is partial, we get a r
 
 As the heading says, the nicest thing about this extension is that it yields a partial semigroup. This is positively surprising because strong associativity seems difficult to conserve. The key observation is the following.
 
-**Proposition** For $p,q \in \beta S$, the product $p \cdot q$ is defined if and only if $ \\{ s\in S: \sigma(s) \in q \\} \in p$.
+**Proposition** For $p,q \in \beta S$, the product $p \cdot q$ is defined if and only if $\{ s\in S: \sigma(s) \in q \} \in p$.
 
 This is a pretty natural observation. You’d expect the product to work out on the ultrafilters if they contain sets where the multiplication behaves nicely. This is, of course, a common phenomenon with ultrafilters: properties of an ultrafilter are often reflected by its elements and vice versa.
 
 **Proof.**
 
-* Like any good ultrafilter proof, we start with a partition: $S= \\{ s\in S: \sigma(s) \in q\\} \cup \\{ s\in S: \sigma(s) \notin q\\} \in p$.
+* Like any good ultrafilter proof, we start with a partition: $S= \{ s\in S: \sigma(s) \in q\} \cup \{ s\in S: \sigma(s) \notin q\} \in p$.
 * Since $p$ is an ultrafilter, one part is in $p$.
 * If the second part is in $q$, then $p \cdot q$ is not a filter, i.e., the forward direction of our equivalence holds by contraposition.
-  * Assume $A= \\{ s\in S: \sigma(s) \notin q\\} \in p$.
+  * Assume $A= \{ s\in S: \sigma(s) \notin q\} \in p$.
   * Since $q$ is an ultrafilter, for any $a\in A$ we get $S \setminus \sigma(a) \in q$.
   * But then $\bigcup_ {a\in A} a \cdot S\setminus \sigma(a) = \emptyset$, so $p \cdot q$ is not a filter.
 * If the first part, call it $B$ is in $p$, then $p \cdot q$ is an ultrafilter.

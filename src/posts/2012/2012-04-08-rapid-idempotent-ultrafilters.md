@@ -41,27 +41,31 @@ Ah yes, I should talk about $\max$...
 
 For [FS-sets](/0026/), there is a natural notion of maximum. If you have a bunch of elements summed up, then it makes sense to call the largest summand the maximum. So intuitively, the maximum should simply map each element in the FS-set to the largest generator involved in producing it. This might not appear very well defined but bear with me.
 
-Consider an [FS-set](/0026/), let's keep calling it $FS(x_ n)$. If we're lucky, there is a _unique_ way to write each $y \in FS(x_ n)$ as a sum of $x_ i$ (or should I write $x_ n$? indices are hard...). For example, the sequence $ (2^n)_  {n\in \omega} $ has this property while $(n)_ {n\in \mathbb{N}}$ fails to have this property (quite badly, I suppose).
+Consider an [FS-set](/0026/), let's keep calling it $FS(x_ n)$. If we're lucky, there is a _unique_ way to write each $y \in FS(x_ n)$ as a sum of $x_ i$ (or should I write $x_ n$? indices are hard...). For example, the sequence $(2^n)_  {n\in \omega}$ has this property while $(n)_ {n\in \mathbb{N}}$ fails to have this property (quite badly, I suppose).
 
 It turns out that there's an easy property to ensure this: the sequence just has to grow quickly.
 
 > **Proposition** (folklore? can be found in [Blass, Hindman 87](http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf))
->  If $x_ n > \sum_ {i<n} x_ i$ for all $n$, then $$\sum_ {i\in s} x_ i = \sum_ {i \in t} x_ i \Rightarrow s=t. $$
+>  If $x_ n > \sum_ {i<n} x_ i$ for all $n$, then
+> $$\sum_ {i\in s} x_ i = \sum_ {i \in t} x_ i \Rightarrow s=t. $$
 >  In other words, each element in $FS(x_ n)$ has a _unique representation_.
 
 [Edit May 22, 2012: modified attribution]
 
-The proof is an easy induction on $\left\vert s\right\vert, \left\vert t\right\vert $, using the growth factor to argue that the maximal element of $s$ and $t$ must be equal.
+The proof is an easy induction on $\left\vert s\right\vert, \left\vert t\right\vert$, using the growth factor to argue that the maximal element of $s$ and $t$ must be equal.
 
 *   If $\left\vert s\right\vert  = \left\vert t\right\vert  = 1$, then $s = t$ follows immediately from the growth assumption.
 *   Now assume inductively that we've proved the claim for smaller sets.
 *   Let $n$ be the maximum of $s\cup t$.
 *   Wlog, $n\in s$.
-*   Then we must also have $n\in t$ -- otherwise $$ \sum_ {i \in s} x_ i \geq x_ n > \sum_ {i <n} x_ i \geq \sum_ {i \in t} x_ i, $$ a contradiction to the assumed equality of both sums.
+*   Then we must also have $n\in t$ -- otherwise
+  $$ \sum_ {i \in s} x_ i \geq x_ n > \sum_ {i < n} x_ i \geq \sum_ {i \in t} x_ i, $$
+a contradiction to the assumed equality of both sums.
 *   But if both $s$ and $t$ contain $n$, we also have $\sum_ {s \setminus \{n\}} x_ i = \sum_ {t \setminus \{n\}} x_ i$.
-*   Using our induction hypothesis, we have $ s \setminus \{n\} = t \setminus \{n\} $, hence $s=t$.
+*   Using our induction hypothesis, we have $s \setminus \{n\} = t \setminus \{n\}$, hence $s=t$.
 
-So _if_ we have unique representations of elements in $FS(x_ n)$, we can define a function $$\max: FS(x_ n) \rightarrow \mathbb{N}, \max(y) := x_ {\max s} \text{ where } \sum_ {i \in s} x_ i = y. $$
+So _if_ we have unique representations of elements in $FS(x_ n)$, we can define a function
+$$\max: FS(x_ n) \rightarrow \mathbb{N}, \max(y) := x_ {\max s} \text{ where } \sum_ {i \in s} x_ i = y. $$
 
 ### Growth, growth, growth and more growth
 
@@ -70,27 +74,27 @@ Unfortunately, we need to tweak this a little bit more. Remember that FS-sets ar
 It's natural to assume that there's some kind of connection between the representations of $y,z, y+z$. For one thing, we know that if $s \cap t = \emptyset$, then $\sum_ {i\in s} x_ i + \sum_ {i \in t} x_ i \in FS(x_ n)$. The growth as above does not guarantee the reverse, though (just consider $FS(2^n)$), and the reverse often simplifies things. Fortunately, all we have to do is improve the growth!
 
 > **Proposition** ([Hindman, Blass 87](http://dx.doi.org/10.1090/S0002-9947-1987-0906807-4#sthash.YLoWoL89.dpuf))
->  If $x_ n > 2\cdot \sum_ {i<n} x_ i$, then $\sum_ {i\in s} x_ i + \sum_ {i \in t} x_ i = \sum_ {i\in v} x_ i$ if and only if $s \cap t = \emptyset $ and $v = s \cup t$.
+>  If $x_ n > 2\cdot \sum_ {i < n} x_ i$, then $\sum_ {i\in s} x_ i + \sum_ {i \in t} x_ i = \sum_ {i\in v} x_ i$ if and only if $s \cap t = \emptyset$ and $v = s \cup t$.
 
 The proof is much like the earlier proof.
 
-*   Again, we're doing an induction on $\left\vert s\cup t \cup v\right\vert $.
+*   Again, we're doing an induction on $\left\vert s\cup t \cup v\right\vert$.
 *   If $\left\vert s \cup t \cup v\right\vert  = 1$, then $s$ or $t$ must be empty and the growth condition does the rest.
 *   For the inductive step, let $n := \max(s,t,v)$.
 *   Due to the growth condition, $n$ must be in $v$.
 *   But it must also lie in $s\cup t$.
-    *   Else $\sum_ {i\in v} x_ i \geq x_ n > 2 \sum_ {i <n} x_ i \geq \sum_ {i\in s} x_ i + \sum_ {i\in t} x_ i$.
+    *   Else $\sum_ {i\in v} x_ i \geq x_ n > 2 \sum_ {i < n} x_ i \geq \sum_ {i\in s} x_ i + \sum_ {i\in t} x_ i$.
 *   But it can't be in both $s$ and $t$.
     *   Else $\sum_ {i \in v} x_ i < 2 x_ n < \sum_ {i\in s} x_ i + \sum_ {i \in t} x_ i$.
 *   Wlog $n\in s$
 *   Th $\sum_ {i \in s\setminus{n}} x_ i + \sum_ {i\in t} x_ o = \sum_ {i \in v\setminus{n}} x_ i$.
-*   Applying our induction hypothesis to $\left\vert (s \setminus \{n\}) \cup t \cup (v\setminus \{n\})\right\vert $, we get $ s\setminus {n} \cap t = \emptyset$ and $(s \setminus \{n\}) \cup t = v \setminus \{n\}$.
+*   Applying our induction hypothesis to $\left\vert (s \setminus \{n\}) \cup t \cup (v\setminus \{n\})\right\vert$, we get $s\setminus {n} \cap t = \emptyset$ and $(s \setminus \{n\}) \cup t = v \setminus \{n\}$.
 *   This in turn gives us $s \cap t = \emptyset$ (as $n \notin t$) and $s\cup t = v$ -- as desired.
 
 Why all this trouble? Well, there are many uses for this. For what's coming below, it simplifies an important calculation. In general, it is extremely important since it allows us to switch from the addition of numbers to the union of disjoint, finite sets. (I don't know about you, but I find the union operation on disjoint sets much easier to comprehend.)
 
 > **Corollary**
->  If $FS(x_ n)$ has growth as above, then if we ever have $y, z, y+z \in FS(x_ n)$ (and we will), then, assuming $y<z$, we have $\max(y+z) = \max(z)$.
+>  If $FS(x_ n)$ has growth as above, then if we ever have $y, z, y+z \in FS(x_ n)$ (and we will), then, assuming $y < z$, we have $\max(y+z) = \max(z)$.
 >  In particular, if $FS(y_ n) \subseteq FS(x_ n)$, then $\max[FS(y_ n)] = \max[\{ y_ n: n\in \omega\}]$.
 
 ### Strongly summable ultrafitlers are rapid -- the proof.
@@ -116,7 +120,9 @@ You can skip the proof if you like because it's not important to us (and I'm che
 *   Pick any $FS(x_ n) \in p$ with $x_ n > 2\sum_ {i<n} x_ i$.
 *   Let $\min$ be the minimum function analogous to $\max$.
 *   Now partition $FS(x_ n)$ into
-     $$ \{ y\in FS(x_ n) : f(\max(y)) < \min(y)\}$$ and $$ \{ y\in FS(x_ n) : f(\max(y)) \geq \min(y)\} . $$
+     $$ \{ y\in FS(x_ n) : f(\max(y)) < \min(y)\}$$
+     and
+     $$ \{ y\in FS(x_ n) : f(\max(y)) \geq \min(y)\} . $$
 *   Our strongly sumable ultrafilter will give us $FS(y_ n)$ (with the usual growth condition) included in one of these two parts.
 *   If $FS(y_ n)$ is included in the first part, then $f$ is bounded on $\max[FS(y_ n)] = \max[\{ y_ n: n\in \omega\}]$. (In particular, $f$ is constant on a set in $\max(p)$.)
     *   Consider $y_ 0$ and pick any other $y_ n$.
@@ -141,13 +147,13 @@ This theorem is the reason I originally (back in 2010, in my conversations with 
 > **Theorem** (Krautzberger (yep, this is it))
 >  If $p$ is strongly summable, then $p$ is rapid.
 
-Here's the gist: the trick is simple: speed up functions by $ 2^n$ and let that sped-up function be dominated in the rapid image. Then we pick an FS-set in our strongly summable ultrafilter that witnesses this domination, in particular, it's generating sequence will dominate that sped-up function. Finally, just as in our initial observations in the first post, the FS-set will still grow fast enough to dominate the original function.
+Here's the gist: the trick is simple: speed up functions by $2^n$ and let that sped-up function be dominated in the rapid image. Then we pick an FS-set in our strongly summable ultrafilter that witnesses this domination, in particular, it's generating sequence will dominate that sped-up function. Finally, just as in our initial observations in the first post, the FS-set will still grow fast enough to dominate the original function.
 
 *   By Matet's theorem pick $FS(x_ n) \in p$ such that $\max(p)$ is rapid.
 *   Now pick any $f: \mathbb{N} \rightarrow \mathbb{N}$.
 *   We may assume that $f$ is strictly monotone (that's all the functions we need to dominate).
-*   By Matet's theorem we can find a set $A \in \max(p)$ that dominates $f \circ 2^{n+1} $.
-*   Now fix $ FS(y_ n) \subseteq FS(x_ n), FS(y_ n) \in p $ such that $\max[FS(y_ n)] \subseteq A$; for simplicity, we can assume that the $(y_ n)_ {n\in \omega}$ also satisfy the growth condition.
+*   By Matet's theorem we can find a set $A \in \max(p)$ that dominates $f \circ 2^{n+1}$.
+*   Now fix $FS(y_ n) \subseteq FS(x_ n), FS(y_ n) \in p$ such that $\max[FS(y_ n)] \subseteq A$; for simplicity, we can assume that the $(y_ n)_ {n\in \omega}$ also satisfy the growth condition.
 *   Then $FS(y_ n)$ dominates $f$.
     *   Let $i\in \mathbb{N}$. We'll show that $\left\vert FS(y_ n) \cap f(i)\right\vert  < i$.
     *   Pick the maximal $y_ k < f(i)$.
@@ -155,8 +161,8 @@ Here's the gist: the trick is simple: speed up functions by $ 2^n$ and let that 
     *   Of course, $f(i) > y_ k \geq \max(y_ k)$.
     *   Now $\max[FS(y_ n)] = \max[\{ y_ n: n \in \omega\} ] \subseteq A$, so $\max(y_ k)$ is greater or equal to the $k$-th element of $A$.
     *   Since the $A$ dominates $f\circ (2^{n+1})$, this gives us $\max(y_ k) > f(2^{k+1})$.
-    *   By $f$'s monotonicity, $ i > 2^{k+1}$,
-    *   But the set $FS(y_ 0,\ldots, y_ k)$ contains exactly $ 2^{k+1}$-many elements, i.e., less than $i$-many elements -- precisely as desired.
+    *   By $f$'s monotonicity, $i > 2^{k+1}$,
+    *   But the set $FS(y_ 0,\ldots, y_ k)$ contains exactly $2^{k+1}$-many elements, i.e., less than $i$-many elements -- precisely as desired.
 
 Whew, ok. That's done.
 
@@ -205,7 +211,7 @@ If you happen to have strongly summable ultrafilters, this gives an even nicer o
 
 $$p \leq q \text{ iff } p+q = q+p = p. $$
 
-There are two obvious related orders, $ p\leq_ R q$ iff $q+p=p$, and $\leq_ L$ (guess how it's defined). It's an easy exercise (really), that minimality in either partial order is minimality in all others.
+There are two obvious related orders, $p\leq_ R q$ iff $q+p=p$, and $\leq_ L$ (guess how it's defined). It's an easy exercise (really), that minimality in either partial order is minimality in all others.
 
 An old result is that strongly summable ultrafilters are right maximal (in fact, strongly right maximal: $x+p=p$ has only one solution, $x=p$).
 
@@ -237,8 +243,8 @@ _Comments_
   Thank you for your kind words, Neil.
   I hope I can clarify any questions you may have about the other result.
 * **David Fernandez**, 2013/10/17
-  Hi Peter! I just went through your proof that strongly summable ultrafilters are rapid (the one that you uploaded to the arXiv). There's a little detail that bothers me, and it's your way of phrasing Theorem 1, which is a result of Blass and Hindman. It seems to me that you do need to explicitly state that the sequence $x_n$ given by this Theorem satisfies $x_n&gt;\sum_{k&lt;n}x_k$ for every $n$ (you do so here in the blog post, but not in the arXiv paper). Because afterwards, in the proof of Theorem 3 (which is the same proof that appears here), once you&#039;ve got your sequence $y_k$ (it&#039;s also worth noting that we assume $y_k$ is increasing, by the way), you&#039;re implicitly using the fact that if $k&lt;l$ then $x_n-\mathrm{max}(y_k)&lt;x_n-\mathrm{max}(y_l)$ (i.e. that bigger members of the sequence $y_k$ must have bigger $x_n$-maximum). This seems to me to be crucial for the step where you say that any $x_n-\mathrm{max}(y_k)$ is greater than or equal to the $k$-th element of $A$. At least I don&#039;t see how else to justify this step without the stronger assumption on $x_n$, which in any case doesn&#039;t affect either the veracity of the theorem nor the main ideas of its proof.
-  On another note, I have to say that I don&#039;t agree with a sentence that you wrote on the second paragraph of Section 1: that &quot;it should be straighforward to extend the two results to countable semigroups with finite-to-one multiplication maps in general&quot;. I don&#039;t think this is straighforward at all! The core of the issue is again the same Theorem 1, of Blass and Hindman, saying that a strongly summable ultrafilter has a base of sets $\mathrm{FS}(x_n)$ where the addition &quot;behaves like disjoint union&quot;. This is a theorem that was only recently generalized to most abelian groups, but fails badly for example in the Boolean group $([\omega]^{&lt;\omega},\bigtriangleup)$ (those are results of mine, hehe) (and I don&#039;t think anyone has any idea of what happens in non-abelian semigroups, though in a recent paper of Hindman and Lakeshia Legette Jones the case of the free semigroup is partially dealt with). In fact, it&#039;s possible to construct, on the Boolean group, a strongly summable ultrafilter that&#039;s not additively isomorphic to any union ultrafilter, so this is as far as one can get from &quot;sums behaving like disjoint unions&quot; (this is all in here: http://arxiv.org/abs/1306.5421 ). I believe it would be interesting to see if this crazy ultrafilter is rapid or not...
+  Hi Peter! I just went through your proof that strongly summable ultrafilters are rapid (the one that you uploaded to the arXiv). There's a little detail that bothers me, and it's your way of phrasing Theorem 1, which is a result of Blass and Hindman. It seems to me that you do need to explicitly state that the sequence $x_n$ given by this Theorem satisfies $x_n < \sum_{k < n}x_k$ for every $n$ (you do so here in the blog post, but not in the arXiv paper). Because afterwards, in the proof of Theorem 3 (which is the same proof that appears here), once you've got your sequence $y_k$ (it's also worth noting that we assume $y_k$ is increasing, by the way), you're implicitly using the fact that if $k < l$ then $x_n-\mathrm{max}(y_k) < x_n-\mathrm{max}(y_l)$ (i.e. that bigger members of the sequence $y_k$ must have bigger $x_n$-maximum). This seems to me to be crucial for the step where you say that any $x_n-\mathrm{max}(y_k)$ is greater than or equal to the $k$-th element of $A$. At least I don't see how else to justify this step without the stronger assumption on $x_n$, which in any case doesn't affect either the veracity of the theorem nor the main ideas of its proof.
+  On another note, I have to say that I don't agree with a sentence that you wrote on the second paragraph of Section 1: that <q>it should be straighforward to extend the two results to countable semigroups with finite-to-one multiplication maps in general</q>. I don't think this is straighforward at all! The core of the issue is again the same Theorem 1, of Blass and Hindman, saying that a strongly summable ultrafilter has a base of sets $\mathrm{FS}(x_n)$ where the addition <q>behaves like disjoint union</q>. This is a theorem that was only recently generalized to most abelian groups, but fails badly for example in the Boolean group $([\omega]^{ < \omega},\bigtriangleup)$ (those are results of mine, hehe) (and I don't think anyone has any idea of what happens in non-abelian semigroups, though in a recent paper of Hindman and Lakeshia Legette Jones the case of the free semigroup is partially dealt with). In fact, it's possible to construct, on the Boolean group, a strongly summable ultrafilter that's not additively isomorphic to any union ultrafilter, so this is as far as one can get from <q>sums behaving like disjoint unions</q> (this is all in here: http://arxiv.org/abs/1306.5421 ). I believe it would be interesting to see if this crazy ultrafilter is rapid or not...
   * **David Fernandez**, 2014/02/11
   Hi again, Peter.
   It’s been some months since I posted my comment above. Now I can say that your result is also true for strongly summable ultrafilters on the Boolean group (I just proved it, and I plan to add it to my preprint linked to above). That, together with your result, takes care of all abelian groups: so rapidity follows from strong summability in any such group (hence in any abelian cancellative semigroup as well).

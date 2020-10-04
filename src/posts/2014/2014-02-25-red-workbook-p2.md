@@ -30,12 +30,13 @@ latex: true
 ### Transcript
 
 *   **Koppelberg** 20\. Aug. 2006
-    *   Wied. \begin{split} C \subseteq S \text{ zentral} & :\Longleftrightarrow & \exists p \in E(\beta S) \cap K(\beta S): C \in p \\\\ & \phantom{:}\Longleftrightarrow & C \text{ IP-Menge & PWS}\end{split}
+    *   Wied.
+    $$\begin{split} C \subseteq S \text{ zentral} & :\Longleftrightarrow & \exists p \in E(\beta S) \cap K(\beta S): C \in p \\ & \phantom{:}\Longleftrightarrow & C \text{ IP-Menge & PWS}\end{split}$$
 *   **1\. Dyn. System**
     *   Ziel: zentral = dyn. zentral
     *   Def.: DS $(X,\varphi)$ mit $X$ kompatk, $T_ 2$, $\varphi$ Op. von S auf X (stetig in komp. $(S,X)$), schreibe einfach $s\cdot x$ statt $\varphi(s,x)$.
     *   Bsp:
-        1.  $W$ ($ \to t^n$), $S \to \beta S$
+        1.  $W$ ($\to t^n$), $S \to \beta S$
         2.  $S\leq Q$, $X=2^Q$ (Prod.raumder diskreten ${0,1}$),
         *   $s\cdot x = x (q\cdot s) \forall s \in S, q\in Q, x\in X$
         *   **?** stetig & assoziativ (nachrechnen / klar)
@@ -62,7 +63,8 @@ latex: true
 ### partial translation
 
 *   **Koppelberg** 20\. Aug. 2006
-    *   Repetition. \begin{split} C \subseteq S \text{ central} & :\Longleftrightarrow & \exists p \in E(\beta S) \cap K(\beta S): C \in p \\\\ & \phantom{:}\Longleftrightarrow & C \text{ IP-set & piecewise syndetic}\end{split}
+    *   Repetition.
+    $$\begin{split} C \subseteq S \text{ central} & :\Longleftrightarrow & \exists p \in E(\beta S) \cap K(\beta S): C \in p \\ & \phantom{:}\Longleftrightarrow & C \text{ IP-set & piecewise syndetic}\end{split}$$
 *   **1\. Dynamical System** (DS)
     *   Goal: central = dynamically central
     *   Def.: DS $(X,\varphi)$ with $X$ compact, $T_ 2$, $\varphi$ Op. from S to X (cts, in compact $(S,X)$), we write $s\cdot x$ (short for $\varphi(s,x)$).
