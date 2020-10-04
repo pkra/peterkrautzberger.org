@@ -503,3 +503,21 @@ h6 {
 .related-posts li a:hover small {
   color: inherit;
 }
+
+mjx-container[display='true'] {
+  display: block;
+  margin: 1em auto;
+}
+
+mjx-container[display='true'] svg {
+  width: 100%;
+}
+
+mjx-container svg[data-treewalker]:focus {
+  background: black;
+  color: white;
+}
+
+.is-activedescendant {
+  color: #f012be !important;
+}

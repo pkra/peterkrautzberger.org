@@ -11,7 +11,7 @@ permalink: archive/
     {% for post in collections.posts | reverse %}
     <li>
       <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+      <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title | markdownify | safe }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
     </li>
   {% endfor %}
   </ul>

@@ -6,7 +6,7 @@ templateClass: tmpl-post
 
 
 <article class="post">
-  <h1 class="post-title">{{ title }}</h1>
+  <h1 class="post-title">{{ title | markdownify | safe }}</h1>
   <span class="post-date"><time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time></span>
   {{ content | safe }}
 </article>
@@ -18,37 +18,5 @@ templateClass: tmpl-post
 </aside>
 
 {% if latex %}
-<script type="text/javascript">
-  window.MathJax = {
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']]
-  },
-  menuSettings: {
-    explorer: true
-  },
-  "fast-preview": {
-    disabled: true
-  },
-  CommonHTML: { linebreaks: { automatic: true}}
-  };
-</script>
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full">
-</script>
-{% endif %}
-{% if mathml %}
-<script type="text/javascript">
-  window.MathJax = {
-  menuSettings: {
-    explorer: true
-  },
-  "fast-preview": {
-    disabled: true
-  },
-  CommonHTML: { linebreaks: { automatic: true}}
-  };
-</script>
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_CHTML-full">
-</script>
+    <script type="module" src="/public/walker.js"></script>
 {% endif %}

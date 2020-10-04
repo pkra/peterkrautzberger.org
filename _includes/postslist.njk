@@ -1,7 +1,7 @@
 {% for post in postslist | reverse %}
   <div class="post">
     <h2 class="post-title">
-    <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+    <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title | markdownify | safe }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
     </h2>
     <span class="post-date"><time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time></span>
     {% excerpt post %}

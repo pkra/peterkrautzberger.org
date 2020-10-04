@@ -39,7 +39,8 @@ module.exports = function(eleventyConfig) {
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
-  let mj = require('@gerhobbelt/markdown-it-mathjax')();
+  // let mj = require('markdown-it-mathjax3');
+  let mj = require('./markdown-it-mathjax3-hacked.js');
   let options = {
     html: true,
     breaks: true,
@@ -55,6 +56,8 @@ module.exports = function(eleventyConfig) {
     .use(mj)
   );
 
+  md = new markdownIt(options).use(mj);
+  eleventyConfig.addNunjucksFilter('markdownify', string => md.renderInline(string));
   return {
     templateFormats: [
       "md",
@@ -69,7 +72,6 @@ module.exports = function(eleventyConfig) {
     // This is only used for URLs (it does not affect your file structure)
     pathPrefix: "/",
 
-    markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     passthroughFileCopy: true,
