@@ -38,7 +38,7 @@ My company is [krautzource](https://www.krautzource.com) where we provide manage
       * Financial stability via sponsoring/fundraising and research grants
       * Growth of the MathJax CDN from 30 to 180 Million monthly users
     * Consulting and strategic development for conversion and web-based rendering of [STEM](https://en.wikipedia.org/wiki/Science,_technology,_engineering,_and_mathematics) book and journal content, in particular process evaluation and development as well as software development for conversion pipelines
-    * [MathViewer](www.ams.org/publications/journals/journalsframework/AMSMathViewer): innovative and accessible full-text presentation of research articles on the web.
+    * [MathViewer](https://www.ams.org/publications/journals/journalsframework/AMSMathViewer): innovative and accessible full-text presentation of research articles on the web.
       * Management and development, from outline to launch
       * Coordination of stakeholders (production, QA, marketing, editorial)
 
