@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>A MathJax extension for specifying the accessible name</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+    <meta name="Description" content="A MathJax extension for specifying the accessible name">
+    <meta name="theme-color" content="#fff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+    <link rel="shortcut icon" href="/public/favicon.ico">
+    <link rel="manifest" href="/public/manifest.json">
+    <script>if ('serviceWorker' in navigator) {  navigator.serviceWorker.register('/serviceworker.js');}</script>
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <h1 class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </h3>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">A MathJax extension for specifying the accessible name</h1>
+  <span class="post-date"><time datetime="2020-10-12">12 Oct 2020</time></span>
+  <p>Look at me writing two posts in a year! October is World Blindness Awareness Month, so let's solve one of the critical missing pieces for accessible equation rendering on the web! And I'm exaggerating? Only a little.</p>
+<p><a href="/0214/">Previously</a>, I had mentioned an update on my work on the <a href="https://github.com/krautzource/aria-tree-walker">aria-tree walker</a> (formerly known as <a href="https://github.com/krautzource/mathjax-sre-walker/">mathjax-sre-walker</a>, see also <a href="/0209/">No. 209</a>). While a longer piece on this may be warranted, let me focus on a closely related issue - fixing accessible names when necessary, a problem the walker solves in part.</p>
+<h2>Fantastic heuristics...</h2>
+<p>While heuristics can be useful (e.g., user agents dealing with invalid markup or Chrome's machine-learning-based image descriptions), it is always better to avoid them. Nobody likes a guessing game. This gets tricky however with content that cannot work without heuristics, e.g., equations.</p>
+<p>To quote myself, equations are <a href="https://www.peterkrautzberger.org/0196/">simply pretty terrible all around</a> and not at all accessible (in the sense of web accessibility). So far, the best you can do is to use <a href="http://docs.mathjax.org/en/latest/basic/a11y-extensions.html">MathJax's accessibility extensions</a> to leverage the incredible heuristics provided by <a href="https://github.com/zorkow/speech-rule-engine/">Speech Rule Engine</a>. All solutions around equations require heuristics and this is the best tool available.</p>
+<p>And yet even with the best heuristics your content will still suck <a href="https://hyperboleandahalf.blogspot.com/2010/04/alot-is-better-than-you-at-everything.html">alot</a>. Why? Because heuristics inevitably hit their limits and provide poor results in edge cases (and how quickly that happens is usually outside your control). Your advantage is that you have least <em>something</em> as opposed to nothing when a dictionary-based approach fails.</p>
+<p>So what to do? If you cannot avoid heuristics, then the next best thing is to apply heuristics-based tools server-side; client-side heuristics should always be a last resort. Besides the obvious perks, you end up with a static bit of content that you <strong>can</strong> fix if necessary. Coming back to the aria-tree-walker, if you look at any of the examples in its docs and are unhappy with the accessible name of some part, you can simply edit it. Then it's fixed. That's a huge step forward. And yet.</p>
+<h2>... and where to fight them</h2>
+<p>Fixing accessibility issues can be hard. Even the best content might turn out to not work as expected or be facing an insurmountable bug somewhere along the way to the user, forcing you to work around things. Ideally, you can apply a fix at the source but often fixes in post-production are the only way. If your content requires heuristics, you now have to problems: you need a fix and you need to override the heuristics to prevent them from ignoring your fix. That's a lot to ask.</p>
+<p>For Speech Rule Engine (and thus MathJax), this problem now has a first solution: my <a href="https://github.com/zorkow/speech-rule-engine/issues/157">feature request from 2017</a> has been implemented and we now have support for aria-label. This means you can override the accessible name at the source and Speech Rule Engine will honor it. Even better, this can give you the best of both worlds: if you label a non-atomic expression, users will still be able to dive in and explore the heuristics-based version. That's in fact, nothing new - if you explore something labeled <q>x squared</q> you might come up against <q>exponent 2</q> - but it's worth repeating as it is incredibly powerful for users.</p>
+<h2>At the source</h2>
+<p>Of course, having some internal markup facility makes things a bit more difficult for authors. Most likely they use better formats than MathML to feed into SRE's heuristics. If we cannot give authors control at the source (no, not <a href="https://matrix.fandom.com/wiki/The_Source">that source</a>), we can never hold them accountable. So let's solve this for MathJax's TeX input.</p>
+<p>The repository <a href="https://github.com/krautzource/mathjax-aria-label/">mathJax-aria-label</a> hosts a MathJax v3 extension for the TeX input providing a simple macro: <code>\arialabel{}{}</code>. The macro takes two arguments: the first argument becomes the value of the aria-label attribute on a wrapper around whatever the second argument becomes. This macros is of course most useful when used in other macros, either with a fixed name or with a constructe name (e.g., a small caps macro could do something like <code>\arialabel{small caps #1}{#1}</code>).</p>
+<p>The repository has a <a href="https://krautzource.github.io/mathjax-aria-label/">small example on GitHub pages</a> and below is a short recording of <a href="https://help.gnome.org/users/orca/stable/">Orca</a> reading the examples in Firefox.</p>
+<video controls width="auto" style="width: 100%;">
+<source src="/assets/2020/MathJax-aria-label_Orca_Firefox.mp4"
+        type="video/webm">
+Sorry, your browser doesn't support this embedded video.
+</video>
+<p>I hope this gives a first idea what benefits this simple macro and the underlying technology can enable.</p>
+<h2>Coda</h2>
+<p>There's nothing wrong with using heuristic-based tools for accessibility purposes if you have no other recourse. Just make sure you can override the heuristics when they fall short. With equations, we just took a good step forward: authors are no longer coerced to rely on heuristics out of their control.</p>
+<p>Reversely, authors can now fix such issues and so they should feel an obligation to do so. Authors can (and should) start thinking about how their own voice comes together in this beautfiful medium we call the web.</p>
+<p>This is a good thing. If we cannot give full authors control over their content, we will never reach the web's full potential.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20A MathJax extension for specifying the accessible name">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+    <script type="module" src="/public/walker.js"></script>
+
+
+		</main>
+
+  <footer class="container related">
+    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0215/ -->
+	</body>
+</html>
