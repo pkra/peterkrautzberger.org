@@ -47,24 +47,7 @@ The layout captured in this image combines a label (5.4) with an ordered list of
 <p>On the other hand, the list is (nested) ordered (text) list and it is encoded as such by the authors. This is obviously an important piece of structural information and should not be lost.</p>
 <p>And that's a bit of a problem both for the web and for LaTeX: there's no system for equation layout with a concept for ordered list built-in. And there's no text layout system with stretchy braces.</p>
 <p>If you look in the TeX source of the paper, you'll see how this was hacked using <code>\parbox</code>. On the web, you have a harder time since in practical terms you can't really do this kind of hack of switching from equation layout to text layout. In theory (i.e., HTML5 spec dream land), you could try something like this</p>
-<pre><code class="language-html">&lt;math side=&quot;left&quot;&gt;
-  &lt;mtable&gt;
-    &lt;mlabeledtr&gt;
-        &lt;mtd&gt;
-          &lt;mtext&gt;(5.4)&lt;/mtext&gt;
-        &lt;/mtd&gt;
-        &lt;mtd&gt;
-          &lt;mo&gt;{&lt;/mo&gt;
-          &lt;mtext&gt;
-            &lt;ol&gt;
-              ...
-            &lt;/ol&gt;
-          &lt;/mtext&gt;
-        &lt;/mtd&gt;
-    &lt;/mlabeledtr&gt;
-  &lt;/mtable&gt;
-&lt;/math&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>math</span> <span class="token attr-name">side</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>left<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mtable</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mlabeledtr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mtd</span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mtext</span><span class="token punctuation">></span></span>(5.4)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mtext</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mtd</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mtd</span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mo</span><span class="token punctuation">></span></span>{<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mo</span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mtext</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span><span class="token punctuation">></span></span><br>              ...<br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mtext</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mtd</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mlabeledtr</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mtable</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>math</span><span class="token punctuation">></span></span></code></pre>
 <p>Now this won't work that well in real life. But the real question for me is: is that even correct? (in which sense)? This is a <code>&lt;math&gt;</code> element consisting really only of text while the purely visual brace is the only element with &quot;semantic&quot; markup. Hm...</p>
 <h2>so what?</h2>
 <p>I find this one interesting because the problem is a case of visual layout clouding one's judgement. You want to use stretchy braces, so in TeX you need math mode and the rest follows pretty &quot;rationally&quot;, no matter the hackiness. After all, it's print; no need to care about anything but the looks.</p>

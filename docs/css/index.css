@@ -513,7 +513,7 @@ mjx-container[display='true'] svg {
   width: 100%;
 }
 
-mjx-container svg[data-treewalker]:focus {
+mjx-container svg[role="tree"]:focus, mjx-container svg[role="tree"]:focus-within {
   background: black;
   color: white;
 }
