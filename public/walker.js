@@ -1,2 +1,2 @@
     import { attachNavigator } from 'https://krautzource.github.io/aria-tree-walker/treewalker.js';
-    [...document.querySelectorAll('[data-treewalker]')].filter( node => node.hasAttribute('aria-owns')).forEach(attachNavigator);
+    [...document.querySelectorAll('[role="tree"]')].filter( node => node.hasAttribute('data-owns')).forEach(attachNavigator);

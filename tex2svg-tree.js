@@ -1,13 +1,6 @@
 const sre = require('speech-rule-engine');
-sre.setupEngine({
-  domain: 'mathspeak',
-  style: 'default',
-  locale: 'en',
-  speech: 'deep',
-  structure: true,
-  mode: 'sync',
-});
 sre.engineReady();
+
 // TeX to MathML
 const TeX = require('mathjax-full/js/input/tex.js').TeX;
 const HTMLDocument = require('mathjax-full/js/handlers/html/HTMLDocument.js')
@@ -49,19 +42,58 @@ const svg = new SVG();
 
 const svghtml = mathjax.document('', { InputJax: mml, OutputJax: svg });
 
-const rewrite = require('sre-to-tree');
+const rewrite = require('@krautzource/sre-to-tree');
 
 const mjenrich = (texstring, displayBool) => {
   const mml = tex2mml(texstring, displayBool);
+  sre.setupEngine({
+    domain: 'mathspeak',
+    style: 'default',
+    locale: 'en',
+    speech: 'deep',
+    structure: true,
+    mode: 'sync',
+  });
+  sre.engineReady();
   const enrichedMml = sre.toEnriched(mml).toString();
   const mjx = svghtml.convert(enrichedMml, {
     em: 16,
     ex: 8,
     containerWidth: 80 * 16,
   });
+  // switch SRE to Braille
+  sre.setupEngine({
+    domain: 'default',
+    style: 'default',
+    locale: 'nemeth',
+    modality: 'braille',
+    speech: 'deep',
+    structure: true,
+    mode: 'sync',
+  });
+  sre.engineReady();
+  const enrichedMmlBraille = sre.toEnriched(mml).toString();
+  const dom = new JSDOM(`<!DOCTYPE html>${enrichedMmlBraille}`);
+  const brailleDoc = dom.window.document;
+
+  // crossing the streams... cf. zorkow/speech-rule-engine#438
+  mjx.querySelectorAll('[data-semantic-speech]').forEach((node) => {
+    node.setAttribute(
+      'data-semantic-braille',
+      brailleDoc
+        .querySelector(
+          '[data-semantic-id="' + node.getAttribute('data-semantic-id') + '"]'
+        )
+        .getAttribute('data-semantic-speech')
+    );
+  });
+
   const svgnode = mjx.firstElementChild;
   if (svgnode.querySelector('[data-semantic-owns]')) rewrite(svgnode);
-  else svgnode.setAttribute('aria-label', svgnode.querySelector('[data-semantic-speech]').getAttribute('data-semantic-speech'));
+  else {
+    svgnode.setAttribute('aria-label', svgnode.querySelector('[data-semantic-speech]').getAttribute('data-semantic-speech'));
+    svgnode.setAttribute('aria-braillelabel', svgnode.querySelector('[data-semantic-braille]').getAttribute('data-semantic-braille'));
+  }
   svgnode.insertAdjacentHTML('afterend', `<span hidden>${texstring}</span>`);
   return mjx.outerHTML;
 };

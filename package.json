@@ -23,14 +23,15 @@
   },
   "homepage": "https://github.com/pkra/peterkrautzberger.org/",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
-    "jsdom": "^16.3.0",
-    "luxon": "^1.24.1",
-    "markdown-it": "^11.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "@krautzource/sre-to-tree": "^2.0.1",
+    "jsdom": "^16.4.0",
+    "luxon": "^1.25.0",
+    "markdown-it": "^12.0.2",
     "markdown-it-mathjax3": "^2.2.0",
-    "mathjax-full": "^3.1.0",
-    "speech-rule-engine": "^3.1.1",
-    "sre-to-tree": "github:krautzource/sre-to-tree"
+    "mathjax-full": "^3.1.4",
+    "speech-rule-engine": "^3.2.0"
   }
 }
