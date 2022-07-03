@@ -1,0 +1,24 @@
+---
+layout: post
+title: ATHEN STEM Accessibility Conference 2022
+date: 2022-07-03
+permalink: 0216/
+---
+
+This is the first time I skipped writing for over a year, I think. Well, good riddance, 2021. You took too much.
+
+I meant to write about this back in February, right after the conference, traveling south for a couple calm days with friends. But then a fucking war started, a few hundred kilometers away and it all seemed absurd. It still seems absurd. It is terrifying and horrible. War is the most horrible thing.
+
+I'm slowly coming out of a few really bad years but none of it compares in the least to the horror the people of Ukraine are experiencing.
+
+I cling to making things normal again. Writing here is something I have wished to come back to again after all this time. The chances that it works out are slim. Too much has happened. Too much still hurts. But I'll try.
+
+---
+
+I gave a talk at [ATHEN STEM Accessibility Conference 2022](https://athenpro.org/content/athen-virtual-conference) in February. I spoke about the work I do for the [American Mathematical Society](https://www.ams.org), primarily how we approach print equation layout on the web, in particular using [aria-tree-walker](https://github.com/krautzource/aria-tree-walker) and server-side MathJax.
+
+You can find [the slides on github](https://pkra.github.io/2022-athen-stem-conf/). They include a bunch of short videos (without captioning, I'm afraid). They're all done with a real world OA article so you can try to reproduce things.
+
+There's also a recording of my talk available from their site. If you can't access that, ping me and I'll see what I can do.
+
+The rest of the conference was somewhat depressing for me. It was example after example of how the empty promises of MathML keep people in the US educational sector in a kind of Stockholm syndrome. Case study after case study showed how flawed everything is both in theory and practice. And yet they cling to 25 years of lies and falsehoods. It would be said for the if it wasn't so incredibly self-inflicted. It is infuriatingly dishonest to the students.
