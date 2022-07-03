@@ -4,31 +4,12 @@
 	<subtitle> · on the web</subtitle>
 	<link href="https://www.peterkrautzberger.org/atom.xml" rel="self"/>
 	<link href="https://www.peterkrautzberger.org/"/>
-	<updated>2020-10-12T00:00:00Z</updated>
+	<updated>2022-07-03T00:00:00Z</updated>
 	<id>https://www.peterkrautzberger.org/</id>
 	<author>
 		<name>Peter Krautzberger</name>
 		<email>p.krautzberger@gmail.com</email>
 	</author>
-	
-	<entry>
-		<title>Booles&#39; Rings is dead, long live Booles&#39; Rings!</title>
-		<link href="https://www.peterkrautzberger.org/0206/"/>
-		<updated>2018-05-31T00:00:00Z</updated>
-		<id>https://www.peterkrautzberger.org/0206/</id>
-		<content type="html">&lt;p&gt;Yesterday, &lt;a href=&quot;http://scoskey.org/&quot;&gt;Sam&lt;/a&gt; and I removed all remaining WordPress installations that we were hosting for people that are part of &lt;a href=&quot;https://boolesrings.org/&quot;&gt;Booles&#39; Rings&lt;/a&gt;, including the original multisite installations that &lt;a href=&quot;https://www.peterkrautzberger.org/0069/&quot;&gt;started it all&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Booles&#39; Rings is dead&lt;/h2&gt;
-&lt;p&gt;My regular meetings with Sam are one of my great pleasures. Since our friendship is almost exclusively virtual, it&#39;s surprising that we have kept it alive for quite a while now. Almost weekly, we get on video to work on new ideas or and projects - or just chitchat about life, work and being young parents (or parents of young kids anyway).&lt;/p&gt;
-&lt;p&gt;Perhaps unsurprisingly given that we met at a &lt;a href=&quot;https://www.peterkrautzberger.org/0054/&quot;&gt;Young Set Theory Workshop&lt;/a&gt;, it all started with us setting up Set Theory Talks which grew turned into &lt;a href=&quot;http://settheory.mathtalks.org/&quot;&gt;settheory.mathtalks.org&lt;/a&gt; (and you can get a subdomain with the same semi-automatic features if you like). Nowadays, &lt;a href=&quot;http://blog.assafrinot.com/&quot;&gt;Assaf&lt;/a&gt; is handling the real work of grooming the site while Sam and I continue the little bits of technical support as needed. Later, I pulled Sam into maintaining &lt;a href=&quot;https://mathblogging.org/&quot;&gt;mathblogging.org&lt;/a&gt; with me after Fred and Felix dropped out.&lt;/p&gt;
-&lt;p&gt;I suppose it was inevitable ever since I left research 6 years ago.  But, really, life just got busier and hosting more complex so late last year, Sam and I decided that we do not have the time (nor the abilities) to continue hosting more and more sites. We let everyone know what&#39;s happening and helped them in their transitions.&lt;/p&gt;
-&lt;p&gt;Yesterday, we pulled the plug on all the WordPress goodness we had built over the years. And thus, Booles&#39; Rings has passed - in its original form, a literal network of WordPress sites for academics.&lt;/p&gt;
-&lt;h2&gt;Long live Booles&#39; Ring!&lt;/h2&gt;
-&lt;p&gt;Of course, none of the sites have disappeared. In many ways we&#39;re now where I wanted to get everyone to: not just researchers taking the web seriously as a fixed point of a research career, building a stable presence of one&#39;s research persona, overcoming the cacophony of ever-changing, dead-or-dying department pages where Google page rank inevitably yields the outdated ones.&lt;/p&gt;
-&lt;p&gt;No, I always wanted more: get researchers to take this platform seriously, embrace it as a medium with new (and old) idiosyncrasies. Take it seriously as a tool that you should wield confidently and, in need, wield independently, no matter what. No more lock in.&lt;/p&gt;
-&lt;p&gt;And this is where Booles&#39; Rings is now. The people are still here, the site now merely works as lightweight connection (and an aggregator). And no matter how we all approach this medium, it&#39;s fine. Whether it&#39;s self-hosted WordPress installations or statically generated sites, whether slow-churning long form or near-daily activity, whether research-only or life&#39;s breadth. The point is not that one thing is better than the other. The point is that we are on the web, our shared and world wide web - and that we&#39;re here to stay.&lt;/p&gt;
-&lt;p&gt;Even though I left research years ago, I still love to follow this community. I look forward to the next 7 years of Booles&#39; Rings.&lt;/p&gt;
-</content>
-	</entry>
 	
 	<entry>
 		<title>6 Thoughts on accessibility of equation layout</title>
@@ -426,6 +407,23 @@ Sorry, your browser doesn&#39;t support this embedded video.
 &lt;p&gt;There&#39;s nothing wrong with using heuristic-based tools for accessibility purposes if you have no other recourse. Just make sure you can override the heuristics when they fall short. With equations, we just took a good step forward: authors are no longer coerced to rely on heuristics out of their control.&lt;/p&gt;
 &lt;p&gt;Reversely, authors can now fix such issues and so they should feel an obligation to do so. Authors can (and should) start thinking about how their own voice comes together in this beautiful medium we call the web.&lt;/p&gt;
 &lt;p&gt;This is a good thing. If we cannot give authors full control over their content, we will never reach the web&#39;s full potential.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>ATHEN STEM Accessibility Conference 2022</title>
+		<link href="https://www.peterkrautzberger.org/0216/"/>
+		<updated>2022-07-03T00:00:00Z</updated>
+		<id>https://www.peterkrautzberger.org/0216/</id>
+		<content type="html">&lt;p&gt;This is the first time I skipped writing for over a year, I think. Well, good riddance, 2021. You took too much.&lt;/p&gt;
+&lt;p&gt;I meant to write about this back in February, right after the conference, traveling south for a couple calm days with friends. But then a fucking war started, a few hundred kilometers away and it all seemed absurd. It still seems absurd. It is terrifying and horrible. War is the most horrible thing.&lt;/p&gt;
+&lt;p&gt;I&#39;m slowly coming out of a few really bad years but none of it compares in the least to the horror the people of Ukraine are experiencing.&lt;/p&gt;
+&lt;p&gt;I cling to making things normal again. Writing here is something I have wished to come back to again after all this time. The chances that it works out are slim. Too much has happened. Too much still hurts. But I&#39;ll try.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;I gave a talk at &lt;a href=&quot;https://athenpro.org/content/athen-virtual-conference&quot;&gt;ATHEN STEM Accessibility Conference 2022&lt;/a&gt; in February. I spoke about the work I do for the &lt;a href=&quot;https://www.ams.org/&quot;&gt;American Mathematical Society&lt;/a&gt;, primarily how we approach print equation layout on the web, in particular using &lt;a href=&quot;https://github.com/krautzource/aria-tree-walker&quot;&gt;aria-tree-walker&lt;/a&gt; and server-side MathJax.&lt;/p&gt;
+&lt;p&gt;You can find &lt;a href=&quot;https://pkra.github.io/2022-athen-stem-conf/&quot;&gt;the slides on github&lt;/a&gt;. They include a bunch of short videos (without captioning, I&#39;m afraid). They&#39;re all done with a real world OA article so you can try to reproduce things.&lt;/p&gt;
+&lt;p&gt;There&#39;s also a recording of my talk available from their site. If you can&#39;t access that, ping me and I&#39;ll see what I can do.&lt;/p&gt;
+&lt;p&gt;The rest of the conference was somewhat depressing for me. It was example after example of how the empty promises of MathML keep people in the US educational sector in a kind of Stockholm syndrome. Case study after case study showed how flawed everything is both in theory and practice. And yet they cling to 25 years of lies and falsehoods. It would be said for the if it wasn&#39;t so incredibly self-inflicted. It is infuriatingly dishonest to the students.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
