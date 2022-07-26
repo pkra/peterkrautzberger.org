@@ -20,3 +20,7 @@ templateClass: tmpl-post
 {% if latex %}
     <script type="module" src="/public/walker.js"></script>
 {% endif %}
+{% if prism %}
+  <link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
+  <style>code[class*="language-"], pre[class*="language-"]{font-size: 0.9em}</style>
+{% endif %}
