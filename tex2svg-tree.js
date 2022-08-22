@@ -1,5 +1,4 @@
 const sre = require('speech-rule-engine');
-sre.engineReady();
 
 // TeX to MathML
 const TeX = require('mathjax-full/js/input/tex.js').TeX;
@@ -38,31 +37,39 @@ const RegisterHTMLHandler = require('mathjax-full/js/handlers/html.js')
 const adaptor = jsdomadaptor(JSDOM);
 RegisterHTMLHandler(adaptor);
 const mml = new MathML();
-const svg = new SVG();
+const svg = new SVG({
+  displayOverflow: 'overflow',
+  linebreaks: {
+    inline: false,
+  }
+});
 
 const svghtml = mathjax.document('', { InputJax: mml, OutputJax: svg });
 
 const rewrite = require('@krautzource/sre-to-tree');
 
-const mjenrich = (texstring, displayBool) => {
+const mjenrich = async (texstring, displayBool) => {
+
   const mml = tex2mml(texstring, displayBool);
-  sre.setupEngine({
+  await sre.engineReady();
+  await sre.setupEngine({
     domain: 'mathspeak',
     style: 'default',
     locale: 'en',
     speech: 'deep',
     structure: true,
     mode: 'sync',
+    modality: 'speech',
   });
-  sre.engineReady();
-  const enrichedMml = sre.toEnriched(mml).toString();
+  await sre.engineReady();
+  const enrichedMml = await sre.toEnriched(mml).toString();
   const mjx = svghtml.convert(enrichedMml, {
     em: 16,
     ex: 8,
     containerWidth: 80 * 16,
   });
   // switch SRE to Braille
-  sre.setupEngine({
+  await sre.setupEngine({
     domain: 'default',
     style: 'default',
     locale: 'nemeth',
@@ -71,8 +78,8 @@ const mjenrich = (texstring, displayBool) => {
     structure: true,
     mode: 'sync',
   });
-  sre.engineReady();
-  const enrichedMmlBraille = sre.toEnriched(mml).toString();
+  await sre.engineReady();
+  const enrichedMmlBraille = await sre.toEnriched(mml).toString();
   const dom = new JSDOM(`<!DOCTYPE html>${enrichedMmlBraille}`);
   const brailleDoc = dom.window.document;
 

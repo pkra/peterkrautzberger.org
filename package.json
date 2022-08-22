@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "build": "rm -rf docs && npx eleventy --output docs && git checkout docs/CNAME",
+    "postbuild": "node postprocess.js",
     "dev": "rm -rf _site && npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy"
   },
@@ -23,15 +24,17 @@
   },
   "homepage": "https://github.com/pkra/peterkrautzberger.org/",
   "devDependencies": {
-    "@11ty/eleventy": "1.0.0-beta.9",
-    "@11ty/eleventy-plugin-rss": "1.1.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "3.1.3",
+    "@11ty/eleventy": "1.0.2",
+    "@11ty/eleventy-plugin-rss": "1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "4.1.0",
     "@krautzource/sre-to-tree": "2.0.2",
-    "jsdom": "19.0.0",
-    "luxon": "2.2.0",
-    "markdown-it": "12.3.0",
+    "backstopjs": "^6.1.1",
+    "jsdom": "20.0.0",
+    "luxon": "3.0.1",
+    "markdown-it": "13.0.1",
     "markdown-it-mathjax3": "2.2.0",
-    "mathjax-full": "3.2.0",
-    "speech-rule-engine": "^3.2.0"
+    "mathjax-full": "github:amermathsoc/MathJax-src#721453417ee045dca763db6cc993d308147cc4e1",
+    "speech-rule-engine": "4.0.7",
+    "linkedom": "^0.14.12"
   }
 }

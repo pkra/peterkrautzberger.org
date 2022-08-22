@@ -1,16 +1,37 @@
 "use strict";
-/* Process inline math */
 /*
-Like markdown-it-simplemath, this is a stripped down, simplified version of:
-https://github.com/runarberg/markdown-it-math
 
-It differs in that it takes (a subset of) LaTeX as input and relies on MathJax
-for rendering output.
+Wraps detected TeX in custom tags.
+
+
+Based on https://github.com/tani/markdown-it-mathjax3  @ v2.2.0
+
+
+The MIT License (MIT)
+
+Copyright (c) 2016 Waylon Flinn
+Copyright (c) 2020 TANIGUCHI Masaya
+Copyright (c) 2022 Peter KRAUTZBERGER
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 */
 
-const mjenrich = require('./tex2svg-tree.js');
-
-// Test if potential opening or closing delimieter
+// Test if potential opening or closing delimiter
 // Assumes that there is a "$" at state.src[pos]
 function isValidDelim(state, pos) {
     let max = state.posMax, can_open = true, can_close = true;
@@ -151,13 +172,11 @@ module.exports = function (md, options) {
     });
     md.renderer.rules.math_inline = function (tokens, idx) {
         options.display = false;
-        // return adaptor.outerHTML(mathDocument.convert(tokens[idx].content, options)).replace(/<svg/i, `<svg aria-label="${tokens[idx].content}"`);
-        return mjenrich(tokens[idx].content, false);
+        return `<tex-inline>${tokens[idx].content.replace(/</g, '\\lt ').replace(/>/g, '\\gt ')}</tex-inline>`;
     };
     md.renderer.rules.math_block = function (tokens, idx) {
         options.display = true;
-        // return adaptor.outerHTML(mathDocument.convert(tokens[idx].content, options)).replace(/<svg/i, `<svg aria-label="${tokens[idx].content}"`);
-        return mjenrich(tokens[idx].content, true);
+        return `<tex-block>${tokens[idx].content.replace(/</g, '\\lt ').replace(/>/g, '\\gt ')}</tex-block>`;
     };
     const render = md.renderer.render.bind(md.renderer);
     md.renderer.render = function (tokens, options, env) {
