@@ -952,3 +952,44 @@ the MathML fanatics hadn't killed everything that didn't fall in line.
 Even more: MathML is being held back. There's so much useful print
 equation content (tikz!!!) to consider for XML workflows and extending
 MathML would be natural here. Instead, nothing.
+
+## mathml future scenarios
+
+MathML is the zombie of web standards. Each decade brought 1 additional, differently broken implementations (Firefox, Safari, Chrome) and there's now a cut down spec; the mathml fanatics have silently removed existing features from browsers for whatever idiotic reasons (probably to argue they have 2 implemementations of the cut down spec). XML people can have fun with getting their garbage on the web in this scenario. Bugs are aplenty (I find a new one every time something forces me to look at native MathML), some are ridiculously bad (e.g., wiping out HTML parents), most go years without even bugs being filed (remember when Safari didn't draw mfrac lines reliably for over a year? No, you don't because nobody ever filed a bug).
+
+For the web, the best case scenario is: nobody cares and nobody uses it. It will become font/center/marquee or whatever.
+
+Even if the mathml fanatics were interested in moving the layout facilities into CSS, we'll get, at best, something like CSS tables. CSS tables were never able to suitably replace HTML table layout, they were super buggy for the longest time (and are still buggy despite years of improvements). But  most of all: people realized they acutally needed something completely different (i.e., CSS grid).
+
+Accessibility wise, the shoddy implementations in JAWS and VoiceOver will continue to barely help English speaking blind users. Everyone else will continue to find themselves shit out of luck.
+
+MathML and its community are fundamentally not willing or able to be a positive force. It's "MathML or die" all the way. The zombie continues.
+
+## reader takeaway
+
+So where does this leave us? 
+
+I'm not saying you shouldn't put print equation layout on the web.
+
+I am saying that you should consider two things when you do:
+
+### even mildly complex print equation layout is simply a bad type of content. 
+
+Find better ways to communicate. You don't need to go all "Kill math" about it. But for crying out loud experiment 
+
+There are soooo many good people out there experimenting -- just check math teachers on twitter and you'll find wondersome and wonderful experimentation.
+
+### if you do it, do it accessibly and that means do accessibility yourself
+
+If you put print equation layout on the web, be aware that you're brining inaccessible content to the web.
+
+Essentially, you're putting up a structured image. SVG is the best mental model here: if you generate a diagram with mermaidjs, you could use some of your input to enable accessibility. But you probably have to do a whole lot more.
+
+Above all: be mindful what you want to do. If you want to provide TeX as non-visual presentation, do that; you are the author and it's your prerogative. If you want to provide more standardized descriptions, use Speech Rule Engine to generate them. You can provide braille-specific descriptions alongside speech-oriented. MathJax and SRE are the best there is for that kind of thing. If you can't use JS on the client, you can still do things server-side. If equation layout gets complex, use an ARIA tree or tree grid with a modicum of client-side JS. Keep an eye focusgroup.
+
+
+
+### TODOs
+
+* stupid layout: textContent influenced layout -- operator dictionary,  mi single vs multi letter; compare to years of debates around aligning table cells at decimals
+* https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html#symbolic-text-characters  on how symbols are not characters (there's a part about equations later on in that page which is weird in its own right)
