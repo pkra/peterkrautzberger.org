@@ -100,7 +100,7 @@ Ok, quite a beast. Don’t despair! Remember what we tried first: sets of the fo
 There is a different angle to look at this: the tensor (or Fubini) product of ultrafilters.
 
 **Tensor product of ultrafilters** For $p,q \in \beta S$ define $p \otimes q \in \beta (S \times S)$ by
-$$ A\in p\otimes q \Leftrightarrow \{ s: \\ t : (s,t) \in A \} \in p \} \in q $$
+$$ A\in p\otimes q \Leftrightarrow \{ s: \{ t : (s,t) \in A \} \in p \} \in q $$
 
 Not much better, eh? Let’s take a look though: the tensor product is contains sets $A$ such that the first projection of $A$ lies in $p$ and additionally almost all fibers (in the sense of $p$) of the first projection lie in $q$. So you might say that the sets are $p$-large horizontally and $q$-large vertically.
 
