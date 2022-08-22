@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -17,10 +17,10 @@
   <header>
     <div class="masthead">
       <div class="container">
-        <h1 class="masthead-title">
+        <div class="masthead-title">
           <a href="/">Peter Krautzberger</a>
           <small> · on the web</small>
-        </h3>
+        </div>
       </div>
     </div>
   </header>
@@ -33,14 +33,14 @@
   <h1 class="post-title">Privilege-based Open Source</h1>
   <span class="post-date"><time datetime="2017-04-01">01 Apr 2017</time></span>
   <p><small>(Another one from the drafts.)</small> A while back I ranted on twitter about privilege-based open-source and Patrick Honner asked me what I meant with it.</p>
-<p>A surprisingly large number of open-source software (OSS) projects is run by volunteers. And I don't mean that &quot;hello world&quot; code you pushed to GitHub (which probably makes up 99% of all OSS repositories), I mean the many successful open-source projects that provide the fertile soil other (small and large) software projects are built on.</p>
+<p>A surprisingly large number of open-source software (OSS) projects is run by volunteers. And I don't mean that "hello world" code you pushed to GitHub (which probably makes up 99% of all OSS repositories), I mean the many successful open-source projects that provide the fertile soil other (small and large) software projects are built on.</p>
 <p>In other words, the majority of OSS is run by people privileged enough to spend hours on end to produce something that they then give a way for free. Whether or not OSS developers do it out of conviction, it's often a problem when people end up using privilege-based OSS without realizing it.</p>
 <h2>Houston, we have a problem</h2>
 <p>The most obvious problem is that privilege-based OSS can essentially go away at any moment. You don't have to look to extreme cases (left-pad, anyone?) to see this happen; projects simply slowly die. You might praise OSS for the fact that anyone can pick up the code and fork it if need be, but in reality dead, privilege-based OSS is more like an unfinished construction site; it's easier to start from scratch and thus the cycle repeats.</p>
 <p>However, this is so obvious, it's not really a problem, I think. In any case it's not what I mean.</p>
 <h2>Toxicity</h2>
 <p>There's a lot to be said in favor of developing OSS out of conviction. It frequently helps people and adds diversity to the ecosystem. The trouble is that privilege-based OSS can be highly toxic.</p>
-<p>One toxic variant is &quot;Silicon Valley style OSS&quot; where developers do not act out of conviction but more out of necessity to get ahead in a questionable job market (&quot;GitHub is your resume&quot;-kind-of-thing). If your hipster company hires people only due to their volunteer OSS credentials, then you are effectively hiring them by their privilege, creating a toxic environment and reducing diversity.</p>
+<p>One toxic variant is "Silicon Valley style OSS" where developers do not act out of conviction but more out of necessity to get ahead in a questionable job market ("GitHub is your resume"-kind-of-thing). If your hipster company hires people only due to their volunteer OSS credentials, then you are effectively hiring them by their privilege, creating a toxic environment and reducing diversity.</p>
 <p>Reversely, you have the toxicity of people relying on OSS software not being willing to contribute to the development of OSS because privileged people make it work. Just the other day I was talking with a potential client who described how they use pandoc in production. If you do this at scale, then you're basing the integrity of your production workflow on how much John MacFarlane could procrastinate over the years.</p>
 <p>For OSS developer, this can turn into a toxic reality because users often think they deserve access to the developer's privilege. That is, they can become highly aggressive when they find a bug in the OSS software they're using, especially when it impacts them. This gets extreme when we're talking about companies and use of privilege-based OSS in production. Company employees quickly try to exert pressure on OSS projects to fix things -- yet refuse to actually contribute to development any which way or even acknowledging the work that went into a piece of software that they themselves chose to build upon.</p>
 <p>Obviously, there are other ways of doing OSS software development. There's transparency-driven OSS (e.g., security related tools, browsers), there's shared-burden OSS (e.g., joining forces to lower costs), there's donation-based, crowd-sourced, and bounty-driven OSS and many others -- Nadia Eghbal lists a few in her <a href="https://github.com/nayafia/lemonade-stand">lemonade-stand on GitHub</a>. Also ask about <a href="http://oss-watch.ac.uk/resources/governancemodels">governance models</a>.</p>
@@ -49,7 +49,7 @@
 <p>These thoughts were far from original.</p>
 <ul>
 <li>Ian Cordasco, <a href="http://www.coglib.com/~icordasc/blog/2015/11/corporations-and-oss-do-not-mix.html">Corporations and OSS Do Not Mix</a></li>
-<li>Jan Lehnardt, <a href="http://writing.jan.io/2015/11/20/sustainable-open-source.html">Sustainable Open Source</a>, especially the section &quot;Money&quot;.</li>
+<li>Jan Lehnardt, <a href="http://writing.jan.io/2015/11/20/sustainable-open-source.html">Sustainable Open Source</a>, especially the section "Money".</li>
 <li>Marijn Haverbeke <a href="http://marijnhaverbeke.nl/blog/sustainable-maintenance.html">More Money For Better Open-Source Software</a></li>
 <li>Noah Kantrowitz, <a href="https://coderanger.net/funding-foss/">Funding FOSS</a></li>
 <li>Isaacs, <a href="https://medium.com/open-source-life/money-and-open-source-d44a1953749c">Money and Open Source</a></li>
@@ -57,16 +57,16 @@
 <li>Nadia Eghbal <a href="https://medium.com/@nayafia/what-success-really-looks-like-in-open-source-2dd1facaf91c">What success really looks like in open source</a></li>
 <li><a href="https://stackoverflow.com/insights/survey/2017/">StackOverflow survey 2017</a>, privilege in all its glory.</li>
 <li>
-<blockquote><p lang="en" dir="ltr">This is where I have an issue with the &quot;hire people for their side projects&quot; mentality.</p>&mdash; Stewart Scott-Curran (@stewartsc) <a href="https://twitter.com/stewartsc/status/735273897721921536">May 25 2016</a></blockquote>
+<blockquote><p lang="en" dir="ltr">This is where I have an issue with the "hire people for their side projects" mentality.</p>— Stewart Scott-Curran (@stewartsc) <a href="https://twitter.com/stewartsc/status/735273897721921536">May 25 2016</a></blockquote>
 </li>
 <li>The reverse opinion: <a href="http://blog.ieeesoftware.org/2016/04/dissecting-myth-that-open-source.html">Dissecting The Myth That Open Source Software Is Not Commercial</a> on the IEEE software blog makes several good points but I think misses how many key projects are effectively run by privileged developers (even if those might be involved in large commercial open-source projects at the same time).</li>
 </ul>
 <p>Wider scope</p>
 <ul>
 <li>PPK touches on entitlement and privilege in <a href="http://www.quirksmode.org/blog/archives/2016/03/the_webs_origin.html">The web’s original sin</a>.</li>
-<li>William Stein <a href="http://sagemath.blogspot.de/2016/02/if-you-were-new-faculty-member-again.html">&quot;If you were new faculty, would you start something like SageMathCloud sooner?&quot;</a>
+<li>William Stein <a href="http://sagemath.blogspot.de/2016/02/if-you-were-new-faculty-member-again.html">"If you were new faculty, would you start something like SageMathCloud sooner?"</a>
 <blockquote>
-<p>Overall, the mathematical community does not value open source mathematical software in proportion to its value, and doesn't understand its importance to mathematical research and education. I would like to say that things have got a lot better over the last decade, but I don't think they have. My personal experience is that much of the &quot;next generation&quot; of mathematicians who would have changed how the math community approaches open source software are now in industry, or soon will be, and hence they have no impact on academic mathematical culture. Every one of my Ph.D. students are now at Google/Facebook/etc.</p>
+<p>Overall, the mathematical community does not value open source mathematical software in proportion to its value, and doesn't understand its importance to mathematical research and education. I would like to say that things have got a lot better over the last decade, but I don't think they have. My personal experience is that much of the "next generation" of mathematicians who would have changed how the math community approaches open source software are now in industry, or soon will be, and hence they have no impact on academic mathematical culture. Every one of my Ph.D. students are now at Google/Facebook/etc.</p>
 </blockquote>
 </li>
 <li>Cameron Neylon, <a href="http://cameronneylon.net/blog/beyond-the-culture-clash-developing-leadership-for-open-organisations/">Beyond the culture clash: Developing leadership for open organisations</a>
@@ -82,7 +82,7 @@ Passion can also be a problem, as well as being a driver. Without that passion a
 </article>
 
 <aside class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Privilege-based Open Source">write me an email</a>.
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Privilege-based%20Open%20Source">write me an email</a>.
   </span>
   <span> You can also <a href="/about/">contact me</a>.</span>
 </aside>
@@ -93,7 +93,7 @@ Passion can also be a problem, as well as being a driver. Without that passion a
 		</main>
 
   <footer class="container related">
-    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    © 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
     For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
   </footer>
 

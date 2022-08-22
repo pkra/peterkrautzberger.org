@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -17,10 +17,10 @@
   <header>
     <div class="masthead">
       <div class="container">
-        <h1 class="masthead-title">
+        <div class="masthead-title">
           <a href="/">Peter Krautzberger</a>
           <small> · on the web</small>
-        </h3>
+        </div>
       </div>
     </div>
   </header>
@@ -36,10 +36,10 @@
 <p>Isn't it always?</p>
 <p><button onclick="document.body.innerHTML = body.innerHTML.replace(/equation/g,'formula');">Replace <em>equation</em> with <em>formula</em></button>, if you prefer.</p>
 <h1>The first rule of equation layout accessibility</h1>
-<p>Don't talk about &quot;math accessibility&quot; when you mean equation layout accessibility.</p>
+<p>Don't talk about "math accessibility" when you mean equation layout accessibility.</p>
 <p>Mathematics is an ancient domain of human knowledge, formula or equation layout a visual layout technique developed primarily in the 19th and 20th century.</p>
 <p>Mathematical content is far more than content that needs equation layout and equation layout appears in many more domains than just mathematics.</p>
-<p>We will fail to make equation layout accessible if we think we can treat equation layout identically across mathematics, physics, chemistry, computer science, biology etc (and their various sub-fields). For example, voicing a superscript 2 as &quot;squared&quot; may be a reasonable heuristic for middle school mathematics but a miserable heuristic for chemistry.</p>
+<p>We will fail to make equation layout accessible if we think we can treat equation layout identically across mathematics, physics, chemistry, computer science, biology etc (and their various sub-fields). For example, voicing a superscript 2 as "squared" may be a reasonable heuristic for middle school mathematics but a miserable heuristic for chemistry.</p>
 <p>We will fail to make mathematical content accessible if we only make equation layout accessible and vice versa.</p>
 <h1>2. Augmentation is a must (or: <em>aria-labels must work</em>)</h1>
 <p>Manually overriding accessible name calculations (e.g., via aria-label) on text(-like) content is generally considered a last resort and it is clearly not a long term strategy for accessibility.</p>
@@ -60,7 +60,7 @@
 <p>In other words, even high quality markup for equation layout requires heavy use of heuristics to guess the semantics.</p>
 <p>Heuristics for non-visual representation of equation layout have existed for a very long time (and before the web). Today, some assistive technologies integrate heuristics for equation layout when done as MathML markup.</p>
 <p>This is a problem because most of these heuristics are fairly bad. Heuristics for equation layout are largely of low quality at scale. It is unsurprising when (e.g.) Nemeth's math speak rules were invented for a person reading to another; such limitations could easily be overcome in that situations. At the scale of the web, it is much easier to run into edge cases where heuristics are too coarse or too fine grained. An almost universal limitation is the restrictions to individual fragments of equation layout, ignoring the context (both equational and otherwise).</p>
-<p>Relying on heuristics in AT for <em>good</em> content poses a serious issue (hinted to earlier): heuristics interfere with augmentation. For example, the commonly used heuristic that every superscript 2 is voiced <q>square</q>, then no override may be possible; even if it is, will an override override the phrasing (e.g., <q>to the power of two</q>) or also consider the superscript position? Do you need two overrides to clarify? If a heuristic identifies (1+2+3) as a summation and provides summary information (e.g. <q>sum with three summands</q>), what happens when an author augment one of the + signs (say, with <code>aria-label=&quot;times&quot;</code>)?  We would need to augment both the content and the heuristics. As the saying goes: and now we have two problems.</p>
+<p>Relying on heuristics in AT for <em>good</em> content poses a serious issue (hinted to earlier): heuristics interfere with augmentation. For example, the commonly used heuristic that every superscript 2 is voiced <q>square</q>, then no override may be possible; even if it is, will an override override the phrasing (e.g., <q>to the power of two</q>) or also consider the superscript position? Do you need two overrides to clarify? If a heuristic identifies (1+2+3) as a summation and provides summary information (e.g. <q>sum with three summands</q>), what happens when an author augment one of the + signs (say, with <code>aria-label="times"</code>)?  We would need to augment both the content and the heuristics. As the saying goes: and now we have two problems.</p>
 <p>Much like with textual descriptions of other visual content (e.g., image alttext, video captions, SVG descriptions) heuristical tools (human or machine guided) should be used at authoring time.</p>
 <h1>5. Describing layout is a red herring</h1>
 <p>There is a position that I encounter every once in a while: just give non-visual users access to the visual layout and stop. That's a very appealing proposition: instead of trying to make sense of visual layout semantically, we <em>just</em> provide information about what letter/word is where on a two-dimensional canvas. It also appeals to a basic idea of equality: visual users only have visual access, why would non-visual users get additional information?</p>
@@ -81,7 +81,7 @@
 </article>
 
 <aside class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%206 Thoughts on accessibility of equation layout">write me an email</a>.
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%206%20Thoughts%20on%20accessibility%20of%20equation%20layout">write me an email</a>.
   </span>
   <span> You can also <a href="/about/">contact me</a>.</span>
 </aside>
@@ -92,7 +92,7 @@
 		</main>
 
   <footer class="container related">
-    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    © 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
     For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
   </footer>
 

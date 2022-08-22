@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -17,10 +17,10 @@
   <header>
     <div class="masthead">
       <div class="container">
-        <h1 class="masthead-title">
+        <div class="masthead-title">
           <a href="/">Peter Krautzberger</a>
           <small> · on the web</small>
-        </h3>
+        </div>
       </div>
     </div>
   </header>
@@ -32,7 +32,7 @@
 <article class="post">
   <h1 class="post-title">Elusive semantics</h1>
   <span class="post-date"><time datetime="2017-06-24">24 Jun 2017</time></span>
-  <p>I don't like &quot;semantics zealots&quot;, people who claim that content always can (let alone always must) be &quot;fully semantic&quot; (for whatever value of &quot;semantic&quot; they favor). In the same vein, I also don't like the thinking that any format can fully separate semantics and presentation - human thought is to fickle a beast to tolerate such confinement. You may blame my old training as a set theorist, but the gray area of neither true nor false is much more important to me.</p>
+  <p>I don't like "semantics zealots", people who claim that content always can (let alone always must) be "fully semantic" (for whatever value of "semantic" they favor). In the same vein, I also don't like the thinking that any format can fully separate semantics and presentation - human thought is to fickle a beast to tolerate such confinement. You may blame my old training as a set theorist, but the gray area of neither true nor false is much more important to me.</p>
 <p>Still, the things you can do well, you obviously should. And yet, every once in a while, somebody throws you a curveball and you just have to shout: <q><em>This</em> is why we can't have good things!</q>.</p>
 <h2>where did you come from, where did you go</h2>
 <p>The other day on a client project, the QA specialist pointed out that the content was consistently using <code>&lt;em&gt;</code> where it should be using <code>&lt;i&gt;</code>. Can we fix that?</p>
@@ -60,15 +60,15 @@
 <p>In the end, beauty lies in the eye of the beholder and semantics in the eyes of the reader. We did, in fact, switch to <code>&lt;i&gt;</code> with the plan to expose more information from the original source regarding emphasis so we can gather more data on its usage. Fundamentally, this won't help because it doesn't solve the problem of inline definitions. Still, some analysis might reveal pragmatic improvements down the line.</p>
 <p>In the end, it's not hard to argue that a definition that is well known in the field and that is done inline in the introduction of an article is more like the kind of reference to a definition as in the above example from the spec (in fact, often enough it is done in the vicinity of a bibliographic reference). Of course, we're still conflating <code>\emph</code> and <code>\textit</code>.</p>
 <h2>coda</h2>
-<p>Now <s>zealots</s> idealists will argue that authors &quot;just&quot; have to learn to use semantic macros in TeX. After all, there are plenty of &quot;semantic&quot; LaTeX packages out there; just start writing good markup already!</p>
-<p>Besides the lack of pragmatism, the only viable solution I can see would be a LaTeX package matching specifically HTML5 markup. After all, we have the tags and they have established definitions; any &quot;semantics&quot; beyond that will only cause issues down the line (what if a tag is introduced to HTML but with a slightly different meaning?). Even then, it doesn't solve the social problem at the heart of so many publishing technology issues: who would make the effort and use it? It's extra work and does nothing for print; why would an author do extra work when they think print rules?</p>
+<p>Now <s>zealots</s> idealists will argue that authors "just" have to learn to use semantic macros in TeX. After all, there are plenty of "semantic" LaTeX packages out there; just start writing good markup already!</p>
+<p>Besides the lack of pragmatism, the only viable solution I can see would be a LaTeX package matching specifically HTML5 markup. After all, we have the tags and they have established definitions; any "semantics" beyond that will only cause issues down the line (what if a tag is introduced to HTML but with a slightly different meaning?). Even then, it doesn't solve the social problem at the heart of so many publishing technology issues: who would make the effort and use it? It's extra work and does nothing for print; why would an author do extra work when they think print rules?</p>
 <p>I think only someone interested in creating HTML output would make the effort. And at that point you have to ask: Why would those authors bother with an archaic programming language like TeX to write HTML? They will find it invariably easier to just write HTML or their favorite lightweight markup for creating HTML, especially given the speed at which HTML-to-PDF solutions are improving). Building tools for LaTeX to solve this would just create extra work but help nobody. Just build better tools for writing HTML.</p>
 <p><i lang="de">Doch das ist eine andere Geschichte und soll ein andermal erzählt werden.</i></p>
 
 </article>
 
 <aside class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Elusive semantics">write me an email</a>.
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Elusive%20semantics">write me an email</a>.
   </span>
   <span> You can also <a href="/about/">contact me</a>.</span>
 </aside>
@@ -79,7 +79,7 @@
 		</main>
 
   <footer class="container related">
-    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    © 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
     For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
   </footer>
 

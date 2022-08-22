@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -17,10 +17,10 @@
   <header>
     <div class="masthead">
       <div class="container">
-        <h1 class="masthead-title">
+        <div class="masthead-title">
           <a href="/">Peter Krautzberger</a>
           <small> · on the web</small>
-        </h3>
+        </div>
       </div>
     </div>
   </header>
@@ -32,7 +32,7 @@
 <article class="post">
   <h1 class="post-title">LaTeX Something Something Darkside</h1>
   <span class="post-date"><time datetime="2014-11-28">28 Nov 2014</time></span>
-  <p>[This is week 3 of the challenge. Ok, I'm stretching &quot;every week&quot; a bit here. I blame somebody's first cold or alternatively Turkeys. Also, I cheated; this took longer than 30mins.]</p>
+  <p>[This is week 3 of the challenge. Ok, I'm stretching "every week" a bit here. I blame somebody's first cold or alternatively Turkeys. Also, I cheated; this took longer than 30mins.]</p>
 <iframe width="625" height="382" src="https://www.youtube.com/embed/Wk2cd_x9Ta8" frameborder="0" allowfullscreen></iframe>
 <blockquote>
 <p>Darth Vader/Stewie: Oh, come on, Luke, come join the Dark Side! It's really cool!<br>
@@ -43,15 +43,15 @@ Darth Vader/Stewie: Well um... there's me, the Emperor, this guy Scott. You'll l
 <p>Where my previous post was more about TeX-like syntax, this is about TeX/LaTeX proper. If you're a TeX/LaTeX enthusiast, don't go all crazy on me (I mean, have you seen my thesis?). This is about me feeling a growing awkwardness towards TeX/LaTeX. And this has little to do with TeX/LaTeX itself.</p>
 <h3>If all you have is a hammer, everything looks like a nail</h3>
 <p>TeX/LaTeX is a tool. It is a tool designed by Knuth to solve a problem in print layout. The trouble is: print is becoming less and less relevant and I think this holds for most TeX users (when was the last time you went to a library to look at the printed copy of a <em>current</em> journal issue?). What is not obsolete is PDF and TeX is, of course, very good when it comes to generating PDF.</p>
-<p>However, this &quot;Portable Document Format&quot; is really quite useless in the one place where people consume more and more information: the web. (I admit I'm of the conviction that the web won't go away; crazy talk, I know.) And for the web, TeX/LaTeX is the wrong tool. Yes, there are about a gazillion projects out there that try to bridge that gap, try to create HTML out of LaTeX. But if you try them out you'll soon notice that you'll have to restrict yourself quite a bit to make conversion work.</p>
+<p>However, this "Portable Document Format" is really quite useless in the one place where people consume more and more information: the web. (I admit I'm of the conviction that the web won't go away; crazy talk, I know.) And for the web, TeX/LaTeX is the wrong tool. Yes, there are about a gazillion projects out there that try to bridge that gap, try to create HTML out of LaTeX. But if you try them out you'll soon notice that you'll have to restrict yourself quite a bit to make conversion work.</p>
 <p>Turn this around and you'll realize that the community as whole has a serious problem: almost nobody writes TeX/LaTeX that way which means almost all TeX/LaTeX will never convert to web formats well. To put it differently, there's a reason for a large market of blackbox vendors that specialize in TeX to XML/HTML conversion for professional publishers (and this often involves re-keying).</p>
 <p>This is, of course, in no way a fault of TeX/LaTeX itself which was designed for print, in 1978. But it is a problem we are facing today.</p>
 <h3>Everything is nothing</h3>
-<p>Now TeX is Turing complete and this means we can do everything with TeX (even <a href="http://tex.blogoverflow.com/2012/10/i-tex-therefore-i-toast/">toast</a>). So a universal output for the web is theoretically possible. However, everything is nothing if we can't make it practical. Perhaps one day, we'll be lucky to find another Leslie Lamport who will give us &quot;HTMLTeX&quot;, i.e., a set of macros that work and rapidly become the de-facto standard for authors. I doubt it. (And not just because I know mathematicians who don't upload to the arXiv because their ancient TeX template won't compile there.)</p>
+<p>Now TeX is Turing complete and this means we can do everything with TeX (even <a href="http://tex.blogoverflow.com/2012/10/i-tex-therefore-i-toast/">toast</a>). So a universal output for the web is theoretically possible. However, everything is nothing if we can't make it practical. Perhaps one day, we'll be lucky to find another Leslie Lamport who will give us "HTMLTeX", i.e., a set of macros that work and rapidly become the de-facto standard for authors. I doubt it. (And not just because I know mathematicians who don't upload to the arXiv because their ancient TeX template won't compile there.)</p>
 <p>I doubt it because there's no problem to solve here. Where Knuth (and Lamport) solved imminent problems, there is no problem when it comes to authoring for the web -- a gazillion tools do it, on every level of professionalism. TeX is neither needed for this nor does it help.</p>
 <h3>Waste of resources</h3>
 <blockquote>
-<p>&quot;The best minds of my generation are thinking about how to write TeX packages.&quot;<br>
+<p>"The best minds of my generation are thinking about how to write TeX packages."<br>
 -- not Jeff Hammerbacher.</p>
 </blockquote>
 <p>Another part of my awkwardness towards TeX/LaTeX these days lies in the resources the community invests in it. It feels like every day, my filter bubble gives me a new post about somebody teaching their students LaTeX. These make me wonder. How many students will need LaTeX after leaving academia? How many would benefit from learning how to author for the web?</p>
@@ -64,12 +64,12 @@ Darth Vader/Stewie: Well um... there's me, the Emperor, this guy Scott. You'll l
 <p>So while I can understand why somebody would claim that their documents are well typeset, this is not very relevant. As long as we cannot enforce good practices (let alone best ones), the body of TeX/LaTeX documents will remain a barely usable mess (for anything but PDF generation).</p>
 <p>On the other hand, publishers demonstrate every day that you can create beautiful print rendering out of XML workflows, no matter if you give them TeX or MS Word documents. Even MS Word has made huge progress in terms of rendering quality and nowadays ships with a very neat math input language, very decent handwriting recognition and other useful tools.</p>
 <p>The web is typographically different. On the one hand, much of its standards (let alone browser implementations) is not on the level of established print practices. On the other hand, its typographic needs are very different from print for many reasons (reflow, reading on screens etc). And even though some of print's advantages will eventually be integrated, I suspect we will develop a different form of communication for STEM content on the web than we have in print because we have a much more powerful platform.</p>
-<p>Ultimately, PDFs have stopped looking professional to me. Instead, <a href="http://blog.felixbreuer.net/2014/11/20/geometry-of-restricted-partitions-talk-slides-threejs.html">Felix's recent slides</a>, <a href="http://bost.ocks.org/mike/algorithms/">Mike Bostock's &quot;Visualizing Algorithms&quot;</a>, and <a href="http://worrydream.com/Tangle/">Bret Victor's Tangle</a> are examples where you'll see my face light up, thinking about how we can build authoring tools to turn these experiments into tools for the average user.</p>
+<p>Ultimately, PDFs have stopped looking professional to me. Instead, <a href="http://blog.felixbreuer.net/2014/11/20/geometry-of-restricted-partitions-talk-slides-threejs.html">Felix's recent slides</a>, <a href="http://bost.ocks.org/mike/algorithms/">Mike Bostock's "Visualizing Algorithms"</a>, and <a href="http://worrydream.com/Tangle/">Bret Victor's Tangle</a> are examples where you'll see my face light up, thinking about how we can build authoring tools to turn these experiments into tools for the average user.</p>
 <hr>
 <p><em>Comments</em></p>
 <ul>
 <li><strong>Stephen Brooks</strong>, 2014/11/28<br>
-&quot;What is not obsolete is PDF [citation needed]&quot;<br>
+"What is not obsolete is PDF [citation needed]"<br>
 I mean really they invented HTML with the idea of being displayed in a variable-sized digital window, and we’re still stuck with PDF more than ever, which emulated fixed-size paper pages. I roll my eyes when a conference says “your papers must be submitted on A4 or Letter”, the 20th century ended a while ago now.<br>
 Also Tex/LaTeX is non-multithreadable because it’s essentially a single-thread computer program. A computer program is actually a hideous format for a *document*. It’s infinitely flexible of course, but it makes many document transformations (such as conversion to HTML without JavaScript) provably uncomputable.<br>
 XML would have been a solution to this but they shot themselves in the foot with a bulky syntax that wasn’t as easy to type by human beings as TeX and abominable support for mathematics.<br>
@@ -128,17 +128,17 @@ Just a comment on the “creating XML with LaTex” part. Our first LaTeX→SGML
 </li>
 <li><strong>Douglas Carnall</strong>, 2014/11/29<br>
 As George Bernard Shaw didn't say, all complexity is conspiracy against the laity. <a href="http://www.bmj.com/content/321/7262/711.2/rapid-responses" rel="nofollow">PDF was always the preferred format of the forces of reaction</a> to the web revolution. That there were free tools of mind-bending hardness-of-use to create them was always a feature, not a bug. (Seekers of ease could always pay that nice Mr. Adobe).<br>
-Do not forget the sheer panic among publishers, conscious of the risk to their position as gatekeeper to the ziggurat of academic preferment, or bureaucrats anxious that their reports be considered &quot;influential,&quot; when, in, say, about 1997, they were confronted with a 10kB html file that would do about 97% of the job layout-wise, with a fraction of the resources of conventional typeset+print, and could instantly reach a global audience.<br>
-Irrational as it may be, the hierarchy of visual prejudice that interprets &quot;typeset&quot; as &quot;quality&quot; runs deep, and there are a heap of folks out there whose entire economic interest is that you should fail.<br>
+Do not forget the sheer panic among publishers, conscious of the risk to their position as gatekeeper to the ziggurat of academic preferment, or bureaucrats anxious that their reports be considered "influential," when, in, say, about 1997, they were confronted with a 10kB html file that would do about 97% of the job layout-wise, with a fraction of the resources of conventional typeset+print, and could instantly reach a global audience.<br>
+Irrational as it may be, the hierarchy of visual prejudice that interprets "typeset" as "quality" runs deep, and there are a heap of folks out there whose entire economic interest is that you should fail.<br>
 May I, nonetheless, wish your elbow every strength,<br>
 D.</li>
 <li><strong>David Farmer</strong>, 2014/12/01<br>
 Asaf Karagila likes his papers in PDF.  Compared to what? Don't you think the following is a better way to read a paper on your computer screen?<br>
 <a href="http://sl2x.aimath.org/development/sample/1402.3048/">Absolutely Choiceless Proofs</a>, by Asaf Karagila<br>
 That version even looks good in a smart phone, which I doubt anyone would claim for PDF.<br>
-This also illustrates Peter's point about re-keying. If you look at Section 4 in the link above, you will see a reference to &quot;Example 4&quot;.  But there is no example 4 in that version, because I set the theorems and examples to use two levels of numbering.  Likely the journal would do the same.  So the journal would pay someone to modify the LaTeX source by<br>
+This also illustrates Peter's point about re-keying. If you look at Section 4 in the link above, you will see a reference to "Example 4".  But there is no example 4 in that version, because I set the theorems and examples to use two levels of numbering.  Likely the journal would do the same.  So the journal would pay someone to modify the LaTeX source by<br>
 putting a <code>\label{...}</code> in the 4th example, and then <code>\ref{...}</code>  that label in Section 4.  This would also improve the PDF by allowing a link to the reference.<br>
-The need to &quot;fix&quot; the LaTeX source before publication is a cost that most of us don't know about.  Maybe an awareness of that cost  (or a transfer of that cost to the author) could help motivate moving to a system which will end up with better documents on the web?</li>
+The need to "fix" the LaTeX source before publication is a cost that most of us don't know about.  Maybe an awareness of that cost  (or a transfer of that cost to the author) could help motivate moving to a system which will end up with better documents on the web?</li>
 <li><strong>William F. Hammond</strong>, 2014/12/01<br>
 Experience with the best LaTeX-to-HTML converters shows that they require profiled LaTeX. Many well-written LaTeX documents conform to their profiles. For example, check out the processing of some LaTeX articles from <a href="http://arXiv.org">arXiv.org</a> (in most cases without serious fussing in the source) here:<br>
 <a href="http://www.albany.edu/~hammond/demos/Html5/arXiv/">http://www.albany.edu/~hammond/demos/Html5/arXiv/</a><br>
@@ -152,7 +152,7 @@ Thanks to everyone for your thoughtful comments.</li>
 </article>
 
 <aside class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20LaTeX Something Something Darkside">write me an email</a>.
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20LaTeX%20Something%20Something%20Darkside">write me an email</a>.
   </span>
   <span> You can also <a href="/about/">contact me</a>.</span>
 </aside>
@@ -163,7 +163,7 @@ Thanks to everyone for your thoughtful comments.</li>
 		</main>
 
   <footer class="container related">
-    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    © 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
     For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
   </footer>
 

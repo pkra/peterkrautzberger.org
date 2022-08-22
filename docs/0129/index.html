@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -17,10 +17,10 @@
   <header>
     <div class="masthead">
       <div class="container">
-        <h1 class="masthead-title">
+        <div class="masthead-title">
           <a href="/">Peter Krautzberger</a>
           <small> · on the web</small>
-        </h3>
+        </div>
       </div>
     </div>
   </header>
@@ -59,227 +59,227 @@
 <h2>Adding MathJax.</h2>
 <ul>
 <li>add the slim down version of MathJax to your epub file using your favoriate tool for adding content to a zip file. (Don't unzip/rezip unless you know what epub needs when zipping...)</li>
-<li>Assuming you're using the copy as in the attachement, add the following to your manifest (modify paths and id's if needed)<pre><code>&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/BasicLatin.js&quot; id=&quot;id0&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MiscMathSymbolsB.js&quot; id=&quot;id1&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/d.js&quot; id=&quot;id2&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/jax.js&quot; id=&quot;id3&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/cancel.js&quot; id=&quot;id4&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/a.js&quot; id=&quot;id5&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/AsciiMath/jax.js&quot; id=&quot;id6&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/autoload/ms.js&quot; id=&quot;id7&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/mathchoice.js&quot; id=&quot;id8&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Script/Regular/Main.js&quot; id=&quot;id9&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/extpfeil.js&quot; id=&quot;id10&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/AsciiMath/config.js&quot; id=&quot;id11&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/Arrows.js&quot; id=&quot;id12&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/images/CloseX-31.png&quot; id=&quot;id13&quot; media-type=&quot;image/png&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/LatinExtendedA.js&quot; id=&quot;id14&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/Other.js&quot; id=&quot;id15&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Size3/Regular/Main.js&quot; id=&quot;id16&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Size2/Regular/Main.js&quot; id=&quot;id17&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/images/MenuArrow-15.png&quot; id=&quot;id18&quot; media-type=&quot;image/png&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/TeX/jax.js&quot; id=&quot;id19&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Size1/Regular/Main.js&quot; id=&quot;id20&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/h.js&quot; id=&quot;id21&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/l.js&quot; id=&quot;id22&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/PUA.js&quot; id=&quot;id23&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/AMSsymbols.js&quot; id=&quot;id24&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/CombDiacritMarks.js&quot; id=&quot;id25&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/PUA.js&quot; id=&quot;id26&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/GreekAndCoptic.js&quot; id=&quot;id27&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/LatinExtendedB.js&quot; id=&quot;id28&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/LatinExtendedA.js&quot; id=&quot;id29&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MiscSymbols.js&quot; id=&quot;id30&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/scr.js&quot; id=&quot;id31&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/MiscSymbols.js&quot; id=&quot;id32&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/MiscTechnical.js&quot; id=&quot;id33&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/newcommand.js&quot; id=&quot;id34&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/autoload/mmultiscripts.js&quot; id=&quot;id35&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/p.js&quot; id=&quot;id36&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/Main.js&quot; id=&quot;id37&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/o.js&quot; id=&quot;id38&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/autoload/annotation-xml.js&quot; id=&quot;id39&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/u.js&quot; id=&quot;id40&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/BasicLatin.js&quot; id=&quot;id41&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/BasicLatin.js&quot; id=&quot;id42&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Size4/Regular/Main.js&quot; id=&quot;id43&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/noUndefined.js&quot; id=&quot;id44&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/k.js&quot; id=&quot;id45&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/LetterlikeSymbols.js&quot; id=&quot;id46&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/HTML.js&quot; id=&quot;id47&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/Main.js&quot; id=&quot;id49&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/MiscSymbolsAndArrows.js&quot; id=&quot;id50&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/BasicLatin.js&quot; id=&quot;id51&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/GeometricShapes.js&quot; id=&quot;id52&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/GeometricShapes.js&quot; id=&quot;id53&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/config.js&quot; id=&quot;id54&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/enclose.js&quot; id=&quot;id55&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/EnclosedAlphanum.js&quot; id=&quot;id56&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/mhchem.js&quot; id=&quot;id57&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/verb.js&quot; id=&quot;id58&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/GeneralPunctuation.js&quot; id=&quot;id59&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/MathMenu.js&quot; id=&quot;id60&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/GeometricShapes.js&quot; id=&quot;id61&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/PUA.js&quot; id=&quot;id62&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/LetterlikeSymbols.js&quot; id=&quot;id63&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/z.js&quot; id=&quot;id64&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/Main.js&quot; id=&quot;id65&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/SpacingModLetters.js&quot; id=&quot;id66&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/Other.js&quot; id=&quot;id67&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/autoload-all.js&quot; id=&quot;id68&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/CombDiacritMarks.js&quot; id=&quot;id69&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/noErrors.js&quot; id=&quot;id70&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/g.js&quot; id=&quot;id71&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/BasicLatin.js&quot; id=&quot;id72&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/SpacingModLetters.js&quot; id=&quot;id73&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MiscSymbols.js&quot; id=&quot;id74&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/GreekAndCoptic.js&quot; id=&quot;id75&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/Main.js&quot; id=&quot;id76&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/mml2jax.js&quot; id=&quot;id77&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/GeometricShapes.js&quot; id=&quot;id78&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/i.js&quot; id=&quot;id79&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/q.js&quot; id=&quot;id80&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/toMathML.js&quot; id=&quot;id81&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/NativeMML/config.js&quot; id=&quot;id82&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/BasicLatin.js&quot; id=&quot;id83&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/boldsymbol.js&quot; id=&quot;id84&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/Other.js&quot; id=&quot;id85&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/BoxDrawing.js&quot; id=&quot;id86&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/begingroup.js&quot; id=&quot;id87&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/v.js&quot; id=&quot;id88&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/MiscMathSymbolsA.js&quot; id=&quot;id89&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Math/BoldItalic/Main.js&quot; id=&quot;id90&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/Other.js&quot; id=&quot;id91&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/autoload/menclose.js&quot; id=&quot;id92&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/LetterlikeSymbols.js&quot; id=&quot;id93&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js&quot; id=&quot;id94&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/GeneralPunctuation.js&quot; id=&quot;id95&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/MiscMathSymbolsB.js&quot; id=&quot;id96&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/x.js&quot; id=&quot;id97&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/Other.js&quot; id=&quot;id98&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/j.js&quot; id=&quot;id99&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/MathZoom.js&quot; id=&quot;id100&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MiscMathSymbolsA.js&quot; id=&quot;id101&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/unicode.js&quot; id=&quot;id102&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/c.js&quot; id=&quot;id103&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/NativeMML/jax.js&quot; id=&quot;id104&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/SupplementalArrowsB.js&quot; id=&quot;id105&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/autobold.js&quot; id=&quot;id106&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/SuppMathOperators.js&quot; id=&quot;id107&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/Main.js&quot; id=&quot;id108&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/action.js&quot; id=&quot;id109&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/fr.js&quot; id=&quot;id110&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/Dingbats.js&quot; id=&quot;id111&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Dingbats.js&quot; id=&quot;id112&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/CombDiacritMarks.js&quot; id=&quot;id113&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/Arrows.js&quot; id=&quot;id114&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/MathEvents.js&quot; id=&quot;id115&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/MathOperators.js&quot; id=&quot;id116&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Caligraphic/Bold/Main.js&quot; id=&quot;id117&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/MathOperators.js&quot; id=&quot;id118&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/Latin1Supplement.js&quot; id=&quot;id119&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/CombDiacritMarks.js&quot; id=&quot;id120&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/f.js&quot; id=&quot;id121&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Main.js&quot; id=&quot;id122&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/bbox.js&quot; id=&quot;id123&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/config.js&quot; id=&quot;id124&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/CombDiactForSymbols.js&quot; id=&quot;id125&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/CombDiacritMarks.js&quot; id=&quot;id126&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Arrows.js&quot; id=&quot;id127&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/SupplementalArrowsA.js&quot; id=&quot;id128&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/r.js&quot; id=&quot;id129&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/GeneralPunctuation.js&quot; id=&quot;id130&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/BasicLatin.js&quot; id=&quot;id131&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/SuppMathOperators.js&quot; id=&quot;id132&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/opf.js&quot; id=&quot;id133&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/fontdata.js&quot; id=&quot;id134&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/SpacingModLetters.js&quot; id=&quot;id135&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/autoload/mglyph.js&quot; id=&quot;id136&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/MathOperators.js&quot; id=&quot;id137&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/GreekAndCoptic.js&quot; id=&quot;id138&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/CombDiactForSymbols.js&quot; id=&quot;id139&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/Main.js&quot; id=&quot;id140&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/w.js&quot; id=&quot;id141&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MiscTechnical.js&quot; id=&quot;id142&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/Latin1Supplement.js&quot; id=&quot;id143&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MathOperators.js&quot; id=&quot;id144&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/LetterlikeSymbols.js&quot; id=&quot;id146&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/m.js&quot; id=&quot;id147&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/GeneralPunctuation.js&quot; id=&quot;id148&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/autoload/multiline.js&quot; id=&quot;id149&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/LatinExtendedA.js&quot; id=&quot;id150&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/autoload/mtable.js&quot; id=&quot;id151&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/LatinExtendedA.js&quot; id=&quot;id152&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/Main.js&quot; id=&quot;id153&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/asciimath2jax.js&quot; id=&quot;id154&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/jax.js&quot; id=&quot;id155&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/AMSmath.js&quot; id=&quot;id156&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/b.js&quot; id=&quot;id157&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/fontdata-extra.js&quot; id=&quot;id158&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/SuppMathOperators.js&quot; id=&quot;id159&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MathOperators.js&quot; id=&quot;id160&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/s.js&quot; id=&quot;id161&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Script/Regular/BasicLatin.js&quot; id=&quot;id162&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Caligraphic/Regular/Main.js&quot; id=&quot;id163&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/SpacingModLetters.js&quot; id=&quot;id164&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/GreekAndCoptic.js&quot; id=&quot;id165&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/BasicLatin.js&quot; id=&quot;id166&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/SupplementalArrowsA.js&quot; id=&quot;id167&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/MathJax.js&quot; id=&quot;id168&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/TeX/config.js&quot; id=&quot;id169&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/BasicLatin.js&quot; id=&quot;id170&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/CombDiacritMarks.js&quot; id=&quot;id171&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/TeX/color.js&quot; id=&quot;id172&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/Main.js&quot; id=&quot;id173&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/LatinExtendedB.js&quot; id=&quot;id174&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Italic/CombDiacritMarks.js&quot; id=&quot;id175&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/Other.js&quot; id=&quot;id176&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/extensions/tex2jax.js&quot; id=&quot;id177&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MiscTechnical.js&quot; id=&quot;id178&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/autoload/maction.js&quot; id=&quot;id179&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/GreekAndCoptic.js&quot; id=&quot;id180&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Bold/LatinExtendedB.js&quot; id=&quot;id181&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/n.js&quot; id=&quot;id182&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/t.js&quot; id=&quot;id183&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/BasicLatin.js&quot; id=&quot;id184&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/SuppMathOperators.js&quot; id=&quot;id185&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/y.js&quot; id=&quot;id186&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/jax.js&quot; id=&quot;id187&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/input/MathML/entities/e.js&quot; id=&quot;id188&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/LetterlikeSymbols.js&quot; id=&quot;id189&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Latin1Supplement.js&quot; id=&quot;id190&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/element/mml/optable/CombDiacritMarks.js&quot; id=&quot;id191&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Math/Italic/Main.js&quot; id=&quot;id192&quot; media-type=&quot;application/x-javascript&quot;/&gt;
-&lt;item href=&quot;mathjax/jax/output/SVG/fonts/TeX/Main/Regular/Main.js&quot; id=&quot;id193&quot; media-type=&quot;application/x-javascript&quot;/&gt;
+<li>Assuming you're using the copy as in the attachement, add the following to your manifest (modify paths and id's if needed)<pre><code>&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/BasicLatin.js" id="id0" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MiscMathSymbolsB.js" id="id1" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/d.js" id="id2" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/jax.js" id="id3" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/cancel.js" id="id4" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/a.js" id="id5" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/AsciiMath/jax.js" id="id6" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/autoload/ms.js" id="id7" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/mathchoice.js" id="id8" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Script/Regular/Main.js" id="id9" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/extpfeil.js" id="id10" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/AsciiMath/config.js" id="id11" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/Arrows.js" id="id12" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/images/CloseX-31.png" id="id13" media-type="image/png"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Italic/LatinExtendedA.js" id="id14" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/Other.js" id="id15" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Size3/Regular/Main.js" id="id16" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Size2/Regular/Main.js" id="id17" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/images/MenuArrow-15.png" id="id18" media-type="image/png"/&gt;
+&lt;item href="mathjax/jax/input/TeX/jax.js" id="id19" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Size1/Regular/Main.js" id="id20" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/h.js" id="id21" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/l.js" id="id22" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/PUA.js" id="id23" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/AMSsymbols.js" id="id24" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/CombDiacritMarks.js" id="id25" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/PUA.js" id="id26" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/GreekAndCoptic.js" id="id27" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Italic/LatinExtendedB.js" id="id28" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/LatinExtendedA.js" id="id29" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MiscSymbols.js" id="id30" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/scr.js" id="id31" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/MiscSymbols.js" id="id32" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/MiscTechnical.js" id="id33" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/newcommand.js" id="id34" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/autoload/mmultiscripts.js" id="id35" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/p.js" id="id36" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/Main.js" id="id37" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/o.js" id="id38" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/autoload/annotation-xml.js" id="id39" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/u.js" id="id40" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/BasicLatin.js" id="id41" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/BasicLatin.js" id="id42" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Size4/Regular/Main.js" id="id43" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/noUndefined.js" id="id44" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/k.js" id="id45" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/LetterlikeSymbols.js" id="id46" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/HTML.js" id="id47" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/Main.js" id="id49" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/MiscSymbolsAndArrows.js" id="id50" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/BasicLatin.js" id="id51" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/GeometricShapes.js" id="id52" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/GeometricShapes.js" id="id53" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/config.js" id="id54" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/enclose.js" id="id55" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/EnclosedAlphanum.js" id="id56" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/mhchem.js" id="id57" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/verb.js" id="id58" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/GeneralPunctuation.js" id="id59" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/MathMenu.js" id="id60" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/GeometricShapes.js" id="id61" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/PUA.js" id="id62" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Italic/LetterlikeSymbols.js" id="id63" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/z.js" id="id64" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/Main.js" id="id65" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/SpacingModLetters.js" id="id66" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/Other.js" id="id67" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/autoload-all.js" id="id68" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/CombDiacritMarks.js" id="id69" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/noErrors.js" id="id70" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/g.js" id="id71" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/BasicLatin.js" id="id72" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/SpacingModLetters.js" id="id73" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MiscSymbols.js" id="id74" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/GreekAndCoptic.js" id="id75" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Italic/Main.js" id="id76" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/mml2jax.js" id="id77" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/GeometricShapes.js" id="id78" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/i.js" id="id79" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/q.js" id="id80" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/toMathML.js" id="id81" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/NativeMML/config.js" id="id82" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/BasicLatin.js" id="id83" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/boldsymbol.js" id="id84" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/Other.js" id="id85" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/BoxDrawing.js" id="id86" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/begingroup.js" id="id87" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/v.js" id="id88" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/MiscMathSymbolsA.js" id="id89" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Math/BoldItalic/Main.js" id="id90" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/Other.js" id="id91" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/autoload/menclose.js" id="id92" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/LetterlikeSymbols.js" id="id93" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js" id="id94" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Italic/GeneralPunctuation.js" id="id95" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/MiscMathSymbolsB.js" id="id96" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/x.js" id="id97" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/Other.js" id="id98" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/j.js" id="id99" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/MathZoom.js" id="id100" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MiscMathSymbolsA.js" id="id101" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/unicode.js" id="id102" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/c.js" id="id103" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/NativeMML/jax.js" id="id104" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/SupplementalArrowsB.js" id="id105" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/autobold.js" id="id106" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/SuppMathOperators.js" id="id107" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/Main.js" id="id108" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/action.js" id="id109" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/fr.js" id="id110" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/Dingbats.js" id="id111" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Dingbats.js" id="id112" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/CombDiacritMarks.js" id="id113" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/Arrows.js" id="id114" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/MathEvents.js" id="id115" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Italic/MathOperators.js" id="id116" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Caligraphic/Bold/Main.js" id="id117" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/MathOperators.js" id="id118" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/Latin1Supplement.js" id="id119" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/CombDiacritMarks.js" id="id120" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/f.js" id="id121" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Main.js" id="id122" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/bbox.js" id="id123" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/config.js" id="id124" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/CombDiactForSymbols.js" id="id125" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/CombDiacritMarks.js" id="id126" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Arrows.js" id="id127" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/SupplementalArrowsA.js" id="id128" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/r.js" id="id129" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/GeneralPunctuation.js" id="id130" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/BasicLatin.js" id="id131" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/SuppMathOperators.js" id="id132" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/opf.js" id="id133" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/fontdata.js" id="id134" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/SpacingModLetters.js" id="id135" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/autoload/mglyph.js" id="id136" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/MathOperators.js" id="id137" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Italic/GreekAndCoptic.js" id="id138" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/CombDiactForSymbols.js" id="id139" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/Main.js" id="id140" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/w.js" id="id141" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MiscTechnical.js" id="id142" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/Latin1Supplement.js" id="id143" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MathOperators.js" id="id144" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/LetterlikeSymbols.js" id="id146" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/m.js" id="id147" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/GeneralPunctuation.js" id="id148" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/autoload/multiline.js" id="id149" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/LatinExtendedA.js" id="id150" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/autoload/mtable.js" id="id151" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/LatinExtendedA.js" id="id152" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/Main.js" id="id153" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/asciimath2jax.js" id="id154" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/jax.js" id="id155" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/AMSmath.js" id="id156" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/b.js" id="id157" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/fontdata-extra.js" id="id158" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/SuppMathOperators.js" id="id159" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MathOperators.js" id="id160" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/s.js" id="id161" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Script/Regular/BasicLatin.js" id="id162" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Caligraphic/Regular/Main.js" id="id163" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/SpacingModLetters.js" id="id164" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/GreekAndCoptic.js" id="id165" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Italic/BasicLatin.js" id="id166" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/SupplementalArrowsA.js" id="id167" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/MathJax.js" id="id168" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/TeX/config.js" id="id169" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/BasicLatin.js" id="id170" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/CombDiacritMarks.js" id="id171" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/TeX/color.js" id="id172" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/Main.js" id="id173" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/LatinExtendedB.js" id="id174" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Italic/CombDiacritMarks.js" id="id175" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/Other.js" id="id176" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/extensions/tex2jax.js" id="id177" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MiscTechnical.js" id="id178" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/autoload/maction.js" id="id179" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/GreekAndCoptic.js" id="id180" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Bold/LatinExtendedB.js" id="id181" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/n.js" id="id182" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/t.js" id="id183" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/BasicLatin.js" id="id184" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/SuppMathOperators.js" id="id185" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/y.js" id="id186" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/jax.js" id="id187" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/input/MathML/entities/e.js" id="id188" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/LetterlikeSymbols.js" id="id189" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Latin1Supplement.js" id="id190" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/element/mml/optable/CombDiacritMarks.js" id="id191" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Math/Italic/Main.js" id="id192" media-type="application/x-javascript"/&gt;
+&lt;item href="mathjax/jax/output/SVG/fonts/TeX/Main/Regular/Main.js" id="id193" media-type="application/x-javascript"/&gt;
 </code></pre>
 </li>
-<li>To each xhtml file that contains MathML, add<pre><code>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+<li>To each xhtml file that contains MathML, add<pre><code>&lt;script type="text/x-mathjax-config"&gt;
 MathJax.Hub.Config({
-jax: [&quot;input/TeX&quot;,&quot;input/MathML&quot;,&quot;output/SVG&quot;],
-extensions: [&quot;tex2jax.js&quot;,&quot;mml2jax.js&quot;,&quot;MathEvents.js&quot;],
+jax: ["input/TeX","input/MathML","output/SVG"],
+extensions: ["tex2jax.js","mml2jax.js","MathEvents.js"],
 TeX: {
-extensions: [&quot;noErrors.js&quot;,&quot;noUndefined.js&quot;,&quot;autoload-all.js&quot;]
+extensions: ["noErrors.js","noUndefined.js","autoload-all.js"]
 },
 MathMenu: {
 showRenderer: false
 },
 menuSettings: {
-zoom: &quot;Click&quot;
+zoom: "Click"
 },
-messageStyle: &quot;none&quot;
+messageStyle: "none"
 });
 &lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;../mathjax/MathJax.js&quot;&gt; &lt;/script&gt;
+&lt;script type="text/javascript" src="../mathjax/MathJax.js"&gt; &lt;/script&gt;
 </code></pre>
 </li>
 <li>I have not activated automatic linebreaking because there's currently <a href="http://github.com/mathjax/mathjax/issues/368">a bug</a> in MathJax on iOS6. If MathJax detects the need to break the line, you'll get Math Processing errors instead.</li>
 <li>For each xhtml file with the above we'll have to modify the <code>properties</code>-part in the manifest to have both <code>mathml scripted</code>, e.g., in the sample file you'll see
 <ul>
-<li><code>&lt;item id=&quot;c3&quot; media-type=&quot;application/xhtml+xml&quot; href=&quot;xhtml/ch1.html&quot; properties=&quot;mathml scripted&quot;/&gt;</code></li>
+<li><code>&lt;item id="c3" media-type="application/xhtml+xml" href="xhtml/ch1.html" properties="mathml scripted"/&gt;</code></li>
 </ul>
 </li>
 <li>And then you can include wonderful MathML and even webkit deficiencies or the horrible iOS5 Safari+STIX bug will be meaningless to your epub file and you can actually publish a mathematical epub file to be read on iBooks.<br>
-<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="12.683ex" height="2.398ex" role="tree" focusable="false" viewBox="0 -855 5605.9 1060" xmlns:xlink="http://www.w3.org/1999/xlink" data-owns="2 3 9 10 18" aria-label="ModifyingAbovexWithcaretplusModifyingAbovexyWithcaretplusModifyingAbovexyzWithcaret" aria-braillelabel="⠐⠭⠣⠸⠣⠻⠬⠐⠭⠽⠣⠸⠣⠻⠬⠐⠭⠽⠵⠣⠸⠣⠻" aria-level="1"><defs role="presentation"><path id="MJX-1724-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z" role="presentation"></path><path id="MJX-1724-TEX-SO-2C6" d="M279 669Q273 669 142 610T9 551L0 569Q-8 585 -8 587Q-8 588 -7 588L12 598Q30 608 66 628T136 666L277 744L564 587L555 569Q549 556 547 554T544 552Q539 555 410 612T279 669Z" role="presentation"></path><path id="MJX-1724-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z" role="presentation"></path><path id="MJX-1724-TEX-N-2062" d="" role="presentation"></path><path id="MJX-1724-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z" role="presentation"></path><path id="MJX-1724-TEX-LO-2C6" d="M1004 603Q1004 600 999 583T991 565L960 574Q929 582 866 599T745 631L500 698Q497 698 254 631Q197 616 134 599T39 574L8 565Q5 565 0 582T-5 603L26 614Q58 624 124 646T248 687L499 772Q999 604 1004 603Z" role="presentation"></path><path id="MJX-1724-TEX-I-1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z" role="presentation"></path><path id="MJX-1724-TEX-S3-2C6" d="M1439 564Q1434 564 1080 631T722 698Q719 698 362 631Q7 564 4 564L0 583Q-4 602 -4 603L720 772L1083 688Q1446 603 1447 603Q1447 602 1443 583L1439 564Z" role="presentation"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)" role="presentation"><g data-mml-node="math" data-semantic-type="infixop" data-semantic-role="addition" data-semantic-id="19" data-semantic-children="2,9,18" data-semantic-content="3,10" data-semantic-owns="2 3 9 10 18" data-semantic-structure="(19 (2 0 1) 3 (9 (7 4 6 5) 8) 10 (18 (16 11 14 12 15 13) 17))" data-semantic-speech="ModifyingAbovexWithcaretplusModifyingAbovexyWithcaretplusModifyingAbovexyzWithcaret" data-semantic-braille="⠐⠭⠣⠸⠣⠻⠬⠐⠭⠽⠣⠸⠣⠻⠬⠐⠭⠽⠵⠣⠸⠣⠻" data-owns-id="19" role="presentation"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" role="presentation"><g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="19" data-semantic-owns="0 1" data-semantic-speech="ModifyingAbovexWithcaret" data-semantic-braille="⠐⠭⠣⠸⠣⠻" data-owns-id="2" aria-level="2" aria-posinset="1" aria-setsize="5" aria-label="ModifyingAbovexWithcaret" aria-braillelabel="⠐⠭⠣⠸⠣⠻" role="treeitem" aria-hidden="true" data-owns="0 1"><g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple;nemeth:number" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="x" data-semantic-prefix="Base" data-semantic-braille="⠭" data-owns-id="0" aria-level="3" aria-posinset="1" aria-setsize="2" aria-label="Base x" aria-braillelabel="⠭" role="treeitem" aria-hidden="true"><use data-c="1D465" xlink:href="#MJX-1724-TEX-I-1D465" role="presentation"></use></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="overaccent" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="caret" data-semantic-prefix="Overscript" transform="translate(313.8,-4) translate(-278 0)" data-semantic-braille="⠸⠣" data-owns-id="1" aria-level="3" aria-posinset="2" aria-setsize="2" aria-label="Overscript caret" aria-braillelabel="⠸⠣" role="treeitem" aria-hidden="true"><use data-c="2C6" xlink:href="#MJX-1724-TEX-SO-2C6" role="presentation"></use></g></g></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="3" data-semantic-parent="19" data-semantic-operator="infixop,+" data-semantic-speech="plus" transform="translate(794.2,0)" data-semantic-braille="⠬" data-owns-id="3" aria-level="2" aria-posinset="2" aria-setsize="5" aria-label="plus" aria-braillelabel="⠬" role="treeitem" aria-hidden="true"><use data-c="2B" xlink:href="#MJX-1724-TEX-N-2B" role="presentation"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(1794.4,0)" role="presentation"><g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="implicit" data-semantic-id="9" data-semantic-children="7,8" data-semantic-parent="19" data-semantic-owns="7 8" data-semantic-speech="ModifyingAbovexyWithcaret" data-semantic-braille="⠐⠭⠽⠣⠸⠣⠻" data-owns-id="9" aria-level="2" aria-posinset="3" aria-setsize="5" aria-label="ModifyingAbovexyWithcaret" aria-braillelabel="⠐⠭⠽⠣⠸⠣⠻" role="treeitem" aria-hidden="true" data-owns="7 8"><g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:simple;clearspeak:unit" data-semantic-id="7" data-semantic-children="4,5" data-semantic-content="6" data-semantic-parent="9" data-semantic-owns="4 6 5" data-semantic-speech="xy" data-semantic-prefix="Base" data-semantic-braille="⠭⠽" data-owns-id="7" aria-level="3" aria-posinset="1" aria-setsize="2" aria-label="Base xy" aria-braillelabel="⠭⠽" role="treeitem" aria-hidden="true" data-owns="4 6 5"><g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="7" data-semantic-speech="x" data-semantic-braille="⠭" data-owns-id="4" aria-level="4" aria-posinset="1" aria-setsize="3" aria-label="x" aria-braillelabel="⠭" role="treeitem" aria-hidden="true"><use data-c="1D465" xlink:href="#MJX-1724-TEX-I-1D465" role="presentation"></use></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="6" data-semantic-parent="7" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(572,0)" data-semantic-braille="⠈⠡" data-owns-id="6" aria-level="4" aria-posinset="2" aria-setsize="3" aria-label="times" aria-braillelabel="⠈⠡" role="treeitem" aria-hidden="true"><use data-c="2062" xlink:href="#MJX-1724-TEX-N-2062" role="presentation"></use></g><g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-parent="7" data-semantic-speech="y" transform="translate(572,0)" data-semantic-braille="⠽" data-owns-id="5" aria-level="4" aria-posinset="3" aria-setsize="3" aria-label="y" aria-braillelabel="⠽" role="treeitem" aria-hidden="true"><use data-c="1D466" xlink:href="#MJX-1724-TEX-I-1D466" role="presentation"></use></g></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="overaccent" data-semantic-id="8" data-semantic-parent="9" data-semantic-speech="caret" data-semantic-prefix="Overscript" transform="translate(531,-18) translate(-500 0)" data-semantic-braille="⠸⠣" data-owns-id="8" aria-level="3" aria-posinset="2" aria-setsize="2" aria-label="Overscript caret" aria-braillelabel="⠸⠣" role="treeitem" aria-hidden="true"><use data-c="2C6" xlink:href="#MJX-1724-TEX-LO-2C6" role="presentation"></use></g></g></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="10" data-semantic-parent="19" data-semantic-operator="infixop,+" data-semantic-speech="plus" transform="translate(3078.7,0)" data-semantic-braille="⠬" data-owns-id="10" aria-level="2" aria-posinset="4" aria-setsize="5" aria-label="plus" aria-braillelabel="⠬" role="treeitem" aria-hidden="true"><use data-c="2B" xlink:href="#MJX-1724-TEX-N-2B" role="presentation"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(4078.9,0)" role="presentation"><g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="implicit" data-semantic-id="18" data-semantic-children="16,17" data-semantic-parent="19" data-semantic-owns="16 17" data-semantic-speech="ModifyingAbovexyzWithcaret" data-semantic-braille="⠐⠭⠽⠵⠣⠸⠣⠻" data-owns-id="18" aria-level="2" aria-posinset="5" aria-setsize="5" aria-label="ModifyingAbovexyzWithcaret" aria-braillelabel="⠐⠭⠽⠵⠣⠸⠣⠻" role="treeitem" aria-hidden="true" data-owns="16 17"><g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="16" data-semantic-children="11,12,13" data-semantic-content="14,15" data-semantic-parent="18" data-semantic-owns="11 14 12 15 13" data-semantic-speech="xyz" data-semantic-prefix="Base" data-semantic-braille="⠭⠽⠵" data-owns-id="16" aria-level="3" aria-posinset="1" aria-setsize="2" aria-label="Base xyz" aria-braillelabel="⠭⠽⠵" role="treeitem" aria-hidden="true" data-owns="11 14 12 15 13"><g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="11" data-semantic-parent="16" data-semantic-speech="x" data-semantic-braille="⠭" data-owns-id="11" aria-level="4" aria-posinset="1" aria-setsize="5" aria-label="x" aria-braillelabel="⠭" role="treeitem" aria-hidden="true"><use data-c="1D465" xlink:href="#MJX-1724-TEX-I-1D465" role="presentation"></use></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="14" data-semantic-parent="16" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(572,0)" data-semantic-braille="⠈⠡" data-owns-id="14" aria-level="4" aria-posinset="2" aria-setsize="5" aria-label="times" aria-braillelabel="⠈⠡" role="treeitem" aria-hidden="true"><use data-c="2062" xlink:href="#MJX-1724-TEX-N-2062" role="presentation"></use></g><g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="12" data-semantic-parent="16" data-semantic-speech="y" transform="translate(572,0)" data-semantic-braille="⠽" data-owns-id="12" aria-level="4" aria-posinset="3" aria-setsize="5" aria-label="y" aria-braillelabel="⠽" role="treeitem" aria-hidden="true"><use data-c="1D466" xlink:href="#MJX-1724-TEX-I-1D466" role="presentation"></use></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="15" data-semantic-parent="16" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(1062,0)" data-semantic-braille="⠈⠡" data-owns-id="15" aria-level="4" aria-posinset="4" aria-setsize="5" aria-label="times" aria-braillelabel="⠈⠡" role="treeitem" aria-hidden="true"><use data-c="2062" xlink:href="#MJX-1724-TEX-N-2062" role="presentation"></use></g><g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="13" data-semantic-parent="16" data-semantic-speech="z" transform="translate(1062,0)" data-semantic-braille="⠵" data-owns-id="13" aria-level="4" aria-posinset="5" aria-setsize="5" aria-label="z" aria-braillelabel="⠵" role="treeitem" aria-hidden="true"><use data-c="1D467" xlink:href="#MJX-1724-TEX-I-1D467" role="presentation"></use></g></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="overaccent" data-semantic-id="17" data-semantic-parent="18" data-semantic-speech="caret" data-semantic-prefix="Overscript" transform="translate(763.5,-17) translate(-722 0)" data-semantic-braille="⠸⠣" data-owns-id="17" aria-level="3" aria-posinset="2" aria-setsize="2" aria-label="Overscript caret" aria-braillelabel="⠸⠣" role="treeitem" aria-hidden="true"><use data-c="2C6" xlink:href="#MJX-1724-TEX-S3-2C6" role="presentation"></use></g></g></g></g></g></svg><span hidden="">\widehat{x}+\widehat{xy} + \widehat{xyz}</span></mjx-container></li>
+<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="12.683ex" height="2.398ex" role="tree" focusable="false" viewBox="0 -855 5605.9 1060" xmlns:xlink="http://www.w3.org/1999/xlink" data-owns="2 3 9 10 18" aria-label="ModifyingAbove x With caret plus ModifyingAbove x y With caret plus ModifyingAbove x y z With caret" aria-braillelabel="⠐⠭⠣⠸⠣⠻⠬⠐⠭⠽⠣⠸⠣⠻⠬⠐⠭⠽⠵⠣⠸⠣⠻" aria-level="1"><defs role="presentation"><path id="MJX-1159-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z" role="presentation" /><path id="MJX-1159-TEX-SO-2C6" d="M279 669Q273 669 142 610T9 551L0 569Q-8 585 -8 587Q-8 588 -7 588L12 598Q30 608 66 628T136 666L277 744L564 587L555 569Q549 556 547 554T544 552Q539 555 410 612T279 669Z" role="presentation" /><path id="MJX-1159-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z" role="presentation" /><path id="MJX-1159-TEX-N-2062" d="" role="presentation" /><path id="MJX-1159-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z" role="presentation" /><path id="MJX-1159-TEX-LO-2C6" d="M1004 603Q1004 600 999 583T991 565L960 574Q929 582 866 599T745 631L500 698Q497 698 254 631Q197 616 134 599T39 574L8 565Q5 565 0 582T-5 603L26 614Q58 624 124 646T248 687L499 772Q999 604 1004 603Z" role="presentation" /><path id="MJX-1159-TEX-I-1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z" role="presentation" /><path id="MJX-1159-TEX-S3-2C6" d="M1439 564Q1434 564 1080 631T722 698Q719 698 362 631Q7 564 4 564L0 583Q-4 602 -4 603L720 772L1083 688Q1446 603 1447 603Q1447 602 1443 583L1439 564Z" role="presentation" /></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)" role="presentation"><g data-mml-node="math" data-semantic-type="infixop" data-semantic-role="addition" data-semantic-id="19" data-semantic-children="2,9,18" data-semantic-content="3,10" data-semantic-owns="2 3 9 10 18" data-semantic-structure="(19 (2 0 1) 3 (9 (7 4 6 5) 8) 10 (18 (16 11 14 12 15 13) 17))" data-semantic-speech="ModifyingAbove x With caret plus ModifyingAbove x y With caret plus ModifyingAbove x y z With caret" data-semantic-braille="⠐⠭⠣⠸⠣⠻⠬⠐⠭⠽⠣⠸⠣⠻⠬⠐⠭⠽⠵⠣⠸⠣⠻" data-owns-id="19" role="presentation"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" role="presentation"><g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="19" data-semantic-attributes="texclass:ORD" data-semantic-owns="0 1" data-semantic-speech="ModifyingAbove x With caret" data-semantic-braille="⠐⠭⠣⠸⠣⠻" data-owns-id="2" aria-level="2" aria-posinset="1" aria-setsize="5" aria-label="ModifyingAbove x With caret" aria-braillelabel="⠐⠭⠣⠸⠣⠻" role="treeitem" aria-hidden="true" data-owns="0 1"><g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple;nemeth:number" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="x" data-semantic-prefix="Base" data-semantic-braille="⠭" data-owns-id="0" aria-level="3" aria-posinset="1" aria-setsize="2" aria-label="Base x" aria-braillelabel="⠭" role="treeitem" aria-hidden="true"><use data-c="1D465" xlink:href="#MJX-1159-TEX-I-1D465" role="presentation" /></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="overaccent" data-semantic-annotation="accent:unknown" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="caret" data-semantic-prefix="Overscript" transform="translate(313.8,-4) translate(-278 0)" data-semantic-braille="⠸⠣" data-owns-id="1" aria-level="3" aria-posinset="2" aria-setsize="2" aria-label="Overscript caret" aria-braillelabel="⠸⠣" role="treeitem" aria-hidden="true"><use data-c="2C6" xlink:href="#MJX-1159-TEX-SO-2C6" role="presentation" /></g></g></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="3" data-semantic-parent="19" data-semantic-operator="infixop,+" data-semantic-speech="plus" transform="translate(794.2,0)" data-semantic-braille="⠬" data-owns-id="3" aria-level="2" aria-posinset="2" aria-setsize="5" aria-label="plus" aria-braillelabel="⠬" role="treeitem" aria-hidden="true"><use data-c="2B" xlink:href="#MJX-1159-TEX-N-2B" role="presentation" /></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(1794.4,0)" role="presentation"><g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="implicit" data-semantic-id="9" data-semantic-children="7,8" data-semantic-parent="19" data-semantic-attributes="texclass:ORD" data-semantic-owns="7 8" data-semantic-speech="ModifyingAbove x y With caret" data-semantic-braille="⠐⠭⠽⠣⠸⠣⠻" data-owns-id="9" aria-level="2" aria-posinset="3" aria-setsize="5" aria-label="ModifyingAbove x y With caret" aria-braillelabel="⠐⠭⠽⠣⠸⠣⠻" role="treeitem" aria-hidden="true" data-owns="7 8"><g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:simple;clearspeak:unit" data-semantic-id="7" data-semantic-children="4,5" data-semantic-content="6" data-semantic-parent="9" data-semantic-owns="4 6 5" data-semantic-speech="x y" data-semantic-prefix="Base" data-semantic-braille="⠭⠽" data-owns-id="7" aria-level="3" aria-posinset="1" aria-setsize="2" aria-label="Base x y" aria-braillelabel="⠭⠽" role="treeitem" aria-hidden="true" data-owns="4 6 5"><g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="7" data-semantic-speech="x" data-semantic-braille="⠭" data-owns-id="4" aria-level="4" aria-posinset="1" aria-setsize="3" aria-label="x" aria-braillelabel="⠭" role="treeitem" aria-hidden="true"><use data-c="1D465" xlink:href="#MJX-1159-TEX-I-1D465" role="presentation" /></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="6" data-semantic-parent="7" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(572,0)" data-semantic-braille="⠈⠡" data-owns-id="6" aria-level="4" aria-posinset="2" aria-setsize="3" aria-label="times" aria-braillelabel="⠈⠡" role="treeitem" aria-hidden="true"><use data-c="2062" xlink:href="#MJX-1159-TEX-N-2062" role="presentation" /></g><g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-parent="7" data-semantic-speech="y" transform="translate(572,0)" data-semantic-braille="⠽" data-owns-id="5" aria-level="4" aria-posinset="3" aria-setsize="3" aria-label="y" aria-braillelabel="⠽" role="treeitem" aria-hidden="true"><use data-c="1D466" xlink:href="#MJX-1159-TEX-I-1D466" role="presentation" /></g></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="overaccent" data-semantic-annotation="accent:unknown" data-semantic-id="8" data-semantic-parent="9" data-semantic-speech="caret" data-semantic-prefix="Overscript" transform="translate(531,-18) translate(-500 0)" data-semantic-braille="⠸⠣" data-owns-id="8" aria-level="3" aria-posinset="2" aria-setsize="2" aria-label="Overscript caret" aria-braillelabel="⠸⠣" role="treeitem" aria-hidden="true"><use data-c="2C6" xlink:href="#MJX-1159-TEX-LO-2C6" role="presentation" /></g></g></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="10" data-semantic-parent="19" data-semantic-operator="infixop,+" data-semantic-speech="plus" transform="translate(3078.7,0)" data-semantic-braille="⠬" data-owns-id="10" aria-level="2" aria-posinset="4" aria-setsize="5" aria-label="plus" aria-braillelabel="⠬" role="treeitem" aria-hidden="true"><use data-c="2B" xlink:href="#MJX-1159-TEX-N-2B" role="presentation" /></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(4078.9,0)" role="presentation"><g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="implicit" data-semantic-id="18" data-semantic-children="16,17" data-semantic-parent="19" data-semantic-attributes="texclass:ORD" data-semantic-owns="16 17" data-semantic-speech="ModifyingAbove x y z With caret" data-semantic-braille="⠐⠭⠽⠵⠣⠸⠣⠻" data-owns-id="18" aria-level="2" aria-posinset="5" aria-setsize="5" aria-label="ModifyingAbove x y z With caret" aria-braillelabel="⠐⠭⠽⠵⠣⠸⠣⠻" role="treeitem" aria-hidden="true" data-owns="16 17"><g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="16" data-semantic-children="11,12,13" data-semantic-content="14,15" data-semantic-parent="18" data-semantic-owns="11 14 12 15 13" data-semantic-speech="x y z" data-semantic-prefix="Base" data-semantic-braille="⠭⠽⠵" data-owns-id="16" aria-level="3" aria-posinset="1" aria-setsize="2" aria-label="Base x y z" aria-braillelabel="⠭⠽⠵" role="treeitem" aria-hidden="true" data-owns="11 14 12 15 13"><g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="11" data-semantic-parent="16" data-semantic-speech="x" data-semantic-braille="⠭" data-owns-id="11" aria-level="4" aria-posinset="1" aria-setsize="5" aria-label="x" aria-braillelabel="⠭" role="treeitem" aria-hidden="true"><use data-c="1D465" xlink:href="#MJX-1159-TEX-I-1D465" role="presentation" /></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="14" data-semantic-parent="16" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(572,0)" data-semantic-braille="⠈⠡" data-owns-id="14" aria-level="4" aria-posinset="2" aria-setsize="5" aria-label="times" aria-braillelabel="⠈⠡" role="treeitem" aria-hidden="true"><use data-c="2062" xlink:href="#MJX-1159-TEX-N-2062" role="presentation" /></g><g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="12" data-semantic-parent="16" data-semantic-speech="y" transform="translate(572,0)" data-semantic-braille="⠽" data-owns-id="12" aria-level="4" aria-posinset="3" aria-setsize="5" aria-label="y" aria-braillelabel="⠽" role="treeitem" aria-hidden="true"><use data-c="1D466" xlink:href="#MJX-1159-TEX-I-1D466" role="presentation" /></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="15" data-semantic-parent="16" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(1062,0)" data-semantic-braille="⠈⠡" data-owns-id="15" aria-level="4" aria-posinset="4" aria-setsize="5" aria-label="times" aria-braillelabel="⠈⠡" role="treeitem" aria-hidden="true"><use data-c="2062" xlink:href="#MJX-1159-TEX-N-2062" role="presentation" /></g><g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="13" data-semantic-parent="16" data-semantic-speech="z" transform="translate(1062,0)" data-semantic-braille="⠵" data-owns-id="13" aria-level="4" aria-posinset="5" aria-setsize="5" aria-label="z" aria-braillelabel="⠵" role="treeitem" aria-hidden="true"><use data-c="1D467" xlink:href="#MJX-1159-TEX-I-1D467" role="presentation" /></g></g><g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="overaccent" data-semantic-annotation="accent:unknown" data-semantic-id="17" data-semantic-parent="18" data-semantic-speech="caret" data-semantic-prefix="Overscript" transform="translate(763.5,-17) translate(-722 0)" data-semantic-braille="⠸⠣" data-owns-id="17" aria-level="3" aria-posinset="2" aria-setsize="2" aria-label="Overscript caret" aria-braillelabel="⠸⠣" role="treeitem" aria-hidden="true"><use data-c="2C6" xlink:href="#MJX-1159-TEX-S3-2C6" role="presentation" /></g></g></g></g></g></svg><span hidden>\widehat{x}+\widehat{xy} + \widehat{xyz}</span></mjx-container></li>
 </ul>
 <hr>
 <p>This text is <a href="/assets/2013/How%20to%20include%20MathJax%20in%20an%20epub3%20file%20to%20work%20with%20iBooks%20%28and%20possibly%20others%29.epub">available as an epub3 file</a> which includes MathJax and should run on iOS devices.</p>
@@ -328,20 +328,20 @@ Epubs themselves may have a limited lifespan, as ebook readers will get fullblow
 So, I was thinking: To get smething that is working with today's devices, instead of this:<br>
 <code>$X=Y^2$</code><br>
 which is rendered fine on only some devices, have something like this:<br>
- <br>
+&nbsp;<br>
 Then the ebook readers that cannot run jaascript will show the image and those that can (IBooks) can calculate the mathjax formula. Of course, mathjax has to be run manually with some javascript, as it cannot find the equation it should render as easily, but I'm sure this can be done.<br>
 As for SVG vs. IMG -- I didn't look enough at the svg-canvas library, but assuming that it permits me to copy an already rendered SVG to a canvas, that should mean that I should be able to create a canvas which easily can be converted to an IMG and then saved inside the epub.<br>
 But you would maybe argue that it is preferable to just include the SVG directly? For that I assume I would copy the SVG code from the DOM, copy the extra style information that has been added to the header, and find the fonts that have been added through some other trick (cannot find them in hte header) and add those to the mix as well. Right?</li>
 <li><strong>Johannes Wilm</strong>, 2013/05/05<br>
 Ah, this system ate most of my code examples. let me try again:<br>
 So, I was thinking: To get something that is working with today’s devices, instead of this:<br>
-<code>&lt;span class=&quot;equation&quot;&gt;&lt;MATH&gt;X=Y^2&lt;/MATH&gt;&lt;/span&gt;</code><br>
+<code>&lt;span class="equation"&gt;&lt;MATH&gt;X=Y^2&lt;/MATH&gt;&lt;/span&gt;</code><br>
 which is rendered fine on only some devices, have something like this:<br>
-<code>&lt;span class=&quot;equation&quot; data-equation=&quot;X=Y^2&quot;&gt;&lt;IMG src=&quot;...&quot; alt=&quot;an equation showing X=Y^2&quot;/&gt;&lt;/span&gt;</code>
+<code>&lt;span class="equation" data-equation="X=Y^2"&gt;&lt;IMG src="..." alt="an equation showing X=Y^2"/&gt;&lt;/span&gt;</code>
 <ul>
 <li><strong>Peter</strong>, 2013/05/05<br>
 As I wrote, ideally, you would produce some kind of image fallback and use the epub-switch element. Unfortunately, very few epub3  reading systems support it. Even worse, they often react the wrong way to it: using MahtML instead of the image :(<br>
-Unfortunately, your &quot;once there's MathML support everywhere&quot; makes me cry a little as I just replied to <a href="https://groups.google.com/forum/?fromgroups=#!topic/mozilla.dev.platform/96dZw1jXTvM">https://groups.google.com/forum/?fromgroups=#!topic/mozilla.dev.platform/96dZw1jXTvM</a>. There's currently zero development going into browsers. I hope we can change that, but this will be a while.<br>
+Unfortunately, your "once there's MathML support everywhere" makes me cry a little as I just replied to <a href="https://groups.google.com/forum/?fromgroups=#!topic/mozilla.dev.platform/96dZw1jXTvM">https://groups.google.com/forum/?fromgroups=#!topic/mozilla.dev.platform/96dZw1jXTvM</a>. There's currently zero development going into browsers. I hope we can change that, but this will be a while.<br>
 Anyway, yes, MathJax can easily replace images by rendering embedded code. Case in point: bookmarklets for doing that on <a href="http://Wordpress.com">Wordpress.com</a> and Wikipedia <a href="https://gist.github.com/pkra">https://gist.github.com/pkra</a><br>
 You can use SVG -- both canvas and SVG are part of epub3. Grabbing MathJax output is certainly possible, but with constraints. Making MathJax work also outside the DOM (with those constraints) is in our backlog, but has been for a while. You might find <a href="https://github.com/agrbin/svgtex">https://github.com/agrbin/svgtex</a> interesting.</li>
 </ul>
@@ -351,7 +351,7 @@ You can use SVG -- both canvas and SVG are part of epub3. Grabbing MathJax outpu
 </article>
 
 <aside class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20How to include MathJax in an epub3 file to work with iBooks (and possibly others)">write me an email</a>.
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20How%20to%20include%20MathJax%20in%20an%20epub3%20file%20to%20work%20with%20iBooks%20(and%20possibly%20others)">write me an email</a>.
   </span>
   <span> You can also <a href="/about/">contact me</a>.</span>
 </aside>
@@ -362,7 +362,7 @@ You can use SVG -- both canvas and SVG are part of epub3. Grabbing MathJax outpu
 		</main>
 
   <footer class="container related">
-    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    © 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
     For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
   </footer>
 

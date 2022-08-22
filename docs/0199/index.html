@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -17,10 +17,10 @@
   <header>
     <div class="masthead">
       <div class="container">
-        <h1 class="masthead-title">
+        <div class="masthead-title">
           <a href="/">Peter Krautzberger</a>
           <small> · on the web</small>
-        </h3>
+        </div>
       </div>
     </div>
   </header>
@@ -51,9 +51,9 @@
 <p>For example, there's the <a href="https://www.w3.org/Math/draft-spec/mathml.html#chapter3_presm.mfrac"><code>&lt;mfrac&gt;</code></a> element and you might think it specifies a fraction. Unfortunately, you'd be wrong. The spec itself speaks of <q>fraction-like objects such as binomial coefficients and Legendre symbol</q> which are about as far from fractions as you can think of. Of course you can find even more egregious examples in the wild such as plain vectors encoded with <code>mfrac</code>. Similarly, <code>&lt;msqrt&gt;</code> does not represent <i>square root</i> but <i>root without index</i> and it is used accordingly in the wild (while <code>&lt;mroot&gt;&lt;mrow&gt;...&lt;/mrow&gt;&lt;none/&gt;&lt;/mroot&gt;</code> constructions are practically unheard of).</p>
 <p>The point is that you can't complain about some kind of abuse of markup because Presentation MathML does not make this kind of a distinction.</p>
 <figure>
-<a href="https://commons.wikimedia.org/wiki/File%3AAurelia-aurita-3-0009.jpg"><img width="512" alt="Photo of Aurelia aurita after applying ten iterations of DeepDream" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Aurelia-aurita-3-0009.jpg/512px-Aurelia-aurita-3-0009.jpg"/></a><figcaption>By MartinThoma (Own work) [CC0], via Wikimedia Commons</figcaption></figure>
+<a href="https://commons.wikimedia.org/wiki/File%3AAurelia-aurita-3-0009.jpg"><img width="512" alt="Photo of Aurelia aurita after applying ten iterations of DeepDream" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Aurelia-aurita-3-0009.jpg/512px-Aurelia-aurita-3-0009.jpg"></a><figcaption>By MartinThoma (Own work) [CC0], via Wikimedia Commons</figcaption></figure>
 <p>Now for a long time, I thought there might just be enough semantics in Presentation MathML to get away with. Working with Volker Sorge and his <a href="https://github.com/zorkow/speech-rule-engine">speech-rule-engine</a> and integrating SRE's semantic analysis into MathJax meant a deep dive into what kind o structure you can find in Presentation MathML. And as amazing as its heuristics are, it becomes clear how brittle they remain and how quickly you find (real world) examples that break things. This isn't to say you can't guess the meaning of a large selection of real world content. It just makes it clear that you are working with a format void of semantic information. (And we're not talking about <a href="https://arxiv.org/abs/1707.08945">tricking machine learning models</a> here, just run of the mill content.)</p>
-<p>When you get down to it, I would say that there are effectively only two elements in Presentation MathML that appear reliably semantic in the real world:  <code>&lt;mn&gt;</code> and <code>&lt;mroot&gt;</code>. And even these examples are stretching it. For for the former, <a href="https://www.w3.org/Math/draft-spec/mathml.html#chapter3_presm.mn.examples">the spec suggests</a> that <code>&lt;mn&gt;twenty one&lt;/mn&gt;</code> is sensible markup. For the latter, it seems to be mostly accidental that roots simply haven't been sufficiently abused in the literature (yet) and thereby retain a unique place of being a visual layout feature that is used consistently to describe (many different concepts of) &quot;rootness&quot;. (For the record, there's also <code>&lt;merror&gt;</code> which is pretty solid, semantically speaking; just not very mathematical.)</p>
+<p>When you get down to it, I would say that there are effectively only two elements in Presentation MathML that appear reliably semantic in the real world:  <code>&lt;mn&gt;</code> and <code>&lt;mroot&gt;</code>. And even these examples are stretching it. For for the former, <a href="https://www.w3.org/Math/draft-spec/mathml.html#chapter3_presm.mn.examples">the spec suggests</a> that <code>&lt;mn&gt;twenty one&lt;/mn&gt;</code> is sensible markup. For the latter, it seems to be mostly accidental that roots simply haven't been sufficiently abused in the literature (yet) and thereby retain a unique place of being a visual layout feature that is used consistently to describe (many different concepts of) "rootness". (For the record, there's also <code>&lt;merror&gt;</code> which is pretty solid, semantically speaking; just not very mathematical.)</p>
 <h2>Coda</h2>
 <p>There are other, more indirect signs of the failure of MathML to specify semantics. For example the absence of typical benefits of semantic content such as usable search engines or knowledge management tools. But that's a very different problem to discuss.</p>
 <p>Anyway, so MathML that specifies semantics could exist but does not. On to layout.</p>
@@ -61,7 +61,7 @@
 </article>
 
 <aside class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20The problem with MathML as a web standard (part 3)">write me an email</a>.
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20The%20problem%20with%20MathML%20as%20a%20web%20standard%20(part%203)">write me an email</a>.
   </span>
   <span> You can also <a href="/about/">contact me</a>.</span>
 </aside>
@@ -72,7 +72,7 @@
 		</main>
 
   <footer class="container related">
-    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    © 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
     For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
   </footer>
 

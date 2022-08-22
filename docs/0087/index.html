@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -17,10 +17,10 @@
   <header>
     <div class="masthead">
       <div class="container">
-        <h1 class="masthead-title">
+        <div class="masthead-title">
           <a href="/">Peter Krautzberger</a>
           <small> · on the web</small>
-        </h3>
+        </div>
       </div>
     </div>
   </header>
@@ -33,12 +33,12 @@
   <h1 class="post-title">epub, mathjax and the iPad -- another attempt</h1>
   <span class="post-date"><time datetime="2011-10-17">17 Oct 2011</time></span>
   <p>It's a funny thing. I don't even own an iPad. But a lot of people are interested in <a href="/0064/">getting an epub file with mathjax working</a> on the iPad.</p>
-<p>Why is that? Well, as far as I could find out the iPad remains the only &quot;hardware&quot; that does not block javascript within an epub file (epub uses html for its content but javascript is designated &quot;should not&quot; in the epub2 standard). Of course it's really the software, iBooks, but mentioning the iPad will be much better SEO. ;)</p>
+<p>Why is that? Well, as far as I could find out the iPad remains the only "hardware" that does not block javascript within an epub file (epub uses html for its content but javascript is designated "should not" in the epub2 standard). Of course it's really the software, iBooks, but mentioning the iPad will be much better SEO. ;)</p>
 <p>Incidentally, the only other software I know that is not blocking javascript is the fantastic <a href="http://calibre-ebook.com/">Calibre</a>. Calibre's reader seems to not care at all about enforcing the epub standard, it just render everything it finds (but I'll get to that later).</p>
 <h2>So what happened?</h2>
 <p>A while ago, after an email exchange which is now <a href="http://groups.google.com/group/mathjax-dev/browse_thread/thread/1190dc76b7b88a02?hl=en">mostly available online</a>, I finally created an epub with a complete mathjax installation. Unfortunately, it was a fluke. The file was was not reliably rendered on the iPad, most likely because of its size (MathJax has 30.000 files for ~20MB unzipped). So <a href="http://www.math.union.edu/~dpvc/">Davide Cervone</a> suggested to cut down on unnecessary files which iBooks should not need.</p>
 <p>This led to a result that rendered reliably -- unfortunately it rendered in a most irritating fashion: half a line below the intended one, writing happily across any other text on the next line, trailing out of the margin etc. That's far from perfect, obviously.</p>
-<p>In the mean time, Davide was able to use my epub file to run some tests -- and <a href="http://groups.google.com/group/mathjax-dev/browse_thread/thread/1190dc76b7b88a02/ed1882e29659678c?hl=en&amp;">yesterday told us</a> that things are looking much better now that he can work on the issues.</p>
+<p>In the mean time, Davide was able to use my epub file to run some tests -- and <a href="http://groups.google.com/group/mathjax-dev/browse_thread/thread/1190dc76b7b88a02/ed1882e29659678c?hl=en&">yesterday told us</a> that things are looking much better now that he can work on the issues.</p>
 <p>Of course, iOS5 was released last week. It's not clear to me if iBooks already supports epub3, but I know that Safari now supports (some) MathML so there's a chance that iBooks would (since it uses the webkit variant of Safari to render html). So when I had a quick chance last Friday to get my hands on a friend's freshly updated iPad, I cooked up a quick test file and it rendered; it wasn't perfect but not totally bad either. With my luck, of course, this will also be a fluke and I won't know before I get my hands on that iPad again...</p>
 <p>In the mean time, and for posterity, here's how I create epub files. (for the Pros: get ready to laugh at a dilettante).</p>
 <h2>The tools</h2>
@@ -67,21 +67,21 @@
 <p>Davide Cervone gave me some advice to reduce a mathjax installation to a mere 1.3MB.</p>
 <ul>
 <li>remove the MathJax/fonts/HTML-CSS/TeX/eot, svg, and png directories</li>
-<li>remove the two OFT-files that start with &quot;MathJax_Win&quot; (guess why...)</li>
+<li>remove the two OFT-files that start with "MathJax_Win" (guess why...)</li>
 <li>remove the MathJax/unpacked, test, and docs directories</li>
 <li>If you are only using TeX input (not MathML), then use the TeX-AMS_HTML-full configuration file.</li>
 <li>In that case, remove the MathJax/jax/input/MathML, MathJax/jax/output/NativeMML directories, the MathJax/extensions/mml2jax.js and MathJax/extensions/jsMath2jax.js .</li>
-<li>remove the &quot;FontWarnings&quot; and &quot;v1.0-warnings&quot; extensions, as well as all the configuration files you are not using.</li>
+<li>remove the "FontWarnings" and "v1.0-warnings" extensions, as well as all the configuration files you are not using.</li>
 <li>remove the MathJax/jax/output/HTML-CSS/fonts/STIX directory</li>
 </ul>
-<p>Now that your MathJax installation is small and tidy, just copy the remaining files into a suitable folder (how about &quot;mathjax&quot;?) inside the epub -- an epub file is simply a zip file after all.</p>
+<p>Now that your MathJax installation is small and tidy, just copy the remaining files into a suitable folder (how about "mathjax"?) inside the epub -- an epub file is simply a zip file after all.</p>
 <p>While you're at it, you should add a suitable MathJax configuration to the html files in your epub file. If you're using my post from above, you should add</p>
-<pre class="language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/x-mathjax-config<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">  <br>    MathJax<span class="token punctuation">.</span>Hub<span class="token punctuation">.</span><span class="token function">Config</span><span class="token punctuation">(</span><span class="token punctuation">{</span>  <br>      tex2jax<span class="token operator">:</span> <span class="token punctuation">{</span>  <br>      inlineMath<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token punctuation">[</span><span class="token string">'$'</span><span class="token punctuation">,</span><span class="token string">'$'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">"\\("</span><span class="token punctuation">,</span><span class="token string">"\\)"</span><span class="token punctuation">]</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>  <br>      displayMath<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token punctuation">[</span><span class="token string">'$$'</span><span class="token punctuation">,</span><span class="token string">'$$'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">"\\["</span><span class="token punctuation">,</span><span class="token string">"\\]"</span><span class="token punctuation">]</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>  <br>      processEscapes<span class="token operator">:</span> <span class="token boolean">true</span>  <br>      <span class="token punctuation">}</span><span class="token punctuation">,</span>  <br>    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <br>  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>  <br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mathjax/MathJax.js?config=TeX-AMS_HTML-full<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript"> </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/x-mathjax-config<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">  <br>    MathJax<span class="token punctuation">.</span>Hub<span class="token punctuation">.</span><span class="token function">Config</span><span class="token punctuation">(</span><span class="token punctuation">{</span>  <br>      <span class="token literal-property property">tex2jax</span><span class="token operator">:</span> <span class="token punctuation">{</span>  <br>      <span class="token literal-property property">inlineMath</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token punctuation">[</span><span class="token string">'$'</span><span class="token punctuation">,</span><span class="token string">'$'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">"\\("</span><span class="token punctuation">,</span><span class="token string">"\\)"</span><span class="token punctuation">]</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>  <br>      <span class="token literal-property property">displayMath</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token punctuation">[</span><span class="token string">'$$'</span><span class="token punctuation">,</span><span class="token string">'$$'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">"\\["</span><span class="token punctuation">,</span><span class="token string">"\\]"</span><span class="token punctuation">]</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>  <br>      <span class="token literal-property property">processEscapes</span><span class="token operator">:</span> <span class="token boolean">true</span>  <br>      <span class="token punctuation">}</span><span class="token punctuation">,</span>  <br>    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <br>  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>  <br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mathjax/MathJax.js?config=TeX-AMS_HTML-full<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"> </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
 <p>If you don't use dollar signs for inline math, just take the last line.</p>
 <h2>Fixing your epub.</h2>
 <p>After this copying, we'll have to repair our epub file. An important fact about epub: all files must be listed in the manifest (OPF) file. Since we don't want to do that manually, we use epub-check again.</p>
 <pre class="language-bash"><code class="language-bash">  epub-fix --unmanifested --epubcheck test.epub</code></pre>
-<p>The &quot;unmanifested&quot; option (you guessed it) will ensure that all files will be added to the manifest. Beware: don't try this on a full MathJax! Epub-fix will slow down after the first 1.000 files...</p>
+<p>The "unmanifested" option (you guessed it) will ensure that all files will be added to the manifest. Beware: don't try this on a full MathJax! Epub-fix will slow down after the first 1.000 files...</p>
 <p>Now transfer your file to the iPad and low and behold some mathjax will render! Of course, you'll find that this is not working: the rendering is broken right now. (As mentioned earlier, Davide is working on it)</p>
 <h2>iOS5 to the rescue?</h2>
 <p>Now this post gets flaky. As I wrote earlier, I have only had one test run with an iOS5 iPad, so this might not work. But the process is worthwhile documenting.</p>
@@ -95,10 +95,10 @@
 <p>But if you cannot resist (or want to modify my approach), here's the a hurried how-to. Since epub-fix will come to a grinding halt adding 30.000 files to a manifest, use ecub instead.</p>
 <p>Start ecub and use the new-project wizard, it's pretty self-explanatory. Two points might be worth pointing out:</p>
 <ul>
-<li>At &quot;Choose import method&quot; you'll want &quot;from an existing html file&quot;.</li>
-<li>At &quot;Convert text files&quot; check only &quot;add any HTML file found&quot; and &quot;Also find files in folders under your project folder&quot; (this step will take a short while).</li>
+<li>At "Choose import method" you'll want "from an existing html file".</li>
+<li>At "Convert text files" check only "add any HTML file found" and "Also find files in folders under your project folder" (this step will take a short while).</li>
 </ul>
-<p>After you're back at the main window, you'll still need to &quot;compile&quot; your epub file. This will take a <strong>long</strong> time. So long, in fact, you'll think ecub is hanging. To convince yourself that it isn't go to the project folder you designated in the wizard and watch the 30.000 files be copied into the folder and then watch content.opf grow in size (end result is ~3.5MB).</p>
+<p>After you're back at the main window, you'll still need to "compile" your epub file. This will take a <strong>long</strong> time. So long, in fact, you'll think ecub is hanging. To convince yourself that it isn't go to the project folder you designated in the wizard and watch the 30.000 files be copied into the folder and then watch content.opf grow in size (end result is ~3.5MB).</p>
 <h2>Where do we stand?</h2>
 <p>So for now, we have two broken ways to display mathematical content in an epub file on the iPad: use slimmed down MathJax or use MathML directly. Neither works perfectly but the key point is: they work in principle. Now we can look into the specifics to make things work better. Davide is looking into the mathjax side of things and with webkit (hence Safari, hence iBooks) there's reason to hope that mathml support will improve, too.</p>
 <p>Of course, what I really want is an Android reader with javascript or mathml support...</p>
@@ -132,7 +132,7 @@ Nevertheless, I have tried android and (other) ipad apps — none of them worked
 </article>
 
 <aside class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20epub, mathjax and the iPad -- another attempt">write me an email</a>.
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20epub%2C%20mathjax%20and%20the%20iPad%20--%20another%20attempt">write me an email</a>.
   </span>
   <span> You can also <a href="/about/">contact me</a>.</span>
 </aside>
@@ -143,7 +143,7 @@ Nevertheless, I have tried android and (other) ipad apps — none of them worked
 		</main>
 
   <footer class="container related">
-    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    © 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
     For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
   </footer>
 

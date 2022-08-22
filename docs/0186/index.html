@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -17,10 +17,10 @@
   <header>
     <div class="masthead">
       <div class="container">
-        <h1 class="masthead-title">
+        <div class="masthead-title">
           <a href="/">Peter Krautzberger</a>
           <small> · on the web</small>
-        </h3>
+        </div>
       </div>
     </div>
   </header>
@@ -39,7 +39,7 @@
 <p>MathML is a failed web standard.<sup>*</sup></p>
 <p>We can do better, we deserve better.</p>
 <p>MathML-in-HTML5 is in the way of that.</p>
-<p><small><sup>*</sup>Some people might prefer &quot;browser standard&quot;, as in &quot;a web standard to be implemented natively in the browser&quot; since some web standards do not rely on browser implementations. Also, &quot;natively&quot; as opposed to some web-components hack shipped in a browser.</small></p>
+<p><small><sup>*</sup>Some people might prefer "browser standard", as in "a web standard to be implemented natively in the browser" since some web standards do not rely on browser implementations. Also, "natively" as opposed to some web-components hack shipped in a browser.</small></p>
 <h2>MathML is a failed web standard</h2>
 <p>It doesn't matter whether or not MathML is a good XML language. Personally, I think it's quite alright. It's also clearly a success in the XML publishing world, serving an important role in standards such as JATS and BITS.</p>
 <p>The problem is: MathML has failed on the web.</p>
@@ -68,13 +68,13 @@
 <p>Did you know the MathWG's charter is running out this month? Would you notice if it wasn't renewed and the WG would cease existing? Would you notice if WebKit and Gecko ripped out their MathML implementation tomorrow? I'm not sure many people would.</p>
 <h2>What to do next.</h2>
 <h5>A) MathML needs to be dropped from HTML 5.</h5>
-<p>Many people I've met have the mistaken impression that browser manufacturers have declared an intent to implement everything in the set of standards usually called HTML 5. They have not (even if HTML 5 as a &quot;spec&quot; may strive for that).</p>
-<p>I think as long as MathML is in that set of standards, the lame duck argument (&quot;it's a standard!&quot;) will continue to prevent alternative developments that help the actually working solutions for mathematics on the web.</p>
+<p>Many people I've met have the mistaken impression that browser manufacturers have declared an intent to implement everything in the set of standards usually called HTML 5. They have not (even if HTML 5 as a "spec" may strive for that).</p>
+<p>I think as long as MathML is in that set of standards, the lame duck argument ("it's a standard!") will continue to prevent alternative developments that help the actually working solutions for mathematics on the web.</p>
 <p>At this point, MathML is effectively preventing mathematics from aligning with today's and tomorrow's web. This is hurting everyone. We need to drop MathML to make room for better standards.</p>
 <h5>B) Math layout can and should be done in CSS and SVG. Let's improve them incrementally to make it simpler.</h5>
 <p>It's possible to generate HTML+CSS or SVG that renders any MathML content -- on the server, mind you, no client-side JS required (but of course possible). The resulting markup is arguably crap -- it's span soup at its worst and some use cases are difficult to realize. But we've been there with HTML and CSS; people know how to solve this. It got us standards like flexbox and css-grid; it's worth pursuing improvements to those standards that work instead of waiting for Godot.</p>
 <p>It's also difficult to write your own math rendering tool. But we need more ideas, not less! It shouldn't be harder to write a simple math renderer in CSS or SVG than it is to write a RWD framework or a vector graphics library.</p>
-<p>We don't need Presentation MathML for this even if many projects (like MathJax) use it as an internal format. MathML's failure as a web standard is hurting the web because it is blocking discussions about improving existing standards to help existing mathematics tools on the promise that eventually &quot;MathML will solve everything (tm)&quot;.</p>
+<p>We don't need Presentation MathML for this even if many projects (like MathJax) use it as an internal format. MathML's failure as a web standard is hurting the web because it is blocking discussions about improving existing standards to help existing mathematics tools on the promise that eventually "MathML will solve everything (tm)".</p>
 <p>I can't see a native MathML approach help to fill these final gaps. What existing rendering solutions need has little to do with what MathML implementations need. We don't need underspecified layout features tied to MathML elements, we need flexible CSS features that are integrated into existing CSS. Most importantly, existing solutions can iterate on partial improvements to ensure that these help layout on the web more generally, not just the needs of one specific mathematical markup language.</p>
 <p>We don't need one true approach to math layout, we need flexibility for developers to be innovative and pursue new ways of solving layout problems and expressing mathematical thought on the web.</p>
 <p>We need to get together with CSSWG/Houdini TF/etc to work out solutions that help those developers who actually solve the problem of math on the web.</p>
@@ -93,7 +93,7 @@
 </article>
 
 <aside class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20MathML is a failed web standard">write me an email</a>.
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20MathML%20is%20a%20failed%20web%20standard">write me an email</a>.
   </span>
   <span> You can also <a href="/about/">contact me</a>.</span>
 </aside>
@@ -104,7 +104,7 @@
 		</main>
 
   <footer class="container related">
-    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    © 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
     For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
   </footer>
 

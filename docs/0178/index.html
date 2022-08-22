@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -17,10 +17,10 @@
   <header>
     <div class="masthead">
       <div class="container">
-        <h1 class="masthead-title">
+        <div class="masthead-title">
           <a href="/">Peter Krautzberger</a>
           <small> · on the web</small>
-        </h3>
+        </div>
       </div>
     </div>
   </header>
@@ -40,7 +40,7 @@
 <h1>Making math&amp;science first-class citizens on the web</h1>
 <figure>
   <a href="http://www.keepcalm-o-matic.co.uk/p/keep-calm-and-love-math-and-science-2/">
-    <img alt="Keep Calm and Love Math and Science" src="/assets/2015/keep-calm-and-love-math-and-science-2.png"/>
+    <img alt="Keep Calm and Love Math and Science" src="/assets/2015/keep-calm-and-love-math-and-science-2.png">
   </a>
   <figcaption>
      © keepcalm-o-matic.co.uk
@@ -62,7 +62,7 @@
 <ul>
 <li>Kaveh Bazargan • 23 days ago</li>
 </ul>
-<p>Thank you Peter for your accurate and witty post, and thank you for MathJax which has served as a beautiful solution to math on the web. The lack of support from browsers has been pathetic and shameful, and you are right that the only real solution is that MathML (and other MLs) are supported natively supported as the definitive content. We should not really have to resort to &quot;tricks&quot; such as MathJax, however well executed those tricks might might be!</p>
+<p>Thank you Peter for your accurate and witty post, and thank you for MathJax which has served as a beautiful solution to math on the web. The lack of support from browsers has been pathetic and shameful, and you are right that the only real solution is that MathML (and other MLs) are supported natively supported as the definitive content. We should not really have to resort to "tricks" such as MathJax, however well executed those tricks might might be!</p>
 <ul>
 <li>Peter Krautzberger re Kaveh Bazargan • 23 days ago</li>
 </ul>
@@ -83,19 +83,19 @@
 <ul>
 <li>Peter Krautzberger re Robert O'Callahan • 23 days ago</li>
 </ul>
-<p>Thanks for the comment, Robert. I'm not sure who you have in mind with &quot;users&quot;. I would agree that authors should ensure that their MathML renders well on Firefox natively.</p>
+<p>Thanks for the comment, Robert. I'm not sure who you have in mind with "users". I would agree that authors should ensure that their MathML renders well on Firefox natively.</p>
 <p>I wouldn't quite agree to call Gecko/Firefox the only browser with MathML support. WebKit/Safari made a lot of progress last year thanks to Fred Wang's work even if it's behind Firefox in its implementation.</p>
 <ul>
 <li>Robert O'Callahan re Peter Krautzberger • 23 days ago</li>
 </ul>
-<p>By &quot;users&quot; I mean people producing and viewing math content.</p>
+<p>By "users" I mean people producing and viewing math content.</p>
 <p>I'm glad Safari is making progress. Feel free to recommend it too. The important thing is to create market pressure for browser vendors to implement native MathML, and that means users/developers choosing one browser over another because of MathML.</p>
-<p>As you probably realize, MathJax being so good has actually reduced that pressure; it's easy for browser vendors to say &quot;hey, MathJax works fine in our browser, so why bother investing in native MathML&quot;. Even in this post, you haven't clearly identified reasons why native MathML is better than MathJax fallback.</p>
+<p>As you probably realize, MathJax being so good has actually reduced that pressure; it's easy for browser vendors to say "hey, MathJax works fine in our browser, so why bother investing in native MathML". Even in this post, you haven't clearly identified reasons why native MathML is better than MathJax fallback.</p>
 <ul>
 <li>Peter Krautzberger re Robert O'Callahan • 22 days ago</li>
 </ul>
 <p>I fully agree that users should choose browsers for their features and Firefox's MathML support is, to me, a huge factor, especially in an educational setting. (In fact, I just recently had an interesting situation where I helped a student struggling with a school project about HTML that required some math -- and naturally he chose MathML since they were using Firefox and he wasn't even aware of browser support issues -- bliss ;-) ).</p>
-<p>I've encountered the &quot;MathJax is holding back browser implementations&quot; argument a couple of times now and it feels like a Catch-22 to me. Without MathJax (I think) there wouldn't be significant amounts of MathML on the open web and thus no incentive to implement MathML support natively. Now, with MathJax, there's lots of MathML, yet there's still no incentive. I suspect the reasons lie elsewhere. (And from speaking to Gecko, WebKit and Blink developers it does not lie with the developers).</p>
+<p>I've encountered the "MathJax is holding back browser implementations" argument a couple of times now and it feels like a Catch-22 to me. Without MathJax (I think) there wouldn't be significant amounts of MathML on the open web and thus no incentive to implement MathML support natively. Now, with MathJax, there's lots of MathML, yet there's still no incentive. I suspect the reasons lie elsewhere. (And from speaking to Gecko, WebKit and Blink developers it does not lie with the developers).</p>
 <p>The reason why I didn't go into technical details about why native support is so important is that it didn't fit in this forum (both in length and audience). But you're right that perhaps I should have tried better. Some basic notes can be found on my personal blog at <a href="http://boolesrings.org/krautzb">http://boolesrings.org/krautzb</a>...</p>
 <ul>
 <li>JonRimmer • 22 days ago</li>
@@ -130,14 +130,14 @@
 <p>Personally, I think reports of the imminent death of the web are exaggerated. But even so, I'd argue that abandoning important and established web standards will do nothing but speed that up.</p>
 <p>As for the technical issues, they are (again) nothing particular to MathML. Polyfilling a textual rendering component -- be it math or bidi or linebreaking -- always happens too late in the game, i.e., after the page renders because good layout will depend deeply on the surrounding context. Similarly, inserting large amounts of content fragments (easily in the thousands) into the DOM will always come with issues, especially performance.</p>
 <p>More importantly, relying on a polyfill will prevent universal use. Developers will always have to make a conscious decision to add support, adding complexity and risking instability. In reality, we could never expect to be able to use mathematics in something as basic as a webmailer or a social network.</p>
-<p>The thing is: the &quot;if&quot; is not even the problem. When you ask actual browser developers (be it Mozilla or Google or Apple or Microsoft) they in favor of MathML. The problem lies much more on the management side.</p>
+<p>The thing is: the "if" is not even the problem. When you ask actual browser developers (be it Mozilla or Google or Apple or Microsoft) they in favor of MathML. The problem lies much more on the management side.</p>
 <p>Ultimately, it comes down to how important mathematics is. (Why not kick bidi? SVG? flexbox? tables?)</p>
 <p>The web is the most important medium for human communication and mathematics is one of the oldest and most universal forms of expression. Every school kid (worldwide) engages in mathematics (often for many years) and soon will do so in an HTML context. In particular, students will have to actively communicate (author, share, digest) mathematics and this will primarily happen on the web. To me, that makes it pretty important to have math natively on the web.</p>
 
 </article>
 
 <aside class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20catch my post at the Wiley Exchanges blog">write me an email</a>.
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20catch%20my%20post%20at%20the%20Wiley%20Exchanges%20blog">write me an email</a>.
   </span>
   <span> You can also <a href="/about/">contact me</a>.</span>
 </aside>
@@ -148,7 +148,7 @@
 		</main>
 
   <footer class="container related">
-    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    © 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
     For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
   </footer>
 

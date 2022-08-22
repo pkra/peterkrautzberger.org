@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -17,10 +17,10 @@
   <header>
     <div class="masthead">
       <div class="container">
-        <h1 class="masthead-title">
+        <div class="masthead-title">
           <a href="/">Peter Krautzberger</a>
           <small> · on the web</small>
-        </h3>
+        </div>
       </div>
     </div>
   </header>
@@ -36,7 +36,7 @@
 <p>This morning I came back to something I had drafted after Joanmarie Diggs proposed a session on a particular hack (but the group didn't end up focusing on this in the unconference-style workshop setting).</p>
 <h2>That's not a fraction. <em>That's</em> a fraction!</h2>
 <p>One of my <a href="0199/">go</a>-<a href="0196/">to</a> <a href="0192/">examples</a> when explaining that Presentation MathML is devoid of semantics is the <code>&lt;mfrac&gt;</code> element. While it clearly hints at being a fraction, the spec itself <a href="https://www.w3.org/TR/2014/REC-MathML3-20140410/chapter3.html#presm.mfrac">clearly states</a> that it is not, semantically, a fraction but that it may be used for completely different things that visually look like fractions, e.g., binomial coefficients or the Legendre symbol; in fact, you can find many even less fraction-like examples (such as logical deductions) in the wild because a vertical stack with a properly aligned line is simply a neat layout feature.</p>
-<p>Since Presentation MathML never specifies semantics, let's look how Content MathML encodes fractions. The <a href="https://www.w3.org/TR/2014/REC-MathML3-20140410/chapter4.html#contm.cn">spec</a> would have you write something like <code>&lt;cn type=&quot;rational&quot;&gt;22&lt;sep/&gt;7&lt;/cn&gt;</code>. It's a terribly good example for how Content MathML is a bit too strong in its abstraction for human communication (also, check the transcription to Presentation MathML). As an aside, if you need more examples of why <code>&lt;mfrac&gt;</code> is not meaningful, just search that section.</p>
+<p>Since Presentation MathML never specifies semantics, let's look how Content MathML encodes fractions. The <a href="https://www.w3.org/TR/2014/REC-MathML3-20140410/chapter4.html#contm.cn">spec</a> would have you write something like <code>&lt;cn type="rational"&gt;22&lt;sep/&gt;7&lt;/cn&gt;</code>. It's a terribly good example for how Content MathML is a bit too strong in its abstraction for human communication (also, check the transcription to Presentation MathML). As an aside, if you need more examples of why <code>&lt;mfrac&gt;</code> is not meaningful, just search that section.</p>
 <h2>Hacking tips for accessibility experiments</h2>
 <p>Anyway, at the workshop Joanie had proposed the following. It turns out, Firefox is <s>too lazy</s> <em>ahem</em> too performance-oriented to sanitize invalid ARIA roles. This allows you to experiment with made-up properties fairly easily (assuming you can modify your screenreader of choice).</p>
 <p>So for example, you could slap an <code>aria-math</code> attribute to your markup and this would show up in OS-level accessibility inspectors such as <a href="https://developer.paciellogroup.com/resources/aviewer/">aViewer</a> or <a href="https://help.gnome.org/users/accerciser/stable/introduction.html.en">accerciser</a>. What Joanie had in mind (I believe) is that we could have tried to expose additional information this way so that Joanie could hack something into <a href="https://help.gnome.org/users/orca/stable/index.html.en">ORCA</a> and then get Mick and Reef to modify <a href="https://www.nvaccess.org/">NVDA</a> or David to modify <a href="http://www.chromevox.com/">ChromeVox</a> (and maybe even hear what Glen thinks of it from a JAWS perspective). And yes, all these incredible people were actually there in person.</p>
@@ -45,12 +45,12 @@
 <p><span lang="fr">Et voilà</span>, a custom element fraction that adds <code>aria-math</code> roles to itself magically (using <code>fraction</code>, <code>numerator</code>, <code>denominator</code> and<code>fraction-line</code>).</p>
 <p data-height="265" data-theme-id="0" data-slug-hash="MGdmQj" data-default-tab="html,result" data-user="pkra" data-embed-version="2" data-pen-title="AIM Workshop custom element: fraction" class="codepen">See the Pen <a href="https://codepen.io/pkra/pen/MGdmQj/">AIM Workshop custom element: fraction</a> by Peter Krautzberger (<a href="https://codepen.io/pkra">@pkra</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-<p>It's not much and not really a &quot;document&quot;-level element as I was thinking about (then again, Joanie had hoped for improving an <code>&lt;mfrac&gt;</code> directly) but it's a nice (non-functional) concept, and perhaps helpful when thinking about ARIA <code>role-description</code>.</p>
+<p>It's not much and not really a "document"-level element as I was thinking about (then again, Joanie had hoped for improving an <code>&lt;mfrac&gt;</code> directly) but it's a nice (non-functional) concept, and perhaps helpful when thinking about ARIA <code>role-description</code>.</p>
 
 </article>
 
 <aside class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Experimenting with fractions for the web">write me an email</a>.
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Experimenting%20with%20fractions%20for%20the%20web">write me an email</a>.
   </span>
   <span> You can also <a href="/about/">contact me</a>.</span>
 </aside>
@@ -61,7 +61,7 @@
 		</main>
 
   <footer class="container related">
-    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    © 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
     For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
   </footer>
 

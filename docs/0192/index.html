@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -17,10 +17,10 @@
   <header>
     <div class="masthead">
       <div class="container">
-        <h1 class="masthead-title">
+        <div class="masthead-title">
           <a href="/">Peter Krautzberger</a>
           <small> · on the web</small>
-        </h3>
+        </div>
       </div>
     </div>
   </header>
@@ -33,9 +33,9 @@
   <h1 class="post-title">Experiments with ARIA in math rendering</h1>
   <span class="post-date"><time datetime="2017-03-30">30 Mar 2017</time></span>
   <p>It's been almost a year since we launched the <a href="https://w3c.github.io/mathonwebpages/">W3C Math-on-web Community Group</a>. The initial meetings were a bit all over the place and as you might expect, there are far too few people who have the resources (and inclination) to think about math on the web openly.</p>
-<p>Still, there's now a small but clear core within the CG together with a useful group of &quot;lurkers&quot;. I think this year we're entering the productive stage for this community group.</p>
+<p>Still, there's now a small but clear core within the CG together with a useful group of "lurkers". I think this year we're entering the productive stage for this community group.</p>
 <p>The dominant interest of the core group (i.e., the people actually doing work) is accessibility. What surprised me somewhat was that the core group seems to be in agreement that MathML is not suitable for accessibility, not just because it is effectively deprecated on the web but also because of its inherent limitations. (If you care for nuance and read on, this doesn't mean MathML isn't a decent intermediary for creating accessible web content.)</p>
-<p>My own focus has been on &quot;deep labels&quot; which will now tie nicely into our work at MathJax for our recent <a href="https://www.mathjax.org/simons-grant-2017/">grant from the Simons Foundation</a>. The idea is quite simple, really.</p>
+<p>My own focus has been on "deep labels" which will now tie nicely into our work at MathJax for our recent <a href="https://www.mathjax.org/simons-grant-2017/">grant from the Simons Foundation</a>. The idea is quite simple, really.</p>
 <ul>
 <li>Math on the web today is effectively void of semantic information that could be passed to <a href="http://whatsock.com/training/">the accessibility tree</a>. (This includes MathML even if tools like <a href="https://github.com/zorkow/speech-rule-engine">speech-rule-engine</a> will convert MathML into another, semantic format using heuristics.)</li>
 <li>In the real world, math on the web is represented as HTML and SVG representations, producing suitable visual layout and information for the accessibility tree.</li>
@@ -54,13 +54,13 @@
     &lt;/mover&gt;
 &lt;/math&gt;
 </code></pre>
-<p>You might be tempted to think that the &quot;real&quot; solution would be some kind of semantic markup (e.g., using <a href="https://www.w3.org/Math/draft-spec/mathml.html#chapter4_contm.diff"><code>&lt;diff&gt;</code></a>) but in the real world, the content is what it is and you want to enhance it.</p>
-<p>Now even the simplest MathML accessibility tool should have the sense to voice the Unicode content (&quot;x, dot above&quot;) but it might also try to convey the layout information of an <code>mover</code> (&quot;x with dot over it&quot;). But it shouldn't try anything beyond that because the markup does not provide more information than that. In reality, those few tools with decent heuristics will easily cause issues, e.g., any superscripted 2 is read as &quot;squared&quot;.</p>
-<p>Unfortunately, a dot above can mean other things besides &quot;derivative of&quot;, depending on the context and content -- if you ever run into a dot above an equal sign or a digit you'll probably guess that the dot does not represent the concept of a derivative of (then again someone probably used it that way so have fun figuring that one out).</p>
+<p>You might be tempted to think that the "real" solution would be some kind of semantic markup (e.g., using <a href="https://www.w3.org/Math/draft-spec/mathml.html#chapter4_contm.diff"><code>&lt;diff&gt;</code></a>) but in the real world, the content is what it is and you want to enhance it.</p>
+<p>Now even the simplest MathML accessibility tool should have the sense to voice the Unicode content ("x, dot above") but it might also try to convey the layout information of an <code>mover</code> ("x with dot over it"). But it shouldn't try anything beyond that because the markup does not provide more information than that. In reality, those few tools with decent heuristics will easily cause issues, e.g., any superscripted 2 is read as "squared".</p>
+<p>Unfortunately, a dot above can mean other things besides "derivative of", depending on the context and content -- if you ever run into a dot above an equal sign or a digit you'll probably guess that the dot does not represent the concept of a derivative of (then again someone probably used it that way so have fun figuring that one out).</p>
 <p>So it's a mess.</p>
 <p>Let's use what ARIA has given us to make it less of a mess: a simple and efficient means of providing meaningful textual alternatives for visual presentation:</p>
 <pre><code>&lt;math&gt;
-    &lt;mover aria-label=&quot;derivative of x&quot;&gt;
+    &lt;mover aria-label="derivative of x"&gt;
         &lt;mi&gt;x&lt;/mi&gt;
         &lt;mo&gt;&amp;#x02D9;&lt;!-- ˙ --&gt;&lt;/mo&gt;
     &lt;/mover&gt;
@@ -78,11 +78,11 @@
 <p>A lot of tweaking happened once I started to test this in screenreaders in earnest.</p>
 <h4>hacks</h4>
 <p>One of the first problems I ran into is what James Teh described in <a href="http://blog.jantrid.net/2015/12/woe-aria-surprisingly-but-ridiculously.html">Woe-ARIA</a>: it's not always clear what AT should expose when we muck about by aria-labeling things like this.</p>
-<p>Inevitably, I also needed a common accessibility hack,  &quot;off-screen&quot; rendering of content. As a simple but extremely important example, you need this when facing the fact that, in MathML's <code>&lt;mfrac&gt;</code> the fraction bar is only implicit and thus lacks an node we could attach a label to (arguably the biggest <s>WTF</s> collision between traditional math rendering aka print and web markup).</p>
+<p>Inevitably, I also needed a common accessibility hack,  "off-screen" rendering of content. As a simple but extremely important example, you need this when facing the fact that, in MathML's <code>&lt;mfrac&gt;</code> the fraction bar is only implicit and thus lacks an node we could attach a label to (arguably the biggest <s>WTF</s> collision between traditional math rendering aka print and web markup).</p>
 <p>I currently favor a somewhat convoluted solution:</p>
-<pre><code>&lt;mrow aria-label=&quot;screen-reader only&quot;&gt;&lt;mpadded width=&quot;-1em&quot;&gt;&lt;mphantom&gt;&lt;mtext&gt;M&lt;/mtext&gt;&lt;/mphantom&gt;&lt;/mpadded&gt;&lt;/mrow&gt;
+<pre><code>&lt;mrow aria-label="screen-reader only"&gt;&lt;mpadded width="-1em"&gt;&lt;mphantom&gt;&lt;mtext&gt;M&lt;/mtext&gt;&lt;/mphantom&gt;&lt;/mpadded&gt;&lt;/mrow&gt;
 </code></pre>
-<p>The main advantage is backward  compatibility and re-usability because this should render in any MathML renderer without (many) side-effects. It also (in part) gets us around the &quot;ARIA-woe&quot; or the fact that an empty <code>&lt;span&gt;</code> with <code>aria-label</code> should be ignored.</p>
+<p>The main advantage is backward  compatibility and re-usability because this should render in any MathML renderer without (many) side-effects. It also (in part) gets us around the "ARIA-woe" or the fact that an empty <code>&lt;span&gt;</code> with <code>aria-label</code> should be ignored.</p>
 <h4>Testing</h4>
 <p>So far I've tested NVDA, JAWS, VoiceOver, Orca, and ChromeVox in several browsers. Some recordings are already available in <a href="https://www.youtube.com/playlist?list=PL1ATLkPgTEBqYOb7CYz7Kv6gNHh_pXbQq">a dedicate playlist</a> on MathJax's YouTube channel. Since I didn't want to add commentary, they are a bit difficult to follow so the summary below should be helpful.</p>
 <h5>NVDA</h5>
@@ -93,7 +93,7 @@
 <ul>
 <li>reads whole expression</li>
 <li>allows exploration</li>
-<li>repetitive voicing &quot;graphics&quot; and &quot;outer graphics&quot; during exploration; I believe that's caused by browser/OS.</li>
+<li>repetitive voicing "graphics" and "outer graphics" during exploration; I believe that's caused by browser/OS.</li>
 </ul>
 </li>
 </ul>
@@ -128,9 +128,9 @@
 </li>
 <li>Firefox 51
 <ul>
-<li>does not read whole expression (just &quot;unknown&quot;)</li>
+<li>does not read whole expression (just "unknown")</li>
 <li>allows exploration</li>
-<li>reads &quot;unknown&quot; following each exploration step</li>
+<li>reads "unknown" following each exploration step</li>
 </ul>
 </li>
 </ul>
@@ -141,7 +141,7 @@
 <ul>
 <li>reads whole expression</li>
 <li>allows exploration</li>
-<li>with duplicate content in label, repetitive voicing &quot;group&quot; (which gets to be nagging during exploration)</li>
+<li>with duplicate content in label, repetitive voicing "group" (which gets to be nagging during exploration)</li>
 <li>character exploration leads to double voicing if aria-label duplicates the text content</li>
 </ul>
 </li>
@@ -209,7 +209,7 @@
 <ul>
 <li>reads whole expression</li>
 <li>allows exploration</li>
-<li>reads content very poorly, e.g., &quot;derivative of x&quot; gobbled together as &quot;derivativeofks&quot;.</li>
+<li>reads content very poorly, e.g., "derivative of x" gobbled together as "derivativeofks".</li>
 </ul>
 </li>
 <li>Firefox 51</li>
@@ -231,7 +231,7 @@
 <ul>
 <li>IE11, Firefox 51
 <ul>
-<li>reads &quot;error describing element with math content&quot; on every expression</li>
+<li>reads "error describing element with math content" on every expression</li>
 </ul>
 </li>
 </ul>
@@ -256,7 +256,7 @@
 <ul>
 <li>reads whole expression</li>
 <li>allows exploration</li>
-<li>reads content poorly, e.g., (&quot;x y&quot; as &quot;xi&quot;)</li>
+<li>reads content poorly, e.g., ("x y" as "xi")</li>
 <li>during exploration, just reads Unicode content (not labels)</li>
 </ul>
 </li>
@@ -275,7 +275,7 @@
 <h5>Recap</h5>
 <p>As you can see, the results are mixed. For each combination of AT+browser+OS, there's some combination that works roughly as expected but that's about it. SVG seems a clear winner despite VO's reluctance; I need to explore<code>title</code>/<code>desc</code> a bit further (which has different support levels).</p>
 <p>Still, I think the situation is already better than what MathML can give you today, in particular because the few significant issues are nothing particular to MathML or math, they're just annoying SVG or HTML accessibility issues, many of which can be easily fixed (as opposed to implementing good math support based on MathML). The fact that MathML accessiblity tools fail to support aria-labels is not surprising, of course, and a typical example of how MathML support (as little as it is) continues to fall further and further behind HTML and SVG. And that's a good thing.</p>
-<p>Now some might see this &quot;fixed&quot; enrichment as a step back compared to MathJax's Accessibility Extensions (using speech-rule-engine on the client) because the extensions can provide numerous speech rules and verbosity settings as well as summary information. I would disagree. I've never been a fan of varying speech rules (just like I wouldn't be a fan of AT re-arranging a sentence). Also, speech rules mostly differ by newer ones being more refined than older ones.</p>
+<p>Now some might see this "fixed" enrichment as a step back compared to MathJax's Accessibility Extensions (using speech-rule-engine on the client) because the extensions can provide numerous speech rules and verbosity settings as well as summary information. I would disagree. I've never been a fan of varying speech rules (just like I wouldn't be a fan of AT re-arranging a sentence). Also, speech rules mostly differ by newer ones being more refined than older ones.</p>
 <p>Verbosity is simply a general accessibility problem and it should be dealt with in generality (as it already is, e.g., for punctuation). Summary information is a great problem but really a limitation of current web technology and something that's just as needed for infographics or data visualization as it is for mathematics. We do not need isolated solutions here either.</p>
 <h3>What's next</h3>
 <p>Simple: more testing.</p>
@@ -286,7 +286,7 @@
 </article>
 
 <aside class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Experiments with ARIA in math rendering">write me an email</a>.
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Experiments%20with%20ARIA%20in%20math%20rendering">write me an email</a>.
   </span>
   <span> You can also <a href="/about/">contact me</a>.</span>
 </aside>
@@ -297,7 +297,7 @@
 		</main>
 
   <footer class="container related">
-    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    © 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
     For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
   </footer>
 

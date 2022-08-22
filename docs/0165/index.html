@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -17,10 +17,10 @@
   <header>
     <div class="masthead">
       <div class="container">
-        <h1 class="masthead-title">
+        <div class="masthead-title">
           <a href="/">Peter Krautzberger</a>
           <small> · on the web</small>
-        </h3>
+        </div>
       </div>
     </div>
   </header>
@@ -42,7 +42,7 @@
 <p>Now there's an obvious problem with that approach: where would you move the content to do the rendering? After all, just because something is <code>display:none</code> doesn't mean it has no context. It might be in a completely different CSS context (think: hints to a homework problem, sidebar content, menus), or the context might change once it becomes visible (think: popup footnotes/references, knowls). In other words, MathJax output in some other context might get screwed up when put back into the original context (e.g., matching font sizes correctly, dealing with inherited CSS). Of course, more often than not, this will work well but it is a general problem and should be avoided.</p>
 <p>(Another way might be to use <a href="http://caniuse.com/#feat=mutationobserver">mutation observers</a>. Besides supported being limited, I think there's an argument to be made that layout should happen right away if possible. But it should probably become an option via an extension.)</p>
 <h3>a surprising performance issue</h3>
-<p>Recently, we saw a sample where all this magic had a very different side effect: serious performance issues. In that sample, hundreds of equations were hidden away with <code>display:none</code>. This meant that MathJax had to shift those around in the DOM -- and especially mobile browsers did not like that at all. What made matters worse was that the MathJax status messages gave no useful indication of what was going on, instead hanging at unrelated points -- because MathJax currently doesn't have a signal to catch a delay for such a &quot;simple&quot; action like laying out <code>display:none</code>. In the end, the sample (with 2000+ equations) left the user with the impression that their mobile browsers were hanging/crashing -- just because of all these necessary layout shenanigans! Darn!</p>
+<p>Recently, we saw a sample where all this magic had a very different side effect: serious performance issues. In that sample, hundreds of equations were hidden away with <code>display:none</code>. This meant that MathJax had to shift those around in the DOM -- and especially mobile browsers did not like that at all. What made matters worse was that the MathJax status messages gave no useful indication of what was going on, instead hanging at unrelated points -- because MathJax currently doesn't have a signal to catch a delay for such a "simple" action like laying out <code>display:none</code>. In the end, the sample (with 2000+ equations) left the user with the impression that their mobile browsers were hanging/crashing -- just because of all these necessary layout shenanigans! Darn!</p>
 <h3>the moral</h3>
 <p>The moral of the story is: use <code>visibility:hidden</code>, e.g., <code>position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;</code>), or tell MathJax to skip the content and <a href="http://docs.mathjax.org/en/latest/typeset.html">manually queue a typesetting call</a> when you reveal hidden content. If you want to put in some extra work, use <code>visibility:hidden</code>, let MathJax skip the hidden content and then queue a typesetting call for the hidden content after MathJax is loaded; that way the hidden content will be typeset only after the visible content is done (on MathJax's initial pass).</p>
 <p>Any which way, don't get caught in bad layout or performance issues related to <code>display:none</code>!</p>
@@ -50,7 +50,7 @@
 </article>
 
 <aside class="related">
-  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20MathJax best practices; avoid display:none">write me an email</a>.
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20MathJax%20best%20practices%3B%20avoid%20display%3Anone">write me an email</a>.
   </span>
   <span> You can also <a href="/about/">contact me</a>.</span>
 </aside>
@@ -61,7 +61,7 @@
 		</main>
 
   <footer class="container related">
-    &copy; 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    © 2019 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
     For more, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
   </footer>
 
