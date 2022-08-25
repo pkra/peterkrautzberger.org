@@ -33,7 +33,7 @@
     "luxon": "3.0.1",
     "markdown-it": "13.0.1",
     "markdown-it-mathjax3": "2.2.0",
-    "mathjax-full": "github:amermathsoc/MathJax-src#721453417ee045dca763db6cc993d308147cc4e1",
+    "mathjax-full": "github:amermathsoc/MathJax-src#c30b873e87fad4a543c17626a0efd6714a7e0c40",
     "speech-rule-engine": "4.0.7",
     "linkedom": "^0.14.12"
   }
