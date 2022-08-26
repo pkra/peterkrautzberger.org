@@ -7,6 +7,13 @@ latex: true
 prism: true
 ---
 
+This will probably be another thing that will get updates over the years.
+Or maybe not, we'll see. This, above all, is for me, not you. 
+For to gather my thoughts one last time.
+For me to deal with stupid garbage and stupid garbage people which accumulated over the years. 
+This is off the cuff, written for people who know this area.
+If you want deep research results, feel free to contract my company - we do that kind of thing. 
+Don't complain about free stuff.
 ## Introduction
 
 10 years ago I joined the MathJax project, which forced me to think a
@@ -47,7 +54,7 @@ MathJax away from MathML and its toxic community towards actual web
 standards and their underlying principles. We wrote a whitepaper, got
 our sponsors on board, and started work on MathJax v3. (This is not what
 v3 became but that's ok. I left around my position at MathJax around the
-first beta which was a thrill and I'm gratefule Davide and Volker
+first beta which was a thrill and I'm grateful that Davide and Volker
 enabled me to leave after that big leap forward.)
 
 Towards the end of that period, I wrote a number of pieces here,
@@ -67,11 +74,11 @@ feel like it needs a (sort of) new name: print equation layout.
 
 ## Framing
 
-Framing is important. What I call \"print equation layout\" is more
-frequently called \"math layout\", \"formula layout\", or just \"math\"
+Framing is important. What I call "print equation layout" is more
+frequently called "math layout", "formula layout", or just "math"
 (I find that last one somewhat insulting). The phrase "print equation
 layout" may seem unnecessary or convoluted. To some degree, I agree. For
-example, I don\'t believe we have seen \"web equation layout\" come into
+example, I don't believe we have seen "web equation layout" come into
 existence during these first 30 years of the web. Nor, sadly, do I
 expect to see it in the next 10.
 
@@ -100,8 +107,8 @@ people assume that they must be realized on the web - and in the same
 way.
 
 I want to argue that neither aspect of print equation layout - visual
-layout traditions and accessibility traditions \-- is particularly good
-or useful \_on the web\_. As a result, it is a particularly problematic
+layout traditions and accessibility traditions - is particularly good
+or useful *on the web*. As a result, it is a particularly problematic
 set of techniques because the contemporary web already has plenty of
 good and useful features that solve print equation layout.
 
@@ -120,43 +127,25 @@ Let's try to be a bit more specific.
 
 Print equation layout is...
 
-- what people think of when you say "math/formula/equation" // what
-
-  > MathML partially captures // what math mode TeX usually produces
-  > // what MS Word formulas usually look like
-
-- \*\*an elaborate, two-dimensional form of abbreviated notation for
-
-  > compressed, highly complex, context dependent, abstract thought.\*\*
-
-  - even at an elementary level (e.g., long
-
-    > addition/multiplication/division, "explanatory" layout).
-
-  - on research: exacerbated by 20th century content explosion
-    > combined with print page limits
-
+- what people think of when you say "math/formula/equation" 
+  // what  MathML partially captures 
+  // what math mode TeX usually produces
+  // what MS Word formulas usually look like
+- **an elaborate, two-dimensional form of abbreviated notation for compressed, highly complex, context dependent, abstract thought.**
+  - even at an elementary level (e.g., long addition/multiplication/division, "explanatory" layout).
+  - on research: exacerbated by 20th century content explosion combined with print page limits
 - highly (highly!) ambiguous
-
-- often integrated into additional complex notation (e.g., text
-
-  > annotation, graphical documents).
-
-- a consequence: it is \"non-text content\" (in the sense of WCAG SC
-
-  > 1.1.1).
-
+- often integrated into additional complex notation (e.g., text annotation, graphical documents).
+- a consequence: it is \"non-text content\" (in the sense of WCAG SC 1.1.1).
   - closer to "ascii art" than HTML traditions of "semantic markup"
 
-Naturally, this does not apply to all instances of print equation layout
-
-- \$n\$ is just fine.
+Naturally, this does not apply to all instances of print equation layout - 1+1=2 is just fine.
 
 It crucially applies where the actual problems occur - both in visual
 and non-visual rendering. The problem is not to handle 1+1=2. The
 problem is more
 
-TODO add example expression // layout
+$$ \det(A)=\sum _{\begin{array}{c}k_{1},k_{2},\ldots ,k_{n}\geq 0\\k_{1}+2k_{2}+\cdots +nk_{n}=n\end{array}}\prod _{l=1}^{n}{\frac {(-1)^{k_{l}+1}}{l^{k_{l}}k_{l}!}}\operatorname {tr} \left(A^{l}\right)^{k_{l}}$$
 
 ## Visual print equation layout on the web
 
@@ -169,39 +158,39 @@ With CSS, this started as (client-side) JS only and span soup; we have
 had that since 2004 (via jsmath, MathJax's precursor).
 
 With SVG, we've had this since 2011. MathJax v2, first client-side but
-quickly also server-side (via phantomjs and later via mathjax-node).
-\[To some degree, various tools could produce SVG from, e.g., TeX, even
+quickly also server-side (via phantomjs and later via mathjax-node). 
+[To some degree, various tools could produce SVG from, e.g., TeX, even
 earlier that but they didn't generally understand or care about the web
-as a use case, e.g., they wouldn't give you vertical alignment to meet a
-baseline.\]
+as a use case, e.g., they wouldn't give you good vertical alignment to meet a
+baseline.]
 
 It has been possible to realize print equation layout with just CSS
 (e.g., server-side generated span soup and CSS) since IE8 - IE8 damnit,
-released in 2009 - and with just SVG since IE9 (2011). \[To be fair,
+released in 2009 - and with just SVG since IE9 (2011). [To be fair,
 MathJax was not the first to realize such an output, KaTeX was, but one
 of my favorite successes while at MathJax was to prod Davide long enough
 about a "fast Preview without JS" that he built the "CommonHTML" output
 for v2.7 which added this. I'm also still fond of the previewHTML output
-which preceded it and traded beauty for CSS simplicity.\]
+which preceded it and traded beauty for CSS simplicity.]
 
 Visual print equation layout has been solved thrice over with a myriad
 of smaller and larger tools doing it in varying ways, balancing code
 simplicity with quality of layout. (mathquill, jqmath, math-ml etc)
 
-\[Aside. This is why a certain blog post from a few years ago about
-"alternate realities" was so very much off base \-- CSS driven print
+[Aside. This is why a certain blog post from a few years ago about
+"alternate realities" was so very much off base - CSS driven print
 equation layout was first, SVG a close second, not some XML dialect
 nobody was using for anything but print production. In the similar
 situations the same people would (indeed did famously) argue that a
 popular working solution should be considered the prime candidate to
 move standardized forward, not some contrived academic proposal. But I
-digress.\]
+digress.]
 
-So print equation layout solutions have existed for a long time.
+So print equation layout solutions for the web have existed for a long time.
 
 Are they perfect? No.
 
-Are they still getting better? Hell yes - all the damn time. The ever
+Are they still getting better? Hell yes - all the time. The ever
 evolving CSS continues to make things easier (grids, container queries,
 variable fonts, layers!). SVG is just rock solid and yet improves.
 
@@ -232,6 +221,16 @@ layout tools for the web would be heard the same way grid frameworks
 were heard, we'd get less convoluted output easily AND in a way that
 benefits the entire web stack.
 
+
+### theoretical issues
+
+Ultimately, the problem is: is this layout tradition a good fit for the
+web platform. I think it is not. Even the simplest examples will
+run into "fun" traditions like "single letter variables are italic,
+multi-letter ones are upright", moveable limits  
+
+TODO
+
 ###### To recap:
 
 visual layout that matches print equation layout has been solved well
@@ -248,10 +247,9 @@ Let's talk about ambiguity.
 
 ### A different example
 
-Let's start with a different example, [[musical
-notation]{.underline}](https://en.wikipedia.org/wiki/Musical_notation).
+Let's start with a different example, [musicalnotation](https://en.wikipedia.org/wiki/Musical_notation).
 In modern notation, a note is about as ambiguous on its own as a
-[[grapheme]{.underline}](https://en.wikipedia.org/wiki/Grapheme) in
+[grapheme](https://en.wikipedia.org/wiki/Grapheme) in
 text. For example, without a staff and other context the note itself
 doesn't tell you much. You might know the value by looking at just the
 note but even then this might not be enough (e.g., if you happen to miss
@@ -276,70 +274,38 @@ the topic here.\]
 
 ### Mathematical examples
 
-- superscript 2 - is probably some sort of "squared" thingie? (Some
-
-  > sets of heuristics say yes)
-
-- Binomial coefficient ("n choose k") cannot easily be distinguished
-
-  > from a 2-dim vector notation (similar examples for [[Stirling
-  > number]{.underline}](https://en.wikipedia.org/wiki/Stirling_number)
-  > exist)
-
-- frequent use of space or punctuation to imbue layout with extra
-
-  > meaning // to avoid having to add clarifying notation (e.g., +a +
-  > -c + +b vs, say, ++b,
-  > [[https://whystartat.xyz/wiki/Space_is_significant]{.underline}](https://whystartat.xyz/wiki/Space_is_significant)
-  > )
-
-- "(a,b)" - open interval? point in the plane? bilinear form in a
-
-  > hilbert space?
-
-- \[a\] might be the sign of a // \[c, d\] might be a matrix // A\[b\]
-
-  > might be a ring
-
-- \|\...\| - absolute value, norm, determinant?
-
-- \| \-- evaluation of definite integral (alternatively \[ ... \])
-
+- superscript 2 - is probably some sort of "squared" thingie? (Some sets of heuristics say yes)
+- Binomial coefficient ("n choose k") cannot easily be distinguished from a 2-dim vector notation (similar examples for [Stirlingnumber](https://en.wikipedia.org/wiki/Stirling_number) exist)
+- frequent use of space or punctuation to imbue layout with extra meaning 
+  // to avoid having to add clarifying notation (e.g., `+a + -c + +b` vs, say, `++b` [https://whystartat.xyz/wiki/Space_is_significant](https://whystartat.xyz/wiki/Space_is_significant))
+- "(a,b)" - open interval? point in the plane? bilinear form in a Hilbert space?
+- `[a]` might be the sign of a // `[c, d]` might be a matrix // `A[b]` might be a ring
+- `|...|` - absolute value, norm, determinant?
+- `|` - evaluation of definite integral (alternatively `[ ... ]`)
 - superscript -1 - so many meanings
-
-- context, e.g.,"d" in (a + bx\^3 + cx\^2 + dx = 0) vs "d" in (\\int
-
-  > f(x) dx)
-
+- context, e.g.,"d" in `(a + bx\^3 + cx\^2 + dx = 0)` vs "d" in (`\int f(x) dx`)
 - delta vs triangle
+- the use of invisible operators (U+2062, U+2061) - where to even start?
 
-- the use of invisible operators (U+2062, U+2061) - where to even
+For more "inspiration", check out [https://whystartat.xyz/wiki/Category:Ambiguities](https://whystartat.xyz/wiki/Category:Ambiguities)
 
-  > start
+Another favorite of mine: the [Legendre symbol](https://en.wikipedia.org/wiki/Legendre_symbol)
+was first used before 1800) and yet apparently there's no decent way to read it out loud, see
+[https://mathoverflow.net/questions/15447/is-there-a-standard-way-to-read-the-legendre-symbol](https://mathoverflow.net/questions/15447/is-there-a-standard-way-to-read-the-legendre-symbol)
 
--
+We can also go the other way around. 
 
-more:
-[[https://whystartat.xyz/wiki/Category:Ambiguities]{.underline}](https://whystartat.xyz/wiki/Category:Ambiguities)
-
-Another favorite of mine: the [[Legendre
-symbol]{.underline}](https://en.wikipedia.org/wiki/Legendre_symbol)
-(first use before 1800) and yet apparently there's no decent way to read
-it out loud:
-[[https://mathoverflow.net/questions/15447/is-there-a-standard-way-to-read-the-legendre-symbol]{.underline}](https://mathoverflow.net/questions/15447/is-there-a-standard-way-to-read-the-legendre-symbol)
-
-Also the other way around. We can have the same voicing for different
-notations. \|A\| and det(A) may read "determinant of A"; both exp(x) and
-e\^x may read as "exponential function at x" How would a non-visual user
+We can have the same voicing for different
+notations. `|A|` and `det(A)` may read "determinant of A"; both `exp(x)` and
+`e^x` may read as "exponential function at x". How would a non-visual user
 know which notation was used when someone said this?
 
 A separate problem is the abuse of the alphabet in varying typefaces to
 convey context-dependent meaning. It's so easy to - visually - discern
 italic from normal, serif from sans-serif, gothic from Sütterlin - well,
-in truth it is not that easy but here we are. In addition, foreign
+in truth it is not that easy but here we are anyway. In addition, foreign
 alphabets are abused so much that mathematics has become reliant on
-particular typeface designs (cf. [[this
-source]{.underline}](http://web.archive.org/web/20120229131933/http://omega.enstb.org/yannis/pdf/boston99.pdf)).
+particular typeface designs (cf. [this source](http://web.archive.org/web/20120229131933/http://omega.enstb.org/yannis/pdf/boston99.pdf)).
 
 The noise when differentiating these ("Upper German X") for non-visual
 users is immense - or more often: the silence is immense.
@@ -350,8 +316,8 @@ layout.
 
 ### Semantics or layout?
 
-There's a moving goalpost or gaslighting issue that I've encountered
-multiple times: should assistive technologies (AT) provide information
+There's a moving goalpost (or perhaps gaslighting) issue that I've encountered
+many times: should assistive technologies (AT) provide information
 about layout or semantics when it comes to print equation layout?
 
 A common stance in the general accessibility community is: it's not
@@ -362,36 +328,40 @@ information about layout.
 But that's not what users actually expect (or are accustomed to).
 Instead, "semantics" are desired. Take this simple example:
 
-f: X -\> Y
+`f: X → Y`
+
+Should it read
 
 "lower italic f colon upper italic X right arrow upper italic Y"
 
-vs
+or
 
 "f maps from upper X to upper Y".
 
+The latter is certainly easier and happens to be how humans speak.
+
 However, print equation layout does not offer such semantic information.
-Therefore, solutions turn to guesswork aka
-[[heuristics]{.underline}](https://en.wikipedia.org/wiki/Heuristic).
+Therefore, solutions turn to guesswork aka [heuristics](https://en.wikipedia.org/wiki/Heuristic).
 
 These heuristics work reasonably ok for school-level print equation
 layout and some, more "stable" parts of college education (e.g.,
 engineering). But they easily and frequently fail even in these areas.
 
+TOOD EXAMPLES?
+
 To come back to our examples: yes, that superscript 2 is very likely
 "squared" but then again it is, inevitably, far from always "squared".
 
 Beyond the evident lack of semantics in print layout per se, the second
-problem is the lack of contextual information. While MathJax's Simons
-grant allowed some research into the problem, no existing solution takes
+problem is the lack of contextual information. While MathJax once
+had some grant money to allow research into the problem, no existing solution takes
 even other equations into account (e.g., try to guess what a variable
 that was used earlier might represent later). They surely do not try to
-analyze the whole document context (e.g., [[Bra-Ket
-notation]{.underline}](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation)
+analyze the whole document context (e.g., [Bra-Ket notation](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation)
 in physics, P(X) in statistics, various arrows in category theory,
-operations in tropical geometry, or, again, the legendre symbol).
+operations in tropical geometry, or, again, the Legendre symbol).
 
-In simplest terms: think about f(g+h)(x). Most mathematicians would
+In simplest terms: think about `f(g+h)(x)`. Most mathematicians would
 agree that there's a good chance that there's a function application (at
 x) happening but it could also just be a multiplication with x after
 some calculations within the parentheses, who knows. Fairly limited
@@ -401,21 +371,21 @@ lost.
 What's worse: today's heuristics also often do not work within an
 equation, e.g.,
 
-\$\|A\| = {\\begin{vmatrix} a&b \\\\ c&d \\end{vmatrix}} = ad-bc.\$
+`|A| = {\begin{vmatrix} a&b \\ c&d \end{vmatrix}} = ad-bc.`
 
 Speech Rule Engine's heuristics (the best around) will identify the
-middle part as a matrix determinant but still treats \|A\| as absolute
+middle part as a matrix determinant but still treats `|A|` as absolute
 value. And in fairness, A might still be some poorly named scalar.
 
 Frequently, magical semantics from layout is what people (especially in
 the MathML community) promise.
 
-Yet when faced with the obvious and plentiful problems, the goal post is
+Yet when faced with the obvious, plentiful, and unsolvable problems, the goal post is
 casually moved to "you need to give layout information" only so that
-when you provide layout information, they go back to "oh, that's not the
+when you provide layout information, people go back to "oh, that's not the
 idea, you should provide semantics".
 
-Unfortunately, many people believe this promise.
+Unfortunately, many people believe this empty promise.
 
 ## Problems from print layout traditions
 
@@ -430,7 +400,7 @@ problems.
 For example, there is the concept of moveable limits. For example the
 expression
 
-\\sum\_{i=0}\^\\infty
+`\sum_{i=0}^\infty`
 
 would, at plain view, indicate we get Σ with a subscript of "i=0" and a
 superscript of ∞.
@@ -442,10 +412,11 @@ will become under- and overscripts.
 This is of course convenient from an authoring perspective - you can
 switch modes as you like, thus macros / copy&paste are much easier.
 
-\[From a layout perspective, this automatism wouldn't have to be built
+TODO make theoretical layout section
+[From a layout perspective, this automatism wouldn't have to be built
 in, but weirdly, MathML builds it in. In fact, it has a separate
 operator dictionary which describes various layout rules instead of
-focusing on the barebones of layout.\]
+focusing on the barebones of layout.]
 
 This means, we have intentionally ambiguous layout instructions.
 
@@ -468,7 +439,7 @@ or resizing in dynamic environments.
 
 They may "accidentally" rely on TeX's defaults, e.g., consecutive
 display math blocks may align if those blocks are generally centered
-(rather than explicitly grouped aligned blocks). But with different
+(rather than explicitly grouped by aligned blocks); yet with different
 alignment defaults, the alignment may fail unexpectedly.
 
 ## Visual print equation layout
@@ -498,8 +469,7 @@ The US traditions are dominating in this context since MathML was
 developed largely by US companies.
 
 For print traditions in the US, the most known methods for non-visual
-presentation were developed by [[Abraham
-Nemeth]{.underline}](https://en.wikipedia.org/wiki/Abraham_Nemeth) \--
+presentation were developed by [Abraham Nemeth](https://en.wikipedia.org/wiki/Abraham_Nemeth) -
 the MathSpeak ruleset for voicing and the Nemeth Braille notation for
 tactile presentation. A critical point is that both sets were designed
 for human creation. MathSpeak, to enable a non-expert reader to read
@@ -514,7 +484,7 @@ Volker.
 
 I would argue this is by design - they could assume a human
 orator/transcriber who can and should adjust rules on the fly to enhance
-simplistic heuristics. Even without understanding mathematics, it's
+the simplistic heuristics. Even without understanding mathematics, it's
 fairly easy to make a change on the fly, e.g., after initial feedback
 from the blind user that, here, the superscripted 2 is not "squared"
 but, say, a row or column vector.
@@ -541,17 +511,21 @@ Bugs range from mildly annoying to problematic to mind bogglingly weird.
 
 **Theoretically**: visual rendering is not actually specified (though
 there is a new effort to change that, making all existing MathML
-renderers invalid and breaking content).
+renderers invalid and breaking content without care).
 
-This is after 25 years of MathML, 15 years of MathML in HTML5, \~10
-years of MathML "support" in Firefox, \~8 years of MathML "support" in
-Safari.
+This is after 25 years of MathML, 15 years of MathML in HTML5, ~10
+years of MathML "support" in Firefox, ~8 years of MathML "support" in
+Safari, neither of which are due to actually Mozilla or Apple 
+spending resources but co-opted volunteer efforts. No amount of
+Igalia newspeak will change that fact.
 
-Optimistically, it will take another decade to get reliable visual
+Optimistically, it will take a good decade to get reliable visual
 rendering quality.
 
-The handful of people behind the implementations seem unable to grasp
-what the real life problems are.
+But the handful of people behind the implementations seem unable to grasp
+what the real life problems are so they live in their little
+bubble insisting that repeaing "but it's a standard" does anything for
+users.
 
 ### non-visually
 
@@ -564,11 +538,11 @@ rendition.
 browsers, voice assistants etc.
 
 Only three screenreaders formally claim support and their support is
-limited, buggy, and of poor quality \-- and the pieces are minimally
-maintained by AT companies \[cf. Brian Richwine's talk from ATHENs how
+limited, buggy, and of poor quality - and the pieces are minimally
+maintained by AT companies [cf. Brian Richwine's talk from ATHENs how
 some AT doesn't say "end fraction/script" causing confusion, and
 anecdata form Apple support "there's just enough users to warrant
-fixes"\].
+fixes"\.
 
 In addition, AT UX is often questionable, e.g., JAWS will not read
 larger MathML fragments but just announce the presence of a math
@@ -579,10 +553,11 @@ visual differences from the browser).
 
 Similarly, VoiceOver on iOS will open pop-ups for exploration of MathML
 fragments, creating a separate context and confusion. NVDA needs third
-party plugins to do anything and has no visual component.
+party plugins to do anything and has no visual component (i.e., highlighting while exploring)
+leaving non-blind to guess what is going on.
 
 **Theoretically**, MathML cannot be accessible in the web's sense.
-Heuristics must be applied and now you frequently have 2 problems \--
+Heuristics must be applied and now you frequently have 2 problems -
 your MathML must work visually and you might have to work around
 particularly dumb heuristics.
 
@@ -605,20 +580,20 @@ Accessibility on the web revolves around the so-called "accessible name"
 which is calculated for each element in the document. This calculation
 works from the leafs up the document tree.
 
-Print equation layout does not allow for recursive naming \-- just think
-"n choose k", or \^{-1}.
+Print equation layout does not allow for recursive naming - just think
+`n choose k`, or `^{-1}`.
 
 MathML is even worse for this, as it is a stratified format for
-rendering purposes (in TeX you can at least have author macros to try to
-make sense).
+rendering purposes; in TeX you can at least have author macros to try to
+make sense.
 
 Authors, especially with AMS, invent layout that requires new heuristics
-\-- both large and small (e.g., \[recent sideset issue\], custom glyphs,
+- both large and small (e.g., abusing amsmath's sideset, creating custom glyphs,
 tikzs-inside-math). Historically, this coincides with naming (cf.
-[[https://jeff560.tripod.com/calculus.html]{.underline}](https://jeff560.tripod.com/calculus.html)
-for e.g., nabla) but not always (cf. lagrange earlier). \[Authors also
-regularly just hack layout badly (e.g., \\mathop{l\\overline{og}}) but
-that's technically speaking a different problem.\]
+[https://jeff560.tripod.com/calculus.html](https://jeff560.tripod.com/calculus.html)
+for some historic examples such as nabla) but not always (cf. the Legendre earlier). [Authors also
+regularly just hack layout badly (e.g., `\mathop{l\overline{og}}`) but
+that's technically speaking a different problem.]
 
 ### Other aspects
 
@@ -633,16 +608,13 @@ research substantiating the positive effect.
 In practice, the available localizations in AT is quite limited and
 largely undocumented. This is even worse for Braille.
 
-There are obvious blocks for localizations. Many equations contain some
-"plain text" elements which would not be localized. Similarly, common
-terminology has different localizations/abbreviations (e.g.,
+There are obvious obstacles for localizations. Many equations contain some
+text elements which would not be localized. Similarly, common
+terminology has different localizations/abbreviations. For example
 
 - sine as "sen" (ES, IT) or "sin" (EN, DE)
-
 - in geometry SAS/ASA/SSS (EN) vs SWS/WSW/SSS (DE)
-
 - sin\^-1 (EN) vs arcsin (EU) (etc)
-
 - repeating decimal notation (above, below / arc vs line)
 
 While layout-relevant terms might have suitable automatic translations
@@ -692,10 +664,10 @@ fixed. Apple has essentially communicated "it is what it is".
 
 Nemeth Braille support has relied on the open source liblouis library -
 which recently discontinued its support; it only ever converted MathML
-to Nemeth/UEB and some German/Dutch/Flamish braille notations and did so
-quite poorly.
+to families of Nemeth/UEB and German/Dutch/Flamish braille notations 
+and it did so quite poorly.
 
-More importantly, no "lighter" assistive technology supports MathML,
+More importantly, no "light" assistive technology supports MathML,
 i.e., "read aloud" features in smaller helpers, in epub reading
 applications or voice assistants (Siri et al when reading out web
 content). This lack of support impacts the largest portion of users,
@@ -706,9 +678,10 @@ full-fledged screenreaders like VoiceOver and JAWS.
 
 Print equation layout is inherently not accessible in the sense of the
 web. MathML is a red herring as it (at most) aims to reproduce
-accessibility traditions from the print era, but inherently cannot
+accessibility traditions from the print era but inherently cannot
 reproduce it well since those traditions relied on human operators
-(orators or transcribers).
+(orators or transcribers). It also only works for English, or more 
+precisely Nemeth users.
 
 I invariably approach such problems by looking for guidance regarding
 the web in general.
@@ -724,10 +697,10 @@ From
 than the needs of user agent implementors, which come before than the
 needs of specification writers, which come before theoretical purity."
 
-### What do AMS users want from print equation layout? And what do they actually need?
+### What do users want from print equation layout? And what do they actually need?
 
-We don't know. Too few AT users among the community \-- support is so
-poor, they won't make it to research-level.
+We simply don't know. There are too few AT users among the mathematical community
+- support is so poor, few make it to college let alone research-level.
 
 Anecdotally, the most common feedback I've seen in educational studies
 comes down to "I want it to be read like my teacher/prof reads it in
@@ -736,7 +709,7 @@ class".
 But for research? Who knows.
 
 They probably want TeX annotations because research-level users know TeX
-syntax. But is that what they need, e.g., when exploring a complex
+syntax. But is that what they **need**, e.g., when exploring a complex
 expression?
 
 This discussion is usually skewed by two major factors: US users and
@@ -768,15 +741,14 @@ And authors want to do that.
 
 Just look at any "list of symbols" in a monograph, e.g., from GSM210
 
-![](media/image1.png){width="6.267716535433071in"
-height="4.541666666666667in"}
+TODO ![](media/image1.png)
 
 Despite using very ambiguous terms, the authors clearly have a strong
 intent.
 
 We want authors to bring their intent into the process.
 
-We can do that with SRE. We cannot do that with MathML.
+We can barely do that with SRE. We cannot do that with MathML.
 
 ### What we want for our users
 
@@ -789,7 +761,7 @@ epub).
 
 We want speech and braille alternatives.
 
-We want consistent exploration.
+We want consistent, reliable, robust exploration.
 
 We want to be able to fix issues.
 
@@ -875,8 +847,8 @@ problem that affects everyone.
 Related to copy&paste is the area of authoring and recreating print
 equation layout.
 
-Let's go back to the example of matrix determinants. Both det(A) vs
-\|A\| would be voiced as "determinant of A" yet their authoring is quite
+Let's go back to the example of matrix determinants. Both `det(A)` vs
+`|A|` would be voiced as "determinant of A" yet their authoring is quite
 different.
 
 Sometimes, readers have to (re)create content to match someone else's
@@ -907,7 +879,7 @@ recognition, image analysis, and conversion to speech (e.g., a
 mathematical lecture with equations on a blackboard that the speaker
 discusses). Since the standard formats (e.g., for subtitle functionality
 in a video player) require plain text, MathML is of no use here. In
-addition,
+addition, TODO
 
 ### Search
 
@@ -915,11 +887,9 @@ Despite decades of research, search around MathML has never provided
 tangible benefits despite clear needs to discover existing results in a
 vastly expanded field, both to avoid and identify duplicate research.
 
-Springer\'s discontinued LaTeX search or zbmath's MathML based system
+Springer's discontinued LaTeX search or zbmath's MathML based system
 are good examples of this failure. A large research corpus revolves
-around analyzing MathML fragments, yet no efficient system is available.
-
-\[Disclosure: I have some ideas on how to do this somewhat easily.\]
+around analyzing MathML fragments, yet no actually useful system is available.
 
 ### Death of progress (ranty)
 
@@ -928,30 +898,30 @@ people have actively worked against progress for equation layout on the
 web, and mathematics as a larger issue.
 
 Why do I say this? Because anyone who has followed this area closely in
-the past decade (which, alas, is a handful of people) know that it's the
+the past decade (which, alas, is barely a handful of people) know that it's the
 MathML fanatics who insist that MathML must be impemented at all costs,
-actively damaging other approaches, even approaches with better results.
+actively damaging other approaches, even approaches with better results for users.
 
-To these people, MathML is more important than users, authors, and
+To these pursists, MathML is more important than users, authors, and
 browsers.
 
 As a result, projects that made actual progress (like MathJax, mathlive,
-hell even the idiots from KaTeX) are in danger of losing support from
+hell even the fools from KaTeX) are in danger of losing support from
 their communities because people are being told "you should use MathML".
 
 All the while, there's no indication that MathML development will speed
 up at all, even if Chrome ships the new, cut-down, incompatible spec.
 (Fun fact: Gecko removed perfectly functioning MathML 3 features. What
-kind of idiot breaks backwards compatibility on the web ffs?)
+kind of idiot breaks backwards compatibility on the web FFS? MathML fanaticss, that's who.)
 
-So if you ever again dare complain about the lack of improvements, blame
+So if you ever again dare complain about the lack of improvements in this space, blame
 the MathML fanatics. They are to blame. We could have made countless
 small improvements to the platform that would have benefited everyone if
-the MathML fanatics hadn't killed everything that didn't fall in line.
+the MathML fanatics hadn't killed everything that didn't suit them.
 
-Even more: MathML is being held back. There's so much useful print
-equation content (tikz!!!) to consider for XML workflows and extending
-MathML would be natural here. Instead, nothing.
+Reversely, MathML is being held back where it actually shines. There's so much useful print
+equation content (tikz alone) to consider for XML workflows and extending
+MathML would be natural here. Instead, those people get nothing (or worse).
 
 ## mathml future scenarios
 
