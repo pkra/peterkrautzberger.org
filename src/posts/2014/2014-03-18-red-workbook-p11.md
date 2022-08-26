@@ -58,8 +58,8 @@ latex: true
     *    $\Rightarrow p = q+r \Rightarrow p \bmod n = q \bmod n + r \bmod n$
     *    [struck out: [illegible] $= -p +\bmod n \in \mathbb{Z}_ p = {0, \ldots, n-1}$
 *    $A \in p \in \mathbb{N}^* +\mathbb{N}^*  \Rightarrow p = \overset{\overset{\mathbb{N}^* }{\ni \ \ \in}}{q+r} \Rightarrow A \supseteq \bigcup_ {v\in V \in q} v+ \overset{\in r}{W_ v}$
-*    [struck out: WA $\forall k\ in \mathbb{N}: \left\vert A \cap A+k\right\vert  < \omega \Rightarrow \forall k \in \mathbb{N}: k+p \notin \widehat{A}$]
-*    WA $\forall k\ in \mathbb{N}: \left\vert A \cap A+k\right\vert  < \omega \underset{p = q+r}{\Longrightarrow} \forall k \in \mathbb{N}: \left\vert k+W_ v \cap W_ v \right\vert  < \omega$
+*    [struck out: WA $\forall k \in \mathbb{N}: \left\vert A \cap A+k\right\vert  < \omega \Rightarrow \forall k \in \mathbb{N}: k+p \notin \widehat{A}$]
+*    WA $\forall k \in \mathbb{N}: \left\vert A \cap A+k\right\vert  < \omega \underset{p = q+r}{\Longrightarrow} \forall k \in \mathbb{N}: \left\vert k+W_ v \cap W_ v \right\vert  < \omega$
 *    $\Rightarrow \forall k \in \mathbb{N} k+r \notin \widehat{W_ v}$ [struckout: $\Rightarrow: \forall k\in \mathbb{N}: k+r \notin \bigcup_ {v\in V} \widehat{W_ v}$]
 *    $\Rightarrow q + r \notin \widehat{W_ v} \Rightarrow q+r \notin \bigcup \widehat{W_ v}$
 
@@ -86,8 +86,8 @@ latex: true
     *    $\Rightarrow p = q+r \Rightarrow p \bmod n = q \bmod n + r \bmod n$
     *    [struck out: [something illegible] $= -p +\bmod n \in \mathbb{Z}_ p = {0, \ldots, n-1}$
 *    [third try] $A \in p \in \mathbb{N}^* +\mathbb{N}^*  \Rightarrow p = q+r (\text{both in } \mathbb{N}^* ) \Rightarrow A \supseteq \bigcup_ {v\in V \in q} v+ \overset{\in r}{W_ v}$
-*    [struck out: Assume to the contrary $\forall k\ in \mathbb{N}: \left\vert A \cap A+k\right\vert  < \omega \Rightarrow \forall k \in \mathbb{N}: k+p \notin \widehat{A}$]
-*    [fourth try] Assume to the contrary $\forall k\ in \mathbb{N}: \left\vert A \cap A+k\right\vert  < \omega \underset{p = q+r}{\Longrightarrow} \forall k \in \mathbb{N}: \left\vert k+W_ v \cap W_ v \right\vert  < \omega$
+*    [struck out: Assume to the contrary $\forall k \in \mathbb{N}: \left\vert A \cap A+k\right\vert  < \omega \Rightarrow \forall k \in \mathbb{N}: k+p \notin \widehat{A}$]
+*    [fourth try] Assume to the contrary $\forall k \in \mathbb{N}: \left\vert A \cap A+k\right\vert  < \omega \underset{p = q+r}{\Longrightarrow} \forall k \in \mathbb{N}: \left\vert k+W_ v \cap W_ v \right\vert  < \omega$
 *    $\Rightarrow \forall k \in \mathbb{N} k+r \notin \widehat{W_ v}$ [struckout: $\Rightarrow: \forall k\in \mathbb{N}: k+r \notin \bigcup_ {v\in V} \widehat{W_ v}$]
 *    $\Rightarrow q + r \notin \widehat{W_ v} \Rightarrow q+r \notin \bigcup \widehat{W_ V}$
 
