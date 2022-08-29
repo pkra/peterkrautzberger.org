@@ -1,23 +1,27 @@
 ---
 layout: post
-title: On Print Equation Layout
+title: Thoughts on Print Equation Layout
 date: 2022-08-31
 permalink: 0218/
 latex: true
 prism: true
 ---
 
-This will probably be another thing that will get updates over the years.
-Or maybe not, we'll see. This, above all, is for me, not you. 
-For to gather my thoughts one last time.
-For me to deal with stupid garbage and stupid garbage people which accumulated over the years. 
-This is off the cuff, written for people who know this area.
-If you want deep research results, feel free to contract my company - we do that kind of thing. 
-Don't complain about free stuff.
+<style>
+* {max-width: 80ch}
+</style>
+
+This will possibly be another piece that will get updates in the future.
+Actually, I hope not but we'll see. This, above all, is for me, not you. 
+For me to gather my thoughts one (hopefully) last time.
+For me to deal with stupid garbage and stupid garbage people which have accumulated over the years. 
+I'm not going into every detail, so if you don't follow, re-read the first few lines.
+If you want deeply detailed research results, feel free to contact my company - we do that kind of thing. 
+Just don't be that guy complaining about free stuff.
 ## Introduction
 
 10 years ago I joined the MathJax project, which forced me to think a
-lot about how to put equations in web pages. Actually, I had already
+lot about how to put equations on web pages. Actually, I had already
 spent quite a bit of time during my PhD and postdoc years thinking
 (\*cough\* procrastinating) about the same thing, albeit from a
 different perspective.
@@ -142,12 +146,16 @@ Print equation layout is...
 Naturally, this does not apply to all instances of print equation layout - 1+1=2 is just fine.
 
 It crucially applies where the actual problems occur - both in visual
-and non-visual rendering. The problem is not to handle 1+1=2. The
-problem is more
+and non-visual rendering. The problem is not to handle 1+1=2 (well, actually we'll get back to this). 
+The problem is more:
 
 $$ \det(A)=\sum _{\begin{array}{c}k_{1},k_{2},\ldots ,k_{n}\geq 0\\k_{1}+2k_{2}+\cdots +nk_{n}=n\end{array}}\prod _{l=1}^{n}{\frac {(-1)^{k_{l}+1}}{l^{k_{l}}k_{l}!}}\operatorname {tr} \left(A^{l}\right)^{k_{l}}$$
 
+This is a simple piece of print equation layout, something from the first few months at university. And it is packed.
+
 ## Visual print equation layout on the web
+
+### practically
 
 The problem of realizing print equation layout on the web has been
 solved for almost two decades now. Well, 18 years to be exact.
@@ -222,21 +230,81 @@ were heard, we'd get less convoluted output easily AND in a way that
 benefits the entire web stack.
 
 
-### theoretical issues
+### theoretically
 
 Ultimately, the problem is: is this layout tradition a good fit for the
-web platform. I think it is not. Even the simplest examples will
-run into "fun" traditions like "single letter variables are italic,
-multi-letter ones are upright", moveable limits  
+web platform? Take table layout. At first people thought it was a good fit.
+Now we don't.
 
-TODO
+I think print equation layout is a thoroughly bad fit, building it into the web
+actually damages the platform, just like tables have taken a two decades
+to become unscrewed (ohi Google, still using tables for layout in some products).
 
-###### To recap:
+Even the simplest examples, we run into "fun" traditions that are problematic.
+The easiest to understand are the many text-dependent behaviors, i.e.,
+layout behavior that changes depending on the specific text nodes present (beyond the obvious
+layout changes from having different text nodes).
 
-visual layout that matches print equation layout has been solved well
-for over a decade. It's somewhat ridiculous to suggest the web has a
+The simplest example is probably: single letter variables are italic, multi-letter ones are upright.
+This is pure tradition, i.e,. something a lot of people like to do. 
+Obviously people sometimes don't do this. Obviously, there's no technical difficulty to make this happen
+And yet as a feature it is unlike any other text rendering we have.
+
+A more complex example are moveable limits. For example the
+expression `\sum_{i=0}^\infty` would, at plain view, indicate we get Σ (sigma) with a subscript of "i=0" and a
+superscript of ∞.
+
+However, this depends. As an inline expression, most print equation layout systems will lay
+this out as I just described. 
+
+$\sum_{i=0}^\infty$
+
+However, as a display/block expression, the sub- and superscripts
+will become under- and overscripts.
+
+$$\sum_{i=0}^\infty$$
+
+This is of course convenient from an authoring perspective - you can
+switch modes as you like, thus macros / copy&paste are much easier.
+
+However, from a web design perspective it is a wild thing. Not the change as such 
+(of course children change when a container switches from inline to block). 
+But when you replace `\sum` with something else (say an "S" for "sum"),
+you will suddenly not get this behavior anymore.
+
+From a layout perspective, this automatism wouldn't have to be built
+in, but of course MathML, as a print equation layout system, builds it in.
+This means, we have intentionally ambiguous layout instructions.
+
+From this we can take a step up and talk about the operator dictionary.
+Remember when I spoke about 1+1=2 not being the hard problem. Guess again, we made it hard!
+
+Naturally, there are traditions around how you space things. 1+1=2? 1+1 = 2? 1 + 1 = 2?
+Or something more subtle? There are many traditions like this, the most
+well known being captured in Knuth's TeX book.
+
+But that's just it - they are traditions. And people can (and should!) deviate from them.
+If there's one thing I've learned working in mathematical publishing produciont for a few years
+it's that authors are full of ideas for how the traditions should change.
+
+Instead of giving them the tools that allow adjustments, most print equation layout systems
+(and MathML in particular), only hand them spacing hacks. 
+Compare this to CSS where we have benefited from a system that allows resets and customization
+clearly and cleanly, in comparison, a paradise of tools for designers and developers.
+
+None of this is to say that there aren't interesting aspects of print equation layout that are worth 
+a look for the web; something as basic as multiscripts or somethign as complex as stretchy glyphs. 
+But bringing them in a way that drags the baggage of 100 years of print equation layout along
+is an obviously stupid idea (that can be explained but hardly forgiven).
+
+###### To recap 
+
+The problem of creating visual layout that matches print equation layout has been solved 
+for well over a decade. It's somewhat ridiculous to suggest the web has a
 significant technology gap here that only a completely new set of markup
-and layout features can fix.
+and layout features can fix. 
+Additionally, the theoretical structure of print equation layout enshrines problematic 
+traditions that fit very badly, going against the web's grain.
 
 This leaves non-visual-layout considerations regarding print equation
 layout, in particular (web and print) accessibility considerations.
@@ -274,8 +342,9 @@ the topic here.\]
 
 ### Mathematical examples
 
-- superscript 2 - is probably some sort of "squared" thingie? (Some sets of heuristics say yes)
-- Binomial coefficient ("n choose k") cannot easily be distinguished from a 2-dim vector notation (similar examples for [Stirlingnumber](https://en.wikipedia.org/wiki/Stirling_number) exist)
+- a superscript 2 (e.g., $x^2, f^2, \sin^2$) - is probably some sort of "squared" thingie? But is that always true? How about $A_1^2$?
+- Binomial coefficient ("n choose k") cannot easily be distinguished from a 2-dim vector notation - $n \choose k$ vs $\left(\begin{smallmatrix}{} n \\ k \end{smallmatrix}\right)$
+    (similarly examples for [Stirlingnumber](https://en.wikipedia.org/wiki/Stirling_number) exist)
 - frequent use of space or punctuation to imbue layout with extra meaning 
   // to avoid having to add clarifying notation (e.g., `+a + -c + +b` vs, say, `++b` [https://whystartat.xyz/wiki/Space_is_significant](https://whystartat.xyz/wiki/Space_is_significant))
 - "(a,b)" - open interval? point in the plane? bilinear form in a Hilbert space?
