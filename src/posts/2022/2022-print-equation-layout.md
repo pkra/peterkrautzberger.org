@@ -757,50 +757,75 @@ the web in general.
 
 ### The web's core principles
 
-"users before author before implementors before theory"
+"Users before author before implementors before theory"
 
 From
-[[https://www.w3.org/TR/design-principles/\#priority-of-constituencies]{.underline}](https://www.w3.org/TR/design-principles/#priority-of-constituencies):
+[https://www.w3.org/TR/design-principles/#priority-of-constituencies](https://www.w3.org/TR/design-principles/#priority-of-constituencies):
 
-"User needs come before the needs of web page authors, which come before
+> User needs come before the needs of web page authors, which come before
 than the needs of user agent implementors, which come before than the
-needs of specification writers, which come before theoretical purity."
+needs of specification writers, which come before theoretical purity.
 
 ### What do users want from print equation layout? And what do they actually need?
 
-We simply don't know. There are too few AT users among the mathematical community
-- support is so poor, few make it to college let alone research-level.
+We simply don't know. 
 
-Anecdotally, the most common feedback I've seen in educational studies
+Yes, each civilized country does something at the school level.
+But actual research is barely existent; what little there is, is usually limited to small
+groups and all the biases of simplistic educational studies.
+
+My impression has been that there are too few AT users among the mathematical community
+- support is so poor, few make it to college let alone research-level. Accordingly,
+few have both the skills and the luxury to think freely about the problem. 
+(T.V. Raman is one of the few exceptions and I'm still grateful he gave use the 
+opportunity to work with the ChromeVox team - and to meet Volker Sorge when 
+he was at Google Research back then.)
+
+Anecdotally, the most consistent feedback I've seen in educational studies
 comes down to "I want it to be read like my teacher/prof reads it in
-class".
+class". That sounds an aweful lot like the core principles avoe.
 
-But for research? Who knows.
+But even assuming I'm wrong in my assessment: for mathematically heavy research? Who knows.
 
 They probably want TeX annotations because research-level users know TeX
 syntax. But is that what they **need**, e.g., when exploring a complex
-expression?
+expression? [Fun fact, some European communities favor presenting
+TeX strings in Braille - from first grade.]
 
 This discussion is usually skewed by two major factors: US users and
-blind users. Blind users (especially students) need to write assessments
-in the tools their classes require. If they need to use MS Word, they'll
+blind users. As most of the web, the US dominance has led to people
+ignoring other factors (cough, Firefox i18n, cough). If
+it works for US users, it's fine, amiright. So the limited MathSpeak
+and Nemeth implementations in MathPlayer were enough to woo
+the US accessibility community and its influence woos the rest.
+
+To take an example. Blind users (especially students) need to write assessments
+using the tools their classes require. If they need to use MS Word, they'll
 need something to paste into Word. MathML was originally conceived as
 just such an exchange format for print equation layout - abstracting the
 minimal common ground so that each engine could reasonably present it.
 
-However, the authoring problem requires conversion. This usually goes
-haywire. E.g., Libre office's "Math editor" digests MathML but converts
-it into its own linearized syntax (\~Asciimath like) and while it
+However, the authoring problem requires conversion. This easily goes
+haywire. For example, Libre office's "Math editor" digests MathML but converts
+it into its own linearized (~Asciimath like) syntax. And while it
 includes MathML in its file, that MathML will be generated from the
 linearized format. This is a process full of bugs.
 
 MS Word does the same thing but has a custom XML format for print
-equation layout.
+equation layout. Same approach, same problems. It doesn't help to add
+more formats (such as TeX-like input). 
 
 MathML-based wysiwyg editors exacerbate the problem (as wysiwyg is wont
 to do) since they cannot easily discern logical structure of input // do
 not make it apparent to users that they're doing something really
 terrible (e.g., inserting random whitespace).
+
+Now the web is fairly bad at being copy&pasted anywhere. And that's an
+interesting, complex, and very broad problem. I don't think it makes sense
+to make this a requirement for print equation layout when nothing else can do it.
+
+[TODO move this line somewhere else] Braille (especially a refreshable display) is essentially a print technology. There's no two, let alone a multidimensional presentation that a dynamic webpage
+can provide.
 
 ### What we want for our authors
 
@@ -994,35 +1019,65 @@ MathML would be natural here. Instead, those people get nothing (or worse).
 
 ## mathml future scenarios
 
-MathML is the zombie of web standards. Each decade brought 1 additional, differently broken implementations (Firefox, Safari, Chrome) and there's now a cut down spec; the mathml fanatics have silently removed existing features from browsers for whatever idiotic reasons (probably to argue they have 2 implemementations of the cut down spec). XML people can have fun with getting their garbage on the web in this scenario. Bugs are aplenty (I find a new one every time something forces me to look at native MathML), some are ridiculously bad (e.g., wiping out HTML parents), most go years without even bugs being filed (remember when Safari didn't draw mfrac lines reliably for over a year? No, you don't because nobody ever filed a bug).
+MathML is the zombie of web standards. Each decade brought 1 additional, differently broken implementation (first Firefox, then Safari, soon Chrome). There's now a cut down spec that will break a lot of content. The mathml fanatics have silently existing features from browsers (I'm guessing to be able to argue that they have 2 implemementations of the new cut down "spec"); what an extremely unusual thing in browsers that just goes to
+show how few people use MathML. XML people will have "fun" with getting their garbage to work on the web in this scenario. Bugs in those three disjoint implementations are, of course, aplenty; I find a new one every time something forces me to look at native MathML implementations, some are ridiculously bad (wiping out HTML content is one of my favorites) and most bugs go for years without bugs even being filed (remember when Safari didn't draw fraction lines reliably for over a year? No, you don't because you don't use it and nobody even filed a bug).
 
-For the web, the best case scenario is: nobody cares and nobody uses it. It will become font/center/marquee or whatever.
+For the web, the best case scenario is: nobody cares and nobody uses it. It will become the new font/center/marquee or whatever.
 
-Even if the mathml fanatics were interested in moving the layout facilities into CSS, we'll get, at best, something like CSS tables. CSS tables were never able to suitably replace HTML table layout, they were super buggy for the longest time (and are still buggy despite years of improvements). But  most of all: people realized they acutally needed something completely different (i.e., CSS grid).
+Even if the mathml fanboys were interested in moving the layout facilities into CSS, we'll get, at best, something like CSS tables. If you don't know the "joy" of working with CSS tables: to this day they are not able to suitably realize HTML table layout, they were super buggy for the longest time and are still buggy in many edge cases (despite years of active improvements). But  most of all: people realized they actually needed something completely different, i.e., CSS grid.
 
-Accessibility wise, the shoddy implementations in JAWS and VoiceOver will continue to barely help English speaking blind users. Everyone else will continue to find themselves shit out of luck.
+Accessibility wise, the shoddy implementations in JAWS and VoiceOver will continue to barely help English speaking blind users. Soiffer will try to push his weird MathPlayer clone into every AT so that he can continue to claim patently false things. No "intent" in the world will make print equation layout accessible in the sense of the web. Nemeth users might eventually get what they want - the rest? Not so much.
 
-MathML and its community are fundamentally not willing or able to be a positive force. It's "MathML or die" all the way. The zombie continues.
+In other words, users will continue to find themselves out of luck. But hey, "it's a standard". They made you beg for it, then they begged you for money to pay instead of Apple and Google; now you have something you don't want, something that doesn't work and something that cannot work. It's what you wanted.
 
-## reader takeaway
+I think MathML (this of course means: its community) is fundamentally not willing and not able to be a positive force. It's "MathML or die" all the way. The zombie standard continues it shambling walk.
 
-So where does this leave us? 
+## interlude
 
-I'm not saying you shouldn't put print equation layout on the web.
+The future will be different from what expect. The other day/month/year, our oldest started learning the piano.
+Of course, this means learning musical notation; it's one of the benefits, I'd say. But it's (inevitably) hard to motivate.
 
-I am saying that you should consider two things when you do:
+So being a stupid internet person, I searched around for fun apps that teach the piano.
+I found apps that, shockingly, didn't really use traditional musical notation. Instead, they had some barebeones resemblance
+(I'm guessing to enable later learning) but they took things in another direction by leveraging the medium, i.e., modern mobile applications.
+
+These apps would listen via microphone, give immediate feedback on correctness in a range of properties (dynamically increasing tolerance for errors),
+They would use their infinite canvas to provide just-in-time context in large visuals to keep silly younglings focused and unconcerned about length. 
+They would play along simple training material providing more complex arrangements so that even an early learner would not be facing dull pieces of repetitive notes. 
+They would immediately get you to jump into contemporary pop songs, sync highlighting along the way, bringing enormous satisfaction.
+They were just generally being impressively awesome.
+None of this with traditional musical print notation.
+
+## Quo vadis?
+
+So where do we go from here?
+
+I'm not saying you shouldn't put print equation layout on the web. I do it for a living; knock yourself out.
+
+I am saying that you should consider two things when you do.
 
 ### even mildly complex print equation layout is simply a bad type of content. 
 
-Find better ways to communicate. You don't need to go all "Kill math" about it. But for crying out loud experiment 
+Find better ways to communicate better. You don't need to go all "Kill math" about it. But for crying out loud experiment, be creative. Or at the very least copy creative people.
 
 There are soooo many good people out there experimenting -- just check math teachers on twitter and you'll find wondersome and wonderful experimentation.
 
+Think about responsive arrangements of your equation layout. 
+Think about animations of equation content.
+Think about mixing imagery with complex text content and only a touch of equation layout.
+Think about scrollytelling techniques.
+Think about using something else instead.
+And fail! Fail again! Fail well! Fail at failing until you fail to fail.
+
+The web is a wonderous medium. It's grain is fantastic to work with,  read its direction, feel it out, mess with it.
+
 ### if you do it, do it accessibly and that means do accessibility yourself
 
-If you put print equation layout on the web, be aware that you're brining inaccessible content to the web.
+If you put print equation layout on the web, be aware that you're bringing inaccessible content to the web. I'm happy to point anyone to WCAG 1.1.1 because every print equation layout tradition clearly separates its use from text.
 
 Essentially, you're putting up a structured image. SVG is the best mental model here: if you generate a diagram with mermaidjs, you could use some of your input to enable accessibility. But you probably have to do a whole lot more.
+
+But you don't have to. Speech Rule Engine provides you the best heuristics on the market and a direct way to bring your own - whether you bring a plain label (that still offers SRE's heuristics and layout information) or you write your own heuristics, it's there to build upon.
 
 Above all: be mindful what you want to do. If you want to provide TeX as non-visual presentation, do that; you are the author and it's your prerogative. If you want to provide more standardized descriptions, use Speech Rule Engine to generate them. You can provide braille-specific descriptions alongside speech-oriented. MathJax and SRE are the best there is for that kind of thing. If you can't use JS on the client, you can still do things server-side. If equation layout gets complex, use an ARIA tree or tree grid with a modicum of client-side JS. Keep an eye focusgroup.
 
