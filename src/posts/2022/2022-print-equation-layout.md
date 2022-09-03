@@ -61,7 +61,13 @@ Let's try to be a bit more specific.
 
 Print equation layout is...
 
-- what people think of when you say "math/formula/equation"   // what  MathML partially captures   // what math mode TeX usually produces  // what MS Word formulas usually look like- **an elaborate, two-dimensional form of abbreviated notation for compressed, highly complex, context dependent, abstract thought.**  - even at an elementary level (e.g., long addition/multiplication/division, "explanatory" layout).  - on research: exacerbated by 20th century content explosion combined with print page limits- highly (highly!) ambiguous- often integrated into additional complex notation (e.g., text annotation, graphical documents).- a consequence: it is \"non-text content\" (in the sense of WCAG SC 1.1.1).  - closer to "ascii art" than HTML traditions of "semantic markup"
+- what people think of when you say "math/formula/equation"   // what  MathML partially captures   // what math mode TeX usually produces  // what MS Word formulas usually look like
+- **an elaborate, two-dimensional form of abbreviated notation for compressed, highly complex, context dependent, abstract thought.**
+- even at an elementary level (e.g., long addition/multiplication/division, "explanatory" layout).
+  - on research: exacerbated by 20th century content explosion combined with print page limits
+- highly (highly!) ambiguous- often integrated into additional complex notation (e.g., text annotation, graphical documents).
+  - a consequence: it is \"non-text content\" (in the sense of WCAG SC 1.1.1).
+  - closer to "ascii art" than HTML traditions of "semantic markup"
 
 Naturally, this does not apply to all instances of print equation layout - 1+1=2 is just fine.
 
@@ -167,7 +173,16 @@ Now expand this to the ever changing mathematical notation, then expand to engin
 
 ### Mathematical examples
 
-- a superscript 2 (e.g., $x^2, f^2, \sin^2$) - is probably some sort of "squared" thingie? But is that always true? How about $A_1^2$?- Binomial coefficient ("n choose k") cannot easily be distinguished from a 2-dim vector notation - $n \choose k$ vs $\left(\begin{smallmatrix}{} n \\ k \end{smallmatrix}\right)$    (similarly examples for [Stirlingnumber](https://en.wikipedia.org/wiki/Stirling_number) exist)- frequent use of space or punctuation to imbue layout with extra meaning   // to avoid having to add clarifying notation (e.g., `+a + -c + +b` vs, say, `++b` [https://whystartat.xyz/wiki/Space_is_significant](https://whystartat.xyz/wiki/Space_is_significant))- "(a,b)" - open interval? point in the plane? bilinear form in a Hilbert space?- `[a]` might be the sign of a // `[c, d]` might be a matrix // `A[b]` might be a ring- `|...|` - absolute value, norm, determinant?- `|` - evaluation of definite integral (alternatively `[ ... ]` but that could also be a closed interval or a commutator)- superscript -1 - so many meanings!- context, e.g.,"d" in $(a + bx^3 + cx^2 + dx = 0)$ vs "d" in $\int f(x) dx$- delta vs triangle- the use of invisible operators (U+2062, U+2061) - where to even start?
+- a superscript 2 (e.g., $x^2, f^2, \sin^2$) - is probably some sort of "squared" thingie? But is that always true? How about $A_1^2$?
+- Binomial coefficient ("n choose k") cannot easily be distinguished from a 2-dim vector notation - $n \choose k$ vs $\left(\begin{smallmatrix}{} n \\ k \end{smallmatrix}\right)$    (similarly examples for [Stirlingnumber](https://en.wikipedia.org/wiki/Stirling_number) exist)
+- frequent use of space or punctuation to imbue layout with extra meaning   // to avoid having to add clarifying notation (e.g., `+a + -c + +b` vs, say, `++b` [https://whystartat.xyz/wiki/Space_is_significant](https://whystartat.xyz/wiki/Space_is_significant))- "(a,b)" - open interval? point in the plane? bilinear form in a Hilbert space?
+- `[a]` might be the sign of a // `[c, d]` might be a matrix // `A[b]` might be a ring
+- `|...|` - absolute value, norm, determinant?
+- `|` - evaluation of definite integral (alternatively `[ ... ]` but that could also be a closed interval or a commutator)
+- superscript -1 - so many meanings!
+- context, e.g.,"d" in $(a + bx^3 + cx^2 + dx = 0)$ vs "d" in $\int f(x) dx$
+- delta vs triangle
+- the use of invisible operators (U+2062, U+2061) - where to even start?
 
 For more "inspiration", check out [https://whystartat.xyz/wiki/Category:Ambiguities](https://whystartat.xyz/wiki/Category:Ambiguities)
 
@@ -189,7 +204,7 @@ There's a moving goalpost (or perhaps gaslighting) issue that I've encountered m
 
 A common stance in the general accessibility community is: it's not about special treatment, it's about equal treatment. What does that mean for print equation layout? Equal treatment would provide precise information about layout.
 
-But that's not what users actually expect (or are accustomed to).Instead, "semantics" are desired. Take this simple example:
+But that's not what users actually expect (or are accustomed to). Instead, "semantics" are desired. Take this simple example:
 
 `f: X → Y`
 
@@ -207,13 +222,13 @@ However, print equation layout does not offer such semantic information.Therefor
 
 These heuristics work reasonably ok for school-level print equation layout and some, more "stable" parts of college education (e.g.,engineering). But they easily and frequently fail even in these areas.
 
-TOOD EXAMPLES?
+TODO EXAMPLES?
 
-To come back to our examples: yes, that superscript 2 is very likely"squared" but then again it is, inevitably, far from always "squared".
+To come back to our examples: yes, that superscript 2 is very likely "squared" but then again it is, inevitably, far from always "squared".
 
-Beyond the evident lack of semantics in print layout per se, the second problem is the lack of contextual information. While MathJax once had some grant money to allow research into the problem, no existing solution takes even other equations into account (e.g., try to guess what a variable that was used earlier might represent later). They surely do not try to analyze the whole document context (e.g., [Bra-Ket notation](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation)in physics, P(X) in statistics, various arrows in category theory, operations in tropical geometry, or, again, the Legendre symbol).
+Beyond the evident lack of semantics in print layout per se, the second problem is the lack of contextual information. While MathJax once had some grant money to allow research into the problem, no existing solution takes even other equations into account (e.g., try to guess what a variable that was used earlier might represent later). They surely do not try to analyze the whole document context (e.g., [Bra-Ket notation](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation) in physics, P(X) in statistics, various arrows in category theory, operations in tropical geometry, or, again, the Legendre symbol).
 
-In simplest terms: think about `f(g+h)(x)`. Most mathematicians would agree that there's a good chance that there's a function application (atx) happening but it could also just be a multiplication with x after some calculations within the parentheses, who knows. Fairly limited contextual checks can probably help out here but without them were lost.
+In simplest terms: think about `f(g+h)(x)`. Most mathematicians would agree that there's a good chance that there's a function application (at x) happening but it could also just be a multiplication with x after some calculations within the parentheses, who knows. Fairly limited contextual checks can probably help out here but without them we're lost.
 
 What's worse: today's heuristics also often do not work within an equation, e.g.,
 
@@ -343,7 +358,11 @@ In practice, the available localizations in AT is quite limited and largely undo
 
 There are obvious obstacles for localizations. Many equations contain some text elements which would not be localized. Similarly, common terminology has different localizations/abbreviations. For example
 
-- sine as "sen" (ES, IT) or "sin" (EN, DE)- in geometry SAS/ASA/SSS (EN) vs SWS/WSW/SSS (DE)- sin\^-1 (EN) vs arcsin (EU) (etc)- repeating decimal notation (above, below / arc vs line)- open intervals as `(...)` or  `]...[`
+- sine as "sen" (ES, IT) or "sin" (EN, DE)
+- in geometry SAS/ASA/SSS (EN) vs SWS/WSW/SSS (DE)
+- sin\^-1 (EN) vs arcsin (EU) (etc)
+- repeating decimal notation (above, below / arc vs line)
+- open intervals as `(...)` or  `]...[`
 
 While layout-relevant terms might have suitable automatic translations(e.g., start/end fraction), layout traditions can also differ across languages (long division, matrix notation, integral notation).
 
