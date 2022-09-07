@@ -241,7 +241,7 @@ Speech Rule Engine's heuristics (again, the best around) will identify the middl
 
 Another interesting example is the treatment of horizontal and vertical space."Clearly", if you find `$(a \quad b)$` and `$(a\ b)$` near each other, they're different, right? But what can heuristics realistically do here? 
 
-Print equation layout uses positive and negative space abundantly and often confusingly. Some authors like things spaced out where others like them tightened up. This makes it impossible to leverage space in heuristics.
+Print equation layout uses positive and negative space abundantly and often confusingly. Some authors like things spaced out where others like them tightened up. This makes it impossible to leverage space in heuristics. As a consequence, space is not to be messed with. [This also creates problems f you're mistakingly thinking print equation layout is text -- because into WCAG 1.4.12 would then force you to allow users to change word and letter spacing.]
 
 Similarly, one of the most important visual tools is completely absent from non-visual presentation: the size of stretchy glyphs. The stretchiness is a key visual indicator, indicating both grouping and complexity of subexpressions. Authors frequently use it to explicitly highlight subexpressions because they realize their complexity. And yet non-visual presentations provide no access to this information; the most you can hope for is Speech Rule Engine's ability to summarize a subexpression (along the lines of "a sum of 16 summands").
 
@@ -501,7 +501,7 @@ The MathML community will frequently point out how "easy" it supposedly is to co
 
 The reality is that extremely few applications accept MathML, it's a cumbersome process, and MathML is dropped in the process, replaced with whatever internal format is used.
 
-The primary reason why this myth holds is that MS Word digests MathML.However nowadays, MS Word also accepts (reasonable math mode) TeX when pasting into "equation fields" which shows both the limited usefulness of MathML as well as the pervasiveness of (math mode) TeX. And of courseWord uses its custom markup syntax internally (and its home-grown technology for braille and voice rendering instead of whatever ATs provide).
+The primary reason why this myth holds is that MS Word digests MathML. However nowadays, MS Word also accepts (reasonable math mode) TeX when pasting into "equation fields" which shows both the limited usefulness of MathML as well as the pervasiveness of (math mode) TeX. And of courseWord uses its custom markup syntax internally (and its home-grown technology for braille and voice rendering instead of whatever ATs provide).
 
 More importantly, while copy&paste is a worthwhile challenge, it is also a general challenge with web content. Copy&pasting website content into any kind of text editor (word processor, email application, TeX sources)is very poorly supported in general. While headings might survive, even something as simple as a list can break, tables usually break and "true"web design (e.g., anything CSS) does not survive. Even (inline) SVG content is not supported widely (despite being a well supported, self-contained graphics format).
 
@@ -591,7 +591,7 @@ The web is a wonderous medium. Its grain is fantastic to work with, read its dir
 
 ### if you do it, do it accessibly and that means do accessibility yourself
 
-If you put print equation layout on the web, be aware that you're bringing inaccessible content to the web. I'm happy to point anyone to WCAG 1.1.1 because every print equation layout tradition clearly separates its use from text.
+If you put print equation layout on the web, be aware that you're bringing inaccessible content to the web. I'm happy to point anyone to WCAG 1.1.1 because every print equation layout tradition clearly separates its use from text. TeX literally separates "math mode" from "text mode" - you can't be much clearer. But other systems do the same thing. In MS Word and similar tools, the equation editing will be entirely separate from text editing. The two are disjoint.
 
 Essentially, you're putting up a structured image. SVG is the best mental model here: if you generate a diagram with mermaidjs, you could use some of your input to enable accessibility. But you probably have to do a whole lot more.
 
