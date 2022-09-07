@@ -341,11 +341,13 @@ MathML captures abstracted, shared concepts of print equation layout traditions.
 
 **Practically**, MathML support is poor among screenreaders and is non-existing in"simpler" assistive technologies (with way more users) such as "read aloud" features in browsers, voice assistants etc.
 
-Only three screenreaders formally claim support and their support is limited, buggy, and of poor quality - and the pieces are minimally maintained by AT companies. Brian Richwine's talk at ATHENs documented many cases, e.g., how some ATs don't voice "end fraction/script" causing confusion (my favorite part was the anecdata form Apple support saying "there's just not enough users to warrant fixes".)
+Only three screenreaders formally claim support and their support is limited, buggy, and of poor quality - and the pieces are minimally maintained by AT companies. Brian Richwine's talk at ATHENs documented many cases, e.g., how some ATs don't voice "end fraction/script" causing confusion (my favorite part was the anecdata form Apple support saying there's just not enough users to warrant fixes.)
 
 In addition, the user experience of what little support screenreaders provide is often questionable, e.g., JAWS will not read larger MathML fragments but just announce the presence of a math fragment; users have to then open a separate viewer application to actually read and explore the expression. (Fun fact: this is called"Math Viewer" and actually uses MathJax for visual rendering, leading to visual differences from the browser).
 
 Similarly, VoiceOver on iOS will open pop-ups for exploration of MathML fragments, creating a separate context and confusion. NVDA needs third party plugins to do anything and has no visual component (i.e., highlighting while exploring)leaving non-blind to guess what is going on.
+
+I don't think it's enough accessibility support in the sense of [WCAG conformance](https://www.w3.org/WAI/WCAG21/Understanding/conformance#accessibility-support).
 
 **Theoretically**, MathML cannot be accessible in the web's sense.Heuristics must be applied and now you (frequently) have 2 problems -your MathML must be hacked to work visually and then you might still have to work around dumb heuristics.
 
