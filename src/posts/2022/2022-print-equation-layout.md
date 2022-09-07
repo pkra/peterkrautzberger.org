@@ -600,3 +600,7 @@ Essentially, you're putting up a structured image. SVG is the best mental model 
 But you don't have to. Speech Rule Engine provides you the best heuristics on the market and a direct way to bring your own - whether you bring a plain label (that still offers SRE's heuristics and layout information) or you write your own heuristics, it's there to build upon.
 
 Above all: be mindful what you want to do. If you want to provide TeX as non-visual presentation, do that; you are the author and it's your prerogative. If you want to provide more standardized descriptions, use Speech Rule Engine to generate them. You can provide braille-specific descriptions alongside speech-oriented. MathJax and SRE are the best there is for that kind of thing. If you don't use JS on the client, you can still do things server-side. If equation layout gets complex, use an ARIA tree or tree grid with a modicum of client-side JS; several solutions are being discussed that might avoid any client-side JS.
+
+## The end
+
+You've made it this far. Incredible! Time to move on. Here, read [this transcript of a talk by the wonderful Audrey Watters](http://hackeducation.com/2022/03/08/hope) about hope. I wished I could write as well as her but alas.
