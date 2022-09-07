@@ -7,7 +7,7 @@ latex: true
 prism: true
 ---
 
-This will possibly be another piece that will get updates in the future.Actually, I hope not but we'll see. This, above all, is for me. For me to gather my thoughts one (hopefully) last time.For me to deal with stupid garbage and stupid garbage people which have accumulated over the years. I'm not going into every detail, so if you don't follow, re-read the first few lines.If you want deeply detailed research results, feel free to contact my company - we do that kind of thing. Just don't be that guy complaining about free stuff.
+This will possibly be another piece that will get updates in the future. Actually, I hope not but we'll see. This, above all, is for me. For me to gather my thoughts one (hopefully) last time. For me to deal with stupid garbage and stupid garbage people which have accumulated over the years. I'm not going into every detail, so if you don't follow, re-read the first few lines. If you want deeply detailed research results, feel free to contact my company - we do that kind of thing. Just don't be that guy complaining about free stuff.
 
 ## Introduction
 
@@ -41,7 +41,7 @@ Framing is important. What I call "print equation layout" is more frequently cal
 
 But as a framing device "print equation layout" serves to ground the conversation and keep aspects in focus that I find critical to many discussions.
 
-In my opinion, print equation layout is, ultimately, a flawed print tradition that web technology should not have to make extra efforts to support (e.g., as proposed by MathML's addition to HTML5 way back when).The layout features are largely archaic with very few actual challenges remaining in the context of contemporary (2022) web layout.
+In my opinion, print equation layout is, ultimately, a flawed print tradition that web technology should not have to make extra efforts to support (e.g., as proposed by MathML's addition to HTML5 way back when). The layout features are largely archaic with very few actual challenges remaining in the context of contemporary (2022) web layout.
 
 Furthermore, print equation layout is fundamentally inaccessible in the sense of web accessibility. However - and this is where this part gets very tricky - print accessibility traditions for print equation layout do exist (at least in the US as well as a few other countries and of course the US perspective always dominates these conversations). This may seem like a contradiction - how can there be an accessibility tradition that is bad in the context of the web - but it is really no different from the visual layout traditions.
 
@@ -114,23 +114,23 @@ Are they perfect? No.
 
 Are they still getting better? Hell yes - all the time. The ever evolving CSS continues to make things easier (grids, container queries, variable fonts, layers!). SVG is just rock solid (for these purposes; and it improves, too).
 
-The most significant CSS challenge at this point are stretchy character constructions - not a massive problem and one that could (and should) be solved independently of any "mathematical" considerations since stretchy constructions are frequently used in other design scenarios (e.g.,stretchy braces around lists are pretty common design patterns).
+The most significant CSS challenge at this point are stretchy character constructions - not a massive problem and one that could (and should) be solved independently of any "mathematical" considerations since stretchy constructions are frequently used in other design scenarios (e.g., stretchy braces around lists are pretty common design patterns).
 
 In the nice-to-have category (for me), better control over glyph bounding boxes might be neat. Right now, high quality print equation layout realized with CSS depends on webfonts. This is not a particularly critical consideration in my book - much high quality text layout on the web relies on webfonts - and the bounding box problem also needs a more general solution (and in fact there are proposals for better access to font internals).
 
 Now some people argue that the CSS and SVG layout solutions like MathJaxgenerate "convoluted" markup output. This is a red herring.
 
-On the on hand, convoluted XML is not "better" if it says "math" in it.On the other hand, nobody from CSS or SVG (spec) land has ever tried to help. Simply put: the output looks a lot like Bootstrap's grid layout inits early days - damn right they were convoluted - or an accessible datepicker markup today - extremely convoluted. In other words: it looks the way it looks to get the job done. And it does. And if print equation layout tools for the web would be heard the same way grid frameworks were heard, we'd get less convoluted output easily AND in a way that benefits the entire web stack.
+On the on hand, convoluted XML is not "better" if it says "math" in it. On the other hand, nobody from CSS or SVG (spec) land has ever tried to help. Simply put: the output looks a lot like Bootstrap's grid layout inits early days - damn right they were convoluted - or an accessible datepicker markup today - extremely convoluted. In other words: it looks the way it looks to get the job done. And it does. And if print equation layout tools for the web would be heard the same way grid frameworks were heard, we'd get less convoluted output easily AND in a way that benefits the entire web stack.
 
 ### theoretically
 
-Ultimately, the problem is: is this layout tradition a good fit for the web platform? Take table layout. At first people thought it was a good fit.Now we don't.
+Ultimately, the problem is: is this layout tradition a good fit for the web platform? Take table layout. At first people thought it was a good fit. Now we don't.
 
 I think print equation layout is a thoroughly bad fit, building it into the web actually damages the platform, just like tables have taken a two decades to become unscrewed (oh hi Google, still using tables for layout in some products).
 
-Even the simplest examples, we run into "fun" traditions that are problematic.The easiest to understand are the many text-dependent behaviors, i.e.,layout behavior that changes depending on the specific text nodes present (beyond the obvious layout changes from having different text nodes).
+Even the simplest examples, we run into "fun" traditions that are problematic. The easiest to understand are the many text-dependent behaviors, i.e., layout behavior that changes depending on the specific text nodes present (beyond the obvious layout changes from having different text nodes).
 
-The simplest example is probably: single letter variables are italic, multi-letter ones are upright.This is pure tradition, i.e,. something a lot of people like to do. Obviously people sometimes don't do this. Obviously, there's no technical difficulty to make this happenAnd yet as a feature it is unlike any other text rendering we have.
+The simplest example is probably: single letter variables are italic, multi-letter ones are upright. This is pure tradition, i.e., something a lot of people like to do. Obviously people sometimes don't do this. Obviously, there's no technical difficulty to make this happenAnd yet as a feature it is unlike any other text rendering we have.
 
 A more complex example are moveable limits. For example the expression `\sum_{i=0}^\infty` would, at plain view, indicate we get Σ (sigma) with a subscript of "i=0" and a superscript of ∞.
 
@@ -146,15 +146,15 @@ This is of course convenient from an authoring perspective - you can switch mode
 
 However, from a web design perspective it is a wild thing. Not the change as such (of course children change when a container switches from inline to block). But when you replace `\sum` with something else (say an "S" for "sum"),you will suddenly not get this behavior anymore.
 
-From a layout perspective, this automatism wouldn't have to be builtin, but of course MathML, as a print equation layout system, builds it in.This means, we have intentionally ambiguous layout instructions.
+From a layout perspective, this automatism wouldn't have to be builtin, but of course MathML, as a print equation layout system, builds it in. This means, we have intentionally ambiguous layout instructions.
 
-From this we can take a step up and talk about the operator dictionary.Remember when I spoke about 1+1=2 not being the hard problem. Guess again, we made it hard!
+From this we can take a step up and talk about the operator dictionary. Remember when I spoke about 1+1=2 not being the hard problem. Guess again, we made it hard!
 
 [I mean, what do you expect? There's a reason why [movies](https://knowyourmeme.com/memes/zach-galifianakis-math) will visually indicate something is difficult beyond comprehension by showing print equations layouts; even [memes about confusion](https://knowyourmeme.com/memes/math-lady-confused-lady) get more popular when you add equations to!]
 
 Naturally, there are traditions around how you space things. 1+1=2? 1+1 = 2? 1 + 1 = 2?Or something more subtle? There are many traditions like this, the most well known being captured in Knuth's TeX book.
 
-But that's just it - they are traditions. And people can and do (and should!) deviate from them.If there's one thing I've learned working in mathematical publishing production for a few years it's that authors are full of ideas for how these traditions should change.
+But that's just it - they are traditions. And people can and do (and should!) deviate from them. If there's one thing I've learned working in mathematical publishing production for a few years it's that authors are full of ideas for how these traditions should change.
 
 I mean, look at [this weird theorem layout from 1940](https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms/19.73_Part_1.28); thank goodness that didn't catch on.
 
@@ -178,7 +178,7 @@ Let's talk about ambiguity.
 
 ### A different example
 
-Let's start with a different example, [musical notation](https://en.wikipedia.org/wiki/Musical_notation).In modern notation, a note is about as ambiguous on its own as a[grapheme](https://en.wikipedia.org/wiki/Grapheme) in text. For example, without a staff and other context the note itself doesn't tell you much. You might know the value by looking at just the note but even then this might not be enough (e.g., if you happen to miss a subsequent dot or preceding accidentals). Even with a staff, you might still have trouble, e.g., if all you have is a single measure you might lack the key. Similarly for dynamics. Also, it might be part of music that ranges from Opera to Jazz and you'll want to know that to adjust your understanding.
+Let's start with a different example, [musical notation](https://en.wikipedia.org/wiki/Musical_notation). In modern notation, a note is about as ambiguous on its own as a[grapheme](https://en.wikipedia.org/wiki/Grapheme) in text. For example, without a staff and other context the note itself doesn't tell you much. You might know the value by looking at just the note but even then this might not be enough (e.g., if you happen to miss a subsequent dot or preceding accidentals). Even with a staff, you might still have trouble, e.g., if all you have is a single measure you might lack the key. Similarly for dynamics. Also, it might be part of music that ranges from Opera to Jazz and you'll want to know that to adjust your understanding.
 
 It's hard to know when you have all the relevant information. A piece may appear complete but lack information on, e.g., which instrument this is for, what other voices there might be.
 
@@ -234,7 +234,7 @@ or
 
 The latter is certainly easier and happens to be how humans speak.
 
-However, print equation layout does not offer such semantic information.Therefore, solutions turn to guesswork aka [heuristics](https://en.wikipedia.org/wiki/Heuristic).
+However, print equation layout does not offer such semantic information. Therefore, solutions turn to guesswork aka [heuristics](https://en.wikipedia.org/wiki/Heuristic).
 
 These heuristics work reasonably ok for school-level print equation layout and some, more "stable" parts of college education (e.g.,engineering). But they easily and frequently fail even in these areas.
 
@@ -252,7 +252,7 @@ What's worse: today's heuristics also often do not work within an equation, e.g.
 
 Speech Rule Engine's heuristics (again, the best around) will identify the middle part as a matrix determinant but still treats `|A|` as absolute value. And in fairness, A might still be some poorly named scalar.
 
-Another interesting example is the treatment of horizontal and vertical space."Clearly", if you find `$(a \quad b)$` and `$(a\ b)$` near each other, they're different, right? But what can heuristics realistically do here? 
+Another interesting example is the treatment of horizontal and vertical space. "Clearly", if you find `$(a \quad b)$` and `$(a\ b)$` near each other, they're different, right? But what can heuristics realistically do here? 
 
 Print equation layout uses positive and negative space abundantly and often confusingly. Some authors like things spaced out where others like them tightened up. This makes it impossible to leverage space in heuristics. As a consequence, space is not to be messed with. [This also creates problems if you're mistakingly thinking print equation layout is text - because WCAG 1.4.12 would then force you to allow users to change word and letter spacing. Remember, [Space is significant](https://whystartat.xyz/wiki/Space_is_significant).]
 
@@ -362,7 +362,7 @@ Similarly, VoiceOver on iOS will open pop-ups for exploration of MathML fragment
 
 I don't think it's enough accessibility support in the sense of [WCAG conformance](https://www.w3.org/WAI/WCAG21/Understanding/conformance#accessibility-support).
 
-**Theoretically**, MathML cannot be accessible in the web's sense.Heuristics must be applied and now you (frequently) have 2 problems -your MathML must be hacked to work visually and then you might still have to work around dumb heuristics.
+**Theoretically**, MathML cannot be accessible in the web's sense. Heuristics must be applied and now you (frequently) have 2 problems -your MathML must be hacked to work visually and then you might still have to work around dumb heuristics.
 
 Back at the W3C Math on the Web Community Group, there were fairly productive discussions with the MathML crowd and strong consensus (with them) that MathML inevitably requires extensive heuristics to provide non-visual (voice, tactile) renditions. Nevertheless, the same people later publicly stated the exact opposite in wider W3C discussions, perpetuating the spurious claims that MathML is the only viable accessible solution - after stating previously that MathML cannot solve this problem. The sad part is that the W3C's TAG fell for it. Because they just don't care to dig deeper - and why should they, nobody seems to and anyone sensible will just use MathJax.
 
@@ -426,7 +426,7 @@ From[https://www.w3.org/TR/design-principles/#priority-of-constituencies](https:
 
 We simply don't know. 
 
-Yes, most countries do *something* at the school level.But actual research is barely existent; what little there is, is usually limited to small groups and all the biases of simplistic educational studies.
+Yes, most countries do *something* at the school level. But actual research is barely existent; what little there is, is usually limited to small groups and all the biases of simplistic educational studies.
 
 My impression has been that there are too few AT users among the mathematical community - support is so poor, few make it to college let alone research-level. Accordingly, few have both the skills and the luxury to think freely about the problem. (T.V. Raman is one of the few exceptions and I'm still grateful he gave Davide and me the opportunity to work with the ChromeVox team for a week - and to meet Volker Sorge who was on sabbatical at Google Research back then.)
 
@@ -594,9 +594,9 @@ I think MathML (this of course means: its community) is fundamentally not willin
 
 The future will be different from what expect. The other day/month/year, our oldest started learning the piano. Of course, this means learning musical notation; it's one of the benefits, I'd say. But it's (inevitably) hard to motivate.
 
-So being a stupid internet person, I searched around for fun apps that teach the piano.I found apps that, shockingly, didn't really use traditional musical notation. Instead, they had some barebones resemblance (I'm guessing to enable later learning) but they took things in another direction by leveraging the medium, i.e., modern mobile applications.
+So being a stupid internet person, I searched around for fun apps that teach the piano. I found apps that, shockingly, didn't really use traditional musical notation. Instead, they had some barebones resemblance (I'm guessing to enable later learning) but they took things in another direction by leveraging the medium, i.e., modern mobile applications.
 
-These apps would listen via microphone, give immediate feedback on correctness in a range of properties (dynamically increasing tolerance for errors),They would use their infinite canvas to provide just-in-time context in large visuals to keep silly younglings focused and unconcerned about length. They would play along simple training material providing more complex arrangements so that even an early learner would not be facing dull pieces of repetitive notes. They would immediately get you to jump into contemporary pop songs, sync highlighting along the way, bringing enormous satisfaction.They were just generally being impressively awesome.None of this with traditional musical print notation.
+These apps would listen via microphone, give immediate feedback on correctness in a range of properties (dynamically increasing tolerance for errors),They would use their infinite canvas to provide just-in-time context in large visuals to keep silly younglings focused and unconcerned about length. They would play along simple training material providing more complex arrangements so that even an early learner would not be facing dull pieces of repetitive notes. They would immediately get you to jump into contemporary pop songs, sync highlighting along the way, bringing enormous satisfaction. They were just generally being impressively awesome. None of this with traditional musical print notation.
 
 ## Quo vadis?
 
@@ -612,7 +612,7 @@ Find better ways to communicate better. You don't need to go all "Kill math" abo
 
 There are soooo many good people out there experimenting -- just check math teachers on twitter and you'll find wondersome and wonderful experimentation.
 
-Think about responsive arrangements of your equation layout. Think about animations of equation content.Think about mixing imagery with complex text content and only a touch of equation layout.Think about scrollytelling techniques.Think about using something else instead.And fail! Fail again! Fail well! Fail at failing until you fail to fail.
+Think about responsive arrangements of your equation layout. Think about animations of equation content. Think about mixing imagery with complex text content and only a touch of equation layout. Think about scrollytelling techniques. Think about using something else instead. And fail! Fail again! Fail well! Fail at failing until you fail to fail.
 
 The web is a wonderous medium. Its grain is fantastic to work with, read its direction, feel it out, mess with it.
 
