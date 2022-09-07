@@ -137,6 +137,8 @@ From a layout perspective, this automatism wouldn't have to be builtin, but of c
 
 From this we can take a step up and talk about the operator dictionary.Remember when I spoke about 1+1=2 not being the hard problem. Guess again, we made it hard!
 
+[I mean, what do you expect? There's a reason why [movies](https://knowyourmeme.com/memes/zach-galifianakis-math) will visually indicate something is difficult beyond comprehension by showing print equations layouts; even [memes about confusion](https://knowyourmeme.com/memes/math-lady-confused-lady) get more popular when you add equations to!]
+
 Naturally, there are traditions around how you space things. 1+1=2? 1+1 = 2? 1 + 1 = 2?Or something more subtle? There are many traditions like this, the most well known being captured in Knuth's TeX book.
 
 But that's just it - they are traditions. And people can and do (and should!) deviate from them.If there's one thing I've learned working in mathematical publishing production for a few years it's that authors are full of ideas for how these traditions should change.
@@ -387,7 +389,7 @@ Why have an extra markup system that requires an extra rendering process when yo
 
 Among screenreader, only Apple VoiceOver and Vispero's JAWS (windows)claim to support for MathML. In reality, the implementations are full of bugs and limitations. Bug reports are rarely responded to, far less fixed. Apple has essentially communicated "it is what it is".
 
-Nemeth Braille support has relied on the open source liblouis library -which recently discontinued its support; it only ever converted MathML to the Nemeth/UEB and German/Dutch/Flamish families braille notations - and it did so quite poorly.
+Nemeth Braille support has relied on the open source liblouis library - which recently discontinued its support; it only ever converted MathML to the Nemeth/UEB and German/Dutch/Flamish families braille notations - and it did so quite poorly.
 
 More importantly, no "light" assistive technology supports MathML,e.g., "read aloud" features in smaller assistive helpers, in epub reading applications or in voice assistants (Siri et al, e.g., when reading out web content). This lack of support impacts the largest portion of users, since these tools are much more widely used than the more advanced, full-fledged screenreaders like VoiceOver, JAWS, and NVDA.
 
