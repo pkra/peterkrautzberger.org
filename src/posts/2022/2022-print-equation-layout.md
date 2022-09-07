@@ -508,6 +508,18 @@ A setup that allows for additional options to expose various formats (e.g.,popul
 
 Do so with intent and deep knowledge of the problem space, the capabilities of the solution and the flexibility to help users.
 
+### interlude
+
+Some good old whataboutism: 
+
+What about electrical engineering diagrams? Same garbage print stuff but at least nobody pretends to cook up markup. Take diodes - [their symbols](https://www.electrical-symbols.com/electric-electronic-symbols/diode-symbols.htm) for their types are basically letter like. Shouldn't we have those in Unicode?
+
+What about chemical markup? ChemML is another wonderful XML abomination. 
+
+What about, again, music notation?
+
+Should all of these be first class citizens on the web, with separate rendering systems to adhere to their particular (print) histories? 
+
 ## Tangents about MathML
 
 ### copy & paste
