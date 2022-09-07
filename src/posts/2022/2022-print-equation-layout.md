@@ -179,9 +179,10 @@ Now expand this to the ever changing mathematical notation, then expand to engin
 - `[a]` might be the sign of a // `[c, d]` might be a matrix // `A[b]` might be a ring
 - `|...|` - absolute value, norm, determinant?
 - `|` - evaluation of definite integral (alternatively `[ ... ]` but that could also be a closed interval or a commutator)
-- superscript -1 - so many meanings!
-- context, e.g.,"d" in $(a + bx^3 + cx^2 + dx = 0)$ vs "d" in $\int f(x) dx$
-- delta vs triangle
+- what is the difference between $\begin{array}{|c|}x \\ y\end{array}$ and $\left|\begin{array}{c}x \\ y\end{array}\right|$
+- superscript -1. Is it an inverse? Just 1 over something ? A reverse operation? Some kind of transposition? So many meanings!
+- context, e.g., "d" in $(a + bx^3 + cx^2 + dx = 0)$ vs "d" in $\int f(x) dx$
+- uppercase delta $\Delta$ and the triangle symbol $\triangle$ can look surprisingly similar depending on the font.
 - the use of invisible operators (U+2062, U+2061) - where to even start?
 
 For more "inspiration", check out [https://whystartat.xyz/wiki/Category:Ambiguities](https://whystartat.xyz/wiki/Category:Ambiguities)
