@@ -77,6 +77,19 @@ $$ \det(A)=\sum _{\begin{array}{c}k_{1},k_{2},\ldots ,k_{n}\geq 0\\ k_{1}+2k_{2}
 
 This is a simple piece of print equation layout, something from the first few months at university. And it is packed.
 
+
+### interlude
+
+Cars are a bad technology. 
+
+They need massive resources to build, most use fossil fuel to run, all need massive infrastructure, destroying our habitat; they are vastly inefficient, they stress people out, they fill our streets and sidewalks with megatons of metallic monstrosities.
+
+And yet most people own one or want to own one. They have their uses, some at which they excel. So they're here and we need to think about them.
+
+But that doesn't change the fact that we should not think about a world without cars because it could really be a much better world for everyone. And we shouldn't insist to keep building our world around cars or make cars a core assumption in our "cultural stack".
+
+The same holds true for print equation layout.
+
 ## Visual print equation layout on the web
 
 ### practically
