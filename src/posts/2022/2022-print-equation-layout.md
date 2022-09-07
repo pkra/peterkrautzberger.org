@@ -604,6 +604,18 @@ Think about responsive arrangements of your equation layout. Think about animati
 
 The web is a wonderous medium. Its grain is fantastic to work with, read its direction, feel it out, mess with it.
 
+### story telling
+
+I disliked [Bret Victor's Kill math](http://worrydream.com/KillMath/) for actively ignoring the power of compression of equation layout.
+But nowadays also for its lack of imagination regarding the presentation of equation layout. It just gives up and uses a completely different medium.
+(And before you ask, I didn't like the [scrubbing calculator](http://worrydream.com/ScrubbingCalculator/) that much either - even when you ignore that it's not accesible. But at least the idea Explorable Explanations inspired [more](https://explorabl.es/) [people](https://landgreen.github.io/physics/). Perhaps I'm jaded and just can't find anything good in mathematical examples while I enjoy lovely examples like [why is the sky blue](https://halftone.co/projects/why-is-the-sky-blue/).) Apps like [soulver](https://soulver.app/) showed a long time ago how less equation layout can be done nowadays. 
+
+
+Where are the animated equations? What would that even look like?
+Where are the scrollytelling explanations of deep concepts in new ways?
+Where are at least typesetting animations for equation layout?
+Why capture a complex diagram statically when you can send something that dynamically or interactively draws it?
+
 ### if you do it, do it accessibly and that means do accessibility yourself
 
 If you put print equation layout on the web, be aware that you're bringing inaccessible content to the web. I'm happy to point anyone to WCAG 1.1.1 because every print equation layout tradition clearly separates its use from text. TeX literally separates "math mode" from "text mode" - you can't be much clearer. But other systems do the same thing. In MS Word and similar tools, the equation editing will be entirely separate from text editing. The two are disjoint.
