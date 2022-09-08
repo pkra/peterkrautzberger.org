@@ -314,7 +314,7 @@ The US traditions are dominating in this context since MathML was developed larg
 
 For print traditions in the US, the most well-known methods for non-visual presentation were developed by [Abraham Nemeth](https://en.wikipedia.org/wiki/Abraham_Nemeth) -the MathSpeak ruleset for voicing and the Nemeth Braille notation for tactile presentation. A critical point is that both sets were designed for human creation. MathSpeak, to enable a non-expert reader to read mathematical publications to blind users; Nemeth Braille for a specialist braille transcriber to transcribe (and a trained reader to read).
 
-If you can catch him, Volker Sorge (who implemented support for both as part ofSpeech Rule Engine and MathJax) is happy to go into much detail telling you how neither MathSpeak nor Nemeth Braille can be produced from input without extensive heuristics. The rulesets are in fact not properly specified and can be contradictoryVolker.
+If you can catch him, Volker Sorge (who implemented support for both as part of Speech Rule Engine and MathJax) is happy to go into much detail telling you how neither MathSpeak nor Nemeth Braille can be produced from input without extensive heuristics. The rulesets are in fact not properly specified and can be contradictoryVolker.
 
 My impression is that this is by design - these rulesets could assume a human orator/transcriber who can adjust rules on the fly to enhance the simplistic heuristics. Even without understanding mathematics, it's fairly easy to make a change on the fly, e.g., after initial feedback from the user that in this particular pattern the superscripted 2 is not "squared"but, say, a row or column vector.
 
@@ -452,7 +452,9 @@ MathML-based wysiwyg editors exacerbate the problem (as wysiwyg is wont to do) s
 
 However, if you are a blind user who knows Nemeth well, then that conversion process might just work sufficiently well for you because things were designed just for this use case. Ergo, you will say it's great and your influential community will prevent any discussion about whether this is actually a good trade off for other user needs. 
 
-And the reality of all users is: the web is fairly bad at being copy&pasted elsewhere. And that's an interesting, complex, and very broad problem. I'd love to see more movement in this direction but I don't think it makes sense to make copy&paste to MS Word a requirement for realizing print equation layout when nothing else can do it.
+At ATHENs, the talks from educators I was able to attend all included at least one statement along the lines of: "our successful students are those who know Nemeth". Clearly, it's good that Nemeth helps students succeed but in the words of Jean-Luc Picard: "Not good enough, dammit, not good enough".
+
+The reality of all users is: the web is fairly bad at being copy&pasted elsewhere. And that's an interesting, complex, and very broad problem. I'd love to see more movement in this direction but I don't think it makes sense to make copy&paste to MS Word a requirement for realizing print equation layout when nothing else can do it.
 
 Ultimately, Braille is a print technology, and  in the context of a refreshable display there isn't even a page, let alone a multidimensional presentation that a dynamic webpage can provide. Again, this is a broad and interesting problem, again print equation layout is not a great case for special treatment.
 
