@@ -279,7 +279,7 @@ TODO EXAMPLES?
 
 To come back to our examples: yes, that superscript 2 is very likely "squared" but then again it is, inevitably, far from always "squared". As usual, [xkcd has you covered on the subject of "2"](https://xkcd.com/2614/).
 
-Beyond the evident lack of semantics in print layout per se, the second problem is the lack of contextual information. While MathJax once had some grant money to allow research into the problem, no existing solution takes even other equations into account (e.g., try to guess what a variable that was used earlier might represent later). They surely do not try to analyze the whole document context (e.g., [Bra-Ket notation](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation) in physics, P(X) in statistics, various arrows in category theory, operations in tropical geometry, or, again, the Legendre symbol).
+Beyond the evident lack of semantics in print layout per se, the second problem is the lack of contextual information. While MathJax won a Simons grant a while back to allow research into the problem, no existing solution takes even other equations into account (e.g., try to guess what a variable that was used earlier might represent later). They surely do not try to analyze the whole document context (e.g., [Bra-Ket notation](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation) in physics, P(X) in statistics, various arrows in category theory, operations in tropical geometry, or, again, the Legendre symbol).
 
 In simplest terms: think about `f(g+h)(x)`. Most mathematicians would agree that there's a good chance that there's a function application (at x) happening but it could also just be a multiplication with x after some calculations within the parentheses, who knows. Fairly limited contextual checks can probably help out here but without them we're lost.
 
@@ -288,6 +288,12 @@ What's worse: today's heuristics also often do not work within an equation, e.g.
 `|A| = {\begin{vmatrix} a&b \\ c&d \end{vmatrix}} = ad-bc.`
 
 Speech Rule Engine's heuristics (again, the best around) will identify the middle part as a matrix determinant but still treats `|A|` as absolute value. And in fairness, A might still be some poorly named scalar.
+
+Here's another real world example:
+
+$$\begin{aligned} & u_2(t,x) \\  & {}= \frac{2}{t^{1/2}}. \operatorname {Re} \left( \left( \tilde{\Psi }(y) ( \log t + \log \sqrt {1-|y|^2}) +\tilde{\Phi }_2 (y) \right)\right.  \\ & \quad \left. \left. \times \exp \left(it\sqrt {1-|y|^2} +i\Psi (y) \log t \right) \right)\right|_{y=\frac{x}{t+2B}}\\ & \quad + O(t^{-\frac{3}{2}+c\delta }) \end{aligned}$$
+
+This is perfectly understandable authoring from a print author perspective - your line is fixed and limited, you'll need to break things up. Since you're in print (and you want alignments to work), you push pieces into a table. Note how the parenthetical expression starting after `Re` ends in another table row. How should heuristics work out this grouping? The answer is: probably not.
 
 Another interesting example is the treatment of horizontal and vertical space. "Clearly", if you find `$(a \quad b)$` and `$(a\ b)$` near each other, they're different, right? But what can heuristics realistically do here? 
 
