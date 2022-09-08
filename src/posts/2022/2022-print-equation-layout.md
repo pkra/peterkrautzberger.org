@@ -122,6 +122,24 @@ Now some people argue that the CSS and SVG layout solutions like MathJax generat
 
 On the on hand, convoluted XML is not "better" if it says "math" in it. On the other hand, nobody from CSS or SVG (spec) land has ever tried to help. Simply put: the output looks a lot like Bootstrap's grid layout inits early days - damn right they were convoluted - or an accessible datepicker markup today - extremely convoluted. In other words: it looks the way it looks to get the job done. And it does. And if print equation layout tools for the web would be heard the same way grid frameworks were heard, we'd get less convoluted output easily AND in a way that benefits the entire web stack.
 
+#### interlude
+
+From [Oral History of Butler Lampson (Interviewed by:
+Alan Kay)](http://archive.computerhistory.org/resources/text/Oral_History/Lampson_Butler/102658024.05.01.pdf) (via [Robin Sloan's newsletter]( https://www.robinsloan.com/newsletters/super-sweet-spots/))
+
+
+> Alan Kay: But I wish that you had been at CERN on a sabbatical when [the Web was being born].
+> 
+> Butler Lampson: I probably would have been a disaster.
+> 
+> Kay: I don’t know. But I think you would have made a slightly better … 
+> 
+> Lampson: No. No. No. No. No. No. What Tim [Berners-Lee] did was perfect. My view about the web is that it’s the great failure of computer systems research. Why did computer systems researchers not invent the web? And I can tell you the answer. It’s because it’s too simple.
+>
+> Kay: It is too simple.
+>
+> Lampson: If I had been there I would have mucked it up. I swear to God. The idea that you’re going to make a new TCP connection for every mouse click on a link? Madness! The idea that you’re going to have this crusty universal data type called HTML with all those stupid angle brackets? We never would have done that! But those were the things that allowed it to succeed.
+
 ### theoretically
 
 Ultimately, the problem is: is this layout tradition a good fit for the web platform? Take table layout. At first people thought it was a good fit. Now we don't.
