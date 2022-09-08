@@ -432,7 +432,7 @@ Yes, most countries do *something* at the school level. But actual research is b
 
 My impression has been that there are too few AT users among the mathematical community - support is so poor, few make it to college let alone research-level. Accordingly, few have both the skills and the luxury to think freely about the problem. (T.V. Raman is one of the few exceptions and I'm still grateful he gave Davide and me the opportunity to work with the ChromeVox team for a week - and to meet Volker Sorge who was on sabbatical at Google Research back then.)
 
-Anecdotally, the most consistent feedback I've seen in educational studies comes down to "I want it to be read like my teacher/prof reads it in class". That sounds an awful lot like users want to have what authors want to say, and matches the core principles pretty well.
+Anecdotally, the most consistent feedback I've seen in educational studies comes down to "I want it to be read like my teacher/prof reads it in class". That sounds an awful lot like users want to have what authors want to say, and matches the core principles pretty well. It's one of those "did you need a study for that?" moments and yet it shows how flawed the current approaches are. Yes, it's a common paradigm that authors should enable AT users to customize their output. But if you take away the author's ability to express themselves, are you really helping users?
 
 But even assuming I'm wrong in my assessment for lower level equation layout: for mathematically heavy research? There's absolutely nothing to base an opinion on.
 
