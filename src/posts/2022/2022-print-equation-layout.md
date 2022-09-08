@@ -21,13 +21,13 @@ followed by
 
 "oh this does not work at all, let's not use that",
 
-usually followed by choosing jsMath (if you're old enough) and laterMathJax because they ultimately remain - by far - the best tools for the job.
+usually followed by choosing jsMath (if you're old enough) and later MathJax because they ultimately remain - by far - the best tools for the job.
 
-After joining MathJax, my job was to profess the prowess of (read:blindly advertise for) MathML, so I did. That was largely becauseMathJax was formally part of Design Science at the time and they made money with MathML. Luckily, the project moved to the AMS where we could think about things more freely.
+After joining MathJax, my job was to profess the prowess of (read:blindly advertise for) MathML, so I did. That was largely because MathJax was formally part of Design Science at the time and they made money with MathML. Luckily, the project moved to the AMS where we could think about things more freely.
 
 When the whole Chrome 24 debacle happened, there was this one comment from a Googler (on Google+, naturally you might say). I can't find it anymore but what I recall them saying is: "maybe it's a good format but still a bad format for the web". I kept coming back to that thought fora few years and, eventually, came to agree with it. (This piece is basically summarizing that.)
 
-In short, I realized that MathML is fundamentally a useful XML print publishing tool but a bad technology for the web. So I tried to pivotMathJax away from MathML and its toxic community towards actual webstandards and their underlying principles. We wrote a whitepaper, got our sponsors on board, and started work on MathJax v3. (This is not what v3 became but that's ok. I left my position at MathJax around the first beta which was a thrill and I'm grateful that Davide and Volker enabled me to leave with that big leap forward having begun.)
+In short, I realized that MathML is fundamentally a useful XML print publishing tool but a bad technology for the web. So I tried to pivot MathJax away from MathML and its toxic community towards actual web standards and their underlying principles. We wrote a whitepaper, got our sponsors on board, and started work on MathJax v3. (This is not what v3 became but that's ok. I left my position at MathJax around the first beta which was a thrill and I'm grateful that Davide and Volker enabled me to leave with that big leap forward having begun.)
 
 Towards the end of that period, I wrote a number of pieces here, outlining MathML's many flaws and failures. But as I kept writing: it's not MathML's fault. MathML does what it's supposed to; but what it's supposed to do is a bad fit for the web. (Again, this piece is basically re-iterating those pieces. What do you expect from a recovering academic.)
 
@@ -53,7 +53,7 @@ Adding an additional, separate feature layer for a problematic print technology 
 
 ### Interlude
 
-In TeX, we can put punctuation after a table. In HTML, we cannot. ShouldHTML change because this print tradition exists?
+In TeX, we can put punctuation after a table. In HTML, we cannot. Should HTML change because this print tradition exists?
 
 ## What's in a word
 
@@ -118,7 +118,7 @@ The most significant CSS challenge at this point are stretchy character construc
 
 In the nice-to-have category (for me), better control over glyph bounding boxes might be neat. Right now, high quality print equation layout realized with CSS depends on webfonts. This is not a particularly critical consideration in my book - much high quality text layout on the web relies on webfonts - and the bounding box problem also needs a more general solution (and in fact there are proposals for better access to font internals).
 
-Now some people argue that the CSS and SVG layout solutions like MathJaxgenerate "convoluted" markup output. This is a red herring.
+Now some people argue that the CSS and SVG layout solutions like MathJax generate "convoluted" markup output. This is a red herring.
 
 On the on hand, convoluted XML is not "better" if it says "math" in it. On the other hand, nobody from CSS or SVG (spec) land has ever tried to help. Simply put: the output looks a lot like Bootstrap's grid layout inits early days - damn right they were convoluted - or an accessible datepicker markup today - extremely convoluted. In other words: it looks the way it looks to get the job done. And it does. And if print equation layout tools for the web would be heard the same way grid frameworks were heard, we'd get less convoluted output easily AND in a way that benefits the entire web stack.
 
@@ -130,7 +130,7 @@ I think print equation layout is a thoroughly bad fit, building it into the web 
 
 Even the simplest examples, we run into "fun" traditions that are problematic. The easiest to understand are the many text-dependent behaviors, i.e., layout behavior that changes depending on the specific text nodes present (beyond the obvious layout changes from having different text nodes).
 
-The simplest example is probably: single letter variables are italic, multi-letter ones are upright. This is pure tradition, i.e., something a lot of people like to do. Obviously people sometimes don't do this. Obviously, there's no technical difficulty to make this happenAnd yet as a feature it is unlike any other text rendering we have.
+The simplest example is probably: single letter variables are italic, multi-letter ones are upright. This is pure tradition, i.e., something a lot of people like to do. Obviously people sometimes don't do this. Obviously, there's no technical difficulty to make this happen. And yet as a feature it is weirdly different from any other text rendering features we have.
 
 A more complex example are moveable limits. For example the expression `\sum_{i=0}^\infty` would, at plain view, indicate we get Σ (sigma) with a subscript of "i=0" and a superscript of ∞.
 
