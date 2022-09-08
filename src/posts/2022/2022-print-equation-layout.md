@@ -620,6 +620,27 @@ So if you ever again complain about the lack of improvements in this space, blam
 
 Reversely, MathML is being held back where it actually shines - XML print production. There's so much useful print equation content to consider for XML workflows (tikz alone!); extendingMathML would be natural here. Instead, even the XML people get nothing (or worse - a cut down spec they can't use until JATS adopts it).
 
+I wrote earlier that "web equation layout" is not something that exists. So you might say, what's the problem? I think the problem is that we might get stuck, in a bad way. Here's quote from [On Mathematical Symbols in China](https://arxiv.org/pdf/1511.08033v1.pdf) (or via Christian's [Interesting Esoterica](https://read.somethingorotherwhatever.com/entry/OnMathematicalSymbolsinChina)).
+
+> Ancient Europeans struggled with fractions because of the use of
+tedious Roman numerals, so ancient Europeans were weakest in algebra.
+However, when Indian-Arabic numerals were introduced into Europe, four
+operations in Europe were simplified. In addition to a series of simple
+symbol application. as a result, algebra developed rapidly. Similarly,
+China's ancient mathematics failed to form a perfect symbol system and
+were stagnant because of the limits of the counting rod, resulting in not
+only a lack of the axiomatic system, but also the absence of symbolic
+algebra, analytic geometry, calculus and modern variable mathematics in
+China. Naturally, to move forward it was necessary to break barriers and
+to get in touch with international standards and to forward to symbolic
+mathematics. This shows that the extension and development of any
+prosperous culture cannot be confined to the boundaries of that nation,
+and it is hard to create a complete and rich symbol system independently
+and separately from the influence of other nations and the outside world.
+
+I think the web should not be confined to print equation layout. We should not want to get stuck replicating a limited medium in a much more versatile one.
+
+
 ## mathml future scenarios
 
 MathML is the zombie of web standards. Each decade brought 1 additional, differently broken implementation (first Firefox, then Safari, soon Chrome). The new cut down spec that will break a lot of content. The mathml fanboys have silently removed existing features from browsers (I'm guessing to be able to argue that they have 2 implementations of the new cut down "spec"); what an extremely unusual thing in browsers that just goes to show how few people use MathML. XML people will have "fun" with getting their garbage to work on the web in this scenario. Bugs in those three disjoint implementations are, of course, aplenty; I find a new one every time something forces me to look at native MathML implementations, some are ridiculously bad (wiping out HTML content is one of my favorites) and most bugs go for years without bugs even being filed (remember when Safari didn't draw fraction lines reliably for over a year? No, you don't because you don't use it and nobody even filed a bug).
