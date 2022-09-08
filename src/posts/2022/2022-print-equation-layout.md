@@ -268,7 +268,7 @@ These heuristics work reasonably ok for school-level print equation layout and s
 
 TODO EXAMPLES?
 
-To come back to our examples: yes, that superscript 2 is very likely "squared" but then again it is, inevitably, far from always "squared".
+To come back to our examples: yes, that superscript 2 is very likely "squared" but then again it is, inevitably, far from always "squared". As usual, [xkcd has you covered on the subject of "2"](https://xkcd.com/2614/).
 
 Beyond the evident lack of semantics in print layout per se, the second problem is the lack of contextual information. While MathJax once had some grant money to allow research into the problem, no existing solution takes even other equations into account (e.g., try to guess what a variable that was used earlier might represent later). They surely do not try to analyze the whole document context (e.g., [Bra-Ket notation](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation) in physics, P(X) in statistics, various arrows in category theory, operations in tropical geometry, or, again, the Legendre symbol).
 
