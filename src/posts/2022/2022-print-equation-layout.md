@@ -184,7 +184,7 @@ None of this is to say that there aren't interesting aspects of print equation l
 
 The operator dictionary is another good example for this. Doing layout based on text content is an interesting topic - we've had years of debates around aligning table cells at decimals. Yet trivial spacing like this - which authors want to customize anyway - is just a bit silly.
 
-As related and similarly bad example are math alphabets. They are utter madness to begin with; they are fontface traditions, captured as Unicode codepoints. The recent addition of mathscripts to unicode makes the mind boggle because authors will not and do not stop. The other day, we had a paper with runes come through production. Should we add "math runes" to Unicode next? And what about [David Griffith's script r](https://github.com/stipub/stixfonts/issues/221), does he get a codepoint for himself? What about math emoji? And what about math alphabets when they're in text mode - do they have special meaning, too? (Other than making horribly inaccessible social media profiles?)
+As related and similarly bad example are math alphabets. They are utter madness to begin with; they are fontface traditions, captured as Unicode codepoints. The recent addition of mathscripts to unicode makes the mind boggle because authors will not and do not stop. The other day, we had a paper with runes come through production TODO. Should we add "math runes" to Unicode next? And what about [David Griffith's script r](https://github.com/stipub/stixfonts/issues/221), does he get a codepoint for himself? What about math emoji? And what about math alphabets when they're in text mode - do they have special meaning, too? (Other than making horribly inaccessible social media profiles?)
 
 [It is worthwhile to note that in recent years the AMS has been leveraging a re-interpretation of those rulesets by adopting xelatex which focuses on equation layout using open type math table fonts (STIX2) which in turn was designed for Microsoft Word when they built their print equation layout facilities (again, following the TeX book yet frequently differently, making it hard to know if the bug is in the font, in MS Word, or in xelatex).]
 
@@ -398,7 +398,7 @@ Back at the W3C Math on the Web Community Group, there were fairly productive di
 
 #### localization
 
-Another argument sometimes mentioned by MathML enthusiasts is thatMathML can be localized automatically. While that's true to some degree(and the AMS uses Speech Rule Engine for articles in French to createMathSpeak output in French), this is a questionable claim without any research substantiating the positive effect.
+Another argument sometimes mentioned by MathML enthusiasts is thatMathML can be localized automatically. While that's true to some degree(and the AMS uses Speech Rule Engine for articles in French to create MathSpeak output in French), this is a questionable claim without any research substantiating the positive effect.
 
 In practice, the available localizations in AT is quite limited and largely undocumented. This is even worse for Braille.
 
@@ -484,6 +484,8 @@ The reality of all users is: the web is fairly bad at being copy&pasted elsewher
 
 Ultimately, Braille is a print technology, and  in the context of a refreshable display there isn't even a page, let alone a multidimensional presentation that a dynamic webpage can provide. Again, this is a broad and interesting problem, again print equation layout is not a great case for special treatment.
 
+Similarly, Unicode math alphabets are a print technology. It makes sense in a print context to separate out codepoints that have very special fontface requirements. They work fairly terribly in terms of non-visual rendering. [For example, I once tested](https://mathstodon.xyz/@pkra/108231823892676435) the string `ϕ(x)=∑ₖⁿ xᵏ` and it came out as "open paren x close paren equals n-ary summation n x" (JAWS) or "x equals n-ary summation superscript n x" (NVDA) and "phi x equals to the power of n x" (Chrome speech synthesis). Yay us. Now you might argue that in the right markup, voicing could be different, e.g., automatically more verbose. And that's an excellent point - but I would couner that math alphabets are far from the only Unicode characters with these kinds of problems - emoji for one are even more prevalent than math alphabets to fill account names or social media postings - and a better solution would be a general one.
+
 ### What to want for authors
 
 I want to give authors the ability to express themselves well.
@@ -522,7 +524,7 @@ Provide high-quality visual rendering using MathJax's SVG output, alongside the 
 
 Generate fully explorable layout and descriptions that are the same for everyone everywhere.If there's a problem, it is our fault, not the user's. And we can fix it.
 
-Use the MathSpeak ruleset for descriptions meant for voicing becauseMathSpeak doesn't attempt to be as "smart" as other available heuristics(targeting school level mathematics).
+Use the MathSpeak ruleset for descriptions meant for voicing because MathSpeak doesn't attempt to be as "smart" as other available heuristics(targeting school level mathematics).
 
 Use Nemeth Braille because content is primarily inEnglish. For other languages, SRE doesn't have any braille support so I accept that I need to use Nemeth there, too. If I want more, I'll make sure to help SRE get funding.
 
