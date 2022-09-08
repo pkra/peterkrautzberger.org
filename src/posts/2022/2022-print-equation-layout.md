@@ -480,7 +480,9 @@ However, if you are a blind user who knows Nemeth well, then that conversion pro
 
 At ATHENs, the talks from educators I was able to attend all included at least one statement along the lines of: "our successful students are those who know Nemeth". Clearly, it's good that Nemeth helps students succeed but in the words of Jean-Luc Picard: "Not good enough, dammit, not good enough".
 
-The reality of all users is: the web is fairly bad at being copy&pasted elsewhere. And that's an interesting, complex, and very broad problem. I'd love to see more movement in this direction but I don't think it makes sense to make copy&paste to MS Word a requirement for realizing print equation layout when nothing else can do it.
+The reality of all users is: the web is fairly bad at being copy&pasted elsewhere. And that's an interesting, complex, and very broad problem. I'd love to see more movement in this direction but I don't think it makes sense to make copy&paste to MS Word a requirement for realizing print equation layout on the web when nothing else can do this. 
+
+In addition, repeated conversion tends to be lossful. There used to be a web game about passing a string to Google translate and letting it translate it back and forth until things stabilized (and hilarity ensued). A step less far away, here's [a random blog post](https://bjango.com/articles/svgpassthroughprecision/) about loss of precision in SVG conversion. I doubt it will be great when you do that for print equation systems that can digest MathML and if I cared enough, I'd test that hypothesis.
 
 Ultimately, Braille is a print technology, and  in the context of a refreshable display there isn't even a page, let alone a multidimensional presentation that a dynamic webpage can provide. Again, this is a broad and interesting problem, again print equation layout is not a great case for special treatment.
 
