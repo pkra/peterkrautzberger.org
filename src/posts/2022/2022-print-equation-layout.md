@@ -650,7 +650,10 @@ The web is a wonderous medium. Its grain is fantastic to work with, read its dir
 
 I disliked [Bret Victor's Kill math](http://worrydream.com/KillMath/) for actively ignoring the power of compression of equation layout.
 But nowadays also for its lack of imagination regarding the presentation of equation layout. It just gives up and uses a completely different medium.
-(And before you ask, I didn't like the [scrubbing calculator](http://worrydream.com/ScrubbingCalculator/) that much either - even when you ignore that it's not accesible. But at least the idea Explorable Explanations inspired [more](https://explorabl.es/) [people](https://landgreen.github.io/physics/). Perhaps I'm jaded and just can't find anything good in mathematical examples while I enjoy lovely examples like [why is the sky blue](https://halftone.co/projects/why-is-the-sky-blue/).) Apps like [soulver](https://soulver.app/) showed a long time ago how less equation layout can be done nowadays. 
+(And before you ask, I didn't like the [scrubbing calculator](http://worrydream.com/ScrubbingCalculator/) that much either - even when you ignore that it's not accesible. But at least the idea Explorable Explanations inspired [more](https://explorabl.es/) [people](https://landgreen.github.io/physics/). Perhaps I'm jaded and just can't find anything good in mathematical examples while I enjoy lovely examples like [why is the sky blue](https://halftone.co/projects/why-is-the-sky-blue/).)
+
+Apps like [soulver](https://soulver.app/) showed a while ago how complex equation layout might become unnecessary. [Tandis](https://www.tandisgame.com) is mesmerizing and I suspect accessibility questions around these could teach us an awful lot more than any MathSpeak/Nemeth debate.
+
 
 
 Where are the animated equations? What would that even look like?
