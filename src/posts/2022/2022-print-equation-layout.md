@@ -203,6 +203,10 @@ It also gets complex when you look to integrate equations into surrounding conte
 
 Next step up you'll find alignment across equations. A common feature in print layout engines with equation support (e.g., amsmath's intertext). Should we enable these kinds of traditions? Maybe; I do think this last one is fascinating. Should we do it by replicating print (equation) layout traditions? That sounds rather ludicrous to me.
 
+Another problematic print tradition lies in inheritance. Traditionally, print equation layout will work as a reset. E.g., in TeX math mode will not inherit surrounding text styles or weight. Why? Well, because that would change the "meaning" because you're abusing style and weight: if you use a normal V and a bold V for two different concepts, then naturally in a bold heading you'll run into trouble. On the web, we see other traditions to surface; people find it very irritating if a fraction is not bold inside a heading). A very real problem happens if a link starts or ends with print equation layout which is suddenly no longer styled like a link (e.g., neither blue nor underlined). That's a real problem for users. But purists will insist - and they are wrong, at the expense of users. [Fun fact: that's why I personally prefer SVG with paths instead of characters/glyphs when reproducing print equation layout on the web. It's more honest to the print content and happens to avoid this problem with ease.]
+
+Related: of course there's an exception: when there's text mode inside math mode. tThat text mode can inherit, so that text in a piece of equation layout is, e.g., italic if the text surrounding the equation layout is italic (e.g., in a definition). Does this lead to confusion? You bet.
+
 ### To recap 
 
 The problem of creating visual layout that matches print equation layout has been solved for well over a decade. It's somewhat ridiculous to suggest the web has a significant technology gap here that only a completely new set of markup and layout features can fix. Additionally, the theoretical structure of print equation layout enshrines problematic traditions that fit very badly, going against the web's grain.
