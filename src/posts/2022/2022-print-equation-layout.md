@@ -580,9 +580,11 @@ Voice input is becoming an important aspect of how users interact with web conte
 
 Despite funded efforts, there has been not even as light progress for enabling print equation layout by voice input.
 
-### Video Captioning
+### Audio and Video Captioning
 
-Providing accessible video media requires captions, in particular transcripts, subtitles, and audio descriptions. For content rich with print equation layout, automatic conversion requires voice recognition, image analysis, and conversion to speech (e.g., a mathematical lecture with equations on a blackboard that the speaker discusses). Since the standard formats (e.g., for subtitle functionality in a video player) require plain text, MathML is of no use here. In addition, there are no tools nor traditions around speaking equation layout in such settings.
+Providing accessible audio and video media requires captions, in particular transcripts, subtitles, and audio descriptions. For content rich with print equation layout, automatic conversion requires voice recognition, image analysis, and conversion to speech (e.g., a mathematical lecture with equations on a blackboard that the speaker discusses). Since the standard formats (e.g., for subtitle functionality in a video player) require plain text, MathML is of no use here even if it were an adequate fit for how people speak. In addition, there are no tools nor traditions around "speaking equation layout" in such settings.
+
+Reversely, there's audification. Take [Google's AI-driven audio book narration](https://play.google.com/books/publish/autonarrated/). I doubt it'll do print equation layout anytime soon (by which I mean: ever).
 
 ### Search
 
