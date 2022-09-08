@@ -356,7 +356,15 @@ Print equation layout does not allow for recursive naming - just think `n choose
 
 MathML is even worse for this, as it is a stratified format for rendering purposes; in TeX you can at least have author macros to try to make sense.
 
-Authors, especially with AMS, invent layout that requires new heuristics- both large and small (e.g., abusing amsmath's sideset, creating custom glyphs, tikzs-inside-math). Historically, this coincides with naming (cf.[https://jeff560.tripod.com/calculus.html](https://jeff560.tripod.com/calculus.html)for some historic examples such as nabla) but not always (cf. the Legendre earlier). [Authors also regularly just hack layout badly (e.g., `\mathop{l\overline{og}}`) but that's technically speaking a different problem.]
+Authors, especially with AMS, invent layout that requires new heuristics-both large and small. For example, they create custom glyphs (such as blackboard bold Greek characters). They invent notations by embedding multiple small tikz diagrams as letter-like elements in math mode. 
+
+
+Historically, such inventions coincide with naming (cf.[https://jeff560.tripod.com/calculus.html](https://jeff560.tripod.com/calculus.html)for some historic examples such as nabla) but that's not always the case if you remember the Legendre symbol earlier. [Authors also regularly just hack layout badly (e.g., `\mathop{l\overline{og}}`) but that's technically speaking a different problem.]
+
+
+Authors also intentionally hack things to work around traditions. A while back at work we ran into someone apparently abusing amsmath's sideset macro something like  `\sideset{}{^*}{\sum}_{a\mid A_y}`. We only noticed that because MathJax had improved sideset to be more accessible which changed the rendering (and introduced regression). Upon investigation, it turned a lot of similar papers. It turned out that all these authors used sideset to get a superscripted sum that would still have a "movable" subscript. It's fun little gap in these traditions that you can't have "partially moveable limits" without resorting to stupid hackery.
+
+In other words,  authors clearly want a certain type of layout that goes against traditions; in particular, trying to make things more semantic on the MathJax end led to breaking things. 
 
 ## MathML
 
