@@ -9,6 +9,8 @@ prism: true
 
 This will possibly be another piece that will get updates in the future. Actually, I hope not but we'll see. This, above all, is for me. For me to gather my thoughts one (hopefully) last time. For me to deal with stupid garbage and stupid garbage people which have accumulated over the years. I'm not going into every detail, so if you don't follow, re-read the first few lines. If you want deeply detailed research results, feel free to contact my company - we do that kind of thing. Just don't be that guy complaining about free stuff.
 
+This is also a lamentation. Nothing I write will change anything of what's to come. It's also (hopefully) a bit of mental cleansing. A few years ago I had strong burn-out symptoms due to working in this (as it turned out toxic) field. It takes a lot of effort for me to not be dragged down again. But one last time I want to try to write up where I've arrived after thinking about equation layout on the web for over 10 years now.
+
 ## Introduction
 
 10 years ago I joined the MathJax project, which forced me to think a lot about how to put equations on web pages. Actually, I had already spent quite a bit of time during my PhD and postdoc years thinking(\*cough\* procrastinating) about the same thing, albeit from a different perspective.
