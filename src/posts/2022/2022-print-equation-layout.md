@@ -420,9 +420,9 @@ Bugs range from mildly annoying to problematic to terrifyingly bizarre. I stoppe
 
 **Theoretically**: visual rendering is not actually specified (thought here is a new effort to change that, making all existing MathML renderers invalid and breaking content without care).
 
-This is where they are after 25 years of MathML, 15 years of MathML in HTML5, ~10years of MathML "support" in Firefox, ~8 years of MathML "support" inSafari, neither of which are due to actually Mozilla or Apple spending resources but co-opted volunteer efforts. No amount of Igalia newspeak will change that fact. [Apologies to all the great people I know at Igalia. But the MathML people are not a good look for you all.]
+This is where they are after 25 years of MathML, 15 years of MathML in HTML5, ~10 years of MathML "support" in Firefox, ~8 years of MathML "support" in Safari, neither of which are due to actually Mozilla or Apple spending resources but co-opted volunteer efforts. No amount of Igalia newspeak will change that fact. [Apologies to all the wonderful people I've met from Igalia - the MathML people are not a good look for you all.]
 
-Optimistically, it will take a good decade to get reliable visual rendering quality. Certainly, CSS and SVG will move faster.
+Optimistically, I'd wager it will take a good decade to get reliable visual rendering quality. Certainly, CSS, SVG, HTML and ARIA will all move faster and help tools like MathJax even when they're not trying.
 
 In any case, the handful of people behind the implementations seem unable to grasp what the real life problems are so they live in their little bubble insisting that repeating "but it's a standard" does anything for users.
 
@@ -432,37 +432,40 @@ MathML captures abstracted, shared concepts of print equation layout traditions.
 
 **Practically**, MathML support is poor among screenreaders and is non-existing in"simpler" assistive technologies (with way more users) such as "read aloud" features in browsers, voice assistants etc.
 
-Only three screenreaders formally claim support and their support is limited, buggy, and of poor quality - and the pieces are minimally maintained by AT companies. Brian Richwine's talk at ATHENs documented many cases, e.g., how some ATs don't voice "end fraction/script" causing confusion (my favorite part was the anecdata form Apple support saying there's just not enough users to warrant fixes.)
+Only three screenreaders formally claim support and their support is limited, buggy, and of poor quality - and the pieces are minimally maintained by AT companies. Brian Richwine's talk at ATHENs documented many cases, e.g., how some ATs don't voice "end fraction/script" causing confusion (my favorite part was the anecdata form Apple support saying there's just not enough users to warrant fixes.) [Though admittedly, I have yet to see someone exhaustively testing them. Nobody is paying to test that, not even publishers who have a vested interest because the "experts" say "just use MathML".]
 
-In addition, the user experience of what little support screenreaders provide is often questionable, e.g., JAWS will not read larger MathML fragments but just announce the presence of a math fragment; users have to then open a separate viewer application to actually read and explore the expression. (Fun fact: this is called"Math Viewer" and actually uses MathJax for visual rendering, leading to visual differences from the browser).
+In addition, the user experience of what little support screenreaders provide is often questionable, e.g., JAWS will not read larger MathML fragments but just announce the presence of a math fragment; users have to then open a separate viewer application to actually read and explore the expression. [Fun fact: this is called "Math Viewer" and actually uses MathJax for visual rendering, leading to significant differences from the browser.]
 
 Similarly, VoiceOver on iOS will open pop-ups for exploration of MathML fragments, creating a separate context and confusion. NVDA needs third party plugins to do anything and has no visual component (i.e., highlighting while exploring)leaving non-blind to guess what is going on.
 
 I don't think it's enough accessibility support in the sense of [WCAG conformance](https://www.w3.org/WAI/WCAG21/Understanding/conformance#accessibility-support).
 
-**Theoretically**, MathML cannot be accessible in the web's sense. Heuristics must be applied and now you (frequently) have 2 problems -your MathML must be hacked to work visually and then you might still have to work around dumb heuristics.
+**Theoretically**, MathML cannot be accessible in the web's sense. Heuristics must be applied and now you (frequently) have 2 problems - your MathML must be hacked to work visually and then you might still have to hack around heuristics gone hawywire.
 
-Back at the W3C Math on the Web Community Group, there were fairly productive discussions with the MathML crowd and strong consensus (with them) that MathML inevitably requires extensive heuristics to provide non-visual (voice, tactile) renditions. Nevertheless, the same people later publicly stated the exact opposite in wider W3C discussions, perpetuating the spurious claims that MathML is the only viable accessible solution - after stating previously that MathML cannot solve this problem. The sad part is that the W3C's TAG fell for it. Because they just don't care to dig deeper - and why should they, nobody seems to and anyone sensible will just use MathJax.
+Back when I led the W3C Math on the Web Community Group, we had fairly productive discussions even with the MathML people and we had strong consensus (with them) that MathML inevitably requires extensive heuristics to provide non-visual (voice, tactile) renditions. Nevertheless, the same people later  turned around again in wider W3C discussions, going back to the spurious claims that MathML is the only viable accessible solution. 
+
+The sad part is that the W3C's TAG fell for it (and will fall for it again). My guess is because they just don't care to dig deeper - and why should they? Nobody wants to and anyone sensible will just use MathJax.
 
 ### Other aspects
 
 #### localization
 
-Another argument sometimes mentioned by MathML enthusiasts is thatMathML can be localized automatically. While that's true to some degree(and the AMS uses Speech Rule Engine for articles in French to create MathSpeak output in French), this is a questionable claim without any research substantiating the positive effect.
+Another argument sometimes mentioned by MathML people is that MathML can be localized automatically. While that's true to some degree (e.g., Speech Rule Engine can create MathSpeak in a few languages), the benefit seems a questionable if the locale does not match the contextual language, say, coming to an article in Arabic and getting an equation localized in Korean. At the very least, I'm unaware of research substantiating a positive effect.
 
-In practice, the available localizations in AT is quite limited and largely undocumented. This is even worse for Braille.
+In practice, the available localizations in AT is quite limited and pretty undocumented. This is even worse for Braille.
 
-There are obvious obstacles for localizations. Many equations contain some text elements which would not be localized. Similarly, common terminology has different localizations/abbreviations. For example
+There are obvious obstacles for localizations. Many equations contain some text elements which would not be localized. Similarly, common terminology has different localizations/abbreviations. For example,
 
 - sine as "sen" (ES, IT) or "sin" (EN, DE)
 - in geometry SAS/ASA/SSS (EN) vs SWS/WSW/SSS (DE)
 - sin\^-1 (EN) vs arcsin (EU) (etc)
 - repeating decimal notation (above, below / arc vs line)
 - open intervals as `(...)` or  `]...[`
+- any operator names the authors may introduce.
 
-While layout-relevant terms might have suitable automatic translations(e.g., start/end fraction), layout traditions can also differ across languages (long division, matrix notation, integral notation).
+While layout-relevant terms might have suitable automatic translations (e.g., start/end fraction), layout traditions can also differ across languages (long division, matrix notation, integral notation).
 
-As print equation layout is fairly meaningless without lots of context, it's difficult to imagine a reader that would read content in a language they don't understand enough to make sense of generic information like "begin/end fraction".
+Nobody stops to ask: should we do this? As print equation layout is fairly meaningless without lots of context, it's difficult to imagine a reader that would read content in a language they don't understand enough to make sense of generic information like "begin/end fraction".
 
 #### The "Don't worry about it" argument
 
@@ -470,19 +473,23 @@ The MathML community likes to say "don't worry about the complicated markup, Mat
 
 This is a strange statement full of falsehoods.
 
-For example, MathML is also advertised as "something you can edit without understanding it", e.g., while copy checking content, if an editor spots a symbol that does not match the (author) PDF, then - thanks to the structured XML markup - they can fix it. This example indicates two problems: conversion is not "easy" but riddled with errors, and having an "agnostic" markup (as opposed to some author's TeX macros) is actually a boon here. And of course the same would be true for span soup.
+For example, MathML is also advertised as "something you can edit without understanding it", e.g., while copy checking content, if an editor spots a symbol that does not match the (author) PDF, then - thanks to the structured XML markup - they can fix it without understanding. 
 
-Similarly, as described before, MathML supports "moveable limits"(including magical dictionary-based behavior). These features show how important it was for the MathML community to be compatible with authoring traditions instead of focusing on the "pure" layout.
+This marketing example also indicates two problems: conversion is not "easy" but riddled with errors, and having an "agnostic" markup  is actually a boon here - to any production person trying to fix a mistyped macro in TeX sources: I see you. 
 
-Finally, this line of argument is self-defeating. If the whole point is to convert from some kind of "real source" to MathML, then it's only natural to convert from that "real source" to HTML or SVG.
+But of course the same would be true for span soup since the markup really doesn't matter much here. Though actually, semantics tend get in the way while layout information would be useful. (Again, it makes actually sense for XML production to have a layout focus.)
 
-Why have an extra markup system that requires an extra rendering process when you can just use what's already there? (MathML fans will argue that it's better for accessibility or tangential affordances like copy &paste. These invariably turn out to be false or misleadingly inaccurate claims.)
+Similarly, as described before, MathML supports "moveable limits" (including magical dictionary-based behavior). These features show how important it was for the MathML community to be compatible with authoring traditions instead of focusing on the "pure" layout. If you generate it anyway, why not make it precise and avoid this?
+
+Finally, this line of argument is self-defeating. If the whole point is to convert from some kind of "real source" to MathML, then it's just as natural to convert from that "real source" to HTML or SVG.
+
+Why have an extra markup system that requires an extra rendering process when you can just use what's already much better supported?
 
 #### Limited support for MathML
 
-Among screenreader, only Apple VoiceOver and Vispero's JAWS (windows)claim to support for MathML. In reality, the implementations are full of bugs and limitations. Bug reports are rarely responded to, far less fixed. Apple has essentially communicated "it is what it is".
+Among screenreader, only Apple VoiceOver and Vispero's JAWS claim to support for MathML. In reality, the implementations are full of bugs and gaps. Bug reports are rarely responded to, far less fixed. Apple has essentially communicated "it is what it is".
 
-Nemeth Braille support has relied on the open source liblouis library - which recently discontinued its support; it only ever converted MathML to the Nemeth/UEB and German/Dutch/Flamish families braille notations - and it did so quite poorly.
+Nemeth Braille support has relied on the liblouis library - which recently discontinued its support of it; liblouis only ever converted MathML to the Nemeth/UEB and German/Dutch/Flamish families braille notations - and it did so quite poorly. [No, supposedly the new cat on the block doesn't count either. Old wine, new) bottles, just as rusty.]
 
 More importantly, no "light" assistive technology supports MathML,e.g., "read aloud" features in smaller assistive helpers, in epub reading applications or in voice assistants (Siri et al, e.g., when reading out web content). This lack of support impacts the largest portion of users, since these tools are much more widely used than the more advanced, full-fledged screenreaders like VoiceOver, JAWS, and NVDA.
 
@@ -490,13 +497,13 @@ More importantly, no "light" assistive technology supports MathML,e.g., "read al
 
 Print equation layout is inherently not accessible in the sense of the web. MathML is a red herring as it (at most) aims to reproduce accessibility traditions from the print era but inherently cannot reproduce it well since those traditions relied on human operators(orators or transcribers). It also only works for English and, it seems, really only for Nemeth users.
 
-I invariably approach such problems by looking for guidance regarding the web in general. [The web's grain](https://frankchimero.com/blog/2015/the-webs-grain/), if you like.
+I approach such problems by looking for guidance regarding the web in general. [The web's grain](https://frankchimero.com/blog/2015/the-webs-grain/), if you like.
 
 ### The web's core principles
 
 "Users before author before implementors before theory"
 
-From[https://www.w3.org/TR/design-principles/#priority-of-constituencies](https://www.w3.org/TR/design-principles/#priority-of-constituencies):
+From the [W3C design principles](https://www.w3.org/TR/design-principles/#priority-of-constituencies):
 
 > User needs come before the needs of web page authors, which come before the needs of user agent implementors, which come before the needs of specification writers, which come before theoretical purity.
 
@@ -506,17 +513,17 @@ We simply don't know.
 
 Yes, most countries do *something* at the school level. But actual research is barely existent; what little there is, is usually limited to small groups and all the biases of simplistic educational studies.
 
-My impression has been that there are too few AT users among the mathematical community - support is so poor, few make it to college let alone research-level. Accordingly, few have both the skills and the luxury to think freely about the problem. (T.V. Raman is one of the few exceptions and I'm still grateful he gave Davide and me the opportunity to work with the ChromeVox team for a week - and to meet Volker Sorge who was on sabbatical at Google Research back then.)
+My impression has been that there are too few AT users among the mathematical community - support is so poor, few make it to college let alone research-level. Accordingly, few have both the skills and the luxury to think freely about the problem. (T.V. Raman is one of the few exceptions and I'm still grateful he gave Davide and me the opportunity to work with the ChromeVox team for a bit - and to meet Volker Sorge who was on sabbatical at Google Research back then.)
 
-Anecdotally, the most consistent feedback I've seen in educational studies comes down to "I want it to be read like my teacher/prof reads it in class". That sounds an awful lot like users want to have what authors want to say, and matches the core principles pretty well. It's one of those "did you need a study for that?" moments and yet it shows how flawed the current approaches are. Yes, it's a common paradigm that authors should enable AT users to customize their output. But if you take away the author's ability to express themselves, are you really helping users?
+Anecdotally, the most consistent feedback I've seen in educational studies comes down to "I want it to be read like my teacher/prof reads it in class". That sounds an awful lot like users want to have what authors want to say, and matches the core principles pretty well. It's one of those "did you need a study for that?" moments (yes, we do) and yet it shows how flawed the current approaches are. Yes, it's a common paradigm that authors should enable AT users to customize their output. But if you take away the author's ability to express themselves, are you really helping users?
 
-But even assuming I'm wrong in my assessment for lower level equation layout: for mathematically heavy research? There's absolutely nothing to base an opinion on.
+Assuming I'm wrong in my assessment for lower level equation layout: for mathematically heavy research material? There's absolutely nothing to base an opinion on.
 
-They probably want TeX annotations because research-level users very likely know TeX syntax. But is that what they **need**, e.g., when exploring a complex expression? [Fun fact, some European communities favor presentingTeX strings in Braille - starting from first grade.]
+Those users probably want TeX annotations because research-level users very likely know TeX syntax. But is that what they **need**, e.g., when exploring a complex expression? [Fun fact, some European communities favor presenting TeX strings in Braille - starting from first grade.]
 
 ### interlude
 
-This discussion is usually skewed by two major factors: US users and blind users. As with most of the web, the US dominance has led to people ignoring other factors. If it works for US users, it's fine, amiright. So the limited MathSpeak and Nemeth implementations in MathPlayer were enough to woo the US accessibility community and its influence wooed the rest.
+This discussion is usually skewed by two major factors: US users and blind users. As with most of the web, the US dominance has led to people ignoring other factors. If it works for US users, it's fine, amiright. So the limited MathSpeak and Nemeth implementations in MathPlayer were enough to woo the US blind community and its influence wooed the rest.
 
 To take an example. Blind users (especially students) need to write assessments using the tools their classes require. If they need to use MS Word, they'll need something to paste into Word. MathML was originally conceived as just such an exchange format for print equation layout - abstracting the minimal common ground so that each engine could reasonably present it.
 
@@ -524,19 +531,19 @@ However, the authoring problem requires conversion. This easily goes haywire. Fo
 
 MS Word does the same thing but has a custom XML format for print equation layout. Same approach, same problems. It doesn't help to add more formats (such as TeX-like input). 
 
-MathML-based wysiwyg editors exacerbate the problem (as wysiwyg is wont to do) since they cannot easily discern logical structure of input // do not make it apparent to users that they're doing something really terrible (e.g., inserting random whitespace).
+MathML-based wysiwyg editors exacerbate the problem (as wysiwyg is wont to do) since they cannot easily discern logical structure of input // do not make it apparent to users that they're doing something really terrible (e.g., inserting random whitespace, flip-flopping font choices).
 
 However, if you are a blind user who knows Nemeth well, then that conversion process might just work sufficiently well for you because things were designed just for this use case. Ergo, you will say it's great and your influential community will prevent any discussion about whether this is actually a good trade off for other user needs. 
 
-At ATHENs, the talks from educators I was able to attend all included at least one statement along the lines of: "our successful students are those who know Nemeth". Clearly, it's good that Nemeth helps students succeed but in the words of Jean-Luc Picard: "Not good enough, dammit, not good enough".
+At ATHENs earlier this year, all speakers I heard included at least one statement along the lines of: "our successful students are those who know Nemeth". Clearly, it's good that Nemeth helps students succeed but in the words of a spaceship captain: "Not good enough, dammit, not good enough".
 
-The reality of all users is: the web is fairly bad at being copy&pasted elsewhere. And that's an interesting, complex, and very broad problem. I'd love to see more movement in this direction but I don't think it makes sense to make copy&paste to MS Word a requirement for realizing print equation layout on the web when nothing else can do this. 
+The reality of all users is: the web is fairly bad at being copy&pasted elsewhere. And that's an interesting, complex, and very broad problem. I'd love to see more movement in this direction but I don't think it makes sense to make copy&paste to MS Word a requirement for realizing print equation layout on the web when nothing else on the web can do this. (Pasting SVG into Word anyone?)
 
-In addition, repeated conversion tends to be lossful. There used to be a web game about passing a string to Google translate and letting it translate it back and forth until things stabilized (and hilarity ensued). A step less far away, here's [a random blog post](https://bjango.com/articles/svgpassthroughprecision/) about loss of precision in SVG conversion. I doubt it will be great when you do that for print equation systems that can digest MathML and if I cared enough, I'd test that hypothesis.
+[Repeated conversion tends to be lossy. From my limited yet painful experience of editing conversion results, I doubt it will be great if you went back and forth across print equation systems for a bit; if I cared enough, I'd test that hypothesis.]
 
 Ultimately, Braille is a print technology, and  in the context of a refreshable display there isn't even a page, let alone a multidimensional presentation that a dynamic webpage can provide. Again, this is a broad and interesting problem, again print equation layout is not a great case for special treatment.
 
-Similarly, Unicode math alphabets are a print technology. It makes sense in a print context to separate out codepoints that have very special fontface requirements. They work fairly terribly in terms of non-visual rendering. [For example, I once tested](https://mathstodon.xyz/@pkra/108231823892676435) the string `ϕ(x)=∑ₖⁿ xᵏ` and it came out as "open paren x close paren equals n-ary summation n x" (JAWS) or "x equals n-ary summation superscript n x" (NVDA) and "phi x equals to the power of n x" (Chrome speech synthesis). Yay us. Now you might argue that in the right markup, voicing could be different, e.g., automatically more verbose. And that's an excellent point - but I would couner that math alphabets are far from the only Unicode characters with these kinds of problems - emoji for one are even more prevalent than math alphabets to fill account names or social media postings - and a better solution would be a general one.
+Similarly, Unicode math alphabets are a print technology. It makes sense in a print context to separate out codepoints that have very special fontface requirements. They work fairly terribly in terms of non-visual rendering. [For example, I once tested](https://mathstodon.xyz/@pkra/108231823892676435) the string `ϕ(x)=∑ₖⁿ xᵏ` and it came out as "open paren x close paren equals n-ary summation n x" (JAWS) or "x equals n-ary summation superscript n x" (NVDA) and "phi x equals to the power of n x" (Chrome speech synthesis). Yay us. Now you might argue that in the right markup, voicing could be different, e.g., automatically more verbose. And that's an excellent point - but I would couner that math alphabets are far from the only Unicode characters with these kinds of problems - emoji for one are even more prevalent than math alphabets to fill account names or social media postings - and a better solution would be a general one, not "math markup".
 
 Another quirk of the accessibility traditions around print equation layout is what layout information is exposed. Font variants, upper/lower, under/overlines are all exposed - yet color is not. Why? Likely because print traditionally doesn't use (a lot of) color out of the pure necessity that color print is not readily available. But that is not stopping authors; color is a useful and beautiful tool. Of course, it's "obvious" that non-visual media won't present color well but neither will it present different typefaces well - and somehow that was ok with everyone. This is particularly strange, when you find dedicated syntax for "mathcolor" with no effect.
 
@@ -546,53 +553,51 @@ I want to give authors the ability to express themselves well.
 
 And authors **want** to do that.
 
-Just look at any "list of symbols" in a monograph, e.g., from GSM210
+Just look at any "list of symbols" in a monograph, e.g., from [this combinatorics book](https://bookstore.ams.org/gsm-210/)
 
 ![a screencapture from a list of notations with short definitions](/assets/2022/gsm210-notation.png)
 
-Despite using very ambiguous terms, the authors clearly have a strong intent.
+Despite using very ambiguous terms, the authors clearly have a strong intententions.
 
-I want authors to bring their intent into the process.
+I want authors to bring their intententions into the process.
 
-We can (barely) do that with SRE. We cannot do that with MathML.
+We can (barely) do that with Speech Rule Engine. We cannot do that with MathML.
 
-### What to want for our users
+### What do you want for your users?
 
 I want to take responsibility for my content.
 
-I want high-quality consistent, robust rendering for all users.
+I want to provide high-quality consistent, robust rendering for all users.
 
-I want visual layout that is robust against font issues (especially onepub).
+I want to provide visual layout that is robust against font issues (especially onepub).
 
-I want speech and braille alternatives.
+I want to provide speech and braille alternatives.
 
-I want consistent, reliable, robust exploration.
+I want to provide consistent, reliable, robust exploration.
 
 I want to be able to fix issues.
 
-I want to provide additional features (e.g., convenient access to TeX sources, customization options).
+I want to be able to provide additional features (e.g., convenient access to TeX sources, customization options).
 
-### What to do
+### What do you do?
 
-Provide high-quality visual rendering using MathJax's SVG output, alongside the high-quality heuristics in Speech Rule Engine to generate non-visual rendering.
+I usually provide high-quality visual rendering using MathJax's SVG output, alongside the high-quality heuristics in Speech Rule Engine to generate non-visual rendering.
 
-Generate fully explorable layout and descriptions that are the same for everyone everywhere.If there's a problem, it is our fault, not the user's. And we can fix it.
+I also generate fully explorable layout and descriptions that are the same for everyone everywhere. They are robust enhancements with solid fallbacks. If there is a problem, it is my fault, not the user's. And if need be I can fix it in post.
 
-Use the MathSpeak ruleset for descriptions meant for voicing because MathSpeak doesn't attempt to be as "smart" as other available heuristics(targeting school level mathematics).
+I tend to use the MathSpeak ruleset for descriptions meant for voicing because MathSpeak doesn't attempt to be as "smart" as other available heuristics (which target school level mathematics).
 
-Use Nemeth Braille because content is primarily inEnglish. For other languages, SRE doesn't have any braille support so I accept that I need to use Nemeth there, too. If I want more, I'll make sure to help SRE get funding.
+I use Nemeth Braille because content is primarily in English. Arguably, Speech Rule Engine doesn't have any support for other Braille output so I accept that I need to use Nemeth for other languages. I'm not beyond using TeX as quick alt text. If I want more, I'll try to help Speech Rule Engine get funding.
 
-Have speech descriptions work with all tools - from full-fledged screenreaders and simple read-aloud tools. If there are issues (e.g.,a recent VoiceOver on iOS regression on trees), we work around it.
+I make sure that speech descriptions work with all tools - from full-fledged screenreaders and simple read-aloud tools. If there are issues (e.g., a recent VoiceOver on iOS regression I ran into), I can work around it.
 
-Yes, the ARIA technique for exposing Braille alongside speech-optimized text is cutting edge and not widely supported yet. But it will get there and help more than print equation layout.
+Yes, the ARIA technique for exposing Braille alongside speech-optimized text is cutting edge and not widely supported yet. But they went from editor's draft to full browser support in 2 years and they help much more than just print equation layout.
 
-Provide a lightweight and robust exploration that falls back solidly to a single description.
+I often embed TeX sources that automatically copy&paste when you select things; it's a nice bit of magic under my control. 
 
-Embed TeX sources that automatically copy&paste.
+I set things up so as to allow for additional options to expose various formats (e.g., populating everything with TeX or loading full-on client-side MathJax).
 
-A setup that allows for additional options to expose various formats (e.g.,populating everything with TeX or loading full-on client-side MathJax, and, even, generating MathML should user want to).
-
-Do so with intent and deep knowledge of the problem space, the capabilities of the solution and the flexibility to help users.
+I do so with intent and knowledge of the problem space, the capabilities of the solution I built and the flexibility to help users.
 
 ### interlude
 
@@ -606,19 +611,19 @@ What about, again, music notation?
 
 Should all of these be first class citizens on the web, with separate rendering systems to adhere to their particular (print) histories? 
 
-## Tangents about MathML
+## Tangents
 
 ### copy & paste
 
 The MathML community will frequently point out how "easy" it supposedly is to copy&paste MathML around.
 
-The reality is that extremely few applications accept MathML, it's a cumbersome process, and MathML is dropped in the process, replaced with whatever internal format is used.
+The reality is that extremely few applications accept MathML, it's a cumbersome process, and MathML is dropped in the end, converted to whatever internal format is used by the target application.
 
-The primary reason why this myth holds is that MS Word digests MathML. However nowadays, MS Word also accepts (reasonable math mode) TeX when pasting into "equation fields" which shows both the limited usefulness of MathML as well as the pervasiveness of (math mode) TeX. And of courseWord uses its custom markup syntax internally (and its home-grown technology for braille and voice rendering instead of whatever ATs provide).
+The primary reason why this myth holds is that MS Word digests MathML. However nowadays, MS Word also accepts (reasonable math mode) TeX when pasting into "equation fields" which shows both the limited usefulness of MathML as well as the pervasiveness of (math mode) TeX. And of course Word uses its custom markup syntax internally (and its home-grown technology for braille and voice rendering instead of whatever ATs provide).
 
-More importantly, while copy&paste is a worthwhile challenge, it is also a general challenge with web content. Copy&pasting website content into any kind of text editor (word processor, email application, TeX sources)is very poorly supported in general. While headings might survive, even something as simple as a list can break, tables usually break and "true"web design (e.g., anything CSS) does not survive. Even (inline) SVG content is not supported widely (despite being a well supported, self-contained graphics format).
+More importantly, while copy&paste is a worthwhile challenge, it is also a general challenge with web content. Copy&pasting website content into any kind of text editor (word processor, email application, TeX sources) is very poorly supported in general. While headings might survive, even something as simple as a list can break, tables usually break and "true"web design (e.g., CSS grids) does not survive. Even (inline) SVG content is not supported widely (despite being a well-supported, self-contained graphics format).
 
-This is not at all surprising given how most of the targets are meant to create print layout - and struggle with web layout. Why then should equation layout on the web be less complicated than the rest? Instead of insisting on broken technology (like print equation layout and specifically MathML), it would be better to think about the more general problem that affects everyone.
+This is not at all surprising given how most of the targets are meant to create print layout - and struggle with web layout. Why then should equation layout on the web be less complicated than the rest? Instead of insisting on broken technology (like print equation layout and specifically MathML), it would be better to think about the more general problem that affects everyone. We have to anyway and a niche solution does not move us forward (yes, HTML v3 did have it wrong).
 
 ### authoring and recreating
 
@@ -626,15 +631,13 @@ Related to copy&paste is the area of authoring and recreating print equation lay
 
 Let's go back to the example of matrix determinants. Both `det(A)` vs`|A|` would be voiced as "determinant of A" yet their authoring is quite different.
 
-Sometimes, readers have to (re)create content to match someone else's example (e.g., in any educational setting).
-
-Again, this is a general problem (color vs colour). For text, AT usually provides character-by-character navigation (incidentally, I'm not sure about graphemes more generally). For print equation layout this is naturally trickier: on the one hand, we come back to the idea to "just"give layout information, on the other hand layout may be insufficient(e.g., table-like).
+Sometimes, readers have to (re)create content to match someone else's example (e.g., in any educational setting). Again, this is a general problem (color vs colour). For text, AT usually provides character-by-character navigation (incidentally, I'm not sure about graphemes more generally). For print equation layout this is naturally trickier: on the one hand, we come back to the idea to "just" give layout information, on the other hand layout may be insufficient (e.g., table-like).
 
 ### Voice input/output
 
 Voice input is becoming an important aspect of how users interact with web content, both using AT (e.g., in combination with Dragon NaturallySpeaking) as well as using general purpose tools such as smart assistants (Siri, Alexa etc).
 
-Despite funded efforts, there has been not even as light progress for enabling print equation layout by voice input.
+Despite funded efforts, there has been not even light progress for enabling print equation layout by voice input.
 
 ### Audio and Video Captioning
 
@@ -648,23 +651,23 @@ Despite decades of research, search around MathML has never provided tangible be
 
 Springer's discontinued LaTeX search or zbmath's MathML based system are good examples of this failure. A sizeable research corpus revolves around analyzing MathML fragments, yet no actually useful system is available.
 
-### Death of progress
+### Progress
 
-Here's a very personal opinion: The MathML community has actively worked against progress for equation layout on the web, and mathematics as a larger issue.
+Here's a very personal opinion: the MathML people have actively worked against progress for equation layout on the web, and STEM content as a larger issue.
 
-Why do I say this? Because anyone who has followed this area closely in the past decade (which, alas, is barely a handful of people) know that it's the MathML people who insist that MathML must be implemented at all costs, actively damaging other approaches, even approaches with better results for users.
+Why do I say this? Because anyone who has followed this area as closely as I have in the past decade or so (which, alas, is barely a handful of people) know that it's the MathML people who insist that MathML must be implemented at all costs, actively damaging other approaches, even approaches with better results for users.
 
-To these purists, MathML is more important than users, authors, and browsers.
+To the purists, MathML is more important than users, authors, and browsers.
 
-As a result, projects that made actual progress (like MathJax, mathlive, hell - even KaTeX) are in danger of losing support from their communities because people are being told "you should use MathML". [Don't get me wrong, I can gripe about these projects but at least they move.]
+As a result, projects that made actual progress (like MathJax, mathlive, hell - even KaTeX) are in danger of losing support from their communities because people are being told "you must use MathML". [Don't get me wrong, I can gripe about these projects, too, but at least they move.]
 
-All the while, there's no indication that MathML development will speedup at all, even if Chrome ships the new, cut-down, incompatible spec.(Fun fact: Gecko removed perfectly functioning MathML 3 features. What kind of idiot breaks backwards compatibility on the web? MathML people, that's who.)
+All the while, there's no indication that MathML development will speedup at all, even if Chrome ships the new, cut-down, incompatible spec.
 
 So if you ever again complain about the lack of improvements in this space, blame the MathML people. They are to blame. We could have made many small improvements to the platform that would have benefited everyone if the MathML people hadn't killed everything that didn't suit them and drove away anyone who didn't agree with them.
 
-Reversely, MathML is being held back where it actually shines - XML print production. There's so much useful print equation content to consider for XML workflows (tikz alone!); extendingMathML would be natural here. Instead, even the XML people get nothing (or worse - a cut down spec they can't use until JATS adopts it).
+Reversely, MathML is being held back where it actually shines - XML print production. There's so much useful print equation content to consider for XML workflows (tikz alone!); extending MathML would be natural here. Instead, even the XML people get nothing (or worse - a cut down spec they can't use until JATS adopts it).
 
-I wrote earlier that "web equation layout" is not something that exists. So you might say, what's the problem? I think the problem is that we might get stuck, in a bad way. Here's quote from [On Mathematical Symbols in China](https://arxiv.org/pdf/1511.08033v1.pdf) (or via Christian's [Interesting Esoterica](https://read.somethingorotherwhatever.com/entry/OnMathematicalSymbolsinChina)).
+I wrote earlier that "web equation layout" is not something that exists. So you might say, what's the problem? I think the problem is that we might get stuck, in a bad way. Here's quote from [On Mathematical Symbols in China](https://arxiv.org/pdf/1511.08033v1.pdf) (again, thanks to Christian's [Interesting Esoterica](https://read.somethingorotherwhatever.com/entry/OnMathematicalSymbolsinChina)).
 
 > Ancient Europeans struggled with fractions because of the use of
 tedious Roman numerals, so ancient Europeans were weakest in algebra.
@@ -685,27 +688,27 @@ and separately from the influence of other nations and the outside world.
 I think the web should not be confined to print equation layout. We should not want to get stuck replicating a limited medium in a much more versatile one.
 
 
-## mathml future scenarios
+MathML is the zombie of web standards. Each decade brought 1 additional, differently broken implementation (first Firefox, then Safari, soon Chrome). The new cut down spec that will break a lot of content. XML people will have "fun" with getting their markup to work on the web in this scenario. 
 
-MathML is the zombie of web standards. Each decade brought 1 additional, differently broken implementation (first Firefox, then Safari, soon Chrome). The new cut down spec that will break a lot of content. The mathml people have silently removed existing features from browsers (I'm guessing to be able to argue that they have 2 implementations of the new cut down "spec"); what an extremely unusual thing in browsers that just goes to show how few people use MathML. XML people will have "fun" with getting their garbage to work on the web in this scenario. Bugs in those three disjoint implementations are, of course, aplenty; I find a new one every time something forces me to look at native MathML implementations, some are ridiculously bad (wiping out HTML content is one of my favorites) and most bugs go for years without bugs even being filed (remember when Safari didn't draw fraction lines reliably for over a year? No, you don't because you don't use it and nobody even filed a bug).
+Bugs in those three disjoint implementations are, of course, aplenty; I find a new one every time something forces me to look at native MathML implementations, some are ridiculously bad (wiping out HTML content is one of my favorites) and most bugs go for years without bugs even being filed (remember when Safari didn't draw fraction lines reliably for over a year? No, you don't because you don't use it and nobody even filed a bug).
 
 For the web, the best case scenario is: nobody cares and nobody uses it. It will become the new font/center/marquee or whatever.
 
-Even if the mathml people were interested in moving the layout facilities into CSS, we'll get, at best, something like CSS tables. If you don't know the "joy" of working with CSS tables: to this day they are not able to suitably realize HTML table layout, they were super buggy for the longest time and are still buggy in many edge cases (despite years of active improvements). But  most of all: people realized they actually needed something completely different, i.e., CSS grid.
+Even if the mathml people were interested in moving the layout facilities into CSS, we'll get, at best, something like CSS tables. If you don't know the "joy" of working with CSS tables: to this day they are not able to suitably realize HTML table layout, they were super buggy for the longest time and are still buggy in many edge cases (despite years of active improvements). But  most of all: people realized they actually needed something completely different, i.e., CSS grid, flexbox, and container queries.
 
 Accessibility wise, the shoddy implementations in JAWS and VoiceOver will continue to barely help English speaking blind users. Soiffer will try to push his weird MathPlayer clone into every AT so that he can continue to claim patently false things. No "intent" in the world will make print equation layout accessible in the sense of the web. Nemeth users might eventually get what they want - the rest? Not so much.
 
-In other words, users will continue to find themselves out of luck. But hey, "it's a standard". They made you beg for it, then they begged you for money to pay instead of Apple and Google; now you have something you don't want, something that doesn't work and something that cannot work. It's what you wanted.
+In other words, users will continue to find themselves out of luck. But hey, "it's a standard". They made you beg for it, then they begged you for money (instead of Apple and Google); now you have something you don't want, something that doesn't work and something that cannot work. It's what you wanted, a "standard".
 
 I think MathML (this of course means: its community) is fundamentally not willing and not able to be a positive force. It's "MathML or die" all the way. The zombie standard continues it shambling walk.
 
 ## interlude
 
-The future will be different from what expect. The other day/month/year, our oldest started learning the piano. Of course, this means learning musical notation; it's one of the benefits, I'd say. But it's (inevitably) hard to motivate.
+The future will be different from what you expect. The other day/month/year, our oldest started learning the piano. Of course, this means learning musical notation; it's one of the benefits, I'd say. But it's (inevitably) hard to motivate.
 
 So being a stupid internet person, I searched around for fun apps that teach the piano. I found apps that, shockingly, didn't really use traditional musical notation. Instead, they had some barebones resemblance (I'm guessing to enable later learning) but they took things in another direction by leveraging the medium, i.e., modern mobile applications.
 
-These apps would listen via microphone, give immediate feedback on correctness in a range of properties (dynamically increasing tolerance for errors),They would use their infinite canvas to provide just-in-time context in large visuals to keep silly younglings focused and unconcerned about length. They would play along simple training material providing more complex arrangements so that even an early learner would not be facing dull pieces of repetitive notes. They would immediately get you to jump into contemporary pop songs, sync highlighting along the way, bringing enormous satisfaction. They were just generally being impressively awesome. None of this with traditional musical print notation.
+These apps would listen via microphone, give immediate feedback on correctness in a range of properties (dynamically increasing tolerance for errors). They would use their infinite canvas to provide just-in-time context in large visuals to keep silly younglings focused and unconcerned about length. They would play along simple training material providing more complex arrangements so that even an early learner would not be facing dull pieces of repetitive notes. They would immediately get you to jump into contemporary pop songs, sync highlighting along the way, bringing enormous satisfaction. They were just generally being impressively awesome. None of it with traditional musical print notation.
 
 ## Quo vadis?
 
@@ -717,9 +720,9 @@ I am saying that you should consider two things when you do.
 
 ### even mildly complex print equation layout is simply a bad type of content. 
 
-Find better ways to communicate better. You don't need to go all "Kill math" about it. But for crying out loud experiment, be creative. Or at the very least copy creative people.
+Find better ways, communicate better. You don't need to go all "Kill math" about it. But for crying out loud experiment, be creative. Or at the very least copy creative people.
 
-There are soooo many good people out there experimenting -- just check math teachers on twitter and you'll find wondersome and wonderful experimentation.
+There are soooo many good people out there experimenting -- just check math teachers on twitter and you'll find wondersome and wonderful experimentation - shout out to [Fawn's visual patterns](https://www.visualpatterns.org/)!
 
 Think about responsive arrangements of your equation layout. Think about animations of equation content. Think about mixing imagery with complex text content and only a touch of equation layout. Think about scrollytelling techniques. Think about using something else instead. And fail! Fail again! Fail well! Fail at failing until you fail to fail.
 
@@ -727,11 +730,10 @@ The web is a wonderous medium. Its grain is fantastic to work with, read its dir
 
 ### story telling
 
-I disliked [Bret Victor's Kill math](http://worrydream.com/KillMath/) for actively ignoring the power of compression of equation layout.
-But nowadays also for its lack of imagination regarding the presentation of equation layout. It just gives up and uses a completely different medium.
-(And before you ask, I didn't like the [scrubbing calculator](http://worrydream.com/ScrubbingCalculator/) that much either - even when you ignore that it's not accesible. But at least the idea Explorable Explanations inspired [more](https://explorabl.es/) [people](https://landgreen.github.io/physics/). Perhaps I'm jaded and just can't find anything good in mathematical examples while I enjoy lovely examples like [why is the sky blue](https://halftone.co/projects/why-is-the-sky-blue/).)
+Way back when I disliked [Bret Victor's Kill math](http://worrydream.com/KillMath/) for actively ignoring the power of compression of equation layout.
+But nowadays I don't like it for its lack of imagination regarding the presentation of equation layout. It just gives up and uses a completely different medium. Before you ask, I didn't like the [scrubbing calculator](http://worrydream.com/ScrubbingCalculator/) that much either - even when you ignore that it's not accesible. But at least the idea Explorable Explanations inspired [more](https://explorabl.es/) [people](https://landgreen.github.io/physics/). I readily admit I might be jaded and just can't find anything good in mathematical examples while I enjoy lovely examples like [why is the sky blue](https://halftone.co/projects/why-is-the-sky-blue/).
 
-Apps like [soulver](https://soulver.app/) showed a while ago how complex equation layout might become unnecessary. [Tandis](https://www.tandisgame.com) is mesmerizing and I suspect accessibility questions around these could teach us an awful lot more than any MathSpeak/Nemeth debate.
+Apps like [soulver](https://soulver.app/) showed a while ago how some kinds of complex equation layout might become unnecessary. [Tandis](https://www.tandisgame.com) is mesmerizing and I suspect accessibility questions around these could teach us an awful lot more than any MathSpeak/Nemeth debate.
 
 
 
@@ -742,13 +744,15 @@ Why capture a complex diagram statically when you can send something that dynami
 
 ### if you do it, do it accessibly and that means do accessibility yourself
 
-If you put print equation layout on the web, be aware that you're bringing inaccessible content to the web. I'm happy to point anyone to WCAG 1.1.1 because every print equation layout tradition clearly separates its use from text. TeX literally separates "math mode" from "text mode" - you can't be much clearer. But other systems do the same thing. In MS Word and similar tools, the equation editing will be entirely separate from text editing. The two are disjoint.
+If you put print equation layout on the web, be aware that you're bringing inaccessible content to the web. I'm happy to point anyone to WCAG 1.1.1 because every print equation layout tradition clearly separates its use from text. TeX literally separates "math mode" from "text mode" - you can't be much clearer. But other systems do the same thing. In MS Word and similar tools, the equation editing will be found in an entirely separate UI area from text editing. The two are disjoint. Call me non-intuitionistic but "not text" is "non-text".
 
 Essentially, you're putting up a structured image. SVG is the best mental model here: if you generate a diagram with mermaidjs, you could use some of your input to enable accessibility. But you probably have to do a whole lot more.
 
-But you don't have to. Speech Rule Engine provides you the best heuristics on the market and a direct way to bring your own - whether you bring a plain label (that still offers SRE's heuristics and layout information) or you write your own heuristics, it's there to build upon.
+But you don't have to do everything yourself. Speech Rule Engine provides you the best heuristics on the market and a direct way to bring your own - whether you bring a plain label (that still offers SRE's heuristics and layout information) or you write your own heuristics, it's there to build upon.
 
-Above all: be mindful what you want to do. If you want to provide TeX as non-visual presentation, do that; you are the author and it's your prerogative. If you want to provide more standardized descriptions, use Speech Rule Engine to generate them. You can provide braille-specific descriptions alongside speech-oriented. MathJax and SRE are the best there is for that kind of thing. If you don't use JS on the client, you can still do things server-side. If equation layout gets complex, use an ARIA tree or tree grid with a modicum of client-side JS; several solutions are being discussed that might avoid any client-side JS.
+Above all: be mindful what you want to do. If you want to provide TeX as non-visual presentation, do that; you are the author and it's your prerogative. Just tell users and be open to criticism.
+
+If you want to provide more standardized descriptions, use Speech Rule Engine to generate them. You can provide braille-specific descriptions alongside speech-oriented ones. MathJax and SRE are the best there is for that kind of thing. If you don't use JS on the client, you can still do things server-side. If equation layout gets complex, use an ARIA tree or tree grid with a modicum of client-side JS (check this page to see how that works); several solutions are being discussed that might avoid any client-side JS.
 
 ## The end
 
