@@ -65,15 +65,16 @@ Print equation layout is...
 
 - what people think of when you say "math/formula/equation"   // what  MathML partially captures   // what math mode TeX usually produces  // what MS Word formulas usually look like
 - **an elaborate, two-dimensional form of abbreviated notation for compressed, highly complex, context dependent, abstract thought.**
-- even at an elementary level (e.g., long addition/multiplication/division, "explanatory" layout).
-  - on research: exacerbated by 20th century content explosion combined with print page limits
-- highly (highly!) ambiguous- often integrated into additional complex notation (e.g., text annotation, graphical documents).
-  - a consequence: it is \"non-text content\" (in the sense of WCAG SC 1.1.1).
-  - closer to "ascii art" than HTML traditions of "semantic markup"
 
-Naturally, this does not apply to all instances of print equation layout - 1+1=2 is just fine.
+That's a bit of a mouthful, I know. But, in the spirit of recursion, this compressed, complex description captures the essential problems well and much follows easily from it.
 
-It crucially applies where the actual problems occur - both in visual and non-visual rendering. The problem is not to handle 1+1=2 (well, actually we'll get back to this). The problem is more:
+This is also not an observation of edge cases, it holds at an elementary level, e.g., in the shape of long addition/multiplication/division or "explanatory" annotated layout in school-level material. At the research level, things are much (much) worse, because research by its nature invents new concepts but more so because especially compression was exacerbated by the content explosion of the 20th century, combined with print page limits.
+
+A first consequence of this description is that print equation layout is highly ambiguous because the compression is very lossy. What's worse is that print equation layout not just needs context but is frequently integrated into other complex notation (e.g., text annotation or graphical documents).
+
+A consequence of this is that it is "non-text content" (in the sense of WCAG SC 1.1.1). It is much closer to "ascii art" than HTML traditions of "semantic markup" with concepts such as heading, landmark, or widget. 
+
+Naturally, this does not apply to all instances of print equation layout. It crucially applies where the actual problems occur - both in visual and non-visual rendering. The problem is not to handle 1+1=2 (well, actually we'll get back to this), the problem is more like:
 
 $$ \det(A)=\sum _{\begin{array}{c}k_{1},k_{2},\ldots ,k_{n}\geq 0\\ k_{1}+2k_{2}+\cdots +nk_{n}=n\end{array}}\prod _{l=1}^{n}{\frac {(-1)^{k_{l}+1}}{l^{k_{l}}k_{l}!}}\operatorname {tr} \left(A^{l}\right)^{k_{l}}$$
 
