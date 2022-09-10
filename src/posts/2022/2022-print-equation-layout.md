@@ -258,7 +258,7 @@ Now expand this to the ever changing mathematical notation, then expand to engin
 
 For more "inspiration", check out [https://whystartat.xyz/wiki/Category:Ambiguities](https://whystartat.xyz/wiki/Category:Ambiguities)
 
-An absolute favorite of mine is the [Legendre symbol](https://en.wikipedia.org/wiki/Legendre_symbol) which is obviously easy to confuse with a fraction that happens to have parenthesis (e.g., from reducing a more complex expression). It introduced before the year 1800 and yet, apparently, there's no dominant way to speak it, see [this MO discussions](https://mathoverflow.net/questions/15447/is-there-a-standard-way-to-read-the-legendre-symbol).
+An absolute favorite of mine is the [Legendre symbol](https://en.wikipedia.org/wiki/Legendre_symbol) $\left({\frac {a}{p}}\right)$ which is obviously easy to confuse with a fraction that happens to have parenthesis (e.g., from reducing a more complex expression). It introduced before the year 1800 and yet, apparently, there's no dominant way to speak it, see [this MO discussions](https://mathoverflow.net/questions/15447/is-there-a-standard-way-to-read-the-legendre-symbol).
 
 We can also go the other way around. We can have the same voicing for different notations. `|A|` and `det(A)` may read "determinant of A"; both `exp(x)` and`e^x` may read as "exponential function at x". How would a non-visual user know which notation was used when someone said this?
 
@@ -386,21 +386,27 @@ It's probably worth noting that Nemeth Braille has not been revised since the 19
 
 At this point let me point out that heuristics are something that web accessibility eschews; heuristics are only encouraged to recover from errors (e.g., turning invalid documents into a valid ones, making sense of authoring or connection errors, dealing with legacy code like table layout).
 
-Accessibility on the web revolves around the so-called "accessible name"which is calculated for each element in the document. This calculation works from the leafs up the document tree.
+Accessibility on the web revolves around the so-called "accessible name" which is calculated for each element in the document. [This calculation](https://w3c.github.io/accname/) is rather complicated but at the heart of it is Step F: the accessible name of a node is accumulated from the accessible name of its children. From the end users point of view, you tend to get some additional information (such as the role of the element) added by AT. And that's about it.
 
-Print equation layout does not allow for recursive naming - just think `n choose k`, or `^{-1}`. It also depends on
+Print equation layout frequently does not allow for recursive naming. The heuristics necessary to guess a non-visual presentation have to frequently analyze large subtrees to make sense of things. 
 
-MathML is even worse for this, as it is a stratified format for rendering purposes; in TeX you can at least have author macros to try to make sense.
+A simple example is binomial notation, $n \choose k$. Without the parentheses ${n \atop k}$ is not binomial notation and yet when a binomial is voiced, you wil not hear the parentheses. If you were to calculate the description recursively, you would have to decide on the description of what's within the parentheses before you get to them. How can you decide what to do at that point? 
 
-Authors, especially with AMS, invent layout that requires new heuristics-both large and small. For example, they create custom glyphs (such as blackboard bold Greek characters). They invent notations by embedding multiple small tikz diagrams as letter-like elements in math mode. 
+To make things worse, in many print equation layout systems this notation is realized via fraction primitives by removing the fraction bar (e.g., TeX, MathML). If you were to calculate the description you now have to decide what to do with a fraction that lacks a fraction bar. Now add to this mix the Legendre symbol $\left({\frac {a}{p}}\right)$.
 
+We can also go back to our script examples from earlier - for 2 and -1. While $7^2 = 7\times 7$ and $7^{-1} = {1 \over 7}$, we have $\sin^2(x) = \sin x \times \sin x$ yet $\sin^{-1} x$ is actually the inverse function at x, $\arcsin x$. If you tried to capture this, you'd have to ignore whatever you're creating for superscript -1 and 
 
-Historically, such inventions coincide with naming (cf.[https://jeff560.tripod.com/calculus.html](https://jeff560.tripod.com/calculus.html)for some historic examples such as nabla) but that's not always the case if you remember the Legendre symbol earlier. [Authors also regularly just hack layout badly (e.g., `\mathop{l\overline{og}}`) but that's technically speaking a different problem.]
+MathML is even worse for this, as it is a stratified format for rendering purposes. With TeX you can at least have author macros to try to make sense.
 
+Authors, especially on a research level, invent layout that requires new heuristics - both large and small. For example, they create custom glyphs (such as blackboard bold Greek characters) or they invent notations as grapheme-like tikz diagrams which then get used like any other element of a larger expression.
 
-Authors also intentionally hack things to work around traditions. A while back at work we ran into someone apparently abusing amsmath's sideset macro something like  `\sideset{}{^*}{\sum}_{a\mid A_y}`. We only noticed that because MathJax had improved sideset to be more accessible which changed the rendering (and introduced regression). Upon investigation, it turned a lot of similar papers. It turned out that all these authors used sideset to get a superscripted sum that would still have a "movable" subscript. It's fun little gap in these traditions that you can't have "partially moveable limits" without resorting to stupid hackery.
+Historically, such inventions coincide with naming. [Jeff Miller](https://jeff560.tripod.com/calculus.html) collects several historic examples (such as nabla). Yet, naming is not always invented alongside notation if you recall the Legendre symbol once again. [Authors also regularly just hack layout badly (e.g., `\mathop{l\overline{og}}`) but that's technically speaking a different problem.]
 
-In other words,  authors clearly want a certain type of layout that goes against traditions; in particular, trying to make things more semantic on the MathJax end led to breaking things. 
+Authors also intentionally hack things to work around traditions. A while back at work we ran into someone apparently abusing amsmath's sideset macro in something like `\sideset{}{^*}{\sum}_{a\mid A_y}`. We only noticed that because MathJax had improved sideset to be more accessible which changed the rendering (and introduced regressions). Upon investigation, it turned out we had a lot of similar papers. Even better, all of these authors used sideset consistently to get a superscripted sum that would still have a "movable" subscript. 
+
+In other words,  authors clearly want a certain type of layout that goes against traditions; they have good reasons to do so. Heuristics trying to make sense based on those traditions suddenly break as well. 
+
+This is a perfect example how traditions hold us back. They are too rigid - you can't have "partially moveable limits" without resorting to hackery. And once you have that kind of a hammer and everything looks like a nail.
 
 ## MathML
 
