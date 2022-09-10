@@ -89,7 +89,7 @@ They need massive resources to build, most use fossil fuel to run, all need mass
 
 And yet most people own one or want to own one. They have their uses, some at which they excel. So they're here and we need to think about them.
 
-But that doesn't change the fact that we should not think about a world without cars because it could really be a much better world for everyone. And we shouldn't insist to keep building our world around cars or make cars a core assumption in our "cultural stack".
+But that doesn't change the fact that we should think about a world without cars because it could really be a much better world for everyone. And we shouldn't insist to keep building our world around cars or make cars a core assumption in our "cultural stack".
 
 The same holds true for print equation layout.
 
@@ -103,19 +103,19 @@ Let that sink in for a bit. 18! years!
 
 With CSS, this solution started as (client-side) JS only and span soup; we have had that since 2004 (via [jsmath](https://www.math.union.edu/~dpvc/jsMath/), MathJax's precursor).
 
-With SVG, we've had this since 2011. MathJax v2, at first client-side but quickly also server-side (via phantomjs and later via mathjax-node). [To some degree, various tools could produce SVG from, e.g., TeX, even earlier that but they didn't generally care about the web as a use case, e.g., they wouldn't give you good vertical alignment to meet a baseline.]
+With SVG, we've had this since 2011. MathJax v2, at first client-side but quickly also server-side (via phantomjs and later via nodejs). [To some degree, various tools could produce SVG from, e.g., TeX, even earlier that but they didn't generally care about the web as a use case, e.g., they wouldn't give you good vertical alignment to meet a baseline.]
 
-It has been possible to realize print equation layout with just CSS(e.g., server-side generated span soup and CSS) since IE8 - IE8 damnit, released in 2009 - and with just SVG since IE9 (2011). [To be fair, MathJax was not the first to realize such an output, KaTeX was, but one of my favorite successes while at MathJax was to prod Davide long enough about a "fast Preview without JS" that he built the "CommonHTML" output for v2.7 which added this. I'm also still fond of the previewHTML output which preceded it and traded beauty for CSS simplicity.]
+It has been possible to realize print equation layout with just CSS (e.g., server-side generated span soup and CSS) since IE8 - IE8 dammit, released in 2009 - and with just SVG since IE9 (2011). [To be fair, MathJax was not the first to realize such a CSS approach, KaTeX was, but one of my favorite successes while at MathJax was to prod Davide long enough about a "fast Preview without JS" that he built the "CommonHTML" output for v2.7 which added this. I'm also still fond of the previewHTML output which preceded it and traded beauty for CSS simplicity.]
 
 Visual print equation layout has been solved thrice over with a myriad of smaller and larger tools doing it in varying ways, balancing code simplicity with quality of layout. (mathquill, jqmath, math-ml etc)
 
-[Aside. This is why a certain blog post from a few years ago about"alternate timelines" was so very much off base - CSS driven print equation layout was first, SVG a close second, not some XML dialect nobody was using for anything but print production. In the similar situations the same people would (indeed did famously) argue that a working solutions should be considered the prime candidates to move standardization forward, not some contrived academic proposal. But I digress.]
+[Aside. This is why a certain blog post from a few years ago about "alternate timelines" was so very much off base - CSS driven print equation layout was first, SVG a close second, not some XML dialect nobody was using for anything but print production. (And no, IE plugins do not count in my book.) In the similar situations the same people would (indeed did famously) argue that working solutions should be considered the prime candidates to move standardization forward, not some contrived academic proposal. But I digress.]
 
 So print equation layout solutions for the web have existed for a long time.
 
 Are they perfect? No.
 
-Are they still getting better? Hell yes - all the time. The ever evolving CSS continues to make things easier (grids, container queries, variable fonts, layers!). SVG is just rock solid (for these purposes; and it improves, too).
+Are they still getting better? Emphatically yes - all the time. The ever evolving CSS continues to make things easier (grids, container queries, variable fonts, layers!). SVG is just rock solid (for these purposes; and it improves, too).
 
 The most significant CSS challenge at this point are stretchy character constructions - not a massive problem and one that could (and should) be solved independently of any "mathematical" considerations since stretchy constructions are frequently used in other design scenarios (e.g., stretchy braces around lists are pretty common design patterns).
 
@@ -123,7 +123,9 @@ In the nice-to-have category (for me), better control over glyph bounding boxes 
 
 Now some people argue that the CSS and SVG layout solutions like MathJax generate "convoluted" markup output. This is a red herring.
 
-On the on hand, convoluted XML is not "better" if it says "math" in it. On the other hand, nobody from CSS or SVG (spec) land has ever tried to help. Simply put: the output looks a lot like Bootstrap's grid layout inits early days - damn right they were convoluted - or an accessible datepicker markup today - extremely convoluted. In other words: it looks the way it looks to get the job done. And it does. And if print equation layout tools for the web would be heard the same way grid frameworks were heard, we'd get less convoluted output easily AND in a way that benefits the entire web stack.
+On the on hand, convoluted XML is not "better" if it says "math" in it. On the other hand, nobody from CSS or SVG (spec) land has ever tried to help. Simply put: the output looks a lot like Bootstrap's grid layout in its early days (somewhat convoluted) or an accessible datepicker markup today (extremely convoluted). In other words: it looks the way it looks to get the job done. And it does. And it gets simpler every year. 
+
+If print equation layout tools for the web were heard the same way grid frameworks were heard way back when, we might get simpler output even quicker *and* in a way that benefits the entire web stack. But in a world of div-soup SPA's I think this argument is a red herring. 
 
 #### interlude
 
@@ -151,7 +153,7 @@ I think print equation layout is a thoroughly bad fit, building it into the web 
 
 Even the simplest examples, we run into "fun" traditions that are problematic. The easiest to understand are the many text-dependent behaviors, i.e., layout behavior that changes depending on the specific text nodes present (beyond the obvious layout changes from having different text nodes).
 
-The simplest example is probably: single letter variables are italic, multi-letter ones are upright. This is pure tradition, i.e., something a lot of people like to do. Obviously people sometimes don't do this. Obviously, there's no technical difficulty to make this happen. And yet as a feature it is weirdly different from any other text rendering features we have.
+The simplest example is probably: single letter variables are italic, multi-letter ones are upright. This is pure tradition, i.e., something a lot of people like to do. Obviously people sometimes don't do this. Obviously, there's no technical difficulty to make this happen as an author / authoring tool. But as a feature for the web it is weirdly different from any CSS/text rendering features we have; that's just not how styling text works.
 
 A more complex example are moveable limits. For example the expression `\sum_{i=0}^\infty` would, at plain view, indicate we get Σ (sigma) with a subscript of "i=0" and a superscript of ∞.
 
@@ -165,52 +167,59 @@ $$\sum_{i=0}^\infty$$
 
 This is of course convenient from an authoring perspective - you can switch modes as you like, thus macros / copy&paste are much easier.
 
-However, from a web design perspective it is a wild thing. Not the change as such (of course children change when a container switches from inline to block). But when you replace `\sum` with something else (say an "S" for "sum"),you will suddenly not get this behavior anymore.
+However, from a web design perspective it is a wild thing. Not the change as such (of course children change when a container switches from inline to block). But when you replace `\sum` with something else (say an "S" for "sum"), you will suddenly not get this behavior anymore.
 
-From a layout perspective, this automatism wouldn't have to be builtin, but of course MathML, as a print equation layout system, builds it in. This means, we have intentionally ambiguous layout instructions.
+From a layout perspective, this automatism wouldn't have to be builtin, but of course MathML, as a print equation layout system, builds it in. This means, we have intentionally ambiguous layout instructions that change rendering depending on text content. This very weird from the perspective text layout on today's web.
 
 From this we can take a step up and talk about the operator dictionary. Remember when I spoke about 1+1=2 not being the hard problem. Guess again, we made it hard!
 
 [I mean, what do you expect? There's a reason why [movies](https://knowyourmeme.com/memes/zach-galifianakis-math) will visually indicate something is difficult beyond comprehension by showing print equations layouts; even [memes about confusion](https://knowyourmeme.com/memes/math-lady-confused-lady) get more popular when you add equations to!]
 
-Naturally, there are traditions around how you space things. 1+1=2? 1+1 = 2? 1 + 1 = 2?Or something more subtle? There are many traditions like this, the most well known being captured in Knuth's TeX book.
+Naturally, there are traditions around how you space things. 1+1=2? 1+1 = 2? 1 + 1 = 2? Or something more subtle? There are many traditions like this, the most well known being captured in Knuth's TeX book.
 
-But that's just it - they are traditions. And people can and do (and should!) deviate from them. If there's one thing I've learned working in mathematical publishing production for a few years it's that authors are full of ideas for how these traditions should change.
+But that's just it - they are traditions. Traditions, based on [Knuth's review](https://www.ams.org/journals/bull/1979-01-02/S0273-0979-1979-14598-1/) of Western (and mostly English language) publications from the late 19th and 20th century. 
 
-I mean, look at [this weird theorem layout from 1940](https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms/19.73_Part_1.28); thank goodness that didn't catch on.
+And people can, do, and  should deviate from traditions. If there's one thing I've learned working in mathematical publishing production, it's that authors are full of ideas for how these traditions should change (most are bad, some are genuinely good, sometimes the worst ones are the best).
 
-Instead of giving them the tools that allow adjustments, most print equation layout systems (and MathML in particular), only hand them spacing hacks. Compare this to CSS where we have benefited from a system that allows resets and customization clearly and cleanly; in comparison, a paradise of tools for designers, authors, and developers. 
+I mean, look at [this weird theorem layout from 1940](https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms/19.73_Part_1.28):
 
-None of this is to say that there aren't interesting aspects of print equation layout that are worth a look for the web; something as basic as multiscripts or something as complex as stretchy glyphs. But bringing them in a way that drags the baggage of 100 years of print equation layout along is an obviously stupid idea (that can be explained but hardly forgiven). The MathML fanboys want this ability to be limited to internal magic of MathML implementation, relying on Open Type MATH tables, a technology developed exclusively for MS Word and only years later proposed to Open Type properly to help, well, the MathML fanboys to make the case that "it's a standard". Even ignoring the troublesome history, it would limit a rather lovely concept used throughout design-just search dribble or codepen for curly braces-to supposedly "mathematical" markup. This is quite silly especially since even basic uses case won't actually be possible this way (e.g., a stretchy brace around a list would still be invalid). Any which way, we still need an alternative.
+![screenshot of a theorem statement, spliting up lines into sublines to give simultaneous statements of multiple cases](/assets/2022/LMS_theorem.png)
 
-Stretchy characters are also a weirdly terrible tradition: to stitch together glyph pieces to form something else. Of course it makes sense in a print setting - you work with what you got (just like you re-use typefaces left right and center). But what do people use stretchy character for? It is actually a very simple concept: a border. Yes, the specifics of the border style may carry some (contextual) meaning, but that's not special for borders in general. The main layout purpose is very specifically to separate a chunk of layout that benefits from a border on two (or more) sides of its box. That's all there is to it. It's even in the name: these are commonly called "fences" (mathml 3 even has an mfenced element, may it rest in pieces). A fence is something to mark a border. 
+Thank goodness that style didn't catch on.
 
-So why not rethink this in the context of the web? Why carry over a silly tradition (which, let's be clear, is actually much worse: fonts will have multiple sizes of fences and those will be used if the box is just small enough). We have so many useful ways to indicate that something is grouped together in the web, we have traditions around it too (e.g., hover, focus, target effects, easily shaded backgrounds to indicate depth), some of which are problematic for other reasons. We have a dynamic medium that allows you to only expose the gnarly information like this when a user actually require it instead of on-the-nose all the time. Random fact: stretchy braces in fact do not increase by just nesting. They stretch only to match the contents, thus in a double parentheses situation (like `((...)+(...))`) they will not grow, thus not actually represent the full complexity. That's shitty but understandable in the limited real estate of print products.
+Instead of giving them the tools that allow adjustments, most print equation layout systems (and MathML in particular), only hand them spacing hacks. This may be fine for print where, in the end, you just want to put some ink on a canvas and noone can see your hackery. On the web, the structural damage is apparent and causes numerous issues (e.g., performance, accessibility). Compare this to CSS where we have benefited from a system that allows resets and customization clearly and cleanly; in comparison, a paradise of tools for designers, authors, and developers. 
 
+None of this is to say that there aren't interesting aspects of print equation layout that are worth a look for the web; something as basic as multiscripts or something as complex as stretchy glyphs. But bringing them in a way that drags the baggage of 100 years of print equation layout along is an obviously stupid idea (that can be explained but hardly forgiven). 
 
-And of course it's funny how even if you insist on a fonts-based alternative there's already a solid alternative to build upon today: variable fonts can do wonderful stretchy things and can obviously solve this problem. Just without the, the magic developers cannot control.
+Stretchy characters are also a weirdly terrible tradition: to stitch together glyph pieces to form something else. Of course it makes sense in a print setting - you work with what you got (just like you re-use typefaces left right and center). But what do people use stretchy character for? It is actually a very simple concept: a border. Yes, the specifics of the border style may carry some (contextual) meaning, but that's the case with most borders in general. The main layout purpose is very specifically to separate a chunk of layout that benefits from a border on some sides of its box. That's all there is to it. It's even in the name: these constructions are commonly called "fences" (mathml 3 even has an `mfenced` element, may it rest in pieces). A fence is a separator (ARIA pun intended), something to mark a border.
 
-If you move away from the silliness that you need to reproduce print, you'll find that you can solve more problems. For example: asymmetrical stretchiness. It's perfectly normal and in many situations much better structure to have a cases situation but the part before it is on the same line as the first case. You can't do that. You can hardly to it in TeX
+The MathML people want the ability to build stretchy characters to be limited to internal magic of MathML implementations in browsers, relying on low-level access to Open Type MATH tables without doing the hard work of surfacing this complex technology to userland. This technology has somewhat problematic history in itself. The extensions was developed by Microsoft exclusively for Word and only years later proposed to Open Type properly to help, really, the MathML people to make the case that "it's a standard". There are only a handful of fonts around because they are so incredibly complex (read: expensive) to create. 
 
-The operator dictionary is another good example for this. Doing layout based on text content is an interesting topic - we've had years of debates around aligning table cells at decimals. Yet trivial spacing like this - which authors want to customize anyway - is just a bit silly.
+Even ignoring the troublesome history, this approach limits a rather lovely concept used throughout design (just search dribble or codepen for curly braces) to supposedly "mathematical" markup and layout. It is quite silly especially since even basic uses case won't actually be possible this way (e.g., a stretchy brace around a list would still be invalid). Any which way, we still need an alternative.
 
-As related and similarly bad example are math alphabets. They are pretty mad to begin with; they are fontface traditions, captured as Unicode codepoints.
+So why not rethink this in the context of the web? Why carry over a silly tradition (which, let's be clear, is actually much worse: fonts will have multiple sizes of fences and those will be used if the box is just small enough). We have so many useful ways to indicate that something is grouped together in the web, we have traditions around it too (e.g., hover, focus, target effects, easily shaded or animated backgrounds to indicate depth), some of which are problematic for other reasons. We have a dynamic medium that allows you to only expose the gnarly information like this when a user actually require it instead of on-the-nose all the time. Random fact: stretchy braces in fact do not increase by just nesting. They stretch only to match the contents, thus in a double parentheses situation (like `((...)+(...))`) they will not grow, thus not actually represent the full complexity. That's understandable in the limited, fixed page sizes of print products. It also forces authors to do silly hacks to get additional dimensions should they want to communicate differently than tradition allows for.
 
-This does make some sense for print because (in a twist that should not be a surprise) it turns out that these glyphs have grown their own requirements. For example, Greek character glyphs tend to need special shapes for mathematical context than for Greek texts. In the mash up of technology limitations that is print equation layout these glyphs serve contradicting roles: be identifiably different but fit nicely with the Latin glyphs. This leads to really weird design quirks, see for example [From Unicode to Typography, a Case Study: the Greek Script" by Yannis Haralambous](https://read.somethingorotherwhatever.com/entry/Haralambous1999) (tip of the hat to Christian's wonderful Interesting Esoterica).
+And of course it's funny how even if you insist on a fonts-based alternative there's already a solid alternative to build upon today: variable fonts can do wonderful stretchy things and can obviously solve this problem. Just without magic and with control in the hands of authors.
 
-The recent addition of math calligraphic scripts to unicode (while unsurprising given the people involved) is weird to me because authors will not and do not stop. The other day, we had a paper with runes come through production TODO. Should we add "math runes" to Unicode next? And what about [David Griffith's script r](https://github.com/stipub/stixfonts/issues/221), does he get a codepoint for himself? What about math emoji? And what about math alphabets when they're in text mode - do they have special meaning, too? (Other than making horribly inaccessible social media profiles?)
+If you move away from the silliness that you need to reproduce print tradition, you'll find that you can solve more problems. For example, [asymmetrical or partially colored stretchy constructions](/0204/). It's perfectly reasonable to have a `\begin{cases}` environment but want the part before it on the same line as the first case. You can't do that with Open Type MATH tables. You can [hardly do it in TeX](https://tex.stackexchange.com/questions/226155/a-curly-brace-with-an-asymmetric-cusp/226162).
 
-[It is worthwhile to note that in recent years the AMS has been leveraging a re-interpretation of those rulesets by adopting xelatex which focuses on equation layout using open type math table fonts (STIX2) which in turn was designed for Microsoft Word when they built their print equation layout facilities (again, following the TeX book yet frequently differently, making it hard to know if the bug is in the font, in MS Word, or in xelatex).]
+The operator dictionary is another good example for this. Doing layout based on text content is an interesting topic - we've had years of debates around aligning table cells at decimals. For trivial spacing changes around elements - which authors want to customize anyway - it seems just a bit silly.
 
-On a slightly higher level, we have traditions such as labeled equations. They are surprisingly complicated in themselves. For example, most systems will provide authors flexibility in aligning or auto-numbering them, they may be mixed with other constructs (such as stretchy characters, e.g., in the LaTeX package cases or empheq). In some print equation layout systems they'll be realized via table-like primitives, in some via lower level primitives (horizontal fills, floats etc). 
+As related and similarly bad example are math alphabets. They are pretty mad to begin with; they are fontface traditions, captured as Unicode codepoints. This does make some sense for print because (in a twist that should not be a surprise) it turns out that these glyphs have grown their own requirements. For example, Greek character glyphs tend to need special shapes for mathematical context than for Greek texts. In the mash up of technology limitations that is print equation layout these glyphs serve contradicting roles: be identifiably different but fit nicely with the Latin glyphs. This leads to really weird design quirks, see for example [From Unicode to Typography, a Case Study: the Greek Script" by Yannis Haralambous](https://read.somethingorotherwhatever.com/entry/Haralambous1999) (tip of the hat to Christian's wonderful Interesting Esoterica).
 
-It also gets complex when you look to integrate equations into surrounding content. Print (equation) layout systems tend to treat equation layout as starting an entirely different context; the break is fairly absolute, both for inline and block layout (even if in different ways). This doesn't fit well with the web's DOM and CSS's box model however. For example, equations tend to have break out of all context and align to some global property, in particular their labels. So a block equation in a list will simply break out of everything and potentially place a label at a far end of the line. This fits very badly into the web's layout model(s). 
+The recent addition of math calligraphic scripts to unicode (while unsurprising given the people involved) is weird to me because authors will not and do not stop. The other day, we had a paper with runes come through production. Should they add "math runes" to Unicode next? And what about [David Griffith's script r](https://github.com/stipub/stixfonts/issues/221), does he get a codepoint all for himself? What about math emoji? And what about math alphabets when they're in text mode - do they have special meaning, too? (Other than making horribly inaccessible social media profiles?) [Aside, there is a direction where I could see Unicode actually help, just like it does with emoji: codepoints for actual mathematical concepts that are usually represented as a single grapheme. Indeed, the history of some math alphabets hints at this, e.g., the few [blackboard bold](https://en.wikipedia.org/wiki/Blackboard_bold) symbols that are in the Basic Multilingual Plane.]
+
+It is worthwhile to note at this point that in recent years more and more TeX users (including the AMS) have been leveraging a re-interpretation of Knuth's rulesets by adopting xelatex which realizes equation layout using Open Type MATH Table fonts which in turn was designed for Microsoft Word when they built their print equation layout facilities alongside a first font from Tiro. While Microsoft and Tiro followed the TeX book there are frequently noticeable differences, making it hard to know if the bug is in the font, in MS Word, or in xelatex.
+
+On a slightly higher level, we have traditions such as labeled equations. They are surprisingly complicated in themselves. For example, most systems will provide authors flexibility in aligning or auto-numbering them, they may be mixed with other constructs (such as stretchy characters, e.g., in the LaTeX package cases or empheq). In some print equation layout systems they'll be realized via table-like constructs, in some via lower level primitives (horizontal fills, floats etc). 
+
+It also gets complex when you look to integrate equations into surrounding content. Print (equation) layout systems tend to treat equation layout as starting an entirely different context; the break is fairly absolute, both for inline and block layout (albeit in different ways). This doesn't fit well with the web's DOM and CSS's box model however. For example, equations tend to have break out of all context and align to some global property, in particular their labels. So a block equation in a list will simply break out of everything and potentially place a label at a far end of the line. This fits very badly into the web's layout model(s). 
 
 Next step up you'll find alignment across equations. A common feature in print layout engines with equation support (e.g., amsmath's intertext). Should we enable these kinds of traditions? Maybe; I do think this last one is fascinating. Should we do it by replicating print (equation) layout traditions? That sounds rather ludicrous to me.
 
-Another problematic print tradition lies in inheritance. Traditionally, print equation layout will work as a reset. E.g., in TeX math mode will not inherit surrounding text styles or weight. Why? Well, because that would change the "meaning" because you're abusing style and weight: if you use a normal V and a bold V for two different concepts, then naturally in a bold heading you'll run into trouble. On the web, we see other traditions to surface; people find it very irritating if a fraction is not bold inside a heading). A very real problem happens if a link starts or ends with print equation layout which is suddenly no longer styled like a link (e.g., neither blue nor underlined). That's a real problem for users. But purists will insist - and they are wrong, at the expense of users. [Fun fact: that's why I personally prefer SVG with paths instead of characters/glyphs when reproducing print equation layout on the web. It's more honest to the print content and happens to avoid this problem with ease.]
+Another problematic print tradition lies in inheritance. Traditionally, print equation layout will work as a reset. E.g., in TeX math mode will not inherit surrounding text styles or weight. Why? Well, because that would change the "meaning" because you're abusing style and weight: if you use a normal V and a bold V for two different concepts, then naturally in a bold heading you'll run into trouble. On the web, we see other traditions to surface; for example, people find it very irritating if a fraction is not bold inside a heading. A very real problem happens if a link starts or ends with print equation layout which is suddenly no longer styled like a link (e.g., neither blue nor underlined). That's a real problem for users (and possibly failing one or more WCAG SCs). Purists will insist - and they are wrong, at the expense of users. [Fun fact: that's why I personally prefer SVG with paths instead of characters/glyphs when reproducing print equation layout on the web. It's more honest to the print content tradition and happens to avoid many of these problems with ease.]
 
-Related: of course there's an exception: when there's text mode inside math mode. tThat text mode can inherit, so that text in a piece of equation layout is, e.g., italic if the text surrounding the equation layout is italic (e.g., in a definition). Does this lead to confusion? You bet.
+Of course there's yet another exception. In TeX for example, when you nest text mode inside math mode, that "inner" text mode can inherit. This means text in a piece of equation layout ends up, say, italic if the text surrounding the equation layout is italic (e.g., in a definition). Does this lead to confusion? You bet.
 
 ### To recap 
 
@@ -224,39 +233,38 @@ Let's talk about ambiguity.
 
 ### A different example
 
-Let's start with a different example, [musical notation](https://en.wikipedia.org/wiki/Musical_notation). In modern notation, a note is about as ambiguous on its own as a[grapheme](https://en.wikipedia.org/wiki/Grapheme) in text. For example, without a staff and other context the note itself doesn't tell you much. You might know the value by looking at just the note but even then this might not be enough (e.g., if you happen to miss a subsequent dot or preceding accidentals). Even with a staff, you might still have trouble, e.g., if all you have is a single measure you might lack the key. Similarly for dynamics. Also, it might be part of music that ranges from Opera to Jazz and you'll want to know that to adjust your understanding.
+Let's start with a different example, [musical notation](https://en.wikipedia.org/wiki/Musical_notation). In modern notation, a note is about as ambiguous on its own as a [grapheme](https://en.wikipedia.org/wiki/Grapheme) in text. For example, without a staff and other context the note itself doesn't tell you much. You might know the value by looking at just the note but even then this might not be enough (e.g., if you happen to miss a subsequent dot or preceding accidentals). Even with a staff, you might still have trouble, e.g., if all you have is a single measure you might lack the key. Similarly for dynamics. Also, it might be part of music that ranges from Opera to Jazz and you'll want to know that to adjust your understanding.
 
 It's hard to know when you have all the relevant information. A piece may appear complete but lack information on, e.g., which instrument this is for, what other voices there might be.
 
 And this is for a fairly limited set of notational elements.
 
-Now expand this to the ever changing mathematical notation, then expand to engineering and sciences where there is no limit in generalization and specialization. \[Of course, musicians can easily discuss a single note as passionately and intricately as mathematicians discuss a single number. But while this is much more interesting, it is unfortunately not the topic here.\]
+Now expand this to the ever changing mathematical notation, then expand to engineering and sciences where there is no limit in generalization and specialization. [Of course, musicians can easily discuss a single note as passionately and intricately as mathematicians discuss a single number. But while this is much more interesting, it is unfortunately not the topic here.]
 
-### Mathematical examples
+### Some examples
 
-- a superscript 2 (e.g., $x^2, f^2, \sin^2$) - is probably some sort of "squared" thingie? But is that always true? How about $A_1^2$?
-- Binomial coefficient ("n choose k") cannot easily be distinguished from a 2-dim vector notation - $n \choose k$ vs $\left(\begin{smallmatrix}{} n \\ k \end{smallmatrix}\right)$    (similarly examples for [Stirlingnumber](https://en.wikipedia.org/wiki/Stirling_number) exist)
-- frequent use of space or punctuation to imbue layout with extra meaning   // to avoid having to add clarifying notation (e.g., `+a + -c + +b` vs, say, `++b` [https://whystartat.xyz/wiki/Space_is_significant](https://whystartat.xyz/wiki/Space_is_significant))- "(a,b)" - open interval? point in the plane? bilinear form in a Hilbert space?
+- a superscript 2 (e.g., $x^2, f^2, \sin^2$) - is probably some sort of "squared" thingie? But is that always true? How about $A_1^2$ or $f|^2$?
+- a binomial coefficient cannot easily be distinguished from a 2-dim vector notation - $n \choose k$ vs $\left(\begin{smallmatrix}{} n \\ k \end{smallmatrix}\right)$; similarly for [Stirling numbers](https://en.wikipedia.org/wiki/Stirling_number).
+- frequent use of space or punctuation to imbue layout with extra meaning or to avoid having to add clarifying notation (e.g., `+a + -c + +b` vs, say, `++b` [https://whystartat.xyz/wiki/Space_is_significant](https://whystartat.xyz/wiki/Space_is_significant))- "(a,b)" - open interval? point in the plane? bilinear form in a Hilbert space?
+- punctuation in general. If it's in the middle, is it just a separator as in $i, j \in \mathbb{N}$ or an operator as in $1-2$ or $1.2$? If it's at the end, is it part of the equation or actually text (a common sight in block expressions)
 - `[a]` might be the sign of a // `[c, d]` might be a matrix // `A[b]` might be a ring
 - `|...|` - absolute value, norm, determinant?
 - `|` - evaluation of definite integral (alternatively `[ ... ]` but that could also be a closed interval or a commutator)
-- what is the difference between $\begin{array}{|c|}x \\ y\end{array}$ and $\left|\begin{array}{c}x \\ y\end{array}\right|$
-- superscript -1. Is it an inverse? Just 1 over something ? A reverse operation? Some kind of transposition? So many meanings!
-- context, e.g., "d" in $(a + bx^3 + cx^2 + dx = 0)$ vs "d" in $\int f(x) dx$
+- what is the difference between $\begin{array}{|c|}x \\ y\end{array}$ and $\left|\begin{array}{c}x \\ y\end{array}\right|$ and how would you find out?
+- superscript -1. Is it an inverse? A "1 over something" ? A reverse operation? Some kind of transposition? An index for something enumerated by integers?
+- "d" in $(a + bx^3 + cx^2 + dx = 0)$ vs "d" in $\int f(x) dx$
 - uppercase delta $\Delta$ and the triangle symbol $\triangle$ can look surprisingly similar depending on the font.
-- the use of invisible operators (U+2062, U+2061) - where to even start?
+- invisible operators (U+2062, U+2061) - where to even start?
 
 For more "inspiration", check out [https://whystartat.xyz/wiki/Category:Ambiguities](https://whystartat.xyz/wiki/Category:Ambiguities)
 
-Another favorite of mine: the [Legendre symbol](https://en.wikipedia.org/wiki/Legendre_symbol)was first used before 1800) and yet apparently there's no decent way to read it out loud, see[https://mathoverflow.net/questions/15447/is-there-a-standard-way-to-read-the-legendre-symbol](https://mathoverflow.net/questions/15447/is-there-a-standard-way-to-read-the-legendre-symbol)
+An absolute favorite of mine is the [Legendre symbol](https://en.wikipedia.org/wiki/Legendre_symbol) which is obviously easy to confuse with a fraction that happens to have parenthesis (e.g., from reducing a more complex expression). It introduced before the year 1800 and yet, apparently, there's no dominant way to speak it, see [this MO discussions](https://mathoverflow.net/questions/15447/is-there-a-standard-way-to-read-the-legendre-symbol).
 
-We can also go the other way around. 
+We can also go the other way around. We can have the same voicing for different notations. `|A|` and `det(A)` may read "determinant of A"; both `exp(x)` and`e^x` may read as "exponential function at x". How would a non-visual user know which notation was used when someone said this?
 
-We can have the same voicing for different notations. `|A|` and `det(A)` may read "determinant of A"; both `exp(x)` and`e^x` may read as "exponential function at x". How would a non-visual user know which notation was used when someone said this?
+A separate problem are the math alphabets, i.e., the abuse of using typefaces to identify different, context-dependent concepts. It seems so easy to - visually - discern italic from normal, serif from sans-serif, gothic from Sütterlin - well, in truth it is not that easy but here we are anyway. In addition, foreign alphabets are abused so much that mathematics has become reliant on particular typeface designs as mentioned earlier.
 
-A separate problem is the abuse of the alphabet in varying typefaces to convey context-dependent meaning. It's so easy to - visually - discern italic from normal, serif from sans-serif, gothic from Sütterlin - well, in truth it is not that easy but here we are anyway. In addition, foreign alphabets are abused so much that mathematics has become reliant on particular typeface designs (cf. [this source](http://web.archive.org/web/20120229131933/http://omega.enstb.org/yannis/pdf/boston99.pdf)).
-
-The noise when differentiating these ("Upper German X") for non-visual users is immense - or more often: the silence is immense.
+For non-visual users, these then have to be differentiated (otherwise you're no better than a "read more" link) and the noise ("Upper Gothic X")  is immense - or more often: the silence is immense.
 
 And then we haven't even opened the box of notation that's specific to engineering, physics and chemistry but realized using print equation layout.
 
@@ -282,33 +290,37 @@ The latter is certainly easier and happens to be how humans speak.
 
 However, print equation layout does not offer such semantic information. Therefore, solutions turn to guesswork aka [heuristics](https://en.wikipedia.org/wiki/Heuristic).
 
-These heuristics work reasonably ok for school-level print equation layout and some, more "stable" parts of college education (e.g.,engineering). But they easily and frequently fail even in these areas.
+These heuristics work barely for school-level print equation layout and some, more "stable" parts of college education (e.g., engineering). But they easily and frequently fail even in these areas.
 
-TODO EXAMPLES?
+To come back to our examples: yes, that superscript 2 is very likely "squared" but then again it is, inevitably, far from always "squared". As usual, [xkcd has you covered on the subject of "2"](https://xkcd.com/2614/) ([cc-by-nc 2.5](https://creativecommons.org/licenses/by-nc/2.5/)):
 
-To come back to our examples: yes, that superscript 2 is very likely "squared" but then again it is, inevitably, far from always "squared". As usual, [xkcd has you covered on the subject of "2"](https://xkcd.com/2614/).
+![xkcd no. 2614, outlining what the number 2 might mean, depending on placement in sup/sub/pre/post/under/over scripts](https://imgs.xkcd.com/comics/2.png)
 
-Beyond the evident lack of semantics in print layout per se, the second problem is the lack of contextual information. While MathJax won a Simons grant a while back to allow research into the problem, no existing solution takes even other equations into account (e.g., try to guess what a variable that was used earlier might represent later). They surely do not try to analyze the whole document context (e.g., [Bra-Ket notation](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation) in physics, P(X) in statistics, various arrows in category theory, operations in tropical geometry, or, again, the Legendre symbol).
+Beyond the evident lack of semantics in print layout per se, the second problem is the lack of contextual information. While MathJax did some Simons-funded research into the problem, no existing solution takes even other equations into account (e.g., using the guess for a variable that was used earlier). 
 
-In simplest terms: think about `f(g+h)(x)`. Most mathematicians would agree that there's a good chance that there's a function application (at x) happening but it could also just be a multiplication with x after some calculations within the parentheses, who knows. Fairly limited contextual checks can probably help out here but without them we're lost.
+Heuristics definitely do not try to analyze the whole document context to trigger specialized heuristics despite the many obvious advantages. Just by field, you can differentiate a lot - $X\perp Y$ in statistics vs geometry, [Bra-Ket notation](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation) in quantum mechanics, arrows in category theory, or (again) the Legendre symbol in number theory. Even outside subject-specific traditions, this could help, e.g., if you can identify a definition, it helps quite a bit later on. You know, like a human reader.
+
+The simplest examples can show how tricky this is. Think about `f(g+h)(x)`. You might agree that there's a good chance that there's a function application (at x) happening but it could also just be a multiplication with x after some calculations within the parentheses, who knows. Fairly limited contextual checks can probably help out here but without them we're lost.
 
 What's worse: today's heuristics also often do not work within an equation, e.g.,
 
-`|A| = {\begin{vmatrix} a&b \\ c&d \end{vmatrix}} = ad-bc.`
+$$\operatorname{det}(A) = |A| = {\begin{vmatrix} a&b \\ c&d \end{vmatrix}} = ad-bc.$$
 
-Speech Rule Engine's heuristics (again, the best around) will identify the middle part as a matrix determinant but still treats `|A|` as absolute value. And in fairness, A might still be some poorly named scalar.
+Speech Rule Engine's heuristics (again, the best around) will identify the middle part as a matrix determinant but still treats `|A|` as absolute value. And in fairness, if we didn't have the first part, that A might still be some poorly named scalar.
 
 Here's another real world example:
 
 $$\begin{aligned} & u_2(t,x) \\  & {}= \frac{2}{t^{1/2}}. \operatorname {Re} \left( \left( \tilde{\Psi }(y) ( \log t + \log \sqrt {1-|y|^2}) +\tilde{\Phi }_2 (y) \right)\right.  \\ & \quad \left. \left. \times \exp \left(it\sqrt {1-|y|^2} +i\Psi (y) \log t \right) \right)\right|_{y=\frac{x}{t+2B}}\\ & \quad + O(t^{-\frac{3}{2}+c\delta }) \end{aligned}$$
 
-This is perfectly understandable authoring from a print author perspective - your line is fixed and limited, you'll need to break things up. Since you're in print (and you want alignments to work), you push pieces into a table. Note how the parenthetical expression starting after `Re` ends in another table row. How should heuristics work out this grouping? The answer is: probably not.
+Note how the parenthetical expression starting after `Re` ends in another table row. This is perfectly understandable authoring from a print author perspective - your line is fixed and limited, you'll need to break things up. Since you're in print (and you want alignments to work), you push pieces into a table. 
 
-Another interesting example is the treatment of horizontal and vertical space. "Clearly", if you find `$(a \quad b)$` and `$(a\ b)$` near each other, they're different, right? But what can heuristics realistically do here? 
+How should heuristics work out this grouping? The answer is: probably not.
 
-Print equation layout uses positive and negative space abundantly and often confusingly. Some authors like things spaced out where others like them tightened up. This makes it impossible to leverage space in heuristics. As a consequence, space is not to be messed with. [This also creates problems if you're mistakingly thinking print equation layout is text - because WCAG 1.4.12 would then force you to allow users to change word and letter spacing. Remember, [Space is significant](https://whystartat.xyz/wiki/Space_is_significant).]
+Another interesting example is the treatment of horizontal and vertical space. "Clearly", if you find `$(a \quad b)$` and `$(a\ b)$` near each other, they're different, right? But what can heuristics realistically do here? Especially, when they only work on a single expression? [Aside: I give the source here - SRE would indeed give the same descriptions for these expressions.]
 
-Similarly, one of the most important visual tools is completely absent from non-visual presentation: the size of stretchy glyphs. This is sad because the whole reason we use stretchy constructions in the first place is to make layout more accessible for users. Stretchy constructions indicate both grouping and the complexity of subexpressions. Authors frequently use it to explicitly highlight subexpressions because they realize their complexity. And yet despite their focus on layout, non-visual presentations provide no access to this information; there is no representation of stretchiness let alone the relative dimensions. The most you can hope for is Speech Rule Engine's ability to summarize a subexpression (along the lines of "a sum of 16 summands"). Good grouping informs users but there's a significant benefit to a stretchy character: the larger it is, the more crap is going to be inside whatever it groups - to the point where they can be downright scary. They are critical information.
+Print equation layout uses positive and negative space abundantly and often confusingly. Some authors like things spaced out where others like them tightened up. This makes it impossible to leverage space in heuristics. As a consequence, space is not to be messed with. [This also creates problems if you're mistakingly thinking print equation layout is text - because WCAG 1.4.12 would then force you to allow users to change word and letter spacing. In the end, [space is significant](https://whystartat.xyz/wiki/Space_is_significant).]
+
+Similarly, one of the most important visual tools is completely absent from non-visual presentation: the size of stretchy glyphs. This is sad because the whole reason we use stretchy constructions in the first place is to make layout more accessible for users. Stretchy constructions indicate both grouping and the complexity of subexpressions. Authors frequently use it to explicitly highlight subexpressions because they realize their complexity. And yet despite their focus on layout, non-visual presentations provide no access to this information; there is no representation of stretchiness let alone the relative dimensions. The most you can hope for is something like Speech Rule Engine's ability to summarize a subexpression (along the lines of "a sum of 16 summands"). Good grouping informs users but there's a significant benefit to a stretchy character: the larger it is, the more crap is going to be inside whatever it groups - to the point where they can be downright scary. They are critical information.
 
 Frequently,  people (especially in the MathML community) promise magical semantics from print equation layout. Yet when faced with the obvious, plentiful, and unsolvable problems, the goal post is casually moved to "you need to give layout information" only so that when you provide layout information, people go back to "oh, that's not the idea, you should provide semantics".
 
@@ -320,41 +332,41 @@ There are both theoretical and practical problems arising from print layout trad
 
 #### Theoretical
 
-Print equation layout has some traditions that add another layer of problems.
+Besides the fundamental issues outlined above, print equation layout has some traditions that add another layer of problems.
 
-For example, there is the concept of moveable limits. For example the expression
+For example, we go back to the concept of moveable limits. The expression
 
 `\sum_{i=0}^\infty`
 
-would, at plain view, indicate we get Σ with a subscript of "i=0" and a superscript of ∞.
+would, at plain view, indicate we get `Σ` with a subscript of `i=0` and a superscript of `∞`.
 
-However, this depends on the mode. In inline math mode, TeX will lay this out as described. In display math mode, the sub- and superscripts will become under- and overscripts.
+However, this depends on the mode. In inline math mode, TeX will lay this out as described. In display math mode, the sub- and superscripts will become under- and overscripts. This is of course convenient from an authoring perspective - you can switch modes as you like, thus macros / copy&paste are much easier.
 
-This is of course convenient from an authoring perspective - you can switch modes as you like, thus macros / copy&paste are much easier.
+This automatism wouldn't have to be built into a system from a purely functional/layout point of view; it's authoring convenience. Of course, MathML builds it in to be compatible with print equation layout traditions for which it was designed. In fact, it adds the (ever growing) operator dictionary to describe various layout rules like this instead of focusing on just the necessary parts of layout.
 
-From a layout perspective, this automatism wouldn't have to be builtin, but weirdly, MathML builds it in. In fact, it has a separate operator dictionary which describes various layout rules instead of focusing on just the necessary parts of layout.
+This means, we have intentionally ambiguous layout instructions and that's tricky for heuristics to work - yet another context to check. [For once, that's not terribly weird for the web but media and container queries separate this much more cleanly - and they are separate from any semantic interpretation.]
 
-This means, we have intentionally ambiguous layout instructions.
-
-As a result, heuristics cheat in a non-visual context to make this ambiguity go away. Simply say "sum from ... to" - tada, problem solve! But of course now you have three new problems: a) what if it isn't a sum?b) what if it is a sum but using a different character for the summation operator?c) what if the authors want to use side- and overscripts to mean different things?
+So what do heuristics with such ambiguous layout? They cheat to make this ambiguity go away. When voicing, simply say "sum from ... to" - tada, problem solved! Of course now you have 3 new problems: a) what if it isn't a sum? b) what if it is a sum but using a different character for the summation operator?c) what if the authors want to use side- and overscripts to mean different things?
 
 #### Practical
 
-Given the nature of print products, authors are prone to abuse layout.
+Given the nature of print products, authors are prone to abuse layout instructions. In the end, it has to look good, who cares how they got there.
 
-For example
+For example, authors frequently make their content work purely visually, placing elements side-by-side, relying on the fixed positions of print layout.
 
-Authors frequently make their content work purely visually, placing elements side-by-side, relying on the fixed positions of print layout.
-
-They will use tabular layout to split content apart so that it can fit page dimensions (e.g., complex break up across lines), thereby making it impossible to reflow in a dynamic environment and group correctly in anon-visual semantic analysis.
+They will use table layout to split content apart so that it can fit page dimensions (e.g., complex breaks across lines), thereby making it impossible to reflow in a dynamic environment and group correctly in anon-visual semantic analysis.
 
 Reversely, they will space content out to fill a page, impeding reflow or resizing in dynamic environments.
 
-They may "accidentally" rely on TeX's defaults, e.g., consecutive display math blocks may align if those blocks are generally centered (rather than explicitly grouped by aligned blocks); yet with different alignment defaults, the alignment may fail unexpectedly. (Similarly with multi-line environments or other manual and/or automatic line breaks.)
+They may "accidentally" rely on TeX's defaults, e.g., consecutive display math blocks may align if those blocks are generally centered (rather than explicitly grouped by aligned blocks); yet with different alignment defaults, the alignment may fail unexpectedly. Similarly with multi-line environments or other manual and/or automatic line breaks.
+
+All of this makes it even harder for heuristics.
+
+I want to stress that these are not bad practices - many of them have long and detailed traditions (e.g., commutative diagrams). They are simply print traditions with no consideration for the web, let alone accessibility. 
 
 ### interlude
 
-On the web (and in many publishing content / production pipelines),abusing HTML markup is frequently favored (i.e., text superscripts, tables, simple vertical alignments) alongside low quality (usually GIF)rendering for inline math and high-quality (usually PNG) for display content. Frequently, only the 'problematic' parts are rendered as images leading to poor layout (e.g., tables with some equational content and a text label in lieu of properly labeled equational content).
+On the web (and in many publishing content / production pipelines), abusing HTML markup is frequently favored (i.e., text superscripts, tables, simple vertical alignments) alongside low quality (usually GIF) rendering for inline math and high-quality (usually PNG) for display content. Frequently, only the 'problematic' parts are rendered as images leading to poor layout (e.g., tables with some equational content and a text label in lieu of properly labeled equational content, HTML scripts with graphics in either base or script position). Accordingly, content providers have a long history of "optimizing" their content for these approaches (e.g., STEM publishers have really terrible XML workflows stripping out as much complex markup as possible). That content is in some ways lost forever (because it would be cost prohibitive to re-key it).
 
 ## Non-visual print equation layout
 
@@ -362,13 +374,13 @@ In several countries, print equation layout has some form of non-visual accessib
 
 The US traditions are dominating in this context since MathML was developed largely by US companies for a US audience.
 
-For print traditions in the US, the most well-known methods for non-visual presentation were developed by [Abraham Nemeth](https://en.wikipedia.org/wiki/Abraham_Nemeth) -the MathSpeak ruleset for voicing and the Nemeth Braille notation for tactile presentation. A critical point is that both sets were designed for human creation. MathSpeak, to enable a non-expert reader to read mathematical publications to blind users; Nemeth Braille for a specialist braille transcriber to transcribe (and a trained reader to read).
+For print traditions in the US, the most well-known methods for non-visual presentation for equation layout were developed by [Abraham Nemeth](https://en.wikipedia.org/wiki/Abraham_Nemeth) - nowadays known as the MathSpeak ruleset for voicing and the Nemeth Braille notation for tactile presentation. A critical point is that both sets were designed for human creation. MathSpeak, to enable a non-expert reader to read mathematical publications to blind users; Nemeth Braille for a specialist braille transcriber to transcribe (and a trained reader to read).
 
-If you can catch him, Volker Sorge (who implemented support for both as part of Speech Rule Engine and MathJax) is happy to go into much detail telling you how neither MathSpeak nor Nemeth Braille can be produced from input without extensive heuristics. The rulesets are in fact not properly specified and can be contradictoryVolker.
+If you can catch him, Volker Sorge (who implemented support for both as part of Speech Rule Engine and MathJax) is happy to go into much detail telling you how neither MathSpeak nor Nemeth Braille can be produced from input without extensive heuristics. The rulesets are in fact not properly specified and can be contradictory.
 
-My impression is that this is by design - these rulesets could assume a human orator/transcriber who can adjust rules on the fly to enhance the simplistic heuristics. Even without understanding mathematics, it's fairly easy to make a change on the fly, e.g., after initial feedback from the user that in this particular pattern the superscripted 2 is not "squared"but, say, a row or column vector.
+My impression is that this is by design - these rulesets could assume a human orator/transcriber who can adjust rules on the fly to enhance the simplistic heuristics. Even without understanding mathematics, it's fairly easy to make a change on the fly, e.g., after initial feedback from the user that in this particular pattern the superscripted 2 is not "squared" but, say, a row or column vector.
 
-It's probably worth noting that Nemeth Braille has not been revised since the 1970s (though a revision has finally started a few years back). It is a specialized Braille notation that describes visual layout and only partially linearizes the output (e.g., fractions and scripts are linearized while tabular structure are not), leading to many problems as contemporary refreshable braille displays for computers are single-line devices. And of course, if you're not a Braille user, then none of it helps you.
+It's probably worth noting that Nemeth Braille has not been revised since the 1970s (though a revision has finally started a few years back). It is a specialized Braille notation that describes visual layout and only partially linearizes the output (e.g., fractions and scripts are linearized while tabular structures are not), leading to many problems as contemporary refreshable braille displays for computers are single-line devices. And of course, if you're not a Braille user, then none of it helps you.
 
 ### heuristics are bad, non-recursive ones worse
 
@@ -402,7 +414,7 @@ Bugs range from mildly annoying to problematic to terrifyingly bizarre. I stoppe
 
 **Theoretically**: visual rendering is not actually specified (thought here is a new effort to change that, making all existing MathML renderers invalid and breaking content without care).
 
-This is where they are after 25 years of MathML, 15 years of MathML in HTML5, ~10years of MathML "support" in Firefox, ~8 years of MathML "support" inSafari, neither of which are due to actually Mozilla or Apple spending resources but co-opted volunteer efforts. No amount of Igalia newspeak will change that fact. [Apologies to all the great people I know at Igalia. But the MathML fanboys are not a good look for you all.]
+This is where they are after 25 years of MathML, 15 years of MathML in HTML5, ~10years of MathML "support" in Firefox, ~8 years of MathML "support" inSafari, neither of which are due to actually Mozilla or Apple spending resources but co-opted volunteer efforts. No amount of Igalia newspeak will change that fact. [Apologies to all the great people I know at Igalia. But the MathML people are not a good look for you all.]
 
 Optimistically, it will take a good decade to get reliable visual rendering quality. Certainly, CSS and SVG will move faster.
 
@@ -634,15 +646,15 @@ Springer's discontinued LaTeX search or zbmath's MathML based system are good ex
 
 Here's a very personal opinion: The MathML community has actively worked against progress for equation layout on the web, and mathematics as a larger issue.
 
-Why do I say this? Because anyone who has followed this area closely in the past decade (which, alas, is barely a handful of people) know that it's the MathML fanboys who insist that MathML must be implemented at all costs, actively damaging other approaches, even approaches with better results for users.
+Why do I say this? Because anyone who has followed this area closely in the past decade (which, alas, is barely a handful of people) know that it's the MathML people who insist that MathML must be implemented at all costs, actively damaging other approaches, even approaches with better results for users.
 
 To these purists, MathML is more important than users, authors, and browsers.
 
 As a result, projects that made actual progress (like MathJax, mathlive, hell - even KaTeX) are in danger of losing support from their communities because people are being told "you should use MathML". [Don't get me wrong, I can gripe about these projects but at least they move.]
 
-All the while, there's no indication that MathML development will speedup at all, even if Chrome ships the new, cut-down, incompatible spec.(Fun fact: Gecko removed perfectly functioning MathML 3 features. What kind of idiot breaks backwards compatibility on the web? MathML fanboys, that's who.)
+All the while, there's no indication that MathML development will speedup at all, even if Chrome ships the new, cut-down, incompatible spec.(Fun fact: Gecko removed perfectly functioning MathML 3 features. What kind of idiot breaks backwards compatibility on the web? MathML people, that's who.)
 
-So if you ever again complain about the lack of improvements in this space, blame the MathML fanboys. They are to blame. We could have made many small improvements to the platform that would have benefited everyone if the MathML fanboys hadn't killed everything that didn't suit them and drove away anyone who didn't agree with them.
+So if you ever again complain about the lack of improvements in this space, blame the MathML people. They are to blame. We could have made many small improvements to the platform that would have benefited everyone if the MathML people hadn't killed everything that didn't suit them and drove away anyone who didn't agree with them.
 
 Reversely, MathML is being held back where it actually shines - XML print production. There's so much useful print equation content to consider for XML workflows (tikz alone!); extendingMathML would be natural here. Instead, even the XML people get nothing (or worse - a cut down spec they can't use until JATS adopts it).
 
@@ -669,11 +681,11 @@ I think the web should not be confined to print equation layout. We should not w
 
 ## mathml future scenarios
 
-MathML is the zombie of web standards. Each decade brought 1 additional, differently broken implementation (first Firefox, then Safari, soon Chrome). The new cut down spec that will break a lot of content. The mathml fanboys have silently removed existing features from browsers (I'm guessing to be able to argue that they have 2 implementations of the new cut down "spec"); what an extremely unusual thing in browsers that just goes to show how few people use MathML. XML people will have "fun" with getting their garbage to work on the web in this scenario. Bugs in those three disjoint implementations are, of course, aplenty; I find a new one every time something forces me to look at native MathML implementations, some are ridiculously bad (wiping out HTML content is one of my favorites) and most bugs go for years without bugs even being filed (remember when Safari didn't draw fraction lines reliably for over a year? No, you don't because you don't use it and nobody even filed a bug).
+MathML is the zombie of web standards. Each decade brought 1 additional, differently broken implementation (first Firefox, then Safari, soon Chrome). The new cut down spec that will break a lot of content. The mathml people have silently removed existing features from browsers (I'm guessing to be able to argue that they have 2 implementations of the new cut down "spec"); what an extremely unusual thing in browsers that just goes to show how few people use MathML. XML people will have "fun" with getting their garbage to work on the web in this scenario. Bugs in those three disjoint implementations are, of course, aplenty; I find a new one every time something forces me to look at native MathML implementations, some are ridiculously bad (wiping out HTML content is one of my favorites) and most bugs go for years without bugs even being filed (remember when Safari didn't draw fraction lines reliably for over a year? No, you don't because you don't use it and nobody even filed a bug).
 
 For the web, the best case scenario is: nobody cares and nobody uses it. It will become the new font/center/marquee or whatever.
 
-Even if the mathml fanboys were interested in moving the layout facilities into CSS, we'll get, at best, something like CSS tables. If you don't know the "joy" of working with CSS tables: to this day they are not able to suitably realize HTML table layout, they were super buggy for the longest time and are still buggy in many edge cases (despite years of active improvements). But  most of all: people realized they actually needed something completely different, i.e., CSS grid.
+Even if the mathml people were interested in moving the layout facilities into CSS, we'll get, at best, something like CSS tables. If you don't know the "joy" of working with CSS tables: to this day they are not able to suitably realize HTML table layout, they were super buggy for the longest time and are still buggy in many edge cases (despite years of active improvements). But  most of all: people realized they actually needed something completely different, i.e., CSS grid.
 
 Accessibility wise, the shoddy implementations in JAWS and VoiceOver will continue to barely help English speaking blind users. Soiffer will try to push his weird MathPlayer clone into every AT so that he can continue to claim patently false things. No "intent" in the world will make print equation layout accessible in the sense of the web. Nemeth users might eventually get what they want - the rest? Not so much.
 
