@@ -7,13 +7,13 @@ latex: true
 prism: true
 ---
 
-This will possibly be another piece that will get updates in the future. Actually, I hope not but we'll see. This, above all, is for me. For me to gather my thoughts one (hopefully) last time. For me to deal with stupid garbage and stupid garbage people which have accumulated over the years. I'm not going into every detail, so if you don't follow, re-read the first few lines. If you want deeply detailed research results, feel free to contact my company - we do that kind of thing. Just don't be that guy complaining about free stuff.
+This will possibly be another piece that will get updates in the future. Actually, I hope not but we'll see. This, above all, is for me. For me to gather my thoughts one (hopefully) last time. For me to deal with stupid garbage which has accumulated over the years. I'm not going into every detail, so if you don't follow, re-read these first few lines. If you want deeply detailed research results, feel free to contact my company - we do that kind of thing. Just don't be that guy complaining about free stuff.
 
-This is also a lamentation. Nothing I write will change anything of what's to come. It's also (hopefully) a bit of mental cleansing. A few years ago I had strong burn-out symptoms due to working in this (as it turned out toxic) field. It takes a lot of effort for me to not be dragged down again. But one last time I want to try to write up where I've arrived after thinking about equation layout on the web for over 10 years now.
+This is also a lamentation. Nothing I write will change anything of what's to come. It is also (hopefully) a bit of mental cleansing. A few years ago I had strong burn-out symptoms due to working in this (as it turned out toxic) field. It takes a lot of effort for me to not be dragged down again. But one last time I want to try to write up where I've arrived after thinking about equation layout on the web for over 10 years now.
 
 ## Introduction
 
-10 years ago I joined the MathJax project, which forced me to think a lot about how to put equations on web pages. Actually, I had already spent quite a bit of time during my PhD and postdoc years thinking(\*cough\* procrastinating) about the same thing, albeit from a different perspective.
+10 years ago I joined the MathJax project, which forced me to think a lot about how to put equations on web pages. Actually, I had already spent quite a bit of time during my PhD and postdoc years thinking (\*cough\* procrastinating) about the same thing, albeit from a different perspective.
 
 When I started writing on the web all 13 years ago, I quickly went through a phase I've seen repeated by many people since:
 
@@ -27,7 +27,7 @@ usually followed by choosing jsMath (if you're old enough) and later MathJax bec
 
 After joining MathJax, my job was to profess the prowess of (read:blindly advertise for) MathML, so I did. That was largely because MathJax was formally part of Design Science at the time and they made money with MathML. Luckily, the project moved to the AMS where we could think about things more freely.
 
-When the whole Chrome 24 debacle happened, there was this one comment from a Googler (on Google+, naturally you might say). I can't find it anymore but what I recall them saying is: "maybe it's a good format but still a bad format for the web". I kept coming back to that thought fora few years and, eventually, came to agree with it. (This piece is basically summarizing that.)
+When the whole Chrome 24 debacle happened, there was this one comment from a Googler (on Google+, naturally you might say). I can't find it anymore but what I recall them saying is: "maybe it's a good format but still a bad format for the web". I kept coming back to that thought for a few years and, eventually, came to agree with it. (This piece is basically summarizing that.)
 
 In short, I realized that MathML is fundamentally a useful XML print publishing tool but a bad technology for the web. So I tried to pivot MathJax away from MathML and its toxic community towards actual web standards and their underlying principles. We wrote a whitepaper, got our sponsors on board, and started work on MathJax v3. (This is not what v3 became but that's ok. I left my position at MathJax around the first beta which was a thrill and I'm grateful that Davide and Volker enabled me to leave with that big leap forward having begun.)
 
@@ -39,7 +39,7 @@ All of this has led me to realize that there's a "deeper" problem and I feel lik
 
 ## Framing
 
-Framing is important. What I call "print equation layout" is more frequently called "math layout", "formula layout", or just "math"(I find that last one somewhat insulting). The phrase "print equation layout" may seem unnecessary or convoluted. To some degree, I agree. For example, I don't believe we have seen "web equation layout" come into existence during these first 30 years of the web. Nor, sadly, do I expect to see it in the next 10.
+Framing is important. What I call "print equation layout" is more frequently called "math layout", "formula layout", or just "math" (I find that last one somewhat insulting). The phrase "print equation layout" may seem unnecessary or convoluted. To some degree, I agree. For example, I don't believe we have seen "web equation layout" come into existence during these first 30 years of the web. Nor, sadly, do I expect to see it in the next 10.
 
 But as a framing device "print equation layout" serves to ground the conversation and keep aspects in focus that I find critical to many discussions.
 
