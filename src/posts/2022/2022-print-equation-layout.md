@@ -151,9 +151,9 @@ Alan Kay)](http://archive.computerhistory.org/resources/text/Oral_History/Lampso
 
 Ultimately, the problem is: is this layout tradition a good fit for the web platform? Take table layout. At first people thought it was a good fit. Now we don't.
 
-I think print equation layout is a thoroughly bad fit, building it into the web actually damages the platform, just like tables have taken a two decades to become unscrewed (oh hi Google, still using tables for layout in some products).
+I think print equation layout is a thoroughly bad fit, building it into the web actually damages the platform, just like tables have taken two decades to become unscrewed (oh hi Google, still using tables for layout in some products).
 
-Even for the simplest examples, we run into "fun" print equation layout traditions that are problematic. The easiest to understand are the many text-dependent behaviors, i.e., layout behavior that changes depending on the specific text nodes present (beyond the obvious layout changes from having different text nodes).
+Even for the simplest examples we run into "fun" print equation layout traditions that are problematic. The easiest to understand are the many text-dependent behaviors, i.e., layout behavior that changes depending on the specific text nodes present (beyond the obvious layout changes from having different text nodes).
 
 The simplest example is probably: single letter variables are italic, multi-letter ones are upright. This is pure tradition, i.e., something a lot of people like to do. Obviously people sometimes don't do this. Obviously, there's no technical difficulty to make this happen as an author / authoring tool on the web today. But as a feature for the web it is weirdly different from any CSS/text rendering features we have; that's just not how styling text works.
 
@@ -235,7 +235,7 @@ Let's talk about ambiguity.
 
 ### A different example
 
-Let's start with a different example, [musical notation](https://en.wikipedia.org/wiki/Musical_notation). In modern notation, a note is about as ambiguous on its own as a [grapheme](https://en.wikipedia.org/wiki/Grapheme) in text. For example, without a staff and other context the note itself doesn't tell you much. You might know the value by looking at just the note but even then this might not be enough (e.g., if you happen to miss a subsequent dot or preceding accidentals). Even with a staff, you might still have trouble, e.g., if all you have is a single measure you might lack the key. Similarly for dynamics. Also, it might be part of music that ranges from Opera to Jazz and you'll want to know that to adjust your understanding.
+To start, consider a different example, [musical notation](https://en.wikipedia.org/wiki/Musical_notation). In modern notation, a note is about as ambiguous on its own as a [grapheme](https://en.wikipedia.org/wiki/Grapheme) in text. For example, without a staff and other context the note itself doesn't tell you much. You might know the value by looking at just the note but even then this might not be enough (e.g., if you happen to miss a subsequent dot or preceding accidentals). Even with a staff, you might still have trouble, e.g., if all you have is a single measure you might lack the key. Similarly for dynamics. Also, it might be part of music that ranges from Opera to Jazz and you'll want to know that to adjust your understanding.
 
 It's hard to know when you have all the relevant information. A piece may appear complete but lack information on, e.g., which instrument this is for, what other voices there might be.
 
@@ -398,7 +398,7 @@ A simple example is binomial notation, $n \choose k$. Without the parentheses ${
 
 To make things worse, in many print equation layout systems this notation is realized via fraction primitives by removing the fraction bar (e.g., TeX, MathML). If you were to calculate the description you now have to decide what to do with a fraction that lacks a fraction bar. Now add to this mix the Legendre symbol $\left({\frac {a}{p}}\right)$.
 
-We can also go back to our script examples from earlier - for 2 and -1. While $7^2 = 7\times 7$ and $7^{-1} = {1 \over 7}$, we have $\sin^2(x) = \sin x \times \sin x$ yet $\sin^{-1} x$ is actually the inverse function at x, $\arcsin x$. If you tried to capture this, you'd have to ignore whatever you're creating for superscript -1 and 
+We can also go back to our script examples from earlier - for 2 and -1. While $7^2 = 7\times 7$ and $7^{-1} = {1 \over 7}$, we have $\sin^2(x) = \sin x \times \sin x$ yet $\sin^{-1} x$ is actually the inverse function at x, $\arcsin x$. If you tried to capture this, you'd have to ignore whatever you're creating for superscript -1 but still know about it to interpret the other part.
 
 MathML is even worse for this, as it is a stratified format for rendering purposes. With TeX you can at least have author macros to try to make sense.
 
@@ -410,7 +410,7 @@ Authors also intentionally hack things to work around traditions. A while back a
 
 In other words,  authors clearly want a certain type of layout that goes against traditions; they have good reasons to do so. Heuristics trying to make sense based on those traditions suddenly break as well. 
 
-This is a perfect example how traditions hold us back. They are too rigid - you can't have "partially moveable limits" without resorting to hackery. And once you have that kind of a hammer and everything looks like a nail.
+This is a perfect example how traditions hold us back. They are too rigid - you can't have "partially moveable limits" without resorting to hackery. And once you have that kind of a hammer, everything looks like a nail.
 
 ## MathML
 
@@ -493,7 +493,7 @@ Why have an extra markup system that requires an extra rendering process when yo
 
 Among screenreader, only Apple VoiceOver and Vispero's JAWS claim to support for MathML. In reality, the implementations are full of bugs and gaps. Bug reports are rarely responded to, far less fixed. Apple has essentially communicated "it is what it is".
 
-Nemeth Braille support has relied on the liblouis library - which recently discontinued its support of it; liblouis only ever converted MathML to the Nemeth/UEB and German/Dutch/Flamish families braille notations - and it did so quite poorly. [No, supposedly the new cat on the block doesn't count either. Old wine, new) bottles, just as rusty.]
+Nemeth Braille support has relied on the liblouis library - which recently discontinued its support of it; liblouis only ever converted MathML to the Nemeth/UEB and German/Dutch/Flamish families braille notations - and it did so quite poorly. [No, the new "cat" on the block doesn't count either. Old wine, new bottles, just as rusty.]
 
 More importantly, no "light" assistive technology supports MathML,e.g., "read aloud" features in smaller assistive helpers, in epub reading applications or in voice assistants (Siri et al, e.g., when reading out web content). This lack of support impacts the largest portion of users, since these tools are much more widely used than the more advanced, full-fledged screenreaders like VoiceOver, JAWS, and NVDA.
 
@@ -676,35 +676,24 @@ I wrote earlier that "web equation layout" is not something that exists. So you 
 > Ancient Europeans struggled with fractions because of the use of
 tedious Roman numerals, so ancient Europeans were weakest in algebra.
 However, when Indian-Arabic numerals were introduced into Europe, four
-operations in Europe were simplified. In addition to a series of simple
-symbol application. as a result, algebra developed rapidly. Similarly,
-China's ancient mathematics failed to form a perfect symbol system and
-were stagnant because of the limits of the counting rod, resulting in not
-only a lack of the axiomatic system, but also the absence of symbolic
-algebra, analytic geometry, calculus and modern variable mathematics in
-China. Naturally, to move forward it was necessary to break barriers and
-to get in touch with international standards and to forward to symbolic
-mathematics. This shows that the extension and development of any
-prosperous culture cannot be confined to the boundaries of that nation,
-and it is hard to create a complete and rich symbol system independently
-and separately from the influence of other nations and the outside world.
+operations in Europe were simplified. [... As] a result, algebra developed rapidly. Similarly, China's ancient mathematics failed to form a perfect symbol system and were stagnant because of the limits of the counting rod, resulting in not only a lack of the axiomatic system, but also the absence of symbolic algebra, analytic geometry, calculus and modern variable mathematics in China. Naturally, to move forward it was necessary to break barriers and to get in touch with international standards and to forward to symbolic mathematics. This shows that the extension and development of any prosperous culture cannot be confined to the boundaries of that nation, and it is hard to create a complete and rich symbol system independently and separately from the influence of other nations and the outside world.
 
 I think the web should not be confined to print equation layout. We should not want to get stuck replicating a limited medium in a much more versatile one.
 
 
-MathML is the zombie of web standards. Each decade brought 1 additional, differently broken implementation (first Firefox, then Safari, soon Chrome). The new cut down spec that will break a lot of content. XML people will have "fun" with getting their markup to work on the web in this scenario. 
+MathML is the zombie of web standards. Each decade brought 1 additional, differently broken implementation (first Firefox, then Safari, soon Chrome). The new spec for Chrome will render a lot of existing content unexpectedly or not at all, but it will be the author's fault - how clever of them. XML people will have even more "fun" getting their content to work on the web. (Or, more likely, just continue to use MathJax which just keeps getting better instead of worse.)
 
 Bugs in those three disjoint implementations are, of course, aplenty; I find a new one every time something forces me to look at native MathML implementations, some are ridiculously bad (wiping out HTML content is one of my favorites) and most bugs go for years without bugs even being filed (remember when Safari didn't draw fraction lines reliably for over a year? No, you don't because you don't use it and nobody even filed a bug).
 
 For the web, the best case scenario is: nobody cares and nobody uses it. It will become the new font/center/marquee or whatever.
 
-Even if the mathml people were interested in moving the layout facilities into CSS, we'll get, at best, something like CSS tables. If you don't know the "joy" of working with CSS tables: to this day they are not able to suitably realize HTML table layout, they were super buggy for the longest time and are still buggy in many edge cases (despite years of active improvements). But  most of all: people realized they actually needed something completely different, i.e., CSS grid, flexbox, and container queries.
+Even if the MathML people were interested in moving the layout facilities into CSS, we'll get, at best, something like CSS tables. If you don't know the "joy" of working with CSS tables: to this day they are not able to suitably realize HTML table layout, they were super buggy for the longest time and are still buggy in many edge cases (despite years of active improvements). But  most of all: people realized they actually needed something completely different, i.e., CSS grid, flexbox, and container queries.
 
 Accessibility wise, the shoddy implementations in JAWS and VoiceOver will continue to barely help English speaking blind users. Soiffer will try to push his weird MathPlayer clone into every AT so that he can continue to claim patently false things. No "intent" in the world will make print equation layout accessible in the sense of the web. Nemeth users might eventually get what they want - the rest? Not so much.
 
 In other words, users will continue to find themselves out of luck. But hey, "it's a standard". They made you beg for it, then they begged you for money (instead of Apple and Google); now you have something you don't want, something that doesn't work and something that cannot work. It's what you wanted, a "standard".
 
-I think MathML (this of course means: its community) is fundamentally not willing and not able to be a positive force. It's "MathML or die" all the way. The zombie standard continues it shambling walk.
+I think MathML (this of course means: its community) is fundamentally not willing and not able to be a positive force. It's "MathML or die" all the way. The zombie standard continues its shambling walk.
 
 ## interlude
 
