@@ -7,11 +7,11 @@ latex: true
 prism: true
 ---
 
-This will possibly be another piece that will get updates in the future. Actually, I hope not but we'll see. This, above all, is for me. For me to gather my thoughts one (hopefully) last time. For me to deal with stupid garbage which has accumulated over the years. As for you, dear reader, I don't know. I didn't write this for the handful of experts in this area; maybe for my former self, when I started writing mathematics on the web. In any case here's a fair warning: I'm not going into every detail so if you don't follow, re-read these first few lines and go do something more productive. [If you want deeply detailed research results, feel free to contact my company - we do that kind of thing. Just don't be that guy - and it's invariably a guy - complaining about free stuff on the internet.]
+This will possibly be another piece that will get updates in the future. Actually, I hope not but we'll see. This, above all, is for me. For me to gather my thoughts one (hopefully) last time. For me to deal with stupid garbage which has accumulated over the years. As for you, dear reader, I don't know if this is for you. I didn't write it for the handful of experts in this area; maybe for someone like my former self, back when I started writing mathematics on the web. Maybe for someone who knows the web and wonders what all that fuss with equations is always about. In any case here's a fair warning: I'm not going into every detail so if you don't follow, re-read these first few lines and go do something more fun, it's fine. Just don't be that guy (and it's invariably a guy) complaining about free stuff on the internet.
 
 This is also a lamentation. Nothing I write will change anything of what's to come. It is also (hopefully) a bit of mental cleansing. A few years ago I had strong burn-out symptoms due to working in this (as it turned out toxic) field. It takes a lot of effort for me to not be dragged down again. But one last time I want to try to write up where I've arrived after thinking about equation layout on the web for over 10 years now.
 
- If I make a claim without substantiating links, it's most likely to avoid more burn out; you can ping me privately though.
+ If I make a claim without substantiating links, it's most likely to avoid more burn out; you can ping me privately though. [If you want deeply detailed research results, feel free to contact my company - we do that kind of thing.]
 
 ## Introduction
 
