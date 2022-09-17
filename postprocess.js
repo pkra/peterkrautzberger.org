@@ -9,7 +9,7 @@ const mjenrich = require('./tex2svg-tree.js');
 const getRenderedEquation = async (equations, node) => {
     const eqnHash = crypto
         .createHash('md5')
-        .update(node.textContent.replace(/(\s*\n\s*)/g, ' ').trim())
+        .update(node.outerHTML.replace(/(\s*\n\s*)/g, ' ').trim())
         .digest('hex');
     if (!equations[eqnHash]) equations[eqnHash] = await mjenrich(node.textContent, (node.tagName === 'TEX-BLOCK'));
     return equations[eqnHash];
