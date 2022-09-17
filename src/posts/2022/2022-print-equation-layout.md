@@ -1,21 +1,22 @@
 ---
 layout: post
 title: Thoughts on Print Equation Layout
-date: 2022-08-31
+date: 2022-09-17
 permalink: 0218/
 latex: true
-prism: true
 ---
 
 This will possibly be another piece that will get updates in the future. Actually, I hope not but we'll see. This, above all, is for me. For me to gather my thoughts one (hopefully) last time. For me to deal with stupid garbage which has accumulated over the years. As for you, dear reader, I don't know if this is for you. I didn't write it for the handful of experts in this area; maybe for someone like my former self, back when I started writing mathematics on the web. Maybe for someone who knows the web and wonders what all that fuss with equations is always about. In any case here's a fair warning: I'm not going into every detail so if you don't follow, re-read these first few lines and go do something more fun, it's fine. Just don't be that guy (and it's invariably a guy) complaining about free stuff on the internet.
 
 This is also a lamentation. Nothing I write will change anything of what's to come. It is also (hopefully) a bit of mental cleansing. A few years ago I had strong burn-out symptoms due to working in this (as it turned out toxic) field. It takes a lot of effort for me to not be dragged down again. But one last time I want to try to write up where I've arrived after thinking about equation layout on the web for over 10 years now.
 
- If I make a claim without substantiating links, it's most likely to avoid more burn out; you can ping me privately though. [If you want deeply detailed research results, feel free to contact my company - we do that kind of thing.]
+If I make a claim without substantiating links, it's most likely to avoid more burn out; you can ping me privately though. If I'm giving just one or two examples, it's not because that's it but because this piece is very long already. [If you want deeply detailed research results, feel free to contact my company - we do that kind of thing.]
+
+ Finally, I thank the kind people who read this piece before I pushed it live - your feedback was invaluable; I owe you one.
 
 ## Introduction
 
-10 years ago I joined the MathJax project, which forced me to think a lot about how to put equations on web pages. Actually, I had already spent quite a bit of time during my PhD and postdoc years thinking (\*cough\* procrastinating) about the same thing, albeit from a different perspective.
+10 years ago I joined the [MathJax project](https://www.mathjax.org/) which forced me to think a lot about how to put equations on web pages. Actually, I had already spent quite a bit of time during my PhD and postdoc years thinking (\*cough\* procrastinating) about the same thing, albeit from a different perspective.
 
 When I started writing on the web all 13 years ago, I quickly went through a phase I've seen repeated by many people since:
 
@@ -298,7 +299,7 @@ To come back to our examples: yes, that superscript 2 is very likely "squared" b
 
 ![xkcd no. 2614, outlining what the number 2 might mean, depending on placement in sup/sub/pre/post/under/over scripts](https://imgs.xkcd.com/comics/2.png)
 
-Beyond the evident lack of semantics in print layout per se, the second problem is the lack of contextual information. While MathJax did some Simons-funded research into the problem, no existing solution takes even other equations into account (e.g., using the guess for a variable that was used earlier). 
+Beyond the evident lack of semantics in print layout per se, the second problem is the lack of contextual information. While MathJax and its sister project [Speech Rule Engine](https://speechruleengine.org/) did some Simons-funded research into the problem a few years back, no existing solution takes even other equations into account (e.g., using the guess for a variable that was used earlier). 
 
 Heuristics definitely do not try to analyze the whole document context to trigger specialized heuristics despite the many obvious advantages. Just by field, you can differentiate a lot - $X\perp Y$ in statistics vs geometry, [Bra-Ket notation](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation) in quantum mechanics, arrows in category theory, or (again) the Legendre symbol in number theory. Even outside subject-specific traditions, this could help, e.g., if you can identify a definition, it helps quite a bit later on. You know, like a human reader.
 
@@ -308,7 +309,7 @@ What's worse: today's heuristics also often do not work within an equation, e.g.
 
 $$\operatorname{det}(A) = |A| = {\begin{vmatrix} a&b \\ c&d \end{vmatrix}} = ad-bc.$$
 
-Speech Rule Engine's heuristics (again, the best around) will identify the middle part as a matrix determinant but still treats `|A|` as absolute value. And in fairness, if we didn't have the first part, that A might still be some poorly named scalar.
+Speech Rule Engine's heuristics (the best around) will identify the middle part as a matrix determinant but still treats `|A|` as absolute value. And in fairness, if we didn't have the first part, that A might still be some poorly named scalar.
 
 A key feature of the heuristics is surprisingly boring and complex: grouping things.  Where do subexpressions start and end? Since print equation layout is inherently non-semantic and built for author convenience, most authoring does not (have to) care about grouping the structure well. Who cares, you'll work it out visually and from context (thanks, PEMDAS!).
 
@@ -746,6 +747,8 @@ You don't have to do everything yourself. Speech Rule Engine provides you the be
 Above all: be mindful what you want to do. If you want to provide TeX as non-visual presentation, do that; you are the author and it's your prerogative. Just tell users and be open to criticism.
 
 If you want to provide more standardized descriptions, use Speech Rule Engine to generate them. You can provide braille-specific descriptions alongside speech-oriented ones. MathJax and SRE are the best there is for that kind of thing. If you don't use JS on the client, you can still do things server-side. If equation layout gets complex, use an ARIA tree or tree grid with a modicum of client-side JS (check [this site's source](https://github.com/pkra/peterkrautzberger.org/) to see one way of doing that); several ideas are being discussed in the standards world which might make exploration work without client-side JS in the future.
+
+If any of that sounds interesting but you don't know where to go next, feel free to get in touch, I'd love to help.
 
 ## The end
 
