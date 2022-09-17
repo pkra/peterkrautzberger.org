@@ -101,7 +101,7 @@ const mjenrich = async (texstring, displayBool) => {
     svgnode.setAttribute('aria-label', svgnode.querySelector('[data-semantic-speech]').getAttribute('data-semantic-speech'));
     svgnode.setAttribute('aria-braillelabel', svgnode.querySelector('[data-semantic-braille]').getAttribute('data-semantic-braille'));
   }
-  svgnode.insertAdjacentHTML('afterend', `<span hidden>${texstring}</span>`);
+  svgnode.insertAdjacentHTML('afterend', `<span aria-hidden="true" class="visually-hidden">${texstring}</span>`);
   return mjx.outerHTML;
 };
 
