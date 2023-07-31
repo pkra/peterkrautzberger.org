@@ -26,15 +26,15 @@
   "devDependencies": {
     "@11ty/eleventy": "1.0.2",
     "@11ty/eleventy-plugin-rss": "1.2.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "4.1.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "@krautzource/sre-to-tree": "2.0.2",
     "backstopjs": "^6.1.1",
     "jsdom": "20.0.0",
+    "linkedom": "^0.14.12",
     "luxon": "3.0.1",
     "markdown-it": "13.0.1",
     "markdown-it-mathjax3": "2.2.0",
-    "mathjax-full": "github:amermathsoc/MathJax-src#7960f6395231124465276f79a2b044bc94b4d532",
-    "speech-rule-engine": "4.0.7",
-    "linkedom": "^0.14.12"
+    "mathjax-full": "4.0.0-beta.2",
+    "speech-rule-engine": "4.1.0-beta.2"
   }
 }

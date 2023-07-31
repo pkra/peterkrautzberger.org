@@ -11,6 +11,15 @@ const getRenderedEquation = async (equations, node) => {
         .createHash('md5')
         .update(node.outerHTML.replace(/(\s*\n\s*)/g, ' ').trim())
         .digest('hex');
+    // if (!equations[eqnHash]) {
+    //     try {
+    //         equations[eqnHash] = await mjenrich(node.textContent, (node.tagName === 'TEX-BLOCK'));
+    //     }
+    //     catch (e) {
+    //         console.log('something went wrong at ', node.textContent, e)
+    //         equations[eqnHash] = node.textContent;
+    //     }
+    // }
     if (!equations[eqnHash]) equations[eqnHash] = await mjenrich(node.textContent, (node.tagName === 'TEX-BLOCK'));
     return equations[eqnHash];
 }
@@ -30,7 +39,7 @@ const main = async (equations, htmlFileName) => {
         catch (e) { console.log('no equations store found; regenerating') };
     }
     else console.log('regenerating all equations');
-    const htmlFiles = execSync('find docs -name *.html').toString().split('\n');
+    const htmlFiles = execSync('find docs -name index.html').toString().split('\n');
     for (let file of htmlFiles) await main(equations, file);
     fs.writeFileSync('./equations.json', JSON.stringify(equations, null, 2))
 })();
