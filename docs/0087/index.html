@@ -54,11 +54,11 @@
 <p>I love pandoc (ecub was a great help, too, more about that later) so I'll focus on it.</p>
 <p><a href="/0070/">As you may know</a>, here at Booles' Ring I write using markdown and MathJax. I use pandoc whenever I want to convert this kind of content into something else (like LaTeX). But pandoc (as its name suggest) can handle much more.</p>
 <p>So hit it! Take your favorite test html file (<a href="/0082/">I use this post</a>).</p>
-<pre class="language-bash"><code class="language-bash">  pandoc test.html -o test.epub</code></pre>
+<pre class="language-bash"><code class="language-bash">  pandoc test.html <span class="token parameter variable">-o</span> test.epub</code></pre>
 <p>That should give you a working epub file -- it ain't fancy, but it'll do for testing. Be warned that pandoc does not check if your (x)html actually validates. Since the iPad is picky about having valid epub files you should double check (I totally failed the first time and it took me ages to remember this...).</p>
 <p>Fortunately, you installed calibre which includes a binary of epub-fix from the <a href="http://code.google.com/p/epub-tools/">epub-tools</a> by the fabulous people over at <a href="http://threepress.org/">threepress</a>.</p>
 <p>So you find the epub-fix binary and run</p>
-<pre class="language-bash"><code class="language-bash">  epub-fix --epubcheck test.epub</code></pre>
+<pre class="language-bash"><code class="language-bash">  epub-fix <span class="token parameter variable">--epubcheck</span> test.epub</code></pre>
 <p>If epub-fix finds errors, fix them: go into the epub file (which is just a zip file) and fix the (most likely html) file that throws an error; in the post I use, the html should complain about a part of the vimeo embedding.</p>
 <p>When epub-fix is happy, send the file over to the iPad for a test spin (I use Dropbox for ease of sync). If even a simple test file does not work, throw your epub into <a href="http://threepress.org/document/epub-validate">threepress's online validator</a> just to be sure.</p>
 <p>Oh, one more thing: remember to always delete your file from iBooks before your load its updated version. In my experience, iBooks does not update the file when something with the same metadata is already in the iBooks library (or maybe just sometimes, I don't know, just watch out for that).</p>
@@ -80,14 +80,14 @@
 <p>If you don't use dollar signs for inline math, just take the last line.</p>
 <h2>Fixing your epub.</h2>
 <p>After this copying, we'll have to repair our epub file. An important fact about epub: all files must be listed in the manifest (OPF) file. Since we don't want to do that manually, we use epub-check again.</p>
-<pre class="language-bash"><code class="language-bash">  epub-fix --unmanifested --epubcheck test.epub</code></pre>
+<pre class="language-bash"><code class="language-bash">  epub-fix <span class="token parameter variable">--unmanifested</span> <span class="token parameter variable">--epubcheck</span> test.epub</code></pre>
 <p>The "unmanifested" option (you guessed it) will ensure that all files will be added to the manifest. Beware: don't try this on a full MathJax! Epub-fix will slow down after the first 1.000 files...</p>
 <p>Now transfer your file to the iPad and low and behold some mathjax will render! Of course, you'll find that this is not working: the rendering is broken right now. (As mentioned earlier, Davide is working on it)</p>
 <h2>iOS5 to the rescue?</h2>
 <p>Now this post gets flaky. As I wrote earlier, I have only had one test run with an iOS5 iPad, so this might not work. But the process is worthwhile documenting.</p>
 <p>As I said above, the thing about iOS5 is that Safari and hence iBooks finally has some MathML support.</p>
 <p>Since pandoc is incredibly versatile you won't be surprised that it can produce MathML and that it is aware of MathJax. So all we have to do is modify our earlier command.</p>
-<pre class="language-bash"><code class="language-bash">  pandoc test.html --mathml -o test.epub</code></pre>
+<pre class="language-bash"><code class="language-bash">  pandoc test.html <span class="token parameter variable">--mathml</span> <span class="token parameter variable">-o</span> test.epub</code></pre>
 <p>This way, the html now has mathml instead of the LaTeX commands. Just shoot this over to your iPad and see how it renders. What I remember from my quick test with my post mentioned earlier was that some characters would render twice (which I had seen with that unreliable full install of MathJax I mentioned earlier). Also, MathJax's support for commands like \color obviously won't work without adding MathJax again.</p>
 <p>Alternatively, you could try using MathJax's mathml-rendering and see what happens (I hope to test that next week).</p>
 <h2>But what if I want to have it all?</h2>
