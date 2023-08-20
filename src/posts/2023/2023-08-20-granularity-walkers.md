@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Granularity walkers for textual descriptions
-date: 2023-02-03
+date: 2023-08-20
 permalink: 0219/
 ---
 
