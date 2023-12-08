@@ -42,7 +42,7 @@ a strong {
 
 a:hover,
 a:focus {
-  text-decoration: underline;
+  outline: 1px dashed currentColor
 }
 
 h1,
