@@ -4,31 +4,12 @@
 	<subtitle> · on the web</subtitle>
 	<link href="https://www.peterkrautzberger.org/atom.xml" rel="self"/>
 	<link href="https://www.peterkrautzberger.org/"/>
-	<updated>2023-11-14T00:00:00Z</updated>
+	<updated>2023-12-31T00:00:00Z</updated>
 	<id>https://www.peterkrautzberger.org/</id>
 	<author>
 		<name>Peter Krautzberger</name>
 		<email>p.krautzberger@gmail.com</email>
 	</author>
-	
-	<entry>
-		<title>Weeknote 2019/37</title>
-		<link href="https://www.peterkrautzberger.org/0211/"/>
-		<updated>2019-09-14T00:00:00Z</updated>
-		<id>https://www.peterkrautzberger.org/0211/</id>
-		<content type="html">&lt;p&gt;I&#39;ve fallen silent this year. There were a lot of reasons for that. Mostly bad things, but many good things, too. I want to try to find a way back to writing, especially given this blog&#39;s 10&lt;sup&gt;th&lt;/sup&gt; anniversary coming up in December. I&#39;ve never been very personal on this personal site of mine; or perhaps more precisely I may not have appeared to be so, that is, I&#39;ve not been writing the stuff most people think of when they say &amp;quot;personal website&amp;quot;. I&#39;m thinking maybe I&#39;ll give it a try.&lt;/p&gt;
-&lt;p&gt;Anyway. I really like this idea of a weeknote which I first saw at &lt;a href=&quot;https://daverupert.com/&quot;&gt;Dave Rupert&#39;s&lt;/a&gt; and then at &lt;a href=&quot;https://www.baldurbjarnason.com/&quot;&gt;Baldur Bjarnason&#39;s&lt;/a&gt;. Let&#39;s give it a try and see how it feels.&lt;/p&gt;
-&lt;h2&gt;Work&lt;/h2&gt;
-&lt;p&gt;Work has been mixed this week. A big chunk of in-depth work was finalizing (what feels like a countless number of) tests for a very old piece of code that never had any tests. As this code had grown into a little bit of a monster, I now feel much more in control of it and ready to rewrite/port it. I also got into the GitHub Actions beta this week which looks nice and should help automate a bunch of stuff that&#39;s being done by a much less natural GitHub app (client permitting, anyway).&lt;/p&gt;
-&lt;p&gt;Oh, and I had some interesting work helping some (print) designers wrap their heads around some web thing. That was a ton of fun and maybe it will turn into more, we&#39;ll see.&lt;/p&gt;
-&lt;h2&gt;Reading&lt;/h2&gt;
-&lt;p&gt;I&#39;ve been having a fit of escapism and churning through Harry Dresden novels at a high pace; as re-readings go, these are still quite good. I still don&#39;t like some things but I do still like how he grew the universe, something so many fantasy series fail at. This year really has been a year of re-reading incidentally; there are worse things.&lt;/p&gt;
-&lt;h2&gt;Life&lt;/h2&gt;
-&lt;p&gt;I had the yearly meeting of our daycare (which is set up as an association run by the parents). I&#39;m the data privacy person for another year which has really been quite interesting (thanks, GDPR); after focusing on the digital side (where I&#39;m more comfortable), it&#39;s time to focus on the physical side, where I look forward to learning a few new things. Otherwise, I was amazed how little drama we had; in the end, we seem to be good people, wanting to make things better.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://scoskey.org/&quot;&gt;Sam&lt;/a&gt; and I are back to regular meetings after a long summer which is just plain good. Besides good times, we are working on upgrades to &lt;a href=&quot;http://mathblogging.org/&quot;&gt;mathblogging.org&lt;/a&gt; and &lt;a href=&quot;http://boolesrings.org/&quot;&gt;boolesrings.org&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I also think it may be time to finally fix my laptop&#39;s keyboard. First the left ctrl key went (which was fun to relearn with the right ctrl key), then the tick and some numbers started to become iffy (which gets annoying) but with the letter E starting to act up I&#39;m really coming to the end of the line. I don&#39;t know why I keep dragging it out. Let&#39;s see if I have an update in the next note, shall we?&lt;/p&gt;
-</content>
-	</entry>
 	
 	<entry>
 		<title>Weeknote 2019/38</title>
@@ -1909,6 +1890,34 @@ experiment8.addEventListener(&quot;click&quot;, handleClick7);
 &lt;p&gt;In any case, surely there&#39;s more trouble ahead. On the bright side, I know this will continue to work for a very (very) long time thanks to the backward compatibility of the web platform. (Definitely longer than the LaTeX stylesheets from my PhD thesis.) And once counters catch up, I can simplify.&lt;/p&gt;
 &lt;p&gt;In the end, this first set of experiments has worked out as I&#39;d hoped. It got me thinking (and learning) about web components again, about limitations of the web platform, and about writing itself. More than I expected to get to in a few evenings.&lt;/p&gt;
 &lt;p&gt;In the mean time, I&#39;ve continued this journey a bit further. But that&#39;s another story for another time perhaps.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>A first look at MathJax v4</title>
+		<link href="https://www.peterkrautzberger.org/0222/"/>
+		<updated>2023-12-31T00:00:00Z</updated>
+		<id>https://www.peterkrautzberger.org/0222/</id>
+		<content type="html">&lt;p&gt;So here on the blog (and at work) I&#39;ve been rolling out MathJax v4 after it hit &lt;a href=&quot;https://github.com/mathjax/MathJax-src/releases/tag/4.0.0-beta.3&quot;&gt;its third beta&lt;/a&gt; in July. MahthJax v4 is chock full of fixes, features and even a tiny bit of finally-getting-rid-of-stuff. To close off the year, I thought I&#39;d sum up my personal highlights.&lt;/p&gt;
+&lt;p&gt;Here&#39;s my (obviously totally personal and biased) short list.&lt;/p&gt;
+&lt;h2&gt;STIX Two (and fonts in general)&lt;/h2&gt;
+&lt;p&gt;I&#39;ve been using the experimental STIX2 branch in production for a few years but now that Davide had time to completely rewrite the fonts support, the generalization leads to a lot of small (and large) improvements in STIX Two again. It&#39;s lovely to see the best font keeps getting better. (And yes, a better default CM-derived font is cool too, as are the other options!)&lt;/p&gt;
+&lt;p&gt;Working together on a small project to build a custom font earlier this year also gave me a first look into the fantastic capabilities (and slightly scary machinery) behind the new font tooling. I can&#39;t wait to see what people might do when it&#39;s opened up to the public.&lt;/p&gt;
+&lt;h2&gt;line breaking&lt;/h2&gt;
+&lt;p&gt;While I don&#39;t care much about line breaking inside display elements these days, inline reflow has been on my wish list for a long time. But what I hadn&#39;t expected at all was Davide adding support for MathJax&#39;s SVG output.&lt;/p&gt;
+&lt;p&gt;That&#39;s a bit unbelievable, really, but MathJax v4 will split up the SVG output into reflowable chunks which is &lt;em&gt;just&lt;/em&gt; lovely. I wished the webfont hack could be avoided but I&#39;m looking forward to hacking a decent compromise there so that this becomes usable in the horrors of epub, too (where I need it the most).&lt;/p&gt;
+&lt;h2&gt;ESM&lt;/h2&gt;
+&lt;p&gt;You might say &amp;quot;it&#39;s about damn time!&amp;quot; but it&#39;s super sweet to see this move, even if it broke everything during the beta for me.  I don&#39;t think I&#39;ll ever like MathJax&#39;s custom build system for its &amp;quot;components&amp;quot; but &lt;a href=&quot;https://github.com/mathjax/MathJax/issues/3086&quot;&gt;with Davide&#39;s patient help&lt;/a&gt; I could move my third party extensions over to the new system.&lt;/p&gt;
+&lt;h2&gt;TeX input&lt;/h2&gt;
+&lt;p&gt;Soo many improvements! A lot of subtle changes matching LaTeX behavior more accurately, a few more extensions.&lt;/p&gt;
+&lt;p&gt;If I had to pick just one thing, &lt;a href=&quot;https://github.com/mathjax/MathJax-src/pull/783&quot;&gt;HTML-in-TeX support&lt;/a&gt; would be it. The potential seems boundless as MathJax is not limited by obnoxious theoretical-purity nonsense but instead embraces HTML. Which is as it should be.&lt;/p&gt;
+&lt;h2&gt;non-visual rendering&lt;/h2&gt;
+&lt;p&gt;SRE also saw a massive set of enhancements in &lt;a href=&quot;https://github.com/Speech-Rule-Engine/speech-rule-engine/releases&quot;&gt;its recent releases&lt;/a&gt;. Better performance, more languages, 2D nemeth, plenty of bug fixes. Amazing work by Volker - nothing gets even close to SRE&#39;s range of non-visual capabilities.&lt;/p&gt;
+&lt;p&gt;Even more importantly, SRE will (finally!) be active by default in v4 - the most accessible output as the default is good in my book.&lt;/p&gt;
+&lt;h2&gt;coda&lt;/h2&gt;
+&lt;p&gt;There&#39;d be much more to write but the year is over. For balance, any complaints? I think the only one  I found would be testing which was painful at times - but that&#39;s what you get for adopting a beta release. Still, I don&#39;t know how I&#39;d feel if I didn&#39;t know how good Davide and Volker are (and if I didn&#39;t know how much testing happens at the AMS).&lt;/p&gt;
+&lt;p&gt;Of course I still wished that MathJax was not so focused on being client-side first. It is without competition when it comes to server-side-rendering, too - the most robust and most accessible option available. More people need to hear that! But of course I remember why that is: MathJax users love the ease of client-side rendering, they have never cared about the downsides (e.g., page load, performance). Still, I&#39;ll keep spreading the word.&lt;/p&gt;
+&lt;p&gt;As it stands MathJax v4 is a massive step forward, proving again that MathJax is the only reliable project to make progress in this space.&lt;/p&gt;
 </content>
 	</entry>
 </feed>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>A first look at MathJax v4</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+    <meta name="Description" content="A first look at MathJax v4">
+    <meta name="theme-color" content="#fff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+    <link rel="shortcut icon" href="/public/favicon.ico">
+    <link rel="manifest" href="/public/manifest.json">
+    <script>if ('serviceWorker' in navigator) {  navigator.serviceWorker.register('/serviceworker.js');}</script>
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <div class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">A first look at MathJax v4</h1>
+  <span class="post-date"><time datetime="2023-12-31">31 Dec 2023</time></span>
+  <p>So here on the blog (and at work) I've been rolling out MathJax v4 after it hit <a href="https://github.com/mathjax/MathJax-src/releases/tag/4.0.0-beta.3">its third beta</a> in July. MahthJax v4 is chock full of fixes, features and even a tiny bit of finally-getting-rid-of-stuff. To close off the year, I thought I'd sum up my personal highlights.</p>
+<p>Here's my (obviously totally personal and biased) short list.</p>
+<h2>STIX Two (and fonts in general)</h2>
+<p>I've been using the experimental STIX2 branch in production for a few years but now that Davide had time to completely rewrite the fonts support, the generalization leads to a lot of small (and large) improvements in STIX Two again. It's lovely to see the best font keeps getting better. (And yes, a better default CM-derived font is cool too, as are the other options!)</p>
+<p>Working together on a small project to build a custom font earlier this year also gave me a first look into the fantastic capabilities (and slightly scary machinery) behind the new font tooling. I can't wait to see what people might do when it's opened up to the public.</p>
+<h2>line breaking</h2>
+<p>While I don't care much about line breaking inside display elements these days, inline reflow has been on my wish list for a long time. But what I hadn't expected at all was Davide adding support for MathJax's SVG output.</p>
+<p>That's a bit unbelievable, really, but MathJax v4 will split up the SVG output into reflowable chunks which is <em>just</em> lovely. I wished the webfont hack could be avoided but I'm looking forward to hacking a decent compromise there so that this becomes usable in the horrors of epub, too (where I need it the most).</p>
+<h2>ESM</h2>
+<p>You might say "it's about damn time!" but it's super sweet to see this move, even if it broke everything during the beta for me.  I don't think I'll ever like MathJax's custom build system for its "components" but <a href="https://github.com/mathjax/MathJax/issues/3086">with Davide's patient help</a> I could move my third party extensions over to the new system.</p>
+<h2>TeX input</h2>
+<p>Soo many improvements! A lot of subtle changes matching LaTeX behavior more accurately, a few more extensions.</p>
+<p>If I had to pick just one thing, <a href="https://github.com/mathjax/MathJax-src/pull/783">HTML-in-TeX support</a> would be it. The potential seems boundless as MathJax is not limited by obnoxious theoretical-purity nonsense but instead embraces HTML. Which is as it should be.</p>
+<h2>non-visual rendering</h2>
+<p>SRE also saw a massive set of enhancements in <a href="https://github.com/Speech-Rule-Engine/speech-rule-engine/releases">its recent releases</a>. Better performance, more languages, 2D nemeth, plenty of bug fixes. Amazing work by Volker - nothing gets even close to SRE's range of non-visual capabilities.</p>
+<p>Even more importantly, SRE will (finally!) be active by default in v4 - the most accessible output as the default is good in my book.</p>
+<h2>coda</h2>
+<p>There'd be much more to write but the year is over. For balance, any complaints? I think the only one  I found would be testing which was painful at times - but that's what you get for adopting a beta release. Still, I don't know how I'd feel if I didn't know how good Davide and Volker are (and if I didn't know how much testing happens at the AMS).</p>
+<p>Of course I still wished that MathJax was not so focused on being client-side first. It is without competition when it comes to server-side-rendering, too - the most robust and most accessible option available. More people need to hear that! But of course I remember why that is: MathJax users love the ease of client-side rendering, they have never cared about the downsides (e.g., page load, performance). Still, I'll keep spreading the word.</p>
+<p>As it stands MathJax v4 is a massive step forward, proving again that MathJax is the only reliable project to make progress in this space.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20A%20first%20look%20at%20MathJax%20v4">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    © 2022 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, subscribe to the <a href="/atom.xml">RSS/Atom feed</a>, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0222/ -->
+	</body>
+</html>
