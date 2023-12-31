@@ -1898,7 +1898,7 @@ experiment8.addEventListener(&quot;click&quot;, handleClick7);
 		<link href="https://www.peterkrautzberger.org/0222/"/>
 		<updated>2023-12-31T00:00:00Z</updated>
 		<id>https://www.peterkrautzberger.org/0222/</id>
-		<content type="html">&lt;p&gt;So here on the blog (and at work) I&#39;ve been rolling out MathJax v4 after it hit &lt;a href=&quot;https://github.com/mathjax/MathJax-src/releases/tag/4.0.0-beta.3&quot;&gt;its third beta&lt;/a&gt; in July. MahthJax v4 is chock full of fixes, features and even a tiny bit of finally-getting-rid-of-stuff. To close off the year, I thought I&#39;d sum up my personal highlights.&lt;/p&gt;
+		<content type="html">&lt;p&gt;So here on the blog (and more relevantly at work) I&#39;ve been rolling out MathJax v4 after it hit &lt;a href=&quot;https://github.com/mathjax/MathJax-src/releases/tag/4.0.0-beta.3&quot;&gt;its third beta&lt;/a&gt; in July. MahthJax v4 is chock full of fixes, features and even a tiny bit of finally-getting-rid-of-stuff. To close off the year, I thought I&#39;d sum up my personal highlights.&lt;/p&gt;
 &lt;p&gt;Here&#39;s my (obviously totally personal and biased) short list.&lt;/p&gt;
 &lt;h2&gt;STIX Two (and fonts in general)&lt;/h2&gt;
 &lt;p&gt;I&#39;ve been using the experimental STIX2 branch in production for a few years but now that Davide had time to completely rewrite the fonts support, the generalization leads to a lot of small (and large) improvements in STIX Two again. It&#39;s lovely to see the best font keeps getting better. (And yes, a better default CM-derived font is cool too, as are the other options!)&lt;/p&gt;
