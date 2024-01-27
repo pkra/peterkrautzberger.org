@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Web components for (mathematical) writing, continued</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+    <meta name="Description" content="Web components for (mathematical) writing, continued">
+    <meta name="theme-color" content="#fff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+    <link rel="shortcut icon" href="/public/favicon.ico">
+    <link rel="manifest" href="/public/manifest.json">
+    <script>if ('serviceWorker' in navigator) {  navigator.serviceWorker.register('/serviceworker.js');}</script>
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <div class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Web components for (mathematical) writing, continued</h1>
+  <span class="post-date"><time datetime="2024-01-27">27 Jan 2024</time></span>
+  <p>After sharing the <a href="./0220/">first interesting problem I had run into</a>, Sam and I spent a few more days working on this experiment. I had hoped to finish this write up before <a href="https://www.jointmathematicsmeetings.org/meetings/national/jmm2024/2300_program_thursday.html#2300:AMSCOEPAN">attending JMM 2024</a> but life was more important. In any case, time for an update.</p>
+<p>If you want to skip to the end, here's <a href="https://github.com/pkra/laml-wc/">a link to the (now public) repository</a>. You can just browse through the git history if you prefer - I stopped at <a href="https://github.com/pkra/laml-wc/commits/main/?before=52c8ee52dacc396b208492bcd947f406e4866935+35">this commit</a> when finishing up.</p>
+<h2>unexpected pains</h2>
+<p>An overly large chunk of work went into fixing up the example document. That was probably inevitable. I wanted to start with a pre-existing source to avoid the trap of writing content to fit the tools. As a consequence, I had to hunt down markup inconsistencies from 6 years ago including times when I had to just shake my head at my former self (<code>role="bla blub"</code> - I don't even).</p>
+<p>Along similar lines: Sam at some point decided to rename all custom element tags. That was an easy challenge and a good reminder of real world editing with co-authors.</p>
+<h2>that counter problem</h2>
+<p>As I wrote <a href="./0220/">last time</a>, counters turned out to be a slightly curious problem so I adjusted the code with the knowledge I had gained around CSS counter issues. Another "fun" fact I learned is that <code>display: contents</code> breaks counter increments - which is one of those "makes sense and yet I'm annoyed" moments. Since I was using contents to fake sub-grids, that particular case would resolve itself easily in 2024.</p>
+<p>Anyway, for theorems, I ended up going with the simplest approach of using <code>this.closest(bla).querySelectorAll(this.tagName)</code> to find the index and magically populated cross references with that. Performance wasn't an issue even on this reasonably large (~80pp) document - and even less of an issue for reasons given below.</p>
+<h2>wasting time</h2>
+<p>I also wasted a modicum of time customizing the enunciation element to allow proofs to re-use it, only to realize that I don't like this at all. A proof and its label are different to me (in more than one way) so now they have their own, simpler custom element inserting <code>&lt;proof-label&gt;Proof.&lt;/proof-label&gt;</code> if no such element exists.</p>
+<p>Of course there were plenty of bugs to fix in the new code. You might say it's because I was just fooling around instead of doing it "properly", say via test driven development (<a href="https://www.baldurbjarnason.com/courses/uncluttered/">which you should totally go an learn from Baldur</a>). But that was kind of the point of this. I wanted many "oops, this was stupid"-moments. In the end, a lot of that work came from re-using our source of our 6-year-old experiment instead of starting with a clean slate. However, I would like to think that it gave some grounding - and serendipity.</p>
+<h2>a little bit design</h2>
+<p>After I had done the first bit of work on elements, it was time to think a little bit about design. Just something small, to get things going. And somehow I started to think about print (of all things) because I was doing something similar at work. So I dragged out <a href="https://pagedjs.org/">pagedjs</a> and started tweaking print styles. While it started out fun, I fairly quickly hit a mental wall. What was I doing looking up LaTeX class files (of all things)? The idea was to do something for&amp;on the web!</p>
+<p>So I stepped away for a while. I dreamed up a few cool things (sequential diagrams! scroll linked animations! interactive highlighting!) and then faced the reality of the effort that would take, especially during a normal messy daycare/school fall (one germ hitting the family after the other).</p>
+<p>I finally settled on something simple - a few flashy colors, a lot of grid, vertical writing, sticky positioning, silly borders for various enunciations. And yes, some traditional print styles are in there. All this should eventually hint at how different the presentation can be.</p>
+<p>At some point pagedjs starting crashing on me so there currently isn't a flashy pagedjs print demo. I think I know the problem so I hope I find time to add this back (stay tuned for another update?). What I really want is time to explore print CSS more seriously.</p>
+<p>Is the design well thought out? Not in the slightest. Are there bugs in the design? Yeah! Plenty. But, again, still not the point right now. Polish can come later (if ever).</p>
+<h2>that sweet SSR magic</h2>
+<p>Here's the weird thing. When people think of web components, they think of something interactive. Because, after all, isn't HTML enough for "just content"? And really, should you be relying on JavaScript when you can just ship static HTML?</p>
+<p>I agree. But the point of this experiment is not (just) the final content, it is also the creation thereof. There's plenty of writing about the perils of favoring developer experience over user experience. And using web components for writing content seems like just such a DX trap.</p>
+<p>I hope to avoid it by thinking about server-side-rendering (SSR) from the start. In the end, a custom tag is valid whether or not it is ever registered as a custom element.</p>
+<p>So the ideas is to use SSR to magically render components out of existence, or rather: compile them out so that the document no longer needs JavaScript just for the static content. (I definitely don't want to get rid of the custom tags.)</p>
+<p>That's easy enough. I love <a href="https://github.com/WebReflection/linkedom">linkedom</a> for this kind of thing - it's small, it's  fast, it's simple to use - and we can just dynamically import our web component code:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> parseHTML <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'linkedom'</span><span class="token punctuation">;</span><br><span class="token keyword">import</span> fs <span class="token keyword">from</span> <span class="token string">'node:fs'</span><span class="token punctuation">;</span><br><span class="token keyword">const</span> <span class="token punctuation">{</span><br>    document<span class="token punctuation">,</span> customElements<span class="token punctuation">,</span><br>    HTMLElement<br><span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">parseHTML</span><span class="token punctuation">(</span>fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'./m522.html'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token comment">// make some globals so customelements.js can find it</span><br>globalThis<span class="token punctuation">.</span>HTMLElement <span class="token operator">=</span> HTMLElement<span class="token punctuation">;</span><br>globalThis<span class="token punctuation">.</span>customElements <span class="token operator">=</span> customElements<span class="token punctuation">;</span><br>globalThis<span class="token punctuation">.</span>document <span class="token operator">=</span>  document<span class="token punctuation">;</span><br><span class="token comment">// upgrade/render our elements</span><br><span class="token keyword">await</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./customelements.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token comment">// save</span><br>fs<span class="token punctuation">.</span><span class="token function">writeFileSync</span><span class="token punctuation">(</span><span class="token string">'ssr.html'</span><span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Done.</p>
+<p>Naturally, I can't stop there. I love MathJax most when I use it in an SSR setting so <a href="https://github.com/pkra/laml-wc/blob/52c8ee52dacc396b208492bcd947f406e4866935/mj.js">I added that as well</a>. Well actually. It turned out to be slightly harder. Because I was lazy and the way MathJax detaches nodes, my components were connecting twice, causing duplication. That took a second to work around lazily. I also found a bug which Andrea rejected a while back (I like his opinionated OSS style!) so I added a polyfill and <a href="https://github.com/mathjax/MathJax/issues/3134">let the MathJax folks know</a>. Another second gone.</p>
+<p>Next on my list was building a dedicated pagedjs output but as mentioned, pagedjs started crashing on me so I haven't returned to it. It's just as simple, obviously.</p>
+<h2>bits and pieces</h2>
+<p>While wrapping things up at the end of last year, I did a few other tweaks. I DRYed up the code to generate enunciation variations. I renamed <code>name-</code> elements to <code>h-</code> because at this point they were only serving as headings. I renamed Sam's lovely <code>blame-</code> tag to <code>e-title</code> (which probably should become <code>enunciation-title</code> for clarity) because I've grown accustomed to this use for the words label and title.</p>
+<p>Finally, Sam asked for a table of contents so I add simplistic toc- element that populates itself. Speaking of conversations, Sam was surprised that I turned almost all cases of <code>*...*</code> markdown syntax into <code>dfn</code> elements. That's somewhat unusual since you'd usually choose <code>i</code> or <code>em</code> for this. However, I noticed that almost always these were used for "inline definitions", e.g., in proofs. We have <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn">a tag exactly for that</a>; we should use it. And maybe one day Volker will do what we wanted to do years ago and teach speech-rule-engine to pick up definitions to leverage in its heuristics.</p>
+<h2>what's next</h2>
+<p>So there you have it. A first somewhat longer experiment. And always more to do.</p>
+<p>For example, I need to rewrite the cross-references code to emit from the target element. The reason is twofold. First, the target may not yet be in the DOM when the reference connects, thus things get complicated; that's only half a reason because the same argument applies the other way around.  Second, the code for cross references would otherwise become weird - so far it's only been enunciations but when sectioning, figures, equations come into play, the code would become this convoluted list of separate cases.  I think I'd much rather keep the code for links with the code for targets. As a result, we won't need a custom element anymore - an <code>a</code> tag will do just fine.</p>
+<p>Next there are some accessibility considerations to take care of. For example, our generic heading element should label its sectioning element. I also prefer enunciations as figures with captions; it fits well semantically and AT provides nice affordances around them. I'll probably just use ARIA directly here but maybe I'd really like to have time to see how <code>extends</code> holds up. Maybe more ideas will stop by. And I think I already spotted some unfortunate limitations in the current state of the AOM so that will be fun to dive into.</p>
+<p>Then there's the bibliography. The sample lecture notes didn't have one so I disabled the old code for now. We need to try things out in a document that has them (or add some for testing).</p>
+<p>At this point, I still feel pretty good about this. It developed the way I expected and new ideas are still becoming apparent. Complexity is still low (~100 lines of JS, ~500 lines of CSS, both pretty simple stuff). Pop over to <a href="https://github.com/pkra/laml-wc/commits/main/?before=52c8ee52dacc396b208492bcd947f406e4866935+35">the code</a> or just <a href="https://pkra.github.io/laml-wc/">the live demo</a> if you like and let me know what you think.</p>
+<p>I hope I have more time and inspiration to work on this. Why, Sam even threatened to write something with these components. Now wouldn't that be something.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Web%20components%20for%20(mathematical)%20writing%2C%20continued">write me an email</a>.
+  </span>
+  <span> You can also <a href="/about/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    © 2022 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, subscribe to the <a href="/atom.xml">RSS/Atom feed</a>, visit the <a href="/archive/">archive</a> or the <a href="/contact/">contact</a> page.
+  </footer>
+
+		<!-- Current page: /0221/ -->
+	</body>
+</html>
