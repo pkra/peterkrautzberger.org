@@ -5,7 +5,7 @@ date: 2024-01-27
 permalink: 0221/
 ---
 
-After sharing the [first interesting problem I had run into](./0220/), Sam and I spent a few more days working on this experiment. I had hoped to finish this write up before [attending JMM 2024](https://www.jointmathematicsmeetings.org/meetings/national/jmm2024/2300_program_thursday.html#2300:AMSCOEPAN) but life was more important. In any case, time for an update.
+After sharing the [first interesting problem I had run into](/0220/), Sam and I spent a few more days working on this experiment. I had hoped to finish this write up before [attending JMM 2024](https://www.jointmathematicsmeetings.org/meetings/national/jmm2024/2300_program_thursday.html#2300:AMSCOEPAN) but life was more important. In any case, time for an update.
 
 If you want to skip to the end, here's [a link to the (now public) repository](https://github.com/pkra/laml-wc/). You can just browse through the git history if you prefer - I stopped at [this commit](https://github.com/pkra/laml-wc/commits/main/?before=52c8ee52dacc396b208492bcd947f406e4866935+35) when finishing up.
 
