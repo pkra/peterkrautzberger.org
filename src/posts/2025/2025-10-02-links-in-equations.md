@@ -5,8 +5,7 @@ date: 2025-10-02
 permalink: 0224/
 ---
 
-Links with complex content are a long standing accessibility challenge, essentially ever since HTML opened up the `a` tag to contain virtually anything else.
-Equation layout [is not accessible](/0218) and there is no single ARIA pattern that will help you make it so. So you need to adjust your approach as the situation requires - and, above all, as your users require.
+Links with complex content are a long standing accessibility challenge, essentially ever since HTML opened up the `a` tag to contain virtually anything else. Equation layout [is not accessible](/0218) and there is no single ARIA pattern that will help you make it so. So you need to adjust your approach as the situation requires - and, above all, as your users require.
 
 One of my old sturdy helpers (to make mathjax and sre actually useful server-side) was having [a bit of a problem](https://github.com/krautzource/sre-to-tree/issues/41) recently. (You may think this is about links inside equation layout but it's actually about links wrapping around equation layout; it doesn't matter if the link is in or outside the equation layout wrapper.)
 
