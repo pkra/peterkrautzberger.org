@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Being unhappy with accessible SVGs: text elements</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+    <meta name="Description" content="Being unhappy with accessible SVGs: text elements">
+    <meta name="theme-color" content="#fff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+    <link rel="shortcut icon" href="/public/favicon.ico">
+    <link rel="manifest" href="/public/manifest.json">
+    <script>if ('serviceWorker' in navigator) {  navigator.serviceWorker.register('/serviceworker.js');}</script>
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <div class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Being unhappy with accessible SVGs: text elements</h1>
+  <span class="post-date"><time datetime="2026-01-24">24 Jan 2026</time></span>
+  <p>This started out last fall and is mostly a quick observation on screenreader behaviors and turned into some meandering thoughts about "linearizable" SVGs.</p>
+<p>The other day (month/season/year), I found myself thinking about a text role in ARIA. Not exactly original but at least I was thinking about it in the context of SVG. So technically I was thinking about a role for the (woefully unmaintained) <a href="https://w3c.github.io/graphics-aria/">Graphics ARIA Module</a> where I have a hunch a role for text (say, <code>role=graphics-text</code>) could be useful. The simplest reason is probably handwriting in its various forms, whether it's signatures, calligraphy, graffiti, or other heavily stylized writing. Generally speaking, this kind of content is not (and often cannot be) represented as SVG text elements; instead it usually appears as SVG paths, rendering a reproduction of text (handwritten or otherwise). But many other forms of stylized text tend to be realized as paths in SVG as well.</p>
+<p>It's still <em>text</em> though.</p>
+<p>It's used as text, it looks like text, its text alternative will match. So, <a href="https://en.wikipedia.org/wiki/Duck_test">duck test</a> passed?</p>
+<p>One obvious objection is: it's only text if you use the SVG text element. I think that's a weak argument. SVG's text element is so limited in terms of design that even text that could be using the text element is often turned into paths. There's a reason why every vector graphics editor has a function to replace text with paths. While <a href="https://github.com/w3c/svgwg/issues?q=is%3Aissue%20state%3Aopen%20updated%3A%3E2025-01-01%20sort%3Aupdated-desc">the SVG spec is finally seeing some activity again</a>, its <a href="https://www.w3.org/2024/04/svg-wg.html">current charter</a> is focused on maintenance and interop, not new features, so this is not going to improve anytime soon. Besides, ARIA is about expanding developer options to allow solutions that host languages cannot otherwise provide.</p>
+<p>A slightly stronger argument might be that text is somehow special. It provides certain fundamental affordances that nothing else can match. I don't disagree but, again, ARIA is for when the correct™ way is not available. And ARIA roles are only ever a (weak) signal, a promise from developer to user; it's the developer's responsibility to make good on that promise.</p>
+<p>The graphics-aria module only has 3 roles to offer: graphics-document, graphics-object, and graphics-symbol. I'd say none of these fit so I find myself thinking <code>graphics-text</code> might be reasonable in SVG.</p>
+<h2>Testing text</h2>
+<p>Inevitably this made me wonder whether it's actually a good idea (for accessibility) to use text elements in SVGs. What actually happens when you use the text element, and what happens more when things turn a little more complex?</p>
+<p>To start off, I took <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/text#example">the MDN example for SVG text</a> for a spin, testing different screenreader in different modes (with default settings). A rough list of results:</p>
+<ul>
+<li>ORCA with Chrome: reads the text content in every mode, no additional cues that this is (inside) an svg. browse mode stops after each text element; no indication that it's a text element.</li>
+<li>Narrator with Edge: reads the text content in read all, paragraph/browse, and word mode; adds "image" once upon entering (in any mode).</li>
+<li>NVDA with Chrome/Edge: adds "image" to every text element's content in read-all and browse/paragraph mode; in word navigation adds "image" to first (or last) text element when entering svg, then "leave graphic" when leaving. With Firefox, read-all is similar but browse mode gives only a single combined reading of all text contents (no "stepping through") when visiting the image (no "image" added); same if navigating by word.</li>
+<li>JAWS with Chrome/Edge: adds "graphic" to every text element in read-all and browse/virtualCursor. Using word navigation, there's no "graphic" at all. With Firefox, similar to NVDA.</li>
+<li>VoiceOver Mac with Safari 26. Read-all (VO+A) reads the text content, with no additional cues that anything is (inside) an svg but secondary information about text elements (selectable text). VO+right/left arrow exploration is similar and stops at every text element, navigation by word doesn't do much since each text element is treated separately (and contains 1 word). VO with Chrome behaved the same.</li>
+<li>VoiceOver iOS 26: read all includes the text content, no indication that there's an SVG around. Swipe left/right walks stops at each element; no indication of SVG. Reading by line or word: same result.</li>
+<li>Talkback (Android 16). With Chrome, read all and manual exploration both read all text elements in order; no additional cues that this is (inside) an inline svg.</li>
+</ul>
+<p>So despite <a href="https://github.com/w3c/svg-aam/issues/33">the possibly questionable SVG-AAM mappings</a>, things aren't terrible but also not great. Firefox sticks out negatively in that I couldn't find a way to step through the text elements individually (i.e. basic exploration).</p>
+<p>What bugs me is that the SVG context is never surfaced. The addition of "image" and "graphic" is identical to role/element <code>img</code>; that seems incorrect here. Adding "image" to text element content seems plain wrong (whether once or multiple times). Treating the SVG like a group of some sort and indicating entering/leaving is relevant, but keeping its internal semantics intact is equally so.</p>
+<p>Only VoiceOver on Mac surfaces the nature of the text elements by default. While it probably shows my limitations as a screenreader users that I'm not sure other screenreader surface this information some other way, I doubt few people will consider looking when it's announced as image.</p>
+<p>I suppose not announcing text element roles is consistent with the view that "real" text is special (or at least it matches the SVG-AAM's mapping to paragraphs). It's the default so it needs no additional information/noise. Still, in the context of an SVG, I wonder if this assumption holds up.</p>
+<p>VO announcing text selectability points to the core interaction model of text: you can select it (e.g. for copy&amp;paste). If that's what text is about, then couldn't a graphics-text role be used for similar functionality (e.g. selectability of the accessible name)? Probably a dangerous idea. Move along, nothing to see.</p>
+<h2>Rambling a bit</h2>
+<p>When I attended my first W3C event (too) many moons ago, I was amazed by a demo exploring the classic Ghostscript tiger as SVG, deeply annotated with non-visual information. (I want to say it was done by Janina Sajka using Presto-era Opera but I'm not sure I would've known at the time). This stuck with me. It helped me when we incorporated ChromeVox's equation support into MathJax later on and more when Volker further expanded MathJax's non-visual rendering. You can also see that influence in <a href="/0209/">my abuse of trees for content</a> and my more recent <a href="/0219/">experiment with a granularity walker</a>.</p>
+<p>If you stay as academic as those, you can find a lot of interesting stuff <a href="https://vis.csail.mit.edu/pubs/customization/">like this one from the MIT Visualization Group</a>. But in recent years I've lost faith in this kind of thing. It's too academic to ever make a significant difference in the real world. There never seems to be enough understanding of <a href="https://frankchimero.com/blog/2015/the-webs-grain/">the web's grain</a> to help move things forward to the benefit of the wider (accessibility) community. Neither are these academic tools becoming robust solutions for data journalism (or whatever), nor are they helpful in identifying cow paths (and gaps) in the accessibility infrastructure of the web.</p>
+<p>In the general web development world we instead get regular (yearly) posts where someone explains how <code>title</code> and <code>desc</code> elements work to set the accessible name nd description. And how to use role=img to make an SVG behave like <code>img</code>. That makes me a bit sad. At most, you get a post that linearizes something like a simple graph chart. Like, there's this <a href="https://www.youtube.com/watch?v=Bqhh0ZOSEq8">10 year old talk by Léonie Watson and Chaals McCathie Nevile</a> when that was still fairly new.</p>
+<p>That's basically still where we are - unless you build role=application-style solutions like the MIT stuff (or client-side MathJax). Take <a href="https://www.a11y-collective.com/blog/svg-accessibility/">this recent article from a11y-collective last year</a>. Don't get me wrong: it's good stuff! But just. so. basic. (Obligatory shout-out to one of my old favorites: <a href="https://css-tricks.com/accessible-svgs/">Heather Migliorisi's 2016 post on CSS Tricks</a>.)</p>
+<p>I feel there's a massive divide and we're not working to bridge it. Complex data visualization is one sliver of graphical documents, no matter how important it may be. Nothing good will come from focusing on just its use cases. Take something like <a href="https://commons.wikimedia.org/wiki/File:Strazak_gadzety.svg">this odd cloth-a-person SVG on wikicommons</a> or <a href="https://mermaid.js.org/syntax/quadrantChart.html">this quadrant chart from the mermaidjs docs</a> - I doubt any data viz ARIA module will help those much simpler (yet not simple) use cases.</p>
+<h2>A slightly more real world example</h2>
+<p>Here's a common pattern I see at work. Many graphics in scientific writing contain diagrammatic content and that content is often annotated by text (in particular, labeled). For example, <a href="https://www.ams.org/journals/jams/2020-33-03/S0894-0347-2020-00942-0/viewer/#fig">Figure 2 in this paper</a>,</p>
+<p>Usually, these graphics come in a form that allow for fairly simple linearization of their text alternatives. These are not flowcharts with complex chains and loops, these are not complex data visualizations.</p>
+<p>Here's a simplified example. (The embedded raster image is by Mamoru800, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=176062519">Wikimedia source</a>).</p>
+<div style="overflow-x:scroll;overflow-y:visible">
+<svg style="width:60ch; height: auto;" viewBox="0 0 600 225">
+  <image href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Bildschirmfoto_2025-10-04_um_13.25.54.png/960px-Bildschirmfoto_2025-10-04_um_13.25.54.png" width="200px" height="200px" x="0" y="0" aria-label="abstract size comparison of humans and giant calamars. Three black line drawings over  a linear scale with 2 meter increments." />
+  <text x="50" y="210">Left: Average Human specimen (~1.7m)</text>
+  <text x="120" y="160">Middle: Average Giant Calamar specimen (~9.5m)</text>
+  <text x="150" y="100">Right: Largest known Giant Calamar specimen (12m)</text>
+</svg>
+</div>
+<p>The SVG structure in this contrived example is as follows: first, an image tag linking to a raster graphic; the raster graphic shows a size comparison of giant squids and humans. Next, 3 well positioned text elements annotating 3 areas of the graphic, namely the diagrammatic depiction of a human being as well as the 2 diagrammatic depictions of giant squids (one average and one large specimen).</p>
+<p>It's contrived insofar as text is rarely done as text elements and I've chosen an image tag to reduce complexity (and also because <a href="https://github.com/dequelabs/axe-core/issues/3969">I have an old issue open on axe-core</a> about a false positive for image tags with aria-label). Nevertheless this is representative of a significant chunk of content I come across daily and, biased as I am by my own experience, I feel the world would be better if this had a better solution than sticking a long-description somewhere.</p>
+<p>Coming back to the example, here's another round of notes from testing this.</p>
+<ul>
+<li>ORCA with Chrome: in read all, it reads the image's aria-label (followed by "image") and then the text content, again no cues this is an svg. In browse mode similarly, it stops after image and each text element (though sometimes it just moved across all text elements at once). By word, orca reads the entire aria-label (plus "image") but is able to step through words in the text elements.</li>
+<li>NVDA with Chrome: read all gives the aria-label followed by the text content in DOM order; the image element's aria-label gets "graphic graphic" added (while text elements still get one "graphic"); browse mode stops at the image element and each text element. Moving by word gives additionally gives cues when exiting the image element as well as exiting the SVG element ("out of graphic"). In Firefox, read all opens with "graphic", provides aria-label and text, no indication of the end of the graphic or the image and text elements. In browse mode, it reads the same but stops at the usual character limit, i.e. somewhere in the aria-label and in the second text element's content.</li>
+<li>Narrator with Edge: read-all announces "graphic" when entering the SVG and also after aria-label is announced, otherwise no indications. Browse mode stops with "graphic", then steps through image (with another "graphic" before the label), then steps through each text element as before. No announcement on exiting the SVG. When going back, visual outline is thrown off a bit. By word, announces graphic when entering from either direction, skips the image tag's aria-label, steps through the text elements properly (though the visual outline gets tripped up a lot in text elements, possibly due to overflow in my testing viewport); no exit announcement of course.</li>
+<li>JAWS Chrome: read all reads the aria-label and all text content in the DOM order, adding "graphic" after each element's name. Browse mode steps through each of these, adding "graphic" after aria-label / text contents. As before, no entry or exit announcement for the SVG. Moving by word steps through aria-label and text content in the right order with no additions (i.e., no "graphic" for the image element).</li>
+<li>VoiceOver Safari 26: read all: reads image aria-label and text contents in expected/DOM order, adds "image" after aria-label of image element; no indication of the SVG, secondary information on text elements (selectable text). VO+left/right: steps through image (adding "image") and text elements, no indication of SVG, secondary information on text. By word: again steps through everything by word; no indication of SVG, secondary information on text. Same with Chrome.</li>
+<li>VoiceOver iOS 26: read all: reads image aria-label and text contents in DOM order, adding "image" after aria-label; no indication of the SVG. swipe left/right: steps through image (adding "image") and text elements, no indicatio of SVG. By word: again steps through everything by word (funky highlighting of the text elements while stepping through the image elements aria-label); no indication of SVG. By line reads every text element as a whole.</li>
+<li>Talkback (Android 16). With Chrome, read all and manual exploration both read the aria-label (with "image") and all text elements in order. I also got an announcement ("page") before the aria-label was read which may again have been due to scrolling; similarly a sound cue after the last text fragment.</li>
+</ul>
+<p>Overall, these results matched my expectations after seeing the behavior for text elements.</p>
+<p>It's not terribly bad and yet full of gaps in AT behavior, I'd say. While using text elements is rarely an option, I suspect it's not too relevant here (but I don't want to sit on this another season). The SVG-AAM mappings seem to work and it looks like the ATs are falling short here. Very likely because this pattern is not encountered much. Possibly also because graphics-aria offers too little. Chicken and egg (and resources).</p>
+<p>Obligatory quote from <a href="https://adrianroselli.com/2025/04/tweaking-text-level-styles-reprised.html#Update01">Adrian</a></p>
+<blockquote>
+<p>So please test on your own, using this post as a template — not the final word.</p>
+</blockquote>
+<h2>Basic</h2>
+<p>This is just one sliver of SVG content and yet improving these "linearizable" SVG structure seems like a fairly small improvement that would provide building blocks (e.g. improving inline svg announcements, text element announcements, and maybe even adding a role) that help here as well as in other scenarios. And they also don't strike me as high risk for hindering further improvements.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Being%20unhappy%20with%20accessible%20SVGs%3A%20text%20elements">write me an email</a>.
+  </span>
+  <span> You can also <a href="/contact/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    © 2022 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">cc-by</a> (unless noted otherwise).
+    For more, subscribe to the <a href="/atom.xml">RSS/Atom feed</a>, visit the <a href="/archive/">archive</a> or the <a href="/about/">about</a> page.
+  </footer>
+
+		<!-- Current page: /0225/ -->
+	</body>
+</html>
