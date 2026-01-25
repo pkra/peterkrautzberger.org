@@ -1,18 +1,18 @@
 const sre = require('speech-rule-engine');
 
 // TeX to MathML
-const TeX = require('mathjax-full/cjs/input/tex.js').TeX;
-const HTMLDocument = require('mathjax-full/cjs/handlers/html/HTMLDocument.js')
+const TeX = require('@mathjax/src/cjs/input/tex.js').TeX;
+const HTMLDocument = require('@mathjax/src/cjs/handlers/html/HTMLDocument.js')
   .HTMLDocument;
-const liteAdaptor = require('mathjax-full/cjs/adaptors/liteAdaptor.js')
+const liteAdaptor = require('@mathjax/src/cjs/adaptors/liteAdaptor.js')
   .liteAdaptor;
-const STATE = require('mathjax-full/cjs/core/MathItem.js').STATE;
-const AllPackages = require('mathjax-full/cjs/input/tex/AllPackages.js').AllPackages.filter(
-  (x) => x !== 'bussproofs' && x !== 'textmacros'
-); // NOTE bussproofs needs getBBox() method, text macros and we don't need it
-const tex = new TeX({ packages: AllPackages });
+require('@mathjax/src/cjs/input/tex/base/BaseConfiguration.js');
+require('@mathjax/src/cjs/input/tex/ams/AmsConfiguration.js');
+require('@mathjax/src/cjs/input/tex/color/ColorConfiguration.js');
+const STATE = require('@mathjax/src/cjs/core/MathItem.js').STATE;
+const tex = new TeX({ packages: ['base', 'ams', 'color'] });
 const html = new HTMLDocument('', liteAdaptor(), { InputJax: tex });
-const MmlVisitor = require('mathjax-full/cjs/core/MmlTree/SerializedMmlVisitor.js')
+const MmlVisitor = require('@mathjax/src/cjs/core/MmlTree/SerializedMmlVisitor.js')
   .SerializedMmlVisitor;
 const visitor = new MmlVisitor();
 const toMathML = (node) => visitor.visitTree(node, html);
@@ -25,23 +25,23 @@ const tex2mml = (string, display) => {
 
 
 // MathML to SVG / CHTML
-const mathjax = require('mathjax-full/cjs/mathjax.js').mathjax;
-const MathML = require('mathjax-full/cjs/input/mathml.js').MathML;
-const SVG = require('mathjax-full/cjs/output/svg.js').SVG;
+const mathjax = require('@mathjax/src/cjs/mathjax.js').mathjax;
+const MathML = require('@mathjax/src/cjs/input/mathml.js').MathML;
+const SVG = require('@mathjax/src/cjs/output/svg.js').SVG;
 const jsdom = require('jsdom');
 const { JSDOM } = jsdom;
-const jsdomadaptor = require('mathjax-full/cjs/adaptors/jsdomAdaptor.js')
+const jsdomadaptor = require('@mathjax/src/cjs/adaptors/jsdomAdaptor.js')
   .jsdomAdaptor;
-const RegisterHTMLHandler = require('mathjax-full/cjs/handlers/html.js')
+const RegisterHTMLHandler = require('@mathjax/src/cjs/handlers/html.js')
   .RegisterHTMLHandler;
 const adaptor = jsdomadaptor(JSDOM);
 RegisterHTMLHandler(adaptor);
 const mml = new MathML();
-const MathJaxModernFont  = require('mathjax-modern-font/cjs/svg.js').MathJaxModernFont;
+const MathJaxModernFont = require('@mathjax/mathjax-modern-font/cjs/svg.js').MathJaxModernFont;
 const modernFont = new MathJaxModernFont({
-  dynamicPrefix: 'mathjax-modern-font/cjs/svg/dynamic'
+  dynamicPrefix: '@mathjax/mathjax-modern-font/cjs/svg/dynamic'
 });
-require('mathjax-full/cjs/util/asyncLoad/node.js');
+require('@mathjax/src/cjs/util/asyncLoad/node.js');
 
 const svg = new SVG({
   fontData: modernFont,

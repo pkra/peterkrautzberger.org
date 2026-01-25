@@ -7,6 +7,7 @@
     "build": "rm -rf docs && npx eleventy --output docs && git checkout docs/CNAME",
     "postbuild": "node postprocess.js",
     "dev": "rm -rf _site && npx eleventy --serve",
+    "watch": "npx chokidar \"**/*.md\" -c \"npm run build\"",
     "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
@@ -28,13 +29,15 @@
     "@11ty/eleventy-plugin-rss": "1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "@krautzource/sre-to-tree": "2.0.2",
+    "chokidar-cli": "^3.0.0",
     "backstopjs": "^6.1.1",
     "jsdom": "20.0.0",
     "linkedom": "^0.14.12",
     "luxon": "3.0.1",
     "markdown-it": "13.0.1",
     "markdown-it-mathjax3": "2.2.0",
-    "mathjax-full": "4.0.0-beta.2",
-    "speech-rule-engine": "4.1.0-beta.2"
+    "@mathjax/mathjax-modern-font": "4.1.0",
+    "@mathjax/src": "4.1.0",
+    "speech-rule-engine": "5.0.0-alpha.8"
   }
 }
