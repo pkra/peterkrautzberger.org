@@ -4,29 +4,12 @@
 	<subtitle> · on the web</subtitle>
 	<link href="https://www.peterkrautzberger.org/atom.xml" rel="self"/>
 	<link href="https://www.peterkrautzberger.org/"/>
-	<updated>2026-01-24T00:00:00Z</updated>
+	<updated>2026-09-16T00:00:00Z</updated>
 	<id>https://www.peterkrautzberger.org/</id>
 	<author>
 		<name>Peter Krautzberger</name>
 		<email>p.krautzberger@gmail.com</email>
 	</author>
-	
-	<entry>
-		<title>ATHEN STEM Accessibility Conference 2022</title>
-		<link href="https://www.peterkrautzberger.org/0216/"/>
-		<updated>2022-07-03T00:00:00Z</updated>
-		<id>https://www.peterkrautzberger.org/0216/</id>
-		<content type="html">&lt;p&gt;This is the first time I skipped writing for over a year, I think. Well, good riddance, 2021. You took too much.&lt;/p&gt;
-&lt;p&gt;I meant to write about this back in February, right after the conference, traveling south for a couple calm days with friends. But then a fucking war started, a few hundred kilometers away and it all seemed absurd. It still seems absurd. It is terrifying and horrible. War is the most horrible thing.&lt;/p&gt;
-&lt;p&gt;I&#39;m slowly coming out of a few really bad years but none of it compares in the least to the horror the people of Ukraine are experiencing.&lt;/p&gt;
-&lt;p&gt;I cling to making things normal again. Writing here is something I have wished to come back to again after all this time. The chances that it works out are slim. Too much has happened. Too much still hurts. But I&#39;ll try.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;I gave a talk at &lt;a href=&quot;https://athenpro.org/content/athen-virtual-conference&quot;&gt;ATHEN STEM Accessibility Conference 2022&lt;/a&gt; in February. I spoke about the work I do for the &lt;a href=&quot;https://www.ams.org/&quot;&gt;American Mathematical Society&lt;/a&gt;, primarily how we approach print equation layout on the web, in particular using &lt;a href=&quot;https://github.com/krautzource/aria-tree-walker&quot;&gt;aria-tree-walker&lt;/a&gt; and server-side MathJax.&lt;/p&gt;
-&lt;p&gt;You can find &lt;a href=&quot;https://pkra.github.io/2022-athen-stem-conf/&quot;&gt;the slides on github&lt;/a&gt;. They include a bunch of short videos (without captioning, I&#39;m afraid). They&#39;re all done with a real world OA article so you can try to reproduce things.&lt;/p&gt;
-&lt;p&gt;There&#39;s also a recording of my talk available from their site. If you can&#39;t access that, ping me and I&#39;ll see what I can do.&lt;/p&gt;
-&lt;p&gt;The rest of the conference was somewhat depressing for me. It was example after example of how the empty promises of MathML keep people in the US educational sector in a kind of Stockholm syndrome. Case study after case study showed how flawed everything is both in theory and practice. And yet they cling to 25 years of lies and falsehoods. It would be sad if it wasn&#39;t so incredibly self-inflicted. And infuriatingly dishonest to the students.&lt;/p&gt;
-</content>
-	</entry>
 	
 	<entry>
 		<title>(Print) &quot;Algorithm Layout&quot; in HTML and CSS</title>
@@ -1948,6 +1931,58 @@ experiment8.addEventListener(&quot;click&quot;, handleClick7);
 &lt;/blockquote&gt;
 &lt;h2&gt;Basic&lt;/h2&gt;
 &lt;p&gt;This is just one sliver of SVG content and yet improving these &amp;quot;linearizable&amp;quot; SVG structure seems like a fairly small improvement that would provide building blocks (e.g. improving inline svg announcements, text element announcements, and maybe even adding a role) that help here as well as in other scenarios. And they also don&#39;t strike me as high risk for hindering further improvements.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Can this go? On role presentation inheritance.</title>
+		<link href="https://www.peterkrautzberger.org/0226/"/>
+		<updated>2026-09-16T00:00:00Z</updated>
+		<id>https://www.peterkrautzberger.org/0226/</id>
+		<content type="html">&lt;p&gt;As co-editor I often feel like the janitor of the ARIA specification. I tend to spend time on things that feel like going into the basement, full of stuff nobody remembers putting there, much of it questionable, and very little that can just be thrown out.&lt;/p&gt;
+&lt;h2&gt;As small dent&lt;/h2&gt;
+&lt;p&gt;A few weeks months, I stumbled upon &lt;a href=&quot;https://github.com/dequelabs/axe-core/pull/5171#discussion_r3435303382&quot;&gt;this thread on axe&#39;s tracker&lt;/a&gt; where they were discussing test cases for ARIA markup in invalid HTML. I was fairly certain that no ARIA spec says much about invalid HTML markup but off I went to double check the basement.&lt;/p&gt;
+&lt;p&gt;This brought me to the spec&#39;s section discussing ARIA&#39;s concept of &lt;a href=&quot;https://www.w3.org/TR/wai-aria-1.3/#presentational-role-inheritance&quot;&gt;Presentational Role Inheritance&lt;/a&gt;. If you don&#39;t know this concept, here&#39;s the gist: if you have complex markup that turns out to not deserve semantics, then it can be cumbersome to remove its semantics (by adding role &lt;code&gt;none&lt;/code&gt;). Take a big HTML table that turns out to be for layout, not data. Adding role &lt;code&gt;none&lt;/code&gt; to not just the &lt;code&gt;table&lt;/code&gt; element but to its caption, body, each row and each cell - that&#39;s just a drag (and error prone). So ARIA wants to make things easier for authors: slap the role on the &lt;code&gt;table&lt;/code&gt; root and the rest is inherited.&lt;/p&gt;
+&lt;p&gt;Sounds nice - and it is: disable semantics of a complex HTML snippet with a single use of role. What&#39;s not to like?&lt;/p&gt;
+&lt;p&gt;Now what caught my eyes was the following language (in the current ED):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When an explicit or inherited role of none/presentation is applied to an element with the implicit semantic of a WAI-ARIA role that has Allowed Accessibility Child Roles, in addition to the element with the explicit role of none/presentation, the user agent MUST apply an inherited role of none to any accessibility descendants that do not have an explicit role defined.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The last bit about &lt;strong&gt;any accessibility descendants&lt;/strong&gt; struck me as too broad and - as it turned out - this had only referred to owned elements until &lt;a href=&quot;https://github.com/w3c/aria/commit/bb6baf146e227498a503825a30cbc5d8cc6844d5#diff-0eb547304658805aad788d320f10bf1f292797b5e6d745a3bf617584da017051R506&quot;&gt;a recent search&amp;amp;replace to introduce this new terminology&lt;/a&gt; so it should probably read &lt;strong&gt;accessibility children&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The janitor in me was happy - just a small &lt;s&gt;dent&lt;/s&gt; typo to fix. Issue filed, ARIA WG triage agreed, add it to the list.&lt;/p&gt;
+&lt;h2&gt;What&#39;s behind this wall?&lt;/h2&gt;
+&lt;p&gt;When I looked again a few weeks ago, however, I became confused. Here&#39;s how the spec currently continues:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Also, when an explicit or inherited role of none/presentation is applied to a host language element which has specifically allowed children as defined by the host language specification, in addition to the element with the explicit role of none/presentation, the user agent MUST apply an inherited role of none to any specifically allowed children that do not have an explicit role defined.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;On the one hand, this confirms that we didn&#39;t need to talk about descendants since the concept is applied recursively to &lt;strong&gt;specifically allowed children&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Unfortunately, it&#39;s unclear what the phrase &lt;em&gt;specifically allowed children&lt;/em&gt; means here (just like Allowed Accessibility Child Roles doesn&#39;t really make sense in the earlier quote).&lt;/p&gt;
+&lt;p&gt;This stems in part from &lt;a href=&quot;https://github.com/w3c/aria/pull/1454&quot;&gt;another wider terminology change&lt;/a&gt; in ARIA 1.3 replacing &amp;quot;required children&amp;quot; with &amp;quot;allowed accessibility child roles&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Going back to ARIA 1.2, here&#39;s the equivalent part (within &lt;a href=&quot;https://www.w3.org/TR/wai-aria-1.2/#presentation&quot;&gt;ARIA 1.2 role presentation&lt;/a&gt;):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Also, when an explicit or inherited role of presentation is applied to a host language element which has required children as defined by the host language specification, in addition to the element with the explicit role of presentation, the user agent MUST apply an inherited role of presentation to any required children that do not have an explicit role defined.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This seems better at first. Plain &amp;quot;children&amp;quot; make more sense in a host language context. However, the phrase &amp;quot;required children as described by the host language&amp;quot; does not.&lt;/p&gt;
+&lt;p&gt;Intuitively, you know what it means. As the spec puts it&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Some elements are only complete when additional descendant elements are provided.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A table needs rows and cells to be complete. A list needs list items. Obvs.&lt;/p&gt;
+&lt;p&gt;Unfortunately, that&#39;s not actually true. The closest matching concept is probably the content model. But HTML does not require any children or descendants for, say, a table element. Nor for virtually any other element. Sure, it might make no sense and cause accessibility issues but it&#39;s perfectly valid. So how could we decide when something is required?&lt;/p&gt;
+&lt;h2&gt;Does this old projector even work?&lt;/h2&gt;
+&lt;p&gt;One idea might be to invert this then. Some elements do require particular parents. Maybe those work? At this point I was too suspicious and a reality check seemed in order.&lt;/p&gt;
+&lt;p&gt;So &lt;a href=&quot;https://github.com/w3c/aria/issues/2832#issuecomment-5507424740&quot;&gt;I tested some simple snippets&lt;/a&gt; outside the given examples of table and list. For example, &lt;code&gt;figcaption&lt;/code&gt; can only occur withing &lt;code&gt;figure&lt;/code&gt; and &lt;code&gt;summary&lt;/code&gt; only in &lt;code&gt;details&lt;/code&gt;. So what happens when you add role &lt;code&gt;none&lt;/code&gt; to &lt;code&gt;figure&lt;/code&gt; and &lt;code&gt;summary&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;While HTML-ARIA doesn&#39;t allow role &lt;code&gt;none&lt;/code&gt;, it seems browser happily make these elements presentational - but neither &lt;code&gt;figcaption&lt;/code&gt; nor &lt;code&gt;summary&lt;/code&gt; then inherit this role. (Thankfully neither would any other content alongside them such as an image in a &lt;code&gt;figure&lt;/code&gt; or the contents of a &lt;code&gt;details&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Perhaps a better example is &lt;code&gt;hgroup&lt;/code&gt;. &lt;a href=&quot;https://w3c.github.io/html-aria/#el-hgroup&quot;&gt;HTML-ARIA allows any role&lt;/a&gt; and &lt;a href=&quot;https://html.spec.whatwg.org/#the-hgroup-element&quot;&gt;its content model&lt;/a&gt; is fairly restrictive - essentially only one heading and surrounding paragraphs are allowed. Lo and behold, if you set role none to an &lt;code&gt;hgroup&lt;/code&gt;, its children&#39;s roles remain untouched.&lt;/p&gt;
+&lt;p&gt;And that seems like a good thing! I&#39;d hate to lose a perfectly good heading this way. More generally it makes little sense to inherit role &lt;code&gt;none&lt;/code&gt; when the content model allows all flow or phrasing content.&lt;/p&gt;
+&lt;h2&gt;Is there room in the other building?&lt;/h2&gt;
+&lt;p&gt;So &lt;a href=&quot;https://github.com/w3c/aria/issues/2832#issuecomment-5631222828&quot;&gt;I went through all HTML elements to look at their content models&lt;/a&gt; and there really isn&#39;t much left, especially once you take into account what HTML-ARIA already prevents (by not allowing role &lt;code&gt;none&lt;/code&gt; on some elements). Maybe &lt;code&gt;canvas&lt;/code&gt; will need an update as part the &lt;a href=&quot;https://github.com/w3c/aria/issues/2758&quot;&gt;html-in-canvas proposal&lt;/a&gt;. Maybe &lt;code&gt;audio&lt;/code&gt; and &lt;code&gt;video&lt;/code&gt; need a look because they are not fully spec&#39;ed on the ARIA end. But beyond that?&lt;/p&gt;
+&lt;p&gt;Looking at SVG only muddies the water further. Very few SVG elements allow any roles and their content models are in most cases extremely limited (e.g. &lt;code&gt;circle&lt;/code&gt;, &lt;code&gt;ellipse&lt;/code&gt;, &lt;code&gt;line&lt;/code&gt;) and otherwise extremely broad (e.g. &lt;code&gt;svg&lt;/code&gt;, &lt;code&gt;g&lt;/code&gt;, &lt;code&gt;symbol&lt;/code&gt;, &lt;code&gt;use&lt;/code&gt;). Given how SVG is in a poor state regarding ARIA, it wouldn&#39;t really mean much anyway.&lt;/p&gt;
+&lt;p&gt;Given all that, tables and lists still make sense to me. Those are very old HTML elements and we need a workaround for legacy table/list layouts. Thankfully, for these elements inheritance also seems to work. (Well, mostly anyway  - Safari does not seem to inherit onto list items.)&lt;/p&gt;
+&lt;p&gt;But keeping a complicated general rule for inheritance because two elements have been used poorly in the past? Not a great idea.&lt;/p&gt;
+&lt;p&gt;Instead, this fits much better with host-language integration. HTML-ARIA and HTML-AAM already handle orphaned elements. It seems straight forward to me that we can extend this language to role &lt;code&gt;none&lt;/code&gt; inheritance where needed (i.e. tables and lists ). Any other host language is free to do the same. If we ever come to a point where this is so abundant that a simplification is needed, then a new mechanism for this is probably the wiser choice. (I admit I lack the imagination for this.)&lt;/p&gt;
+&lt;h2&gt;Trash day&lt;/h2&gt;
+&lt;p&gt;So I think this part of the ARIA spec could just g?. Would be nice to clear that room in the basement. We&#39;ll have to see what the &lt;s&gt;teachers&lt;/s&gt; WG will say.&lt;/p&gt;
 </content>
 	</entry>
 </feed>

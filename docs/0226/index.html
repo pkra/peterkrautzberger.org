@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Can this go? On role presentation inheritance.</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+    <meta name="Description" content="Can this go? On role presentation inheritance.">
+    <meta name="theme-color" content="#fff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+    <link rel="shortcut icon" href="/public/favicon.ico">
+    <link rel="manifest" href="/public/manifest.json">
+    <script>if ('serviceWorker' in navigator) {  navigator.serviceWorker.register('/serviceworker.js');}</script>
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <div class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Can this go? On role presentation inheritance.</h1>
+  <span class="post-date"><time datetime="2026-09-16">16 Sep 2026</time></span>
+  <p>As co-editor I often feel like the janitor of the ARIA specification. I tend to spend time on things that feel like going into the basement, full of stuff nobody remembers putting there, much of it questionable, and very little that can just be thrown out.</p>
+<h2>As small dent</h2>
+<p>A few weeks months, I stumbled upon <a href="https://github.com/dequelabs/axe-core/pull/5171#discussion_r3435303382">this thread on axe's tracker</a> where they were discussing test cases for ARIA markup in invalid HTML. I was fairly certain that no ARIA spec says much about invalid HTML markup but off I went to double check the basement.</p>
+<p>This brought me to the spec's section discussing ARIA's concept of <a href="https://www.w3.org/TR/wai-aria-1.3/#presentational-role-inheritance">Presentational Role Inheritance</a>. If you don't know this concept, here's the gist: if you have complex markup that turns out to not deserve semantics, then it can be cumbersome to remove its semantics (by adding role <code>none</code>). Take a big HTML table that turns out to be for layout, not data. Adding role <code>none</code> to not just the <code>table</code> element but to its caption, body, each row and each cell - that's just a drag (and error prone). So ARIA wants to make things easier for authors: slap the role on the <code>table</code> root and the rest is inherited.</p>
+<p>Sounds nice - and it is: disable semantics of a complex HTML snippet with a single use of role. What's not to like?</p>
+<p>Now what caught my eyes was the following language (in the current ED):</p>
+<blockquote>
+<p>When an explicit or inherited role of none/presentation is applied to an element with the implicit semantic of a WAI-ARIA role that has Allowed Accessibility Child Roles, in addition to the element with the explicit role of none/presentation, the user agent MUST apply an inherited role of none to any accessibility descendants that do not have an explicit role defined.</p>
+</blockquote>
+<p>The last bit about <strong>any accessibility descendants</strong> struck me as too broad and - as it turned out - this had only referred to owned elements until <a href="https://github.com/w3c/aria/commit/bb6baf146e227498a503825a30cbc5d8cc6844d5#diff-0eb547304658805aad788d320f10bf1f292797b5e6d745a3bf617584da017051R506">a recent search&amp;replace to introduce this new terminology</a> so it should probably read <strong>accessibility children</strong>.</p>
+<p>The janitor in me was happy - just a small <s>dent</s> typo to fix. Issue filed, ARIA WG triage agreed, add it to the list.</p>
+<h2>What's behind this wall?</h2>
+<p>When I looked again a few weeks ago, however, I became confused. Here's how the spec currently continues:</p>
+<blockquote>
+<p>Also, when an explicit or inherited role of none/presentation is applied to a host language element which has specifically allowed children as defined by the host language specification, in addition to the element with the explicit role of none/presentation, the user agent MUST apply an inherited role of none to any specifically allowed children that do not have an explicit role defined.</p>
+</blockquote>
+<p>On the one hand, this confirms that we didn't need to talk about descendants since the concept is applied recursively to <strong>specifically allowed children</strong>.</p>
+<p>Unfortunately, it's unclear what the phrase <em>specifically allowed children</em> means here (just like Allowed Accessibility Child Roles doesn't really make sense in the earlier quote).</p>
+<p>This stems in part from <a href="https://github.com/w3c/aria/pull/1454">another wider terminology change</a> in ARIA 1.3 replacing "required children" with "allowed accessibility child roles".</p>
+<p>Going back to ARIA 1.2, here's the equivalent part (within <a href="https://www.w3.org/TR/wai-aria-1.2/#presentation">ARIA 1.2 role presentation</a>):</p>
+<blockquote>
+<p>Also, when an explicit or inherited role of presentation is applied to a host language element which has required children as defined by the host language specification, in addition to the element with the explicit role of presentation, the user agent MUST apply an inherited role of presentation to any required children that do not have an explicit role defined.</p>
+</blockquote>
+<p>This seems better at first. Plain "children" make more sense in a host language context. However, the phrase "required children as described by the host language" does not.</p>
+<p>Intuitively, you know what it means. As the spec puts it</p>
+<blockquote>
+<p>Some elements are only complete when additional descendant elements are provided.</p>
+</blockquote>
+<p>A table needs rows and cells to be complete. A list needs list items. Obvs.</p>
+<p>Unfortunately, that's not actually true. The closest matching concept is probably the content model. But HTML does not require any children or descendants for, say, a table element. Nor for virtually any other element. Sure, it might make no sense and cause accessibility issues but it's perfectly valid. So how could we decide when something is required?</p>
+<h2>Does this old projector even work?</h2>
+<p>One idea might be to invert this then. Some elements do require particular parents. Maybe those work? At this point I was too suspicious and a reality check seemed in order.</p>
+<p>So <a href="https://github.com/w3c/aria/issues/2832#issuecomment-5507424740">I tested some simple snippets</a> outside the given examples of table and list. For example, <code>figcaption</code> can only occur withing <code>figure</code> and <code>summary</code> only in <code>details</code>. So what happens when you add role <code>none</code> to <code>figure</code> and <code>summary</code>?</p>
+<p>While HTML-ARIA doesn't allow role <code>none</code>, it seems browser happily make these elements presentational - but neither <code>figcaption</code> nor <code>summary</code> then inherit this role. (Thankfully neither would any other content alongside them such as an image in a <code>figure</code> or the contents of a <code>details</code>).</p>
+<p>Perhaps a better example is <code>hgroup</code>. <a href="https://w3c.github.io/html-aria/#el-hgroup">HTML-ARIA allows any role</a> and <a href="https://html.spec.whatwg.org/#the-hgroup-element">its content model</a> is fairly restrictive - essentially only one heading and surrounding paragraphs are allowed. Lo and behold, if you set role none to an <code>hgroup</code>, its children's roles remain untouched.</p>
+<p>And that seems like a good thing! I'd hate to lose a perfectly good heading this way. More generally it makes little sense to inherit role <code>none</code> when the content model allows all flow or phrasing content.</p>
+<h2>Is there room in the other building?</h2>
+<p>So <a href="https://github.com/w3c/aria/issues/2832#issuecomment-5631222828">I went through all HTML elements to look at their content models</a> and there really isn't much left, especially once you take into account what HTML-ARIA already prevents (by not allowing role <code>none</code> on some elements). Maybe <code>canvas</code> will need an update as part the <a href="https://github.com/w3c/aria/issues/2758">html-in-canvas proposal</a>. Maybe <code>audio</code> and <code>video</code> need a look because they are not fully spec'ed on the ARIA end. But beyond that?</p>
+<p>Looking at SVG only muddies the water further. Very few SVG elements allow any roles and their content models are in most cases extremely limited (e.g. <code>circle</code>, <code>ellipse</code>, <code>line</code>) and otherwise extremely broad (e.g. <code>svg</code>, <code>g</code>, <code>symbol</code>, <code>use</code>). Given how SVG is in a poor state regarding ARIA, it wouldn't really mean much anyway.</p>
+<p>Given all that, tables and lists still make sense to me. Those are very old HTML elements and we need a workaround for legacy table/list layouts. Thankfully, for these elements inheritance also seems to work. (Well, mostly anyway  - Safari does not seem to inherit onto list items.)</p>
+<p>But keeping a complicated general rule for inheritance because two elements have been used poorly in the past? Not a great idea.</p>
+<p>Instead, this fits much better with host-language integration. HTML-ARIA and HTML-AAM already handle orphaned elements. It seems straight forward to me that we can extend this language to role <code>none</code> inheritance where needed (i.e. tables and lists ). Any other host language is free to do the same. If we ever come to a point where this is so abundant that a simplification is needed, then a new mechanism for this is probably the wiser choice. (I admit I lack the imagination for this.)</p>
+<h2>Trash day</h2>
+<p>So I think this part of the ARIA spec could just g?. Would be nice to clear that room in the basement. We'll have to see what the <s>teachers</s> WG will say.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Can%20this%20go%3F%20On%20role%20presentation%20inheritance.">write me an email</a>.
+  </span>
+  <span> You can also <a href="/contact/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    © Peter Krautzberger. 
+    For more, subscribe to the <a href="/atom.xml">RSS/Atom feed</a>, visit the <a href="/archive/">archive</a> or the <a href="/about/">about</a> page.
+  </footer>
+
+		<!-- Current page: /0226/ -->
+	</body>
+</html>
