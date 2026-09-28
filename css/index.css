@@ -200,8 +200,8 @@ pre code {
 blockquote {
     padding: 0.5rem 1rem;
     margin: 0.8rem 0;
-    color: #7a7a7a;
-    border-left: 0.25rem solid #e5e5e5;
+    color: #6e4697;
+    border-left: 0.25rem solid lch(from currentColor calc(l + 30) c h);;
 }
 
 blockquote p:last-child {
