@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Screenreader-only text without CSS? Hold my beer.</title>
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Peter Krautzberger">
+    <meta name="Description" content="Screenreader-only text without CSS? Hold my beer.">
+    <meta name="theme-color" content="#fff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon-180x180.png ">
+    <link rel="shortcut icon" href="/public/favicon.ico">
+    <link rel="manifest" href="/public/manifest.json">
+    <script>if ('serviceWorker' in navigator) {  navigator.serviceWorker.register('/serviceworker.js');}</script>
+	</head>
+	<body>
+  <header>
+    <div class="masthead">
+      <div class="container">
+        <div class="masthead-title">
+          <a href="/">Peter Krautzberger</a>
+          <small> · on the web</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+		<main class="container content">
+			
+
+
+<article class="post">
+  <h1 class="post-title">Screenreader-only text without CSS? Hold my beer.</h1>
+  <span class="post-date"><time datetime="2026-11-06">06 Nov 2026</time></span>
+  <p>Last year I wrote 2 article a 100% increase from the year before. This year, I've written 2 articles. So let's do the obvious - make numbers go up by writing needlessly.</p>
+<h2>Don't do this</h2>
+<p>Let's start with the actually obvious fact: screenreader-only text should be avoided. I still find <a href="https://www.scottohara.me/blog/2023/03/21/visually-hidden-hack.html">Scott's article from 2023</a> quite convincing: this is a hack and the typical use cases need proper solutions instead of giving up and enshrining a hack for eternity.</p>
+<h2>New hacks for old hacks</h2>
+<p>If you're an old hack, you might be skeptical that a new version is worth you while. I tend to agree. But earlier this year <a href="https://dbushell.com/2026/02/20/visually-hidden/">David Bushell wrote up</a> a deep dive into past and present approaches.</p>
+<p>That article includes minimalistic versions which benefit from the fact that <a href="https://www.nvaccess.org/post/in-process-10th-february/">NVDA recently stopped pruning 0px content</a>. My favorite would be <a href="https://codepen.io/scottohara/pen/QWVOqNY">Scott's example (codepen)</a> which is just <code>position: absolute; transform: scale(0)</code> - mind-blowingly short (and I trust Scott's quick testing more than most people's in-depth testing notes).</p>
+<h2>No CSS? Inconceivable!</h2>
+<p>However, part of my dayjob is producing epub output. As I lamented on <a href="https://workingdraft.de/732/">workingdraft 732 (in German)</a>, epub is a miserable format. Since epub3 came out 15 years ago, the only improvements (from a web/book development point of view) have been accidental - the web platform has added new features which are not as easily broken by epub reading software. The spec and its community seem incapable of improving the ecosystem.</p>
+<p>One of the key problems with epub reading software is their tendency to overwrite or straight-up remove author CSS. Even established user agent styles may not be reliable in reading software.</p>
+<p>In other words, sometimes the clever CSS to visually hide text is revealed as what it is - a hack.</p>
+<p>When I was writing up <a href="/0225/">no. 225</a> I stumbled upon a variant that did not require CSS - but SVG. Without further ado:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>none<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>text</span><span class="token punctuation">&gt;</span></span>Hidden text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>text</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span></code></pre>
+<p>Here it is live in the DOM: now you see me, <svg role="none" width="0" height="0"><text>now you don't</text></svg>.</p>
+<p>To take it apart</p>
+<ul>
+<li>The role removes extraneous (and inconsistent) announcements of SVG semantics</li>
+<li>width and height avoid visual rendering</li>
+<li><code>&lt;text&gt;</code> provides text semantics</li>
+</ul>
+<p>An incomplete list of caveats - because this is still a hack:</p>
+<ul>
+<li>be mindful of surrounding whitespace</li>
+<li><code>width</code> and <code>height</code> kinda work like styles but they are sometimes more robust</li>
+<li>common CSS resets do silly things like <code>svg {display: block}</code></li>
+</ul>
+<p>And it's certainly less efficient markup (though compression will help).</p>
+<p>Ceterum censeo: it's a hack.</p>
+
+</article>
+
+<aside class="related">
+  <span> To leave a comment <a href="mailto:p.krautzberger@gmail.com?subject=Comment%20re%20Screenreader-only%20text%20without%20CSS%3F%20Hold%20my%20beer.">write me an email</a>.
+  </span>
+  <span> You can also <a href="/contact/">contact me</a>.</span>
+</aside>
+
+
+
+
+		</main>
+
+  <footer class="container related">
+    © Peter Krautzberger. 
+    For more, subscribe to the <a href="/atom.xml">RSS/Atom feed</a>, visit the <a href="/archive/">archive</a> or the <a href="/about/">about</a> page.
+  </footer>
+
+		<!-- Current page: /0227/ -->
+	</body>
+</html>
