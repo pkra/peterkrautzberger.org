@@ -75,4 +75,4 @@ Instead, this fits much better with host-language integration. HTML-ARIA and HTM
 
 ## Trash day
 
-So I think this part of the ARIA spec could just g?. Would be nice to clear that room in the basement. We'll have to see what the <s>teachers</s> WG will say.
+So I think this part of the ARIA spec could just go? Would be nice to clear that room in the basement. We'll have to see what the <s>teachers</s> WG will say.

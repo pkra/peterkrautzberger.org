@@ -1591,7 +1591,7 @@ experiment8.addEventListener(&quot;click&quot;, handleClick7);
 &lt;p&gt;But keeping a complicated general rule for inheritance because two elements have been used poorly in the past? Not a great idea.&lt;/p&gt;
 &lt;p&gt;Instead, this fits much better with host-language integration. HTML-ARIA and HTML-AAM already handle orphaned elements. It seems straight forward to me that we can extend this language to role &lt;code&gt;none&lt;/code&gt; inheritance where needed (i.e. tables and lists ). Any other host language is free to do the same. If we ever come to a point where this is so abundant that a simplification is needed, then a new mechanism for this is probably the wiser choice. (I admit I lack the imagination for this.)&lt;/p&gt;
 &lt;h2&gt;Trash day&lt;/h2&gt;
-&lt;p&gt;So I think this part of the ARIA spec could just g?. Would be nice to clear that room in the basement. We&#39;ll have to see what the &lt;s&gt;teachers&lt;/s&gt; WG will say.&lt;/p&gt;
+&lt;p&gt;So I think this part of the ARIA spec could just go? Would be nice to clear that room in the basement. We&#39;ll have to see what the &lt;s&gt;teachers&lt;/s&gt; WG will say.&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -1600,7 +1600,7 @@ experiment8.addEventListener(&quot;click&quot;, handleClick7);
 		<link href="https://www.peterkrautzberger.org/0227/"/>
 		<updated>2026-11-06T00:00:00Z</updated>
 		<id>https://www.peterkrautzberger.org/0227/</id>
-		<content type="html">&lt;p&gt;Last year I wrote 2 article a 100% increase from the year before. This year, I&#39;ve written 2 articles. So let&#39;s do the obvious - make numbers go up by writing needlessly.&lt;/p&gt;
+		<content type="html">&lt;p&gt;Last year I wrote 2 articles, a 100% increase from the year before. This year, I&#39;ve written 2 articles. So let&#39;s do the obvious - make numbers go up by writing needlessly.&lt;/p&gt;
 &lt;h2&gt;Don&#39;t do this&lt;/h2&gt;
 &lt;p&gt;Let&#39;s start with the actually obvious fact: screenreader-only text should be avoided. I still find &lt;a href=&quot;https://www.scottohara.me/blog/2023/03/21/visually-hidden-hack.html&quot;&gt;Scott&#39;s article from 2023&lt;/a&gt; quite convincing: this is a hack and the typical use cases need proper solutions instead of giving up and enshrining a hack for eternity.&lt;/p&gt;
 &lt;h2&gt;New hacks for old hacks&lt;/h2&gt;

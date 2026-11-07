@@ -5,7 +5,7 @@ date: 2026-11-06
 permalink: 0227/
 ---
 
-Last year I wrote 2 article a 100% increase from the year before. This year, I've written 2 articles. So let's do the obvious - make numbers go up by writing needlessly.
+Last year I wrote 2 articles, a 100% increase from the year before. This year, I've written 2 articles. So let's do the obvious - make numbers go up by writing needlessly.
 
 ## Don't do this
 
